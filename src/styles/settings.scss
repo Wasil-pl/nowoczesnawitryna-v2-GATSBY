@@ -9,8 +9,16 @@
   font-family: 'Raleway';
   font-style: normal;
   font-display: swap;
-  font-weight: 800;
+  font-weight: 700;
   src: url('/fonts/raleway-bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url('/fonts/raleway-extrabold-webfont.woff2') format('woff2');
 }
 
 @font-face {
@@ -42,6 +50,7 @@ $font-header: 'Raleway', sans-serif;
 $font-body: 'Merriweather', serif;
 
 $font-weight-normal: 400;
-$font-weight-bold: 800;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
 $font-weight-black: 900;
 

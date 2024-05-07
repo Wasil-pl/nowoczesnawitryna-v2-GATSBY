@@ -7,12 +7,14 @@ import HeaderHome from '../components/HeaderHome/HeaderHome';
 import ConactUs from '../components/ContactUs/ContactUs';
 import RootLayout from '../components/RootLayout/RootLayout';
 import SiteInfo from '../components/SiteInfo/SiteInfo';
+import MyServicesThumbs from '../components/MyServicesThumbs/MyServicesThumbs';
 
 const IndexPage = () => {
   return (
     <RootLayout>
       <HeaderHome />;
       <SiteInfo />
+      <MyServicesThumbs />
       <ConactUs />
     </RootLayout>
   );

@@ -1,0 +1,21 @@
+.nav-underline .nav-link.active {
+  background-color: #ffbf00;
+  border-color: #ffbf00;
+  color: #141414 !important;
+  position: relative;
+}
+
+.nav-underline .nav-link.active::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border: 11px solid transparent;
+  bottom: -11px;
+  border-top-color: #ffbf00;
+  border-top-style: solid;
+  border-bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
