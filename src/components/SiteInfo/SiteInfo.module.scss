@@ -1,0 +1,25 @@
+@import '../../styles/settings.scss';
+
+.SiteInfo {
+  .wrapper {
+    display: flex;
+    margin-top: -70px;
+    margin-bottom: 0;
+    z-index: 1;
+    position: relative;
+
+    .firstColumn {
+      flex: 1;
+      padding: 2rem;
+      background-color: $color-background-primary;
+      border-radius: 20px 0 0 20px;
+    }
+
+    .secondColumn {
+      flex: 1;
+      padding: 2rem;
+      background-color: $color-background-lighter;
+      border-radius: 0 20px 20px 0;
+    }
+  }
+}

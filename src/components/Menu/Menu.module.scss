@@ -1,0 +1,7 @@
+@import '../../styles/settings.scss';
+
+.scrolled {
+  background: rgba(25, 29, 41, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}

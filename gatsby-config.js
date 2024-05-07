@@ -4,19 +4,65 @@
 module.exports = {
   siteMetadata: {
     title: `NowoczesnaWitryna`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.nowoczesnawitryna.pl`,
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
-    resolve: 'gatsby-plugin-manifest',
-    options: {
-      "icon": "src/images/icon.png"
-    }
-  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
+  plugins: [
+    'gatsby-plugin-sass',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-react-helmet',
+    'bootstrap',
+    'react-bootstrap',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/logo.jpg',
+      },
     },
-    __key: "images"
-  }]
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          formats: ['auto', 'webp', 'avif'],
+          placeholder: 'blurred',
+          quality: 50,
+          breakpoints: [750, 1080, 1366, 1920],
+          backgroundColor: 'transparent',
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        },
+      },
+    },
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: './src/images/',
+      },
+      __key: 'images',
+    },
+    {
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        tailwind: true,
+        purgeOnly: ['src/styles/index.scss'],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-minify',
+      options: {
+        collapseWhitespace: true,
+        minifyCSS: true,
+        minifyJS: true,
+        minifyHTML: true,
+        removeComments: true,
+      },
+    },
+  ],
 };
+
