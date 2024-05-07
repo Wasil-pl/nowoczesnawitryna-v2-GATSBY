@@ -13,6 +13,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'bootstrap',
     'react-bootstrap',
+    `gatsby-plugin-scroll-reveal`,
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

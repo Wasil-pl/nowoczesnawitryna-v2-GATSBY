@@ -85,7 +85,7 @@ const HeaderHome = () => {
         <source src={video} type="video/mp4" />
       </video>
 
-      <div className={styles.content}>
+      <div data-sal="zoom-in" data-sal-delay="300" data-sal-duration="2000" className={styles.content}>
         <h1 className={styles.title}>
           <span className={`${styles.titlePart} separator`}>Cześć, nazywam się</span>
           <br />
