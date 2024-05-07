@@ -5,6 +5,14 @@
   position: relative;
 }
 
+.nav-underline .nav-link.active:hover {
+  color: #141414 !important;
+}
+
+.nav-underline .nav-link:hover {
+  color: #ffbf00 !important;
+}
+
 .nav-underline .nav-link.active::after {
   content: '';
   position: absolute;

@@ -29,7 +29,7 @@ const Menu = () => {
     >
       <Container>
         <Navbar.Brand href="/">
-          <StaticImage src="../../images/logo.svg" alt="Logo" placeholder="blurred" layout="fixed" width={100} />
+          <img src="../../images/logo.svg" alt="Logo" width={80} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

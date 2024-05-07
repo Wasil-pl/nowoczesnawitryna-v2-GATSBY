@@ -1,20 +1,54 @@
 @import '../../styles/settings.scss';
 
-.myServicesThumbs {
-  background-color: $color-background-dark;
-  margin: 150px 0;
-  padding: 4rem 0;
+.tabswrapper {
+  button {
+    background-color: $color-background-light;
+    border-radius: 20px;
+    color: $color-text-dark;
+    height: 100%;
+    font-size: 1.1rem;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+}
 
-  .tabswrapper {
-    button {
-      background-color: $color-background-light;
-      border-radius: 20px;
-      color: $color-text-dark;
-      height: 100%;
-      font-size: 1.1rem;
+.tabContent {
+  margin-top: 70px;
+  display: flex;
+
+  .tabContentLeft {
+    flex: 60%;
+
+    h3 {
+      font-size: 2rem;
       font-weight: $font-weight-bold;
-      text-transform: uppercase;
-      padding: 10px;
+      color: $color-primary;
+      margin-bottom: 50px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $color-text-light;
+      margin-bottom: 20px;
+
+      &:last-of-type {
+        margin-bottom: 50px;
+      }
+    }
+
+    .button {
+      margin: 0 auto;
+    }
+  }
+
+  .tabContentRight {
+    flex: 40%;
+    padding-left: 50px;
+
+    img {
+      width: 100%;
+      border-radius: 20px;
     }
   }
 }
