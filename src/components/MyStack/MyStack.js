@@ -2,7 +2,6 @@ import React from 'react';
 import * as styles from './MyStack.module.scss';
 import { Card, Container } from 'react-bootstrap';
 import SectionTitle from '../SectionTitle/SectionTitle';
-import { FiletypeHtml } from 'react-bootstrap-icons';
 
 const MyStack = () => {
   const myStack = [
@@ -25,7 +24,7 @@ const MyStack = () => {
   return (
     <div className={styles.MyStack}>
       <Container>
-        <div class={styles.wrapper}>
+        <div className={styles.wrapper}>
           <SectionTitle
             title="Technologie, których używam"
             coloredText=" w pracy"
@@ -35,7 +34,7 @@ const MyStack = () => {
           <div className={styles.stack}>
             {myStack.map((item, index) => (
               <Card key={index} className={styles.card}>
-                <Card.Title>{item}</Card.Title>
+                <Card.Title className={styles.cardTitle}>{item}</Card.Title>
               </Card>
             ))}
           </div>

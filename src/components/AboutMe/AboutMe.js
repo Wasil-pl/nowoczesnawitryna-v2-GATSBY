@@ -5,20 +5,6 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const AboutMe = () => {
-  const myStack = [
-    'HTML5',
-    'Sass',
-    'JavaScript',
-    'React',
-    'Gatsby',
-    'Bootstrap',
-    'Node.js',
-    'MySQL',
-    'Wordpress',
-    'Woocommerce',
-    'Photoshop',
-  ];
-
   return (
     <div className={styles.AboutMe}>
       <Container>

@@ -4,17 +4,51 @@
   .wrapper {
     background-color: $color-background-dark;
     padding: 100px 40px;
+    margin-top: -150px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('/images/kropki_512-512.png');
+      bottom: 20px;
+      right: 20px;
+      z-index: 1;
+      color: $color-primary;
+      height: 300px;
+      width: 300px;
+    }
 
     .stack {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
 
       .card {
         padding: 20px 30px;
         border-radius: 20px;
         margin: 10px;
+        transition: $transition_0_3;
+
+        &:hover {
+          transform: scale(1.07);
+
+          .cardTitle {
+            color: $color-text-primary;
+            transform: scale(1.1);
+          }
+        }
+
+        .cardTitle {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: $color-text-dark;
+          margin: 0;
+          transition: $transition_0_3;
+        }
       }
     }
   }

@@ -1,0 +1,32 @@
+@import '../../styles/settings.scss';
+
+.Portfolio {
+  padding: 150px 0;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .portfolioItem {
+      flex: 1 1 0;
+      max-height: 500px;
+      overflow: hidden;
+
+      h2 {
+        text-align: left;
+      }
+    }
+
+    .imageBox {
+      margin: 0 10px;
+      border-radius: 20px;
+      transition: $transition_0_3;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}

@@ -10,6 +10,8 @@ import SiteInfo from '../components/SiteInfo/SiteInfo';
 import MyServices from '../components/MyServices/MyServices';
 import AboutMe from '../components/AboutMe/AboutMe';
 import MyStack from '../components/MyStack/MyStack';
+import Portfolio from '../components/Portfolio/Portfolio';
+import Testiniomals from '../components/Testiniomals/Testiniomals';
 
 const IndexPage = () => {
   return (
@@ -19,6 +21,8 @@ const IndexPage = () => {
       <MyServices />
       <AboutMe />
       <MyStack />
+      <Portfolio />
+      <Testiniomals />
       <ConactUs />
     </RootLayout>
   );
