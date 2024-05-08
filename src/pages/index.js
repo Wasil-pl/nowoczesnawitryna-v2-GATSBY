@@ -8,6 +8,8 @@ import ConactUs from '../components/ContactUs/ContactUs';
 import RootLayout from '../components/RootLayout/RootLayout';
 import SiteInfo from '../components/SiteInfo/SiteInfo';
 import MyServices from '../components/MyServices/MyServices';
+import AboutMe from '../components/AboutMe/AboutMe';
+import MyStack from '../components/MyStack/MyStack';
 
 const IndexPage = () => {
   return (
@@ -15,6 +17,8 @@ const IndexPage = () => {
       <HeaderHome />;
       <SiteInfo />
       <MyServices />
+      <AboutMe />
+      <MyStack />
       <ConactUs />
     </RootLayout>
   );

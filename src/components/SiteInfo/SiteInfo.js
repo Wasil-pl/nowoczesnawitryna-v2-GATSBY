@@ -1,6 +1,7 @@
 import React from 'react';
 import * as styles from './SiteInfo.module.scss';
-import { Button, Card, Container } from 'react-bootstrap';
+import { Card, Container } from 'react-bootstrap';
+import CustomButton from '../CustomButton/CustomButton';
 
 const SiteInfo = () => {
   return (
@@ -11,7 +12,7 @@ const SiteInfo = () => {
             <h3>Dlaczego Nowoczesna Witryna?</h3>
             <h4>Oferuję profesjonalne usługi z zakresu tworzenia stron internetowych.</h4>
             <p>Moje strony są responsywne, funkcjonalne, łatwe w zarządzaniu i zoptymalizowane pod kątem SEO.</p>
-            <Button variant="outline-dark">Skontaktuj się ze mną</Button>
+            <CustomButton variant="dark" text="skontaktuj się" link="/#kontakt" />
           </div>
           <div className={styles.secondColumn}>
             <Card className={`mb-2 ${styles.firstCard}`}>

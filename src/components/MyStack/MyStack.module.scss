@@ -1,0 +1,21 @@
+@import '../../styles/settings.scss';
+
+.MyStack {
+  .wrapper {
+    background-color: $color-background-dark;
+    padding: 100px 40px;
+
+    .stack {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .card {
+        padding: 20px 30px;
+        border-radius: 20px;
+        margin: 10px;
+      }
+    }
+  }
+}

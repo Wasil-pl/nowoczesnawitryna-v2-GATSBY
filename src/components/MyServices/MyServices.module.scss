@@ -3,5 +3,105 @@
 .myServices {
   background-color: $color-background-dark;
   margin: 150px 0;
-  padding: 4rem 0;
+  padding: 100px 0 10px;
+
+  .info {
+    display: flex;
+    margin: 120px 0 100px;
+
+    .icon {
+      font-size: 2.5rem;
+      color: $color-primary;
+      margin-right: 2rem;
+    }
+
+    .content {
+      flex: 70%;
+      h3 {
+        font-size: 1.2rem;
+        font-weight: $font-weight-extrabold;
+        color: $color-text-light;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: $color-text-light;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .action {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: -135px;
+    background-color: $color-background-primary;
+    padding: 50px;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-image: url('/images/bg-overlay.webp');
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      background-position: 100% 100%;
+      top: -0px;
+      left: -0px;
+      right: -0px;
+      bottom: -0px;
+      opacity: 0.1;
+    }
+
+    .leftSide {
+      flex: 50%;
+
+      h3 {
+        font-size: 1.2rem;
+        font-weight: $font-weight-bold;
+        color: $color-text-dark;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      h4 {
+        font-size: 1.7rem;
+        font-weight: $font-weight-bold;
+        color: $color-text-dark;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .rightSide {
+      flex: 50%;
+      display: flex;
+      justify-content: flex-end;
+      z-index: 2;
+      position: relative;
+      transition: $transition_0_3;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      a {
+        text-decoration: none;
+
+        svg {
+          font-size: 7rem;
+          color: $color-text-light;
+          margin-right: 1rem;
+        }
+
+        .text {
+          font-size: 1.2rem;
+          font-weight: $font-weight-bold;
+          color: $color-text-dark;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
 }

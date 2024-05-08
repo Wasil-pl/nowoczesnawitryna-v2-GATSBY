@@ -17,3 +17,13 @@
     border: 1px solid $color-text-primary;
   }
 }
+
+.dark {
+  border: 1px solid $color-background-dark;
+  color: $color-text-dark;
+
+  &:hover {
+    background-color: $color-background-dark;
+    color: $color-text-primary;
+  }
+}
