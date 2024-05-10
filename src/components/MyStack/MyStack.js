@@ -22,7 +22,7 @@ const MyStack = () => {
     'Do tworzenia stron wykorzystuję najnowsze technologie i tworzę strony internetowe na zamówienie we wszystkich głównych systemach CMS i frameworkach.';
 
   return (
-    <div className={styles.MyStack}>
+    <section className={styles.MyStack}>
       <Container>
         <div className={styles.wrapper}>
           <SectionTitle
@@ -40,7 +40,7 @@ const MyStack = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

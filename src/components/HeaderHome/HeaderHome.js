@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import * as styles from './HeaderHome.module.scss';
-import video from '../../video/tło_30fps.mp4';
 import Menu from '../Menu/Menu';
 
 class TextScramble {
@@ -58,10 +57,11 @@ class TextScramble {
 }
 
 const HeaderHome = () => {
-  let textScramble = '';
+  let textScramble = 'stron internetowych';
   const subtitleRef = useRef(null);
 
   useEffect(() => {
+    if (window === undefined) return;
     const texts = ['aplikacji webowych', 'sklepów www', 'stron internetowych'];
     const subtitleElement = subtitleRef.current;
     const textEffect = new TextScramble(subtitleElement);
@@ -82,7 +82,7 @@ const HeaderHome = () => {
       <Menu />
 
       <video className={styles.video} autoPlay muted loop>
-        <source src={video} type="video/mp4" />
+        <source src="../../images/tlo.mp4" type="video/mp4" />
       </video>
 
       <div data-sal="zoom-in" data-sal-delay="300" data-sal-duration="2000" className={styles.content}>
@@ -90,17 +90,13 @@ const HeaderHome = () => {
           <span className={`${styles.titlePart} separator`}>Cześć, nazywam się</span>
           <br />
           <span className={styles.titleName}>
-            <span className={`colorPrimary ${styles.firstLetter}`}>D</span>ariusz
-            <span className={`colorPrimary ${styles.firstLetter}`}> W</span>asilewski
+            <span className={`color_primary ${styles.firstLetter}`}>D</span>ariusz
+            <span className={`color_primary ${styles.firstLetter}`}> W</span>asilewski
           </span>
         </h1>
-        <h2 className={styles.subtitle}>
-          i specjalizuję się w tworzeniu
-          <br />
-          <span className={`colorPrimary ${styles.textVariable}`} ref={subtitleRef}>
-            {' '}
-            {textScramble} stron internetowych
-          </span>
+        <h2 className={styles.subtitle}>i specjalizuję się w tworzeniu</h2>
+        <h2 className={`color_primary ${styles.textVariable}`} ref={subtitleRef}>
+          {textScramble}
         </h2>
       </div>
     </header>

@@ -1,8 +1,13 @@
 @import '../../styles/settings.scss';
 
 .tabswrapper {
+  & > li {
+    margin-right: 10px;
+  }
+
   button {
     background-color: $color-background-light;
+    border: none;
     border-radius: 20px;
     color: $color-text-dark;
     height: 100%;

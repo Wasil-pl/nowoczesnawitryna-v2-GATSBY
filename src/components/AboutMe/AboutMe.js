@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const AboutMe = () => {
   return (
-    <div className={styles.AboutMe}>
+    <section className={styles.AboutMe}>
       <Container>
         <SectionTitle title="Kilka słów" coloredText=" o mnie" />
 
@@ -31,7 +31,7 @@ const AboutMe = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

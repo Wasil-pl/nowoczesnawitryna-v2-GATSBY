@@ -11,15 +11,16 @@ const MyServices = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    if (window === undefined) return;
     if (window.innerWidth < 768) {
       setIsMobile(true);
     }
   }, []);
 
   return (
-    <div className={styles.myServices}>
+    <section className={styles.myServices}>
       <Container>
-        <SectionTitle title="Wszystkie usługi, których" coloredText="potrzebujesz" variant="white" />
+        <SectionTitle title="Wszystkie usługi, których" coloredText=" potrzebujesz" variant="white" />
 
         {!isMobile && <MyServicesThumbs />}
 
@@ -52,7 +53,7 @@ const MyServices = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

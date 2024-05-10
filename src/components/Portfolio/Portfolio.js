@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const Portfolio = () => {
   return (
-    <div className={styles.Portfolio}>
+    <section className={styles.Portfolio}>
       <Container>
         <div className={styles.wrapper}>
           <div className={styles.portfolioItem}>
@@ -28,7 +28,7 @@ const Portfolio = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

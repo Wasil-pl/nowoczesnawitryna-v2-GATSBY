@@ -1,12 +1,15 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-const RootLayout = ({ children }) => {
+const RootLayout = () => {
   return (
     <>
-      <Helmet>
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      <Helmet
+        htmlAttributes={{
+          lang: 'pl',
+        }}
+      >
+        <meta name="robots" content="index, nofollow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <title>strona główna - Nowoczesna witryna</title>
         <meta
           name="description"
@@ -24,8 +27,6 @@ const RootLayout = ({ children }) => {
         <meta property="og:site_name" content="Nowoczesna witryna" />
         <link rel="shortlink" href="https://www.nowoczesnawitryna.pl/" />
       </Helmet>
-
-      {children}
     </>
   );
 };

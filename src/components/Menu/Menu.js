@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap';
 import * as styles from './Menu.module.scss';
 import './menu.css';
-import { StaticImage } from 'gatsby-plugin-image';
 
 const Menu = () => {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
+    if (window === undefined) return;
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };

@@ -6,15 +6,16 @@ module.exports = {
     title: `NowoczesnaWitryna`,
     siteUrl: `https://www.nowoczesnawitryna.pl`,
   },
+
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
-    'bootstrap',
     'react-bootstrap',
     'react-bootstrap-icons',
     `gatsby-plugin-scroll-reveal`,
+    `react-hook-form`,
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -27,7 +28,7 @@ module.exports = {
         defaults: {
           formats: ['auto', 'webp', 'avif'],
           placeholder: 'blurred',
-          quality: 50,
+          quality: 75,
           breakpoints: [750, 1080, 1366, 1920],
           backgroundColor: 'transparent',
           tracedSVGOptions: {},

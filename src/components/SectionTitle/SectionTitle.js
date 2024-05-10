@@ -3,11 +3,12 @@ import * as styles from './SectionTitle.module.scss';
 
 const SectionTitle = ({ title, coloredText, subtitle, variant = '' }) => {
   return (
-    <div className={`separator ${styles.sectionTitle}`}>
+    <div className={`separator ${styles.section_title}`}>
       <h2 className={styles[variant]}>
-        {title} <span className="colorPrimary">{coloredText}</span>
+        {title}
+        {coloredText && <span className={'color_primary'}>{coloredText}</span>}
       </h2>
-      {subtitle && <p className={`${styles[variant]} ${styles.subtitle}`}>{subtitle}</p>}
+      {subtitle && <p className={styles[variant]}>{subtitle}</p>}
     </div>
   );
 };

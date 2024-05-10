@@ -6,10 +6,10 @@ import { StarFill, Star } from 'react-bootstrap-icons';
 
 const Testiniomals = () => {
   return (
-    <div className={styles.Testiniomals}>
+    <section className={styles.Testiniomals}>
       <Container>
         <div className={styles.title}>
-          <SectionTitle coloredText="Niezdecydowany?" subtitle={`Zobacz co sądzą o mnie moi klienci`} variant="white" />
+          <SectionTitle coloredText="Niezdecydowany?" subtitle="Zobacz co sądzą o mnie moi klienci" variant="white" />
         </div>
 
         <div className={styles.wrapper}>
@@ -57,7 +57,7 @@ const Testiniomals = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

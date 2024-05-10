@@ -2,7 +2,7 @@ import React from 'react';
 import * as styles from './MyServicesThumbs.module.scss';
 import './MyServicesThumbs.css';
 import { Tabs } from 'react-bootstrap';
-import { Tab } from 'bootstrap';
+import { Tab } from 'react-bootstrap';
 import { StaticImage } from 'gatsby-plugin-image';
 import CustomButton from '../CustomButton/CustomButton';
 
@@ -21,7 +21,7 @@ const MyServicesThumbs = () => {
               Jeżeli szukasz strony o perfekcyjnym dopasowaniu graficznym (pixel perfect), aplikacji typu single page
               app (SPA) lub innego niestandardowego rozwiązania, to jesteś we właściwym miejscu.
             </p>
-            <CustomButton text="Zobacz więcej" link="/strony-niestandardowe" />
+            <CustomButton text="Zobacz więcej" link="/#" />
           </div>
           <div className={styles.tabContentRight}>
             <StaticImage src="../../images/stronyniestandardowe.jpg" alt="strony niestandardowe" />
