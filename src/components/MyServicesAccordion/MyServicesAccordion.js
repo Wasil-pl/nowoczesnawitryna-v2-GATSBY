@@ -11,8 +11,8 @@ const MyServicesAccordion = () => {
       <Accordion.Item eventKey="0">
         <Accordion.Header>Niestandardowe strony internetowe</Accordion.Header>
         <Accordion.Body>
-          <div className={styles.tabContent}>
-            <div className={styles.tabContentLeft}>
+          <div className={styles.tab_content}>
+            <div className={styles.tab_content_left}>
               <h3>Niestandardowe strony</h3>
               <p>
                 Oferuję tworzenie stron internetowych pisanych od zera, które są unikatowe, dostosowane do Twoich
@@ -24,7 +24,7 @@ const MyServicesAccordion = () => {
               </p>
               <CustomButton text="Zobacz więcej" link="/strony-niestandardowe" />
             </div>
-            <div className={styles.tabContentRight}>
+            <div className={styles.tab_content_right}>
               <StaticImage src="../../images/stronyniestandardowe.jpg" alt="strony niestandardowe" width={300} />
             </div>
           </div>
@@ -33,8 +33,8 @@ const MyServicesAccordion = () => {
       <Accordion.Item eventKey="1">
         <Accordion.Header>Aplikacje webowe</Accordion.Header>
         <Accordion.Body>
-          <div className={styles.tabContent}>
-            <div className={styles.tabContentLeft}>
+          <div className={styles.tab_content}>
+            <div className={styles.tab_content_left}>
               <h3>Aplikacje webowe</h3>
               <p>
                 Aplikacje webowe są idealne, gdy Twoje wymagania przekraczają możliwości tradycyjnych stron
@@ -44,7 +44,7 @@ const MyServicesAccordion = () => {
               </p>
               <CustomButton text="Zobacz więcej" link="/aplikacje-webowe" />
             </div>
-            <div className={styles.tabContentRight}>
+            <div className={styles.tab_content_right}>
               <StaticImage src="../../images/serwis-muzyczny.webp" alt="serwis muzyczny" width={200} />
             </div>
           </div>
@@ -53,8 +53,8 @@ const MyServicesAccordion = () => {
       <Accordion.Item eventKey="2">
         <Accordion.Header>Strony WordPress</Accordion.Header>
         <Accordion.Body>
-          <div className={styles.tabContent}>
-            <div className={styles.tabContentLeft}>
+          <div className={styles.tab_content}>
+            <div className={styles.tab_content_left}>
               <h3>Strony oparte na WordPress</h3>
               <p>
                 Oferuję tworzenie stron internetowych opartych na WordPress, popularnym systemie zarządzania treścią.
@@ -63,7 +63,7 @@ const MyServicesAccordion = () => {
               </p>
               <CustomButton text="Zobacz więcej" link="/strony-wordpress" />
             </div>
-            <div className={styles.tabContentRight}>
+            <div className={styles.tab_content_right}>
               <StaticImage src="../../images/wordpress.jpg" alt="strony wordpress" width={300} />
             </div>
           </div>
@@ -72,8 +72,8 @@ const MyServicesAccordion = () => {
       <Accordion.Item eventKey="3">
         <Accordion.Header>Sklepy internetowe</Accordion.Header>
         <Accordion.Body>
-          <div className={styles.tabContent}>
-            <div className={styles.tabContentLeft}>
+          <div className={styles.tab_content}>
+            <div className={styles.tab_content_left}>
               <h3>Sklepy internetowe</h3>
               <p>
                 Proponuję funkcjonalne i bezpieczne sklepy internetowe oparte na WooCommerce. Moje rozwiązania
@@ -82,7 +82,7 @@ const MyServicesAccordion = () => {
               </p>
               <CustomButton text="Zobacz więcej" link="/sklepy-internetowe" />
             </div>
-            <div className={styles.tabContentRight}>
+            <div className={styles.tab_content_right}>
               <StaticImage src="../../images/sklep.jpg" alt="sklepy internetowe" width={300} />
             </div>
           </div>

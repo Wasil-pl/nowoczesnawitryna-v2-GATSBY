@@ -1,0 +1,44 @@
+@import '../../styles/settings.scss';
+
+.header {
+  background-color: $color-background-dark;
+  height: 600px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url('/images/kropki_512-512.png');
+    top: 25%;
+    left: 20%;
+    z-index: 1;
+    color: #ffbf00;
+    height: 300px;
+    width: 300px;
+    z-index: 0;
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $color-text-light;
+    z-index: 1;
+
+    .title {
+      font-size: 5rem;
+      font-weight: $font-weight-extrabold;
+      text-transform: capitalize;
+      line-height: 6.1rem;
+      margin-bottom: 15px;
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      line-height: 3rem;
+      letter-spacing: 0.2rem;
+    }
+  }
+}

@@ -8,10 +8,10 @@ import CustomButton from '../CustomButton/CustomButton';
 
 const MyServicesThumbs = () => {
   return (
-    <Tabs defaultActiveKey="1" variant="underline" justify className={` mb-3 ${styles.tabswrapper}`}>
+    <Tabs defaultActiveKey="1" variant="underline" justify className={` mb-3 ${styles.tabs_wrapper}`}>
       <Tab eventKey="1" title="Niestandardowe strony internetowe">
-        <div className={styles.tabContent}>
-          <div className={styles.tabContentLeft}>
+        <div className={styles.tab_content}>
+          <div className={styles.tab_content_left}>
             <h3>Niestandardowe strony</h3>
             <p>
               Oferuję tworzenie stron internetowych pisanych od zera, które są unikatowe, dostosowane do Twoich wymagań
@@ -23,14 +23,14 @@ const MyServicesThumbs = () => {
             </p>
             <CustomButton text="Zobacz więcej" link="/#" />
           </div>
-          <div className={styles.tabContentRight}>
+          <div className={styles.tab_content_right}>
             <StaticImage src="../../images/stronyniestandardowe.jpg" alt="strony niestandardowe" />
           </div>
         </div>
       </Tab>
       <Tab eventKey="2" title="Aplikacje webowe">
-        <div className={styles.tabContent}>
-          <div className={styles.tabContentLeft}>
+        <div className={styles.tab_content}>
+          <div className={styles.tab_content_left}>
             <h3>Aplikacje webowe</h3>
             <p>
               Aplikacje webowe są idealne, gdy Twoje wymagania przekraczają możliwości tradycyjnych stron internetowych.
@@ -40,14 +40,14 @@ const MyServicesThumbs = () => {
             </p>
             <CustomButton text="Zobacz więcej" link="/aplikacje-webowe" />
           </div>
-          <div className={styles.tabContentRight}>
+          <div className={styles.tab_content_right}>
             <StaticImage src="../../images/serwis-muzyczny.webp" alt="serwis muzyczny" width={300} />
           </div>
         </div>
       </Tab>
       <Tab eventKey="3" title="Strony WordPress">
-        <div className={styles.tabContent}>
-          <div className={styles.tabContentLeft}>
+        <div className={styles.tab_content}>
+          <div className={styles.tab_content_left}>
             <h3>Strony oparte na WordPress</h3>
             <p>
               Oferuję tworzenie stron internetowych opartych na WordPress, popularnym systemie zarządzania treścią.
@@ -56,14 +56,14 @@ const MyServicesThumbs = () => {
             </p>
             <CustomButton text="Zobacz więcej" link="/strony-wordpress" />
           </div>
-          <div className={styles.tabContentRight}>
+          <div className={styles.tab_content_right}>
             <StaticImage src="../../images/wordpress.jpg" alt="strony wordpress" />
           </div>
         </div>
       </Tab>
       <Tab eventKey="4" title="Sklepy internetowe">
-        <div className={styles.tabContent}>
-          <div className={styles.tabContentLeft}>
+        <div className={styles.tab_content}>
+          <div className={styles.tab_content_left}>
             <h3>Sklepy internetowe</h3>
             <p>
               Proponuję funkcjonalne i bezpieczne sklepy internetowe oparte na WooCommerce. Moje rozwiązania umożliwiają
@@ -72,7 +72,7 @@ const MyServicesThumbs = () => {
             </p>
             <CustomButton text="Zobacz więcej" link="/sklepy-internetowe" />
           </div>
-          <div className={styles.tabContentRight}>
+          <div className={styles.tab_content_right}>
             <StaticImage src="../../images/sklep.jpg" alt="sklepy internetowe" />
           </div>
         </div>

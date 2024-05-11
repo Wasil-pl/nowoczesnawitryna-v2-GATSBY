@@ -22,7 +22,7 @@ const MyStack = () => {
     'Do tworzenia stron wykorzystuję najnowsze technologie i tworzę strony internetowe na zamówienie we wszystkich głównych systemach CMS i frameworkach.';
 
   return (
-    <section className={styles.MyStack}>
+    <section className={styles.my_stack}>
       <Container>
         <div className={styles.wrapper}>
           <SectionTitle
@@ -34,7 +34,7 @@ const MyStack = () => {
           <div className={styles.stack}>
             {myStack.map((item, index) => (
               <Card key={index} className={styles.card}>
-                <Card.Title className={styles.cardTitle}>{item}</Card.Title>
+                <Card.Title className={styles.card_title}>{item}</Card.Title>
               </Card>
             ))}
           </div>

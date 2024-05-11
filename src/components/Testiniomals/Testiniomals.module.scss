@@ -1,6 +1,6 @@
 @import '../../styles/settings.scss';
 
-.Testiniomals {
+.testiniomals {
   background-image: url('/images/bg-002-free-img.png');
   background-size: cover;
   background-position: center;
@@ -23,12 +23,12 @@
       margin: 10px 0;
       border-top: 2px solid $color-background-lighter;
 
-      .testimonialStars {
+      .testimonial_stars {
         color: $color-primary;
         padding-top: 20px;
       }
 
-      .testimonialText {
+      .testimonial_text {
         color: $color-text-light;
         margin: 20px 0;
 

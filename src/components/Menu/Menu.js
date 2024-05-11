@@ -34,11 +34,11 @@ const Menu = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Nav.Link href="#home">Strona główna</Nav.Link>
+            <Nav.Link href="/">Strona główna</Nav.Link>
             <NavDropdown title="Oferta" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Aplikacje Webowe</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Strony WordPress</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Strony niestandardowe</NavDropdown.Item>
+              <NavDropdown.Item href="/strony-niestandardowe">Strony niestandardowe</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Sklepy www</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#link">Kontakt</Nav.Link>

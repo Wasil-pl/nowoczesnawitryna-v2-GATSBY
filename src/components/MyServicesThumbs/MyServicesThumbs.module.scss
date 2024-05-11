@@ -1,6 +1,6 @@
 @import '../../styles/settings.scss';
 
-.tabswrapper {
+.tabs_wrapper {
   & > li {
     margin-right: 10px;
   }
@@ -18,11 +18,11 @@
   }
 }
 
-.tabContent {
+.tab_content {
   margin-top: 80px;
   display: flex;
 
-  .tabContentLeft {
+  .tab_content_left {
     flex: 60%;
 
     h3 {
@@ -47,7 +47,7 @@
     }
   }
 
-  .tabContentRight {
+  .tab_content_right {
     flex: 40%;
     padding-left: 50px;
 

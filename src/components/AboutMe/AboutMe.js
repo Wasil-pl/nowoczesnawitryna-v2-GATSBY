@@ -6,12 +6,12 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const AboutMe = () => {
   return (
-    <section className={styles.AboutMe}>
+    <section className={styles.about_me}>
       <Container>
         <SectionTitle title="Kilka słów" coloredText=" o mnie" />
 
         <div className={styles.wrapper}>
-          <div className={styles.firstColumn}>
+          <div className={styles.first_column}>
             <StaticImage
               src="../../images/aboutMe.webp"
               alt="Dariusz Wasilewski"
@@ -20,7 +20,7 @@ const AboutMe = () => {
               className={styles.image}
             />
           </div>
-          <div className={styles.secondColumn}>
+          <div className={styles.second_column}>
             <h3>Cześć</h3>
             <p>
               Witaj na mojej stronie! Nazywam się Dariusz Wasilewski i jestem pasjonatem web developmentu z

@@ -3,12 +3,12 @@
 .wrapper {
   margin-top: 100px;
 
-  .tabContent {
+  .tab_content {
     margin-top: 70px;
     display: flex;
     flex-direction: column-reverse;
 
-    .tabContentLeft {
+    .tab_content_left {
       flex: 100%;
 
       h3 {
@@ -33,7 +33,7 @@
       }
     }
 
-    .tabContentRight {
+    .tab_content_right {
       flex: 100%;
       text-align: center;
       margin-bottom: 50px;

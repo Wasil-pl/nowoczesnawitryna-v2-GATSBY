@@ -5,17 +5,17 @@ import CustomButton from '../CustomButton/CustomButton';
 
 const SiteInfo = () => {
   return (
-    <section className={styles.SiteInfo}>
+    <section className={styles.site_info}>
       <Container>
         <div className={styles.wrapper}>
-          <div className={styles.firstColumn}>
+          <div className={styles.first_column}>
             <h3>Dlaczego Nowoczesna Witryna?</h3>
             <h4>Oferuję profesjonalne usługi z zakresu tworzenia stron internetowych.</h4>
             <p>Moje strony są responsywne, funkcjonalne, łatwe w zarządzaniu i zoptymalizowane pod kątem SEO.</p>
             <CustomButton variant="dark" text="skontaktuj się" link="/#kontakt" />
           </div>
-          <div className={styles.secondColumn}>
-            <Card className={`mb-2 ${styles.firstCard}`}>
+          <div className={styles.second_column}>
+            <Card className={`mb-2 ${styles.first_card}`}>
               <Card.Body>
                 <Card.Title>Nie jestem kolejną agencją</Card.Title>
                 <Card.Text>
@@ -24,7 +24,7 @@ const SiteInfo = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card className={styles.secondCard}>
+            <Card className={styles.second_card}>
               <Card.Body>
                 <Card.Title>Co Oferuję?</Card.Title>
                 <Card.Text>

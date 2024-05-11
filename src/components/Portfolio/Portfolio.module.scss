@@ -1,6 +1,6 @@
 @import '../../styles/settings.scss';
 
-.Portfolio {
+.portfolio {
   padding: 150px 0;
 
   .wrapper {
@@ -8,7 +8,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
 
-    .portfolioItem {
+    .portfolio_item {
       flex: 1 1 0;
       max-height: 500px;
       overflow: hidden;
@@ -18,7 +18,7 @@
       }
     }
 
-    .imageBox {
+    .image_box {
       margin: 0 10px;
       border-radius: 20px;
       transition: $transition_0_3;
