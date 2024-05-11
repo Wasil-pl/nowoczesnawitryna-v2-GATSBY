@@ -5,7 +5,8 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import MyServicesThumbs from '../MyServicesThumbs/MyServicesThumbs';
 import MyServicesAccordion from '../MyServicesAccordion/MyServicesAccordion';
 import CustomButton from '../CustomButton/CustomButton';
-import { ArrowRight, QuestionCircle } from 'react-bootstrap-icons';
+import { QuestionCircle } from 'react-bootstrap-icons';
+import Action from '../Action/Action';
 
 const MyServices = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -39,19 +40,7 @@ const MyServices = () => {
           </div>
         </div>
 
-        <div className={styles.action}>
-          <div className={styles.left_side}>
-            <h3>Masz projekt?</h3>
-            <h4>Skontaktuj się ze mna...</h4>
-          </div>
-          <div className={styles.right_side}>
-            <a href="#contact">
-              <ArrowRight />
-              <br />
-              <span className={styles.text}>Nie czekaj, napisz do mnie</span>
-            </a>
-          </div>
-        </div>
+        <Action />
       </Container>
     </section>
   );

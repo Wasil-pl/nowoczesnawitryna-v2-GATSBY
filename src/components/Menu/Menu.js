@@ -1,10 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap';
+import { Container, Navbar } from 'react-bootstrap';
 import * as styles from './Menu.module.scss';
 import './menu.css';
+import MenuDeskopt from './MenuDeskopt';
+import MenuMobile from './MenuMobile';
 
 const Menu = () => {
   const [scrollY, setScrollY] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window === undefined) return;
+    if (window.innerWidth < 1000) {
+      setIsMobile(true);
+    }
+  }, []);
 
   useEffect(() => {
     if (window === undefined) return;
@@ -31,20 +41,9 @@ const Menu = () => {
         <Navbar.Brand href="/">
           <img src="../../images/logo.svg" alt="Logo" width={80} />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav>
-            <Nav.Link href="/">Strona główna</Nav.Link>
-            <NavDropdown title="Oferta" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Aplikacje Webowe</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Strony WordPress</NavDropdown.Item>
-              <NavDropdown.Item href="/strony-niestandardowe">Strony niestandardowe</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Sklepy www</NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#link">Kontakt</Nav.Link>
-            <Nav.Link href="#link">Blog</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+
+        {!isMobile && <MenuDeskopt />}
+        {isMobile && <MenuMobile />}
       </Container>
     </Navbar>
   );

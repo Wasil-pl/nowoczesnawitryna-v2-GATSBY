@@ -1,0 +1,43 @@
+@import '../../styles/settings.scss';
+
+.site_info {
+  .wrapper {
+    display: flex;
+    margin-top: -80px;
+    margin-bottom: 0;
+    z-index: 1;
+    position: relative;
+
+    .first_column {
+      flex: 1;
+      padding: 2rem;
+      background-color: $color-background-primary;
+      border-radius: 20px 0 0 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+
+      h3 {
+        font-weight: $font-weight-bold;
+      }
+    }
+
+    .second_column {
+      flex: 1;
+      padding: 2rem;
+      background-color: $color-background-lighter;
+      border-radius: 0 20px 20px 0;
+      display: flex;
+      flex-direction: column;
+
+      .first_card {
+        text-align: left;
+      }
+
+      .second_card {
+        text-align: right;
+      }
+    }
+  }
+}

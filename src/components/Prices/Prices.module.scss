@@ -1,0 +1,85 @@
+@import '../../styles/settings.scss';
+
+.prices {
+  background-color: $color-background-dark;
+  color: $color-text-light;
+  padding: 150px 0;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 80px;
+
+      .descryption {
+        flex: 2;
+        padding: 20px;
+        margin-right: 40px;
+
+        h3 {
+          font-size: 1.8rem;
+          margin-bottom: 20px;
+          color: $color-text-primary;
+        }
+      }
+
+      .price_box {
+        flex: 1;
+        padding: 20px 40px;
+        background-color: $color-background-light;
+        color: $color-text-dark;
+
+        .price {
+          text-align: center;
+          margin-bottom: 40px;
+
+          h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            font-weight: $font-weight-bold;
+          }
+
+          p {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+          }
+
+          h4 {
+            font-size: 1.5rem;
+
+            span {
+              font-size: 2.2rem;
+              color: $color-text-primary;
+              font-weight: $font-weight-bold;
+            }
+          }
+        }
+
+        .list {
+          margin-bottom: 20px;
+
+          ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+              margin-bottom: 10px;
+
+              svg {
+                margin-right: 10px;
+                font-size: 1.5rem;
+              }
+
+              &:last-child {
+                margin-bottom: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

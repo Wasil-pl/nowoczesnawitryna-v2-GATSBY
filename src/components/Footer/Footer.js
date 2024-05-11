@@ -14,7 +14,7 @@ const Footer = () => {
           </div>
           <div className={styles.second_column}>
             <h3>Kontakt</h3>
-            <a href="tel:+48733542926"> +48 733 542 926</a>
+            <a href="tel:+48733542926">+48733542926</a>
             <a href="mailto:nowoczesnawitryna@gmail.com">nowoczesnawitryna@gmail.com</a>
             <p>Jastrzębie-Zdrój</p>
             <p>ul. Bogoczowiec 4c</p>

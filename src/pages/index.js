@@ -14,9 +14,14 @@ import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 
 const IndexPage = () => {
+  const siteTitle = 'Nowoczesna witryna';
+  const siteDescription =
+    'Dariusz Wasilewski. Tworzę nowoczesne, responsywne strony i sklepy internetowe, oraz aplikacje webowe. Odkryj moje projekty i umiejętności!';
+  const siteUrl = 'https://www.nowoczesnawitryna.pl/';
+
   return (
     <>
-      <RootLayout />
+      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <HeaderHome />
       <SiteInfo />
       <MyServices />

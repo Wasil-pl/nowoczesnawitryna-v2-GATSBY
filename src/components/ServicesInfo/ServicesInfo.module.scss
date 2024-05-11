@@ -1,0 +1,45 @@
+@import '../../styles/settings.scss';
+
+.services_info {
+  background-color: $color-background-lighter;
+  padding: 100px 0;
+  margin-top: 50px;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding-bottom: 50px;
+
+    .card {
+      max-width: 330px;
+
+      img {
+        border: 10px solid $color-background-dark;
+      }
+
+      .card_text {
+        padding: 20px;
+
+        h3 {
+          font-size: 1.3rem;
+          margin: 20px 0;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .down {
+      padding-top: 70px;
+    }
+
+    .up {
+      padding-bottom: 70px;
+    }
+  }
+}

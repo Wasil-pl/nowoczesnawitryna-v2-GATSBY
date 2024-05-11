@@ -27,3 +27,15 @@
     color: $color-text-primary;
   }
 }
+
+.price {
+  font-size: 0.8rem;
+  width: max-content;
+  color: $color-text-dark;
+  border-color: $color-background-dark;
+
+  &:hover {
+    color: $color-text-primary;
+    border-color: $color-background-primary;
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../styles/settings.scss';
+
+.canvas_button {
+  background-color: transparent;
+  border-color: $color-background-lighter;
+  color: $color-text-light;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+
+  &:hover {
+    border-color: $color-primary;
+    color: $color-primary;
+    background-color: transparent;
+  }
+}
