@@ -35,7 +35,7 @@ const Footer = () => {
             <a href="/strony-niestandardowe">Strony niestandardowe</a>
             <a href="/strony-wordpress">Strony Wordpress</a>
             <a href="/sklepy-internetowe">Sklepy internetowe</a>
-            <a href="/aplilacje-webowe">Aplikacje webowe</a>
+            <a href="/aplikacje-webowe">Aplikacje webowe</a>
             <a href="/polityka-prywatnosci">Polityka prywatności</a>
           </div>
         </div>
