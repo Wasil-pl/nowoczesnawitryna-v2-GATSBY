@@ -27,14 +27,11 @@
   border-top: 2px solid #f8b400;
 }
 
-.nav-link.active {
-  color: #f8b400 !important;
-}
-
-.dropdown-item:active {
-  background-color: unset;
-}
-
 .dropdown-item:hover {
   background-color: unset;
+}
+
+.activeMenuItem {
+  color: #f8b400 !important;
+  background-color: unset !important;
 }

@@ -22,7 +22,7 @@ const IndexPage = () => {
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
-      <HeaderHome />
+      <HeaderHome active="home" />
       <SiteInfo />
       <MyServices />
       <AboutMe />

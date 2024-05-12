@@ -21,7 +21,7 @@ const MyServicesThumbs = () => {
               Jeżeli szukasz strony o perfekcyjnym dopasowaniu graficznym (pixel perfect), aplikacji typu single page
               app (SPA) lub innego niestandardowego rozwiązania, to jesteś we właściwym miejscu.
             </p>
-            <CustomButton text="Zobacz więcej" link="/#" />
+            <CustomButton text="Zobacz więcej" link="/strony-niestandardowe" />
           </div>
           <div className={styles.tab_content_right}>
             <StaticImage src="../../images/stronyniestandardowe.jpg" alt="strony niestandardowe" />

@@ -12,7 +12,7 @@ const SiteInfo = () => {
             <h3>Dlaczego Nowoczesna Witryna?</h3>
             <h4>Oferuję profesjonalne usługi z zakresu tworzenia stron internetowych.</h4>
             <p>Moje strony są responsywne, funkcjonalne, łatwe w zarządzaniu i zoptymalizowane pod kątem SEO.</p>
-            <CustomButton variant="dark" text="skontaktuj się" link="/#kontakt" />
+            <CustomButton variant="dark" text="skontaktuj się" link="#kontakt" />
           </div>
           <div className={styles.second_column}>
             <Card className={`mb-2 ${styles.first_card}`}>

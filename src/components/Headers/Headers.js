@@ -2,10 +2,10 @@ import React from 'react';
 import * as styles from './Headers.module.scss';
 import Menu from '../Menu/Menu';
 
-const Headers = ({ title, subtitle }) => {
+const Headers = ({ title, subtitle, active }) => {
   return (
     <header className={styles.header}>
-      <Menu />
+      <Menu active={active} />
 
       <div data-sal="zoom-in" data-sal-delay="300" data-sal-duration="2000" className={`${styles.content} separator`}>
         <h1 className={styles.title}>{title}</h1>

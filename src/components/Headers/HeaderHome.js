@@ -3,7 +3,7 @@ import * as styles from './HeaderHome.module.scss';
 import Menu from '../Menu/Menu';
 import TextScramble from '../../utils/TextScramble';
 
-const HeaderHome = () => {
+const HeaderHome = ({ active }) => {
   let textScramble = 'stron internetowych';
   const subtitleRef = useRef(null);
   const videoRef = useRef(null);
@@ -33,7 +33,7 @@ const HeaderHome = () => {
 
   return (
     <header className={styles.header}>
-      <Menu />
+      <Menu active={active} />
 
       <video ref={videoRef} className={styles.video} autoPlay muted loop>
         <source src="../../images/tlo.mp4" type="video/mp4" />

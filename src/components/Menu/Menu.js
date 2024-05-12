@@ -5,7 +5,7 @@ import './menu.css';
 import MenuDeskopt from './MenuDeskopt';
 import MenuMobile from './MenuMobile';
 
-const Menu = () => {
+const Menu = ({ active }) => {
   const [scrollY, setScrollY] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -42,8 +42,8 @@ const Menu = () => {
           <img src="../../images/logo.svg" alt="Logo" width={80} />
         </Navbar.Brand>
 
-        {!isMobile && <MenuDeskopt />}
-        {isMobile && <MenuMobile />}
+        {!isMobile && <MenuDeskopt active={active} />}
+        {isMobile && <MenuMobile active={active} />}
       </Container>
     </Navbar>
   );

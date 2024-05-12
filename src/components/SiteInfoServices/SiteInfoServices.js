@@ -18,7 +18,7 @@ const SiteInfoServices = ({
           <div className={styles.first_column}>
             <h3>{title_first_column}</h3>
             <p>{descryption_first_column}</p>
-            <CustomButton variant="dark" text="skontaktuj się" link="/#kontakt" />
+            <CustomButton variant="dark" text="skontaktuj się" link="#kontakt" />
           </div>
           <div className={styles.second_column}>
             <Card className={`mb-2 ${styles.first_card}`}>

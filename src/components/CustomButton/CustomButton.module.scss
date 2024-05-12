@@ -28,6 +28,16 @@
   }
 }
 
+.white {
+  border: 1px solid $color-background-dark;
+  color: $color-text-dark;
+
+  &:hover {
+    border: 1px solid $color-text-primary;
+    color: $color-text-primary;
+  }
+}
+
 .price {
   font-size: 0.8rem;
   width: max-content;

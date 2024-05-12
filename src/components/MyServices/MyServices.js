@@ -36,7 +36,7 @@ const MyServices = () => {
               dwoma rozwiązaniami? Zajrzyj do mojego bloga, gdzie znajdziesz odpowiedzi na te pytania. Albo skontaktuj
               się ze mną, a ja pomogę Ci wybrać najlepsze rozwiązanie dla Twojej firmy.
             </p>
-            <CustomButton text="przejdź na mój blog" />
+            <CustomButton text="przejdź na mój blog" link={'/blog'} />
           </div>
         </div>
 

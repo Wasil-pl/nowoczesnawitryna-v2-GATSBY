@@ -10,7 +10,7 @@ const Action = () => {
         <h4>Skontaktuj się ze mna...</h4>
       </div>
       <div className={styles.right_side}>
-        <a href="#contact">
+        <a href="#kontakt">
           <ArrowRight />
           <br />
           <span className={styles.text}>Nie czekaj, napisz do mnie</span>

@@ -23,7 +23,7 @@ const AplikacjeWebowe = () => {
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
-      <Headers title={title} subtitle={subtitle} />
+      <Headers title={title} subtitle={subtitle} active="aplikacje" />
       <SiteInfoServices
         title_first_column={aplikacje_webowe_txt.title_first_column}
         title_first_card={aplikacje_webowe_txt.title_first_card}

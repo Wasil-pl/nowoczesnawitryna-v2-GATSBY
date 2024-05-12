@@ -23,7 +23,7 @@ const SklepyInternetowe = () => {
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
-      <Headers title={title} subtitle={subtitle} />
+      <Headers title={title} subtitle={subtitle} active="sklep" />
       <SiteInfoServices
         title_first_column={sklepy_internetowe_txt.title_first_column}
         title_first_card={sklepy_internetowe_txt.title_first_card}

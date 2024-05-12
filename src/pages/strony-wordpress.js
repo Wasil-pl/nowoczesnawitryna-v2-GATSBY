@@ -23,7 +23,7 @@ const StronyWordpress = () => {
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
-      <Headers title={title} subtitle={subtitle} />
+      <Headers title={title} subtitle={subtitle} active="wordpress" />
       <SiteInfoServices
         title_first_column={strony_wordpress_txt.title_first_column}
         title_first_card={strony_wordpress_txt.title_first_card}
