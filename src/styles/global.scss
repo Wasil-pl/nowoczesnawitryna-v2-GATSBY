@@ -8,6 +8,7 @@
 
 html {
   font-size: 18px;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -18,8 +19,7 @@ body {
   letter-spacing: 0.5px;
   overflow-y: scroll;
   min-height: 100vh;
-
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .color_primary {
@@ -42,4 +42,10 @@ body {
 }
 
 @import './typography.scss';
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
 

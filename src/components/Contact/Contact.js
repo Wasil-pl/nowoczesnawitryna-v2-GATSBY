@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as styles from './Contact.module.scss';
 import SectionTitle from '../SectionTitle/SectionTitle';
-import { Button, Container, Form } from 'react-bootstrap';
+import { Alert, Button, Container, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { Error, errorMessages } from '../../consts/errorMesages';
 import { patterns } from '../../consts/patterns';
 import { EnvelopeFill, TelephoneFill } from 'react-bootstrap-icons';
+import { API_URL } from '../../utils/config';
 
 const Contact = () => {
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+
   const {
     register,
     handleSubmit: validate,
@@ -15,7 +20,22 @@ const Contact = () => {
   } = useForm();
 
   const handleSubmit = (data) => {
-    console.log(data);
+    setLoading(true);
+    fetch(`${API_URL}/email`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    }).then((response) => {
+      if (response.status === 200) {
+        setSuccess(true);
+        setLoading(false);
+      } else {
+        setError(true);
+        setLoading(false);
+      }
+    });
   };
 
   return (
@@ -25,6 +45,16 @@ const Contact = () => {
           <div className={styles.form_wrapper}>
             <h3>Gotowy aby zacząć?</h3>
             <p>Skontaktuj się ze mną już dziś!</p>
+            {loading && <Alert variant="info">Wysyłanie wiadomości...</Alert>}
+            {success && (
+              <Alert variant="success">Wiadomość została wysłana pomyślnie. Odpowiem tak szybko, jak to możliwe.</Alert>
+            )}
+            {error && (
+              <Alert variant="danger">
+                Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie. Albo skontaktuj się ze mną telefonicznie i
+                powiadom mnie o problemie. Z góry dziękuję.
+              </Alert>
+            )}
             <div className={styles.form}>
               <Form onSubmit={validate(handleSubmit)}>
                 <Form.Group className={styles.form_group}>
@@ -124,7 +154,7 @@ const Contact = () => {
             <SectionTitle title="porozmawiajmy" subtitle="Dość o mnie, teraz chcę usłyszeć Twoją historię" />
 
             <div className={styles.info}>
-              <div className={styles.info_item}>
+              <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.info_item}>
                 <a href="tel:+48733542926">
                   <TelephoneFill />
                   <p>Telefon</p>
@@ -132,7 +162,7 @@ const Contact = () => {
                 </a>
               </div>
 
-              <div className={styles.info_item}>
+              <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.info_item}>
                 <a href="mailto:nowoczesnawitryna@gmail.com">
                   <EnvelopeFill />
                   <p>E-mail</p>

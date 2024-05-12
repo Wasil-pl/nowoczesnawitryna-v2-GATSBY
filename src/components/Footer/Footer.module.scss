@@ -88,3 +88,41 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .footer {
+    .container {
+      .wrapper {
+        flex-wrap: wrap;
+
+        .first_column {
+          flex: 100%;
+          margin-bottom: 20px;
+        }
+        .second_column,
+        .third_column {
+          flex: calc(50% - 10px);
+          a {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .footer {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 60px;
+    }
+
+    .container {
+      .copy_right {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -10,11 +10,21 @@ const ServicesInfo = ({ html, wordpress }) => {
     <section className={styles.services_info}>
       <Container>
         <div className={styles.wrapper}>
-          <div className={`${styles.card} ${styles.down}`}>
+          <div
+            data-sal="slide-right"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className={`${styles.card} ${styles.down}`}
+          >
             <SectionTitle title="Mój serwis" subtitle="Jak to wygląda?" />
           </div>
           {html && (
-            <div className={`${styles.card} ${styles.up}`}>
+            <div
+              data-sal="slide-up"
+              data-sal-delay="100"
+              data-sal-duration="1000"
+              className={`${styles.card} ${styles.up}`}
+            >
               <StaticImage src="../../images/kod.webp" alt="kod" width={330} height={440} />
               <div className={styles.card_text}>
                 <h3>Czysty i Estetyczny kod</h3>
@@ -26,7 +36,12 @@ const ServicesInfo = ({ html, wordpress }) => {
             </div>
           )}
           {wordpress && (
-            <div className={`${styles.card} ${styles.up}`}>
+            <div
+              data-sal="slide-up"
+              data-sal-delay="100"
+              data-sal-duration="1000"
+              className={`${styles.card} ${styles.up}`}
+            >
               <StaticImage src="../../images/wordpress.webp" alt="wordpress" width={330} height={440} />
               <div className={styles.card_text}>
                 <h3>CMS</h3>
@@ -38,7 +53,12 @@ const ServicesInfo = ({ html, wordpress }) => {
               </div>
             </div>
           )}
-          <div className={`${styles.card} ${styles.down}`}>
+          <div
+            data-sal="slide-left"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className={`${styles.card} ${styles.down}`}
+          >
             <StaticImage src="../../images/web_design.webp" alt="web_design" width={330} height={440} />
             <div className={styles.card_text}>
               <h3>Nowoczesny Design</h3>
@@ -48,7 +68,12 @@ const ServicesInfo = ({ html, wordpress }) => {
               </p>
             </div>
           </div>
-          <div className={`${styles.card} ${styles.up}`}>
+          <div
+            data-sal="slide-right"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className={`${styles.card} ${styles.up}`}
+          >
             <StaticImage src="../../images/wspolpraca.webp" alt="wspolpraca" width={330} height={440} />
             <div className={styles.card_text}>
               <h3>Wsparcie i Współpraca</h3>
@@ -58,7 +83,12 @@ const ServicesInfo = ({ html, wordpress }) => {
               </p>
             </div>
           </div>
-          <div className={`${styles.card} ${styles.down}`}>
+          <div
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className={`${styles.card} ${styles.down}`}
+          >
             <StaticImage src="../../images/galeria.webp" alt="galeria" width={330} height={440} />
             <div className={styles.card_text}>
               <h3>Grafiki i Zdjęcia</h3>
@@ -68,7 +98,12 @@ const ServicesInfo = ({ html, wordpress }) => {
               </p>
             </div>
           </div>
-          <div className={`${styles.card} ${styles.up}`}>
+          <div
+            data-sal="slide-left"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className={`${styles.card} ${styles.up}`}
+          >
             <StaticImage src="../../images/rwd.webp" alt="rwd" width={330} height={440} />
             <div className={styles.card_text}>
               <h3>Responsywność (RWD)</h3>

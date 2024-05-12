@@ -43,3 +43,32 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .services_info {
+    .wrapper {
+      .card {
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services_info {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+      .card {
+        max-width: 250px;
+      }
+
+      .down,
+      .up {
+        padding: 0;
+      }
+    }
+  }
+}

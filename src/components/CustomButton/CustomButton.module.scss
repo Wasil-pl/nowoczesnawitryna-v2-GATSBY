@@ -49,3 +49,14 @@
     border-color: $color-background-primary;
   }
 }
+
+@media (max-width: 768px) {
+  .button {
+    font-size: 0.8rem;
+    padding: 8px 14px;
+  }
+
+  .price {
+    font-size: 0.6rem;
+  }
+}

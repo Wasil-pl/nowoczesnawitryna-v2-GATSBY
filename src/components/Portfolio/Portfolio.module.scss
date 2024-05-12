@@ -22,10 +22,54 @@
       margin: 0 10px;
       border-radius: 20px;
       transition: $transition_0_3;
+      border: solid 10px $color-background-dark;
 
       &:hover {
         transform: scale(1.05);
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .portfolio {
+    .wrapper {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      row-gap: 30px;
+
+      .portfolio_item {
+        min-width: 300px;
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 100px 0;
+
+    .wrapper {
+      flex-direction: row;
+      align-items: center;
+      column-gap: 20px;
+      row-gap: 50px;
+
+      .portfolio_item {
+        min-width: 100%;
+        margin-bottom: 50px;
+
+        h2 {
+          text-align: center;
+        }
+      }
+
+      .image_box {
+        margin: 0;
+        min-width: 240px;
+        max-height: 400px;
       }
     }
   }

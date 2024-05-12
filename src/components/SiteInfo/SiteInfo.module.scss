@@ -49,3 +49,43 @@
     display: flex;
   }
 }
+
+@media (max-width: 992px) {
+  .site_info {
+    .wrapper {
+      flex-direction: column;
+
+      .first_column {
+        border-radius: 20px 20px 0 0;
+      }
+
+      .second_column {
+        border-radius: 0 0 20px 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .site_info {
+    .wrapper {
+      .first_column {
+        h3 {
+          font-size: 1.5rem;
+        }
+
+        h4 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .banner {
+      font-size: 0.5rem;
+    }
+  }
+}

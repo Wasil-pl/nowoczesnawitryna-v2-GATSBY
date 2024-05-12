@@ -39,3 +39,18 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .testiniomals {
+    background-attachment: scroll;
+
+    .title {
+      justify-content: center;
+    }
+
+    .wrapper {
+      align-items: center;
+      max-width: unset;
+    }
+  }
+}

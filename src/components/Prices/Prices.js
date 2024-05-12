@@ -15,7 +15,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
         <div className={styles.wrapper}>
           {html && (
             <div className={styles.row}>
-              <div className={styles.descryption}>
+              <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.descryption}>
                 <h3>Strona One-Page</h3>
                 <p>
                   OnePage to witryna, na której odwiedzający dowiedzą się wszystkiego o Twojej ofercie bez wchodzenia na
@@ -29,7 +29,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
                   łatwo dostępnej stronie.
                 </p>
               </div>
-              <div className={styles.price_box}>
+              <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.price_box}>
                 <div className={styles.price}>
                   <h3>Strona One-Page</h3>
                   <p>cena od</p>
@@ -74,7 +74,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
 
           {html && (
             <div className={styles.row}>
-              <div className={styles.descryption}>
+              <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.descryption}>
                 <h3>Strona Multi-Page</h3>
                 <p>
                   Moja witryna Multi-Page oferuje kompleksową prezentację Twojej oferty poprzez rozbudowaną strukturę
@@ -88,7 +88,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
                   zróżnicowanych potrzeb użytkowników i pełniejsze przedstawienie Twojej oferty.
                 </p>
               </div>
-              <div className={styles.price_box}>
+              <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.price_box}>
                 <div className={styles.price}>
                   <h3>Strona Multi-Page</h3>
                   <p>cena od</p>
@@ -133,7 +133,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
 
           {aplikacja && (
             <div className={styles.row}>
-              <div className={styles.descryption}>
+              <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.descryption}>
                 <h3>Aplikacja Webowe</h3>
                 <p>
                   Moje aplikacje webowe łączą nowoczesne technologie, interakcję użytkownika i bogate doświadczenie,
@@ -147,7 +147,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
                   technologii, te strony świetnie nadają się do projektów wymagających zaawansowanej funkcjonalności.
                 </p>
               </div>
-              <div className={styles.price_box}>
+              <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.price_box}>
                 <div className={styles.price}>
                   <h3>Aplikacja www</h3>
                   <p>cena od</p>
@@ -192,7 +192,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
 
           {sklep && (
             <div className={styles.row}>
-              <div className={styles.descryption}>
+              <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.descryption}>
                 <h3>Sklep internetowy</h3>
                 <p>
                   Tworzę sklepy internetowe wykorzystując platformę WordPress oraz rozszerzenie WooCommerce, co pozwala
@@ -205,7 +205,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
                   zarządzanie asortymentem i zamówieniami.
                 </p>
               </div>
-              <div className={styles.price_box}>
+              <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.price_box}>
                 <div className={styles.price}>
                   <h3>Sklep www</h3>
                   <p>cena od</p>
@@ -250,7 +250,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
 
           {wordpress && (
             <div className={styles.row}>
-              <div className={styles.descryption}>
+              <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.descryption}>
                 <h3>Strona One-Page</h3>
                 <p>
                   OnePage to witryna, na której odwiedzający dowiedzą się wszystkiego o Twojej ofercie bez wchodzenia na
@@ -264,7 +264,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
                   łatwo dostępnej stronie.
                 </p>
               </div>
-              <div className={styles.price_box}>
+              <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.price_box}>
                 <div className={styles.price}>
                   <h3>Strona One-Page</h3>
                   <p>cena od</p>
@@ -309,7 +309,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
 
           {wordpress && (
             <div className={styles.row}>
-              <div className={styles.descryption}>
+              <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.descryption}>
                 <h3>Strona Multi-Page</h3>
                 <p>
                   Moja witryna Multi-Page oferuje kompleksową prezentację Twojej oferty poprzez rozbudowaną strukturę
@@ -323,7 +323,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
                   zróżnicowanych potrzeb użytkowników i pełniejsze przedstawienie Twojej oferty.
                 </p>
               </div>
-              <div className={styles.price_box}>
+              <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.price_box}>
                 <div className={styles.price}>
                   <h3>Strona Multi-Page</h3>
                   <p>cena od</p>

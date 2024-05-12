@@ -52,3 +52,43 @@
     }
   }
 }
+
+@media (max-width: 880px) {
+  .header {
+    .video {
+      height: 700px;
+    }
+    .content {
+      .title {
+        .title_part {
+          font-size: 0.8rem;
+        }
+
+        .title_name {
+          font-size: 3rem;
+        }
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .header {
+    .content {
+      .title {
+        .title_name {
+          font-size: 2rem;
+        }
+      }
+
+      .subtitle {
+        font-size: 1rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}

@@ -72,3 +72,32 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .action {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left_side {
+    h3 {
+      font-size: 1rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .right_side {
+    a {
+      svg {
+        font-size: 5rem;
+      }
+
+      .text {
+        font-size: 1rem;
+      }
+    }
+  }
+}
