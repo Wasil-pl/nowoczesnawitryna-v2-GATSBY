@@ -1,0 +1,32 @@
+@import '../../styles/settings.scss';
+
+.blog_articles {
+  padding: 100px 0;
+
+  h2 {
+    font-size: 1.8rem;
+    margin: 50px 0 30px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .blog_image {
+    display: flex;
+    flex-direction: row;
+
+    .text {
+      flex: 2;
+    }
+
+    .image {
+      flex: 1;
+    }
+  }
+}

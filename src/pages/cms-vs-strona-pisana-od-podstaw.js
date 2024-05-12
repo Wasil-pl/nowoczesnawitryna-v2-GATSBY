@@ -5,25 +5,25 @@ import '../styles/typography.scss';
 import '../styles/settings.scss';
 import RootLayout from '../components/RootLayout/RootLayout';
 import Headers from '../components/Headers/Headers';
-import ArticleList from '../components/ArticleList/ArticleList';
+import BlogArticleCms from '../components/BlogArticles/BlogArticleCms';
 import Footer from '../components/Footer/Footer';
 
-const Blog = () => {
-  const title = 'blog';
-  const subtitle = 'zapraszam na mój blog';
-  const siteTitle = 'blog - Nowoczesna witryna';
+const BlogCMS = () => {
+  const title = 'Blog';
+  const subtitle = 'Cms vs strona pisana od podstaw';
+  const siteTitle = 'Cms vs strona pisana od podstaw - Nowoczesna witryna';
   const siteDescription =
-    'Odkryj inspirujące artykuły, porady i ciekawostki na temat branży. Mój blog to źródło wiedzy, które pomoże Ci rozwijać się w świecie internetu.';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/blog';
+    'Cms vs strona pisana od podstaw - Ten artykuł pomoże Ci zdecydować, czy lepiej jest postawić na stronę internetową pisana od podstaw, czy na system CMS.';
+  const siteUrl = 'https://www.nowoczesnawitryna.pl/cms-vs-strona-pisana-od-podstaw';
 
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <Headers title={title} subtitle={subtitle} active="blog" />
-      <ArticleList />
+      <BlogArticleCms />
       <Footer />
     </>
   );
 };
 
-export default Blog;
+export default BlogCMS;

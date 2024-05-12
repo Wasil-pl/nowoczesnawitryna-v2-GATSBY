@@ -11,7 +11,7 @@ const AboutMe = () => {
         <SectionTitle title="Kilka słów" coloredText=" o mnie" />
 
         <div className={styles.wrapper}>
-          <div className={styles.first_column}>
+          <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.first_column}>
             <StaticImage
               src="../../images/aboutMe.webp"
               alt="Dariusz Wasilewski"
@@ -20,7 +20,7 @@ const AboutMe = () => {
               className={styles.image}
             />
           </div>
-          <div className={styles.second_column}>
+          <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.second_column}>
             <h3>Cześć</h3>
             <p>
               Witaj na mojej stronie! Nazywam się Dariusz Wasilewski i jestem pasjonatem web developmentu z

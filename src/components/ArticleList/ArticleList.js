@@ -17,7 +17,7 @@ const ArticleList = () => {
                 Jak wybrać najlepszy hosting i domenę dla swojej strony internetowej? Kilka wskazówek, które pomogą Ci
                 podjąć decyzję.
               </Card.Text>
-              <CustomButton variant="white" link="/blog/jak-wybrac-najlepszy-hosting-i-domene" text="Czytaj więcej" />
+              <CustomButton variant="white" link="/jak-wybrac-najlepszy-hosting-i-domene" text="Czytaj więcej" />
             </Card.Body>
           </Card>
           <Card className={styles.card}>
@@ -27,7 +27,7 @@ const ArticleList = () => {
               <Card.Text>
                 CMS vs strona kodowana od podstaw - co wybrać? Porównanie zalet i wad obu rozwiązań.
               </Card.Text>
-              <CustomButton variant="white" link="/blog/cms-vs-strona-pisana-od-podstaw" text="Czytaj więcej" />
+              <CustomButton variant="white" link="/cms-vs-strona-pisana-od-podstaw" text="Czytaj więcej" />
             </Card.Body>
           </Card>
         </div>
