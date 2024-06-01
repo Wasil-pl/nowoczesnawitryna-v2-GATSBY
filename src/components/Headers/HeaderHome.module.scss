@@ -19,6 +19,8 @@
     text-align: center;
     color: $color-text-light;
     z-index: 1;
+    display: flex;
+    flex-direction: column-reverse;
 
     .title {
       .title_part {
@@ -45,10 +47,11 @@
       margin-top: 2rem;
       line-height: 3rem;
       letter-spacing: 0.2rem;
+    }
 
-      .text_variable {
-        font-weight: $font-weight-bold;
-      }
+    .text_variable {
+      font-weight: $font-weight-bold;
+      line-height: 90px;
     }
   }
 }
@@ -71,6 +74,10 @@
 
       .subtitle {
         font-size: 1.2rem;
+      }
+
+      .text_variable {
+        line-height: 60px;
       }
     }
   }

@@ -1,8 +1,7 @@
 import React from 'react';
 import * as styles from './ArticleList.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Card, Container } from 'react-bootstrap';
-import CustomButton from '../CustomButton/CustomButton';
+import { Button, Card, Container } from 'react-bootstrap';
 
 const ArticleList = () => {
   return (
@@ -17,7 +16,9 @@ const ArticleList = () => {
                 Jak wybrać najlepszy hosting i domenę dla swojej strony internetowej? Kilka wskazówek, które pomogą Ci
                 podjąć decyzję.
               </Card.Text>
-              <CustomButton variant="white" link="/jak-wybrac-najlepszy-hosting-i-domene" text="Czytaj więcej" />
+              <Button variant="outline-warning" href="/jak-wybrac-najlepszy-hosting-i-domene" text="Czytaj więcej">
+                Czytaj Więcej
+              </Button>
             </Card.Body>
           </Card>
           <Card className={styles.card}>
@@ -27,7 +28,9 @@ const ArticleList = () => {
               <Card.Text>
                 CMS vs strona kodowana od podstaw - co wybrać? Porównanie zalet i wad obu rozwiązań.
               </Card.Text>
-              <CustomButton variant="white" link="/cms-vs-strona-pisana-od-podstaw" text="Czytaj więcej" />
+              <Button variant="outline-warning" href="/cms-vs-strona-pisana-od-podstaw">
+                Czytaj Więcej
+              </Button>
             </Card.Body>
           </Card>
         </div>

@@ -8,7 +8,7 @@ const Portfolio = () => {
   return (
     <section className={styles.portfolio}>
       <Container>
-        <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" className={styles.wrapper}>
+        <div className={styles.wrapper}>
           <div className={styles.portfolio_item}>
             <SectionTitle title="Moje ostatnie" coloredText=" projekty" />
           </div>

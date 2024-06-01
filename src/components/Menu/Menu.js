@@ -8,11 +8,15 @@ import MenuMobile from './MenuMobile';
 const Menu = ({ active }) => {
   const [scrollY, setScrollY] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     if (window === undefined) return;
     if (window.innerWidth < 1000) {
       setIsMobile(true);
+    }
+    if (window.innerWidth >= 1000) {
+      setIsDesktop(true);
     }
   }, []);
 
@@ -42,7 +46,7 @@ const Menu = ({ active }) => {
           <img src="../../images/logo.svg" alt="Logo" width={80} />
         </Navbar.Brand>
 
-        {!isMobile && <MenuDeskopt active={active} />}
+        {isDesktop && <MenuDeskopt active={active} />}
         {isMobile && <MenuMobile active={active} />}
       </Container>
     </Navbar>

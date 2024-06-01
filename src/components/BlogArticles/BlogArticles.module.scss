@@ -30,3 +30,19 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .blog_articles {
+    .blog_image {
+      flex-direction: column;
+
+      .text {
+        margin-bottom: 20px;
+      }
+
+      .image {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

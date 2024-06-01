@@ -4,9 +4,9 @@ import Menu from '../Menu/Menu';
 import TextScramble from '../../utils/TextScramble';
 
 const HeaderHome = ({ active }) => {
-  let textScramble = 'stron internetowych';
+  let textScramble = '';
   const subtitleRef = useRef(null);
-  const videoRef = useRef(null);
+  const vidRef = useRef();
 
   useEffect(() => {
     if (window === undefined) return;
@@ -26,31 +26,33 @@ const HeaderHome = ({ active }) => {
   }, []);
 
   useEffect(() => {
-    if (window === undefined) return;
-    const video = videoRef.current;
-    video.play();
+    vidRef.current.play();
   }, []);
 
   return (
     <header className={styles.header}>
       <Menu active={active} />
 
-      <video ref={videoRef} className={styles.video} autoPlay muted loop>
+      <video ref={vidRef} className={styles.video} autoPlay playsInline muted loop>
         <source src="../../images/tlo.mp4" type="video/mp4" />
       </video>
 
       <div data-sal="zoom-in" data-sal-delay="300" data-sal-duration="2000" className={styles.content}>
-        <h1 className={styles.title}>
+        <h1>
+          <span className={styles.subtitle}>i specjalizuję się w tworzeniu</span>
+          <br />
+          <span className={`color_primary ${styles.text_variable}`} ref={subtitleRef}>
+            stron internetowych
+            {textScramble}
+          </span>
+        </h1>
+        <h2 className={styles.title}>
           <span className={`${styles.title_part} separator`}>Cześć, nazywam się</span>
           <br />
           <span className={styles.title_name}>
             <span className={`color_primary ${styles.first_letter}`}>D</span>ariusz
             <span className={`color_primary ${styles.first_letter}`}> W</span>asilewski
           </span>
-        </h1>
-        <h2 className={styles.subtitle}>i specjalizuję się w tworzeniu</h2>
-        <h2 className={`color_primary ${styles.text_variable}`} ref={subtitleRef}>
-          {textScramble}
         </h2>
       </div>
     </header>

@@ -8,6 +8,8 @@ module.exports = {
   },
 
   plugins: [
+    `gatsby-plugin-sitemap`,
+    'gatsby-plugin-robots-txt',
     'gatsby-plugin-sass',
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',
@@ -64,6 +66,13 @@ module.exports = {
         minifyJS: true,
         minifyHTML: true,
         removeComments: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-K29L5GHK',
+        includeInDevelopment: false,
       },
     },
   ],

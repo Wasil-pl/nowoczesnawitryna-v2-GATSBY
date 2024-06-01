@@ -10,7 +10,7 @@ const BlogArticleCms = () => {
         <h2>CMS vs strona pisana od podstaw – co wybrać do tworzenia stron internetowych?</h2>
         <p>
           Jeśli chcesz stworzyć własną stronę internetową, musisz podjąć ważną decyzję: czy użyć gotowego systemu
-          zarządzania treścią (CMS) czy napisać stronę od podstaw, używając HTML, CSS oraz Javy Script. Oba rozwiązania
+          zarządzania treścią CMS czy napisać stronę od podstaw, używając HTML, CSS oraz Javy Script. Oba rozwiązania
           mają swoje zalety i wady, które warto poznać, zanim zdecydujesz się na jedno z nich. W tym artykule
           przedstawię Ci główne różnice między CMS a ręcznym kodowaniem, oraz podpowiem, co lepiej wybrać do tworzenia
           stron internetowych.
@@ -32,42 +32,42 @@ const BlogArticleCms = () => {
         <h3>Zalety CMS:</h3>
         <ul>
           <li>
-            <strong>Łatwość obsługi:</strong>&nbsp;nie musisz znać języków programowania ani HTML, CSS czy JavaScript,
-            aby stworzyć atrakcyjną i funkcjonalną stronę internetową. Wystarczy wybrać szablon, dodać treść i elementy
+            <strong>Łatwość obsługi:</strong>nie musisz znać języków programowania ani HTML, CSS czy JavaScript, aby
+            stworzyć atrakcyjną i funkcjonalną stronę internetową. Wystarczy wybrać szablon, dodać treść i elementy
             graficzne, a CMS zrobi resztę za Ciebie.
           </li>
           <li>
-            <strong>Szybkość:</strong>&nbsp;dzięki gotowym szablonom i wtyczkom, stworzenie strony internetowej w CMS
-            zajmuje znacznie mniej czasu niż pisanie kodu od podstaw.
+            <strong>Szybkość:</strong> dzięki gotowym szablonom i wtyczkom, stworzenie strony internetowej w CMS zajmuje
+            znacznie mniej czasu niż pisanie kodu od podstaw.
           </li>
           <li>
-            <strong>Niski koszt:</strong>&nbsp;większość CMS jest darmowa, a za dodatkowe funkcje i usługi płacisz tylko
+            <strong>Niski koszt:</strong> większość CMS jest darmowa, a za dodatkowe funkcje i usługi płacisz tylko
             wtedy, gdy ich potrzebujesz.
           </li>
           <li>
-            <strong>Łatwa aktualizacja:</strong>&nbsp;Możesz w prosty sposób aktualizować treści na stronie, dodawać
-            nowe funkcje i modyfikować wygląd strony, bez konieczności ingerencji w kod.
+            <strong>Łatwa aktualizacja:</strong> Możesz w prosty sposób aktualizować treści na stronie, dodawać nowe
+            funkcje i modyfikować wygląd strony, bez konieczności ingerencji w kod.
           </li>
           <li>
-            <strong>Wsparcie społeczności:</strong>&nbsp;CMS-y cieszą się dużą popularnością, dlatego łatwo znaleźć
-            pomoc w internecie, w postaci poradników, kursów, forów dyskusyjnych i grup wsparcia.
+            <strong>Wsparcie społeczności:</strong> CMS-y cieszą się dużą popularnością, dlatego łatwo znaleźć pomoc w
+            internecie, w postaci poradników, kursów, forów dyskusyjnych i grup wsparcia.
           </li>
         </ul>
         <h3>Wady CMS:</h3>
         <ul>
           <li>
-            <strong>Ograniczona personalizacja:</strong>&nbsp;choć CMS-y oferują wiele gotowych szablonów i wtyczek, to
+            <strong>Ograniczona personalizacja:</strong> choć CMS-y oferują wiele gotowych szablonów i wtyczek, to
             jednak trudno jest stworzyć stronę internetową, która w pełni odpowiada Twoim indywidualnym potrzebom i
             oczekiwaniom. Wiele stron stworzonych w CMS-ach wygląda podobnie, co może zniechęcić odwiedzających. Jeśli
             chcesz mieć unikalną stronę, CMS może okazać się niewystarczający.
           </li>
           <li>
-            <strong>Wydajność:</strong>&nbsp;strony internetowe stworzone w CMS-ach mogą działać wolniej, zwłaszcza
-            jeśli są zbyt rozbudowane i zawierają wiele wtyczek i dodatków. Wolniejsza strona internetowa oznacza gorsze
+            <strong>Wydajność:</strong> strony internetowe stworzone w CMS-ach mogą działać wolniej, zwłaszcza jeśli są
+            zbyt rozbudowane i zawierają wiele wtyczek i dodatków. Wolniejsza strona internetowa oznacza gorsze
             doświadczenia użytkowników i niższe pozycje w wynikach wyszukiwania.
           </li>
           <li>
-            <strong>Bezpieczeństwo:</strong>&nbsp;CMS-y są popularnym celem ataków hakerskich, dlatego trzeba regularnie
+            <strong>Bezpieczeństwo:</strong> CMS-y są popularnym celem ataków hakerskich, dlatego trzeba regularnie
             aktualizować oprogramowanie i dbać o bezpieczeństwo strony. W przeciwnym razie, strona może zostać
             zhakowana, a dane użytkowników skradzione.
           </li>
@@ -89,21 +89,21 @@ const BlogArticleCms = () => {
         <h3>Zalety tego rozwiązania:</h3>
         <ul>
           <li>
-            <strong>Unikalność:</strong>&nbsp;strona napisana od podstaw jest unikalna, niepowtarzalna i w pełni
-            odpowiada Twoim indywidualnym potrzebom i oczekiwaniom. Możesz stworzyć stronę, która wyróżnia się na tle
-            konkurencji i przyciąga uwagę odwiedzających.
+            <strong>Unikalność:</strong> strona napisana od podstaw jest unikalna, niepowtarzalna i w pełni odpowiada
+            Twoim indywidualnym potrzebom i oczekiwaniom. Możesz stworzyć stronę, która wyróżnia się na tle konkurencji
+            i przyciąga uwagę odwiedzających.
           </li>
           <li>
-            <strong>Wydajność:</strong>&nbsp;rozwiązanie to zazwyczaj jest szybsze i bardziej wydajne, co przekłada się
-            na lepsze doświadczenia użytkowników i wyższe pozycje w wynikach wyszukiwania.
+            <strong>Wydajność:</strong> rozwiązanie to zazwyczaj jest szybsze i bardziej wydajne, co przekłada się na
+            lepsze doświadczenia użytkowników i wyższe pozycje w wynikach wyszukiwania.
           </li>
           <li>
-            <strong>Bezpieczeństwo:</strong>&nbsp;takie strony są mniej podatne na ataki hakerskie, ponieważ nie
-            korzystają z gotowych szablonów i wtyczek, które mogą zawierać luki bezpieczeństwa.
+            <strong>Bezpieczeństwo:</strong> takie strony są mniej podatne na ataki hakerskie, ponieważ nie korzystają z
+            gotowych szablonów i wtyczek, które mogą zawierać luki bezpieczeństwa.
           </li>
           <li>
-            <strong>Skalowalność:</strong>&nbsp;strony napisane ręcznie od zera są łatwiejsze w rozbudowie i
-            modyfikacji, co pozwala na dostosowanie ich do zmieniających się potrzeb i oczekiwań użytkowników.
+            <strong>Skalowalność:</strong> strony napisane ręcznie od zera są łatwiejsze w rozbudowie i modyfikacji, co
+            pozwala na dostosowanie ich do zmieniających się potrzeb i oczekiwań użytkowników.
           </li>
         </ul>
         <h3>Wady tego rozwiązania:</h3>
@@ -113,13 +113,13 @@ const BlogArticleCms = () => {
             korzystanie z gotowych szablonów i wtyczek. Wymaga to zatrudnienia doświadczonego programisty
           </li>
           <li>
-            <strong>Trudność:</strong>&nbsp;aby stworzyć taka stronę, trzeba znać języki programowania, co nie jest
-            łatwe ani szybkie do opanowania. Wymaga to czasu, cierpliwości i doświadczenia. Dlatego koszty takich stron
-            są zazwyczaj wyższe.
+            <strong>Trudność:</strong> aby stworzyć taka stronę, trzeba znać języki programowania, co nie jest łatwe ani
+            szybkie do opanowania. Wymaga to czasu, cierpliwości i doświadczenia. Dlatego koszty takich stron są
+            zazwyczaj wyższe.
           </li>
           <li>
-            <strong>Czas:</strong>&nbsp;stworzenie strony od zera zajmuje znacznie więcej czasu niż korzystanie z
-            systemów zarządzania treścią. Wymaga to przemyślanego planu, analizy, projektowania, kodowania, testowania i
+            <strong>Czas:</strong> stworzenie strony od zera zajmuje znacznie więcej czasu niż korzystanie z systemów
+            zarządzania treścią. Wymaga to przemyślanego planu, analizy, projektowania, kodowania, testowania i
             wdrażania.
           </li>
         </ul>

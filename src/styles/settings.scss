@@ -22,17 +22,35 @@
 }
 
 @font-face {
-  font-family: 'Merriweather';
+  font-family: 'Montserrat';
   font-style: normal;
   font-display: swap;
-  src: url('/fonts/merriweather-regular.woff2') format('woff2');
+  font-weight: 400;
+  src: url('/fonts/Montserrat-Regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Merriweather';
+  font-family: 'Montserrat';
   font-style: normal;
   font-display: swap;
-  src: url('/fonts/merriweather-bold.woff2') format('woff2');
+  font-weight: 700;
+  src: url('/fonts/Montserrat-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url('/fonts/Montserrat-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src: url('/fonts/Montserrat-Black.woff2') format('woff2');
 }
 
 $color-text-dark: #141414;
@@ -49,7 +67,7 @@ $color-background-dark: #191d28;
 $color-background-primary: #ffbf00;
 
 $font-header: 'Raleway', sans-serif;
-$font-body: 'Merriweather', serif;
+$font-body: 'Montserrat', serif;
 
 $font-weight-normal: 400;
 $font-weight-bold: 700;

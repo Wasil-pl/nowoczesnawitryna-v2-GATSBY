@@ -9,7 +9,7 @@ const RootLayout = ({ title, url, description }) => {
           lang: 'pl',
         }}
       >
-        <meta name="robots" content="index, nofollow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <title>{title}</title>
         <meta
           name="description"
