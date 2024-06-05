@@ -11,6 +11,7 @@ import Prices from '../components/Prices/Prices';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import RootLayout from '../components/RootLayout/RootLayout';
+import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 
 const StronyNiestandardowe = () => {
   const title = 'Strony niestandardowe';
@@ -24,6 +25,7 @@ const StronyNiestandardowe = () => {
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <Headers title={title} subtitle={subtitle} active="html" />
+      <ScroolUpButton />
       <SiteInfoServices
         title_first_column={strony_niestandardowe_txt.title_first_column}
         title_first_card={strony_niestandardowe_txt.title_first_card}

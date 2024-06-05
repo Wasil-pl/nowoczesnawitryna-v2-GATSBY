@@ -7,6 +7,7 @@ import RootLayout from '../components/RootLayout/RootLayout';
 import Headers from '../components/Headers/Headers';
 import BlogArticleCms from '../components/BlogArticles/BlogArticleCms';
 import Footer from '../components/Footer/Footer';
+import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 
 const BlogCMS = () => {
   const title = 'Blog';
@@ -20,6 +21,7 @@ const BlogCMS = () => {
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <Headers title={title} subtitle={subtitle} active="blog" />
+      <ScroolUpButton />
       <BlogArticleCms />
       <Footer />
     </>

@@ -12,6 +12,7 @@ import Portfolio from '../components/Portfolio/Portfolio';
 import Testiniomals from '../components/Testiniomals/Testiniomals';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
+import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 
 const IndexPage = () => {
   const siteTitle = 'Nowoczesna witryna';
@@ -23,6 +24,7 @@ const IndexPage = () => {
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <HeaderHome active="home" />
+      <ScroolUpButton />
       <SiteInfo />
       <MyServices />
       <AboutMe />

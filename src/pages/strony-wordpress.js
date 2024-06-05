@@ -11,6 +11,7 @@ import Prices from '../components/Prices/Prices';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import RootLayout from '../components/RootLayout/RootLayout';
+import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 
 const StronyWordpress = () => {
   const title = 'Strony WordPress';
@@ -24,6 +25,7 @@ const StronyWordpress = () => {
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <Headers title={title} subtitle={subtitle} active="wordpress" />
+      <ScroolUpButton />
       <SiteInfoServices
         title_first_column={strony_wordpress_txt.title_first_column}
         title_first_card={strony_wordpress_txt.title_first_card}

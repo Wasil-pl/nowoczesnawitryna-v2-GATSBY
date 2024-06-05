@@ -17,7 +17,7 @@ export const strony_wordpress_txt = {
   title_first_card: 'Design i funkcjonalność na najwyższym poziomie',
   title_second_card: 'Zalety korzystania z WordPressa',
   descryption_first_column:
-    'WOferuję tworzenie stron internetowych przy użyciu platformy WordPress, która pozwala na łatwe zarządzanie treścią oraz rozbudowane możliwości dostosowania witryny do Twoich potrzeb.',
+    'Oferuję tworzenie stron internetowych przy użyciu platformy WordPress, która pozwala na łatwe zarządzanie treścią oraz rozbudowane możliwości dostosowania witryny do Twoich potrzeb.',
   card_descryption:
     'Podczas projektowania strony nie korzystam z gotowych motywów, tylko tworzę unikalne i funkcjonalne witryny, które przyciągają uwagę klientów.',
   second_card_descryption:

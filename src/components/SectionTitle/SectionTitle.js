@@ -6,7 +6,7 @@ const SectionTitle = ({ title, coloredText, subtitle, variant = '' }) => {
     <div className={`separator ${styles.section_title}`}>
       <h2 className={styles[variant]}>
         {title}
-        {coloredText && <span className={`color_primary ${styles.lined_text}`}>{coloredText}</span>}
+        {coloredText && <span className={`color_primary`}>{coloredText}</span>}
       </h2>
       {subtitle && <p className={styles[variant]}>{subtitle}</p>}
     </div>
