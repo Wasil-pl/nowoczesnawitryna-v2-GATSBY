@@ -12,6 +12,7 @@ import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import RootLayout from '../components/RootLayout/RootLayout';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
+import ScroolToPriceButton from '../components/ScroolToPriceButton/ScroolToPriceButton';
 
 const SklepyInternetowe = () => {
   const title = 'Sklepy internetowe';
@@ -19,12 +20,13 @@ const SklepyInternetowe = () => {
   const siteTitle = 'sklepy internetowe - Nowoczesna witryna';
   const siteDescription =
     'Nowoczesna witryna projektuje strony e-commerce, które nie tylko zachwycają designem, ale także zapewniają skuteczną funkcjonalność.';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/sklepy-internetowe';
+  const siteUrl = 'https://www.nowoczesnawitryna.pl/sklepy-internetowe/';
 
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <Headers title={title} subtitle={subtitle} active="sklep" />
+      <ScroolToPriceButton />
       <ScroolUpButton />
       <SiteInfoServices
         title_first_column={sklepy_internetowe_txt.title_first_column}

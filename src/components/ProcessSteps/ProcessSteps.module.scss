@@ -1,0 +1,92 @@
+@import '../../styles/settings.scss';
+
+.process_steps_container {
+  margin: 0 auto;
+  background-color: $color-background-lighter;
+  margin-top: 100px;
+  padding: 100px 0;
+
+  .process_steps {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+
+    .step {
+      margin: 50px 50px;
+      display: flex;
+      flex-direction: row;
+
+      .step_empty {
+        flex: 1;
+      }
+
+      .step_content {
+        flex: 3;
+        padding: 20px;
+
+        h3 {
+          font-size: 1.7rem;
+          font-weight: $font-weight-bold;
+          margin-bottom: 20px;
+        }
+
+        .step_brief {
+          color: #002dae;
+        }
+
+        .step_info {
+          color: #9bc900;
+        }
+
+        .step_projektowanie {
+          color: #ffae0a;
+        }
+
+        .step_kodowanie {
+          color: #00e4b4;
+        }
+
+        .step_testowanie {
+          color: #21c4ff;
+        }
+
+        .step_wdrozenie {
+          color: #ff671a;
+        }
+      }
+
+      .step_number {
+        flex: 1;
+        text-align: center;
+        margin: auto;
+      }
+
+      .step_number_left {
+        flex: 1;
+        text-align: center;
+        margin: auto;
+      }
+
+      .step_number_last {
+        flex: 1;
+        text-align: center;
+        margin: auto;
+      }
+    }
+
+    .right {
+      flex-direction: row-reverse;
+
+      .step_content {
+        text-align: left;
+      }
+    }
+
+    .left {
+      .step_content {
+        text-align: right;
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
   overflow-x: hidden !important;
 }
 
@@ -20,6 +20,7 @@ body {
   overflow-y: scroll;
   min-height: 100vh;
   overflow-x: hidden !important;
+  overflow: auto;
   font-family: $font-body;
 }
 

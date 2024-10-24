@@ -56,11 +56,17 @@
 
 @media (max-width: 768px) {
   .my_stack {
-    .wrapper .stack .card {
-      padding: 15px 20px;
+    .wrapper {
+      .wrapper_title {
+        padding: 0px 20px;
+      }
+      padding: 70px 0px;
+      .stack .card {
+        padding: 15px 20px;
 
-      .card_title {
-        font-size: 1.2rem;
+        .card_title {
+          font-size: 1.2rem;
+        }
       }
     }
   }

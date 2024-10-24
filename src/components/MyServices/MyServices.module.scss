@@ -2,12 +2,24 @@
 
 .myServices {
   background-color: $color-background-dark;
-  margin: 150px 0;
+  margin: 150px 0 0;
   padding: 100px 0 10px;
 
   .info {
     display: flex;
-    margin: 120px 0 100px;
+    margin: 140px 0 100px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 90%;
+      top: -1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 1px;
+      background-color: $color-primary;
+    }
 
     .icon {
       font-size: 2.5rem;

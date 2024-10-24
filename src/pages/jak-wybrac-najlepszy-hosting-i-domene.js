@@ -15,7 +15,7 @@ const BlogHosting = () => {
   const siteTitle = 'Jak wybrać najlepszy hosting i domenę - Nowoczesna witryna';
   const siteDescription =
     'Jak wybrać najlepszy hosting i domenę - artykuł ten pomoże Ci w dokonaniu prawidłowego wyboru, bo wbrew pozorom są to bardzo ważne kwestie...';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/jak-wybrac-najlepszy-hosting-i-domene';
+  const siteUrl = 'https://www.nowoczesnawitryna.pl/jak-wybrac-najlepszy-hosting-i-domene/';
 
   return (
     <>

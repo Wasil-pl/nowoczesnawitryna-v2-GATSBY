@@ -12,6 +12,7 @@ import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import RootLayout from '../components/RootLayout/RootLayout';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
+import ScroolToPriceButton from '../components/ScroolToPriceButton/ScroolToPriceButton';
 
 const StronyNiestandardowe = () => {
   const title = 'Strony niestandardowe';
@@ -19,13 +20,14 @@ const StronyNiestandardowe = () => {
   const siteTitle = 'strony niestandardowe - Nowoczesna witryna';
   const siteDescription =
     'Tworzę niestandardowe strony internetowe oparte na czystym HTML, które spełniają Twoje unikalne wymagania. Nowoczesna witryna będzie w tym pomocna.';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/strony-niestandardowe';
+  const siteUrl = 'https://www.nowoczesnawitryna.pl/strony-niestandardowe/';
 
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <Headers title={title} subtitle={subtitle} active="html" />
       <ScroolUpButton />
+      <ScroolToPriceButton />
       <SiteInfoServices
         title_first_column={strony_niestandardowe_txt.title_first_column}
         title_first_card={strony_niestandardowe_txt.title_first_card}

@@ -14,7 +14,7 @@ const PolitykaPrywatnosci = () => {
   const siteTitle = 'polityka prywatności - Nowoczesna witryna';
   const siteDescription =
     'Niniejsza strona korzysta z plików cookie. Wykorzystujemy pliki cookie do spersonalizowania treści i reklam, aby oferować funkcje społecznościowe i analizować';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/polityka-prywatnosci';
+  const siteUrl = 'https://www.nowoczesnawitryna.pl/polityka-prywatnosci/';
 
   return (
     <>

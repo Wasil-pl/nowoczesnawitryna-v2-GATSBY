@@ -8,7 +8,7 @@ import CustomButton from '../CustomButton/CustomButton';
 
 const Prices = ({ html, wordpress, sklep, aplikacja }) => {
   return (
-    <section className={styles.prices}>
+    <section id="price" className={styles.prices}>
       <Container>
         <SectionTitle coloredText="Cennik" subtitle="Zobacz i wybierz najlepszą ofertę dla siebie" variant="white" />
 

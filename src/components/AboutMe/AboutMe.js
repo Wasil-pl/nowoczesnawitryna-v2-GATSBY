@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const AboutMe = () => {
   return (
-    <section className={styles.about_me}>
+    <section id="omnie" className={styles.about_me}>
       <Container>
         <SectionTitle title="Kilka słów" coloredText=" o mnie" />
 
@@ -23,10 +23,14 @@ const AboutMe = () => {
           <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.second_column}>
             <h3>Cześć</h3>
             <p>
-              Witaj na mojej stronie! Nazywam się Dariusz Wasilewski i jestem pasjonatem web developmentu z
-              Jastrzębia-Zdroju. Od zawsze interesowały mnie technologie internetowe i możliwości, jakie dają. Moja
-              przygoda z kodowaniem rozpoczęła się od fascynacji HTML i CSS, a potem poszła w górę. Dzięki temu,
-              nauczyłem się tworzyć responsywne i interaktywne strony internetowe, które spełniają najwyższe standardy.
+              Cześć! Nazywam się Dariusz Wasilewski i jestem pasjonatem <em>tworzenia stron internetowych</em> z
+              Jastrzębia-Zdroju. Moja fascynacja technologiami internetowymi zaczęła się już dawno temu i szybko
+              przekształciła się w pełnowymiarową karierę jako <em>web developer</em>. Od pierwszych kroków w HTML i
+              CSS, przez zaawansowane technologie, nauczyłem się tworzyć nowoczesne, responsywne i interaktywne{' '}
+              <em>strony internetowe</em>, które spełniają najwyższe standardy zarówno pod względem designu, jak i
+              funkcjonalności. Moim celem jest tworzenie stron internetowych, które nie tylko dobrze wyglądają, ale
+              również są intuicyjne w obsłudze, szybkie i zoptymalizowane pod kątem SEO. Każdy projekt traktuję
+              indywidualnie, dostosowując rozwiązania do potrzeb i oczekiwań moich klientów.
             </p>
           </div>
         </div>

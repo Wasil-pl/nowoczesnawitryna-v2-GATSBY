@@ -15,7 +15,7 @@ const Blog = () => {
   const siteTitle = 'blog - Nowoczesna witryna';
   const siteDescription =
     'Odkryj inspirujące artykuły, porady i ciekawostki na temat branży. Mój blog to źródło wiedzy, które pomoże Ci rozwijać się w świecie internetu.';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/blog';
+  const siteUrl = 'https://www.nowoczesnawitryna.pl/blog/';
 
   return (
     <>

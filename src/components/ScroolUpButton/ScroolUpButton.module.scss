@@ -2,8 +2,8 @@
 
 .scroll_up_button {
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 15px;
+  right: 15px;
   border: 0;
   background-color: unset;
   z-index: 1000;
@@ -20,12 +20,5 @@
     &:hover {
       transform: scale(1.1);
     }
-  }
-}
-
-@media (max-width: 768px) {
-  .scroll_up_button svg {
-    width: 40px;
-    height: 40px;
   }
 }

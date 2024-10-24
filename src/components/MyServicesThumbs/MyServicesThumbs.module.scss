@@ -1,26 +1,37 @@
 @import '../../styles/settings.scss';
 
+.thums_container {
+  display: flex;
+}
+
 .tabs_wrapper {
+  margin: 50px 50px 0 0;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  flex: 1;
+
   & > li {
-    margin-right: 10px;
+    margin-bottom: 20px;
   }
 
   button {
     background-color: $color-background-light;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     color: $color-text-dark;
     height: 100%;
     font-size: 1.1rem;
     font-weight: $font-weight-bold;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 15px 20px;
   }
 }
 
 .tab_content {
-  margin-top: 80px;
+  margin-top: 50px;
   display: flex;
+  padding-left: 20px;
 
   .tab_content_left {
     flex: 60%;
@@ -54,6 +65,17 @@
     img {
       width: 100%;
       border-radius: 20px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .tab_content {
+    flex-direction: column-reverse;
+
+    .tab_content_right {
+      text-align: center;
+      margin-bottom: 20px;
     }
   }
 }

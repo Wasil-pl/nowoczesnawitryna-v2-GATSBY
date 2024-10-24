@@ -19,11 +19,15 @@
   width: 0;
   height: 0;
   z-index: 1;
-  border: 11px solid transparent;
-  bottom: -11px;
-  border-top-color: #ffbf00;
-  border-top-style: solid;
-  border-bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  border: 16px solid transparent;
+  left: 99%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left-color: #ffbf00; /* Kolor dla lewej strony (strzałka skierowana w prawo) */
+  border-left-style: solid;
+  border-right: 0; /* Usunięcie prawej krawędzi */
+}
+
+.tab-content {
+  flex: 3;
 }

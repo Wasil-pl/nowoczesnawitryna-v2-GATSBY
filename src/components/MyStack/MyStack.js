@@ -8,11 +8,14 @@ const MyStack = () => {
     'HTML5',
     'Sass',
     'JavaScript',
+    'TypeScript',
     'React',
     'Gatsby',
     'Bootstrap',
     'Node.js',
+    'NestJS',
     'MySQL',
+    'MongoDB',
     'Wordpress',
     'Woocommerce',
     'Photoshop',
@@ -25,12 +28,14 @@ const MyStack = () => {
     <section className={styles.my_stack}>
       <Container>
         <div className={styles.wrapper}>
-          <SectionTitle
-            title="Technologie, których używam"
-            coloredText=" w pracy"
-            subtitle={subtitle}
-            variant="white"
-          />
+          <div className={styles.wrapper_title}>
+            <SectionTitle
+              title="Technologie, których używam"
+              coloredText=" w pracy"
+              subtitle={subtitle}
+              variant="white"
+            />
+          </div>
           <div className={styles.stack}>
             {myStack.map((item, index) => (
               <Card key={index} className={styles.card}>

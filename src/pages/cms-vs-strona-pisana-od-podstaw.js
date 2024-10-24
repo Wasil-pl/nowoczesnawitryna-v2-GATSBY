@@ -15,7 +15,7 @@ const BlogCMS = () => {
   const siteTitle = 'Cms vs strona pisana od podstaw - Nowoczesna witryna';
   const siteDescription =
     'Cms vs strona pisana od podstaw - Ten artykuł pomoże Ci zdecydować, czy lepiej jest postawić na stronę internetową pisana od podstaw, czy na system CMS.';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/cms-vs-strona-pisana-od-podstaw';
+  const siteUrl = 'https://www.nowoczesnawitryna.pl/cms-vs-strona-pisana-od-podstaw/';
 
   return (
     <>

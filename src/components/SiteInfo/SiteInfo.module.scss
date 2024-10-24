@@ -37,6 +37,20 @@
 
       .second_card {
         text-align: right;
+
+        a {
+          color: $color-text-primary;
+          font-weight: $font-weight-bold;
+          text-decoration: none;
+          transition: color 0.3s;
+          text-transform: uppercase;
+          // text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.659);
+          letter-spacing: 2px;
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
       }
     }
   }
@@ -47,6 +61,14 @@
     padding: 2rem;
     border-radius: 20px;
     display: flex;
+  }
+}
+
+@media (max-width: 1920px) {
+  .site_info {
+    .wrapper {
+      margin-top: -50px;
+    }
   }
 }
 

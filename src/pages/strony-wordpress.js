@@ -12,6 +12,7 @@ import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import RootLayout from '../components/RootLayout/RootLayout';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
+import ScroolToPriceButton from '../components/ScroolToPriceButton/ScroolToPriceButton';
 
 const StronyWordpress = () => {
   const title = 'Strony WordPress';
@@ -19,13 +20,14 @@ const StronyWordpress = () => {
   const siteTitle = 'strony WordPress - Nowoczesna witryna';
   const siteDescription =
     'Nowoczesna witryna to miejsce gdzie stworzysz swoją wymarzoną stronę opartą na najbardziej popularnym systemie zarządzania treścią WordPress.';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/strony-wordpress';
+  const siteUrl = 'https://www.nowoczesnawitryna.pl/strony-wordpress/';
 
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <Headers title={title} subtitle={subtitle} active="wordpress" />
       <ScroolUpButton />
+      <ScroolToPriceButton />
       <SiteInfoServices
         title_first_column={strony_wordpress_txt.title_first_column}
         title_first_card={strony_wordpress_txt.title_first_card}

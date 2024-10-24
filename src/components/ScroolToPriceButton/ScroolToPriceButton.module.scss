@@ -1,0 +1,40 @@
+@import '../../styles/settings.scss';
+
+.scroll_to_price_button {
+  position: fixed;
+  bottom: 85px;
+  right: 15px;
+  border: 0;
+  background-color: unset;
+  z-index: 1000;
+
+  &:hover::after {
+    content: 'przejdź do ceny';
+    position: absolute;
+    top: -10%;
+    left: -127%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    color: $color-primary;
+    background-color: $color-background-light;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: $transition_0_3;
+  }
+
+  svg {
+    width: 50px;
+    height: 50px;
+    fill: $color-primary;
+    border: 1px solid $color-background-dark;
+    border-radius: 50%;
+    background-color: $color-background-dark;
+    transition: $transition_0_3;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

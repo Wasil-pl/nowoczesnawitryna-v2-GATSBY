@@ -13,6 +13,7 @@ import Testiniomals from '../components/Testiniomals/Testiniomals';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
+import ProcessSteps from '../components/ProcessSteps/ProcessSteps';
 
 const IndexPage = () => {
   const siteTitle = 'Nowoczesna witryna';
@@ -29,6 +30,7 @@ const IndexPage = () => {
       <MyServices />
       <AboutMe />
       <MyStack />
+      <ProcessSteps />
       <Portfolio />
       <Testiniomals />
       <Contact />
