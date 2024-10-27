@@ -15,17 +15,26 @@ import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 import ScroolToPriceButton from '../components/ScroolToPriceButton/ScroolToPriceButton';
 
 const AplikacjeWebowe = () => {
-  const title = 'Aplikacje Webowe';
-  const subtitle = 'Zaawansowane strony internetowe';
-  const siteTitle = 'aplikacje webowe - Nowoczesna witryna';
+  const title_top = 'Aplikacje Webowe';
+  const title_middle = 'Nowoczesne Strony';
+  const title_bottom = 'dla Twojego Biznesu';
+  const subtitle =
+    'Tworzę aplikacje webowe dostosowane do specyficznych potrzeb Twojej firmy, które działają płynnie na różnych urządzeniach i są zoptymalizowane pod kątem wydajności. Zaufaj nowoczesnym technologiom, aby usprawnić procesy i zwiększyć efektywność pracy.';
+  const siteTitle = 'Aplikacje Webowe – Nowoczesne Rozwiązania dla Biznesu';
   const siteDescription =
-    'Odkryj innowacyjne aplikacje webowe Wykorzystuje najnowsze technologie, aby stworzyć dla Ciebie aplikację, która zapewni wyjątkowe doświadczenia';
+    'Tworzę aplikacje webowe, które zapewniają zaawansowane funkcje i wsparcie dla rozwoju Twojej firmy. Szybkie, bezpieczne i dopasowane do potrzeb biznesowych aplikacje online.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/aplikacje-webowe/';
 
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
-      <Headers title={title} subtitle={subtitle} active="aplikacje" />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        title_bottom={title_bottom}
+        subtitle={subtitle}
+        active="aplikacje"
+      />
       <ScroolUpButton />
       <ScroolToPriceButton />
       <SiteInfoServices

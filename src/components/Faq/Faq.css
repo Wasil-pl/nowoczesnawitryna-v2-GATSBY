@@ -1,0 +1,30 @@
+.faq .accordion-item {
+  background-color: #f7f7f7;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.faq .accordion-item .accordion-header .accordion-button {
+  border-radius: 20px !important;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.faq .accordion-item .accordion-header .accordion-button:hover {
+  color: #ffbf00;
+}
+
+.faq .accordion-button:not(.collapsed):hover {
+  color: #191d28 !important;
+}
+
+.faq .accordion-button:not(.collapsed) {
+  color: #ffbf00;
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+.faq .accordion-button:focus {
+  box-shadow: none;
+}

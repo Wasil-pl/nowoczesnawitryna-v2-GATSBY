@@ -1,0 +1,13 @@
+@import '../../styles/settings.scss';
+
+.faq {
+  padding: 100px 0;
+  background-color: $color-background-lighter;
+
+  .wrapper {
+    .accordion_wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
+}

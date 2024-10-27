@@ -10,8 +10,8 @@ import Footer from '../components/Footer/Footer';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 
 const BlogCMS = () => {
-  const title = 'Blog';
-  const subtitle = 'Cms vs strona pisana od podstaw';
+  const title_top = 'Cms vs strona';
+  const title_middle = 'pisana od podstaw';
   const siteTitle = 'Cms vs strona pisana od podstaw - Nowoczesna witryna';
   const siteDescription =
     'Cms vs strona pisana od podstaw - Ten artykuł pomoże Ci zdecydować, czy lepiej jest postawić na stronę internetową pisana od podstaw, czy na system CMS.';
@@ -20,7 +20,7 @@ const BlogCMS = () => {
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
-      <Headers title={title} subtitle={subtitle} active="blog" />
+      <Headers title_top={title_top} title_middle={title_middle} active="blog" />
       <ScroolUpButton />
       <BlogArticleCms />
       <Footer />

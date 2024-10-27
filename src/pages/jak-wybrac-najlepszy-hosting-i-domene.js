@@ -10,8 +10,8 @@ import Footer from '../components/Footer/Footer';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 
 const BlogHosting = () => {
-  const title = 'Blog';
-  const subtitle = 'Jak wybrać najlepszy hosting i domenę';
+  const title_top = 'Jak wybrać najlepszy';
+  const title_middle = 'hosting i domenę';
   const siteTitle = 'Jak wybrać najlepszy hosting i domenę - Nowoczesna witryna';
   const siteDescription =
     'Jak wybrać najlepszy hosting i domenę - artykuł ten pomoże Ci w dokonaniu prawidłowego wyboru, bo wbrew pozorom są to bardzo ważne kwestie...';
@@ -20,7 +20,7 @@ const BlogHosting = () => {
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
-      <Headers title={title} subtitle={subtitle} active="blog" />
+      <Headers title_top={title_top} title_middle={title_middle} active="blog" />
       <ScroolUpButton />
       <BlogArticleHosting />
       <Footer />

@@ -30,10 +30,16 @@ const MenuMobile = ({ active }) => {
                 Strony WordPress
               </NavDropdown.Item>
               <NavDropdown.Item className={active === 'html' ? 'activeMenuItem' : ''} href="/strony-niestandardowe/">
-                Strony niestandardowe
+                Strony HTML/CSS/JS
               </NavDropdown.Item>
               <NavDropdown.Item className={active === 'sklep' ? 'activeMenuItem' : ''} href="/sklepy-internetowe/">
                 Sklepy www
+              </NavDropdown.Item>
+              <NavDropdown.Item className={active === 'lms' ? 'activeMenuItem' : ''} href="/strony-lms/">
+                Strony LMS
+              </NavDropdown.Item>
+              <NavDropdown.Item className={active === 'logo' ? 'activeMenuItem' : ''} href="/projektowanie-logo/">
+                Projektowanie logo
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#kontakt">Kontakt</Nav.Link>

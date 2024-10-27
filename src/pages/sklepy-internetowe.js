@@ -15,17 +15,19 @@ import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 import ScroolToPriceButton from '../components/ScroolToPriceButton/ScroolToPriceButton';
 
 const SklepyInternetowe = () => {
-  const title = 'Sklepy internetowe';
-  const subtitle = 'Sklepy internetowe na miarę Twoich potrzeb!';
-  const siteTitle = 'sklepy internetowe - Nowoczesna witryna';
+  const title_top = 'Profesjonalne';
+  const title_middle = 'Sklepy Internetowe';
+  const subtitle =
+    'Tworzę funkcjonalne i bezpieczne sklepy internetowe oparte na platformie WooCommerce, które umożliwiają łatwe zarządzanie produktami i skuteczną sprzedaż online, zgodnie z najnowszymi standardami e-commerce.';
+  const siteTitle = 'Sklepy Internetowe – Rozwijaj Swój Biznes Online';
   const siteDescription =
-    'Nowoczesna witryna projektuje strony e-commerce, które nie tylko zachwycają designem, ale także zapewniają skuteczną funkcjonalność.';
+    'Oferuję profesjonalne tworzenie sklepów internetowych opartych na WooCommerce. Funkcjonalne, intuicyjne i bezpieczne rozwiązania e-commerce, które pomogą Ci zwiększyć sprzedaż i zasięg.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/sklepy-internetowe/';
 
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
-      <Headers title={title} subtitle={subtitle} active="sklep" />
+      <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} active="sklep" />
       <ScroolToPriceButton />
       <ScroolUpButton />
       <SiteInfoServices

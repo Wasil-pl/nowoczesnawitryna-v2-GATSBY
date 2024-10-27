@@ -61,8 +61,9 @@ const Contact = () => {
                   <Form.Label>Imię i Nazwisko</Form.Label>
                   <Form.Control
                     {...register('name', { required: errorMessages.required })}
-                    placeholder="Imię i Nazwisko"
+                    placeholder="Imię"
                     autoComplete="name"
+                    label="Imię"
                     required
                   />
                   {errors.name && <Error>{errors.name?.message}</Error>}
@@ -81,6 +82,7 @@ const Contact = () => {
                     type="email"
                     placeholder="Adres e-mail"
                     autoComplete="email"
+                    label="Adres e-mail"
                     required
                   />
                   {errors.email && <Error>{errors.email?.message}</Error>}
@@ -98,6 +100,7 @@ const Contact = () => {
                     })}
                     type="tel"
                     placeholder="Telefon"
+                    label="Telefon"
                     autoComplete="tel"
                   />
                   {errors.phone && <Error>{errors.phone?.message}</Error>}
@@ -115,6 +118,7 @@ const Contact = () => {
                     })}
                     placeholder="Tytuł"
                     autoComplete="title"
+                    label="Tytuł"
                     required
                   />
                   {errors.title && <Error>{errors.title?.message}</Error>}
@@ -137,6 +141,7 @@ const Contact = () => {
                     as="textarea"
                     rows={3}
                     placeholder="Wiadomość"
+                    label="Wiadomość"
                     autoComplete="message"
                     required
                   />

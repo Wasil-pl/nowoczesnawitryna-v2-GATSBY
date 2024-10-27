@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import * as styles from './MyServicesAccordion.module.scss';
 import './MyServicesAccordion.css';
 import { Accordion } from 'react-bootstrap';
@@ -6,11 +6,31 @@ import { StaticImage } from 'gatsby-plugin-image';
 import CustomButton from '../CustomButton/CustomButton';
 
 const MyServicesAccordion = () => {
+  const [activeKey, setActiveKey] = useState('');
+
+  const handleSelect = (key) => {
+    setActiveKey(key);
+  };
+
+  useEffect(() => {
+    if (activeKey) {
+      // Dodanie opóźnienia, aby poczekać na rozwinięcie akordeonu
+      const timer = setTimeout(() => {
+        const element = document.getElementById(activeKey);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 300); // Opóźnienie 300ms (dostosuj w razie potrzeby)
+
+      return () => clearTimeout(timer); // Czyszczenie timeoutu przy odmontowaniu
+    }
+  }, [activeKey]);
+
   return (
-    <Accordion className={styles.wrapper} defaultActiveKey="0">
+    <Accordion onSelect={handleSelect} activeKey={activeKey} className={`myservice_accordion ${styles.wrapper}`}>
       <Accordion.Item eventKey="0">
         <Accordion.Header as={'h3'}>Strony internetowe HTML</Accordion.Header>
-        <Accordion.Body>
+        <Accordion.Body id="0">
           <div className={styles.tab_content}>
             <div className={styles.tab_content_left}>
               <h3>Strony internetowe HTML</h3>
@@ -36,7 +56,7 @@ const MyServicesAccordion = () => {
       </Accordion.Item>
       <Accordion.Item eventKey="1">
         <Accordion.Header as={'h3'}>Aplikacje webowe</Accordion.Header>
-        <Accordion.Body>
+        <Accordion.Body id="1">
           <div className={styles.tab_content}>
             <div className={styles.tab_content_left}>
               <h3>Aplikacje webowe</h3>
@@ -56,7 +76,7 @@ const MyServicesAccordion = () => {
       </Accordion.Item>
       <Accordion.Item eventKey="2">
         <Accordion.Header as={'h3'}>Strony Internetowe oparte na WordPress</Accordion.Header>
-        <Accordion.Body>
+        <Accordion.Body id="2">
           <div className={styles.tab_content}>
             <div className={styles.tab_content_left}>
               <h3>Strony Internetowe oparte na WordPress</h3>
@@ -81,7 +101,7 @@ const MyServicesAccordion = () => {
       </Accordion.Item>
       <Accordion.Item eventKey="3">
         <Accordion.Header as={'h3'}>Sklepy internetowe</Accordion.Header>
-        <Accordion.Body>
+        <Accordion.Body id="3">
           <div className={styles.tab_content}>
             <div className={styles.tab_content_left}>
               <h3>Sklepy internetowe</h3>
@@ -105,7 +125,7 @@ const MyServicesAccordion = () => {
       </Accordion.Item>
       <Accordion.Item eventKey="4">
         <Accordion.Header as={'h3'}>Strony LMS – Nowoczesne Platformy Edukacyjne</Accordion.Header>
-        <Accordion.Body>
+        <Accordion.Body id="4">
           <div className={styles.tab_content}>
             <div className={styles.tab_content_left}>
               <h3>Strony LMS – Nowoczesne Platformy Edukacyjne</h3>
@@ -121,7 +141,7 @@ const MyServicesAccordion = () => {
                 w pełni zoptymalizowane pod kątem SEO, co pozwala dotrzeć do większej liczby odbiorców, a dodatkowo
                 umożliwiają integrację z narzędziami płatności, webinarami i mediami społecznościowymi.
               </p>
-              <CustomButton text="Zobacz więcej" link="/sklepy-internetowe" />
+              <CustomButton text="Zobacz więcej" link="/strony-lms" />
             </div>
             <div className={styles.tab_content_right}>
               <StaticImage src="../../images/lms.png" alt="strony LMS" width={300} />
@@ -131,7 +151,7 @@ const MyServicesAccordion = () => {
       </Accordion.Item>
       <Accordion.Item eventKey="5">
         <Accordion.Header as={'h3'}>Projektowanie Logo</Accordion.Header>
-        <Accordion.Body>
+        <Accordion.Body id="5">
           <div className={styles.tab_content}>
             <div className={styles.tab_content_left}>
               <h3>Projektowanie Logo</h3>

@@ -29,8 +29,9 @@ const ServicesInfo = ({ html, wordpress }) => {
               <div className={styles.card_text}>
                 <h3>Czysty i Estetyczny kod</h3>
                 <p>
-                  Moje strony charakteryzują się czystym i czytelnym kodem, co nie tylko ułatwia późniejsze modyfikacje,
-                  ale także pozytywnie wpływa na pozycjonowanie w wynikach wyszukiwania.
+                  <em>Tworzę strony internetowe</em> oparte na czystym, czytelnym kodzie. To nie tylko ułatwia przyszłe
+                  modyfikacje, ale także pozytywnie wpływa na pozycjonowanie w wynikach wyszukiwania, co zwiększa
+                  widoczność Twojej witryny.
                 </p>
               </div>
             </div>
@@ -44,11 +45,12 @@ const ServicesInfo = ({ html, wordpress }) => {
             >
               <StaticImage src="../../images/wordpress.webp" alt="wordpress" width={330} height={440} />
               <div className={styles.card_text}>
-                <h3>CMS</h3>
+                <h3>CMS – Łatwe Zarządzanie Treścią</h3>
                 <p>
-                  Oferuję tworzenie stron internetowych opartych na systemach zarządzania treścią (CMS), takich jak
-                  WordPress. Dzięki temu będziesz mógł samodzielnie zarządzać swoją stroną, dodawać treści i
-                  aktualizować jej zawartość.
+                  Oferuję <em>tworzenie stron internetowych</em> opartych na systemach zarządzania treścią (CMS), takich
+                  jak
+                  <em>WordPress</em>. Dzięki temu zyskujesz pełną kontrolę nad swoją stroną, co pozwala na samodzielne
+                  dodawanie treści i aktualizowanie zawartości bez potrzeby znajomości programowania.
                 </p>
               </div>
             </div>
@@ -63,8 +65,9 @@ const ServicesInfo = ({ html, wordpress }) => {
             <div className={styles.card_text}>
               <h3>Nowoczesny Design</h3>
               <p>
-                Projektowanie stron internetowych realizuję z uwzględnieniem indywidualnych potrzeb, co gwarantuje
-                otrzymanie witryny perfekcyjnie dopasowanej do profilu Twojej marki.
+                Każda strona internetowa jest projektowana z myślą o indywidualnych potrzebach Twojej marki. Tworzę
+                nowoczesne, estetyczne i funkcjonalne witryny, które idealnie oddają charakter Twojego biznesu i
+                przyciągają uwagę klientów.
               </p>
             </div>
           </div>
@@ -78,8 +81,9 @@ const ServicesInfo = ({ html, wordpress }) => {
             <div className={styles.card_text}>
               <h3>Wsparcie i Współpraca</h3>
               <p>
-                Podczas tworzenia strony będziesz na bieżąco informowany o postępach w projekcie. Wspólnie będziemy
-                pracować nad tym, aby Twoja strona była zgodna z Twoimi oczekiwaniami.
+                Podczas całego procesu <em>tworzenia strony internetowej</em>, będziesz na bieżąco informowany o
+                postępach. Współpracujemy nad projektem, aby strona w pełni spełniała Twoje oczekiwania i była gotowa na
+                czas.
               </p>
             </div>
           </div>
@@ -93,8 +97,9 @@ const ServicesInfo = ({ html, wordpress }) => {
             <div className={styles.card_text}>
               <h3>Grafiki i Zdjęcia</h3>
               <p>
-                Posiadam dostęp do szerokiej bazy grafik i zdjęć, które mogą zostać wykorzystane na Twojej stronie.
-                Dzięki temu Twoja witryna będzie wyglądać profesjonalnie i atrakcyjnie.
+                Posiadam dostęp do profesjonalnej bazy grafik i zdjęć, które mogą zostać wykorzystane na Twojej stronie.
+                Dzięki temu Twoja strona internetowa będzie nie tylko funkcjonalna, ale także wizualnie atrakcyjna i
+                estetyczna.
               </p>
             </div>
           </div>
@@ -108,8 +113,9 @@ const ServicesInfo = ({ html, wordpress }) => {
             <div className={styles.card_text}>
               <h3>Responsywność (RWD)</h3>
               <p>
-                Każda strona, którą tworzę, zawiera responsywny design. Dzięki temu Twoja witryna będzie doskonale
-                wyglądać i działać na różnych urządzeniach, od smartfonów po komputery.
+                <em>Każda tworzona przeze mnie strona internetowa</em> jest w pełni responsywna. To oznacza, że będzie
+                doskonale wyglądać i działać na wszystkich urządzeniach, od smartfonów po laptopy, zapewniając idealne
+                doświadczenie użytkownikom.
               </p>
             </div>
           </div>

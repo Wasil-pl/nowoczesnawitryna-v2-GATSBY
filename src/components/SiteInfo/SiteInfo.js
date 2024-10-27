@@ -55,10 +55,9 @@ const SiteInfo = () => {
 
         <div className={styles.banner}>
           <h3 data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease" data-sal-duration="1000">
-            Tworzę strony internetowe dla firm każdej wielkości – od małych start-upów po duże korporacje. Bez
-            względustrony internetowe<em>strony internetowe</em>
-            na to, jaką firmę prowadzisz, jestem pewien, że mogę zaproponować <em>strony internetowe</em>, które spełnią
-            Twoje oczekiwania i będą idealnym rozwiązaniem dla Twojego biznesu.
+            <em>Tworzę strony internetowe</em> dla firm każdej wielkości – od małych start-upów po duże korporacje. Bez
+            względu na to, jaką firmę prowadzisz, jestem pewien, że mogę zaproponować <em>strony internetowe</em>, które
+            spełnią Twoje oczekiwania i będą idealnym rozwiązaniem dla Twojego biznesu.
           </h3>
         </div>
       </Container>

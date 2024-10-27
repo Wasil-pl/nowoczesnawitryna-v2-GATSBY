@@ -2,97 +2,78 @@
 
 .header {
   background-color: $color-background-dark;
-  height: 600px;
   position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    background-image: url('/images/kropki_512-512.webp');
-    top: 25%;
-    left: 20%;
-    z-index: 1;
-    color: #ffbf00;
-    height: 300px;
-    width: 300px;
-    z-index: 0;
-  }
+  height: 700px;
+  background-image: url('/images/tlo.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   .content {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: $color-text-light;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
 
     .title {
-      font-size: 5rem;
+      font-size: 3rem;
       font-weight: $font-weight-extrabold;
-      text-transform: capitalize;
-      line-height: 6.1rem;
-      margin-bottom: 15px;
+      text-transform: uppercase;
+      line-height: 1.2;
+      letter-spacing: 0.3rem;
+      text-wrap: nowrap;
+
+      .title_top {
+        background: linear-gradient(
+          90deg,
+          $color-text-primary,
+          $color-text-dark-light
+        ); /* Gradient od żółtego do czarnego */
+        -webkit-background-clip: text; /* Działa w przeglądarkach WebKit (Chrome, Safari) */
+        background-clip: text; /* Ustawienie tła na tekst */
+        color: transparent; /* Tekst przezroczysty, gradient wypełnia litery */
+      }
+
+      .title_middle {
+        background: linear-gradient(
+          90deg,
+          $color-text-dark-light,
+          $color-text-primary
+        ); /* Gradient od czarnego do żółtego */
+        -webkit-background-clip: text; /* Działa w przeglądarkach WebKit (Chrome, Safari) */
+        background-clip: text; /* Ustawienie tła na tekst */
+        color: transparent; /* Tekst przezroczysty, gradient wypełnia litery */
+      }
+
+      .title_bottom {
+        background: linear-gradient(
+          90deg,
+          $color-text-primary,
+          $color-text-dark-light
+        ); /* Gradient od żółtego do czarnego */
+        -webkit-background-clip: text; /* Działa w przeglądarkach WebKit (Chrome, Safari) */
+        background-clip: text; /* Ustawienie tła na tekst */
+        color: transparent; /* Tekst przezroczysty, gradient wypełnia litery */
+      }
     }
 
     .subtitle {
-      font-size: 1.3rem;
-      line-height: 3rem;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      line-height: 1.2;
       letter-spacing: 0.2rem;
+      color: $color-text-light-dark;
+      text-transform: uppercase;
     }
   }
 }
 
-@media (max-width: 1290px) {
+@media (max-width: 1000px) {
   .header {
-    &::after {
-      top: 25%;
-      left: 15%;
-      height: 250px;
-      width: 250px;
-    }
-  }
-}
-
-@media (max-width: 880px) {
-  .header {
-    &::after {
-      top: 25%;
-      left: 10%;
-    }
-
-    .content {
-      .title {
-        font-size: 3rem;
-        line-height: 4rem;
-      }
-
-      .subtitle {
-        font-size: 1.2rem;
-        line-height: 2.5rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    &::after {
-      top: 25%;
-      left: 10%;
-      width: 200px;
-      height: 200px;
-    }
-  }
-}
-
-@media (max-width: 520px) {
-  .header {
-    &::after {
-      top: 30%;
-      width: 150px;
-      height: 150px;
-    }
     .content {
       .title {
         font-size: 2.5rem;
@@ -100,7 +81,79 @@
 
       .subtitle {
         font-size: 1rem;
-        line-height: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .header {
+    background-image: url('/images/tlo-mobile.webp');
+    .content {
+      .title {
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    .content {
+      width: auto;
+      .title {
+        font-size: 2rem;
+
+        .title_bottom {
+          display: block;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .header {
+    .content {
+      .title {
+        font-size: 1.6rem;
+      }
+
+      .subtitle {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    .content {
+      .title {
+        font-size: 1.4rem;
+      }
+
+      .subtitle {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    .content {
+      .title {
+        font-size: 1.2rem;
+      }
+
+      .subtitle {
+        font-size: 0.6rem;
       }
     }
   }

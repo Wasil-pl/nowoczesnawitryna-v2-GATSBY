@@ -10,17 +10,19 @@ import Footer from '../components/Footer/Footer';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 
 const Blog = () => {
-  const title = 'blog';
-  const subtitle = 'zapraszam na mój blog';
-  const siteTitle = 'blog - Nowoczesna witryna';
+  const title_top = 'Blog';
+  const title_middle = 'Porady i inspiracje';
+  const subtitle =
+    'Odkryj najnowsze trendy, praktyczne wskazówki i eksperckie porady dotyczące projektowania stron internetowych, SEO, e-commerce i aplikacji webowych. Zainspiruj się i rozwijaj swoją obecność online!';
+  const siteTitle = 'Blog – Porady i Inspiracje o Tworzeniu Stron Internetowych';
   const siteDescription =
-    'Odkryj inspirujące artykuły, porady i ciekawostki na temat branży. Mój blog to źródło wiedzy, które pomoże Ci rozwijać się w świecie internetu.';
+    'Blog o tworzeniu stron internetowych, SEO, e-commerce i aplikacjach webowych. Zyskaj praktyczne wskazówki, najnowsze trendy i inspiracje dla Twojej marki online.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/blog/';
 
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
-      <Headers title={title} subtitle={subtitle} active="blog" />
+      <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} active="blog" />
       <ScroolUpButton />
       <ArticleList />
       <Footer />

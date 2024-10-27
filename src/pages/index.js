@@ -14,11 +14,12 @@ import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 import ProcessSteps from '../components/ProcessSteps/ProcessSteps';
+import Faq from '../components/Faq/Faq';
 
 const IndexPage = () => {
-  const siteTitle = 'Nowoczesna witryna';
+  const siteTitle = ' Nowoczesne Strony Internetowe – Tworzenie Stron, Sklepy Online, Aplikacje Webowe';
   const siteDescription =
-    'Dariusz Wasilewski. Tworzę nowoczesne, responsywne strony i sklepy internetowe, oraz aplikacje webowe. Odkryj moje projekty i umiejętności!';
+    'Oferuję kompleksowe usługi tworzenia stron internetowych, sklepów online oraz aplikacji webowych. Responsywne, zoptymalizowane pod kątem SEO, dopasowane do Twoich potrzeb. Skontaktuj się i zyskaj przewagę w internecie!';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/';
 
   return (
@@ -34,6 +35,7 @@ const IndexPage = () => {
       <Portfolio />
       <Testiniomals />
       <Contact />
+      <Faq />
       <Footer />
     </>
   );

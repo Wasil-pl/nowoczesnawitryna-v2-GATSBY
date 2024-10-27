@@ -32,10 +32,12 @@ const Footer = () => {
           <div className={styles.third_column}>
             <h3>Menu</h3>
             <a href="/">Strona główna</a>
-            <a href="/strony-niestandardowe/">Strony niestandardowe</a>
+            <a href="/strony-niestandardowe/">Strony HTML/CSS/JS</a>
             <a href="/strony-wordpress/">Strony Wordpress</a>
             <a href="/sklepy-internetowe/">Sklepy internetowe</a>
+            <a href="/strony-lms/">Strony LMS</a>
             <a href="/aplikacje-webowe/">Aplikacje webowe</a>
+            <a href="/projektowanie-logo/">Projektowanie logo</a>
             <a href="/blog/">Blog</a>
             <a href="/polityka-prywatnosci/">Polityka prywatności</a>
           </div>

@@ -18,6 +18,7 @@ module.exports = {
     'react-bootstrap-icons',
     `gatsby-plugin-scroll-reveal`,
     `react-hook-form`,
+    `gatsby-plugin-minify`,
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -56,16 +57,6 @@ module.exports = {
       options: {
         tailwind: true,
         purgeOnly: ['src/styles/index.scss'],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-minify',
-      options: {
-        collapseWhitespace: true,
-        minifyCSS: true,
-        minifyJS: true,
-        minifyHTML: true,
-        removeComments: true,
       },
     },
     {

@@ -6,7 +6,7 @@ import { Check, Dash } from 'react-bootstrap-icons';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import CustomButton from '../CustomButton/CustomButton';
 
-const Prices = ({ html, wordpress, sklep, aplikacja }) => {
+const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
   return (
     <section id="price" className={styles.prices}>
       <Container>
@@ -18,15 +18,14 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
               <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.descryption}>
                 <h3>Strona One-Page</h3>
                 <p>
-                  OnePage to witryna, na której odwiedzający dowiedzą się wszystkiego o Twojej ofercie bez wchodzenia na
-                  dodatkowe podstrony. Wystarczy wygodnie przewijać, aby poznać Twoje usługi lub produkty.
+                  One-Page to prosta, ale skuteczna witryna, która prezentuje całą Twoją ofertę na jednej stronie.
+                  Użytkownicy mogą w łatwy sposób przewijać stronę, aby zapoznać się z usługami i produktami, bez
+                  konieczności wchodzenia na dodatkowe podstrony.
                 </p>
                 <p>Dla kogo jest dedykowana?</p>
                 <p>
-                  Polecam to rozwiązanie wszystkim firmom i osobom, które pragną prezentować swoją treść w formie
-                  klarownej strony głównej, bez konieczności korzystania z rozbudowanej struktury podstron. Nawigacja
-                  może obejmować menu, jednak wszystkie informacje, teksty i multimedia zostaną umieszczone na jednej,
-                  łatwo dostępnej stronie.
+                  Rozwiązanie idealne dla firm i osób, które chcą przedstawić swoją treść w sposób klarowny i prosty.
+                  Idealne dla małych biznesów, które nie potrzebują rozbudowanej struktury podstron.
                 </p>
               </div>
               <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.price_box}>
@@ -34,7 +33,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
                   <h3>Strona One-Page</h3>
                   <p>cena od</p>
                   <h4>
-                    <span>1000</span> zł
+                    <span>1300</span> zł
                   </h4>
                   <hr />
                 </div>
@@ -77,15 +76,14 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
               <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.descryption}>
                 <h3>Strona Multi-Page</h3>
                 <p>
-                  Moja witryna Multi-Page oferuje kompleksową prezentację Twojej oferty poprzez rozbudowaną strukturę
-                  podstron. Każda sekcja stanowi odrębne miejsce do zgłębiania informacji, co ułatwia pełne zrozumienie
-                  usług i produktów oferowanych przez Ciebie.
+                  Multi-Page to rozbudowana witryna z wieloma podstronami, która umożliwia szczegółową prezentację
+                  Twojej oferty. Każda podstrona może być dedykowana innemu aspektowi Twojego biznesu, co pozwala
+                  użytkownikom lepiej zrozumieć pełen zakres Twoich usług i produktów.
                 </p>
                 <p>Dla kogo jest dedykowana?</p>
                 <p>
-                  Rozwiązanie Multi-Page jest idealne dla Ciebie, jeśli chcesz, aby Twoja strona internetowa była
-                  bardziej rozbudowana. Ta forma strony pozwala na elastyczność w organizacji treści, dostosowanie do
-                  zróżnicowanych potrzeb użytkowników i pełniejsze przedstawienie Twojej oferty.
+                  Idealne rozwiązanie dla firm, które potrzebują bardziej złożonej struktury witryny, aby w pełni
+                  zaprezentować swoją ofertę i dopasować ją do potrzeb użytkowników.
                 </p>
               </div>
               <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.price_box}>
@@ -93,7 +91,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
                   <h3>Strona Multi-Page</h3>
                   <p>cena od</p>
                   <h4>
-                    <span>1400</span> zł
+                    <span>1700</span> zł
                   </h4>
                   <hr />
                 </div>
@@ -152,7 +150,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
                   <h3>Aplikacja www</h3>
                   <p>cena od</p>
                   <h4>
-                    <span>2200</span> zł
+                    <span>3000</span> zł
                   </h4>
                   <hr />
                 </div>
@@ -195,14 +193,16 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
               <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.descryption}>
                 <h3>Sklep internetowy</h3>
                 <p>
-                  Tworzę sklepy internetowe wykorzystując platformę WordPress oraz rozszerzenie WooCommerce, co pozwala
-                  na łatwe zarządzanie treścią oraz rozbudowane funkcje e-commerce.
+                  Tworzę sklepy internetowe wykorzystując platformę WordPress oraz rozszerzenie WooCommerce, które
+                  umożliwiają łatwe zarządzanie treścią oraz rozbudowane funkcje e-commerce. WooCommerce to
+                  wszechstronne narzędzie, które zapewnia pełną kontrolę nad sprzedażą online, a także elastyczność w
+                  zarządzaniu asortymentem i zamówieniami.
                 </p>
                 <p>Dla kogo jest dedykowana?</p>
                 <p>
-                  Sklep internetowy oparty na WooCommerce to doskonałe rozwiązanie dla firm i osób, które chcą rozpocząć
-                  lub rozwijać swoją działalność e-commerce. Zapewnia on szerokie możliwości sprzedaży online oraz łatwe
-                  zarządzanie asortymentem i zamówieniami.
+                  Sklep internetowy oparty na WooCommerce to idealne rozwiązanie dla firm oraz osób, które chcą
+                  rozpocząć lub rozwijać działalność w zakresie sprzedaży online. Zapewnia szerokie możliwości
+                  sprzedażowe oraz prostą obsługę, co sprawia, że zarządzanie sklepem staje się intuicyjne i efektywne.
                 </p>
               </div>
               <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.price_box}>
@@ -210,7 +210,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
                   <h3>Sklep www</h3>
                   <p>cena od</p>
                   <h4>
-                    <span>1300</span> zł
+                    <span>1600</span> zł
                   </h4>
                   <hr />
                 </div>
@@ -248,20 +248,162 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
             </div>
           )}
 
+          {lms && (
+            <div className={styles.row}>
+              <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.descryption}>
+                <h3>Strony LMS</h3>
+                <p>
+                  Moje strony LMS (Learning Management System) to zaawansowane platformy edukacyjne, które wspierają
+                  zarządzanie kursami online, uczniami oraz materiałami szkoleniowymi. Idealne dla firm szkoleniowych,
+                  instytucji edukacyjnych, szkół oraz indywidualnych trenerów.
+                </p>
+                <p>Dla kogo jest dedykowana?</p>
+                <p>
+                  Platformy LMS są dedykowane dla organizacji, które chcą udostępniać kursy online, zarządzać rozwojem
+                  pracowników, wspierać edukację klientów lub prowadzić certyfikowane szkolenia online. To rozwiązanie
+                  dla każdej firmy, której zależy na efektywnym i nowoczesnym systemie nauczania.
+                </p>
+              </div>
+              <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.price_box}>
+                <div className={styles.price}>
+                  <h3>Strony LMS</h3>
+                  <p>cena od</p>
+                  <h4>
+                    <span>3500</span> zł
+                  </h4>
+                  <hr />
+                </div>
+                <div className={styles.list}>
+                  <ul>
+                    <li>
+                      <Check /> Wiele podstron
+                    </li>
+                    <li>
+                      <Check /> Responsywność (dostosowanie do urządzeń mobilnych)
+                    </li>
+                    <li>
+                      <Check /> Proste animacje
+                    </li>
+                    <li>
+                      <Check /> Zdjęcia i grafiki
+                    </li>
+                    <li>
+                      <Check /> Wsparcie i aktualizacja na okres 3 miesięcy
+                    </li>
+                    <li>
+                      <Check /> Formularz kontaktowy
+                    </li>
+                    <li>
+                      <Check /> System CMS
+                    </li>
+                    <li>
+                      <Check /> Panel administracyjny
+                    </li>
+                    <li>
+                      <Check /> Integracja z systemami płatności i ich subskrypcjami
+                    </li>
+                    <li>
+                      <Check /> System zarządzania kursami
+                    </li>
+                    <li>
+                      <Check /> System zarządzania użytkownikami
+                    </li>
+                    <li>
+                      <Check /> System logowania i rejestracji użytkowiniów
+                    </li>
+                    <li>
+                      <Check /> System oceniania i certyfikacji
+                    </li>
+                  </ul>
+
+                  <CustomButton text="Zamów teraz" link="#kontakt" variant="price" />
+                </div>
+              </div>
+            </div>
+          )}
+
+          {logo && (
+            <div className={styles.row}>
+              <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.descryption}>
+                <h3>Projektowanie Logo</h3>
+                <p>
+                  Oferuję profesjonalne projektowanie logo dostosowane do indywidualnych potrzeb Twojej marki. Każdy
+                  projekt jest unikalny, tworzony z myślą o budowaniu rozpoznawalności i przekazie wartości firmy.
+                </p>
+                <p>Dla kogo jest dedykowana?</p>
+                <p>
+                  Moja usługa projektowania logo jest idealna dla firm, które chcą wyróżnić się na rynku i posiadać
+                  rozpoznawalny znak firmowy. Niezależnie od rozmiaru Twojej firmy, tworzę logo, które reprezentuje
+                  Twoją markę profesjonalnie i estetycznie.
+                </p>
+              </div>
+
+              <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.price_box}>
+                <div className={styles.price}>
+                  <h3>Logo Podstawowe</h3>
+                  <p>cena od</p>
+                  <h4>
+                    <span>500</span> zł
+                  </h4>
+                  <hr />
+                </div>
+                <div className={styles.list}>
+                  <ul>
+                    <li>
+                      <Check /> 3 propozycje logo
+                    </li>
+                    <li>
+                      <Check /> Pliki w formatach PNG, SVG, PDF
+                    </li>
+                    <li>
+                      <Check /> Wsparcie techniczne
+                    </li>
+                  </ul>
+                  <CustomButton text="Zamów teraz" link="#kontakt" variant="price" />
+                </div>
+
+                <div className={`${styles.last_price} ${styles.price}`}>
+                  <h3>Logo Rozszerzone</h3>
+                  <p>cena od</p>
+                  <h4>
+                    <span>800</span> zł
+                  </h4>
+                  <hr />
+                </div>
+                <div className={styles.list}>
+                  <ul>
+                    <li>
+                      <Check /> 5 propozycji logo
+                    </li>
+                    <li>
+                      <Check /> Pliki w formatach PNG, SVG, PDF
+                    </li>
+                    <li>
+                      <Check /> Wersje kolorowe i monochromatyczne
+                    </li>
+                    <li>
+                      <Check /> Dokumentacja użytkowania (brandbook)
+                    </li>
+                  </ul>
+                  <CustomButton text="Zamów teraz" link="#kontakt" variant="price" />
+                </div>
+              </div>
+            </div>
+          )}
+
           {wordpress && (
             <div className={styles.row}>
               <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.descryption}>
                 <h3>Strona One-Page</h3>
                 <p>
-                  OnePage to witryna, na której odwiedzający dowiedzą się wszystkiego o Twojej ofercie bez wchodzenia na
-                  dodatkowe podstrony. Wystarczy wygodnie przewijać, aby poznać Twoje usługi lub produkty.
+                  One-Page to prosta, ale skuteczna witryna, która prezentuje całą Twoją ofertę na jednej stronie.
+                  Użytkownicy mogą w łatwy sposób przewijać stronę, aby zapoznać się z usługami i produktami, bez
+                  konieczności wchodzenia na dodatkowe podstrony.
                 </p>
                 <p>Dla kogo jest dedykowana?</p>
                 <p>
-                  Polecam to rozwiązanie wszystkim firmom i osobom, które pragną prezentować swoją treść w formie
-                  klarownej strony głównej, bez konieczności korzystania z rozbudowanej struktury podstron. Nawigacja
-                  może obejmować menu, jednak wszystkie informacje, teksty i multimedia zostaną umieszczone na jednej,
-                  łatwo dostępnej stronie.
+                  Rozwiązanie idealne dla firm i osób, które chcą przedstawić swoją treść w sposób klarowny i prosty.
+                  Idealne dla małych biznesów, które nie potrzebują rozbudowanej struktury podstron.
                 </p>
               </div>
               <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.price_box}>
@@ -269,7 +411,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
                   <h3>Strona One-Page</h3>
                   <p>cena od</p>
                   <h4>
-                    <span>500</span> zł
+                    <span>700</span> zł
                   </h4>
                   <hr />
                 </div>
@@ -312,15 +454,14 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
               <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.descryption}>
                 <h3>Strona Multi-Page</h3>
                 <p>
-                  Moja witryna Multi-Page oferuje kompleksową prezentację Twojej oferty poprzez rozbudowaną strukturę
-                  podstron. Każda sekcja stanowi odrębne miejsce do zgłębiania informacji, co ułatwia pełne zrozumienie
-                  usług i produktów oferowanych przez Ciebie.
+                  Multi-Page to rozbudowana witryna z wieloma podstronami, która umożliwia szczegółową prezentację
+                  Twojej oferty. Każda podstrona może być dedykowana innemu aspektowi Twojego biznesu, co pozwala
+                  użytkownikom lepiej zrozumieć pełen zakres Twoich usług i produktów.
                 </p>
                 <p>Dla kogo jest dedykowana?</p>
                 <p>
-                  Rozwiązanie Multi-Page jest idealne dla Ciebie, jeśli chcesz, aby Twoja strona internetowa była
-                  bardziej rozbudowana. Ta forma strony pozwala na elastyczność w organizacji treści, dostosowanie do
-                  zróżnicowanych potrzeb użytkowników i pełniejsze przedstawienie Twojej oferty.
+                  Idealne rozwiązanie dla firm, które potrzebują bardziej złożonej struktury witryny, aby w pełni
+                  zaprezentować swoją ofertę i dopasować ją do potrzeb użytkowników.
                 </p>
               </div>
               <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.price_box}>
@@ -328,7 +469,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja }) => {
                   <h3>Strona Multi-Page</h3>
                   <p>cena od</p>
                   <h4>
-                    <span>700</span> zł
+                    <span>900</span> zł
                   </h4>
                   <hr />
                 </div>

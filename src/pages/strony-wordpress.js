@@ -15,17 +15,26 @@ import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 import ScroolToPriceButton from '../components/ScroolToPriceButton/ScroolToPriceButton';
 
 const StronyWordpress = () => {
-  const title = 'Strony WordPress';
-  const subtitle = 'Zrealizuję każdy projekt!';
-  const siteTitle = 'strony WordPress - Nowoczesna witryna';
+  const title_top = 'Profesjonalne';
+  const title_middle = 'Strony Internetowe';
+  const title_bottom = 'oparte na WordPress';
+  const subtitle =
+    'Tworzę nowoczesne i funkcjonalne strony internetowe na WordPress, które są łatwe w zarządzaniu, szybkie we wdrożeniu i w pełni dostosowane do potrzeb Twojego biznesu.';
+  const siteTitle = 'Strony WordPress – Łatwe w Zarządzaniu i Efektywne Strony';
   const siteDescription =
-    'Nowoczesna witryna to miejsce gdzie stworzysz swoją wymarzoną stronę opartą na najbardziej popularnym systemie zarządzania treścią WordPress.';
+    'Specjalizuję się w tworzeniu stron opartych na WordPress – popularnym i elastycznym systemie CMS. Responsywne, zoptymalizowane i łatwe w obsłudze rozwiązania dla firm każdej wielkości.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/strony-wordpress/';
 
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
-      <Headers title={title} subtitle={subtitle} active="wordpress" />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        title_bottom={title_bottom}
+        subtitle={subtitle}
+        active="wordpress"
+      />
       <ScroolUpButton />
       <ScroolToPriceButton />
       <SiteInfoServices
