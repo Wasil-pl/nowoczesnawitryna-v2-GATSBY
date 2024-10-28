@@ -1,24 +1,32 @@
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'PlayfairDisplay';
   font-style: normal;
   font-display: swap;
-  src: url('/fonts/raleway-regular-webfont.woff2') format('woff2');
+  src: url('/fonts/PlayfairDisplay-Regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'PlayfairDisplay';
   font-style: normal;
   font-display: swap;
   font-weight: 700;
-  src: url('/fonts/raleway-bold.woff2') format('woff2');
+  src: url('/fonts/PlayfairDisplay-Bold.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'PlayfairDisplay';
   font-style: normal;
   font-display: swap;
   font-weight: 800;
-  src: url('/fonts/raleway-extrabold-webfont.woff2') format('woff2');
+  src: url('/fonts/PlayfairDisplay-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src: url('/fonts/PlayfairDisplay-Black.woff2') format('woff2');
 }
 
 @font-face {
@@ -68,7 +76,7 @@ $color-background-lighter: #f7f7f7;
 $color-background-dark: #191d28;
 $color-background-primary: #ffbf00;
 
-$font-header: 'Raleway', sans-serif;
+$font-header: 'PlayfairDisplay', sans-serif;
 $font-body: 'Montserrat', serif;
 
 $font-weight-normal: 400;

@@ -15,6 +15,7 @@ import Footer from '../components/Footer/Footer';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 import ProcessSteps from '../components/ProcessSteps/ProcessSteps';
 import Faq from '../components/Faq/Faq';
+import RescentArticles from '../components/RescentArticles/RescentArticles';
 
 const IndexPage = () => {
   const siteTitle = ' Nowoczesne Strony Internetowe – Tworzenie Stron, Sklepy Online, Aplikacje Webowe';
@@ -34,6 +35,7 @@ const IndexPage = () => {
       <ProcessSteps />
       <Portfolio />
       <Testiniomals />
+      <RescentArticles />
       <Contact />
       <Faq />
       <Footer />
