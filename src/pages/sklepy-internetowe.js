@@ -8,7 +8,6 @@ import SiteInfoServices from '../components/SiteInfoServices/SiteInfoServices';
 import { sklepy_internetowe_txt } from '../consts/texts';
 import ServicesInfo from '../components/ServicesInfo/ServicesInfo';
 import Prices from '../components/Prices/Prices';
-import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import RootLayout from '../components/RootLayout/RootLayout';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
@@ -40,7 +39,6 @@ const SklepyInternetowe = () => {
       />
       <ServicesInfo wordpress />
       <Prices sklep />
-      <Contact />
       <Footer />
     </>
   );

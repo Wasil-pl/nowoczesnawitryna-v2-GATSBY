@@ -11,7 +11,7 @@ const ContactInfo = () => {
       <Container>
         <div className={styles.wrapper}>
           <div className={styles.info}>
-            <SectionTitle title="Adres" subtitle="Zapraszam do kontaktu" />
+            <SectionTitle title="Adres" subtitle="Zobacz na mapie, gdzie się znajduję" />
             <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.address}>
               <HouseFill />
               <p>Nowoczesna Witryna</p>

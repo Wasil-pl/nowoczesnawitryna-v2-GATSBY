@@ -8,7 +8,6 @@ import SiteInfoServices from '../components/SiteInfoServices/SiteInfoServices';
 import { strony_niestandardowe_txt } from '../consts/texts';
 import ServicesInfo from '../components/ServicesInfo/ServicesInfo';
 import Prices from '../components/Prices/Prices';
-import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import RootLayout from '../components/RootLayout/RootLayout';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
@@ -47,7 +46,6 @@ const StronyNiestandardowe = () => {
       />
       <ServicesInfo html />
       <Prices html />
-      <Contact />
       <Footer />
     </>
   );

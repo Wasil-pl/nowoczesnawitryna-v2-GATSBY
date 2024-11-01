@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding: 100px 0;
+  padding: 100px 0 150px;
   margin: 50px 0 0;
 
   .title {
@@ -34,6 +34,12 @@
 
         p:nth-child(2) {
           font-size: 0.8rem;
+        }
+
+        a {
+          color: $color-primary;
+          text-decoration: none;
+          font-weight: 700;
         }
       }
     }

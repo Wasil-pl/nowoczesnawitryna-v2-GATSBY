@@ -10,7 +10,7 @@ const RescentArticles = () => {
   const blog_rescent_articles = blog_cards_data.slice(0, 3);
 
   return (
-    <div className={styles.RescentArticles}>
+    <section className={styles.rescent_articles}>
       <Container>
         <SectionTitle title="Ostatnie artykuły" />
         <div className={styles.wrapper}>
@@ -26,7 +26,7 @@ const RescentArticles = () => {
         </div>
         <CustomButton text="Zobacz wszystkie" link="/blog/" variant="white" />
       </Container>
-    </div>
+    </section>
   );
 };
 

@@ -10,8 +10,9 @@ import ScroolUpButton from '../../components/ScroolUpButton/ScroolUpButton';
 import BlogArticleResponsiveDesign from '../../components/BlogArticles/BlogArticleResponsiveDesign';
 
 const BlogResponsiveSite = () => {
-  const title_top = 'Czym Jest Responsywność Strony';
-  const title_middle = 'i Dlaczego Jest Tak Ważna?';
+  const title_top = 'Czym Jest';
+  const title_middle = 'Responsywność';
+  const title_bottom = 'Strony?';
   const siteTitle = 'Czym Jest Responsywność Strony i Dlaczego Jest Tak Ważna? - Nowoczesna witryna';
   const siteDescription =
     'Responsywność strony internetowej to jej zdolność do dostosowywania się do różnych wielkości ekranów – od komputerów stacjonarnych po smartfony i tablety. W dzisiejszym świecie, gdzie większość użytkowników korzysta z urządzeń mobilnych, responsywność stała się kluczowym elementem nowoczesnych stron internetowych.';
@@ -20,7 +21,7 @@ const BlogResponsiveSite = () => {
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
-      <Headers title_top={title_top} title_middle={title_middle} active="blog" />
+      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} active="blog" />
       <ScroolUpButton />
       <BlogArticleResponsiveDesign />
       <Footer />

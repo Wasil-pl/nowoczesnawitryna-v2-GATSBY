@@ -3,7 +3,6 @@ import * as styles from './ServicesInfo.module.scss';
 import { Container } from 'react-bootstrap';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
-import Action from '../Action/Action';
 
 const ServicesInfo = ({ html, wordpress }) => {
   return (
@@ -150,8 +149,6 @@ const ServicesInfo = ({ html, wordpress }) => {
             </div>
           </div>
         </div>
-
-        <Action />
       </Container>
     </section>
   );

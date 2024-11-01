@@ -14,12 +14,11 @@ import Footer from '../components/Footer/Footer';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 import ProcessSteps from '../components/ProcessSteps/ProcessSteps';
 import RescentArticles from '../components/RescentArticles/RescentArticles';
-import Action from '../components/Action/Action';
 
 const IndexPage = () => {
   const siteTitle = ' Nowoczesne Strony Internetowe – Tworzenie Stron, Sklepy Online, Aplikacje Webowe';
   const siteDescription =
-    'Oferuję kompleksowe usługi tworzenia stron internetowych, sklepów online oraz aplikacji webowych. Responsywne, zoptymalizowane pod kątem SEO, dopasowane do Twoich potrzeb. Skontaktuj się i zyskaj przewagę w internecie!';
+    'Oferuję kompleksowe usługi tworzenia stron internetowych, sklepów online oraz aplikacji webowych, dla klientów z Jastrzębia-Zdroju, województwa śląskiego oraz całej Polski. Sprawdź moją ofertę!';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/';
 
   return (
@@ -35,7 +34,6 @@ const IndexPage = () => {
       <Portfolio />
       <Testiniomals />
       <RescentArticles />
-      <Action kontakt_2 variant={'free'} />
       <Footer />
     </>
   );

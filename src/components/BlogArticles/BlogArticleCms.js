@@ -10,19 +10,23 @@ const BlogArticleCms = () => {
         <h2>CMS vs strona pisana od podstaw – co wybrać do tworzenia stron internetowych?</h2>
         <p>
           Jeśli chcesz stworzyć własną stronę internetową, musisz podjąć ważną decyzję: czy użyć gotowego systemu
-          zarządzania treścią CMS czy napisać stronę od podstaw, używając HTML, CSS oraz Javy Script. Oba rozwiązania
-          mają swoje zalety i wady, które warto poznać, zanim zdecydujesz się na jedno z nich. W tym artykule
-          przedstawię Ci główne różnice między CMS a ręcznym kodowaniem, oraz podpowiem, co lepiej wybrać do tworzenia
-          stron internetowych.
+          zarządzania treścią CMS, jak np. WordPress, czy napisać stronę od podstaw, używając HTML, CSS oraz JavaScript.
+          Oba rozwiązania mają swoje zalety i wady, które warto poznać, zanim zdecydujesz się na jedno z nich. W tym
+          artykule przedstawię Ci główne różnice między CMS a ręcznym kodowaniem oraz podpowiem, co lepiej wybrać do
+          tworzenia stron internetowych.
         </p>
+
         <h2>CMS – co to jest?</h2>
         <div className={styles.blog_image}>
           <div className={styles.text}>
             <p>
               CMS to skrót od Content Management System, czyli system zarządzania treścią. Jest to oprogramowanie, które
-              umożliwia łatwe tworzenie i edycję stron internetowych, bez konieczności pisania kodu. CMS oferuje gotowe
+              umożliwia łatwe tworzenie i edycję stron internetowych bez konieczności pisania kodu. CMS oferuje gotowe
               szablony, moduły i wtyczki, które można dostosować do własnych potrzeb i preferencji. Przykładami
-              popularnych CMS są WordPress, Joomla, Drupal, Wix, Squarespace, Shopify czy Magento.
+              popularnych CMS są WordPress, Joomla, Drupal, Wix, Squarespace, Shopify czy Magento. Jeśli interesuje Cię
+              budowa strony internetowej na WordPressie, sprawdź moją ofertę{' '}
+              <a href="/strony-wordpress">stron opartych na WordPressie</a> – oferuję elastyczne i funkcjonalne
+              rozwiązania dostosowane do potrzeb różnych branż.
             </p>
           </div>
           <div className={styles.image}>
@@ -34,57 +38,58 @@ const BlogArticleCms = () => {
             />
           </div>
         </div>
+
         <h3>Zalety CMS:</h3>
         <ul>
           <li>
-            <strong>Łatwość obsługi:</strong>nie musisz znać języków programowania ani HTML, CSS czy JavaScript, aby
+            <strong>Łatwość obsługi:</strong> Nie musisz znać języków programowania ani HTML, CSS czy JavaScript, aby
             stworzyć atrakcyjną i funkcjonalną stronę internetową. Wystarczy wybrać szablon, dodać treść i elementy
             graficzne, a CMS zrobi resztę za Ciebie.
           </li>
           <li>
-            <strong>Szybkość:</strong> dzięki gotowym szablonom i wtyczkom, stworzenie strony internetowej w CMS zajmuje
+            <strong>Szybkość:</strong> Dzięki gotowym szablonom i wtyczkom, stworzenie strony internetowej w CMS zajmuje
             znacznie mniej czasu niż pisanie kodu od podstaw.
           </li>
           <li>
-            <strong>Niski koszt:</strong> większość CMS jest darmowa, a za dodatkowe funkcje i usługi płacisz tylko
+            <strong>Niski koszt:</strong> Większość CMS jest darmowa, a za dodatkowe funkcje i usługi płacisz tylko
             wtedy, gdy ich potrzebujesz.
           </li>
           <li>
             <strong>Łatwa aktualizacja:</strong> Możesz w prosty sposób aktualizować treści na stronie, dodawać nowe
-            funkcje i modyfikować wygląd strony, bez konieczności ingerencji w kod.
+            funkcje i modyfikować wygląd strony bez konieczności ingerencji w kod.
           </li>
           <li>
             <strong>Wsparcie społeczności:</strong> CMS-y cieszą się dużą popularnością, dlatego łatwo znaleźć pomoc w
-            internecie, w postaci poradników, kursów, forów dyskusyjnych i grup wsparcia.
+            internecie w postaci poradników, kursów, forów dyskusyjnych i grup wsparcia.
           </li>
         </ul>
+
         <h3>Wady CMS:</h3>
         <ul>
           <li>
-            <strong>Ograniczona personalizacja:</strong> choć CMS-y oferują wiele gotowych szablonów i wtyczek, to
-            jednak trudno jest stworzyć stronę internetową, która w pełni odpowiada Twoim indywidualnym potrzebom i
-            oczekiwaniom. Wiele stron stworzonych w CMS-ach wygląda podobnie, co może zniechęcić odwiedzających. Jeśli
-            chcesz mieć unikalną stronę, CMS może okazać się niewystarczający.
+            <strong>Ograniczona personalizacja:</strong> CMS-y oferują wiele gotowych szablonów i wtyczek, ale trudno
+            jest stworzyć stronę, która w pełni odpowiada Twoim indywidualnym potrzebom i oczekiwaniom. Jeśli chcesz
+            mieć unikalną stronę, CMS może okazać się niewystarczający.
           </li>
           <li>
-            <strong>Wydajność:</strong> strony internetowe stworzone w CMS-ach mogą działać wolniej, zwłaszcza jeśli są
-            zbyt rozbudowane i zawierają wiele wtyczek i dodatków. Wolniejsza strona internetowa oznacza gorsze
-            doświadczenia użytkowników i niższe pozycje w wynikach wyszukiwania.
+            <strong>Wydajność:</strong> Strony w CMS mogą działać wolniej, zwłaszcza przy dużej liczbie wtyczek i
+            dodatków, co wpływa na doświadczenia użytkowników i pozycjonowanie w wynikach wyszukiwania.
           </li>
           <li>
-            <strong>Bezpieczeństwo:</strong> CMS-y są popularnym celem ataków hakerskich, dlatego trzeba regularnie
-            aktualizować oprogramowanie i dbać o bezpieczeństwo strony. W przeciwnym razie, strona może zostać
-            zhakowana, a dane użytkowników skradzione.
+            <strong>Bezpieczeństwo:</strong> CMS-y są popularnym celem ataków hakerskich, dlatego konieczna jest
+            regularna aktualizacja oprogramowania i dbanie o bezpieczeństwo strony.
           </li>
         </ul>
+
         <h2>Kod pisany od podstaw – co to jest?</h2>
         <div className={styles.blog_image}>
           <div className={styles.text}>
             <p>
-              CMS to skrót od Content Management System, czyli system zarządzania treścią. Jest to oprogramowanie, które
-              umożliwia łatwe tworzenie i edycję stron internetowych, bez konieczności pisania kodu. CMS oferuje gotowe
-              szablony, moduły i wtyczki, które można dostosować do własnych potrzeb i preferencji. Przykładami
-              popularnych CMS są WordPress, Joomla, Drupal, Wix, Squarespace, Shopify czy Magento.
+              Strona napisana od podstaw to taka, która nie korzysta z gotowych rozwiązań CMS, lecz jest kodowana
+              indywidualnie za pomocą HTML, CSS i JavaScript, co daje pełną kontrolę nad wyglądem i funkcjonalnością.
+              Jeśli interesuje Cię stworzenie strony internetowej na zamówienie, zobacz moją ofertę{' '}
+              <a href="/strony-niestandardowe">stron internetowych tworzonych od podstaw</a>, aby dowiedzieć się więcej
+              o zaletach tego podejścia.
             </p>
           </div>
           <div className={styles.image}>

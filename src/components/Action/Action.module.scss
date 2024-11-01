@@ -25,6 +25,7 @@
 
   .left_side {
     flex: 50%;
+    padding-right: 20px;
 
     h3 {
       font-size: 1.2rem;
@@ -49,6 +50,7 @@
     z-index: 2;
     position: relative;
     transition: $transition_0_3;
+    padding-left: 20px;
 
     &:hover {
       transform: scale(1.1);
@@ -73,8 +75,8 @@
   }
 }
 
-.free {
-  margin: 0;
+.bottom {
+  margin-bottom: -300px;
 }
 
 @media (max-width: 768px) {

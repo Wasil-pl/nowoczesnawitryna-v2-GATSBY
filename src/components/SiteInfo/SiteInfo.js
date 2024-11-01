@@ -13,13 +13,13 @@ const SiteInfo = () => {
               Dlaczego Warto Wybrać Moje Usługi <em>Tworzenia Stron Internetowych?</em>
             </h3>
             <p>
-              Oferuję kompleksowe tworzenie stron internetowych, które są nie tylko <strong>responsywne</strong> i{' '}
-              <strong>funkcjonalne</strong>, ale także <strong>łatwe w zarządzaniu</strong> oraz w pełni{' '}
-              <strong>zoptymalizowane pod kątem SEO</strong>. Każda strona, którą tworzę, jest zaprojektowana z myślą o
-              użytkowniku oraz zgodnie z najnowszymi trendami i technologiami, aby zapewnić najwyższą jakość i
-              efektywność w sieci.
+              Oferuję kompleksowe tworzenie stron internetowych dla klientów Jastrzębia-Zdroju, województwa śląskiego
+              oraz całej Polski, które są nie tylko <strong>responsywne</strong> i <strong>funkcjonalne</strong>, ale
+              także <strong>łatwe w zarządzaniu</strong> oraz w pełni <strong>zoptymalizowane pod kątem SEO</strong>.
+              Każda strona, którą tworzę, jest zaprojektowana z myślą o użytkowniku oraz zgodnie z najnowszymi trendami
+              i technologiami, aby zapewnić najwyższą jakość i efektywność w sieci.
             </p>
-            <CustomButton variant="dark" text="Skontaktuj się" link="#kontakt" />
+            <CustomButton variant="dark" text="Skontaktuj się" link="/kontakt" />
           </div>
           <div className={styles.second_column}>
             <Card className={`mb-2 ${styles.first_card}`}>
@@ -28,10 +28,10 @@ const SiteInfo = () => {
                   <em>Freelancer</em>, nie agencja
                 </Card.Title>
                 <Card.Text>
-                  Jako freelancer oferuję bardziej indywidualne podejście niż typowe agencje. Tworzę{' '}
-                  <em>strony internetowe</em>
-                  skrojone na miarę potrzeb Twojej firmy, zapewniając pełną elastyczność, szybkie wdrożenie oraz
-                  konkurencyjne ceny. Każde zlecenie to dla mnie pełne zaangażowanie i najwyższa jakość.
+                  Jako freelancer oferuję bardziej indywidualne podejście niż typowe agencje. Tworzę
+                  <em> strony internetowe</em>, skrojone na miarę potrzeb Twojej firmy, zapewniając pełną elastyczność,
+                  szybkie wdrożenie oraz konkurencyjne ceny. Każde zlecenie to dla mnie pełne zaangażowanie i najwyższa
+                  jakość.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -41,7 +41,7 @@ const SiteInfo = () => {
                 <Card.Text>
                   W odróżnieniu od wielu freelancerów, nie ograniczam się jedynie do <em>WordPressa</em>. Dzięki moim
                   umiejętnościom programistycznym mogę tworzyć <em>strony internetowe</em> na różnych platformach i
-                  dostosowywać je do Twoich specyficznych potrzeb.
+                  dostosowywać je do Twoich specyficznych potrzeb klientów oraz branży.
                   <span>
                     <strong>
                       <a href="#omnie"> Zobacz moje umiejętności i doświadczenie.</a>

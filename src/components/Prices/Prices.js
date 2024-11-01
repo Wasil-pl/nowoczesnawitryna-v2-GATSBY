@@ -5,6 +5,7 @@ import { Container } from 'react-bootstrap';
 import { Check, Dash } from 'react-bootstrap-icons';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import CustomButton from '../CustomButton/CustomButton';
+import Action from '../Action/Action';
 
 const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
   return (
@@ -507,6 +508,8 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
             </div>
           )}
         </div>
+
+        <Action kontakt_3 variant={'bottom'} />
       </Container>
     </section>
   );

@@ -7,7 +7,6 @@ import Headers from '../components/Headers/Headers';
 import SiteInfoServices from '../components/SiteInfoServices/SiteInfoServices';
 import { projektowanie_logo_txt } from '../consts/texts';
 import Prices from '../components/Prices/Prices';
-import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import RootLayout from '../components/RootLayout/RootLayout';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
@@ -47,7 +46,6 @@ const ProjektowanieLogo = () => {
       />
       <LogoProcessSteps />
       <Prices logo />
-      <Contact />
       <Footer />
     </>
   );
