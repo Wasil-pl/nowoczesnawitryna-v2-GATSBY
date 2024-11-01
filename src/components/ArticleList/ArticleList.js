@@ -2,7 +2,7 @@ import React from 'react';
 import * as styles from './ArticleList.module.scss';
 import { Container } from 'react-bootstrap';
 import ArticleCard from '../ArticleCard/ArticleCard';
-import { blog_cards_data } from '../../consts/texts';
+import { blog_cards_data } from '../../consts/blog_cards_data';
 
 const ArticleList = () => {
   return (

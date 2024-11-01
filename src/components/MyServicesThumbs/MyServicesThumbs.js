@@ -29,7 +29,11 @@ const MyServicesThumbs = () => {
               <CustomButton text="Zobacz więcej" link="/strony-niestandardowe/" />
             </div>
             <div className={styles.tab_content_right}>
-              <StaticImage src="../../images/html.png" alt="strony niestandardowe" width={300} />
+              <StaticImage
+                src="../../images/html.png"
+                alt="strony kodowane od zera, strony internetowe html/css/JS"
+                width={300}
+              />
             </div>
           </div>
         </Tab>
@@ -46,7 +50,11 @@ const MyServicesThumbs = () => {
               <CustomButton text="Zobacz więcej" link="/aplikacje-webowe/" />
             </div>
             <div className={styles.tab_content_right}>
-              <StaticImage src="../../images/web-app.png" alt="aplikacje-webowe" width={300} />
+              <StaticImage
+                src="../../images/web-app.png"
+                alt="aplikacje-webowe - strony internetowe na bazie aplikacji"
+                width={300}
+              />
             </div>
           </div>
         </Tab>
@@ -68,7 +76,11 @@ const MyServicesThumbs = () => {
               <CustomButton text="Zobacz więcej" link="/strony-wordpress/" />
             </div>
             <div className={styles.tab_content_right}>
-              <StaticImage src="../../images/cms.png" alt="strony wordpress" width={300} />
+              <StaticImage
+                src="../../images/cms.png"
+                alt="strony wordpress - strony internetowe oparte na wordpress"
+                width={300}
+              />
             </div>
           </div>
         </Tab>
@@ -89,7 +101,7 @@ const MyServicesThumbs = () => {
               <CustomButton text="Zobacz więcej" link="/sklepy-internetowe/" />
             </div>
             <div className={styles.tab_content_right}>
-              <StaticImage src="../../images/ecommerce.png" alt="sklepy internetowe" width={300} />
+              <StaticImage src="../../images/ecommerce.png" alt="sklepy internetowe - sklepy online" width={300} />
             </div>
           </div>
         </Tab>
@@ -112,7 +124,11 @@ const MyServicesThumbs = () => {
               <CustomButton text="Zobacz więcej" link="/strony-lms/" />
             </div>
             <div className={styles.tab_content_right}>
-              <StaticImage src="../../images/lms.png" alt="strony LMS" width={300} />
+              <StaticImage
+                src="../../images/lms.png"
+                alt="strony LMS - strony internetowe do prowadzenia kursów online"
+                width={300}
+              />
             </div>
           </div>
         </Tab>

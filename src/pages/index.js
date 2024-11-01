@@ -10,12 +10,11 @@ import AboutMe from '../components/AboutMe/AboutMe';
 import MyStack from '../components/MyStack/MyStack';
 import Portfolio from '../components/Portfolio/Portfolio';
 import Testiniomals from '../components/Testiniomals/Testiniomals';
-import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 import ProcessSteps from '../components/ProcessSteps/ProcessSteps';
-import Faq from '../components/Faq/Faq';
 import RescentArticles from '../components/RescentArticles/RescentArticles';
+import Action from '../components/Action/Action';
 
 const IndexPage = () => {
   const siteTitle = ' Nowoczesne Strony Internetowe – Tworzenie Stron, Sklepy Online, Aplikacje Webowe';
@@ -36,8 +35,7 @@ const IndexPage = () => {
       <Portfolio />
       <Testiniomals />
       <RescentArticles />
-      <Contact />
-      <Faq />
+      <Action kontakt_2 variant={'free'} />
       <Footer />
     </>
   );

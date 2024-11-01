@@ -70,53 +70,8 @@ export const projektowanie_logo_txt = {
     'Dzięki moim projektom logo zyskujesz profesjonalny wizerunek, który przyciąga uwagę klientów i buduje pozytywne skojarzenia z Twoją marką. Unikalne i spersonalizowane logo to klucz do sukcesu w budowaniu rozpoznawalnej marki, która wyróżnia się na tle konkurencji.',
 };
 
-export const blog_cards_data = [
-  {
-    title: 'Jak wybrać najlepszy hosting i domenę',
-    descryption:
-      'Jak wybrać najlepszy hosting i domenę dla swojej strony internetowej? Kilka wskazówek, które pomogą Ci podjąć decyzję.',
-    image: 'webhosting',
-    link: '/jak-wybrac-najlepszy-hosting-i-domene/',
-  },
-  {
-    title: 'CMS vs strona kodowana od podstaw',
-    descryption: 'CMS vs strona kodowana od podstaw - co wybrać? Porównanie zalet i wad obu rozwiązań.',
-    image: 'cms',
-    link: '/cms-vs-strona-pisana-od-podstaw/',
-  },
-  {
-    title: 'Jak wybrać idealną stronę internetową',
-    descryption:
-      'Jak wybrać idealną stronę internetową dla Twojej Firmy: One-Page, Multi-Page czy Strona z CMS? Oto kilka wskazówek.',
-    image: 'website',
-    link: '/jak-wybrac-idealna-strone/',
-  },
-  {
-    title: 'Czym jest responsywność strony',
-    descryption:
-      'Czym jest responsywność strony internetowej i dlaczego jest tak ważna? Sprawdź, dlaczego warto zadbać o responsywność swojej strony.',
-    image: 'responsive',
-    link: '/czym-jest-responsywnosc-strony/',
-  },
-  {
-    title: 'Jak przebiega proces tworzenia strony',
-    descryption:
-      'Jak przebiega proces tworzenia strony internetowej? Krok po kroku opisuję etapy projektowania strony od analizy po wdrożenie.',
-    image: 'webdesign',
-    link: '/jak-przebiega-proces-tworzenia-strony/',
-  },
-  {
-    title: 'Aplikacje Webowe vs. Strony Internetowe',
-    descryption:
-      'Aplikacje Webowe vs. Strony Internetowe - kiedy warto wybrać aplikację? Porównanie funkcjonalności i zastosowań obu rozwiązań.',
-    image: 'webapp',
-    link: '/aplikacje-webowe-vs-strony-internetowe/',
-  },
-  {
-    title: 'Jakie funkcje powinna mieć nowoczesna strona',
-    descryption:
-      'Jakie funkcje powinna mieć nowoczesna strona internetowa? Kluczowe elementy, które wpływają na skuteczność i użyteczność witryny.',
-    image: 'modernwebsite',
-    link: '/jakie-funkcje-powinna-miec-nowoczesna-strona/',
-  },
-];
+export const kontakt_txt = {
+  title_first_column: 'Skontaktuj się ze mną',
+  descryption_first_column:
+    'Skontaktuj się ze mną, aby uzyskać pomoc lub informacje o moich usługach tworzenia stron internetowych, aplikacji webowych i rozwiązań cyfrowych. Zadzwoń lub napisz, a ja odpowiem na Twoje pytania i doradzę, jakie rozwiązanie będzie najlepsze dla Twojego biznesu.',
+};

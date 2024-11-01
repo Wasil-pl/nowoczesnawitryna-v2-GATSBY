@@ -14,7 +14,7 @@ const AboutMe = () => {
           <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.first_column}>
             <StaticImage
               src="../../images/aboutMe.webp"
-              alt="Dariusz Wasilewski"
+              alt="Dariusz Wasilewski full-stack web developer"
               placeholder="blurred"
               width={400}
               className={styles.image}

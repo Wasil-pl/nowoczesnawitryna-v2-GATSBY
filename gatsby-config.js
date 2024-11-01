@@ -19,6 +19,7 @@ module.exports = {
     `gatsby-plugin-scroll-reveal`,
     `react-hook-form`,
     `gatsby-plugin-minify`,
+    `@react-google-maps/api`,
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

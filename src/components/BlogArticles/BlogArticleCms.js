@@ -26,7 +26,12 @@ const BlogArticleCms = () => {
             </p>
           </div>
           <div className={styles.image}>
-            <StaticImage src="../../images/cms.webp" width={600} height={400} alt="CMS" />
+            <StaticImage
+              src="../../images/cms.webp"
+              width={600}
+              height={400}
+              alt="CMS - wordpress, strony internetowe oparte na wordpress"
+            />
           </div>
         </div>
         <h3>Zalety CMS:</h3>
@@ -83,7 +88,12 @@ const BlogArticleCms = () => {
             </p>
           </div>
           <div className={styles.image}>
-            <StaticImage src="../../images/kod.webp" width={600} height={400} alt="CMS" />
+            <StaticImage
+              src="../../images/kod.webp"
+              width={600}
+              height={400}
+              alt="kodowanie - ręcznę kodowanie strony internetowej"
+            />
           </div>
         </div>
         <h3>Zalety tego rozwiązania:</h3>

@@ -1,13 +1,13 @@
 import * as React from 'react';
-import '../styles/global.scss';
-import '../styles/normalize.scss';
-import '../styles/typography.scss';
-import '../styles/settings.scss';
-import RootLayout from '../components/RootLayout/RootLayout';
-import Headers from '../components/Headers/Headers';
-import ArticleList from '../components/ArticleList/ArticleList';
-import Footer from '../components/Footer/Footer';
-import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
+import '../../styles/global.scss';
+import '../../styles/normalize.scss';
+import '../../styles/typography.scss';
+import '../../styles/settings.scss';
+import RootLayout from '../../components/RootLayout/RootLayout';
+import Headers from '../../components/Headers/Headers';
+import ArticleList from '../../components/ArticleList/ArticleList';
+import Footer from '../../components/Footer/Footer';
+import ScroolUpButton from '../../components/ScroolUpButton/ScroolUpButton';
 
 const Blog = () => {
   const title_top = 'Blog';

@@ -1,0 +1,53 @@
+@import '../../styles/settings.scss';
+
+.contact_info {
+  margin: 200px 0 100px;
+  .wrapper {
+    display: flex;
+
+    .info {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      margin: 0 auto;
+      height: 100%;
+
+      .address {
+        text-align: center;
+
+        svg {
+          font-size: 45px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .map {
+      flex: 3;
+      background-color: $color-background-dark;
+      padding: 10px;
+      border-radius: 15px;
+      min-height: 400px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact_info {
+    margin: 100px 0;
+    .wrapper {
+      flex-direction: column;
+      .info {
+        flex: 1;
+        padding: 20px;
+      }
+      .map {
+        flex: 1;
+        margin-top: 20px;
+      }
+    }
+  }
+}

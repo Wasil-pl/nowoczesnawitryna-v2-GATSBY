@@ -49,7 +49,11 @@ const MyServicesAccordion = () => {
               <CustomButton text="Zobacz więcej" link="/strony-niestandardowe/" />
             </div>
             <div className={styles.tab_content_right}>
-              <StaticImage src="../../images/html.png" alt="strony niestandardowe" width={300} />
+              <StaticImage
+                src="../../images/html.png"
+                alt="strony kodowane od zera, strony internetowe html/css/JS"
+                width={300}
+              />
             </div>
           </div>
         </Accordion.Body>
@@ -69,7 +73,11 @@ const MyServicesAccordion = () => {
               <CustomButton text="Zobacz więcej" link="/aplikacje-webowe/" />
             </div>
             <div className={styles.tab_content_right}>
-              <StaticImage src="../../images/web-app.png" alt="aplikacje-webowe" width={300} />
+              <StaticImage
+                src="../../images/web-app.png"
+                alt="aplikacje-webowe - strony internetowe na bazie aplikacji"
+                width={300}
+              />
             </div>
           </div>
         </Accordion.Body>
@@ -91,10 +99,14 @@ const MyServicesAccordion = () => {
                 zachowaniu pełnej elastyczności i możliwości rozbudowy. Dzięki stronom internetowym na WordPress,
                 zyskasz funkcjonalność, którą łatwo dostosujesz do potrzeb Twojego biznesu.
               </p>
-              <CustomButton text="Zobacz więcej" link="/strony-wordpress" />
+              <CustomButton text="Zobacz więcej" link="/strony-wordpress/" />
             </div>
             <div className={styles.tab_content_right}>
-              <StaticImage src="../../images/cms.png" alt="strony wordpress" width={300} />
+              <StaticImage
+                src="../../images/cms.png"
+                alt="strony wordpress - strony internetowe oparte na wordpress"
+                width={300}
+              />
             </div>
           </div>
         </Accordion.Body>
@@ -115,10 +127,10 @@ const MyServicesAccordion = () => {
                 zapewniając płynne działanie i bezpieczeństwo transakcji. Dzięki moim rozwiązaniom możesz z łatwością
                 rozwijać swoją sprzedaż online i dostosowywać sklep do potrzeb Twojej firmy.
               </p>
-              <CustomButton text="Zobacz więcej" link="/sklepy-internetowe" />
+              <CustomButton text="Zobacz więcej" link="/sklepy-internetowe/" />
             </div>
             <div className={styles.tab_content_right}>
-              <StaticImage src="../../images/ecommerce.png" alt="sklepy internetowe" width={300} />
+              <StaticImage src="../../images/ecommerce.png" alt="sklepy internetowe - sklepy online" width={300} />
             </div>
           </div>
         </Accordion.Body>
@@ -141,10 +153,14 @@ const MyServicesAccordion = () => {
                 w pełni zoptymalizowane pod kątem SEO, co pozwala dotrzeć do większej liczby odbiorców, a dodatkowo
                 umożliwiają integrację z narzędziami płatności, webinarami i mediami społecznościowymi.
               </p>
-              <CustomButton text="Zobacz więcej" link="/strony-lms" />
+              <CustomButton text="Zobacz więcej" link="/strony-lms/" />
             </div>
             <div className={styles.tab_content_right}>
-              <StaticImage src="../../images/lms.png" alt="strony LMS" width={300} />
+              <StaticImage
+                src="../../images/lms.png"
+                alt="strony LMS - strony internetowe do prowadzenia kursów online"
+                width={300}
+              />
             </div>
           </div>
         </Accordion.Body>
@@ -166,7 +182,7 @@ const MyServicesAccordion = () => {
                 formatach (PNG, SVG, PDF). Projektuję logo, które buduje rozpoznawalność, przyciąga uwagę i oddaje
                 wartości Twojej firmy.
               </p>
-              <CustomButton text="Zobacz więcej" link="/sklepy-internetowe" />
+              <CustomButton text="Zobacz więcej" link="/projektowanie-logo/" />
             </div>
             <div className={styles.tab_content_right}>
               <StaticImage src="../../images/logo-min-white.png" alt="projektowanie logo" width={300} />

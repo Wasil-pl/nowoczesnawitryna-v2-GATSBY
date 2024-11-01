@@ -25,7 +25,12 @@ const ServicesInfo = ({ html, wordpress }) => {
               data-sal-duration="1000"
               className={`${styles.card} ${styles.up}`}
             >
-              <StaticImage src="../../images/kod.webp" alt="kod" width={330} height={440} />
+              <StaticImage
+                src="../../images/kod.webp"
+                alt="zdjęcie przedstawiające ręczne pisanie kodu strony internetowej"
+                width={330}
+                height={440}
+              />
               <div className={styles.card_text}>
                 <h3>Czysty i Estetyczny kod</h3>
                 <p>
@@ -43,7 +48,12 @@ const ServicesInfo = ({ html, wordpress }) => {
               data-sal-duration="1000"
               className={`${styles.card} ${styles.up}`}
             >
-              <StaticImage src="../../images/wordpress.webp" alt="wordpress" width={330} height={440} />
+              <StaticImage
+                src="../../images/wordpress.webp"
+                alt="wordpress - strony internetowe oparte na wordpress"
+                width={330}
+                height={440}
+              />
               <div className={styles.card_text}>
                 <h3>CMS – Łatwe Zarządzanie Treścią</h3>
                 <p>
@@ -61,7 +71,12 @@ const ServicesInfo = ({ html, wordpress }) => {
             data-sal-duration="1000"
             className={`${styles.card} ${styles.down}`}
           >
-            <StaticImage src="../../images/web_design.webp" alt="web_design" width={330} height={440} />
+            <StaticImage
+              src="../../images/web_design.webp"
+              alt="web design - projektowanie stron internetowych"
+              width={330}
+              height={440}
+            />
             <div className={styles.card_text}>
               <h3>Nowoczesny Design</h3>
               <p>
@@ -77,7 +92,12 @@ const ServicesInfo = ({ html, wordpress }) => {
             data-sal-duration="1000"
             className={`${styles.card} ${styles.up}`}
           >
-            <StaticImage src="../../images/wspolpraca.webp" alt="wspolpraca" width={330} height={440} />
+            <StaticImage
+              src="../../images/wspolpraca.webp"
+              alt="współpraca - wsparcie i współpraca przy tworzeniu strony internetowej"
+              width={330}
+              height={440}
+            />
             <div className={styles.card_text}>
               <h3>Wsparcie i Współpraca</h3>
               <p>
@@ -93,7 +113,12 @@ const ServicesInfo = ({ html, wordpress }) => {
             data-sal-duration="1000"
             className={`${styles.card} ${styles.down}`}
           >
-            <StaticImage src="../../images/galeria.webp" alt="galeria" width={330} height={440} />
+            <StaticImage
+              src="../../images/galeria.webp"
+              alt="grafiki i zdjęcia - profesjonalne zdjęcia i grafiki na stronę internetową"
+              width={330}
+              height={440}
+            />
             <div className={styles.card_text}>
               <h3>Grafiki i Zdjęcia</h3>
               <p>
@@ -109,7 +134,12 @@ const ServicesInfo = ({ html, wordpress }) => {
             data-sal-duration="1000"
             className={`${styles.card} ${styles.up}`}
           >
-            <StaticImage src="../../images/rwd.webp" alt="rwd" width={330} height={440} />
+            <StaticImage
+              src="../../images/rwd.webp"
+              alt="responsywność - responsywne strony internetowe"
+              width={330}
+              height={440}
+            />
             <div className={styles.card_text}>
               <h3>Responsywność (RWD)</h3>
               <p>

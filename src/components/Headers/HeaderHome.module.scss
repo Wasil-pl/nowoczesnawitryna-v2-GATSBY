@@ -78,13 +78,14 @@
 @media (max-width: 880px) {
   .header {
     background-image: url('/images/tlo-mobile.webp');
+    height: 700px;
     .content {
       .title {
         font-size: 2rem;
       }
 
       .subtitle {
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
     }
   }
@@ -95,11 +96,7 @@
     .content {
       width: auto;
       .title {
-        line-height: 0.8;
-        .title_bottom {
-          display: block;
-          margin-top: 10px;
-        }
+        line-height: 1.1;
       }
     }
   }

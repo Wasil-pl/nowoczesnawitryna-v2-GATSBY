@@ -10,9 +10,10 @@ const SiteInfoServices = ({
   descryption_first_column,
   card_descryption,
   second_card_descryption,
+  variant = '',
 }) => {
   return (
-    <section className={styles.site_info}>
+    <section className={`${styles.site_info} ${styles[variant]}`}>
       <Container>
         <div className={styles.wrapper}>
           <div className={styles.first_column}>

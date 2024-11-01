@@ -3,7 +3,7 @@ import * as styles from './RescentArticles.module.scss';
 import { Container } from 'react-bootstrap';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import ArticleCard from '../ArticleCard/ArticleCard';
-import { blog_cards_data } from '../../consts/texts';
+import { blog_cards_data } from '../../consts/blog_cards_data';
 import CustomButton from '../CustomButton/CustomButton';
 
 const RescentArticles = () => {

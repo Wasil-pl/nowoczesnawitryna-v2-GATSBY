@@ -42,7 +42,11 @@ const LogoProcessSteps = () => {
               </p>
             </div>
             <div className={styles.step_number}>
-              <StaticImage src="../../images/brief.png" alt="brief" width={150} />
+              <StaticImage
+                src="../../images/brief.png"
+                alt="ikona przedstawiająca pierwszy kontakt z klientem w celu zebrania informacji o potrzenym logo"
+                width={150}
+              />
             </div>
           </div>
           <div className={`${styles.step} ${styles.right} ${activeStep === 1 ? styles.active : ''}`}>
@@ -55,7 +59,11 @@ const LogoProcessSteps = () => {
               </p>
             </div>
             <div className={styles.step_number_left}>
-              <StaticImage src="../../images/kontent.png" alt="kontent" width={150} />
+              <StaticImage
+                src="../../images/kontent.png"
+                alt="ikona przedstawiająca pierwsze prace stworzenia logo"
+                width={150}
+              />
             </div>
           </div>
           <div className={`${styles.step} ${styles.left} ${activeStep === 2 ? styles.active : ''}`}>
@@ -68,7 +76,11 @@ const LogoProcessSteps = () => {
               </p>
             </div>
             <div className={styles.step_number}>
-              <StaticImage src="../../images/projektowanie.png" alt="projektowanie" width={150} />
+              <StaticImage
+                src="../../images/projektowanie.png"
+                alt="ikona przedstawiająca projektowanie właściwego logo"
+                width={150}
+              />
             </div>
           </div>
           <div className={`${styles.step} ${styles.right} ${activeStep === 3 ? styles.active : ''}`}>
@@ -82,7 +94,11 @@ const LogoProcessSteps = () => {
               </p>
             </div>
             <div className={styles.step_number_left}>
-              <StaticImage src="../../images/tworzenie-strony.png" alt="wdrożenie" width={150} />
+              <StaticImage
+                src="../../images/tworzenie-strony.png"
+                alt="ikona przedstawiająca finalną wersję logo "
+                width={150}
+              />
             </div>
           </div>
           <div className={`${styles.step} ${styles.left} ${activeStep === 4 ? styles.active : ''}`}>
@@ -95,7 +111,11 @@ const LogoProcessSteps = () => {
               </p>
             </div>
             <div className={styles.step_number_last}>
-              <StaticImage src="../../images/koniec.png" alt="testowanie" width={150} />
+              <StaticImage
+                src="../../images/koniec.png"
+                alt="ikona przedstawiająca wsparcie po zakończeniu projektu"
+                width={150}
+              />
             </div>
           </div>
         </div>

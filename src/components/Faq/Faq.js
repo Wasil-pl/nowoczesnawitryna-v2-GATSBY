@@ -13,7 +13,7 @@ const Faq = () => {
         <div className={styles.accordion_wrapper}>
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
-              <Accordion.Header>Ile kosztuje stworzenie strony internetowej?</Accordion.Header>
+              <Accordion.Header as="h3">Ile kosztuje stworzenie strony internetowej?</Accordion.Header>
               <Accordion.Body>
                 Cena stworzenia strony internetowej zależy od jej złożoności i funkcji, które chcesz wdrożyć. Prosta
                 strona One-Page zaczyna się od 700 zł, podczas gdy bardziej rozbudowane witryny lub sklepy internetowe
@@ -22,7 +22,7 @@ const Faq = () => {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-              <Accordion.Header>Jak długo trwa stworzenie strony internetowej?</Accordion.Header>
+              <Accordion.Header as="h3">Jak długo trwa stworzenie strony internetowej?</Accordion.Header>
               <Accordion.Body>
                 Czas realizacji zależy od złożoności projektu. Prosta strona One-Page może być gotowa w ciągu kilku dni,
                 natomiast bardziej rozbudowane projekty, takie jak strony Multi-Page lub sklepy internetowe, mogą zająć
@@ -31,7 +31,7 @@ const Faq = () => {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2">
-              <Accordion.Header>Co jest potrzebne do rozpoczęcia pracy nad stroną?</Accordion.Header>
+              <Accordion.Header as="h3">Co jest potrzebne do rozpoczęcia pracy nad stroną?</Accordion.Header>
               <Accordion.Body>
                 Do rozpoczęcia pracy potrzebuję podstawowych informacji o Twojej firmie, wizji na stronę oraz wszelkich
                 materiałów, które chciałbyś zamieścić (teksty, zdjęcia, logo itp.). Jeśli nie masz gotowych materiałów,
@@ -39,7 +39,7 @@ const Faq = () => {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-              <Accordion.Header> Czy mogę samodzielnie zarządzać stroną po jej uruchomieniu?</Accordion.Header>
+              <Accordion.Header as="h3"> Czy mogę samodzielnie zarządzać stroną po jej uruchomieniu?</Accordion.Header>
               <Accordion.Body>
                 Tak! Mam w ofercie strony internetowe w oparciu o intuicyjne systemy zarządzania treścią (CMS), takie
                 jak WordPress. Otrzymasz dostęp do panelu administracyjnego, który pozwoli Ci samodzielnie aktualizować
@@ -47,7 +47,7 @@ const Faq = () => {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="4">
-              <Accordion.Header> Czy oferujesz wsparcie techniczne po uruchomieniu strony?</Accordion.Header>
+              <Accordion.Header as="h3"> Czy oferujesz wsparcie techniczne po uruchomieniu strony?</Accordion.Header>
               <Accordion.Body>
                 Tak, po wdrożeniu strony oferuję 3-miesięczne wsparcie techniczne, które obejmuje drobne aktualizacje i
                 pomoc w obsłudze strony. Po tym okresie możesz skorzystać z dodatkowych usług wsparcia technicznego,
@@ -55,7 +55,7 @@ const Faq = () => {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="5">
-              <Accordion.Header>
+              <Accordion.Header as="h3">
                 Czy mogę zlecić projektowanie logo wraz z tworzeniem strony internetowej?
               </Accordion.Header>
               <Accordion.Body>
@@ -65,14 +65,16 @@ const Faq = () => {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="6">
-              <Accordion.Header>Czy strony internetowe, które tworzysz, są responsywne?</Accordion.Header>
+              <Accordion.Header as="h3">Czy strony internetowe, które tworzysz, są responsywne?</Accordion.Header>
               <Accordion.Body>
                 Tak, wszystkie strony, które tworzę, są w pełni responsywne. Oznacza to, że strona będzie wyglądała
                 doskonale i działała płynnie zarówno na komputerach stacjonarnych, tabletach, jak i smartfonach.
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="7">
-              <Accordion.Header>Jakie technologie wykorzystujesz do tworzenia stron internetowych?</Accordion.Header>
+              <Accordion.Header as="h3">
+                Jakie technologie wykorzystujesz do tworzenia stron internetowych?
+              </Accordion.Header>
               <Accordion.Body>
                 Tworzę strony z użyciem najnowszych technologii, takich jak HTML5, CSS3, JavaScript oraz popularnych
                 systemów CMS, takich jak WordPress. Dzięki temu Twoja strona będzie nowoczesna, wydajna i

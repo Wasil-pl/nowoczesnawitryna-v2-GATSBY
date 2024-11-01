@@ -42,7 +42,9 @@ const MenuMobile = ({ active }) => {
                 Projektowanie logo
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#kontakt">Kontakt</Nav.Link>
+            <Nav.Link className={active === 'kontakt' ? 'activeMenuItem' : ''} href="/kontakt">
+              Kontakt
+            </Nav.Link>
             <Nav.Link className={active === 'blog' ? 'activeMenuItem' : ''} href="/blog/">
               Blog
             </Nav.Link>

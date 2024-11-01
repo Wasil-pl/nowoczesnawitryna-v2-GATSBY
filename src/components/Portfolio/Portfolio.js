@@ -16,7 +16,7 @@ const Portfolio = () => {
           <div className={`${styles.portfolio_item} ${styles.image_box}`}>
             <StaticImage
               src="../../images/aurytka.jpg"
-              alt="aurytka.pl"
+              alt="aurytka.pl - sklep internetowy"
               width={600}
               height={600}
               objectPosition="top"
@@ -32,7 +32,7 @@ const Portfolio = () => {
           <div className={`${styles.portfolio_item} ${styles.image_box}`}>
             <StaticImage
               src="../../images/qualaaab.jpg"
-              alt="qualaaab.pl"
+              alt="qualaaab.pl - strona internetowa - wizytówka"
               width={600}
               height={600}
               objectPosition="top"
@@ -48,7 +48,7 @@ const Portfolio = () => {
           <div className={`${styles.portfolio_item} ${styles.image_box}`}>
             <StaticImage
               src="../../images/red-pet.jpg"
-              alt="red-pet.pl"
+              alt="red-pet.pl - sklep internetowy"
               width={600}
               height={600}
               objectPosition="top"
