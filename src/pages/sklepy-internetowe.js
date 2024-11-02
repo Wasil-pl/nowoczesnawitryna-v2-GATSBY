@@ -17,7 +17,7 @@ const SklepyInternetowe = () => {
   const title_top = 'Profesjonalne';
   const title_middle = 'Sklepy Internetowe';
   const subtitle =
-    'Tworzę funkcjonalne i bezpieczne sklepy internetowe oparte na platformie WooCommerce, które umożliwiają łatwe zarządzanie produktami i skuteczną sprzedaż online, zgodnie z najnowszymi standardami e-commerce.';
+    'Tworzę bezpieczne sklepy WooCommerce z łatwym zarządzaniem produktami i skuteczną sprzedażą online, zgodnie z najnowszymi standardami.';
   const siteTitle = 'Sklepy Internetowe – Rozwijaj Swój Biznes Online';
   const siteDescription =
     'Oferuję profesjonalne tworzenie sklepów internetowych opartych na WooCommerce. Funkcjonalne, intuicyjne i bezpieczne rozwiązania e-commerce, które pomogą Ci zwiększyć sprzedaż i zasięg.';

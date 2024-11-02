@@ -7,7 +7,7 @@ const Headers = ({ title_top, title_middle, title_bottom, subtitle, active }) =>
     <header className={styles.header}>
       <Menu active={active} />
 
-      <div data-sal="zoom-in" data-sal-delay="300" data-sal-duration="2000" className={`${styles.content} separator`}>
+      <div className={`${styles.content} separator`}>
         <h1 className={styles.title}>
           <span className={styles.title_top}>{title_top}</span>
           <br />

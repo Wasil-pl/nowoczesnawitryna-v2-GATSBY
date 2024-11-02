@@ -18,7 +18,8 @@ const StronyNiestandardowe = () => {
   const title_middle = '100% programowane';
   const title_bottom = 'w HTML/CSS/JS';
   const subtitle =
-    'Tworzę w pełni unikatowe strony internetowe oparte na czystym HTML, które zapewniają pełną kontrolę nad kodem, wyjątkową wydajność i nieograniczone możliwości dostosowania do specyficznych potrzeb Twojej firmy.';
+    'Tworzę unikatowe strony w czystym HTML, zapewniające pełną kontrolę nad kodem, wysoką wydajność i nieograniczone możliwości dostosowania.';
+
   const siteTitle = 'Strony HTML/CSS/JS – Unikalne Rozwiązania Bez CMS';
   const siteDescription =
     'Tworzę strony internetowe pisane od zera, bez ograniczeń CMS. Nowoczesne, zoptymalizowane i dostosowane do indywidualnych potrzeb Twojej firmy, idealne do nietypowych projektów.';

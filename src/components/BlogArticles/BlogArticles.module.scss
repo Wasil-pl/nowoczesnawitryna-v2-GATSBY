@@ -2,6 +2,8 @@
 
 .blog_articles {
   padding: 100px 0;
+  max-width: 920px;
+  margin: 0 auto;
 
   h2 {
     font-size: 1.8rem;
@@ -25,6 +27,7 @@
   .blog_image {
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     .text {
       flex: 2;

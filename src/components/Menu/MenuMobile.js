@@ -18,37 +18,47 @@ const MenuMobile = ({ active }) => {
       <Offcanvas show={show} onHide={handleClose} placement="end">
         <Offcanvas.Header closeButton></Offcanvas.Header>
         <Offcanvas.Body>
-          <Nav>
-            <Nav.Link className={active === 'home' ? 'activeMenuItem' : ''} href="/">
-              Strona główna
-            </Nav.Link>
-            <NavDropdown title="Oferta" id="basic-nav-dropdown">
-              <NavDropdown.Item className={active === 'aplikacje' ? 'activeMenuItem' : ''} href="/aplikacje-webowe/">
-                Aplikacje Webowe
-              </NavDropdown.Item>
-              <NavDropdown.Item className={active === 'wordpress' ? 'activeMenuItem' : ''} href="/strony-wordpress/">
-                Strony WordPress
-              </NavDropdown.Item>
-              <NavDropdown.Item className={active === 'html' ? 'activeMenuItem' : ''} href="/strony-niestandardowe/">
-                Strony HTML/CSS/JS
-              </NavDropdown.Item>
-              <NavDropdown.Item className={active === 'sklep' ? 'activeMenuItem' : ''} href="/sklepy-internetowe/">
-                Sklepy www
-              </NavDropdown.Item>
-              <NavDropdown.Item className={active === 'lms' ? 'activeMenuItem' : ''} href="/strony-lms/">
-                Strony LMS
-              </NavDropdown.Item>
-              <NavDropdown.Item className={active === 'logo' ? 'activeMenuItem' : ''} href="/projektowanie-logo/">
-                Projektowanie logo
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link className={active === 'kontakt' ? 'activeMenuItem' : ''} href="/kontakt">
-              Kontakt
-            </Nav.Link>
-            <Nav.Link className={active === 'blog' ? 'activeMenuItem' : ''} href="/blog/">
-              Blog
-            </Nav.Link>
-          </Nav>
+          <div className={styles.menu_wrapper}>
+            <div className={styles.lang}>
+              <link rel="alternate" hrefLang="pl" href="https://nowoczesnawitryna.pl/" />
+              <link rel="alternate" hrefLang="en" href="https://nowoczesnawitryna.com" />
+              <a href="https://nowoczesnawitryna.com">EN</a>
+              <a className={styles.active} href="https://nowoczesnawitryna.pl/">
+                PL
+              </a>
+            </div>
+            <Nav>
+              <Nav.Link className={active === 'home' ? 'activeMenuItem' : ''} href="/">
+                Strona główna
+              </Nav.Link>
+              <NavDropdown title="Oferta" id="basic-nav-dropdown">
+                <NavDropdown.Item className={active === 'aplikacje' ? 'activeMenuItem' : ''} href="/aplikacje-webowe/">
+                  Aplikacje Webowe
+                </NavDropdown.Item>
+                <NavDropdown.Item className={active === 'wordpress' ? 'activeMenuItem' : ''} href="/strony-wordpress/">
+                  Strony WordPress
+                </NavDropdown.Item>
+                <NavDropdown.Item className={active === 'html' ? 'activeMenuItem' : ''} href="/strony-niestandardowe/">
+                  Strony HTML/CSS/JS
+                </NavDropdown.Item>
+                <NavDropdown.Item className={active === 'sklep' ? 'activeMenuItem' : ''} href="/sklepy-internetowe/">
+                  Sklepy www
+                </NavDropdown.Item>
+                <NavDropdown.Item className={active === 'lms' ? 'activeMenuItem' : ''} href="/strony-lms/">
+                  Strony LMS
+                </NavDropdown.Item>
+                <NavDropdown.Item className={active === 'logo' ? 'activeMenuItem' : ''} href="/projektowanie-logo/">
+                  Projektowanie logo
+                </NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link className={active === 'kontakt' ? 'activeMenuItem' : ''} href="/kontakt">
+                Kontakt
+              </Nav.Link>
+              <Nav.Link className={active === 'blog' ? 'activeMenuItem' : ''} href="/blog/">
+                Blog
+              </Nav.Link>
+            </Nav>
+          </div>
         </Offcanvas.Body>
       </Offcanvas>
     </>

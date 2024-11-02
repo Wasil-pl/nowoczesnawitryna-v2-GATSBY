@@ -1,7 +1,10 @@
 @import '../../styles/settings.scss';
 
 .testiniomals {
-  background-image: url('/images/bg-002-free-img.webp');
+  background-image: image-set(
+    url('/images/tlo-opinie.avif') type('image/avif'),
+    url('/images/tlo-opinie.webp') type('image/webp')
+  );
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -63,6 +66,10 @@
 
 @media (max-width: 768px) {
   .testiniomals {
+    background-image: image-set(
+      url('/images/tlo-opinie-mobile.avif') type('image/avif'),
+      url('/images/tlo-opinie-mobile.webp') type('image/webp')
+    );
     padding: 50px 20px;
     margin: 0;
   }

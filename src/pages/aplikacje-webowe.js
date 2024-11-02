@@ -18,7 +18,8 @@ const AplikacjeWebowe = () => {
   const title_middle = 'Nowoczesne Strony';
   const title_bottom = 'dla Twojego Biznesu';
   const subtitle =
-    'Tworzę aplikacje webowe dostosowane do specyficznych potrzeb Twojej firmy, które działają płynnie na różnych urządzeniach i są zoptymalizowane pod kątem wydajności. Zaufaj nowoczesnym technologiom, aby usprawnić procesy i zwiększyć efektywność pracy.';
+    'Tworzę aplikacje webowe dostosowane do potrzeb Twojej firmy, zoptymalizowane i działające płynnie na różnych urządzeniach.';
+
   const siteTitle = 'Aplikacje Webowe – Nowoczesne Rozwiązania dla Biznesu';
   const siteDescription =
     'Tworzę aplikacje webowe, które zapewniają zaawansowane funkcje i wsparcie dla rozwoju Twojej firmy. Szybkie, bezpieczne i dopasowane do potrzeb biznesowych aplikacje online.';

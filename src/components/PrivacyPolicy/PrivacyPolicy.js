@@ -3,133 +3,128 @@ import { Container } from 'react-bootstrap';
 
 const PrivacyPolicy = () => {
   return (
-    <div>
-      <Container>
+    <Container>
+      <div class="section">
+        <h2>1. Informacje ogólne</h2>
         <p>
-          Niniejsza strona korzysta z plików cookie. Wykorzystujemy pliki cookie do spersonalizowania treści i reklam,
-          aby oferować funkcje społecznościowe i analizować ruch w naszej witrynie. Informacje o tym, jak korzystasz z
-          naszej witryny, udostępniamy partnerom społecznościowym, reklamowym i analitycznym. Partnerzy mogą połączyć te
-          informacje z innymi danymi otrzymanymi od Ciebie lub uzyskanymi podczas korzystania z ich usług.
+          Polityka dotyczy serwisu www, funkcjonującego pod adresem URL: <strong>nowoczesnawitryna.pl</strong>.
         </p>
         <p>
-          Pliki cookie (ciasteczka) to małe pliki tekstowe, które mogą być stosowane przez strony internetowe, aby
-          użytkownicy mogli korzystać ze stron w bardziej sprawny sposób.
-          <br />
-          <br />
-          Prawo stanowi, że możemy przechowywać pliki cookie na urządzeniu użytkownika, jeśli jest to niezbędne do
-          funkcjonowania niniejszej strony. Do wszystkich innych rodzajów plików cookie potrzebujemy zezwolenia
-          użytkownika.
-          <br />
-          <br />
-          Niniejsza strona korzysta z różnych rodzajów plików cookie. Niektóre pliki cookie umieszczane są przez usługi
-          stron trzecich, które pojawiają się na naszych stronach.
-          <br />
-          <br />W dowolnej chwili możesz wycofać swoją zgodę w Deklaracji dot. plików cookie na naszej witrynie.
-          <br />
-          <br />
-          Dowiedz się więcej na temat tego, kim jesteśmy, jak można się z nami skontaktować i w jaki sposób przetwarzamy
-          dane osobowe w ramach Polityki prywatności.
-          <br />
-          <br />
-          Prosimy o podanie identyfikatora Pana(Pani) zgody i daty kontaktu z nami w sprawie Pana(Pani) zgody
+          Operatorem serwisu oraz administratorem danych osobowych jest:{' '}
+          <strong>Dariusz Wasilewski, Bogoczowiec 4c/9</strong>.
         </p>
-        <p>Twoja zgoda dotyczy następujących domen: www.nowoczesnawitryna.pl</p>
         <p>
-          Deklarację dot. plików cookie zaktualizowano ostatnio 1.03.2024 przez&nbsp;
-          <a href="https://www.cookiebot.com/" target="_blank" rel="noreferrer noopener">
-            Cookiebot
+          Adres kontaktowy e-mail operatora:{' '}
+          <a href="mailto:nowoczesnawitryna@gmail.com">nowoczesnawitryna@gmail.com</a>
+        </p>
+        <p>Operator jest administratorem danych osobowych użytkowników podanych dobrowolnie w serwisie.</p>
+        <p>Serwis wykorzystuje dane osobowe w następujących celach:</p>
+        <ul>
+          <li>Obsługa zapytań przez formularz</li>
+          <li>Prezentacja oferty lub informacji</li>
+        </ul>
+        <p>Serwis realizuje funkcje pozyskiwania informacji o użytkownikach i ich zachowaniu poprzez:</p>
+        <ul>
+          <li>Dane wprowadzone w formularzach, które trafiają do systemów operatora.</li>
+          <li>Zapisywanie plików cookie (tzw. „ciasteczka”) na urządzeniach użytkowników.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>2. Wybrane metody ochrony danych stosowane przez Operatora</h2>
+        <ul>
+          <li>Miejsca logowania i wprowadzania danych osobowych chronione są certyfikatem SSL.</li>
+          <li>Regularne wykonywanie kopii bezpieczeństwa.</li>
+          <li>Regularne aktualizacje oprogramowania wykorzystywanego przez Operatora.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>3. Hosting</h2>
+        <p>
+          Serwis jest hostowany przez <strong>cyberFolks.pl</strong>, który prowadzi logi serwerowe w celu zapewnienia
+          niezawodności technicznej. Logi mogą obejmować:
+        </p>
+        <ul>
+          <li>Adresy żądanych zasobów (strony, pliki)</li>
+          <li>Czas nadejścia i wysłania zapytania</li>
+          <li>Informacje o błędach HTTP</li>
+          <li>Referer link (strona poprzednia)</li>
+          <li>Informacje o przeglądarce i adresie IP</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>4. Twoje prawa i dodatkowe informacje o sposobie wykorzystania danych</h2>
+        <p>
+          Administrator może przekazać dane innym odbiorcom w przypadkach wymaganych do wykonania umowy lub spełnienia
+          obowiązków prawnych. Możesz żądać od Administratora:
+        </p>
+        <ul>
+          <li>Dostępu do swoich danych</li>
+          <li>Sprostowania, usunięcia, ograniczenia przetwarzania</li>
+          <li>Przenoszenia danych</li>
+        </ul>
+        <p>
+          Przysługuje Ci prawo do sprzeciwu wobec przetwarzania w określonych celach oraz złożenia skargi do Prezesa
+          UODO.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>5. Informacje w formularzach</h2>
+        <p>
+          Serwis zbiera informacje podane dobrowolnie przez użytkownika, w tym dane osobowe, które mogą być wykorzystane
+          w celu obsługi zgłoszeń serwisowych, kontaktu handlowego lub rejestracji usług.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>6. Logi Administratora</h2>
+        <p>Informacje o zachowaniu użytkowników mogą być logowane w celu administrowania serwisem.</p>
+      </div>
+
+      <div class="section">
+        <h2>7. Istotne techniki marketingowe</h2>
+        <p>
+          Operator korzysta z analizy statystycznej ruchu na stronie za pomocą Google Analytics. Użytkownik może
+          zarządzać preferencjami dotyczącymi cookies przez{' '}
+          <a href="https://www.google.com/ads/preferences/" target="_blank" rel="noreferrer">
+            Google Ads Preferences
           </a>
-          :
+          .
         </p>
-        <p>Niezbędne (1)</p>
-        <p>
-          Niezbędne pliki cookie przyczyniają się do użyteczności strony poprzez umożliwianie podstawowych funkcji
-          takich jak nawigacja na stronie i dostęp do bezpiecznych obszarów strony internetowej. Strona internetowa nie
-          może funkcjonować poprawnie bez tych ciasteczek.
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>Nazwa</th>
-              <th>Dostawca</th>
-              <th>Cel</th>
-              <th>Data ważności</th>
-              <th>Rodzaj</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>CookieConsent</td>
-              <td>www.nowoczesnawitryna.pl</td>
-              <td>Stores the user’s cookie consent state for the current domain</td>
-              <td>1 rok</td>
-              <td>HTTP Cookie</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>Marketing (3)</p>
-        <p>
-          Marketingowe pliki cookie stosowane są w celu śledzenia użytkowników na stronach internetowych. Celem jest
-          wyświetlanie reklam, które są istotne i interesujące dla poszczególnych użytkowników i tym samym bardziej
-          cenne dla wydawców i reklamodawców strony trzeciej.
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>Nazwa</th>
-              <th>Dostawca</th>
-              <th>Cel</th>
-              <th>Data ważności</th>
-              <th>Rodzaj</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>_ga</td>
-              <td>
-                <a target="_blank" rel="noreferrer noopener" href="https://policies.google.com/privacy">
-                  Google
-                </a>
-              </td>
-              <td>
-                Used to send data to Google Analytics about the visitor’s device and behavior. Tracks the visitor across
-                devices and marketing channels.
-              </td>
-              <td>2 lat</td>
-              <td>HTTP Cookie</td>
-            </tr>
-            <tr>
-              <td>_ga_#</td>
-              <td>
-                <a target="_blank" rel="noreferrer noopener" href="https://policies.google.com/privacy">
-                  Google
-                </a>
-              </td>
-              <td>
-                Used to send data to Google Analytics about the visitor’s device and behavior. Tracks the visitor across
-                devices and marketing channels.
-              </td>
-              <td>2 lat</td>
-              <td>HTTP Cookie</td>
-            </tr>
-            <tr>
-              <td>_gcl_au</td>
-              <td>
-                <a target="_blank" rel="noreferrer noopener" href="https://policies.google.com/privacy">
-                  Google
-                </a>
-              </td>
-              <td>
-                Used by Google AdSense for experimenting with advertisement efficiency across websites using their
-                services.
-              </td>
-              <td>3 miesięcy</td>
-              <td>HTTP Cookie</td>
-            </tr>
-          </tbody>
-        </table>
-      </Container>
-    </div>
+      </div>
+
+      <div class="section">
+        <h2>8. Informacja o plikach cookies</h2>
+        <p>Serwis korzysta z plików cookies w celu:</p>
+        <ul>
+          <li>Utrzymania sesji użytkownika (po zalogowaniu)</li>
+          <li>Realizacji technik marketingowych</li>
+        </ul>
+        <p>Użytkownicy mogą zmieniać ustawienia dotyczące cookies w swojej przeglądarce internetowej.</p>
+      </div>
+
+      <div class="section">
+        <h2>9. Zarządzanie plikami cookies – jak w praktyce wyrażać i cofać zgodę?</h2>
+        <p>Instrukcje dla poszczególnych przeglądarek:</p>
+        <ul>
+          <li>Edge</li>
+          <li>Internet Explorer</li>
+          <li>Chrome</li>
+          <li>Safari</li>
+          <li>Firefox</li>
+          <li>Opera</li>
+        </ul>
+        <p>Urządzenia mobilne:</p>
+        <ul>
+          <li>Android</li>
+          <li>Safari (iOS)</li>
+          <li>Windows Phone</li>
+        </ul>
+      </div>
+    </Container>
   );
 };
 

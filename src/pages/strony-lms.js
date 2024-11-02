@@ -18,7 +18,8 @@ const StronyLMS = () => {
   const title_middle = 'Nowoczesne Platformy';
   const title_bottom = 'Edukacyjne';
   const subtitle =
-    'Tworzę strony LMS (Learning Management System) dostosowane do specyficznych potrzeb edukacyjnych Twojej firmy. Moje platformy LMS oferują pełną funkcjonalność zarządzania kursami online, uczniami oraz materiałami edukacyjnymi, co czyni je idealnym rozwiązaniem dla szkół, firm szkoleniowych, organizacji edukacyjnych oraz indywidualnych nauczycieli.';
+    'Tworzę dostosowane platformy LMS do zarządzania kursami, uczniami i materiałami edukacyjnymi – idealne dla szkół, firm szkoleniowych i nauczycieli.';
+
   const siteTitle = 'Strony LMS – Nowoczesne Platformy Edukacyjne Online';
   const siteDescription =
     'Tworzę strony LMS (Learning Management System), które umożliwiają prowadzenie kursów online, zarządzanie uczniami i materiałami edukacyjnymi. Idealne rozwiązanie dla firm szkoleniowych i instytucji edukacyjnych.';

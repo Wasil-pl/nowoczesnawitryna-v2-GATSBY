@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import * as styles from './MyServices.module.scss';
 import { Container } from 'react-bootstrap';
 import SectionTitle from '../SectionTitle/SectionTitle';
@@ -7,16 +7,10 @@ import MyServicesAccordion from '../MyServicesAccordion/MyServicesAccordion';
 import CustomButton from '../CustomButton/CustomButton';
 import { QuestionCircle } from 'react-bootstrap-icons';
 import Action from '../Action/Action';
+import { useMediaQuery } from 'react-responsive';
 
 const MyServices = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window === undefined) return;
-    if (window.innerWidth < 992) {
-      setIsMobile(true);
-    }
-  }, []);
+  const isMobile = useMediaQuery({ query: '(max-width: 992px)' });
 
   return (
     <section className={styles.myServices}>

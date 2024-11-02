@@ -13,3 +13,25 @@
     background-color: transparent;
   }
 }
+
+.menu_wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .lang {
+    display: flex;
+    justify-content: flex-end !important;
+
+    & > a {
+      margin-left: 10px;
+      color: $color-text-dark;
+      font-weight: $font-weight-bold;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    & > a.active {
+      color: $color-primary;
+    }
+  }
+}

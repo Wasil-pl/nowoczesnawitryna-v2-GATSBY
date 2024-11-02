@@ -1,22 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import * as styles from './HeaderHome.module.scss';
 import Menu from '../Menu/Menu';
+import { useMediaQuery } from 'react-responsive';
 
 const HeaderHome = ({ active }) => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window === undefined) return;
-    if (window.innerWidth < 778) {
-      setIsMobile(true);
-    }
-  }, []);
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
   return (
     <header className={styles.header}>
       <Menu active={active} />
 
-      <div data-sal="zoom-in" data-sal-delay="300" data-sal-duration="2000" className={styles.content}>
+      <div className={styles.content}>
         {!isMobile && (
           <h1 className={styles.title}>
             <span className={styles.title_top}>Tworzenie Nowoczesnych</span>
@@ -39,9 +33,9 @@ const HeaderHome = ({ active }) => {
         <h2 className={styles.subtitle}>
           Profesjonalne strony internetowe i sklepy online
           <br />
-          w Jastrzębiu-Zdroju, województwie śląskim oraz w całej Polsce,
+          w Jastrzębiu-Zdroju, województwie śląskim oraz w całej Polsce.
           <br />
-          które przyciągają i konwertują
+          Strony, które przyciągają i konwertują
         </h2>
       </div>
     </header>

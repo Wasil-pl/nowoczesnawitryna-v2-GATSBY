@@ -18,7 +18,8 @@ const StronyWordpress = () => {
   const title_middle = 'Strony Internetowe';
   const title_bottom = 'oparte na WordPress';
   const subtitle =
-    'Tworzę nowoczesne i funkcjonalne strony internetowe na WordPress, które są łatwe w zarządzaniu, szybkie we wdrożeniu i w pełni dostosowane do potrzeb Twojego biznesu.';
+    'Tworzę nowoczesne, funkcjonalne strony WordPress – łatwe w zarządzaniu, szybkie we wdrożeniu i dostosowane do Twojego biznesu.';
+
   const siteTitle = 'Strony WordPress – Łatwe w Zarządzaniu i Efektywne Strony';
   const siteDescription =
     'Specjalizuję się w tworzeniu stron opartych na WordPress – popularnym i elastycznym systemie CMS. Responsywne, zoptymalizowane i łatwe w obsłudze rozwiązania dla firm każdej wielkości.';

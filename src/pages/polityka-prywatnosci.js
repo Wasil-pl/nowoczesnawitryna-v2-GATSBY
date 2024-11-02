@@ -19,7 +19,7 @@ const PolitykaPrywatnosci = () => {
   return (
     <>
       <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
-      <Headers title={title} subtitle={subtitle} active="blog" />
+      <Headers title_top={title} subtitle={subtitle} />
       <PrivacyPolicy />
       <Footer />
     </>

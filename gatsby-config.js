@@ -16,9 +16,9 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'react-bootstrap',
     'react-bootstrap-icons',
+    'react-responsive',
     `gatsby-plugin-scroll-reveal`,
     `react-hook-form`,
-    `gatsby-plugin-minify`,
     `@react-google-maps/api`,
     {
       resolve: 'gatsby-plugin-manifest',
@@ -65,6 +65,19 @@ module.exports = {
       options: {
         id: 'GTM-K29L5GHK',
         includeInDevelopment: false,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-minify',
+      options: {
+        collapseWhitespace: true,
+        minifyCSS: true,
+        minifyJS: true,
+        removeComments: true,
+        removeEmptyAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        removeConditionalComments: true,
       },
     },
   ],

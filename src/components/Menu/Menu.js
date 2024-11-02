@@ -4,21 +4,12 @@ import * as styles from './Menu.module.scss';
 import './menu.css';
 import MenuDeskopt from './MenuDeskopt';
 import MenuMobile from './MenuMobile';
+import { useMediaQuery } from 'react-responsive';
 
 const Menu = ({ active }) => {
   const [scrollY, setScrollY] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(false);
-
-  useEffect(() => {
-    if (window === undefined) return;
-    if (window.innerWidth < 1000) {
-      setIsMobile(true);
-    }
-    if (window.innerWidth >= 1000) {
-      setIsDesktop(true);
-    }
-  }, []);
+  const isDesktop = useMediaQuery({ query: '(min-width: 1000px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 999px)' });
 
   useEffect(() => {
     if (window === undefined) return;
@@ -46,8 +37,20 @@ const Menu = ({ active }) => {
           <img src="../../images/logo.svg" alt="Logo" width={80} />
         </Navbar.Brand>
 
-        {isDesktop && <MenuDeskopt active={active} />}
-        {isMobile && <MenuMobile active={active} />}
+        <div className={styles.menu_wrapper}>
+          {isDesktop && (
+            <div className={styles.lang}>
+              <link rel="alternate" hrefLang="pl" href="https://nowoczesnawitryna.pl/" />
+              <link rel="alternate" hrefLang="en" href="https://nowoczesnawitryna.com" />
+              <a href="https://nowoczesnawitryna.com">EN</a>
+              <a className={styles.active} href="https://nowoczesnawitryna.pl/">
+                PL
+              </a>
+            </div>
+          )}
+          {isDesktop && <MenuDeskopt active={active} />}
+          {isMobile && <MenuMobile active={active} />}
+        </div>
       </Container>
     </Navbar>
   );
