@@ -28,7 +28,7 @@ const MenuDeskopt = ({ active }) => {
           Projektowanie logo
         </NavDropdown.Item>
       </NavDropdown>
-      <Nav.Link className={active === 'kontakt' ? 'activeMenuItem' : ''} href="/kontakt">
+      <Nav.Link className={active === 'kontakt' ? 'activeMenuItem' : ''} href="/kontakt/">
         Kontakt
       </Nav.Link>
       <Nav.Link className={active === 'blog' ? 'activeMenuItem' : ''} href="/blog/">

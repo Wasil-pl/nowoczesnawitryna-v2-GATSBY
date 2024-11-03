@@ -27,7 +27,7 @@ const Action = ({ kontakt_2, kontakt_3, variant = '' }) => {
       )}
 
       <div className={styles.right_side}>
-        <a href="/kontakt">
+        <a href="/kontakt/">
           <ArrowRight />
           <br />
           {!kontakt_2 && !kontakt_3 && <span className={styles.text}>Nie czekaj – zacznijmy współpracę już dziś!</span>}

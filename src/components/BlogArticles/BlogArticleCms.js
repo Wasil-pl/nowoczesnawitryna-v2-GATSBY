@@ -25,7 +25,7 @@ const BlogArticleCms = () => {
               szablony, moduły i wtyczki, które można dostosować do własnych potrzeb i preferencji. Przykładami
               popularnych CMS są WordPress, Joomla, Drupal, Wix, Squarespace, Shopify czy Magento. Jeśli interesuje Cię
               budowa strony internetowej na WordPressie, sprawdź moją ofertę{' '}
-              <a href="/strony-wordpress">stron opartych na WordPressie</a> – oferuję elastyczne i funkcjonalne
+              <a href="/strony-wordpress/">stron opartych na WordPressie</a> – oferuję elastyczne i funkcjonalne
               rozwiązania dostosowane do potrzeb różnych branż.
             </p>
           </div>
@@ -88,7 +88,7 @@ const BlogArticleCms = () => {
               Strona napisana od podstaw to taka, która nie korzysta z gotowych rozwiązań CMS, lecz jest kodowana
               indywidualnie za pomocą HTML, CSS i JavaScript, co daje pełną kontrolę nad wyglądem i funkcjonalnością.
               Jeśli interesuje Cię stworzenie strony internetowej na zamówienie, zobacz moją ofertę{' '}
-              <a href="/strony-niestandardowe">stron internetowych tworzonych od podstaw</a>, aby dowiedzieć się więcej
+              <a href="/strony-niestandardowe/">stron internetowych tworzonych od podstaw</a>, aby dowiedzieć się więcej
               o zaletach tego podejścia.
             </p>
           </div>

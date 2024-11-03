@@ -19,7 +19,7 @@ const SiteInfo = () => {
               Każda strona, którą tworzę, jest zaprojektowana z myślą o użytkowniku oraz zgodnie z najnowszymi trendami
               i technologiami, aby zapewnić najwyższą jakość i efektywność w sieci.
             </p>
-            <CustomButton variant="dark" text="Skontaktuj się" link="/kontakt" />
+            <CustomButton variant="dark" text="Skontaktuj się" link="/kontakt/" />
           </div>
           <div className={styles.second_column}>
             <Card className={`mb-2 ${styles.first_card}`}>

@@ -19,7 +19,7 @@ const SiteInfoServices = ({
           <div className={styles.first_column}>
             <h3>{title_first_column}</h3>
             <p>{descryption_first_column}</p>
-            {!variant && <CustomButton variant="dark" text="Napisz do mnie..." link="/kontakt" />}
+            {!variant && <CustomButton variant="dark" text="Napisz do mnie..." link="/kontakt/" />}
             {variant && <CustomButton variant="dark" text="Napisz do mnie..." link="/kontakt/#kontakt" />}
           </div>
           <div className={styles.second_column}>
