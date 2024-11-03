@@ -16,10 +16,11 @@ const BlogWebAppVsWebSite = () => {
   const siteDescription =
     'Wybór między aplikacją webową a stroną internetową zależy od potrzeb firmy i oczekiwań użytkowników. Chociaż obie opcje działają w przeglądarce, różnią się funkcjonalnością, skalowalnością i zakresem zastosowań. W tym artykule przyjrzymy się kluczowym różnicom między aplikacjami webowymi a stronami internetowymi oraz sytuacjom, w których warto wybrać aplikację webową.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/blog/aplikacje-webowe-vs-strony-internetowe/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/blog/web-applications-vs-websites/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers title_top={title_top} title_middle={title_middle} active="blog" />
       <ScroolUpButton />
       <BlogArticleWebAppsVsWebsites />

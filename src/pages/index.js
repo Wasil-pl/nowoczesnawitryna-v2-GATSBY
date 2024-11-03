@@ -20,10 +20,11 @@ const IndexPage = () => {
   const siteDescription =
     'Oferuję kompleksowe usługi tworzenia stron internetowych, sklepów online oraz aplikacji webowych, dla klientów z Jastrzębia-Zdroju, województwa śląskiego oraz całej Polski. Sprawdź moją ofertę!';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <HeaderHome active="home" />
       <ScroolUpButton />
       <SiteInfo />

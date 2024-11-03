@@ -17,10 +17,11 @@ const BlogResponsiveSite = () => {
   const siteDescription =
     'Responsywność strony internetowej to jej zdolność do dostosowywania się do różnych wielkości ekranów – od komputerów stacjonarnych po smartfony i tablety. W dzisiejszym świecie, gdzie większość użytkowników korzysta z urządzeń mobilnych, responsywność stała się kluczowym elementem nowoczesnych stron internetowych.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/blog/czym-jest-responsywnosc-strony/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/blog/what-is-website-responsiveness/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} active="blog" />
       <ScroolUpButton />
       <BlogArticleResponsiveDesign />

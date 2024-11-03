@@ -16,10 +16,11 @@ const BlogProcessSiteMaking = () => {
   const siteDescription =
     'Tworzenie strony internetowej to złożony proces, który wymaga planowania, projektowania, kodowania i testowania. Każdy etap ma kluczowe znaczenie dla osiągnięcia ostatecznego sukcesu strony, która będzie zarówno funkcjonalna, jak i estetyczna. Przedstawiamy kroki, które prowadzą do stworzenia nowoczesnej strony internetowej.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/blog/jak-przebiega-proces-tworzenia-strony/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/blog/how-the-website-creation-process-works/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers title_top={title_top} title_middle={title_middle} active="blog" />
       <ScroolUpButton />
       <BlogArticleWebDesignProcess />

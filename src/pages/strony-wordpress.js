@@ -24,10 +24,11 @@ const StronyWordpress = () => {
   const siteDescription =
     'Specjalizuję się w tworzeniu stron opartych na WordPress – popularnym i elastycznym systemie CMS. Responsywne, zoptymalizowane i łatwe w obsłudze rozwiązania dla firm każdej wielkości.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/strony-wordpress/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/wordpress-websites/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers
         title_top={title_top}
         title_middle={title_middle}

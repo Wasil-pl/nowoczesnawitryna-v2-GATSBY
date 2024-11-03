@@ -24,10 +24,11 @@ const StronyLMS = () => {
   const siteDescription =
     'Tworzę strony LMS (Learning Management System), które umożliwiają prowadzenie kursów online, zarządzanie uczniami i materiałami edukacyjnymi. Idealne rozwiązanie dla firm szkoleniowych i instytucji edukacyjnych.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/strony-lms/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/lms-websites/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers
         title_top={title_top}
         title_middle={title_middle}

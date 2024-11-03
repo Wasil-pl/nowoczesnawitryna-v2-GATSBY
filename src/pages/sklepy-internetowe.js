@@ -22,10 +22,11 @@ const SklepyInternetowe = () => {
   const siteDescription =
     'Oferuję profesjonalne tworzenie sklepów internetowych opartych na WooCommerce. Funkcjonalne, intuicyjne i bezpieczne rozwiązania e-commerce, które pomogą Ci zwiększyć sprzedaż i zasięg.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/sklepy-internetowe/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/online-stores/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} active="sklep" />
       <ScroolToPriceButton />
       <ScroolUpButton />

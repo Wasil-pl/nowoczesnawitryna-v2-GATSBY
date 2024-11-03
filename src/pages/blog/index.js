@@ -18,10 +18,11 @@ const Blog = () => {
   const siteDescription =
     'Blog o tworzeniu stron internetowych, SEO, e-commerce i aplikacjach webowych. Zyskaj praktyczne wskazówki, najnowsze trendy i inspiracje dla Twojej marki online.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/blog/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/blog/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} active="blog" />
       <ScroolUpButton />
       <ArticleList />

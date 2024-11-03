@@ -24,10 +24,11 @@ const StronyNiestandardowe = () => {
   const siteDescription =
     'Tworzę strony internetowe pisane od zera, bez ograniczeń CMS. Nowoczesne, zoptymalizowane i dostosowane do indywidualnych potrzeb Twojej firmy, idealne do nietypowych projektów.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/strony-niestandardowe/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/custom-websites/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers
         title_top={title_top}
         title_middle={title_middle}

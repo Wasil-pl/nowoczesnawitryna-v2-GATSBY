@@ -23,10 +23,11 @@ const ProjektowanieLogo = () => {
   const siteDescription =
     'Oferuję projektowanie logo dopasowane do unikalnych potrzeb Twojej marki. Wyróżnij się na tle konkurencji dzięki nowoczesnemu i profesjonalnemu logo, które zapada w pamięć.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/projektowanie-logo/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/logo-design/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers
         title_top={title_top}
         title_middle={title_middle}

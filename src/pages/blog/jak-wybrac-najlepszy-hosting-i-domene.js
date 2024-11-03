@@ -16,10 +16,11 @@ const BlogHosting = () => {
   const siteDescription =
     'Jak wybrać najlepszy hosting i domenę - artykuł ten pomoże Ci w dokonaniu prawidłowego wyboru, bo wbrew pozorom są to bardzo ważne kwestie...';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/blog/jak-wybrac-najlepszy-hosting-i-domene/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/blog/how-to-choose-the-best-hosting-and-domain/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers title_top={title_top} title_middle={title_middle} active="blog" />
       <ScroolUpButton />
       <BlogArticleHosting />

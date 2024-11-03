@@ -15,10 +15,11 @@ const PolitykaPrywatnosci = () => {
   const siteDescription =
     'Niniejsza strona korzysta z plików cookie. Wykorzystujemy pliki cookie do spersonalizowania treści i reklam, aby oferować funkcje społecznościowe i analizować';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/polityka-prywatnosci/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/privacy-policy/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers title_top={title} subtitle={subtitle} />
       <PrivacyPolicy />
       <Footer />

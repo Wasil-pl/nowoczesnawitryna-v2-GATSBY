@@ -20,8 +20,6 @@ const MenuMobile = ({ active }) => {
         <Offcanvas.Body>
           <div className={styles.menu_wrapper}>
             <div className={styles.lang}>
-              <link rel="alternate" hrefLang="pl" href="https://nowoczesnawitryna.pl/" />
-              <link rel="alternate" hrefLang="en" href="https://nowoczesnawitryna.com" />
               <a href="https://nowoczesnawitryna.com">EN</a>
               <a className={styles.active} href="https://nowoczesnawitryna.pl/">
                 PL

@@ -17,10 +17,11 @@ const BlogJakaStrona = () => {
   const siteDescription =
     'Wybór odpowiedniego rodzaju strony internetowej jest kluczowy dla sukcesu każdej firmy w internecie. Różne typy stron odpowiadają różnym potrzebom biznesowym – od prostych stron typu One-Page po rozbudowane witryny Multi-Page i strony oparte na systemach CMS. W tym artykule przyjrzymy się, jakie cechy wyróżniają każdy z tych typów, oraz doradzimy, jak dobrać idealną stronę do Twojej działalności.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/blog/jak-wybrac-idealna-strone/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/blog/how-to-choose-the-perfect-website/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers title_top={title_top} title_middle={title_middle} active="blog" />
       <ScroolUpButton />
       <BlogArticleChoosingWebsite />

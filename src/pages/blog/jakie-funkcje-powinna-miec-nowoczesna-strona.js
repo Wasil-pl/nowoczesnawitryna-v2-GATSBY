@@ -16,10 +16,11 @@ const BlogModernWebsite = () => {
   const siteDescription =
     'Jakie Funkcje Powinna Mieć Nowoczesna Strona Internetowa? - artykuł ten pomoże Ci w dokonaniu prawidłowego wyboru, bo wbrew pozorom są to bardzo ważne kwestie...';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/blog/jakie-funkcje-powinna-miec-nowoczesna-strona/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/blog/features-of-a-modern-website/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers title_top={title_top} title_middle={title_middle} active="blog" />
       <ScroolUpButton />
       <BlogArticleModernWebsiteFeatures />

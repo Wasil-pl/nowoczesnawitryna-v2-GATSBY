@@ -21,10 +21,11 @@ const Kontakt = () => {
   const siteDescription =
     'Skontaktuj się ze mną, aby uzyskać pomoc lub informacje o moich usługach tworzenia stron internetowych, aplikacji webowych i rozwiązań cyfrowych. Zadzwoń lub napisz.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/kontakt/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/contact/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} active="kontakt" />
       <ScroolUpButton />
       <SiteInfoServices

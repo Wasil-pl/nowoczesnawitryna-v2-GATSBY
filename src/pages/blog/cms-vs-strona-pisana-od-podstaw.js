@@ -16,10 +16,11 @@ const BlogCMS = () => {
   const siteDescription =
     'Cms vs strona pisana od podstaw - Ten artykuł pomoże Ci zdecydować, czy lepiej jest postawić na stronę internetową pisana od podstaw, czy na system CMS.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/blog/cms-vs-strona-pisana-od-podstaw/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/blog/cms-vs-custom-built-website/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers title_top={title_top} title_middle={title_middle} active="blog" />
       <ScroolUpButton />
       <BlogArticleCms />

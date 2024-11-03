@@ -24,10 +24,11 @@ const AplikacjeWebowe = () => {
   const siteDescription =
     'Tworzę aplikacje webowe, które zapewniają zaawansowane funkcje i wsparcie dla rozwoju Twojej firmy. Szybkie, bezpieczne i dopasowane do potrzeb biznesowych aplikacje online.';
   const siteUrl = 'https://www.nowoczesnawitryna.pl/aplikacje-webowe/';
+  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/web-applications/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers
         title_top={title_top}
         title_middle={title_middle}
