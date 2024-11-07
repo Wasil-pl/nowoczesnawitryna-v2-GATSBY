@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Nav, NavDropdown, Offcanvas } from 'react-bootstrap';
 import * as styles from './MenuMobile.module.scss';
 import './MenuMobile.css';
-import { List } from 'react-bootstrap-icons';
+import { HouseFill, List } from 'react-bootstrap-icons';
 
 const MenuMobile = ({ active }) => {
   const [show, setShow] = useState(false);
@@ -20,14 +20,14 @@ const MenuMobile = ({ active }) => {
         <Offcanvas.Body>
           <div className={styles.menu_wrapper}>
             <div className={styles.lang}>
-              <a href="https://nowoczesnawitryna.com">EN</a>
-              <a className={styles.active} href="https://nowoczesnawitryna.pl/">
+              <a href="https://www.nowoczesnawitryna.com">EN</a>
+              <a className={styles.active} href="https://www.nowoczesnawitryna.pl/">
                 PL
               </a>
             </div>
             <Nav>
               <Nav.Link className={active === 'home' ? 'activeMenuItem' : ''} href="/">
-                Strona główna
+                <HouseFill />
               </Nav.Link>
               <NavDropdown title="Oferta" id="basic-nav-dropdown">
                 <NavDropdown.Item className={active === 'aplikacje' ? 'activeMenuItem' : ''} href="/aplikacje-webowe/">
@@ -49,6 +49,12 @@ const MenuMobile = ({ active }) => {
                   Projektowanie logo
                 </NavDropdown.Item>
               </NavDropdown>
+              <Nav.Link
+                className={active === 'formularz-wyceny' ? 'activeMenuItem' : ''}
+                href="/formularz-szybkiej-wyceny/"
+              >
+                Szybka Wycena
+              </Nav.Link>
               <Nav.Link className={active === 'kontakt' ? 'activeMenuItem' : ''} href="/kontakt/">
                 Kontakt
               </Nav.Link>

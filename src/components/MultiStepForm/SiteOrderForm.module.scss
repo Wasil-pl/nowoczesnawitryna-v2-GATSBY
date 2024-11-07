@@ -1,0 +1,104 @@
+@import '../../styles/settings.scss';
+
+.contact {
+  margin: 200px 0;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    .form_wrapper {
+      flex: calc(50% - 20px);
+      background-color: $color-background-dark;
+      padding: 40px 60px;
+      color: $color-text-light;
+
+      h3 {
+        font-size: 2rem;
+        margin: 0 0 20px 0;
+        font-weight: $font-weight-bold;
+      }
+
+      .form {
+        .form_group {
+          margin-bottom: 20px;
+
+          label {
+            font-size: 0.8rem;
+            margin-bottom: 1px;
+          }
+        }
+
+        .button {
+          border-radius: 5px;
+          border: 1px solid $color-background-primary;
+          font-size: 1rem;
+          background-color: unset;
+          width: fit-content;
+          text-transform: uppercase;
+          padding: 10px 20px;
+          color: $color-text-light;
+          text-decoration: none;
+          margin-left: 50%;
+          transform: translateX(-50%);
+
+          &:hover {
+            color: $color-text-primary;
+            border: 1px solid $color-text-primary;
+          }
+        }
+
+        .dark {
+          border: 1px solid $color-background-dark;
+          color: $color-text-dark;
+
+          &:hover {
+            background-color: $color-background-dark;
+            color: $color-text-primary;
+          }
+        }
+      }
+    }
+
+    .info_wrapper {
+      flex: calc(50% - 20px);
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .info_item {
+          text-align: center;
+          margin-bottom: 50px;
+
+          svg {
+            font-size: 45px;
+          }
+
+          p {
+            font-size: 1rem;
+            margin: 10px 0;
+            font-size: 24px;
+          }
+
+          a {
+            text-decoration: none;
+            color: $color-text-dark;
+
+            &:hover {
+              color: $color-text-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin: 200px 0 100px 0;
+  }
+}

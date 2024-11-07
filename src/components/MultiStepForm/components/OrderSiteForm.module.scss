@@ -1,0 +1,22 @@
+@import '../../../styles/settings.scss';
+
+.order_site_form {
+  margin: 150px 0;
+
+  .form {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
+
+.selection_display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+
+  .selection_item {
+    padding: 10px 20px;
+    border: 1px solid $color-background-dark;
+  }
+}

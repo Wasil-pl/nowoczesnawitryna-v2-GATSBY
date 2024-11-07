@@ -1,12 +1,13 @@
 import React from 'react';
 import { Nav, NavDropdown } from 'react-bootstrap';
 import './menu.css';
+import { HouseFill } from 'react-bootstrap-icons';
 
 const MenuDeskopt = ({ active }) => {
   return (
     <Nav>
       <Nav.Link className={active === 'home' ? 'activeMenuItem' : ''} href="/">
-        Strona główna
+        <HouseFill />
       </Nav.Link>
       <NavDropdown title="Oferta" id="basic-nav-dropdown">
         <NavDropdown.Item className={active === 'aplikacje' ? 'activeMenuItem' : ''} href="/aplikacje-webowe/">
@@ -28,6 +29,9 @@ const MenuDeskopt = ({ active }) => {
           Projektowanie logo
         </NavDropdown.Item>
       </NavDropdown>
+      <Nav.Link className={active === 'formularz-wyceny' ? 'activeMenuItem' : ''} href="/formularz-szybkiej-wyceny/">
+        Szybka Wycena
+      </Nav.Link>
       <Nav.Link className={active === 'kontakt' ? 'activeMenuItem' : ''} href="/kontakt/">
         Kontakt
       </Nav.Link>

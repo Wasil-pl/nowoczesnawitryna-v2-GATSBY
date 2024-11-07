@@ -75,3 +75,24 @@ export const kontakt_txt = {
   descryption_first_column:
     'Skontaktuj się ze mną, aby uzyskać pomoc lub informacje o moich usługach tworzenia stron internetowych, aplikacji webowych i rozwiązań cyfrowych. Zadzwoń lub napisz, a ja odpowiem na Twoje pytania i doradzę, jakie rozwiązanie będzie najlepsze dla Twojego biznesu.',
 };
+
+export const wycena_txt = {
+  title_first_column: 'Szybka Wycena Usług',
+  descryption_first_column: `
+    Chcesz dowiedzieć się, ile kosztowałoby stworzenie Twojej strony internetowej, sklepu online lub platformy edukacyjnej (LMS)? Wypełnij formularz szybkiej wyceny, a otrzymasz indywidualnie przygotowaną ofertę dostosowaną do Twoich potrzeb.<br /><br />
+
+    <strong>Jak to działa?</strong>
+    <ul>
+      <li>Wybierz rodzaj projektu, który Cię interesuje – strona internetowa, sklep online lub platforma edukacyjna.</li>
+      <li>Odpowiedz na krótkie pytania dotyczące wymagań, liczby podstron, kursów lub produktów oraz dodatkowych opcji, które chciałbyś mieć.</li>
+      <li>Prześlij formularz – osobiście zapoznam się z Twoimi odpowiedziami i przygotuję wstępną wycenę, abyś szybko mógł podjąć decyzję o rozpoczęciu projektu.</li>
+    </ul><br />
+
+    <strong>Dlaczego warto?</strong>
+    <ul>
+      <li>Formularz szybkiej wyceny pozwala na usprawnienie procesu wyceny i daje Ci wgląd w orientacyjne koszty oraz możliwości, które najlepiej pasują do Twoich oczekiwań.</li>
+    </ul><br />
+
+    Jestem tu, aby pomóc Ci stworzyć rozwiązanie na miarę Twoich potrzeb. Wypełnij formularz, a niebawem otrzymasz wstępną ofertę!
+  `,
+};

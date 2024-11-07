@@ -31,7 +31,7 @@ const Kontakt = () => {
       <SiteInfoServices
         title_first_column={kontakt_txt.title_first_column}
         descryption_first_column={kontakt_txt.descryption_first_column}
-        variant="contact"
+        variant="one_column"
       />
       <ContactInfo />
       <Contact />

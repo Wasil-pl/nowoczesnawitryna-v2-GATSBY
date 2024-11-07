@@ -6,16 +6,16 @@ const RootLayout = ({ title, url, urlOtherLang, description }) => {
     <>
       <Helmet
         htmlAttributes={{
-          lang: 'pl_PL',
+          lang: 'pl',
         }}
       >
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={url} />
-        <link rel="alternate" hrefLang="en-US" href={url} />
-        <link rel="alternate" hrefLang="pl_PL" href={urlOtherLang} />
-        <meta property="og:locale" content="pl_PL" />
+        <link rel="alternate" hrefLang="pl" href={url} />
+        <link rel="alternate" hrefLang="en" href={urlOtherLang} />
+        <meta property="og:locale" content="pl" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />

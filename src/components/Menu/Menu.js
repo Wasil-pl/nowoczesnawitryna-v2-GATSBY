@@ -40,8 +40,8 @@ const Menu = ({ active }) => {
         <div className={styles.menu_wrapper}>
           {isDesktop && (
             <div className={styles.lang}>
-              <a href="https://nowoczesnawitryna.com">EN</a>
-              <a className={styles.active} href="https://nowoczesnawitryna.pl/">
+              <a href="https://www.nowoczesnawitryna.com">EN</a>
+              <a className={styles.active} href="https://www.nowoczesnawitryna.pl/">
                 PL
               </a>
             </div>

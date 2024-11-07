@@ -11,6 +11,7 @@ const SiteInfoServices = ({
   card_descryption,
   second_card_descryption,
   variant = '',
+  isHtml,
 }) => {
   return (
     <section className={`${styles.site_info} ${styles[variant]}`}>
@@ -18,9 +19,16 @@ const SiteInfoServices = ({
         <div className={styles.wrapper}>
           <div className={styles.first_column}>
             <h3>{title_first_column}</h3>
-            <p>{descryption_first_column}</p>
+            {isHtml ? (
+              <p dangerouslySetInnerHTML={{ __html: descryption_first_column }} />
+            ) : (
+              <p>{descryption_first_column}</p>
+            )}
             {!variant && <CustomButton variant="dark" text="Napisz do mnie..." link="/kontakt/" />}
-            {variant && <CustomButton variant="dark" text="Napisz do mnie..." link="/kontakt/#kontakt" />}
+            {variant && !isHtml && <CustomButton variant="dark" text="Napisz do mnie..." link="/kontakt/#kontakt" />}
+            {isHtml && variant && (
+              <CustomButton variant="dark" text="Przejdź do formularza..." link="/formularz-szybkiej-wyceny/#form" />
+            )}
           </div>
           <div className={styles.second_column}>
             <Card className={`mb-2 ${styles.first_card}`}>

@@ -113,7 +113,7 @@ const Contact = () => {
                       required: errorMessages.required,
                       minLength: {
                         value: patterns.titleMinLength,
-                        message: errorMessages.minLength(patterns.titleMinLength),
+                        message: errorMessages.minLength,
                       },
                     })}
                     placeholder="Tytuł"
@@ -131,7 +131,7 @@ const Contact = () => {
                       required: errorMessages.required,
                       minLength: {
                         value: patterns.descryptionMinLength,
-                        message: errorMessages.minLength(patterns.descryptionMinLength),
+                        message: errorMessages.minLength,
                       },
                       maxLength: {
                         value: patterns.descryptionMaxLength,
