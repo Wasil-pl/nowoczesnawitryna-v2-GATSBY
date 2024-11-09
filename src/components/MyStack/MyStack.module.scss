@@ -1,8 +1,8 @@
-@import '../../styles/settings.scss';
+@use '../../styles/settings.scss' as settings;
 
 .my_stack {
   .wrapper {
-    background-color: $color-background-dark;
+    background-color: settings.$color-background-dark;
     padding: 100px 40px;
     margin-top: -150px;
     position: relative;
@@ -14,7 +14,7 @@
       bottom: 20px;
       right: 20px;
       z-index: 1;
-      color: $color-primary;
+      color: settings.$color-primary;
       height: 300px;
       width: 300px;
     }
@@ -31,13 +31,13 @@
         padding: 20px 30px;
         border-radius: 20px;
         margin: 10px;
-        transition: $transition_0_3;
+        transition: settings.$transition_0_3;
 
         &:hover {
           transform: scale(1.07);
 
           .card_title {
-            color: $color-text-primary;
+            color: settings.$color-text-primary;
             transform: scale(1.1);
           }
         }
@@ -45,9 +45,9 @@
         .card_title {
           font-size: 1.5rem;
           font-weight: 700;
-          color: $color-text-dark;
+          color: settings.$color-text-dark;
           margin: 0;
-          transition: $transition_0_3;
+          transition: settings.$transition_0_3;
         }
       }
     }

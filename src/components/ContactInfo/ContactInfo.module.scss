@@ -1,4 +1,4 @@
-@import '../../styles/settings.scss';
+@use '../../styles/settings.scss' as settings;
 
 .contact_info {
   margin: 200px 0 100px;
@@ -27,7 +27,7 @@
 
     .map {
       flex: 3;
-      background-color: $color-background-dark;
+      background-color: settings.$color-background-dark;
       padding: 10px;
       border-radius: 15px;
       min-height: 400px;

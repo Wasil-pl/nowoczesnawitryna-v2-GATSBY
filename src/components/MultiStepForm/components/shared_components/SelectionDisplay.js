@@ -1,13 +1,14 @@
 import React from 'react';
 import * as styles from '../OrderSiteForm.module.scss';
 
-const SelectionDisplay = ({ dataToDisplay }) => {
+const SelectionDisplay = ({ data }) => {
+  console.log('dane do wyświetlenia:', data);
   return (
     <div className={styles.selection_display}>
-      {dataToDisplay.map((item, index) => (
-        <div key={index} className={styles.selection_item}>
-          <span className={styles.selection_label}>{item.label}:</span>
-          <span className={styles.selection_value}> {item.value}</span>
+      {Object.entries(data).map(([key, value]) => (
+        <div key={key} className={styles.selection_display_item}>
+          <span>{key}:</span>
+          <span> {value}</span>
         </div>
       ))}
     </div>

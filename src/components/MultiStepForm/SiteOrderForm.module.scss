@@ -1,4 +1,4 @@
-@import '../../styles/settings.scss';
+@use '../../styles/settings.scss' as settings;
 
 .contact {
   margin: 200px 0;
@@ -10,14 +10,14 @@
 
     .form_wrapper {
       flex: calc(50% - 20px);
-      background-color: $color-background-dark;
+      background-color: settings.$color-background-dark;
       padding: 40px 60px;
-      color: $color-text-light;
+      color: settings.$color-text-light;
 
       h3 {
         font-size: 2rem;
         margin: 0 0 20px 0;
-        font-weight: $font-weight-bold;
+        font-weight: settings.$font-weight-bold;
       }
 
       .form {
@@ -32,30 +32,30 @@
 
         .button {
           border-radius: 5px;
-          border: 1px solid $color-background-primary;
+          border: 1px solid settings.$color-background-primary;
           font-size: 1rem;
           background-color: unset;
           width: fit-content;
           text-transform: uppercase;
           padding: 10px 20px;
-          color: $color-text-light;
+          color: settings.$color-text-light;
           text-decoration: none;
           margin-left: 50%;
           transform: translateX(-50%);
 
           &:hover {
-            color: $color-text-primary;
-            border: 1px solid $color-text-primary;
+            color: settings.$color-text-primary;
+            border: 1px solid settings.$color-text-primary;
           }
         }
 
         .dark {
-          border: 1px solid $color-background-dark;
-          color: $color-text-dark;
+          border: 1px solid settings.$color-background-dark;
+          color: settings.$color-text-dark;
 
           &:hover {
-            background-color: $color-background-dark;
-            color: $color-text-primary;
+            background-color: settings.$color-background-dark;
+            color: settings.$color-text-primary;
           }
         }
       }
@@ -85,10 +85,10 @@
 
           a {
             text-decoration: none;
-            color: $color-text-dark;
+            color: settings.$color-text-dark;
 
             &:hover {
-              color: $color-text-primary;
+              color: settings.$color-text-primary;
             }
           }
         }

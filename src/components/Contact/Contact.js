@@ -45,16 +45,7 @@ const Contact = () => {
           <div className={styles.form_wrapper}>
             <h3>Gotowy aby zacząć?</h3>
             <p>Skontaktuj się ze mną już dziś!</p>
-            {loading && <Alert variant="info">Wysyłanie wiadomości...</Alert>}
-            {success && (
-              <Alert variant="success">Wiadomość została wysłana pomyślnie. Odpowiem tak szybko, jak to możliwe.</Alert>
-            )}
-            {error && (
-              <Alert variant="danger">
-                Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie. Albo skontaktuj się ze mną telefonicznie i
-                powiadom mnie o problemie. Z góry dziękuję.
-              </Alert>
-            )}
+
             <div className={styles.form}>
               <Form onSubmit={validate(handleSubmit)}>
                 <Form.Group className={styles.form_group}>
@@ -107,24 +98,6 @@ const Contact = () => {
                 </Form.Group>
 
                 <Form.Group className={styles.form_group}>
-                  <Form.Label>Tytuł</Form.Label>
-                  <Form.Control
-                    {...register('title', {
-                      required: errorMessages.required,
-                      minLength: {
-                        value: patterns.titleMinLength,
-                        message: errorMessages.minLength,
-                      },
-                    })}
-                    placeholder="Tytuł"
-                    autoComplete="title"
-                    label="Tytuł"
-                    required
-                  />
-                  {errors.title && <Error>{errors.title?.message}</Error>}
-                </Form.Group>
-
-                <Form.Group className={styles.form_group}>
                   <Form.Label>Wiadomość</Form.Label>
                   <Form.Control
                     {...register('message', {
@@ -139,7 +112,7 @@ const Contact = () => {
                       },
                     })}
                     as="textarea"
-                    rows={3}
+                    rows={5}
                     placeholder="Wiadomość"
                     label="Wiadomość"
                     autoComplete="message"
@@ -148,9 +121,25 @@ const Contact = () => {
                   {errors.message && <Error>{errors.message?.message}</Error>}
                 </Form.Group>
 
-                <Button type="submit" className={styles.button}>
-                  Wyślij
-                </Button>
+                {loading && <Alert variant="info">Wysyłanie wiadomości...</Alert>}
+                {success && (
+                  <Alert variant="success">
+                    Wiadomość została wysłana pomyślnie. Odpowiem tak szybko, jak to możliwe.
+                  </Alert>
+                )}
+                {error && (
+                  <Alert variant="danger" className={styles.error_message}>
+                    Wystąpił błąd podczas wysyłania. Spróbuj ponownie. <br /> Jeśli problem się powtarza, skontaktuj się
+                    ze mną za pomocą danych kontaktowych podanych na dole strony i powiadom mnie o problemie. <br /> Z
+                    góry dziękuję.
+                  </Alert>
+                )}
+
+                {!(success || loading) && (
+                  <Button type="submit" className={styles.button}>
+                    Wyślij
+                  </Button>
+                )}
               </Form>
             </div>
           </div>

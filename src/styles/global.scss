@@ -1,4 +1,5 @@
-@import './settings.scss';
+@use './settings.scss' as settings;
+@use './typography.scss' as typography;
 
 *,
 *::before,
@@ -14,14 +15,14 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: $color-text-dark;
+  color: settings.$color-text-dark;
   line-height: 1.7;
   letter-spacing: 0.5px;
   overflow-y: scroll;
   min-height: 100vh;
   overflow-x: hidden !important;
   overflow: auto;
-  font-family: $font-body;
+  font-family: settings.$font-body;
 }
 
 em {
@@ -29,7 +30,7 @@ em {
 }
 
 .color_primary {
-  color: $color-primary !important;
+  color: settings.$color-primary !important;
 }
 
 .separator {
@@ -43,11 +44,9 @@ em {
     left: 50%;
     transform: translateX(-50%);
     height: 5px;
-    background-color: $color-primary;
+    background-color: settings.$color-primary;
   }
 }
-
-@import './typography.scss';
 
 @media (max-width: 768px) {
   html {

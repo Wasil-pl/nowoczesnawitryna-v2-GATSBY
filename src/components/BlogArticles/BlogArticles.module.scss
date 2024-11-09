@@ -1,4 +1,4 @@
-@import '../../styles/settings.scss';
+@use '../../styles/settings.scss' as settings;
 
 .blog_articles {
   padding: 100px 0;
@@ -11,7 +11,7 @@
   }
 
   a {
-    color: $color-primary;
+    color: settings.$color-primary;
     text-decoration: none;
   }
 

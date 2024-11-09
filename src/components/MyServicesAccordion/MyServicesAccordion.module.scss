@@ -1,4 +1,4 @@
-@import '../../styles/settings.scss';
+@use '../../styles/settings.scss' as settings;
 
 .wrapper {
   margin-top: 100px;
@@ -13,14 +13,14 @@
 
       h3 {
         font-size: 2rem;
-        font-weight: $font-weight-bold;
-        color: $color-primary;
+        font-weight: settings.$font-weight-bold;
+        color: settings.$color-primary;
         margin-bottom: 50px;
       }
 
       p {
         font-size: 1rem;
-        color: $color-text-light;
+        color: settings.$color-text-light;
         margin-bottom: 20px;
 
         &:last-of-type {

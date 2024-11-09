@@ -1,4 +1,4 @@
-@import './settings.scss';
+@use './settings.scss' as settings;
 
 h1,
 h2,
@@ -11,13 +11,13 @@ h6 {
 
 h1,
 h2 {
-  font-family: $font-header;
+  font-family: settings.$font-header;
 }
 
 h3,
 h4,
 h5,
 h6 {
-  font-family: $font-body;
+  font-family: settings.$font-body;
 }
 

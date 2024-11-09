@@ -1,15 +1,15 @@
-@import '../../styles/settings.scss';
+@use '../../styles/settings.scss' as settings;
 
 .canvas_button {
   background-color: transparent;
-  border-color: $color-background-lighter;
-  color: $color-text-light;
+  border-color: settings.$color-background-lighter;
+  color: settings.$color-text-light;
   font-size: 1.2rem;
   padding: 1px 10px 5px 10px;
 
   &:hover {
-    border-color: $color-primary;
-    color: $color-primary;
+    border-color: settings.$color-primary;
+    color: settings.$color-primary;
     background-color: transparent;
   }
 }
@@ -24,14 +24,14 @@
 
     & > a {
       margin-left: 10px;
-      color: $color-text-dark;
-      font-weight: $font-weight-bold;
+      color: settings.$color-text-dark;
+      font-weight: settings.$font-weight-bold;
       font-size: 0.9rem;
       text-decoration: none;
     }
 
     & > a.active {
-      color: $color-primary;
+      color: settings.$color-primary;
     }
   }
 }

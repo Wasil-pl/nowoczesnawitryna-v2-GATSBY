@@ -1,8 +1,8 @@
-@import '../../styles/settings.scss';
+@use '../../styles/settings.scss' as settings;
 
 .faq {
   padding: 100px 0;
-  background-color: $color-background-lighter;
+  background-color: settings.$color-background-lighter;
 
   .wrapper {
     .accordion_wrapper {

@@ -1,4 +1,4 @@
-@import '../../styles/settings.scss';
+@use '../../styles/settings.scss' as settings;
 
 .portfolio {
   padding: 150px 0;
@@ -25,13 +25,13 @@
         justify-content: center;
         align-items: center;
         opacity: 0;
-        transition: $transition_0_3;
-        color: $color-text-light;
+        transition: settings.$transition_0_3;
+        color: settings.$color-text-light;
         text-align: center;
 
         h3 {
           font-size: 2rem;
-          font-weight: $font-weight-extrabold;
+          font-weight: settings.$font-weight-extrabold;
           margin-bottom: 1rem;
         }
 
@@ -49,8 +49,8 @@
     .image_box {
       margin: 25px 25px;
       border-radius: 20px;
-      transition: $transition_0_3;
-      border: solid 10px $color-background-dark;
+      transition: settings.$transition_0_3;
+      border: solid 10px settings.$color-background-dark;
       overflow: hidden;
 
       img {

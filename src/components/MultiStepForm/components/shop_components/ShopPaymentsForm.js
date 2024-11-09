@@ -2,32 +2,48 @@ import React from 'react';
 import * as styles from '../OrderSiteForm.module.scss';
 import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import SelectionDisplay from '../shared_components/SelectionDisplay';
 
-const ShopPaymentsForm = ({ nextStep, prevStep, updateData, dataToDisplay }) => {
-  const { register, handleSubmit: validate } = useForm();
+const ShopPaymentsForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefaultValues }) => {
+  const { register, handleSubmit: validate } = useForm({ defaultValues });
 
-  const prepareData = (data) => {
-    // Filtrujemy tylko te funkcje, które są zaznaczone (true)
-    const shopPaymentsMethods = Object.fromEntries(Object.entries(data).filter(([key, value]) => value === true));
+  const handleSubmit = (data) => {
+    // Lista kluczy tylko dla tego komponentu
+    const relevantKeys = [
+      'Przelew',
+      'Płatność przy odbiorze',
+      'Przelewy24',
+      'PayU',
+      'PayPal',
+      'DotPay',
+      'Tpay',
+      'AutoPay',
+      'inne formy płatności',
+    ];
 
-    if (data.inna_forma_platnosci && data.inna_forma_platnosci.trim() !== '') {
-      shopPaymentsMethods.push(data.inna_forma_platnosci);
+    // Filtrujemy dane, aby zawierały tylko wartości z tego kroku
+    const filteredData = Object.fromEntries(Object.entries(data).filter(([key]) => relevantKeys.includes(key)));
+
+    const shopPaymentsMethods = Object.entries(filteredData)
+      .filter(([key, value]) => value === true)
+      .map(([key]) => key);
+
+    if (filteredData['inne formy płatności'] && filteredData['inne formy płatności'].trim() !== '') {
+      shopPaymentsMethods.push(filteredData['inne formy płatności']);
     }
 
-    // Tworzymy obiekt z tablicą shop_functions, którą możemy przekazać dalej
-    const formattedData = { shop_payments_methods: shopPaymentsMethods };
+    const formattedData = {
+      'Formy płatności':
+        shopPaymentsMethods.length > 0 ? shopPaymentsMethods.join(', ') : 'Nie wybrano żadnych form płatności',
+    };
 
-    // Przekazujemy przefiltrowane dane do funkcji updateData
     updateData(formattedData);
+    updateDefaultValues(data); // Używamy przefiltrowanych danych do zapisu domyślnych wartości
     nextStep();
   };
 
   return (
     <div>
-      <SelectionDisplay dataToDisplay={dataToDisplay} />
-
-      <Form onSubmit={validate(prepareData)}>
+      <Form onSubmit={validate(handleSubmit)}>
         <Form.Group className={styles.form_group}>
           <Form.Label>Jakie płatności ma mieć Twój sklep?</Form.Label>
           <Form.Check {...register('Przelew')} type="switch" label="Przelew bankowy" />
@@ -43,18 +59,18 @@ const ShopPaymentsForm = ({ nextStep, prevStep, updateData, dataToDisplay }) => 
         <Form.Group className={styles.form_group}>
           <Form.Label>Inne</Form.Label>
           <Form.Control
-            {...register('inna_forma_platnosci')}
-            type="switch"
+            {...register('inne formy płatności')}
+            type="textarea"
             label="Inna forma płatności"
             placeholder="Inna forma płatności"
           />
         </Form.Group>
 
-        <Button type="submit" className={styles.button}>
-          Dalej
-        </Button>
         <Button type="button" onClick={prevStep} className={styles.button}>
           Wstecz
+        </Button>
+        <Button type="submit" className={styles.button}>
+          Dalej
         </Button>
       </Form>
     </div>

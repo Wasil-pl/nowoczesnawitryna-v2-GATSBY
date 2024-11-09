@@ -1,7 +1,7 @@
-@import '../../styles/settings.scss';
+@use '../../styles/settings.scss' as settings;
 
 .header {
-  background-color: $color-background-dark;
+  background-color: settings.$color-background-dark;
   position: relative;
   height: 90vh;
   background-image: image-set(url('/images/tlo.avif') type('image/avif'), url('/images/tlo.webp') type('image/webp'));
@@ -22,7 +22,7 @@
 
     .title {
       font-size: 3rem;
-      font-weight: $font-weight-extrabold;
+      font-weight: settings.$font-weight-extrabold;
       text-transform: uppercase;
       line-height: 1.2;
       letter-spacing: 0.3rem;
@@ -31,8 +31,8 @@
       .title_top {
         background: linear-gradient(
           90deg,
-          $color-text-primary,
-          $color-text-dark-light
+          settings.$color-text-primary,
+          settings.$color-text-dark-light
         ); /* Gradient od żółtego do czarnego */
         -webkit-background-clip: text; /* Działa w przeglądarkach WebKit (Chrome, Safari) */
         background-clip: text; /* Ustawienie tła na tekst */
@@ -42,8 +42,8 @@
       .title_bottom {
         background: linear-gradient(
           90deg,
-          $color-text-dark-light,
-          $color-text-primary
+          settings.$color-text-dark-light,
+          settings.$color-text-primary
         ); /* Gradient od czarnego do żółtego */
         -webkit-background-clip: text; /* Działa w przeglądarkach WebKit (Chrome, Safari) */
         background-clip: text; /* Ustawienie tła na tekst */
@@ -56,7 +56,7 @@
       margin-top: 2rem;
       line-height: 1.2;
       letter-spacing: 0.2rem;
-      color: $color-text-light-dark;
+      color: settings.$color-text-light-dark;
       text-transform: uppercase;
     }
   }

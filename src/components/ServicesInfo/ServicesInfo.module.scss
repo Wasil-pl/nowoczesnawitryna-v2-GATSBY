@@ -1,7 +1,7 @@
-@import '../../styles/settings.scss';
+@use '../../styles/settings.scss' as settings;
 
 .services_info {
-  background-color: $color-background-lighter;
+  background-color: settings.$color-background-lighter;
   padding: 100px 0;
   margin-top: 50px;
 
@@ -17,7 +17,7 @@
       max-width: 330px;
 
       img {
-        border: 10px solid $color-background-dark;
+        border: 10px solid settings.$color-background-dark;
       }
 
       .card_text {

@@ -1,8 +1,8 @@
-@import '../../styles/settings.scss';
+@use '../../styles/settings.scss' as settings;
 
 .process_steps_container {
   margin: 0 auto;
-  background-color: $color-background-lighter;
+  background-color: settings.$color-background-lighter;
   margin-top: 100px;
   padding: 100px 0;
 
@@ -27,8 +27,8 @@
 
         h3 {
           font-size: 1.7rem;
-          font-weight: $font-weight-bold;
-          font-weight: $font-weight-bold;
+          font-weight: settings.$font-weight-bold;
+          font-weight: settings.$font-weight-bold;
           margin-bottom: 20px;
         }
       }
@@ -36,8 +36,8 @@
       .step_1 {
         &::after {
           content: '1';
-          font-family: $font-header;
-          font-weight: $font-weight-bold;
+          font-family: settings.$font-header;
+          font-weight: settings.$font-weight-bold;
           font-size: 10rem;
           color: #002dae66;
           position: absolute;
@@ -49,8 +49,8 @@
       .step_2 {
         &::after {
           content: '2';
-          font-family: $font-header;
-          font-weight: $font-weight-bold;
+          font-family: settings.$font-header;
+          font-weight: settings.$font-weight-bold;
           font-size: 10rem;
           color: #9bc90066;
           position: absolute;
@@ -62,8 +62,8 @@
       .step_3 {
         &::after {
           content: '3';
-          font-family: $font-header;
-          font-weight: $font-weight-bold;
+          font-family: settings.$font-header;
+          font-weight: settings.$font-weight-bold;
           font-size: 10rem;
           color: #ffae0a66;
           position: absolute;
@@ -75,8 +75,8 @@
       .step_4 {
         &::after {
           content: '4';
-          font-family: $font-header;
-          font-weight: $font-weight-bold;
+          font-family: settings.$font-header;
+          font-weight: settings.$font-weight-bold;
           font-size: 10rem;
           color: #00e4b466;
           position: absolute;
@@ -88,8 +88,8 @@
       .step_5 {
         &::after {
           content: '5';
-          font-family: $font-header;
-          font-weight: $font-weight-bold;
+          font-family: settings.$font-header;
+          font-weight: settings.$font-weight-bold;
           font-size: 10rem;
           color: #ff671a66;
           position: absolute;
@@ -143,7 +143,7 @@
 
     .active {
       transform: scale(1.1);
-      transition: $transition_0_3;
+      transition: settings.$transition_0_3;
 
       .step_brief {
         border-bottom: 5px solid #002dae;

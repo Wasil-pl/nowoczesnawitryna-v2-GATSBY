@@ -1,8 +1,8 @@
-@import '../../styles/settings.scss';
+@use '../../styles/settings.scss' as settings;
 
 .prices {
-  background-color: $color-background-dark;
-  color: $color-text-light;
+  background-color: settings.$color-background-dark;
+  color: settings.$color-text-light;
   padding: 150px 0;
   margin-bottom: 250px;
 
@@ -23,15 +23,15 @@
         h3 {
           font-size: 1.8rem;
           margin-bottom: 20px;
-          color: $color-text-primary;
+          color: settings.$color-text-primary;
         }
       }
 
       .price_box {
         flex: 1;
         padding: 20px 40px;
-        background-color: $color-background-light;
-        color: $color-text-dark;
+        background-color: settings.$color-background-light;
+        color: settings.$color-text-dark;
 
         .price {
           text-align: center;
@@ -40,7 +40,7 @@
           h3 {
             font-size: 1.8rem;
             margin-bottom: 10px;
-            font-weight: $font-weight-bold;
+            font-weight: settings.$font-weight-bold;
           }
 
           p {
@@ -53,8 +53,8 @@
 
             span {
               font-size: 2.2rem;
-              color: $color-text-primary;
-              font-weight: $font-weight-bold;
+              color: settings.$color-text-primary;
+              font-weight: settings.$font-weight-bold;
             }
           }
         }

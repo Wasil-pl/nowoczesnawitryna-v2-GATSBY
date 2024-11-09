@@ -4,24 +4,33 @@ import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { Error, errorMessages } from '../../../../consts/errorMesages';
 import { patterns } from '../../../../consts/patterns';
-import SelectionDisplay from '../shared_components/SelectionDisplay';
 
-const ShopInfoForm = ({ nextStep, prevStep, updateData, dataToDisplay }) => {
+const ShopInfoForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefaultValues }) => {
   const {
     register,
     handleSubmit: validate,
     formState: { errors },
-  } = useForm();
+  } = useForm({ defaultValues });
 
   const handleSubmit = (data) => {
-    updateData(data);
+    // Klucze istotne dla tego komponentu
+    const relevantKeys = ['productType', 'productAmount'];
+
+    // Filtrujemy dane, aby zawierały tylko wartości z tego kroku
+    const filteredData = Object.fromEntries(Object.entries(data).filter(([key]) => relevantKeys.includes(key)));
+
+    const formattedData = {
+      Branża: filteredData.productType,
+      'Ilość produktów': filteredData.productAmount,
+    };
+
+    updateData(formattedData);
+    updateDefaultValues(data);
     nextStep();
   };
 
   return (
     <div>
-      <SelectionDisplay dataToDisplay={dataToDisplay} />
-
       <Form onSubmit={validate(handleSubmit)}>
         <Form.Group className={styles.form_group}>
           <Form.Label>Branża / Asortyment</Form.Label>
@@ -64,11 +73,11 @@ const ShopInfoForm = ({ nextStep, prevStep, updateData, dataToDisplay }) => {
           />
           {errors.productAmount && <Error>{errors.productAmount?.message}</Error>}
         </Form.Group>
-        <Button type="submit" className={styles.button}>
-          Dalej
-        </Button>
         <Button type="button" onClick={prevStep} className={styles.button}>
           Wstecz
+        </Button>
+        <Button type="submit" className={styles.button}>
+          Dalej
         </Button>
       </Form>
     </div>

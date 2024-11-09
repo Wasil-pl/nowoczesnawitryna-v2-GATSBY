@@ -1,4 +1,4 @@
-@import '../../styles/settings.scss';
+@use '../../styles/settings.scss' as settings;
 
 .site_info {
   .wrapper {
@@ -11,7 +11,7 @@
     .first_column {
       flex: 1;
       padding: 2rem;
-      background-color: $color-background-primary;
+      background-color: settings.$color-background-primary;
       border-radius: 20px 0 0 20px;
       display: flex;
       flex-direction: column;
@@ -19,14 +19,14 @@
       align-items: flex-start;
 
       h3 {
-        font-weight: $font-weight-bold;
+        font-weight: settings.$font-weight-bold;
       }
     }
 
     .second_column {
       flex: 1;
       padding: 2rem;
-      background-color: $color-background-lighter;
+      background-color: settings.$color-background-lighter;
       border-radius: 0 20px 20px 0;
       display: flex;
       flex-direction: column;

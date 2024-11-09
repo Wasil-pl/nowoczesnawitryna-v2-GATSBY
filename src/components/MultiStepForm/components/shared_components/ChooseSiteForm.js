@@ -4,15 +4,26 @@ import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { Error, errorMessages } from '../../../../consts/errorMesages';
 
-const ChooseSiteForm = ({ nextStep, prevStep, onSelectType }) => {
+const ChooseSiteForm = ({ nextStep, onSelectType, defaultValues, updateDefaultValues }) => {
   const {
     register,
     handleSubmit: validate,
     formState: { errors },
-  } = useForm();
+  } = useForm({ defaultValues });
 
   const handleSubmit = (data) => {
-    onSelectType(data);
+    // Klucz istotny dla tego komponentu
+    const relevantKeys = ['siteType'];
+
+    // Filtrujemy dane, aby zawierały tylko wartości z tego kroku
+    const filteredData = Object.fromEntries(Object.entries(data).filter(([key]) => relevantKeys.includes(key)));
+
+    const formattedData = {
+      'Rodzaj strony': filteredData.siteType,
+    };
+
+    onSelectType(formattedData);
+    updateDefaultValues(data);
     nextStep();
   };
 

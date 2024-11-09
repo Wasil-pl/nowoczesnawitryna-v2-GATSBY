@@ -2,32 +2,45 @@ import React from 'react';
 import * as styles from '../OrderSiteForm.module.scss';
 import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import SelectionDisplay from '../shared_components/SelectionDisplay';
 
-const ShopDeliveryForm = ({ nextStep, prevStep, updateData, dataToDisplay }) => {
-  console.log('dataToDisplay:', dataToDisplay);
-  const { register, handleSubmit: validate } = useForm();
+const ShopDeliveryForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefaultValues }) => {
+  const { register, handleSubmit: validate } = useForm({ defaultValues });
 
-  const prepareData = (data) => {
-    // Filtrujemy tylko te funkcje, które są zaznaczone (true)
-    const shopDeliveryMethods = Object.fromEntries(Object.entries(data).filter(([key, value]) => value === true));
+  const handleSubmit = (data) => {
+    // Klucze istotne dla tego kroku
+    const relevantKeys = [
+      'Kurier',
+      'Paczkomaty inPost',
+      'Paczkomaty Orlen',
+      'Paczkomaty DPD',
+      'Odbiór osobisty',
+      'inne formy dostawy',
+    ];
 
-    if (data.inna_forma_dostawy && data.inna_forma_dostawy.trim() !== '') {
-      shopDeliveryMethods.push(data.inna_forma_dostawy);
+    // Filtrujemy dane, aby zawierały tylko wartości z tego kroku
+    const filteredData = Object.fromEntries(Object.entries(data).filter(([key]) => relevantKeys.includes(key)));
+
+    const shopDeliveryMethods = Object.entries(filteredData)
+      .filter(([key, value]) => value === true)
+      .map(([key]) => key);
+
+    if (filteredData['inne formy dostawy'] && filteredData['inne formy dostawy'].trim() !== '') {
+      shopDeliveryMethods.push(filteredData['inne formy dostawy']);
     }
 
-    // Tworzymy obiekt z tablicą shop_functions, którą możemy przekazać dalej
-    const formattedData = { shop_delivery_methods: shopDeliveryMethods };
+    const formattedData = {
+      'Formy dostawy':
+        shopDeliveryMethods.length > 0 ? shopDeliveryMethods.join(', ') : 'Nie wybrano żadnych form dostawy',
+    };
 
-    updateData(formattedData);
+    updateData(formattedData); // Przekazujemy tylko dane dla "Inne formy dostawy"
+    updateDefaultValues(data); // Ustawiamy domyślne wartości tylko dla tego kroku
     nextStep();
   };
 
   return (
     <div>
-      <SelectionDisplay dataToDisplay={dataToDisplay} />
-
-      <Form onSubmit={validate(prepareData)}>
+      <Form onSubmit={validate(handleSubmit)}>
         <Form.Group className={styles.form_group}>
           <Form.Label>Jakie formy dostawy ma mieć Twój sklep?</Form.Label>
           <Form.Check {...register('Kurier')} type="switch" label="Kurier" />
@@ -40,18 +53,18 @@ const ShopDeliveryForm = ({ nextStep, prevStep, updateData, dataToDisplay }) => 
         <Form.Group className={styles.form_group}>
           <Form.Label>Inne</Form.Label>
           <Form.Control
-            {...register('inna_forma_dostawy')}
+            {...register('inne formy dostawy')}
             type="switch"
             label="Inna forma dostawy"
             placeholder="Inna forma dostawy"
           />
         </Form.Group>
 
-        <Button type="submit" className={styles.button}>
-          Dalej
-        </Button>
         <Button type="button" onClick={prevStep} className={styles.button}>
           Wstecz
+        </Button>
+        <Button type="submit" className={styles.button}>
+          Dalej
         </Button>
       </Form>
     </div>

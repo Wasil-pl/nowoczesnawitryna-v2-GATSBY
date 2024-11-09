@@ -1,4 +1,4 @@
-@import '../../../styles/settings.scss';
+@use '../../../styles/settings.scss' as settings;
 
 .order_site_form {
   margin: 150px 0;
@@ -17,6 +17,6 @@
 
   .selection_item {
     padding: 10px 20px;
-    border: 1px solid $color-background-dark;
+    border: 1px solid settings.$color-background-dark;
   }
 }

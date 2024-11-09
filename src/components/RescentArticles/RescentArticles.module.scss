@@ -1,9 +1,9 @@
-@import '../../styles/settings.scss';
+@use '../../styles/settings.scss' as settings;
 
 .rescent_articles {
   min-height: 700px;
   padding: 300px 0 100px;
-  background-color: $color-background-lighter;
+  background-color: settings.$color-background-lighter;
 
   .wrapper {
     display: flex;

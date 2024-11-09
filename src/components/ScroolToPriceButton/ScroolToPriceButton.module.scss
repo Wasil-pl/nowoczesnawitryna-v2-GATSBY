@@ -1,4 +1,4 @@
-@import '../../styles/settings.scss';
+@use '../../styles/settings.scss' as settings;
 
 .scroll_to_price_button {
   position: fixed;
@@ -15,23 +15,23 @@
     left: -127%;
     transform: translate(-50%, -50%);
     font-size: 0.8rem;
-    color: $color-primary;
-    background-color: $color-background-light;
+    color: settings.$color-primary;
+    background-color: settings.$color-background-light;
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    transition: $transition_0_3;
+    transition: settings.$transition_0_3;
   }
 
   svg {
     width: 50px;
     height: 50px;
-    fill: $color-primary;
-    border: 1px solid $color-background-dark;
+    fill: settings.$color-primary;
+    border: 1px solid settings.$color-background-dark;
     border-radius: 50%;
-    background-color: $color-background-dark;
-    transition: $transition_0_3;
+    background-color: settings.$color-background-dark;
+    transition: settings.$transition_0_3;
 
     &:hover {
       transform: scale(1.1);

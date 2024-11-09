@@ -4,15 +4,19 @@ import { Container } from 'react-bootstrap';
 import ShopInfoForm from './shop_components/ShopInfoForm';
 import ChooseSiteForm from './shared_components/ChooseSiteForm';
 import WebSitesInfoForm from './websites_components/WebSitesInfoForm';
-import ShopFunctionsForm from './shop_components/shopFunctionsForm';
 import ShopPaymentsForm from './shop_components/ShopPaymentsForm';
 import ShopDeliveryForm from './shop_components/ShopDeliveryForm';
+import ShopFunctionsForm from './shop_components/ShopFunctionsForm';
+import AdditionalInformation from './shared_components/AdditionalInformation';
+import SelectionDisplay from './shared_components/SelectionDisplay';
+import HostingInfo from './shared_components/HostingInfo';
+import ContactForm from './shared_components/ContactForm';
 
 export const OrderSiteForm = () => {
   const [step, setStep] = useState(1);
   const [selectedSiteType, setSelectedSiteType] = useState(null);
   const [formData, setFormData] = useState({});
-  console.log('formData:', formData);
+  const [defaultValues, setDefaultValues] = useState({});
 
   const nextStep = () => {
     setStep(step + 1);
@@ -31,60 +35,46 @@ export const OrderSiteForm = () => {
     setFormData((prevData) => ({ ...prevData, ...newData }));
   };
 
-  const prepareDataToDisplay = () => {
-    const dataToDisplay = [
-      { label: 'Rodzaj strony', value: selectedSiteType.siteType },
-      { label: 'Branża / Asortyment', value: formData.productType },
-      { label: 'Ilość produktów', value: formData.productAmount },
-      {
-        label: 'Funkcje sklepu',
-        value: Array.isArray(formData.shop_functions) ? formData.shop_functions.join(', ') : '',
-      },
-      { label: 'Formy płatności', value: Array.isArray(formData.payments) ? formData.payments.join(', ') : '' },
-      { label: 'Formy dostawy', value: Array.isArray(formData.delivery) ? formData.delivery.join(', ') : '' },
-    ];
-
-    return dataToDisplay.filter((item) => item.value);
-  };
-
   const renderStep = () => {
     switch (step) {
       case 1:
-        return <ChooseSiteForm onSelectType={handleTypeSelection} nextStep={nextStep} />;
+        return (
+          <ChooseSiteForm
+            onSelectType={handleTypeSelection}
+            nextStep={nextStep}
+            defaultValues={defaultValues}
+            updateDefaultValues={setDefaultValues}
+          />
+        );
 
       case 2:
-        if (selectedSiteType.siteType === 'sklep') {
+        if (selectedSiteType['Rodzaj strony'] === 'sklep') {
           return (
             <ShopInfoForm
               nextStep={nextStep}
               prevStep={prevStep}
               updateData={handleFormDataChange}
-              dataToDisplay={prepareDataToDisplay()}
+              defaultValues={defaultValues}
+              updateDefaultValues={setDefaultValues}
             />
           );
         }
 
-        if (selectedSiteType.siteType === 'strona') {
-          return (
-            <WebSitesInfoForm
-              nextStep={nextStep}
-              prevStep={prevStep}
-              updateData={handleFormDataChange}
-              dataToDisplay={prepareDataToDisplay()}
-            />
-          );
+        if (selectedSiteType['Rodzaj strony'] === 'strona') {
+          return <WebSitesInfoForm nextStep={nextStep} prevStep={prevStep} updateData={handleFormDataChange} />;
         }
 
         break;
 
       case 3:
-        if (selectedSiteType.siteType === 'sklep') {
+        if (selectedSiteType['Rodzaj strony'] === 'sklep') {
           return (
             <ShopFunctionsForm
               nextStep={nextStep}
               prevStep={prevStep}
               updateData={handleFormDataChange}
-              dataToDisplay={prepareDataToDisplay()}
+              defaultValues={defaultValues}
+              updateDefaultValues={setDefaultValues}
             />
           );
         }
@@ -92,13 +82,14 @@ export const OrderSiteForm = () => {
         break;
 
       case 4:
-        if (selectedSiteType.siteType === 'sklep') {
+        if (selectedSiteType['Rodzaj strony'] === 'sklep') {
           return (
             <ShopPaymentsForm
               nextStep={nextStep}
               prevStep={prevStep}
               updateData={handleFormDataChange}
-              dataToDisplay={prepareDataToDisplay()}
+              defaultValues={defaultValues}
+              updateDefaultValues={setDefaultValues}
             />
           );
         }
@@ -106,13 +97,60 @@ export const OrderSiteForm = () => {
         break;
 
       case 5:
-        if (selectedSiteType.siteType === 'sklep') {
+        if (selectedSiteType['Rodzaj strony'] === 'sklep') {
           return (
             <ShopDeliveryForm
               nextStep={nextStep}
               prevStep={prevStep}
               updateData={handleFormDataChange}
-              dataToDisplay={prepareDataToDisplay()}
+              defaultValues={defaultValues}
+              updateDefaultValues={setDefaultValues}
+            />
+          );
+        }
+
+        break;
+
+      case 6:
+        if (selectedSiteType['Rodzaj strony'] === 'sklep') {
+          return (
+            <AdditionalInformation
+              nextStep={nextStep}
+              prevStep={prevStep}
+              updateData={handleFormDataChange}
+              defaultValues={defaultValues}
+              updateDefaultValues={setDefaultValues}
+            />
+          );
+        }
+
+        break;
+
+      case 7:
+        if (selectedSiteType['Rodzaj strony'] === 'sklep') {
+          return (
+            <HostingInfo
+              nextStep={nextStep}
+              prevStep={prevStep}
+              updateData={handleFormDataChange}
+              defaultValues={defaultValues}
+              updateDefaultValues={setDefaultValues}
+            />
+          );
+        }
+
+        break;
+
+      case 8:
+        if (selectedSiteType['Rodzaj strony'] === 'sklep') {
+          return (
+            <ContactForm
+              nextStep={nextStep}
+              prevStep={prevStep}
+              updateData={handleFormDataChange}
+              defaultValues={defaultValues}
+              updateDefaultValues={setDefaultValues}
+              allDataToSend={formData}
             />
           );
         }
@@ -126,7 +164,10 @@ export const OrderSiteForm = () => {
 
   return (
     <div className={styles.order_site_form}>
-      <Container>{renderStep()}</Container>
+      <Container className={styles.wrapper}>
+        <SelectionDisplay data={formData} />
+        {renderStep()}
+      </Container>
     </div>
   );
 };
