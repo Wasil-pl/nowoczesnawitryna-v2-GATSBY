@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import * as styles from '../OrderSiteForm.module.scss';
+import * as styles from '../MultiStepForm/OrderSiteForm.module.scss';
 import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { Error, errorMessages } from '../../../../consts/errorMesages';
-import { patterns } from '../../../../consts/patterns';
+import { Error, errorMessages } from '../../consts/errorMesages';
+import { patterns } from '../../consts/patterns';
 
 const AdditionalInformation = ({ nextStep, prevStep, updateData, defaultValues, updateDefaultValues }) => {
   const {
@@ -100,15 +100,9 @@ const AdditionalInformation = ({ nextStep, prevStep, updateData, defaultValues, 
               onChange={(e) => setBlogVariant(e.target.value)}
               required
             >
-              <option className={styles.option} value="">
-                Wybierz
-              </option>
-              <option className={styles.option} value="nie">
-                Nie
-              </option>
-              <option className={styles.option} value="tak">
-                Tak
-              </option>
+              <option value="">Wybierz</option>
+              <option value="nie">Nie</option>
+              <option value="tak">Tak</option>
             </Form.Control>
           </Form.Group>
         )}
@@ -144,18 +138,10 @@ const AdditionalInformation = ({ nextStep, prevStep, updateData, defaultValues, 
             autoComplete="logo"
             required
           >
-            <option className={styles.option} value="">
-              Wybierz
-            </option>
-            <option className={styles.option} value="tak">
-              Tak
-            </option>
-            <option className={styles.option} value="nie i nie potrzebuję">
-              Nie i nie potrzebuję
-            </option>
-            <option className={styles.option} value="nie, ale potrzebuję">
-              Nie, ale potrzebuję
-            </option>
+            <option value="">Wybierz</option>
+            <option value="tak">Tak</option>
+            <option value="nie i nie potrzebuję">Nie i nie potrzebuję</option>
+            <option value="nie, ale potrzebuję">Nie, ale potrzebuję</option>
           </Form.Control>
           {errors.logo && <Error>{errors.logo?.message}</Error>}
         </Form.Group>
@@ -172,15 +158,9 @@ const AdditionalInformation = ({ nextStep, prevStep, updateData, defaultValues, 
             autoComplete="projekt"
             required
           >
-            <option className={styles.option} value="">
-              Wybierz
-            </option>
-            <option className={styles.option} value="tak">
-              Tak
-            </option>
-            <option className={styles.option} value="nie">
-              Nie
-            </option>
+            <option value="">Wybierz</option>
+            <option value="tak">Tak</option>
+            <option value="nie">Nie</option>
           </Form.Control>
           {errors.projekt && <Error>{errors.projekt?.message}</Error>}
         </Form.Group>

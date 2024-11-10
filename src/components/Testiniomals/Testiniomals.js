@@ -85,7 +85,7 @@ const Testiniomals = () => {
           </div>
           <div className={styles.testimonial}>
             <div className={styles.testimonial_text}>
-              <p className={styles.google_link}>
+              <p>
                 <a href="https://maps.app.goo.gl/2UKkcFvoNswxPgof9" target="_blank" rel="noopener noreferrer">
                   Zobacz wszystkie opinie na Google
                 </a>

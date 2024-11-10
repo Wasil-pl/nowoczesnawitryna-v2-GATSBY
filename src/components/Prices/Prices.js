@@ -1,6 +1,6 @@
 import React from 'react';
-import * as styles from './Prices.module.scss';
 import './Prices.css';
+import * as styles from './Prices.module.scss';
 import { Container } from 'react-bootstrap';
 import { Check, Dash } from 'react-bootstrap-icons';
 import SectionTitle from '../SectionTitle/SectionTitle';

@@ -1,8 +1,8 @@
 import React from 'react';
-import * as styles from '../OrderSiteForm.module.scss';
+import * as styles from '../MultiStepForm/OrderSiteForm.module.scss';
 import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { Error, errorMessages } from '../../../../consts/errorMesages';
+import { Error, errorMessages } from '../../consts/errorMesages';
 
 const HostingInfo = ({ nextStep, prevStep, updateData, defaultValues, updateDefaultValues }) => {
   const {
@@ -43,15 +43,9 @@ const HostingInfo = ({ nextStep, prevStep, updateData, defaultValues, updateDefa
             autoComplete="hosting"
             required
           >
-            <option className={styles.option} value="">
-              Wybierz
-            </option>
-            <option className={styles.option} value="tak">
-              Tak
-            </option>
-            <option className={styles.option} value="nie">
-              Nie
-            </option>
+            <option value="">Wybierz</option>
+            <option value="tak">Tak</option>
+            <option value="nie">Nie</option>
           </Form.Control>
           {errors.hosting && <Error>{errors.hosting?.message}</Error>}
         </Form.Group>
@@ -68,15 +62,9 @@ const HostingInfo = ({ nextStep, prevStep, updateData, defaultValues, updateDefa
             autoComplete="domena"
             required
           >
-            <option className={styles.option} value="">
-              Wybierz
-            </option>
-            <option className={styles.option} value="tak">
-              Tak
-            </option>
-            <option className={styles.option} value="nie">
-              Nie
-            </option>
+            <option value="">Wybierz</option>
+            <option value="tak">Tak</option>
+            <option value="nie">Nie</option>
           </Form.Control>
           {errors.domena && <Error>{errors.domena?.message}</Error>}
         </Form.Group>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import * as styles from '../OrderSiteForm.module.scss';
+import * as styles from '../MultiStepForm/OrderSiteForm.module.scss';
 
 const StepsCountDisplay = ({ data, variant }) => {
   const [steps, setSteps] = useState([1]); // Początkowo tylko krok 1

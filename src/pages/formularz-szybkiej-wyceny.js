@@ -9,7 +9,7 @@ import Footer from '../components/Footer/Footer';
 import RootLayout from '../components/RootLayout/RootLayout';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 import { wycena_txt } from '../consts/texts';
-import { OrderSiteForm } from '../components/MultiStepForm/index';
+import { OrderSiteForm } from '../components/MultiStepForm/OrderSiteForm';
 
 const FormularzWyceny = () => {
   const title_top = 'Szybka Wycena';

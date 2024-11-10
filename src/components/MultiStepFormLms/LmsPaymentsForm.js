@@ -1,16 +1,16 @@
 import React from 'react';
-import * as styles from '../OrderSiteForm.module.scss';
+import * as styles from '../MultiStepForm/OrderSiteForm.module.scss';
 import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 
-const ShopPaymentsForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefaultValues }) => {
+const LmsPaymentsForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefaultValues }) => {
   const { register, handleSubmit: validate } = useForm({ defaultValues });
 
   const handleSubmit = (data) => {
     // Lista kluczy tylko dla tego komponentu
     const relevantKeys = [
       'Przelew',
-      'Płatność przy odbiorze',
+      'Subskrypcja',
       'Przelewy24',
       'PayU',
       'PayPal',
@@ -47,7 +47,7 @@ const ShopPaymentsForm = ({ nextStep, prevStep, updateData, defaultValues, updat
         <Form.Group className={styles.form_group}>
           <Form.Label>Jakie płatności ma mieć Twój sklep?</Form.Label>
           <Form.Check {...register('Przelew')} type="switch" label="Przelew bankowy" />
-          <Form.Check {...register('Płatność przy odbiorze')} type="switch" label="Płatność przy odbiorze" />
+          <Form.Check {...register('Subskrypcja')} type="switch" label="Subskrypcja" />
           <Form.Check {...register('Przelewy24')} type="switch" label="Płatności online (Przelewy24)" />
           <Form.Check {...register('PayU')} type="switch" label="Płatności online (PayU)" />
           <Form.Check {...register('PayPal')} type="switch" label="Płatności online (PayPal)" />
@@ -77,4 +77,4 @@ const ShopPaymentsForm = ({ nextStep, prevStep, updateData, defaultValues, updat
   );
 };
 
-export default ShopPaymentsForm;
+export default LmsPaymentsForm;

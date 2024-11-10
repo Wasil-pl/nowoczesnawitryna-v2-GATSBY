@@ -1,8 +1,8 @@
 import React from 'react';
-import * as styles from '../OrderSiteForm.module.scss';
+import * as styles from '../MultiStepForm/OrderSiteForm.module.scss';
 import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { Error, errorMessages } from '../../../../consts/errorMesages';
+import { Error, errorMessages } from '../../consts/errorMesages';
 
 const ChooseSiteForm = ({ nextStep, onSelectType, defaultValues, updateDefaultValues, resetAllData }) => {
   const {
@@ -43,18 +43,10 @@ const ChooseSiteForm = ({ nextStep, onSelectType, defaultValues, updateDefaultVa
             id="siteType"
             required
           >
-            <option className={styles.option} value="">
-              Wybierz
-            </option>
-            <option className={styles.option} value="sklep online">
-              Sklep online
-            </option>
-            <option className={styles.option} value="strona internetowa">
-              Strona internetowa
-            </option>
-            <option className={styles.option} value="platforma lms">
-              Platforma LMS
-            </option>
+            <option value="">Wybierz</option>
+            <option value="sklep online">Sklep online</option>
+            <option value="strona internetowa">Strona internetowa</option>
+            <option value="platforma lms">Platforma LMS</option>
           </Form.Control>
           {errors.siteType && <Error>{errors.siteType?.message}</Error>}
         </Form.Group>

@@ -1,5 +1,5 @@
 import React from 'react';
-import * as styles from '../OrderSiteForm.module.scss';
+import * as styles from '../MultiStepForm/OrderSiteForm.module.scss';
 
 const SelectionDisplay = ({ data }) => {
   return (
@@ -7,7 +7,7 @@ const SelectionDisplay = ({ data }) => {
       {Object.entries(data).map(([key, value]) => (
         <div key={key} className={styles.selection_display_item}>
           <span className={styles.item_title}>{key}:</span>
-          <span className={styles.item_value}> {value}</span>
+          <span> {value}</span>
         </div>
       ))}
     </div>

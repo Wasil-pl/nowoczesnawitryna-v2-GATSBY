@@ -1,9 +1,9 @@
 import React from 'react';
-import * as styles from '../OrderSiteForm.module.scss';
+import * as styles from '../MultiStepForm/OrderSiteForm.module.scss';
 import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { Error, errorMessages } from '../../../../consts/errorMesages';
-import { patterns } from '../../../../consts/patterns';
+import { Error, errorMessages } from '../../consts/errorMesages';
+import { patterns } from '../../consts/patterns';
 
 const ShopInfoForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefaultValues }) => {
   const {

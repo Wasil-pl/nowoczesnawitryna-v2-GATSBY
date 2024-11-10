@@ -1,4 +1,4 @@
-@use '../../../styles/settings.scss' as settings;
+@use '../../styles/settings.scss' as settings;
 
 .order_site_form {
   margin: 150px 0;
@@ -8,6 +8,7 @@
   .form {
     max-width: 728px;
     margin: 0 auto;
+    padding: 0 20px;
 
     .form_group {
       margin-bottom: 20px;

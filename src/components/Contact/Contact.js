@@ -128,7 +128,7 @@ const Contact = () => {
                   </Alert>
                 )}
                 {error && (
-                  <Alert variant="danger" className={styles.error_message}>
+                  <Alert variant="danger">
                     Wystąpił błąd podczas wysyłania. Spróbuj ponownie. <br /> Jeśli problem się powtarza, skontaktuj się
                     ze mną za pomocą danych kontaktowych podanych na dole strony i powiadom mnie o problemie. <br /> Z
                     góry dziękuję.

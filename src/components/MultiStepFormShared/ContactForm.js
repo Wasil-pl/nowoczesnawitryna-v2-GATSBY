@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import * as styles from '../OrderSiteForm.module.scss';
+import * as styles from '../MultiStepForm/OrderSiteForm.module.scss';
 import { Alert, Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { Error, errorMessages } from '../../../../consts/errorMesages';
-import { patterns } from '../../../../consts/patterns';
-import { API_URL } from '../../../../utils/config';
-import { shop_data, website_data } from '../../../../consts/allDataPrepare';
+import { Error, errorMessages } from '../../consts/errorMesages';
+import { patterns } from '../../consts/patterns';
+import { API_URL } from '../../utils/config';
+import { lms_data, shop_data, website_data } from '../../consts/allDataPrepare';
 
-const ContactForm = ({ prevStep, updateData, defaultValues, updateDefaultValues, allDataToSend }) => {
+const ContactForm = ({ prevStep, updateData, defaultValues, updateDefaultValues, allDataToSend, siteType }) => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -34,10 +34,13 @@ const ContactForm = ({ prevStep, updateData, defaultValues, updateDefaultValues,
     updateDefaultValues(data);
 
     let payload = {};
-    if (allDataToSend['Rodzaj strony'] === 'sklep online') {
+
+    if (siteType === 'sklep online') {
       payload = shop_data(allDataToSend, formattedData);
-    } else if (allDataToSend['Rodzaj strony'] === 'strona internetowa') {
+    } else if (siteType === 'strona internetowa') {
       payload = website_data(allDataToSend, formattedData);
+    } else if (siteType === 'platforma lms') {
+      payload = lms_data(allDataToSend, formattedData);
     }
 
     setLoading(true);
@@ -128,17 +131,15 @@ const ContactForm = ({ prevStep, updateData, defaultValues, updateDefaultValues,
           </span>
         )}
 
-        {success && (
-          <Alert variant="success" className={styles.success_message}>
-            Formularz został pomyślnie wysłany!
-          </Alert>
-        )}
+        {success && <Alert variant="success">Formularz został pomyślnie wysłany!</Alert>}
         {error && (
-          <Alert variant="danger" className={styles.error_message}>
+          <Alert variant="danger">
             Wystąpił błąd podczas wysyłania. Spróbuj ponownie. <br /> Jeśli problem się powtarza, skontaktuj się ze mną
             za pomocą danych kontaktowych podanych na dole strony i powiadom mnie o problemie. <br /> Z góry dziękuję.
           </Alert>
         )}
+
+        {loading && <Alert variant="info">Wysyłanie formularza...</Alert>}
       </Form>
     </div>
   );

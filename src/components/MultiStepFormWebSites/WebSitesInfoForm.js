@@ -1,9 +1,9 @@
 import React from 'react';
-import * as styles from '../OrderSiteForm.module.scss';
+import * as styles from '../MultiStepForm/OrderSiteForm.module.scss';
 import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { Error, errorMessages } from '../../../../consts/errorMesages';
-import { patterns } from '../../../../consts/patterns';
+import { Error, errorMessages } from '../../consts/errorMesages';
+import { patterns } from '../../consts/patterns';
 
 const WebSitesInfoForm = ({ nextStep, prevStep, updateData, updateDefaultValues, defaultValues }) => {
   const {
@@ -36,7 +36,6 @@ const WebSitesInfoForm = ({ nextStep, prevStep, updateData, updateDefaultValues,
             required: errorMessages.required,
           })}
           as="select"
-          className={styles.form_control}
           required
         >
           <option value="">Wybierz</option>
@@ -52,7 +51,6 @@ const WebSitesInfoForm = ({ nextStep, prevStep, updateData, updateDefaultValues,
             required: errorMessages.required,
           })}
           as="select"
-          className={styles.form_control}
           required
         >
           <option value="">Wybierz</option>
@@ -78,7 +76,6 @@ const WebSitesInfoForm = ({ nextStep, prevStep, updateData, updateDefaultValues,
             },
           })}
           as="textarea"
-          className={styles.form_control}
           id="branża/tematyka"
           placeholder="Opisz krótko, czym zajmuje się firma lub organizacja, dla której jest projektowana strona."
           required

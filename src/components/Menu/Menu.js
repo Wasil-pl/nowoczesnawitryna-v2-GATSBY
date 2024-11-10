@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Navbar } from 'react-bootstrap';
-import * as styles from './Menu.module.scss';
 import './menu.css';
+import * as styles from './Menu.module.scss';
 import MenuDeskopt from './MenuDeskopt';
 import MenuMobile from './MenuMobile';
 import { useMediaQuery } from 'react-responsive';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Menu = ({ active }) => {
   const [scrollY, setScrollY] = useState(0);
@@ -34,7 +35,7 @@ const Menu = ({ active }) => {
     >
       <Container>
         <Navbar.Brand href="/">
-          <img src="../../images/logo.svg" alt="Logo" width={80} />
+          <StaticImage src="../../images/logo_menu.png" alt="logo" width={80} />
         </Navbar.Brand>
 
         <div className={styles.menu_wrapper}>

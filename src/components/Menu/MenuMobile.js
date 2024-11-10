@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Button, Nav, NavDropdown, Offcanvas } from 'react-bootstrap';
+import { Button, Nav, Navbar, NavDropdown, Offcanvas } from 'react-bootstrap';
 import * as styles from './MenuMobile.module.scss';
 import './MenuMobile.css';
 import { HouseFill, List } from 'react-bootstrap-icons';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const MenuMobile = ({ active }) => {
   const [show, setShow] = useState(false);
@@ -19,6 +20,9 @@ const MenuMobile = ({ active }) => {
         <Offcanvas.Header closeButton></Offcanvas.Header>
         <Offcanvas.Body>
           <div className={styles.menu_wrapper}>
+            <Navbar.Brand href="/" className={styles.menu_image}>
+              <StaticImage src="../../images/logo_kolo.png" alt="logo" width={150} />
+            </Navbar.Brand>
             <div className={styles.lang}>
               <a href="https://www.nowoczesnawitryna.com">EN</a>
               <a className={styles.active} href="https://www.nowoczesnawitryna.pl/">

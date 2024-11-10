@@ -10,7 +10,12 @@ const Footer = () => {
       <Container className={styles.container}>
         <div className={styles.wrapper}>
           <div className={styles.first_column}>
-            <StaticImage src="../../images/logo.svg" alt="Logo - tworzenie stron internetowych" width={200} />
+            <StaticImage
+              src="../../images/logo_footer.png"
+              alt="Logo - tworzenie stron internetowych"
+              width={200}
+              quality={100}
+            />
           </div>
           <div className={styles.second_column}>
             <h3>Kontakt</h3>
@@ -32,6 +37,7 @@ const Footer = () => {
           <div className={styles.third_column}>
             <h3>Menu</h3>
             <a href="/">Strona główna</a>
+            <a href="/formularz-szybkiej-wyceny/">Formularz wyceny</a>
             <a href="/strony-niestandardowe/">Strony HTML/CSS/JS</a>
             <a href="/strony-wordpress/">Strony Wordpress</a>
             <a href="/sklepy-internetowe/">Sklepy internetowe</a>
