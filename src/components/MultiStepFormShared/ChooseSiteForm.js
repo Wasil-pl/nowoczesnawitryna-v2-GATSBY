@@ -50,9 +50,12 @@ const ChooseSiteForm = ({ nextStep, onSelectType, defaultValues, updateDefaultVa
           </Form.Control>
           {errors.siteType && <Error>{errors.siteType?.message}</Error>}
         </Form.Group>
-        <Button type="submit" className={styles.button}>
-          Dalej
-        </Button>
+
+        <span className={styles.button_wrapper}>
+          <Button type="submit" className={styles.button}>
+            Dalej
+          </Button>
+        </span>
       </Form>
     </div>
   );

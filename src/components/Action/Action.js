@@ -29,7 +29,7 @@ const Action = ({ kontakt_2, kontakt_3, variant = '' }) => {
       )}
 
       <div className={styles.right_side}>
-        <a href={!kontakt_2 && !kontakt_3 ? '/formularz-szybkiej-wyceny/' : '/kontakt/'}>
+        <a href={!kontakt_2 && !kontakt_3 ? '/formularz-szybkiej-wyceny/#form' : '/kontakt/#kontakt'}>
           <ArrowRight />
           <br />
           {!kontakt_2 && !kontakt_3 && <span className={styles.text}>Wypełnij formularz wyceny już teraz!</span>}

@@ -121,7 +121,7 @@ const ContactForm = ({ prevStep, updateData, defaultValues, updateDefaultValues,
         )}
 
         {!(success || loading) && (
-          <span>
+          <span className={styles.button_wrapper}>
             <Button type="button" onClick={prevStep} className={styles.button}>
               Wstecz
             </Button>

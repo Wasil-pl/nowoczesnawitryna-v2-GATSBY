@@ -20,11 +20,10 @@ const FormularzWyceny = () => {
     'Zamów szybką wycenę swojego projektu online. Wypełnij formularz, a ja przygotuję dla Ciebie ofertę dostosowaną do Twoich potrzeb.';
 
   const siteUrl = 'https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/';
-  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/form-for-quick-valuation/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
+      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} active="formularz-wyceny" />
       <ScroolUpButton />
       <SiteInfoServices

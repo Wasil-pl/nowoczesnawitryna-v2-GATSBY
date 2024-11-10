@@ -73,12 +73,15 @@ const ShopInfoForm = ({ nextStep, prevStep, updateData, defaultValues, updateDef
           />
           {errors.productAmount && <Error>{errors.productAmount?.message}</Error>}
         </Form.Group>
-        <Button type="button" onClick={prevStep} className={styles.button}>
-          Wstecz
-        </Button>
-        <Button type="submit" className={styles.button}>
-          Dalej
-        </Button>
+
+        <span className={styles.button_wrapper}>
+          <Button type="button" onClick={prevStep} className={styles.button}>
+            Wstecz
+          </Button>
+          <Button type="submit" className={styles.button}>
+            Dalej
+          </Button>
+        </span>
       </Form>
     </div>
   );

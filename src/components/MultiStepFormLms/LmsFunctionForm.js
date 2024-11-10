@@ -122,12 +122,14 @@ const LmsFunctionsForm = ({ nextStep, prevStep, updateData, defaultValues, updat
           <Form.Control {...register('inne funkcje')} as="textarea" placeholder="Inne funkcje" />
         </Form.Group>
 
-        <Button type="button" onClick={prevStep} className={styles.button}>
-          Wstecz
-        </Button>
-        <Button type="submit" className={styles.button}>
-          Dalej
-        </Button>
+        <span className={styles.button_wrapper}>
+          <Button type="button" onClick={prevStep} className={styles.button}>
+            Wstecz
+          </Button>
+          <Button type="submit" className={styles.button}>
+            Dalej
+          </Button>
+        </span>
       </Form>
     </div>
   );

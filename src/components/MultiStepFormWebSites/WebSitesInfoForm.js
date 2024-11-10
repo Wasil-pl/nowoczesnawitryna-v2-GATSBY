@@ -83,12 +83,14 @@ const WebSitesInfoForm = ({ nextStep, prevStep, updateData, updateDefaultValues,
         {errors['branża/tematyka'] && <Error>{errors['branża/tematyka']?.message}</Error>}
       </Form.Group>
 
-      <Button type="button" onClick={prevStep} className={styles.button}>
-        Wstecz
-      </Button>
-      <Button type="submit" className={styles.button}>
-        Dalej
-      </Button>
+      <span className={styles.button_wrapper}>
+        <Button type="button" onClick={prevStep} className={styles.button}>
+          Wstecz
+        </Button>
+        <Button type="submit" className={styles.button}>
+          Dalej
+        </Button>
+      </span>
     </Form>
   );
 };

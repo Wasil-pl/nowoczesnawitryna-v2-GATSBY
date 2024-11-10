@@ -66,7 +66,11 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
+                  <CustomButton
+                    text="Szybka Wycena Twojej Strony"
+                    link="/formularz-szybkiej-wyceny/#form"
+                    variant="price"
+                  />
                 </div>
               </div>
             </div>
@@ -124,7 +128,11 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
+                  <CustomButton
+                    text="Szybka Wycena Twojej Strony"
+                    link="/formularz-szybkiej-wyceny/#form"
+                    variant="price"
+                  />
                 </div>
               </div>
             </div>
@@ -183,7 +191,11 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
+                  <CustomButton
+                    text="Szybka Wycena Twojej Strony"
+                    link="/formularz-szybkiej-wyceny/#form"
+                    variant="price"
+                  />
                 </div>
               </div>
             </div>
@@ -243,7 +255,11 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
+                  <CustomButton
+                    text="Szybka Wycena Twojej Strony"
+                    link="/formularz-szybkiej-wyceny/#form"
+                    variant="price"
+                  />
                 </div>
               </div>
             </div>
@@ -317,7 +333,11 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
+                  <CustomButton
+                    text="Szybka Wycena Twojej Strony"
+                    link="/formularz-szybkiej-wyceny/#form"
+                    variant="price"
+                  />
                 </div>
               </div>
             </div>
@@ -360,7 +380,11 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                       <Check /> Wsparcie techniczne
                     </li>
                   </ul>
-                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
+                  <CustomButton
+                    text="Szybka Wycena Twojej Strony"
+                    link="/formularz-szybkiej-wyceny/#form"
+                    variant="price"
+                  />
                 </div>
 
                 <div className={`${styles.last_price} ${styles.price}`}>
@@ -386,7 +410,11 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                       <Check /> Dokumentacja użytkowania (brandbook)
                     </li>
                   </ul>
-                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
+                  <CustomButton
+                    text="Szybka Wycena Twojej Strony"
+                    link="/formularz-szybkiej-wyceny/#form"
+                    variant="price"
+                  />
                 </div>
               </div>
             </div>
@@ -444,7 +472,11 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
+                  <CustomButton
+                    text="Szybka Wycena Twojej Strony"
+                    link="/formularz-szybkiej-wyceny/#form"
+                    variant="price"
+                  />
                 </div>
               </div>
             </div>
@@ -502,7 +534,11 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
+                  <CustomButton
+                    text="Szybka Wycena Twojej Strony"
+                    link="/formularz-szybkiej-wyceny/#form"
+                    variant="price"
+                  />
                 </div>
               </div>
             </div>
