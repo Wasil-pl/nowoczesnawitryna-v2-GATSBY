@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './OrderSiteForm.css';
 import * as styles from './OrderSiteForm.module.scss';
+import './OrderSiteForm.css';
 import { Container } from 'react-bootstrap';
 import ChooseSiteForm from '../MultiStepFormShared/ChooseSiteForm';
 import ShopInfoForm from '../MultiStepFormShop/ShopInfoForm';
@@ -18,6 +18,7 @@ import LmsPaymentsForm from '../MultiStepFormLms/LmsPaymentsForm';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import StepsCountDIsplay from '../MultiStepFormShared/StepsCountDIsplay';
 import SelectionDisplay from '../MultiStepFormShared/SelectionDisplay';
+import Action from '../Action/Action';
 
 export const OrderSiteForm = () => {
   const [step, setStep] = useState(1);
@@ -315,6 +316,7 @@ export const OrderSiteForm = () => {
         <SelectionDisplay data={formData} />
         <StepsCountDIsplay data={step} variant={selectedSiteType?.['Rodzaj strony']} />
         <div className={styles.form}>{renderStep()}</div>
+        <Action kontakt_3 variant="bottom" />
       </Container>
     </section>
   );

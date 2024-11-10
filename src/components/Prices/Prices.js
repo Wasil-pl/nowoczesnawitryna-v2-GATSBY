@@ -66,7 +66,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <CustomButton text="Zamów teraz" link="#kontakt" variant="price" />
+                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
                 </div>
               </div>
             </div>
@@ -124,7 +124,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <CustomButton text="Zamów teraz" link="#kontakt" variant="price" />
+                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
                 </div>
               </div>
             </div>
@@ -183,7 +183,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <CustomButton text="Zamów teraz" link="#kontakt" variant="price" />
+                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
                 </div>
               </div>
             </div>
@@ -243,7 +243,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <CustomButton text="Zamów teraz" link="#kontakt" variant="price" />
+                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
                 </div>
               </div>
             </div>
@@ -317,7 +317,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <CustomButton text="Zamów teraz" link="#kontakt" variant="price" />
+                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
                 </div>
               </div>
             </div>
@@ -360,7 +360,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                       <Check /> Wsparcie techniczne
                     </li>
                   </ul>
-                  <CustomButton text="Zamów teraz" link="#kontakt" variant="price" />
+                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
                 </div>
 
                 <div className={`${styles.last_price} ${styles.price}`}>
@@ -386,7 +386,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                       <Check /> Dokumentacja użytkowania (brandbook)
                     </li>
                   </ul>
-                  <CustomButton text="Zamów teraz" link="#kontakt" variant="price" />
+                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
                 </div>
               </div>
             </div>
@@ -444,7 +444,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <CustomButton text="Zamów teraz" link="#kontakt" variant="price" />
+                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
                 </div>
               </div>
             </div>
@@ -502,14 +502,14 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <CustomButton text="Zamów teraz" link="#kontakt" variant="price" />
+                  <CustomButton text="Zamów już teraz" link="/formularz-szybkiej-wyceny/#form" variant="price" />
                 </div>
               </div>
             </div>
           )}
         </div>
 
-        <Action kontakt_3 variant={'bottom'} />
+        <Action kontakt_2 variant={'bottom'} />
       </Container>
     </section>
   );

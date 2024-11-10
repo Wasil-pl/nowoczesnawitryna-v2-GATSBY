@@ -60,6 +60,9 @@ export const lms_data = (allDataToSend, formattedData) => ({
   FunkcjeStrony: {
     'Funkcje strony': allDataToSend['Funkcje strony'],
   },
+  Płatności: {
+    'Formy płatności': allDataToSend['Formy płatności'],
+  },
   InneInformacje: {
     'Czy posiadasz logo': allDataToSend['Czy posiadasz logo'],
     'Czy masz projekt': allDataToSend['Czy masz projekt'],
