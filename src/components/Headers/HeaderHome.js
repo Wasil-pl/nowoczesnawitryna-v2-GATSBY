@@ -15,18 +15,18 @@ const HeaderHome = ({ active }) => {
           <h1 className={styles.title}>
             <span className={styles.title_top}>Tworzenie Nowoczesnych</span>
             <br />
-            <span className={styles.title_bottom}>Stron Internetowych</span>
+            <span className={styles.title_bottom}> Stron Internetowych</span>
           </h1>
         )}
         {isMobile && (
           <h1 className={styles.title}>
             <span className={styles.title_top}>Tworzenie</span>
             <br />
-            <span className={styles.title_bottom}>Nowoczesnych</span>
+            <span className={styles.title_bottom}> Nowoczesnych</span>
             <br />
-            <span className={styles.title_top}>Stron</span>
+            <span className={styles.title_top}> Stron</span>
             <br />
-            <span className={styles.title_bottom}>Internetowych</span>
+            <span className={styles.title_bottom}> Internetowych</span>
           </h1>
         )}
 

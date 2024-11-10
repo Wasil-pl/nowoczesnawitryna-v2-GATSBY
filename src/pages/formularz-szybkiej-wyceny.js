@@ -8,7 +8,6 @@ import SiteInfoServices from '../components/SiteInfoServices/SiteInfoServices';
 import Footer from '../components/Footer/Footer';
 import RootLayout from '../components/RootLayout/RootLayout';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
-import ScroolToPriceButton from '../components/ScroolToPriceButton/ScroolToPriceButton';
 import { wycena_txt } from '../consts/texts';
 import { OrderSiteForm } from '../components/MultiStepForm/index';
 
@@ -28,7 +27,6 @@ const FormularzWyceny = () => {
       <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} active="formularz-wyceny" />
       <ScroolUpButton />
-      <ScroolToPriceButton />
       <SiteInfoServices
         title_first_column={wycena_txt.title_first_column}
         descryption_first_column={wycena_txt.descryption_first_column}

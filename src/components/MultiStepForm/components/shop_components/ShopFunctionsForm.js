@@ -14,12 +14,18 @@ const ShopFunctionsForm = ({ nextStep, prevStep, updateData, defaultValues, upda
       'powiadomienia o dostępności produktów',
       'filtrowanie produktów',
       'porównywarka produktów',
-      'recenzje produktów',
+      'opinie i oceny produktów',
       'zestawy produktów',
       'inne funkcje',
       'formularz kontaktowy',
       'program lojalnościowy',
+      'dostawa z wyborem terminu',
       'rekomendacje produktów',
+      'kalkulator cen',
+      'system rezerwacji',
+      'video lub multimedia',
+      'FAQ',
+      'mapa lokalizacji',
     ];
 
     // Filtrujemy dane, aby zawierały tylko wartości dla tego kroku
@@ -65,7 +71,7 @@ const ShopFunctionsForm = ({ nextStep, prevStep, updateData, defaultValues, upda
 
           <Form.Check {...register('porównywarka produktów')} type="switch" label="Porównywarka produktów" />
 
-          <Form.Check {...register('recenzje produktów')} type="switch" label="Opinie i oceny produktów" />
+          <Form.Check {...register('opinie i oceny produktów')} type="switch" label="Opinie i oceny produktów" />
 
           <Form.Check {...register('zestawy produktów')} type="switch" label="Zestawy produktów" />
 
@@ -77,7 +83,20 @@ const ShopFunctionsForm = ({ nextStep, prevStep, updateData, defaultValues, upda
 
           <Form.Check {...register('rekomendacje produktów')} type="switch" label="Rekomendacje produktów" />
 
-          <Form.Control {...register('inne funkcje')} as="textarea" rows={3} placeholder="Inne funkcje" />
+          <Form.Check {...register('kalkulator cen')} type="switch" label="Kalkulator cen" />
+
+          <Form.Check {...register('system rezerwacji')} type="switch" label="System rezerwacji" />
+
+          <Form.Check {...register('video lub multimedia')} type="switch" label="Video lub multimedia" />
+
+          <Form.Check {...register('FAQ')} type="switch" label="FAQ" />
+
+          <Form.Check {...register('mapa lokalizacji')} type="switch" label="Mapa lokalizacji" />
+        </Form.Group>
+
+        <Form.Group className={styles.form_group}>
+          <Form.Label>Inne funkcje</Form.Label>
+          <Form.Control {...register('inne funkcje')} as="textarea" placeholder="Inne funkcje" />
         </Form.Group>
 
         <Button type="button" onClick={prevStep} className={styles.button}>

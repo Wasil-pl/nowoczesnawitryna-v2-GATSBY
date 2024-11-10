@@ -51,10 +51,10 @@ const ShopDeliveryForm = ({ nextStep, prevStep, updateData, defaultValues, updat
         </Form.Group>
 
         <Form.Group className={styles.form_group}>
-          <Form.Label>Inne</Form.Label>
+          <Form.Label>Inne formy dostawy</Form.Label>
           <Form.Control
             {...register('inne formy dostawy')}
-            type="switch"
+            type="textarea"
             label="Inna forma dostawy"
             placeholder="Inna forma dostawy"
           />

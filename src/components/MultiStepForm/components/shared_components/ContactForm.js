@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { Error, errorMessages } from '../../../../consts/errorMesages';
 import { patterns } from '../../../../consts/patterns';
 import { API_URL } from '../../../../utils/config';
+import { shop_data, website_data } from '../../../../consts/allDataPrepare';
 
 const ContactForm = ({ prevStep, updateData, defaultValues, updateDefaultValues, allDataToSend }) => {
   const [success, setSuccess] = useState(false);
@@ -32,31 +33,12 @@ const ContactForm = ({ prevStep, updateData, defaultValues, updateDefaultValues,
     await updateData(formattedData);
     updateDefaultValues(data);
 
-    const allDataComplete = {
-      PodstawoweInformacje: {
-        'Rodzaj strony': allDataToSend['Rodzaj strony'],
-        Branża: allDataToSend['Branża'],
-        'Ilość produktów': allDataToSend['Ilość produktów'],
-        'Ilość zakładek': allDataToSend['Ilość zakładek'],
-        'Czy będzie blog?': allDataToSend['Czy będzie blog?'],
-        'Ile artykułów ma mieć blog': allDataToSend['Ile artykułów ma mieć blog'],
-      },
-      FunkcjeSklepu: {
-        'Funkcje strony': allDataToSend['Funkcje strony'],
-      },
-      PlatnosciIDostawa: {
-        'Formy płatności': allDataToSend['Formy płatności'],
-        'Formy dostawy': allDataToSend['Formy dostawy'],
-      },
-      InneInformacje: {
-        'Czy posiadasz logo': allDataToSend['Czy posiadasz logo'],
-        'Czy masz projekt': allDataToSend['Czy masz projekt'],
-        'Adresy stron które Ci się podobają': allDataToSend['Adresy stron które Ci się podobają'],
-        'Czy posiadasz hosting?': allDataToSend['Czy posiadasz hosting?'],
-        'Czy posiadasz domenę?': allDataToSend['Czy posiadasz domenę?'],
-      },
-      DaneKontaktowe: formattedData,
-    };
+    let payload = {};
+    if (allDataToSend['Rodzaj strony'] === 'sklep online') {
+      payload = shop_data(allDataToSend, formattedData);
+    } else if (allDataToSend['Rodzaj strony'] === 'strona internetowa') {
+      payload = website_data(allDataToSend, formattedData);
+    }
 
     setLoading(true);
     fetch(`${API_URL}/send-form`, {
@@ -64,7 +46,7 @@ const ContactForm = ({ prevStep, updateData, defaultValues, updateDefaultValues,
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(allDataComplete),
+      body: JSON.stringify(payload),
     })
       .then((response) => {
         if (response.status === 200) {
@@ -82,7 +64,7 @@ const ContactForm = ({ prevStep, updateData, defaultValues, updateDefaultValues,
       <Form onSubmit={validate(handleSubmit)}>
         {!success && (
           <Form.Group className={styles.form_group}>
-            <Form.Label>Imię i Nazwisko</Form.Label>
+            <Form.Label>Imię</Form.Label>
             <Form.Control
               {...register('name', { required: errorMessages.required })}
               placeholder="Imię"

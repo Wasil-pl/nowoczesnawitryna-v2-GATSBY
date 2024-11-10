@@ -43,8 +43,15 @@ const HostingInfo = ({ nextStep, prevStep, updateData, defaultValues, updateDefa
             autoComplete="hosting"
             required
           >
-            <option value="tak">Tak</option>
-            <option value="nie">Nie</option>
+            <option className={styles.option} value="">
+              Wybierz
+            </option>
+            <option className={styles.option} value="tak">
+              Tak
+            </option>
+            <option className={styles.option} value="nie">
+              Nie
+            </option>
           </Form.Control>
           {errors.hosting && <Error>{errors.hosting?.message}</Error>}
         </Form.Group>
@@ -61,8 +68,15 @@ const HostingInfo = ({ nextStep, prevStep, updateData, defaultValues, updateDefa
             autoComplete="domena"
             required
           >
-            <option value="tak">Tak</option>
-            <option value="nie">Nie</option>
+            <option className={styles.option} value="">
+              Wybierz
+            </option>
+            <option className={styles.option} value="tak">
+              Tak
+            </option>
+            <option className={styles.option} value="nie">
+              Nie
+            </option>
           </Form.Control>
           {errors.domena && <Error>{errors.domena?.message}</Error>}
         </Form.Group>

@@ -52,6 +52,8 @@ const AdditionalInformation = ({ nextStep, prevStep, updateData, defaultValues, 
 
     if (filteredData.blog === 'tak' && filteredData['Ile artykułów ma mieć blog']) {
       formattedData['Ile artykułów ma mieć blog'] = filteredData['Ile artykułów ma mieć blog'];
+    } else if (defaultValues['typ strony'] === 'blog' && filteredData['Ile artykułów ma mieć blog']) {
+      formattedData['Ile artykułów ma mieć blog'] = filteredData['Ile artykułów ma mieć blog'];
     } else {
       formattedData['Ile artykułów ma mieć blog'] = '0';
     }
@@ -84,22 +86,34 @@ const AdditionalInformation = ({ nextStep, prevStep, updateData, defaultValues, 
           {errors['ilość zakładek'] && <Error>{errors['ilość zakładek']?.message}</Error>}
         </Form.Group>
 
-        <Form.Group className={styles.form_group}>
-          <Form.Label>Czy będzie blog?</Form.Label>
-          <Form.Control
-            {...register('blog', { required: errorMessages.required })}
-            as="select"
-            placeholder="Czy będzie blog?"
-            label="Czy będzie blog?"
-            autoComplete="blog"
-            onChange={(e) => setBlogVariant(e.target.value)}
-          >
-            <option value="nie">Nie</option>
-            <option value="tak">Tak</option>
-          </Form.Control>
-        </Form.Group>
+        {defaultValues['typ strony'] !== 'blog' && (
+          <Form.Group className={styles.form_group}>
+            <Form.Label>Czy będzie blog?</Form.Label>
+            <Form.Control
+              {...register('blog', {
+                required: errorMessages.required,
+              })}
+              as="select"
+              placeholder="Czy będzie blog?"
+              label="Czy będzie blog?"
+              autoComplete="blog"
+              onChange={(e) => setBlogVariant(e.target.value)}
+              required
+            >
+              <option className={styles.option} value="">
+                Wybierz
+              </option>
+              <option className={styles.option} value="nie">
+                Nie
+              </option>
+              <option className={styles.option} value="tak">
+                Tak
+              </option>
+            </Form.Control>
+          </Form.Group>
+        )}
 
-        {blogVariant === 'tak' && (
+        {(defaultValues['typ strony'] === 'blog' || blogVariant === 'tak') && (
           <Form.Group className={styles.form_group}>
             <Form.Label>Ile artykułów ma mieć blog?</Form.Label>
             <Form.Control
@@ -130,9 +144,18 @@ const AdditionalInformation = ({ nextStep, prevStep, updateData, defaultValues, 
             autoComplete="logo"
             required
           >
-            <option value="tak">Tak</option>
-            <option value="nie i nie potrzebuję">Nie i nie potrzebuję</option>
-            <option value="nie, ale potrzebuję">Nie, ale potrzebuję</option>
+            <option className={styles.option} value="">
+              Wybierz
+            </option>
+            <option className={styles.option} value="tak">
+              Tak
+            </option>
+            <option className={styles.option} value="nie i nie potrzebuję">
+              Nie i nie potrzebuję
+            </option>
+            <option className={styles.option} value="nie, ale potrzebuję">
+              Nie, ale potrzebuję
+            </option>
           </Form.Control>
           {errors.logo && <Error>{errors.logo?.message}</Error>}
         </Form.Group>
@@ -149,8 +172,15 @@ const AdditionalInformation = ({ nextStep, prevStep, updateData, defaultValues, 
             autoComplete="projekt"
             required
           >
-            <option value="tak">Tak</option>
-            <option value="nie">Nie</option>
+            <option className={styles.option} value="">
+              Wybierz
+            </option>
+            <option className={styles.option} value="tak">
+              Tak
+            </option>
+            <option className={styles.option} value="nie">
+              Nie
+            </option>
           </Form.Control>
           {errors.projekt && <Error>{errors.projekt?.message}</Error>}
         </Form.Group>

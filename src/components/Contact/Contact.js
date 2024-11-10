@@ -49,7 +49,7 @@ const Contact = () => {
             <div className={styles.form}>
               <Form onSubmit={validate(handleSubmit)}>
                 <Form.Group className={styles.form_group}>
-                  <Form.Label>Imię i Nazwisko</Form.Label>
+                  <Form.Label>Imię</Form.Label>
                   <Form.Control
                     {...register('name', { required: errorMessages.required })}
                     placeholder="Imię"

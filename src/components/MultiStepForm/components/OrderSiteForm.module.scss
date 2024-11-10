@@ -2,21 +2,99 @@
 
 .order_site_form {
   margin: 150px 0;
+  background-color: settings.$color-background-dark;
+  padding: 100px 0;
 
   .form {
     max-width: 728px;
     margin: 0 auto;
+
+    .form_group {
+      margin-bottom: 20px;
+
+      label {
+        font-size: 0.8rem;
+        margin-bottom: 1px;
+        color: settings.$color-text-light;
+      }
+
+      input {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: settings.$color-background-light !important;
+      }
+    }
+
+    .button {
+      border-radius: 5px;
+      border: 1px solid settings.$color-background-primary;
+      font-size: 0.9rem;
+      background-color: unset;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      color: settings.$color-text-light;
+      text-decoration: none;
+      margin: 20px 50px 50px 0;
+
+      &:hover {
+        color: settings.$color-text-primary;
+        border: 1px solid settings.$color-text-primary;
+      }
+    }
+
+    .dark {
+      border: 1px solid settings.$color-background-dark;
+      color: settings.$color-text-dark;
+
+      &:hover {
+        background-color: settings.$color-background-dark;
+        color: settings.$color-text-primary;
+      }
+    }
   }
-}
 
-.selection_display {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
+  .steps_count_display {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: settings.$color-text-light;
+    gap: 20px;
 
-  .selection_item {
-    padding: 10px 20px;
-    border: 1px solid settings.$color-background-dark;
+    .step {
+      font-size: 1.5rem;
+      font-weight: settings.$font-weight-bold;
+      transition: all 0.3s;
+    }
+
+    .step_active {
+      color: settings.$color-text-primary;
+      opacity: 1;
+      transform: scale(1.5);
+    }
+  }
+
+  .selection_display {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: center;
+
+    .selection_display_item {
+      padding: 5px 15px;
+      margin: 8px;
+      background-color: settings.$color-background-light;
+      border-radius: 5px;
+
+      .item_title {
+        font-size: 1rem;
+        font-weight: settings.$font-weight-bold;
+        margin-bottom: 10px;
+      }
+
+      .item_description {
+        font-size: 1rem;
+        margin-left: 10px;
+      }
+    }
   }
 }
