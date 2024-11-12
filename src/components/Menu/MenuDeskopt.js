@@ -6,7 +6,7 @@ import { HouseFill } from 'react-bootstrap-icons';
 const MenuDeskopt = ({ active }) => {
   return (
     <Nav>
-      <Nav.Link className={active === 'home' ? 'activeMenuItem' : ''} href="/">
+      <Nav.Link aria-label="strona główna" className={active === 'home' ? 'activeMenuItem' : ''} href="/">
         <HouseFill />
       </Nav.Link>
       <NavDropdown title="Oferta" id="basic-nav-dropdown">

@@ -28,9 +28,14 @@ export const OrderSiteForm = () => {
 
   const nextStep = () => {
     setStep(step + 1);
+    const element = document.getElementById('input_form');
+    element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   };
+
   const prevStep = () => {
     setStep(step - 1);
+    const element = document.getElementById('input_form');
+    element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   };
 
   const handleTypeSelection = (type) => {

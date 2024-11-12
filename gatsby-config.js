@@ -23,7 +23,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/logo_kolo.png',
+        icon: 'src/images/logo-kolo-final.png',
       },
     },
     {

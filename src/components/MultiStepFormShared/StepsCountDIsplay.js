@@ -28,6 +28,7 @@ const StepsCountDisplay = ({ data, variant }) => {
           {step}
         </div>
       ))}
+      <div id="input_form" className={styles.element_to_scroll} />
     </div>
   );
 };
