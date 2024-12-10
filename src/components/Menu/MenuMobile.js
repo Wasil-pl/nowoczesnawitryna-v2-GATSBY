@@ -4,6 +4,7 @@ import * as styles from './MenuMobile.module.scss';
 import './MenuMobile.css';
 import { HouseFill, List } from 'react-bootstrap-icons';
 import { StaticImage } from 'gatsby-plugin-image';
+import CustomButton from '../CustomButton/CustomButton';
 
 const MenuMobile = ({ active }) => {
   const [show, setShow] = useState(false);
@@ -13,6 +14,7 @@ const MenuMobile = ({ active }) => {
 
   return (
     <>
+      <CustomButton link={'/formularz-szybkiej-wyceny/'} text={'Szybka Wycena'} variant="small" />
       <Button className={styles.canvas_button} variant="primary" onClick={handleShow} aria-label="Menu">
         <List />
       </Button>

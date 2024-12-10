@@ -34,7 +34,7 @@ const Action = ({ kontakt_2, kontakt_3, variant = '' }) => {
           <br />
           {!kontakt_2 && !kontakt_3 && <span className={styles.text}>Wypełnij formularz wyceny już teraz!</span>}
           {kontakt_2 && !kontakt_3 && (
-            <span className={styles.text}>Skontaktuj się – chętnie odpowiem na Twoje pytania!</span>
+            <span className={styles.text}>Napisz do mnie, a odpowiem na Twoje pytania i przygotuję ofertę</span>
           )}
           {kontakt_3 && <span className={styles.text}>Napisz, a odpowiem tak szybko jak to możliwe...</span>}
         </a>

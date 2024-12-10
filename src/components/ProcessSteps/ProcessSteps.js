@@ -16,7 +16,7 @@ const ProcessSteps = () => {
         const rect = step.getBoundingClientRect();
         const elementMiddle = rect.top + rect.height / 2;
 
-        if (elementMiddle < windowHeight * 0.75 && elementMiddle > windowHeight * 0.25) {
+        if (elementMiddle < windowHeight * 0.6 && elementMiddle > windowHeight * 0.25) {
           setActiveStep(index);
         }
       });
@@ -36,8 +36,8 @@ const ProcessSteps = () => {
             <div className={`${styles.step_content} ${styles.step_1} ${styles.step_brief}`}>
               <h3>Brief i Konsultacja</h3>
               <p>
-                Na początek ustalamy Twoje oczekiwania, wizję i preferencje dotyczące strony. Zbieram informacje o
-                Twojej firmie, aby stworzyć stronę, która najlepiej ją reprezentuje.
+                Na początek ustalamy Twoje oczekiwania, wizję i preferencje dotyczące Twojej strony internetowej.
+                Zbieram informacje o Twojej firmie, aby stworzyć taką stronę, która najlepiej ją reprezentuje.
               </p>
             </div>
             <div className={styles.step_number}>
@@ -53,9 +53,9 @@ const ProcessSteps = () => {
             <div className={`${styles.step_content} ${styles.step_2} ${styles.step_info}`}>
               <h3>Zbieranie i Przygotowywanie kontentu</h3>
               <p>
-                W tym kroku zbieram wszelkie materiały potrzebne do stworzenia strony, takie jak teksty, grafiki,
-                zdjęcia oraz inne elementy wizualne. Jeśli nie masz gotowego kontentu, mogę pomóc w jego przygotowaniu,
-                aby strona była spójna i atrakcyjna wizualnie.
+                W tym kroku zbieram wszelkie materiały potrzebne do stworzenia strony internetowej, takie jak teksty,
+                grafiki, zdjęcia oraz inne elementy wizualne. Jeśli nie masz gotowego kontentu, mogę pomóc w jego
+                przygotowaniu, aby strona była spójna i atrakcyjna wizualnie.
               </p>
             </div>
             <div className={styles.step_number_left}>
@@ -88,8 +88,8 @@ const ProcessSteps = () => {
             <div className={`${styles.step_content} ${styles.step_4} ${styles.step_kodowanie}`}>
               <h3>Tworzenie Strony Internetowej</h3>
               <p>
-                Po akceptacji projektu przechodzę do kodowania i tworzenia funkcjonalnej strony. Strona jest
-                responsywna, zoptymalizowana pod kątem SEO i łatwa w zarządzaniu.
+                Po akceptacji projektu przechodzę do kodowania i tworzenia funkcjonalnej strony internetowej. Strona
+                jest responsywna, zoptymalizowana pod kątem SEO i łatwa w zarządzaniu.
               </p>
             </div>
             <div className={styles.step_number_left}>
@@ -105,8 +105,8 @@ const ProcessSteps = () => {
             <div className={`${styles.step_content} ${styles.step_5} ${styles.step_testowanie}`}>
               <h3>Testowanie i Optymalizacja</h3>
               <p>
-                Przed wdrożeniem testuję stronę na różnych urządzeniach i przeglądarkach, aby upewnić się, że działa bez
-                zarzutu.
+                Przed wdrożeniem, testuję stronę internetową na różnych urządzeniach i przeglądarkach, aby upewnić się,
+                że działa bez zarzutu.
               </p>
             </div>
             <div className={styles.step_number}>
@@ -122,8 +122,8 @@ const ProcessSteps = () => {
             <div className={`${styles.step_content} ${styles.step_6} ${styles.step_wdrozenie}`}>
               <h3>Wdrożenie i Wsparcie</h3>
               <p>
-                Po finalnej akceptacji strona jest publikowana. Oferuję wsparcie techniczne po wdrożeniu, aby upewnić
-                się, że strona działa bez zarzutu, a także pomagam w jej aktualizacjach.
+                Po finalnej akceptacji, Twoja strona internetowa jest publikowana. Oferuję wsparcie techniczne po
+                wdrożeniu, aby upewnić się, że strona działa bez zarzutu, a także pomagam w jej aktualizacjach.
               </p>
             </div>
             <div className={styles.step_number_last}>

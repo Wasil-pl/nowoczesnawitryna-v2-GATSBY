@@ -50,6 +50,14 @@
   }
 }
 
+.small {
+  font-size: 0.6rem !important;
+  padding: 5px 10px;
+  font-weight: 400 !important;
+  margin-left: unset;
+  transform: unset;
+}
+
 @media (max-width: 768px) {
   .button {
     font-size: 0.8rem;
@@ -59,4 +67,9 @@
   .price {
     font-size: 0.6rem;
   }
+}
+
+.small {
+  font-size: 0.7rem !important;
+  margin-right: 15px;
 }

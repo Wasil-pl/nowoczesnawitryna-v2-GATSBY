@@ -11,7 +11,11 @@ const Portfolio = () => {
       <Container>
         <div className={styles.wrapper}>
           <div className={`${styles.portfolio_item} ${styles.title_box}`}>
-            <SectionTitle title="Moje ostatnie" coloredText=" projekty" />
+            <SectionTitle
+              title="Moje ostatnie"
+              coloredText=" projekty"
+              subtitle="Zobacz moje ostatnie realizacje stron internetowych i sklepów online."
+            />
           </div>
           <div className={`${styles.portfolio_item} ${styles.image_box}`}>
             <StaticImage

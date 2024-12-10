@@ -35,16 +35,16 @@ const MyServicesAccordion = () => {
             <div className={styles.tab_content_left}>
               <h3>Strony internetowe HTML</h3>
               <p>
-                Oferuję <em>tworzenie stron internetowych</em> od podstaw, które są unikatowe, w pełni dostosowane do
-                Twoich indywidualnych potrzeb i pozwalają Ci wyróżnić się na tle konkurencji. Moje niestandardowe strony
+                Oferuję strony interentowe programowane od podstaw, które są unikatowe, w pełni dostosowane do Twoich
+                indywidualnych potrzeb i pozwalają Ci wyróżnić się na tle konkurencji. Moje niestandardowe strony
                 internetowe to coś więcej niż standardowe szablony – każda strona jest tworzona z myślą o wyjątkowym
                 designie i funkcjonalności.
               </p>
               <p>
-                Jeśli szukasz strony internetowej z perfekcyjnym dopasowaniem graficznym (pixel perfect), zaawansowanej
-                aplikacji typu single page app (SPA) lub innego niestandardowego rozwiązania, trafiłeś we właściwe
-                miejsce. <em>Tworzę strony internetowe</em>, które spełniają najwyższe standardy zarówno pod względem
-                estetyki, jak i użyteczności.
+                Jeśli szukasz nowoczesnej strony internetowej z perfekcyjnym dopasowaniem graficznym (pixel perfect),
+                zaawansowanej aplikacji typu single page app (SPA) lub innego niestandardowego rozwiązania, trafiłeś we
+                właściwe miejsce. Moje strony, spełniają najwyższe standardy zarówno pod względem estetyki, jak i
+                użyteczności.
               </p>
               <CustomButton text="Zobacz więcej" link="/strony-niestandardowe/" />
             </div>
@@ -65,7 +65,7 @@ const MyServicesAccordion = () => {
             <div className={styles.tab_content_left}>
               <h3>Aplikacje webowe</h3>
               <p>
-                <em>Aplikacje webowe</em> są idealne, gdy Twoje wymagania przekraczają możliwości tradycyjnych stron
+                Aplikacje webowe są idealne, gdy Twoje wymagania przekraczają możliwości tradycyjnych stron
                 internetowych. Jeżeli pragniesz interaktywnego narzędzia, które uprości codzienne zadania Twoich
                 klientów, albo potrzebujesz online’owej platformy stanowiącej serce Twojego biznesu – jestem tutaj, aby
                 sprostać Twoim oczekiwaniom.
@@ -89,10 +89,10 @@ const MyServicesAccordion = () => {
             <div className={styles.tab_content_left}>
               <h3>Strony Internetowe oparte na WordPress</h3>
               <p>
-                Oferuję <em>tworzenie stron internetowych</em> opartych na <em>WordPress</em>, jednym z
-                najpopularniejszych systemów zarządzania treścią (CMS). Jeśli potrzebujesz łatwej w edycji strony
-                internetowej, którą możesz zarządzać bez umiejętności kodowania, strony internetowe na WordPress będą
-                dla Ciebie idealnym rozwiązaniem.
+                Oferuję tworzenie stron internetowych opartych na WordPress, jednym z najpopularniejszych systemów
+                zarządzania treścią (CMS). Jeśli potrzebujesz łatwej w edycji strony internetowej, którą możesz
+                zarządzać bez umiejętności kodowania, strony internetowe na WordPress będą dla Ciebie idealnym
+                rozwiązaniem.
               </p>
               <p>
                 WordPress to doskonały wybór dla tych, którym zależy na szybkim uruchomieniu strony, przy jednoczesnym
@@ -118,14 +118,15 @@ const MyServicesAccordion = () => {
             <div className={styles.tab_content_left}>
               <h3>Sklepy internetowe</h3>
               <p>
-                Oferuję funkcjonalne i bezpieczne <em>sklepy internetowe</em> oparte na WooCommerce, jednym z
-                najpopularniejszych rozwiązań dla e-commerce. Moje sklepy internetowe umożliwiają łatwą sprzedaż
-                produktów online oraz intuicyjne zarządzanie asortymentem.
+                Oferuję funkcjonalne i bezpieczne sklepy internetowe oparte na WooCommerce, jednym z najpopularniejszych
+                rozwiązań dla e-commerce. Moje sklepy internetowe umożliwiają łatwą sprzedaż produktów online oraz
+                intuicyjne zarządzanie asortymentem.
               </p>
               <p>
-                <em>Tworzę sklepy internetowe</em>, które są w pełni zgodne z najnowszymi standardami e-commerce,
-                zapewniając płynne działanie i bezpieczeństwo transakcji. Dzięki moim rozwiązaniom możesz z łatwością
-                rozwijać swoją sprzedaż online i dostosowywać sklep do potrzeb Twojej firmy.
+                Tworzę nowoczesne a zarazem profesjonalne sklepy internetowe, które są w pełni zgodne z najnowszymi
+                standardami e-commerce, zapewniając płynne działanie i bezpieczeństwo transakcji. Dzięki moim
+                rozwiązaniom możesz z łatwością rozwijać swoją sprzedaż online i dostosowywać sklep do potrzeb Twojej
+                firmy.
               </p>
               <CustomButton text="Zobacz więcej" link="/sklepy-internetowe/" />
             </div>
@@ -136,22 +137,22 @@ const MyServicesAccordion = () => {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="4">
-        <Accordion.Header as={'h3'}>Strony LMS – Nowoczesne Platformy Edukacyjne</Accordion.Header>
+        <Accordion.Header as={'h3'}>Strony Internetowe LMS – Nowoczesne Platformy Edukacyjne</Accordion.Header>
         <Accordion.Body id="4">
           <div className={styles.tab_content}>
             <div className={styles.tab_content_left}>
-              <h3>Strony LMS – Nowoczesne Platformy Edukacyjne</h3>
+              <h3>Strony Internetowe LMS – Nowoczesne Platformy Edukacyjne</h3>
               <p>
-                Oferuję tworzenie stron LMS (Learning Management System), które umożliwiają łatwe zarządzanie kursami
+                Oferuję strony internetowe LMS (Learning Management System), które umożliwiają łatwe zarządzanie kursami
                 online, uczniami oraz materiałami edukacyjnymi. Moje platformy LMS są idealne dla szkół, firm
                 szkoleniowych oraz osób oferujących kursy online.
               </p>
               <p>
-                Moje <em>strony LMS</em> oferują szeroką gamę funkcji, takich jak rejestracja użytkowników, zarządzanie
-                kursami, quizami oraz certyfikatami. Dzięki prostemu w obsłudze panelowi możesz samodzielnie dodawać
-                nowe kursy, monitorować postępy uczniów i łatwo zarządzać całą platformą. Tworzone przeze mnie strony są
-                w pełni zoptymalizowane pod kątem SEO, co pozwala dotrzeć do większej liczby odbiorców, a dodatkowo
-                umożliwiają integrację z narzędziami płatności, webinarami i mediami społecznościowymi.
+                Moje strony LMS oferują szeroką gamę funkcji, takich jak rejestracja użytkowników, zarządzanie kursami,
+                quizami oraz certyfikatami. Dzięki prostemu w obsłudze panelowi możesz samodzielnie dodawać nowe kursy,
+                monitorować postępy uczniów i łatwo zarządzać całą platformą. Tworzone przeze mnie strony są w pełni
+                zoptymalizowane pod kątem SEO, co pozwala dotrzeć do większej liczby odbiorców, a dodatkowo umożliwiają
+                integrację z narzędziami płatności, webinarami i mediami społecznościowymi.
               </p>
               <CustomButton text="Zobacz więcej" link="/strony-lms/" />
             </div>
@@ -172,8 +173,8 @@ const MyServicesAccordion = () => {
             <div className={styles.tab_content_left}>
               <h3>Projektowanie Logo</h3>
               <p>
-                Oferuję profesjonalne <em>projektowanie logo</em>, które stanowi kluczowy element budowania wizerunku
-                Twojej firmy. Każde logo, które tworzę, jest unikalne, dostosowane do charakteru marki i wyróżnia się
+                Oferuję profesjonalne projektowanie logo, które stanowi kluczowy element budowania wizerunku Twojej
+                firmy. Każde logo, które tworzę, jest unikalne, dostosowane do charakteru marki i wyróżnia się
                 nowoczesnym designem.
               </p>
               <p>

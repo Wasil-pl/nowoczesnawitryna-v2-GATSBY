@@ -6,6 +6,7 @@ import MenuDeskopt from './MenuDeskopt';
 import MenuMobile from './MenuMobile';
 import { useMediaQuery } from 'react-responsive';
 import { StaticImage } from 'gatsby-plugin-image';
+import CustomButton from '../CustomButton/CustomButton';
 
 const Menu = ({ active }) => {
   const [scrollY, setScrollY] = useState(0);
@@ -41,6 +42,7 @@ const Menu = ({ active }) => {
         <div className={styles.menu_wrapper}>
           {isDesktop && (
             <div className={styles.lang}>
+              <CustomButton link={'/formularz-szybkiej-wyceny/'} text={'Szybka Wycena'} variant="small" />
               <a href="https://www.nowoczesnawitryna.com">EN</a>
               <a className={styles.active} href="https://www.nowoczesnawitryna.pl/">
                 PL

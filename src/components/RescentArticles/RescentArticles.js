@@ -12,7 +12,11 @@ const RescentArticles = () => {
   return (
     <section className={styles.rescent_articles}>
       <Container>
-        <SectionTitle title="Ostatnie artykuły" />
+        <SectionTitle
+          title="Najnowsze wpisy na "
+          coloredText="blogu"
+          subtitle="Zacznij się uczyć czegoś nowego o tworzeniu stron internetowych już dziś!"
+        />
         <div className={styles.wrapper}>
           {blog_rescent_articles.map((card, index) => (
             <ArticleCard

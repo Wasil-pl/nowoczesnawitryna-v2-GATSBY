@@ -9,15 +9,14 @@ const SiteInfo = () => {
       <Container>
         <div className={styles.wrapper}>
           <div className={styles.first_column}>
-            <h3>
-              Dlaczego Warto Wybrać Moje Usługi <em>Tworzenia Stron Internetowych?</em>
-            </h3>
+            <h3>Dlaczego Warto Wybrać Moje Usługi Tworzenia Nowoczesnych Stron Internetowych?</h3>
             <p>
-              Oferuję kompleksowe tworzenie stron internetowych dla klientów Jastrzębia-Zdroju, województwa śląskiego
-              oraz całej Polski, które są nie tylko <strong>responsywne</strong> i <strong>funkcjonalne</strong>, ale
-              także <strong>łatwe w zarządzaniu</strong> oraz w pełni <strong>zoptymalizowane pod kątem SEO</strong>.
-              Każda strona, którą tworzę, jest zaprojektowana z myślą o użytkowniku oraz zgodnie z najnowszymi trendami
-              i technologiami, aby zapewnić najwyższą jakość i efektywność w sieci.
+              Oferuję kompleksowe usługi w zakresie{' '}
+              <em>tworzenia stron internetowych dla klientów Jastrzębia-Zdroju</em>, województwa śląskiego oraz całej
+              Polski. Strony, które są nie tylko <strong>responsywne</strong> i <strong>funkcjonalne</strong>, ale także{' '}
+              <strong>łatwe w zarządzaniu</strong> oraz w pełni <strong>zoptymalizowane pod kątem SEO</strong>. Każda
+              strona internetowa lub sklep online, jest zaprojektowana z myślą o użytkowniku oraz zgodna z najnowszymi
+              trendami i technologiami. A wszystko to, aby zapewnić najwyższą jakość i efektywność w sieci.
             </p>
             <CustomButton variant="dark" text="Skontaktuj się" link="/kontakt/" />
           </div>
@@ -28,10 +27,9 @@ const SiteInfo = () => {
                   <em>Freelancer</em>, nie agencja
                 </Card.Title>
                 <Card.Text>
-                  Jako freelancer oferuję bardziej indywidualne podejście niż typowe agencje. Tworzę
-                  <em> strony internetowe</em>, skrojone na miarę potrzeb Twojej firmy, zapewniając pełną elastyczność,
-                  szybkie wdrożenie oraz konkurencyjne ceny. Każde zlecenie to dla mnie pełne zaangażowanie i najwyższa
-                  jakość.
+                  Jako freelancer oferuję bardziej indywidualne podejście niż typowe agencje. Tworzę nowoczesne strony
+                  internetowe, skrojone na miarę potrzeb Twojej firmy. Zapewniając przy tym pełną elastyczność, szybkie
+                  wdrożenie oraz konkurencyjne ceny. Każde zlecenie to dla mnie pełne zaangażowanie i najwyższa jakość.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -39,8 +37,8 @@ const SiteInfo = () => {
               <Card.Body>
                 <Card.Title as={'h3'}>Nie tylko WordPress!!</Card.Title>
                 <Card.Text>
-                  W odróżnieniu od wielu freelancerów, nie ograniczam się jedynie do <em>WordPressa</em>. Dzięki moim
-                  umiejętnościom programistycznym mogę tworzyć <em>strony internetowe</em> na różnych platformach i
+                  W odróżnieniu od wielu freelancerów, nie ograniczam się jedynie do WordPressa. Dzięki moim
+                  umiejętnościom programistycznym mogę tworzyć strony, sklepy interentowe, na różnych platformach i
                   dostosowywać je do Twoich specyficznych potrzeb klientów oraz branży.
                   <span>
                     <strong>
@@ -55,9 +53,9 @@ const SiteInfo = () => {
 
         <div className={styles.banner}>
           <h3 data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease" data-sal-duration="1000">
-            <em>Tworzę strony internetowe</em> dla firm każdej wielkości – od małych start-upów po duże korporacje. Bez
-            względu na to, jaką firmę prowadzisz, jestem pewien, że mogę zaproponować <em>strony internetowe</em>, które
-            spełnią Twoje oczekiwania i będą idealnym rozwiązaniem dla Twojego biznesu.
+            Tworzę strony internetowe dla firm każdej wielkości – od małych start-upów po duże korporacje. Bez względu
+            na to, jaką firmę prowadzisz, jestem pewien, że mogę zaproponować stronę lub sklep, które spełnią Twoje
+            oczekiwania i będą idealnym rozwiązaniem dla Twojego biznesu.
           </h3>
         </div>
       </Container>

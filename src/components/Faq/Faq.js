@@ -8,7 +8,10 @@ const Faq = () => {
   return (
     <section className={`${styles.faq} faq`}>
       <div className={styles.wrapper}>
-        <SectionTitle coloredText="FAQ" subtitle="Najczęściej zadawane pytania" />
+        <SectionTitle
+          coloredText="FAQ"
+          subtitle="Najczęściej zadawane pytania dotyczące projektowania stron internetowych"
+        />
 
         <div className={styles.accordion_wrapper}>
           <Accordion defaultActiveKey="0">
@@ -24,34 +27,42 @@ const Faq = () => {
             <Accordion.Item eventKey="1">
               <Accordion.Header as="h3">Jak długo trwa stworzenie strony internetowej?</Accordion.Header>
               <Accordion.Body>
-                Czas realizacji zależy od złożoności projektu. Prosta strona One-Page może być gotowa w ciągu kilku dni,
-                natomiast bardziej rozbudowane projekty, takie jak strony Multi-Page lub sklepy internetowe, mogą zająć
-                od 2 do 4 tygodni. W przypadku skomplikowanych projektów czas ten może się wydłużyć, zależnie od Twoich
-                potrzeb i dostarczenia treści.
+                Czas realizacji zależy od złożoności projektu. Prosta strona internetowa One-Page może być gotowa w
+                ciągu kilku dni, natomiast bardziej rozbudowane projekty, takie jak strony Multi-Page lub sklepy
+                internetowe, mogą zająć od 2 do 4 tygodni. W przypadku skomplikowanych stron internetowych czas ten może
+                się wydłużyć, zależnie od Twoich potrzeb i dostarczenia treści.
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2">
-              <Accordion.Header as="h3">Co jest potrzebne do rozpoczęcia pracy nad stroną?</Accordion.Header>
+              <Accordion.Header as="h3">
+                Co jest potrzebne do rozpoczęcia pracy nad stroną internetową?
+              </Accordion.Header>
               <Accordion.Body>
-                Do rozpoczęcia pracy potrzebuję podstawowych informacji o Twojej firmie, wizji na stronę oraz wszelkich
-                materiałów, które chciałbyś zamieścić (teksty, zdjęcia, logo itp.). Jeśli nie masz gotowych materiałów,
-                mogę pomóc w ich przygotowaniu.
+                Do rozpoczęcia pracy potrzebuję podstawowych informacji o Twojej firmie, wizji na swoją stronę
+                internetową oraz wszelkich materiałów, które chciałbyś zamieścić (teksty, zdjęcia, logo itp.). Jeśli nie
+                masz gotowych materiałów, mogę pomóc w ich przygotowaniu.
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-              <Accordion.Header as="h3"> Czy mogę samodzielnie zarządzać stroną po jej uruchomieniu?</Accordion.Header>
+              <Accordion.Header as="h3">
+                {' '}
+                Czy mogę samodzielnie zarządzać stroną internetową po jej uruchomieniu?
+              </Accordion.Header>
               <Accordion.Body>
                 Tak! Mam w ofercie strony internetowe w oparciu o intuicyjne systemy zarządzania treścią (CMS), takie
                 jak WordPress. Otrzymasz dostęp do panelu administracyjnego, który pozwoli Ci samodzielnie aktualizować
-                treści, dodawać zdjęcia i zarządzać stroną bez konieczności znajomości kodowania.
+                treści, dodawać zdjęcia i zarządzać swoją stroną internetową bez konieczności znajomości kodowania.
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="4">
-              <Accordion.Header as="h3"> Czy oferujesz wsparcie techniczne po uruchomieniu strony?</Accordion.Header>
+              <Accordion.Header as="h3">
+                {' '}
+                Czy oferujesz wsparcie techniczne po uruchomieniu strony internetowej?
+              </Accordion.Header>
               <Accordion.Body>
-                Tak, po wdrożeniu strony oferuję 3-miesięczne wsparcie techniczne, które obejmuje drobne aktualizacje i
-                pomoc w obsłudze strony. Po tym okresie możesz skorzystać z dodatkowych usług wsparcia technicznego,
-                jeśli będziesz ich potrzebować.
+                Tak, po wdrożeniu strony internetowej oferuję 3-miesięczne wsparcie techniczne, które obejmuje drobne
+                aktualizacje i pomoc w obsłudze strony. Po tym okresie możesz skorzystać z dodatkowych usług wsparcia
+                technicznego, jeśli będziesz ich potrzebować.
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="5">
@@ -67,8 +78,9 @@ const Faq = () => {
             <Accordion.Item eventKey="6">
               <Accordion.Header as="h3">Czy strony internetowe, które tworzysz, są responsywne?</Accordion.Header>
               <Accordion.Body>
-                Tak, wszystkie strony, które tworzę, są w pełni responsywne. Oznacza to, że strona będzie wyglądała
-                doskonale i działała płynnie zarówno na komputerach stacjonarnych, tabletach, jak i smartfonach.
+                Tak, wszystkie moje strony internetowe, które tworzę, są w pełni responsywne. Oznacza to, że strona
+                będzie wyglądała doskonale i działała płynnie zarówno na komputerach stacjonarnych, tabletach, jak i
+                smartfonach.
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="7">

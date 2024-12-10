@@ -22,7 +22,7 @@ const MyStack = () => {
   ];
 
   const subtitle =
-    'Do tworzenia stron wykorzystuję najnowsze technologie i tworzę strony internetowe na zamówienie we wszystkich głównych systemach CMS i frameworkach.';
+    'Do mojej pracy wykorzystuję najnowsze technologie i tworzę nowoczesne strony internetowe na zamówienie we wszystkich głównych systemach CMS i frameworkach.';
 
   return (
     <section className={styles.my_stack}>

@@ -31,11 +31,10 @@ const HeaderHome = ({ active }) => {
         )}
 
         <h2 className={styles.subtitle}>
-          Profesjonalne strony internetowe i sklepy online
+          Profesjonalne strony internetowe i sklepy online.
           <br />
-          w Jastrzębiu-Zdroju, województwie śląskim oraz w całej Polsce.
-          <br />
-          Strony, które przyciągają i konwertują
+          Świadczę usługi dla klientów
+          <br />w Jastrzębiu-Zdroju, województwie śląskim oraz w całej Polsce.
         </h2>
       </div>
     </header>
