@@ -128,6 +128,14 @@ const MyServicesAccordion = () => {
                 rozwiązaniom możesz z łatwością rozwijać swoją sprzedaż online i dostosowywać sklep do potrzeb Twojej
                 firmy.
               </p>
+              <p>
+                Wszystkie sklepy internetowe, które tworzę, są w pełni przygotowane do działania i sprzedaży online.
+                Oferuję kompletne rozwiązania, które zawierają wszystkie kluczowe elementy niezbędne do prowadzenia
+                sklepu internetowego. Każdy projekt obejmuje m.in. regulamin sklepu, politykę prywatności oraz inne
+                obowiązkowe informacje wymagane przez prawo polskie i unijne. Dzięki temu Twój sklep internetowy będzie
+                nie tylko funkcjonalny, ale także zgodny z obowiązującymi przepisami, co pozwoli Ci prowadzić biznes w
+                sposób bezpieczny i profesjonalny.
+              </p>
               <CustomButton text="Zobacz więcej" link="/sklepy-internetowe/" />
             </div>
             <div className={styles.tab_content_right}>

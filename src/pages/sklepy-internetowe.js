@@ -12,6 +12,7 @@ import Footer from '../components/Footer/Footer';
 import RootLayout from '../components/RootLayout/RootLayout';
 import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
 import ScroolToPriceButton from '../components/ScroolToPriceButton/ScroolToPriceButton';
+import LastProject from '../components/Portfolio/LastProject';
 
 const SklepyInternetowe = () => {
   const title_top = 'Profesjonalne';
@@ -40,6 +41,7 @@ const SklepyInternetowe = () => {
       />
       <ServicesInfo wordpress />
       <Prices sklep />
+      <LastProject />
       <Footer />
     </>
   );

@@ -20,6 +20,8 @@ module.exports = {
     `gatsby-plugin-scroll-reveal`,
     `react-hook-form`,
     `@react-google-maps/api`,
+    '@tsparticles/react',
+    '@tsparticles/slim',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

@@ -2,6 +2,7 @@ import React from 'react';
 import * as styles from './HeaderHome.module.scss';
 import Menu from '../Menu/Menu';
 import { useMediaQuery } from 'react-responsive';
+import ParticlesBackground from '../ParticlesBackground/ParticlesBackground';
 
 const HeaderHome = ({ active }) => {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
@@ -9,6 +10,8 @@ const HeaderHome = ({ active }) => {
   return (
     <header className={styles.header}>
       <Menu active={active} />
+
+      <ParticlesBackground id={'tsparticles'} />
 
       <div data-sal="fade" data-sal-delay="100" data-sal-duration="2000" className={styles.content}>
         {!isMobile && (

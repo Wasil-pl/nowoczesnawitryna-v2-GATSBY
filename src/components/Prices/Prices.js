@@ -34,7 +34,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                   <h3>Strona One-Page</h3>
                   <p>cena od</p>
                   <h4>
-                    <span>1300</span> zł
+                    <span>1600</span> zł
                   </h4>
                   <hr />
                 </div>
@@ -96,7 +96,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                   <h3>Strona Multi-Page</h3>
                   <p>cena od</p>
                   <h4>
-                    <span>1700</span> zł
+                    <span>2000</span> zł
                   </h4>
                   <hr />
                 </div>
@@ -159,7 +159,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                   <h3>Aplikacja www</h3>
                   <p>cena od</p>
                   <h4>
-                    <span>3000</span> zł
+                    <span>3500</span> zł
                   </h4>
                   <hr />
                 </div>
@@ -211,6 +211,12 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                   wszechstronne narzędzie, które zapewnia pełną kontrolę nad sprzedażą online, a także elastyczność w
                   zarządzaniu asortymentem i zamówieniami.
                 </p>
+                <p>
+                  Każdy sklep internetowy, który tworzę, jest w pełni zgodny z obowiązującymi przepisami prawa polskiego
+                  i unijnego. W ramach realizacji zapewniam m.in. przygotowanie regulaminu sklepu, polityki prywatności
+                  oraz innych niezbędnych dokumentów, które są wymagane do prowadzenia legalnej sprzedaży online. Dzięki
+                  temu Twój sklep internetowy będzie nie tylko funkcjonalny, ale także bezpieczny i profesjonalny.
+                </p>
                 <p>Dla kogo jest dedykowana?</p>
                 <p>
                   Sklep internetowy oparty na WooCommerce to idealne rozwiązanie dla firm oraz osób, które chcą
@@ -223,7 +229,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                   <h3>Sklep www</h3>
                   <p>cena od</p>
                   <h4>
-                    <span>1600</span> zł
+                    <span>2000</span> zł
                   </h4>
                   <hr />
                 </div>
@@ -240,6 +246,18 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                     <li>
                       <Check /> Zdjęcia i grafiki
+                    </li>
+                    <li>
+                      <Check /> Instalacja i konfiguracja WooCommerce
+                    </li>
+                    <li>
+                      <Check /> Dodanie produktów (w cenie do 30 produktów, kolejne płatne dodatkowo)
+                    </li>
+                    <li>
+                      <Check /> Szkolenie z obsługi sklepu (video - chat)
+                    </li>
+                    <li>
+                      <Check /> Regulamin sklepu internetowego
                     </li>
                     <li>
                       <Check /> Wsparcie i aktualizacja na okres 3 miesięcy
@@ -440,7 +458,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                   <h3>Strona One-Page</h3>
                   <p>cena od</p>
                   <h4>
-                    <span>700</span> zł
+                    <span>850</span> zł
                   </h4>
                   <hr />
                 </div>
@@ -502,7 +520,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                   <h3>Strona Multi-Page</h3>
                   <p>cena od</p>
                   <h4>
-                    <span>900</span> zł
+                    <span>1100</span> zł
                   </h4>
                   <hr />
                 </div>

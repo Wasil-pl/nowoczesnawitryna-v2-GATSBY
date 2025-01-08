@@ -1,0 +1,90 @@
+@use '../../../styles/settings.scss' as settings;
+
+.portfolio {
+  padding: 150px 0 250px;
+  background-color: settings.$color-background-lighter;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+
+    .portfolio_item {
+      flex: calc(50% - 100px);
+      position: relative;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: settings.$transition_0_3;
+        color: settings.$color-text-light;
+        text-align: center;
+
+        h3 {
+          font-size: 2rem;
+          font-weight: settings.$font-weight-extrabold;
+          margin-bottom: 1rem;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .title_box {
+      margin: 25px 25px;
+      text-align: center;
+    }
+
+    .image_box {
+      margin: 25px 25px;
+      border-radius: 20px;
+      transition: settings.$transition_0_3;
+      border: solid 10px settings.$color-background-dark;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+        object-position: top;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .portfolio {
+    .wrapper {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      row-gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 100px 0 250px;
+
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
