@@ -7,12 +7,21 @@ import RootLayout from '../../components/RootLayout/RootLayout';
 import Headers from '../../components/Headers/Headers';
 import Footer from '../../components/Footer/Footer';
 import ScroolUpButton from '../../components/ScroolUpButton/ScroolUpButton';
-import SiteInfoServices from '../../components/SiteInfoServices/SiteInfoServices';
-import { wroclaw_info_txt, wroclaw_myService, portfolioTitle, whyMeContent } from '../../consts/landingPage';
+import {
+  wroclaw_info_txt,
+  wroclaw_myService,
+  portfolioTitle,
+  about_me_wroclaw,
+  wroclaw_websiteFunctions,
+  wroclaw_processSteps,
+} from '../../consts/landingPage';
 import LP_MyServices from '../../components/LandingPages/LP_MyServices/LP_MyServices';
-import WhyMe from '../../components/LandingPages/WhyMe/WhyMe';
 import LP_Portfolio from '../../components/LandingPages/LP_Portfolio/LP_Portfolio';
 import LP_Action from '../../components/LandingPages/LP_Action/LP_Action';
+import LP_SiteInfo from '../../components/LandingPages/LP_SiteInfo/LP_SiteInfo';
+import LP_AboutMe from '../../components/LandingPages/LP_AboutMe/LP_AboutMe';
+import LP_WebsiteFunctions from '../../components/LandingPages/LP_WebsiteFunctions/LP_WebsiteFunctions';
+import LP_ProcessSteps from '../../components/LandingPages/LP_ProcessSteps/LP_ProcessSteps';
 
 const wroclaw = () => {
   const title_top = 'Innowacyjne i funkcjonalne';
@@ -36,10 +45,14 @@ const wroclaw = () => {
         subtitle={subtitle}
         variant={'landing_page'}
       />
-      <SiteInfoServices
-        title_first_column={wroclaw_info_txt.title_first_column}
-        descryption_first_column={wroclaw_info_txt.descryption_first_column}
-        variant="one_column"
+      <LP_SiteInfo
+        title_first={wroclaw_info_txt.title_first}
+        description_first={wroclaw_info_txt.description_first}
+        title_second={wroclaw_info_txt.title_second}
+        description_second={wroclaw_info_txt.description_second}
+        title_third={wroclaw_info_txt.title_third}
+        description_third={wroclaw_info_txt.description_third}
+        banner_description={wroclaw_info_txt.banner_description}
       />
       <LP_MyServices
         sectionTitle={wroclaw_myService.sectionTitle}
@@ -57,30 +70,47 @@ const wroclaw = () => {
         title_logo={wroclaw_myService.title_logo}
         description_logo={wroclaw_myService.description_logo}
       />
-      <WhyMe
-        title_first_row={whyMeContent.wroclaw[0].title}
-        description_first_row={whyMeContent.wroclaw[0].description}
-        title_second_row={whyMeContent.wroclaw[1].title}
-        description_second_row={whyMeContent.wroclaw[1].description}
-        title_third_row={whyMeContent.wroclaw[2].title}
-        description_third_row={whyMeContent.wroclaw[2].description}
-        title_fourth_row={whyMeContent.wroclaw[3].title}
-        description_fourth_row={whyMeContent.wroclaw[3].description}
-        title_fifth_row={whyMeContent.wroclaw[4].title}
-        description_fifth_row={whyMeContent.wroclaw[4].description}
-        title_sixth_row={whyMeContent.wroclaw[5].title}
-        description_sixth_row={whyMeContent.wroclaw[5].description}
-        title_seventh_row={whyMeContent.wroclaw[6].title}
-        description_seventh_row={whyMeContent.wroclaw[6].description}
-        title_eighth_row={whyMeContent.wroclaw[7].title}
-        description_eighth_row={whyMeContent.wroclaw[7].description}
-        title_ninth_row={whyMeContent.wroclaw[8].title}
-        description_ninth_row={whyMeContent.wroclaw[8].description}
-        title_tenth_row={whyMeContent.wroclaw[9].title}
-        description_tenth_row={whyMeContent.wroclaw[9].description}
-      />
+      <LP_AboutMe description={about_me_wroclaw.description} />
 
+      <LP_WebsiteFunctions
+        sectionTitle={wroclaw_websiteFunctions.sectionTitle}
+        sectionTitleColored={wroclaw_websiteFunctions.sectionTitleColored}
+        sectionSubtitle={wroclaw_websiteFunctions.sectionSubtitle}
+        itemTitle1={wroclaw_websiteFunctions.items[0].title}
+        itemDescription1={wroclaw_websiteFunctions.items[0].description}
+        itemTitle2={wroclaw_websiteFunctions.items[1].title}
+        itemDescription2={wroclaw_websiteFunctions.items[1].description}
+        itemTitle3={wroclaw_websiteFunctions.items[2].title}
+        itemDescription3={wroclaw_websiteFunctions.items[2].description}
+        itemTitle4={wroclaw_websiteFunctions.items[3].title}
+        itemDescription4={wroclaw_websiteFunctions.items[3].description}
+        itemTitle5={wroclaw_websiteFunctions.items[4].title}
+        itemDescription5={wroclaw_websiteFunctions.items[4].description}
+        itemTitle6={wroclaw_websiteFunctions.items[5].title}
+        itemDescription6={wroclaw_websiteFunctions.items[5].description}
+        itemTitle7={wroclaw_websiteFunctions.items[6].title}
+        itemDescription7={wroclaw_websiteFunctions.items[6].description}
+        itemTitle8={wroclaw_websiteFunctions.items[7].title}
+        itemDescription8={wroclaw_websiteFunctions.items[7].description}
+      />
       <LP_Action />
+
+      <LP_ProcessSteps
+        sectionTitle={wroclaw_processSteps.sectionTitle}
+        sectionTitleColored={wroclaw_processSteps.sectionTitleColored}
+        step1Title={wroclaw_processSteps.steps[0].title}
+        step1Description={wroclaw_processSteps.steps[0].description}
+        step2Title={wroclaw_processSteps.steps[1].title}
+        step2Description={wroclaw_processSteps.steps[1].description}
+        step3Title={wroclaw_processSteps.steps[2].title}
+        step3Description={wroclaw_processSteps.steps[2].description}
+        step4Title={wroclaw_processSteps.steps[3].title}
+        step4Description={wroclaw_processSteps.steps[3].description}
+        step5Title={wroclaw_processSteps.steps[4].title}
+        step5Description={wroclaw_processSteps.steps[4].description}
+        step6Title={wroclaw_processSteps.steps[5].title}
+        step6Description={wroclaw_processSteps.steps[5].description}
+      />
 
       <LP_Portfolio
         title={portfolioTitle.wroclaw.title}

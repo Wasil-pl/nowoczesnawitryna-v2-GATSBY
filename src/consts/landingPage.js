@@ -1,39 +1,87 @@
-// ------------------------------ Section: Hero ------------------------------
+// ------------------------------ Section: Site_Info ------------------------------
 
 export const katowice_info_txt = {
-  title_first_column: 'Nowoczesne strony internetowe w Katowicach',
-  descryption_first_column:
-    'Tworzę nowoczesne i funkcjonalne strony internetowe dostosowane do potrzeb lokalnych firm w Katowicach. Dzięki mojemu doświadczeniu i znajomości specyfiki rynku śląskiego, pomagam przedsiębiorcom zwiększać widoczność w internecie i docierać do nowych klientów. Niezależnie od branży, dostarczam rozwiązania, które wyróżnią Twoją firmę na tle konkurencji.',
+  title_first: 'Dlaczego Warto Wybrać Moje Usługi Tworzenia Stron Internetowych w Katowicach?',
+  description_first:
+    'Oferuję kompleksowe usługi w zakresie tworzenia stron internetowych dla firm z Katowic i całego województwa śląskiego. Moje strony są nowoczesne, funkcjonalne, a jednocześnie intuicyjne i zoptymalizowane pod kątem SEO. Każda realizacja powstaje z myślą o lokalnym rynku i specyfice działalności klientów, co pozwala na lepsze dotarcie do potencjalnych odbiorców. Moje projekty łączą zaawansowaną technologię z praktycznymi rozwiązaniami, wspierając Twój biznes w rozwijaniu obecności online.',
+  title_second: 'Freelancer, Twoje indywidualne wsparcie',
+  description_second:
+    'Jako freelancer z doświadczeniem oferuję podejście, które jest dostosowane do potrzeb lokalnych firm w Katowicach. Każda strona internetowa to dla mnie możliwość stworzenia unikalnego projektu, który spełnia oczekiwania Twojej branży. Gwarantuję szybkie wdrożenie, pełną elastyczność oraz konkurencyjne ceny.',
+  title_third: 'Nie tylko WordPress, ale o wiele więcej',
+  description_third:
+    'Moje usługi wykraczają poza WordPress. Dla firm z Katowic projektuję strony internetowe i sklepy na różnych platformach, dostosowane do specyficznych potrzeb rynku śląskiego. Moje doświadczenie w programowaniu pozwala tworzyć zaawansowane rozwiązania technologiczne.',
+  banner_description:
+    'Pomagam firmom z Katowic – od małych rodzinnych przedsiębiorstw po duże korporacje – w budowaniu ich obecności w internecie. Moje strony i sklepy internetowe są skrojone na miarę, aby spełnić wszystkie wymagania i potrzeby Twojego biznesu. Bez względu na branżę, znajdę dla Ciebie idealne rozwiązanie.',
 };
 
 export const krakow_info_txt = {
-  title_first_column: 'Tworzenie stron internetowych dla firm w Krakowie',
-  descryption_first_column:
-    'Projektuję funkcjonalne i nowoczesne strony internetowe dopasowane do specyficznych potrzeb krakowskich firm. Moje realizacje łączą estetykę z technologią, wspierając przedsiębiorców w osiąganiu ich celów biznesowych. Dzięki znajomości rynku małopolskiego dostarczam rozwiązania, które skutecznie przyciągają uwagę lokalnych klientów i wzmacniają wizerunek firmy.',
+  title_first: 'Dlaczego Warto Wybrać Moje Usługi Tworzenia Stron Internetowych w Krakowie?',
+  description_first:
+    'Specjalizuję się w tworzeniu stron internetowych dla firm z Krakowa i Małopolski. Moje realizacje wyróżniają się nowoczesnym designem, funkcjonalnością i pełnym dopasowaniem do potrzeb lokalnych klientów. Każdy projekt tworzę z uwzględnieniem specyfiki rynku krakowskiego, co pozwala skutecznie dotrzeć do Twoich klientów i zwiększyć rozpoznawalność Twojej marki w internecie.',
+  title_second: 'Indywidualne podejście do firm z Krakowa',
+  description_second:
+    'Jako niezależny specjalista oferuję pełne wsparcie w projektowaniu stron internetowych, które odzwierciedlają charakter Twojej firmy. Moje podejście opiera się na szczegółowej analizie Twoich potrzeb i oczekiwań, co pozwala mi tworzyć strony, które wyróżniają się na tle konkurencji w Krakowie. Gwarantuję terminowość, elastyczność i korzystne warunki współpracy.',
+  title_third: 'Nie tylko strony, ale i kompleksowe rozwiązania',
+  description_third:
+    'Nie ograniczam się do tworzenia stron WordPress. Oferuję również sklepy internetowe, aplikacje webowe i zaawansowane rozwiązania technologiczne, dostosowane do specyficznych potrzeb firm w Krakowie. Każdy projekt jest dla mnie szansą na stworzenie narzędzia, które wspiera Twój biznes w długoterminowym rozwoju.',
+  banner_description:
+    'Wspieram firmy z Krakowa – od niewielkich działalności lokalnych po duże przedsiębiorstwa – w budowaniu ich obecności w internecie. Moje strony i sklepy internetowe są projektowane z myślą o lokalnym rynku i specyfice branży, aby idealnie odpowiadały Twoim potrzebom. Skontaktuj się, a pomogę Ci stworzyć rozwiązanie, które przyciągnie klientów i zwiększy Twoje zyski.',
 };
 
 export const warszawa_info_txt = {
-  title_first_column: 'Strony internetowe dopasowane do rynku warszawskiego',
-  descryption_first_column:
-    'Tworzę strony internetowe, które odpowiadają na potrzeby dynamicznego i wymagającego rynku w Warszawie. Moje projekty charakteryzują się wysoką funkcjonalnością, nowoczesnym designem oraz optymalizacją SEO, co pomaga firmom skutecznie konkurować w internecie. Działając na stołecznym rynku, dostarczam narzędzia, które wspierają rozwój i zwiększają widoczność firm online.',
+  title_first: 'Dlaczego Warto Wybrać Moje Usługi Tworzenia Stron Internetowych w Warszawie?',
+  description_first:
+    'Oferuję profesjonalne usługi tworzenia stron internetowych dla firm z Warszawy. Moje projekty są nowoczesne, funkcjonalne i dostosowane do dynamicznego charakteru stołecznego rynku. Tworzę strony, które pomagają firmom wyróżnić się w internecie, przyciągać klientów i budować trwałą obecność online. Dzięki optymalizacji SEO Twoja firma w Warszawie zyska większą widoczność i skuteczność w dotarciu do odbiorców.',
+  title_second: 'Dedykowane rozwiązania dla firm w Warszawie',
+  description_second:
+    'Jako niezależny specjalista oferuję spersonalizowane podejście, które odpowiada specyficznym potrzebom firm w Warszawie. Każdy projekt zaczynam od szczegółowej analizy Twojej branży, aby stworzyć stronę, która w pełni oddaje charakter Twojej działalności. Łączę kreatywność z funkcjonalnością, zapewniając projekty, które wyróżniają się na stołecznym rynku.',
+  title_third: 'Kompleksowe usługi wykraczające poza WordPress',
+  description_third:
+    'Moja oferta obejmuje więcej niż tylko strony internetowe na WordPressie. Projektuję sklepy internetowe, aplikacje webowe oraz zaawansowane rozwiązania technologiczne, które wspierają firmy w Warszawie. Moje doświadczenie w programowaniu pozwala mi realizować projekty dostosowane do unikalnych potrzeb Twojej firmy i branży.',
+  banner_description:
+    'Pomagam firmom z Warszawy – od start-upów po duże przedsiębiorstwa – budować ich wizerunek w internecie. Moje strony internetowe i sklepy są projektowane z myślą o specyfice stołecznego rynku, co pozwala skutecznie docierać do klientów i zwiększać zyski. Bez względu na rodzaj działalności, zaprojektuję rozwiązanie, które spełni Twoje oczekiwania i przyciągnie uwagę klientów.',
 };
 
 export const wroclaw_info_txt = {
-  title_first_column: 'Nowoczesne rozwiązania internetowe dla Wrocławia',
-  descryption_first_column:
-    'Specjalizuję się w tworzeniu stron internetowych, które odpowiadają na potrzeby dynamicznie rozwijającego się rynku we Wrocławiu. Projektuję strony, które są intuicyjne, atrakcyjne wizualnie i dostosowane do specyfiki lokalnych przedsiębiorców. Moje rozwiązania pomagają wyróżnić się na tle konkurencji i przyciągnąć nowych klientów.',
+  title_first: 'Dlaczego Warto Wybrać Moje Usługi Tworzenia Stron Internetowych we Wrocławiu?',
+  description_first:
+    'Oferuję usługi tworzenia nowoczesnych stron internetowych dla firm z Wrocławia. Moje projekty wyróżniają się estetycznym designem, intuicyjną obsługą i optymalizacją pod kątem SEO. Tworzę strony, które są dopasowane do specyfiki lokalnego rynku i pomagają firmom skutecznie konkurować w internecie. Niezależnie od branży, zapewniam rozwiązania, które wspierają rozwój Twojego biznesu online.',
+  title_second: 'Indywidualne podejście do firm we Wrocławiu',
+  description_second:
+    'Jako freelancer oferuję pełne zaangażowanie w każdy projekt. Każda strona internetowa, którą tworzę dla firm we Wrocławiu, jest dostosowana do ich unikalnych potrzeb i celów biznesowych. Moje usługi cechuje elastyczność, terminowość i dbałość o szczegóły, co sprawia, że współpraca przebiega sprawnie i efektywnie.',
+  title_third: 'Nie tylko strony, ale również kompleksowe rozwiązania',
+  description_third:
+    'Oferuję szeroki zakres usług, w tym sklepy internetowe, aplikacje webowe i zaawansowane systemy dostosowane do wymagań firm z Wrocławia. Dzięki moim umiejętnościom programistycznym mogę realizować projekty o różnym stopniu skomplikowania, zapewniając wysoką jakość i profesjonalizm na każdym etapie pracy.',
+  banner_description:
+    'Wspieram firmy z Wrocławia – od małych działalności po duże przedsiębiorstwa – w budowaniu ich obecności online. Moje strony internetowe i sklepy są projektowane z myślą o lokalnym rynku, aby pomóc Twojej firmie dotrzeć do klientów i wyróżnić się na tle konkurencji. Skontaktuj się, aby wspólnie stworzyć rozwiązanie, które sprosta wszystkim Twoim oczekiwaniom.',
 };
 
 export const poznan_info_txt = {
-  title_first_column: 'Dedykowane strony internetowe dla firm z Poznania',
-  descryption_first_column:
-    'Dla firm z Poznania projektuję strony internetowe, które łączą nowoczesny wygląd z zaawansowaną funkcjonalnością. Rozumiem specyfikę lokalnego rynku i tworzę strony, które pomagają przedsiębiorcom rozwijać działalność w internecie. Moje projekty wspierają budowanie zaufania wśród klientów i skutecznie zwiększają rozpoznawalność marki.',
+  title_first: 'Dlaczego Warto Wybrać Moje Usługi Tworzenia Stron Internetowych w Poznaniu?',
+  description_first:
+    'Tworzę nowoczesne i funkcjonalne strony internetowe dla firm z Poznania, które pomagają budować profesjonalny wizerunek w sieci. Moje projekty są dopasowane do specyfiki lokalnego rynku, co pozwala skutecznie docierać do klientów i rozwijać biznes online. Dzięki optymalizacji SEO strony, które projektuję, zyskują lepszą widoczność w wyszukiwarkach, zwiększając szanse na pozyskanie nowych klientów.',
+  title_second: 'Spersonalizowane podejście do firm z Poznania',
+  description_second:
+    'Każdy projekt zaczynam od analizy potrzeb Twojej firmy, co pozwala mi stworzyć stronę internetową idealnie dopasowaną do Twoich celów biznesowych. Moje usługi charakteryzują się elastycznością, terminowością i pełnym zaangażowaniem, dzięki czemu mogę dostarczyć rozwiązania, które wyróżnią Twoją firmę w Poznaniu.',
+  title_third: 'Więcej niż tylko strony internetowe',
+  description_third:
+    'Oprócz tworzenia stron internetowych oferuję również sklepy online, aplikacje webowe i inne zaawansowane rozwiązania technologiczne, które wspierają rozwój firm w Poznaniu. Moje doświadczenie w programowaniu pozwala mi realizować projekty, które są nie tylko estetyczne, ale także wydajne i łatwe w zarządzaniu.',
+  banner_description:
+    'Wspieram firmy z Poznania – od małych start-upów po duże przedsiębiorstwa – w budowaniu ich obecności online. Moje strony internetowe i sklepy są projektowane z myślą o specyfice lokalnego rynku, co pozwala lepiej odpowiadać na potrzeby Twoich klientów. Skontaktuj się ze mną, aby wspólnie stworzyć rozwiązanie, które pomoże Twojej firmie rozwijać się w internecie.',
 };
 
 export const gdansk_info_txt = {
-  title_first_column: 'Indywidualnie zaprojektowane strony w Gdańsku',
-  descryption_first_column:
-    'Tworzę strony internetowe, które wspierają firmy z Gdańska w budowaniu silnej obecności w internecie. Moje projekty są w pełni dostosowane do potrzeb lokalnych przedsiębiorców, oferując nowoczesny design i funkcjonalności zwiększające widoczność firmy w sieci. Zadbam o to, aby Twoja strona wyróżniała się wśród konkurencji i przyciągała klientów.',
+  title_first: 'Dlaczego Warto Wybrać Moje Usługi Tworzenia Stron Internetowych w Gdańsku?',
+  description_first:
+    'Tworzę profesjonalne strony internetowe dla firm z Gdańska, które łączą nowoczesny design z zaawansowaną funkcjonalnością. Moje projekty są dostosowane do potrzeb lokalnego rynku, co pozwala skutecznie budować rozpoznawalność Twojej marki w sieci. Dzięki optymalizacji SEO strony, które tworzę, wspierają rozwój Twojej firmy, zwiększając widoczność i przyciągając nowych klientów.',
+  title_second: 'Indywidualne podejście do firm z Gdańska',
+  description_second:
+    'Każdy projekt jest dla mnie wyjątkowy. Współpracując z firmami z Gdańska, dokładnie analizuję ich potrzeby i oczekiwania, aby stworzyć stronę internetową, która idealnie odzwierciedla ich charakter i wartości. Zapewniam elastyczność, terminowość i pełne zaangażowanie, dzięki czemu moja oferta wyróżnia się na tle konkurencji.',
+  title_third: 'Kompleksowe rozwiązania dopasowane do lokalnego rynku',
+  description_third:
+    'Oprócz projektowania stron internetowych oferuję również sklepy internetowe, aplikacje webowe i inne zaawansowane narzędzia, które wspierają działalność firm w Gdańsku. Moje doświadczenie w tworzeniu rozwiązań technologicznych pozwala mi dostarczać projekty, które są nie tylko estetyczne, ale także funkcjonalne i łatwe w obsłudze.',
+  banner_description:
+    'Pomagam firmom z Gdańska – od małych przedsiębiorstw po duże organizacje – rozwijać ich obecność online. Moje strony internetowe i sklepy są projektowane z myślą o specyfice lokalnego rynku, aby skutecznie odpowiadać na potrzeby klientów. Skontaktuj się ze mną, a wspólnie stworzymy rozwiązanie, które wzmocni wizerunek Twojej firmy w sieci.',
 };
 
 // ------------------------------ Section: My services ------------------------------
@@ -287,324 +335,586 @@ export const gdansk_myService = {
   ],
 };
 
-// ------------------------------ Section: Why me ------------------------------
+// ------------------------------ Section: About me ------------------------------
 
-export const whyMeContent = {
-  katowice: [
+export const about_me_katowice = {
+  description: `
+    Cześć! Nazywam się Dariusz Wasilewski i jestem specjalistą w tworzeniu stron internetowych dla firm z Katowic. 
+    Moja pasja do technologii cyfrowych zaczęła się wiele lat temu i stała się fundamentem mojej kariery jako 
+    profesjonalnego web developera. Na przestrzeni lat zdobyłem doświadczenie w projektowaniu nowoczesnych, 
+    responsywnych i funkcjonalnych stron, które wyróżniają się zarówno estetyką, jak i zaawansowaną technologią. 
+    Każdy projekt traktuję z pełnym zaangażowaniem, dostosowując go do specyficznych potrzeb klienta i rynku. 
+    Moim celem jest tworzenie stron, które wspierają rozwój biznesu w Katowicach, łącząc unikalny design, 
+    intuicyjną obsługę oraz optymalizację SEO, aby zwiększać widoczność w sieci i przyciągać nowych klientów.`,
+};
+
+export const about_me_krakow = {
+  description: `
+    Cześć! Nazywam się Dariusz Wasilewski i specjalizuję się w projektowaniu stron internetowych dla firm z Krakowa. 
+    Moja przygoda z tworzeniem stron rozpoczęła się wiele lat temu i od tego czasu stała się moją pasją oraz 
+    sposobem na życie. Jako doświadczony web developer projektuję nowoczesne, responsywne i przyjazne użytkownikom 
+    strony internetowe, które spełniają najwyższe standardy jakości. Każdy projekt dostosowuję do indywidualnych 
+    potrzeb klientów z Krakowa, tworząc rozwiązania, które wyróżniają się funkcjonalnością, estetyką i doskonałą 
+    optymalizacją SEO. Moim celem jest wspieranie lokalnych firm w budowaniu ich obecności online oraz zwiększaniu 
+    widoczności w internecie.`,
+};
+
+export const about_me_warszawa = {
+  description: `
+    Cześć! Nazywam się Dariusz Wasilewski i z pasją realizuję projekty stron internetowych dla firm z Warszawy. 
+    Moja ścieżka kariery jako web developer rozpoczęła się od fascynacji technologiami internetowymi, 
+    która przerodziła się w wieloletnie doświadczenie w projektowaniu i wdrażaniu nowoczesnych rozwiązań online. 
+    Tworzę strony internetowe, które łączą innowacyjny design z funkcjonalnością i dostosowuję je do dynamicznego 
+    charakteru stołecznego rynku. Każdy projekt realizuję z myślą o indywidualnych potrzebach moich klientów, 
+    dbając o estetykę, intuicyjność i optymalizację SEO. Moim celem jest wspieranie firm w Warszawie w skutecznym 
+    budowaniu ich obecności w internecie i przyciąganiu nowych klientów.`,
+};
+
+export const about_me_wroclaw = {
+  description: `
+    Cześć! Nazywam się Dariusz Wasilewski i z pasją tworzę strony internetowe dla firm z Wrocławia. Moje doświadczenie 
+    jako web developer pozwala mi realizować projekty, które łączą nowoczesny design z zaawansowaną funkcjonalnością. 
+    Każda strona, którą projektuję, jest dopasowana do specyfiki lokalnego rynku we Wrocławiu, co pozwala firmom 
+    wyróżnić się na tle konkurencji. Dbam o to, aby moje realizacje były responsywne, intuicyjne w obsłudze i w pełni 
+    zoptymalizowane pod kątem SEO. Dzięki indywidualnemu podejściu do każdego projektu wspieram firmy w rozwijaniu ich 
+    obecności online i budowaniu profesjonalnego wizerunku w internecie.`,
+};
+
+export const about_me_poznan = {
+  description: `
+    Cześć! Nazywam się Dariusz Wasilewski i jestem specjalistą w tworzeniu stron internetowych dla firm z Poznania. 
+    Moja pasja do technologii internetowych i wieloletnie doświadczenie pozwalają mi realizować projekty, które są 
+    zarówno estetyczne, jak i funkcjonalne. Każda strona internetowa, którą tworzę, jest w pełni dopasowana do 
+    specyficznych potrzeb lokalnych firm w Poznaniu, wspierając ich w budowaniu profesjonalnego wizerunku online. 
+    Dbam o to, aby moje realizacje były responsywne, intuicyjne w obsłudze i zoptymalizowane pod kątem SEO, co pozwala 
+    zwiększyć widoczność w internecie i przyciągnąć nowych klientów.`,
+};
+
+export const about_me_gdansk = {
+  description: `
+    Cześć! Nazywam się Dariusz Wasilewski i z pasją tworzę strony internetowe dla firm z Gdańska. Dzięki mojemu 
+    doświadczeniu w projektowaniu nowoczesnych stron internetowych pomagam lokalnym firmom budować profesjonalną 
+    obecność online. Każda strona, którą realizuję, jest dostosowana do specyfiki gdańskiego rynku, co pozwala skutecznie 
+    wyróżnić Twoją firmę na tle konkurencji. Dbam o to, aby moje projekty były responsywne, przyjazne użytkownikom i 
+    zoptymalizowane pod kątem SEO, wspierając rozwój Twojej działalności w internecie.`,
+};
+
+// ------------------------------ Section: website function ------------------------------
+
+export const katowice_websiteFunctions = {
+  sectionTitle: 'Nowoczesne strony internetowe, dopasowane do ',
+  sectionTitleColored: 'Twojej firmy w Katowicach',
+  sectionSubtitle: 'Innowacyjne rozwiązania dla dynamicznych biznesów na Śląsku',
+
+  items: [
     {
-      title: 'Indywidualne podejście do biznesów z Katowic',
+      title: 'Przystępne ceny dla firm w Katowicach',
       description:
-        'Każdy projekt traktuję jako indywidualne wyzwanie. Rozpoczynam współpracę od dokładnej analizy Twoich potrzeb oraz specyfiki branży w Katowicach. Dzięki temu mogę zaprojektować stronę internetową, która nie tylko odzwierciedla Twoją wizję, ale także trafia w oczekiwania lokalnych klientów. Nie korzystam z gotowych szablonów – każda strona jest projektowana od podstaw z uwzględnieniem unikalnych cech Twojego biznesu.',
+        'Oferuję strony internetowe w przystępnych cenach, dostosowane do budżetu lokalnych firm. Bez kompromisów w jakości zapewniam rozwiązania, które wspierają rozwój biznesu w Katowicach.',
     },
     {
-      title: 'Znajomość śląskiego rynku i lokalnych potrzeb',
+      title: 'SEO zoptymalizowane dla lokalnego rynku',
       description:
-        'Mam doświadczenie w pracy z firmami działającymi w Katowicach i okolicach. Rozumiem, jak istotne jest dostosowanie strony internetowej do specyfiki śląskiego rynku i lokalnych klientów. Dzięki znajomości potrzeb przedsiębiorców z Katowic projektuję strony, które skutecznie wspierają rozwój lokalnego biznesu i budują przewagę konkurencyjną.',
+        'Tworzę strony zgodne z najnowszymi standardami SEO, które pomagają firmom z Katowic zyskać wyższe pozycje w wyszukiwarkach. Moje projekty są skoncentrowane na docieraniu do lokalnych klientów.',
     },
     {
-      title: 'Kompleksowe wsparcie techniczne',
+      title: 'Zgodność z RODO w każdym projekcie',
       description:
-        'Zapewniam pełne wsparcie techniczne na każdym etapie współpracy. Od momentu projektowania strony, przez jej wdrożenie, aż po późniejsze aktualizacje i rozbudowę – możesz na mnie liczyć. Oferuję rozwiązania, które pozwalają Twojej stronie internetowej w Katowicach działać sprawnie, bezpiecznie i efektywnie przez cały czas.',
+        'Zadbam o zgodność Twojej strony z wymogami RODO, gwarantując bezpieczeństwo danych użytkowników i spełnienie wymagań prawnych.',
     },
     {
-      title: 'Optymalizacja SEO dla lokalnych firm z Katowic',
+      title: 'Techniczne wsparcie dla Twojej strony',
       description:
-        'Tworzę strony internetowe zoptymalizowane pod kątem wyszukiwarek, co pozwala firmom z Katowic zdobywać lepsze pozycje w Google. Dbam o odpowiednie słowa kluczowe, meta tagi, szybkość ładowania strony oraz przyjazne adresy URL. Dzięki temu Twoja strona przyciągnie więcej klientów lokalnych i zwiększy Twoją widoczność w internecie.',
+        'Zapewniam opiekę techniczną na każdym etapie – od wdrożenia po bieżące aktualizacje. Twoja strona zawsze będzie działać bez zarzutu.',
     },
     {
-      title: 'Nowoczesne technologie i responsywny design',
+      title: 'Wydajność stron internetowych',
       description:
-        'Stosuję najnowsze technologie, aby Twoja strona była szybka, responsywna i atrakcyjna wizualnie. Projektuję rozwiązania, które działają bez zarzutu na komputerach, tabletach i smartfonach. Twoja firma w Katowicach zyska profesjonalny wizerunek online, który przyciągnie uwagę klientów.',
+        'Optymalizuję strony pod kątem wydajności, aby działały szybko i płynnie. Dzięki temu Twoja firma w Katowicach zyska profesjonalny wizerunek online.',
     },
     {
-      title: 'Transparentność współpracy i jasne zasady',
+      title: 'Responsywność na każdym urządzeniu',
       description:
-        'Każdy etap realizacji projektu jest transparentny i w pełni zrozumiały. Przed rozpoczęciem współpracy omawiam szczegóły projektu i ustalam jasną wycenę. Dzięki temu wiesz, za co płacisz, i możesz mieć pewność, że otrzymasz wysokiej jakości stronę internetową dostosowaną do potrzeb Twojej firmy w Katowicach.',
+        'Projektuję strony, które świetnie wyglądają na komputerach, tabletach i smartfonach, umożliwiając użytkownikom wygodne przeglądanie na dowolnym urządzeniu.',
     },
     {
-      title: 'Dostosowanie do potrzeb lokalnych klientów',
+      title: 'WordPress dopasowany do Twoich potrzeb',
       description:
-        'Projektując strony internetowe dla firm z Katowic, uwzględniam potrzeby lokalnych odbiorców. Strony są intuicyjne, estetyczne i zaprojektowane z myślą o przyciąganiu klientów z regionu. Dzięki temu Twoja strona stanie się skutecznym narzędziem marketingowym.',
+        'Specjalizuję się w stronach na WordPressie, które są elastyczne i proste w obsłudze. Oferuję pełne dostosowanie do wymagań firm z Katowic.',
     },
     {
-      title: 'Szybki czas realizacji projektów',
+      title: 'Sklepy online wspierające sprzedaż lokalną',
       description:
-        'Rozumiem, jak ważny jest czas w biznesie. Dlatego oferuję szybki czas realizacji projektów stron internetowych bez kompromisów w zakresie jakości. Dzięki sprawnym procesom pracy możesz szybko rozpocząć promocję swojej firmy w Katowicach.',
-    },
-    {
-      title: 'Kreatywność i profesjonalizm',
-      description:
-        'Każdy projekt cechuje się kreatywnością i profesjonalizmem. Dbam o to, aby Twoja strona internetowa była nie tylko funkcjonalna, ale również estetyczna i zgodna z nowoczesnymi trendami. To połączenie, które przyciąga uwagę i buduje zaufanie klientów.',
-    },
-    {
-      title: 'Atrakcyjne ceny za wysoką jakość usług',
-      description:
-        'Oferuję konkurencyjne ceny, które są dostosowane do budżetów zarówno małych, jak i większych firm. To inwestycja, która szybko się zwróci, zwiększając Twoje zasięgi i przyciągając nowych klientów.',
+        'Tworzę funkcjonalne sklepy internetowe na WooCommerce, które pozwalają firmom z Katowic skutecznie sprzedawać produkty i usługi w sieci.',
     },
   ],
+};
 
-  krakow: [
+export const krakow_websiteFunctions = {
+  sectionTitle: 'Strony internetowe skrojone na miarę ',
+  sectionTitleColored: 'Twojego biznesu w Krakowie',
+  sectionSubtitle: 'Elegancja, funkcjonalność i wsparcie dla lokalnych firm',
+
+  items: [
     {
-      title: 'Profesjonalne strony dla firm z Krakowa',
+      title: 'Atrakcyjne ceny dla krakowskich przedsiębiorców',
       description:
-        'Tworzę nowoczesne i funkcjonalne strony internetowe, które są doskonale dopasowane do charakteru firm z Krakowa. Dzięki indywidualnemu podejściu każda strona wyróżnia się unikalnym designem oraz funkcjonalnością, które przyciągają uwagę klientów. Wspieram lokalne firmy w budowaniu ich wizerunku online, pomagając im skutecznie konkurować na rynku.',
+        'Oferuję konkurencyjne ceny za strony internetowe, które spełniają oczekiwania lokalnych firm w Krakowie. Każda realizacja jest dostosowana do indywidualnych potrzeb i zapewnia wysoką jakość w korzystnej cenie.',
     },
     {
-      title: 'Lokalna znajomość rynku',
+      title: 'SEO dla firm z Krakowa',
       description:
-        'Znam specyfikę krakowskiego rynku oraz potrzeby lokalnych firm, co pozwala mi dostosować projekty stron internetowych do oczekiwań klientów z tego regionu. Dzięki temu tworzę rozwiązania, które są nie tylko estetyczne, ale również skuteczne w docieraniu do odbiorców w Krakowie i okolicach.',
+        'Moje strony są zoptymalizowane pod kątem wyszukiwarek, co pozwala firmom z Krakowa skutecznie zdobywać nowych klientów i budować widoczność online. Wdrażam nowoczesne praktyki SEO, aby zwiększyć ruch na Twojej stronie.',
     },
     {
-      title: 'Kompleksowa obsługa projektów',
+      title: 'Bezpieczeństwo danych na pierwszym miejscu',
       description:
-        'Zapewniam kompleksową obsługę na każdym etapie realizacji projektu – od pomysłu, przez projektowanie i wdrożenie, aż po wsparcie techniczne. Tworzę strony internetowe zoptymalizowane pod kątem SEO, dzięki czemu Twoja firma z Krakowa zyskuje większą widoczność w internecie. Wszystkie moje projekty są w pełni funkcjonalne i gotowe do działania.',
+        'Zapewniam zgodność stron z wymogami RODO, dbając o ochronę danych użytkowników oraz o spełnienie najwyższych standardów bezpieczeństwa. Twoi klienci mogą czuć się bezpieczni podczas korzystania z Twojej strony.',
     },
     {
-      title: 'Nowoczesne podejście do projektowania',
+      title: 'Wsparcie techniczne na każdym etapie',
       description:
-        'Tworzę strony, które łączą nowoczesny design z intuicyjną obsługą, aby sprostać oczekiwaniom zarówno firm, jak i ich klientów. Moje projekty odzwierciedlają nowoczesne trendy w branży, jednocześnie pozostając dopasowane do potrzeb lokalnych przedsiębiorców z Krakowa. To połączenie estetyki i funkcjonalności, które przekłada się na sukces Twojej marki.',
+        'Po zakończeniu projektu oferuję pełną opiekę techniczną, aby Twoja strona zawsze działała sprawnie i była aktualna. Niezależnie od problemu, możesz liczyć na moje wsparcie.',
     },
     {
-      title: 'Optymalizacja pod SEO lokalne',
+      title: 'Szybkość i wydajność',
       description:
-        'Dbam o to, aby Twoja strona internetowa była widoczna dla klientów w Krakowie i okolicach. Optymalizuję strony pod kątem lokalnego SEO, stosując odpowiednie słowa kluczowe, meta tagi i strukturę treści. Dzięki temu Twoja firma zyskuje wyższe pozycje w wynikach wyszukiwania, co przekłada się na większy ruch na stronie i więcej zapytań od klientów.',
+        'Moje strony osiągają świetne wyniki w narzędziach takich jak PageSpeed Insights, co zapewnia pozytywne doświadczenia użytkowników i wyższą pozycję w wynikach wyszukiwania.',
     },
     {
-      title: 'Bezpieczeństwo i szybkość',
+      title: 'Responsywne strony internetowe',
       description:
-        'Tworzę strony internetowe, które są nie tylko estetyczne, ale również szybkie i bezpieczne. Dzięki zastosowaniu nowoczesnych technologii moje strony ładują się błyskawicznie, co poprawia doświadczenia użytkowników i pozytywnie wpływa na pozycję w wyszukiwarkach. Zabezpieczenia chronią Twoją stronę przed zagrożeniami online, dając Ci spokój i pewność działania.',
+        'Tworzę responsywne strony, które są idealne do przeglądania na każdym urządzeniu – od komputerów stacjonarnych po smartfony. Dzięki temu Twoja strona zawsze prezentuje się doskonale.',
     },
     {
-      title: 'Wsparcie po wdrożeniu',
+      title: 'WordPress dla krakowskich firm',
       description:
-        'Po wdrożeniu strony nie zostawiam Cię bez pomocy. Oferuję pełne wsparcie techniczne, aktualizacje i możliwość rozbudowy projektu, aby Twoja strona internetowa mogła ewoluować wraz z Twoim biznesem w Krakowie. Jestem zawsze dostępny, aby pomóc w przypadku pytań lub wprowadzenia zmian.',
+        'Oferuję strony oparte na WordPressie, które są intuicyjne w obsłudze i w pełni dostosowane do potrzeb firm w Krakowie. To elastyczne i wydajne rozwiązanie dla każdej branży.',
     },
     {
-      title: 'Indywidualne rozwiązania',
+      title: 'Sklepy internetowe dla krakowskich przedsiębiorstw',
       description:
-        'Każda firma jest inna, dlatego każdy projekt dostosowuję do specyficznych potrzeb Twojej działalności w Krakowie. Oferuję rozwiązania, które są skrojone na miarę – od prostych stron wizytówek po zaawansowane platformy biznesowe. Dzięki temu Twoja strona internetowa wyróżnia się i skutecznie wspiera realizację celów biznesowych.',
-    },
-    {
-      title: 'Szybka realizacja projektów',
-      description:
-        'Rozumiem, jak ważny jest czas w biznesie, dlatego projekty realizuję w możliwie najkrótszym terminie, bez kompromisów w zakresie jakości. Dzięki sprawdzonym procesom pracy mogę zapewnić, że Twoja strona będzie gotowa do działania szybko i efektywnie wspierać rozwój Twojej firmy w Krakowie.',
-    },
-    {
-      title: 'Elastyczne podejście do budżetu',
-      description:
-        'Wiem, że każda firma ma inne możliwości finansowe, dlatego dopasowuję ofertę do Twojego budżetu, jednocześnie zapewniając najwyższą jakość usług. Oferuję konkurencyjne ceny za projekty stron internetowych, które są inwestycją w rozwój Twojego biznesu w Krakowie.',
+        'Tworzę sklepy online na WooCommerce, które wspierają sprzedaż produktów i usług lokalnych firm w Krakowie. Każdy sklep jest zoptymalizowany pod kątem SEO i wygody użytkownika.',
     },
   ],
+};
 
-  warszawa: [
+export const warszawa_websiteFunctions = {
+  sectionTitle: 'Profesjonalne strony internetowe stworzone z myślą o ',
+  sectionTitleColored: 'Twoim biznesie w Warszawie',
+  sectionSubtitle: 'Zaawansowane technologie i wsparcie na stołecznym rynku',
+
+  items: [
     {
-      title: 'Nowoczesne projekty dla firm z Warszawy',
+      title: 'Konkurencyjne ceny dla firm z Warszawy',
       description:
-        'Tworzę strony internetowe dopasowane do potrzeb wymagającego i dynamicznego rynku Warszawy. Moje projekty łączą innowacyjny design z wysoką funkcjonalnością, co pomaga lokalnym firmom przyciągać klientów i budować silną pozycję w internecie. Dzięki zrozumieniu specyfiki rynku warszawskiego oferuję rozwiązania, które wyróżniają Twoją firmę na tle konkurencji.',
+        'Oferuję profesjonalne strony internetowe w konkurencyjnych cenach, które są dostosowane do potrzeb dynamicznego rynku warszawskiego. Każdy projekt łączy jakość z atrakcyjną wyceną.',
     },
     {
-      title: 'Indywidualne podejście do każdego klienta',
+      title: 'SEO dla firm w stolicy',
       description:
-        'Każdy projekt rozpoczynam od szczegółowej analizy Twoich potrzeb oraz celów biznesowych. Dostosowuję stronę do specyfiki branży, w której działasz, oraz oczekiwań Twoich klientów z Warszawy. Dzięki indywidualnemu podejściu tworzę rozwiązania, które spełniają Twoje wymagania i skutecznie wspierają rozwój firmy.',
+        'Tworzę strony internetowe zoptymalizowane pod kątem SEO, które pomagają firmom z Warszawy zwiększyć widoczność w wyszukiwarkach. Dbam o lokalne frazy kluczowe, aby dotrzeć do odpowiednich odbiorców.',
     },
     {
-      title: 'Kompleksowa obsługa techniczna',
+      title: 'Zgodność z RODO i bezpieczeństwo danych',
       description:
-        'Zapewniam pełną obsługę na każdym etapie współpracy – od planowania i projektowania, przez wdrożenie, aż po późniejsze wsparcie techniczne. W Warszawie jestem Twoim partnerem, na którego możesz liczyć w zakresie aktualizacji, optymalizacji i rozbudowy strony internetowej.',
+        'Gwarantuję, że każda strona spełnia wymogi RODO, zapewniając bezpieczeństwo danych Twoich klientów. To standard, który buduje zaufanie użytkowników do Twojej witryny.',
     },
     {
-      title: 'Optymalizacja SEO dla lokalnych firm z Warszawy',
+      title: 'Pełne wsparcie techniczne',
       description:
-        'Tworzę strony zoptymalizowane pod kątem wyszukiwarek internetowych, co pomaga firmom z Warszawy zwiększać widoczność w wynikach wyszukiwania. Zadbam o właściwe słowa kluczowe, meta tagi, szybkość ładowania oraz przyjazną strukturę URL, aby Twoja firma zdobyła więcej klientów lokalnych.',
+        'Zapewniam kompleksową opiekę techniczną, zarówno w trakcie realizacji projektu, jak i po jego zakończeniu. Twoja strona zawsze będzie działała sprawnie i efektywnie.',
     },
     {
-      title: 'Nowoczesne technologie i responsywne strony',
+      title: 'Szybkość działania stron',
       description:
-        'Projektuję strony internetowe oparte na najnowszych technologiach, które są szybkie, responsywne i w pełni bezpieczne. Dzięki dostosowaniu do urządzeń mobilnych Twoja strona działa perfekcyjnie na komputerach, tabletach i smartfonach, co zwiększa zadowolenie użytkowników i poprawia Twój wizerunek online.',
+        'Projektuję strony zoptymalizowane pod kątem wydajności, aby osiągały wysokie wyniki w PageSpeed Insights. Dzięki temu Twoja firma w Warszawie zyska przewagę konkurencyjną w internecie.',
     },
     {
-      title: 'Estetyka i funkcjonalność w jednym',
+      title: 'Responsywne strony internetowe',
       description:
-        'Moje projekty łączą nowoczesny design z intuicyjną obsługą, co czyni je atrakcyjnymi zarówno wizualnie, jak i praktycznie. Strony tworzone dla firm w Warszawie nie tylko przyciągają uwagę, ale również dostarczają wartości użytkownikom, zwiększając ich zaangażowanie.',
+        'Każda strona, którą tworzę, jest w pełni responsywna, co oznacza, że działa perfekcyjnie na każdym urządzeniu – od komputerów po smartfony.',
     },
     {
-      title: 'Szybki czas realizacji projektów',
+      title: 'WordPress dla stołecznych przedsiębiorców',
       description:
-        'Wiem, jak ważny jest czas w biznesie, dlatego realizuję projekty w ustalonych terminach, bez kompromisów w zakresie jakości. Dzięki temu Twoja firma w Warszawie może szybko rozpocząć działania promocyjne i zdobywać nowych klientów.',
+        'Oferuję strony na WordPressie, które są łatwe w zarządzaniu i idealnie dopasowane do wymagań firm z Warszawy. To elastyczne rozwiązanie, które rośnie wraz z Twoim biznesem.',
     },
     {
-      title: 'Bezpieczeństwo danych i stabilność działania',
+      title: 'Sklepy internetowe w Warszawie',
       description:
-        'Stosuję najnowsze zabezpieczenia, aby Twoja strona była w pełni chroniona przed zagrożeniami online. Dbam o stabilność działania, aby Twoja firma mogła cieszyć się bezproblemowym funkcjonowaniem strony internetowej przez cały czas.',
-    },
-    {
-      title: 'Wsparcie po wdrożeniu strony',
-      description:
-        'Nie kończę współpracy na etapie oddania projektu. Oferuję pełne wsparcie techniczne, szkolenia z obsługi strony oraz pomoc w jej aktualizacji i rozbudowie. Dzięki temu Twoja firma w Warszawie może dynamicznie rozwijać się w internecie.',
-    },
-    {
-      title: 'Konkurencyjne ceny za wysoką jakość usług',
-      description:
-        'Moje usługi są dostosowane do budżetów zarówno małych, jak i dużych firm. Oferuję konkurencyjne ceny, które łączą wysoką jakość z przystępnymi kosztami. To inwestycja, która szybko się zwróci dzięki zwiększonej liczbie klientów.',
+        'Projektuję nowoczesne sklepy internetowe na WooCommerce, które wspierają sprzedaż online w Warszawie. Dzięki zaawansowanym funkcjom Twoja firma zyska narzędzie do skutecznej obsługi klientów.',
     },
   ],
+};
 
-  wroclaw: [
+export const wroclaw_websiteFunctions = {
+  sectionTitle: 'Tworzenie stron internetowych dostosowanych do ',
+  sectionTitleColored: 'Twojej firmy we Wrocławiu',
+  sectionSubtitle: 'Kreatywność i nowoczesność dla dynamicznego rynku wrocławskiego',
+
+  items: [
     {
-      title: 'Profesjonalne strony internetowe dla Wrocławia',
+      title: 'Atrakcyjne ceny dla firm z Wrocławia',
       description:
-        'Tworzę strony internetowe, które pomagają firmom z Wrocławia skutecznie zaistnieć w internecie. Moje projekty wyróżniają się nowoczesnym designem, intuicyjną obsługą i pełnym dopasowaniem do potrzeb lokalnych przedsiębiorców. Dzięki unikalnym rozwiązaniom wspieram rozwój biznesu i budowanie zaufania wśród klientów.',
+        'Oferuję strony internetowe w przystępnych cenach, które są dostosowane do budżetu lokalnych przedsiębiorstw we Wrocławiu. Wysoka jakość w rozsądnej cenie to mój priorytet.',
     },
     {
-      title: 'Kompleksowa obsługa projektów',
+      title: 'SEO dla firm we Wrocławiu',
       description:
-        'Zapewniam wsparcie na każdym etapie realizacji projektu – od wstępnej koncepcji, przez projektowanie i wdrożenie, aż po późniejsze aktualizacje. Dzięki kompleksowej obsłudze otrzymujesz gotową do działania stronę, która spełnia wszystkie potrzeby Twojej firmy we Wrocławiu.',
+        'Tworzę strony zoptymalizowane pod kątem SEO, które pomagają firmom we Wrocławiu osiągać lepsze pozycje w wyszukiwarkach. Stawiam na lokalne słowa kluczowe, by skutecznie przyciągnąć klientów.',
     },
     {
-      title: 'SEO lokalne dla firm z Wrocławia',
+      title: 'Bezpieczeństwo i zgodność z RODO',
       description:
-        'Specjalizuję się w optymalizacji stron internetowych pod kątem SEO, co pozwala firmom z Wrocławia zdobywać lepsze pozycje w wynikach wyszukiwania. Zastosowanie lokalnych fraz kluczowych, szybkiego ładowania strony i przyjaznej struktury URL pomaga zwiększyć widoczność i generować więcej zapytań od klientów.',
+        'Gwarantuję pełną zgodność Twojej strony z RODO oraz wdrożenie odpowiednich zabezpieczeń. Dzięki temu Twoi klienci mogą czuć się bezpiecznie, korzystając z Twojej witryny.',
     },
     {
-      title: 'Nowoczesne technologie i responsywny design',
+      title: 'Wsparcie techniczne na każdym etapie',
       description:
-        'Projektuję strony internetowe oparte na nowoczesnych technologiach, które są szybkie, bezpieczne i w pełni responsywne. Dzięki temu Twoja strona działa perfekcyjnie na komputerach, tabletach i smartfonach, zapewniając użytkownikom doskonałe wrażenia.',
+        'Zapewniam profesjonalną opiekę techniczną – od projektu po aktualizacje i rozwój strony. Możesz liczyć na moją pomoc na każdym etapie współpracy.',
     },
     {
-      title: 'Indywidualne podejście do każdego klienta',
+      title: 'Optymalizacja wydajności',
       description:
-        'Każda firma jest wyjątkowa, dlatego każdy projekt tworzę z myślą o Twoich indywidualnych potrzebach. Analizuję specyfikę branży oraz oczekiwania klientów z Wrocławia, aby stworzyć stronę, która idealnie odpowiada na potrzeby Twojego biznesu.',
+        'Dbam o to, aby Twoja strona internetowa działała szybko i efektywnie. Dzięki optymalizacji wydajności zyskasz zadowolenie użytkowników i lepsze wyniki SEO.',
     },
     {
-      title: 'Bezpieczeństwo i stabilność działania',
+      title: 'Responsywne projekty dla każdego urządzenia',
       description:
-        'Dbam o to, aby Twoja strona internetowa była w pełni zabezpieczona przed zagrożeniami online. Korzystam z najnowszych technologii, które gwarantują stabilne działanie i ochronę danych Twojej firmy oraz klientów.',
+        'Każda strona, którą tworzę, jest w pełni responsywna, co oznacza doskonałe działanie zarówno na komputerach, jak i urządzeniach mobilnych.',
     },
     {
-      title: 'Wsparcie po wdrożeniu strony',
+      title: 'WordPress dla wrocławskich firm',
       description:
-        'Nie kończę współpracy na etapie oddania projektu. Oferuję pełne wsparcie techniczne, pomoc w aktualizacjach oraz możliwość rozbudowy strony w przyszłości. Dzięki temu Twoja firma we Wrocławiu może dynamicznie rozwijać swoją obecność w internecie.',
+        'Oferuję strony na WordPressie, które są proste w zarządzaniu i w pełni dopasowane do potrzeb firm z Wrocławia. To rozwiązanie, które łączy elastyczność z intuicyjnością.',
     },
     {
-      title: 'Estetyka i funkcjonalność w jednym projekcie',
+      title: 'Sklepy online wspierające sprzedaż we Wrocławiu',
       description:
-        'Moje projekty łączą nowoczesny wygląd z praktycznymi funkcjami, które zwiększają wygodę użytkowników. Twoja strona internetowa będzie zarówno atrakcyjna wizualnie, jak i łatwa w obsłudze, co przyciągnie uwagę klientów z Wrocławia.',
-    },
-    {
-      title: 'Szybka realizacja projektów',
-      description:
-        'Wiem, jak ważny jest czas w biznesie, dlatego realizuję projekty terminowo, nie tracąc przy tym na jakości. Dzięki sprawnym procesom pracy Twoja firma we Wrocławiu szybko zyska profesjonalną stronę internetową.',
-    },
-    {
-      title: 'Konkurencyjne ceny i wysoka jakość',
-      description:
-        'Oferuję konkurencyjne ceny, które są dostosowane do różnych budżetów. Moje usługi łączą wysoką jakość z przystępnymi kosztami, co czyni je idealnym rozwiązaniem dla firm we Wrocławiu.',
+        'Projektuję sklepy internetowe na WooCommerce, które wspierają sprzedaż lokalnych firm we Wrocławiu. Moje projekty łączą funkcjonalność z nowoczesnym designem, zapewniając sukces w e-commerce.',
     },
   ],
+};
 
-  poznan: [
+export const poznan_websiteFunctions = {
+  sectionTitle: 'Dedykowane strony internetowe dla ',
+  sectionTitleColored: 'Twojej firmy w Poznaniu',
+  sectionSubtitle: 'Innowacje i funkcjonalność dla poznańskich przedsiębiorców',
+
+  items: [
     {
-      title: 'Funkcjonalne strony internetowe dla Poznania',
+      title: 'Konkurencyjne ceny dla firm z Poznania',
       description:
-        'Specjalizuję się w tworzeniu nowoczesnych i funkcjonalnych stron internetowych, które pomagają firmom z Poznania osiągnąć sukces w internecie. Moje strony są projektowane z myślą o intuicyjności obsługi, estetyce oraz skutecznym przekazie, co przyciąga uwagę klientów i buduje profesjonalny wizerunek Twojej firmy. Wspieram przedsiębiorców w budowaniu narzędzi online, które przynoszą realne korzyści.',
+        'Oferuję strony internetowe w atrakcyjnych cenach, które spełniają potrzeby lokalnych firm w Poznaniu. Moje projekty łączą wysoką jakość z przystępną ceną, wspierając rozwój Twojego biznesu.',
     },
     {
-      title: 'Kompleksowa obsługa projektów',
+      title: 'SEO dopasowane do poznańskiego rynku',
       description:
-        'Zapewniam pełną obsługę na każdym etapie realizacji projektu – od planowania, przez projektowanie, aż po wdrożenie i optymalizację. Moje usługi obejmują wszystko, czego potrzebujesz, aby strona Twojej firmy w Poznaniu była gotowa do działania. Oferuję indywidualne podejście, dopasowane do Twoich potrzeb i celów biznesowych.',
+        'Projektuję strony zoptymalizowane pod kątem SEO, które pomagają firmom z Poznania osiągać lepsze pozycje w wyszukiwarkach. Stawiam na lokalne frazy kluczowe, by skutecznie przyciągnąć nowych klientów.',
     },
     {
-      title: 'Optymalizacja SEO lokalnego',
+      title: 'Bezpieczeństwo danych i zgodność z RODO',
       description:
-        'Tworzę strony internetowe zoptymalizowane pod kątem SEO, co pozwala firmom z Poznania zwiększać swoją widoczność w wyszukiwarkach. Zadbam o lokalne frazy kluczowe, strukturę treści, meta tagi i szybkość ładowania strony, aby Twoja firma zdobyła wyższą pozycję w wynikach wyszukiwania i przyciągnęła więcej klientów z regionu.',
+        'Zadbam o zgodność Twojej strony z wymogami RODO oraz najwyższe standardy bezpieczeństwa, zapewniając ochronę danych użytkowników i budując zaufanie klientów.',
     },
     {
-      title: 'Nowoczesne technologie i responsywność',
+      title: 'Profesjonalne wsparcie techniczne',
       description:
-        'Korzystam z najnowszych technologii, aby Twoja strona była szybka, stabilna i responsywna. Dzięki temu Twoja firma w Poznaniu zyska narzędzie, które działa bez zarzutu na komputerach, tabletach i smartfonach, zapewniając użytkownikom komfortowe doświadczenia online.',
+        'Zapewniam wsparcie techniczne na każdym etapie realizacji projektu. Niezależnie od tego, czy potrzebujesz aktualizacji, czy rozbudowy strony, możesz na mnie liczyć.',
     },
     {
-      title: 'Indywidualne podejście do klientów z Poznania',
+      title: 'Szybkość i wydajność stron',
       description:
-        'Każda firma jest inna, dlatego każdy projekt dostosowuję do specyfiki branży oraz oczekiwań klientów z Poznania. Zanim przystąpię do pracy, analizuję potrzeby Twojej firmy, aby zaprojektować stronę, która będzie zarówno estetyczna, jak i skuteczna w osiąganiu celów biznesowych.',
+        'Moje strony są zoptymalizowane pod kątem wydajności, co gwarantuje błyskawiczne ładowanie i pozytywne doświadczenia użytkowników. Dzięki temu Twoja firma w Poznaniu zyska lepsze wyniki SEO.',
     },
     {
-      title: 'Bezpieczeństwo i stabilność działania',
+      title: 'Responsywność na wszystkich urządzeniach',
       description:
-        'Dbam o to, aby każda strona była w pełni bezpieczna i chroniona przed zagrożeniami online. Stosuję najnowsze zabezpieczenia, które gwarantują stabilne działanie i ochronę danych Twojej firmy oraz klientów. Dzięki temu możesz być pewien, że Twoja strona w Poznaniu działa niezawodnie.',
+        'Tworzę responsywne strony, które doskonale działają na każdym urządzeniu – od komputerów po smartfony. Dzięki temu Twoja witryna będzie zawsze wyglądać profesjonalnie.',
     },
     {
-      title: 'Wsparcie po wdrożeniu strony',
+      title: 'WordPress dla poznańskich przedsiębiorstw',
       description:
-        'Po zakończeniu projektu oferuję pełne wsparcie techniczne, pomoc w aktualizacjach oraz możliwość rozbudowy strony. Moje usługi zapewniają, że Twoja firma w Poznaniu będzie mogła rozwijać swoją obecność online w sposób płynny i efektywny.',
+        'Specjalizuję się w tworzeniu stron na WordPressie, które są łatwe w obsłudze i w pełni dostosowane do potrzeb firm w Poznaniu. To elastyczne rozwiązanie dla każdego biznesu.',
     },
     {
-      title: 'Estetyka i funkcjonalność w jednym projekcie',
+      title: 'Sklepy internetowe wspierające sprzedaż w Poznaniu',
       description:
-        'Tworzę strony, które łączą nowoczesny design z praktycznymi funkcjami, co czyni je atrakcyjnymi dla użytkowników. Dzięki temu Twoja firma w Poznaniu zyskuje stronę internetową, która nie tylko wygląda profesjonalnie, ale również przyciąga klientów i buduje ich zaufanie.',
-    },
-    {
-      title: 'Szybka realizacja projektów',
-      description:
-        'Rozumiem, jak ważny jest czas w biznesie, dlatego realizuję projekty w uzgodnionych terminach, bez kompromisów w zakresie jakości. Dzięki temu Twoja firma w Poznaniu może szybko rozpocząć korzystanie z nowej strony internetowej i przyciągać klientów.',
-    },
-    {
-      title: 'Konkurencyjne ceny za wysoką jakość usług',
-      description:
-        'Oferuję konkurencyjne ceny, które są dostosowane do różnych budżetów. Moje usługi łączą najwyższą jakość wykonania z przystępnymi kosztami, co czyni je idealnym rozwiązaniem dla małych i dużych firm w Poznaniu. To inwestycja, która szybko się zwróci, przynosząc korzyści Twojej firmie.',
+        'Projektuję nowoczesne sklepy internetowe na WooCommerce, które wspierają sprzedaż lokalnych firm w Poznaniu. Każdy projekt łączy funkcjonalność z estetyką, zapewniając sukces w e-commerce.',
     },
   ],
+};
 
-  gdansk: [
+export const gdansk_websiteFunctions = {
+  sectionTitle: 'Strony internetowe idealnie dopasowane do ',
+  sectionTitleColored: 'Twojego biznesu w Gdańsku',
+  sectionSubtitle: 'Rozwiązania wspierające rozwój firm na Pomorzu',
+
+  items: [
     {
-      title: 'Tworzenie stron internetowych w Gdańsku',
+      title: 'Atrakcyjne ceny dla gdańskich firm',
       description:
-        'Specjalizuję się w projektowaniu nowoczesnych stron internetowych dla firm z Gdańska, które wyróżniają się estetyką, funkcjonalnością i skutecznością. Moje strony wspierają lokalne biznesy, pomagając im przyciągnąć uwagę klientów i zbudować profesjonalny wizerunek online. Dzięki doświadczeniu tworzę rozwiązania, które spełniają oczekiwania nawet najbardziej wymagających klientów.',
+        'Tworzę strony internetowe w przystępnych cenach, dostosowanych do potrzeb lokalnych firm z Gdańska. Moje projekty łączą wysoką jakość wykonania z konkurencyjnymi kosztami.',
     },
     {
-      title: 'Pełna obsługa projektów dla firm z Gdańska',
+      title: 'SEO zoptymalizowane dla firm w Gdańsku',
       description:
-        'Zapewniam kompleksową obsługę projektów na każdym etapie – od koncepcji, przez projektowanie i wdrożenie, aż po wsparcie techniczne. Moje usługi obejmują wszystko, czego potrzebujesz, aby Twoja firma w Gdańsku mogła cieszyć się profesjonalną i efektywną stroną internetową.',
+        'Projektuję strony zoptymalizowane pod kątem SEO, aby Twoja firma w Gdańsku mogła zyskać wyższą widoczność w wyszukiwarkach. Dzięki lokalnym frazom kluczowym pomagam skutecznie przyciągnąć nowych klientów.',
     },
     {
-      title: 'SEO lokalne dla firm z Gdańska',
+      title: 'Zgodność z RODO i bezpieczeństwo',
       description:
-        'Dbam o optymalizację pod kątem lokalnych wyników wyszukiwania, co pozwala Twojej firmie z Gdańska zdobywać wyższe pozycje w Google. Dzięki odpowiednim słowom kluczowym, strukturze treści i optymalizacji technicznej strony zyskasz większy ruch na stronie i przyciągniesz nowych klientów.',
+        'Każda strona, którą projektuję, jest w pełni zgodna z wymogami RODO. Dbam o bezpieczeństwo danych użytkowników i buduję zaufanie klientów do Twojej witryny.',
     },
     {
-      title: 'Nowoczesne technologie i pełna responsywność',
+      title: 'Wsparcie techniczne na każdym etapie',
       description:
-        'Tworzę strony internetowe oparte na nowoczesnych technologiach, które są szybkie, stabilne i w pełni responsywne. Dzięki temu Twoja firma w Gdańsku zyska narzędzie, które działa perfekcyjnie na każdym urządzeniu – od komputerów, przez tablety, po smartfony.',
+        'Zapewniam pełne wsparcie techniczne – od projektu i wdrożenia po bieżące aktualizacje. Twoja strona zawsze będzie działała sprawnie i niezawodnie.',
     },
     {
-      title: 'Indywidualne podejście do klientów z Gdańska',
+      title: 'Optymalizacja wydajności stron',
       description:
-        'Każda firma ma inne potrzeby, dlatego dostosowuję swoje usługi do specyfiki Twojej branży oraz oczekiwań klientów z Gdańska. Przed rozpoczęciem projektu przeprowadzam szczegółową analizę, aby stworzyć stronę, która najlepiej odpowiada na Twoje potrzeby i cele biznesowe.',
+        'Moje strony osiągają wysokie wyniki w narzędziach takich jak PageSpeed Insights. Dzięki temu Twoja witryna działa szybko i oferuje użytkownikom doskonałe doświadczenia.',
     },
     {
-      title: 'Bezpieczeństwo i stabilność działania',
+      title: 'Responsywne strony internetowe',
       description:
-        'Zależy mi na bezpieczeństwie Twojej strony internetowej, dlatego stosuję najnowsze technologie zabezpieczające przed zagrożeniami online. Dzięki temu Twoja firma w Gdańsku może cieszyć się stabilnym i bezproblemowym działaniem strony, która chroni dane Twoje oraz Twoich klientów.',
+        'Projektuję strony, które doskonale prezentują się na każdym urządzeniu – od komputerów po smartfony. W Gdańsku Twoja firma zyska profesjonalny wizerunek online.',
     },
     {
-      title: 'Wsparcie techniczne po wdrożeniu',
+      title: 'WordPress dla gdańskich firm',
       description:
-        'Oferuję pełne wsparcie techniczne po zakończeniu projektu, pomagając w aktualizacjach, rozbudowie i optymalizacji strony. Twoja firma w Gdańsku może liczyć na moją pomoc na każdym etapie rozwoju strony, aby w pełni wykorzystać jej potencjał.',
+        'Tworzę strony internetowe na WordPressie, które są elastyczne, łatwe w zarządzaniu i w pełni dostosowane do potrzeb firm w Gdańsku. To niezawodne narzędzie dla każdej branży.',
     },
     {
-      title: 'Estetyka i funkcjonalność w jednym projekcie',
+      title: 'Sklepy internetowe wspierające sprzedaż w Gdańsku',
       description:
-        'Łączę nowoczesny design z praktycznymi funkcjami, co sprawia, że moje strony są zarówno atrakcyjne wizualnie, jak i wygodne w obsłudze. Twoja firma w Gdańsku zyska stronę, która nie tylko przyciąga uwagę, ale także buduje zaufanie i zachęca klientów do współpracy.',
+        'Specjalizuję się w tworzeniu sklepów internetowych na WooCommerce, które pozwalają lokalnym firmom w Gdańsku skutecznie prowadzić sprzedaż online. Każdy sklep jest dostosowany do specyficznych potrzeb Twojej branży.',
+    },
+  ],
+};
+
+// ------------------------------ Section: Process ------------------------------
+
+export const katowice_processSteps = {
+  sectionTitle: 'Mój proces projektowania',
+  sectionTitleColored: ' stron internetowych w Katowicach',
+  steps: [
+    {
+      title: 'Analiza i Konsultacja',
+      description:
+        'Rozpoczynamy od szczegółowej analizy Twoich potrzeb oraz konsultacji, aby zrozumieć specyfikę Twojej działalności w Katowicach. Ustalamy cele strony internetowej, aby stworzyć projekt idealnie dopasowany do lokalnych klientów.',
     },
     {
-      title: 'Szybka realizacja projektów',
+      title: 'Zbieranie materiałów',
       description:
-        'Rozumiem, że czas to pieniądz, dlatego realizuję projekty terminowo, bez kompromisów w zakresie jakości. Dzięki sprawnym procesom pracy Twoja firma w Gdańsku może szybko zacząć korzystać z profesjonalnej strony internetowej.',
+        'Pomagam zebrać wszystkie niezbędne materiały – teksty, zdjęcia, grafiki – które będą kluczowe dla stworzenia strony reprezentującej Twoją firmę na śląskim rynku.',
     },
     {
-      title: 'Konkurencyjne ceny dla firm w Gdańsku',
+      title: 'Projektowanie graficzne',
       description:
-        'Oferuję usługi na najwyższym poziomie w konkurencyjnych cenach, dostosowanych do różnych budżetów. Moje projekty to inwestycja, która przynosi realne korzyści, pomagając Twojej firmie rozwijać się w internecie i zwiększać swoją widoczność w Gdańsku.',
+        'Tworzę unikalny projekt graficzny strony, dostosowany do Twojej branży oraz oczekiwań lokalnych klientów z Katowic. Każdy projekt jest funkcjonalny i estetyczny.',
+    },
+    {
+      title: 'Kodowanie i Implementacja',
+      description:
+        'Przekształcam zaakceptowany projekt w w pełni funkcjonalną stronę internetową. Strona jest responsywna i zoptymalizowana pod kątem lokalnego SEO w Katowicach.',
+    },
+    {
+      title: 'Testowanie na Śląsku',
+      description:
+        'Przeprowadzam dokładne testy na różnych urządzeniach i przeglądarkach, aby upewnić się, że strona działa perfekcyjnie i spełnia wymagania śląskiego rynku.',
+    },
+    {
+      title: 'Publikacja i Opieka',
+      description:
+        'Po wdrożeniu strony oferuję wsparcie techniczne oraz pomoc w aktualizacjach. Dbam o to, aby Twoja strona internetowa była zawsze aktualna i zgodna z najnowszymi standardami.',
+    },
+  ],
+};
+
+export const krakow_processSteps = {
+  sectionTitle: 'Proces tworzenia',
+  sectionTitleColored: ' stron internetowych dla firm w Krakowie',
+  steps: [
+    {
+      title: 'Rozmowa o Twoich potrzebach',
+      description:
+        'Ustalamy Twoje oczekiwania oraz analizujemy rynek w Krakowie, aby stworzyć stronę, która skutecznie przyciągnie klientów z Małopolski.',
+    },
+    {
+      title: 'Przygotowanie materiałów',
+      description:
+        'Wspólnie zbieramy treści i materiały wizualne potrzebne do stworzenia strony, dostosowując je do specyfiki rynku w Krakowie.',
+    },
+    {
+      title: 'Kreatywne projektowanie',
+      description:
+        'Tworzę projekt graficzny, który łączy nowoczesny design z funkcjonalnością, spełniając wymagania klientów z Krakowa.',
+    },
+    {
+      title: 'Realizacja i wdrożenie',
+      description:
+        'Koduję stronę zgodnie z zaakceptowanym projektem, dbając o pełną responsywność i optymalizację SEO na rynek krakowski.',
+    },
+    {
+      title: 'Testowanie i optymalizacja',
+      description:
+        'Testuję stronę na różnych urządzeniach, aby zapewnić jej bezbłędne działanie i szybkie ładowanie, co jest kluczowe dla użytkowników w Krakowie.',
+    },
+    {
+      title: 'Publikacja i dalsza współpraca',
+      description:
+        'Po wdrożeniu strony oferuję opiekę techniczną i wsparcie w aktualizacjach, aby Twoja witryna zawsze była aktualna i skuteczna.',
+    },
+  ],
+};
+
+export const warszawa_processSteps = {
+  sectionTitle: 'Proces tworzenia',
+  sectionTitleColored: ' stron internetowych dla biznesów w Warszawie',
+  steps: [
+    {
+      title: 'Konsultacja i analiza wymagań',
+      description:
+        'Rozpoczynam od szczegółowej rozmowy, aby zrozumieć Twoje potrzeby oraz specyfikę rynku w Warszawie. Dzięki temu mogę zaproponować rozwiązania, które najlepiej wspierają rozwój Twojej firmy.',
+    },
+    {
+      title: 'Zbieranie i opracowywanie treści',
+      description:
+        'Pomagam w przygotowaniu materiałów takich jak teksty, zdjęcia czy grafiki. Dzięki odpowiednio dopracowanemu kontentowi strona będzie bardziej atrakcyjna dla klientów z Warszawy.',
+    },
+    {
+      title: 'Projektowanie graficzne',
+      description:
+        'Tworzę projekt graficzny, który oddaje charakter Twojej marki i przemawia do dynamicznego rynku warszawskiego. Każdy projekt jest wyjątkowy i dostosowany do Twoich potrzeb.',
+    },
+    {
+      title: 'Kodowanie i budowa strony',
+      description:
+        'Przekształcam projekt graficzny w w pełni funkcjonalną stronę internetową. Zadbam o responsywność, intuicyjność oraz optymalizację SEO z uwzględnieniem warszawskiego rynku.',
+    },
+    {
+      title: 'Testowanie i poprawki',
+      description:
+        'Testuję stronę na różnych przeglądarkach i urządzeniach, aby upewnić się, że spełnia wszystkie standardy i działa perfekcyjnie dla klientów w Warszawie.',
+    },
+    {
+      title: 'Wdrożenie i wsparcie techniczne',
+      description:
+        'Po wdrożeniu strony oferuję wsparcie techniczne i pomoc w aktualizacjach. Dzięki temu Twoja strona internetowa w Warszawie zawsze pozostaje aktualna i funkcjonalna.',
+    },
+  ],
+};
+
+export const wroclaw_processSteps = {
+  sectionTitle: 'Proces projektowania',
+  sectionTitleColored: ' stron internetowych dla firm we Wrocławiu',
+  steps: [
+    {
+      title: 'Rozmowa i analiza potrzeb',
+      description:
+        'Rozpoczynam od zrozumienia Twoich wymagań oraz specyfiki Twojej firmy działającej we Wrocławiu. Dzięki temu projekt strony jest idealnie dopasowany do Twojego biznesu i lokalnych odbiorców.',
+    },
+    {
+      title: 'Zbieranie i przygotowanie treści',
+      description:
+        'Pomagam w organizacji materiałów takich jak teksty, zdjęcia czy grafiki, które oddadzą charakter Twojej działalności i przyciągną klientów z Wrocławia.',
+    },
+    {
+      title: 'Projektowanie graficzne',
+      description:
+        'Tworzę projekt graficzny dopasowany do oczekiwań Twojej firmy oraz specyfiki wrocławskiego rynku. Dbam o estetykę i funkcjonalność, które wyróżnią Twoją stronę.',
+    },
+    {
+      title: 'Kodowanie i wdrażanie funkcji',
+      description:
+        'Na podstawie zaakceptowanego projektu tworzę responsywną stronę internetową. Strona jest zoptymalizowana pod kątem SEO, by zwiększyć widoczność Twojej firmy we Wrocławiu.',
+    },
+    {
+      title: 'Testowanie i optymalizacja',
+      description:
+        'Sprawdzam stronę na różnych urządzeniach i przeglądarkach, aby upewnić się, że działa bez zarzutu. Zwracam uwagę na szybkość działania i przyjazność dla użytkownika.',
+    },
+    {
+      title: 'Publikacja i wsparcie',
+      description:
+        'Po zakończeniu projektu publikuję stronę i zapewniam wsparcie techniczne. Twoja firma we Wrocławiu może liczyć na pomoc w aktualizacjach oraz dalszym rozwoju witryny.',
+    },
+  ],
+};
+
+export const poznan_processSteps = {
+  sectionTitle: 'Proces tworzenia',
+  sectionTitleColored: ' stron internetowych dla firm w Poznaniu',
+  steps: [
+    {
+      title: 'Konsultacja i analiza potrzeb',
+      description:
+        'Rozpoczynamy od rozmowy na temat Twoich oczekiwań oraz specyfiki Twojego biznesu w Poznaniu. Tworzę projekt strony, który najlepiej oddaje charakter Twojej firmy.',
+    },
+    {
+      title: 'Zbieranie materiałów i treści',
+      description:
+        'Pomagam zebrać treści i materiały wizualne, które będą reprezentować Twoją firmę w Poznaniu. Wspólnie dopracowujemy każdy szczegół, by strona była atrakcyjna dla lokalnych klientów.',
+    },
+    {
+      title: 'Kreatywne projektowanie',
+      description:
+        'Projektuję unikalny wygląd strony, który łączy nowoczesny design z funkcjonalnością. Strona jest dostosowana do rynku poznańskiego, by skutecznie wspierać Twój biznes.',
+    },
+    {
+      title: 'Kodowanie i wdrażanie',
+      description:
+        'Tworzę w pełni responsywną stronę, która działa na każdym urządzeniu. Optymalizuję stronę pod kątem SEO, by zwiększyć widoczność Twojej firmy w Poznaniu.',
+    },
+    {
+      title: 'Testowanie i optymalizacja',
+      description:
+        'Sprawdzam działanie strony na różnych urządzeniach, aby upewnić się, że działa bez zarzutu. Strona jest szybka, bezpieczna i intuicyjna w obsłudze.',
+    },
+    {
+      title: 'Publikacja i dalsze wsparcie',
+      description:
+        'Publikuję stronę i zapewniam pełne wsparcie techniczne. Twoja firma w Poznaniu może liczyć na pomoc w aktualizacjach oraz wprowadzaniu nowych funkcji.',
+    },
+  ],
+};
+
+export const gdansk_processSteps = {
+  sectionTitle: 'Proces budowy',
+  sectionTitleColored: ' stron internetowych w Gdańsku',
+  steps: [
+    {
+      title: 'Analiza potrzeb i konsultacja',
+      description:
+        'Rozmawiamy o Twoich oczekiwaniach oraz specyfice Twojego biznesu w Gdańsku. Na tej podstawie przygotowuję projekt, który najlepiej odpowiada Twoim wymaganiom.',
+    },
+    {
+      title: 'Zbieranie materiałów wizualnych',
+      description:
+        'Pomagam zebrać i dopracować treści, które wyróżnią Twoją stronę na tle konkurencji w Gdańsku. Mogą to być zdjęcia, grafiki czy teksty.',
+    },
+    {
+      title: 'Projektowanie graficzne',
+      description:
+        'Projektuję stronę, która odzwierciedla charakter Twojej firmy oraz spełnia oczekiwania klientów w Gdańsku. Stawiam na estetykę i intuicyjność.',
+    },
+    {
+      title: 'Kodowanie i wdrożenie',
+      description:
+        'Tworzę funkcjonalną stronę internetową, która działa płynnie na każdym urządzeniu. Zadbam o optymalizację SEO, by zwiększyć widoczność Twojej firmy na Pomorzu.',
+    },
+    {
+      title: 'Testowanie i poprawki',
+      description:
+        'Przeprowadzam dokładne testy, aby upewnić się, że strona działa bez zarzutu. Dostosowuję stronę do lokalnych oczekiwań i wymagań użytkowników w Gdańsku.',
+    },
+    {
+      title: 'Publikacja i opieka techniczna',
+      description:
+        'Po wdrożeniu strony oferuję wsparcie techniczne i pomoc w aktualizacjach. Dbam o to, by Twoja witryna była zawsze aktualna i spełniała potrzeby Twojej firmy w Gdańsku.',
     },
   ],
 };

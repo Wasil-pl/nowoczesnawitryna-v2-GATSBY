@@ -7,12 +7,21 @@ import RootLayout from '../../components/RootLayout/RootLayout';
 import Headers from '../../components/Headers/Headers';
 import Footer from '../../components/Footer/Footer';
 import ScroolUpButton from '../../components/ScroolUpButton/ScroolUpButton';
-import SiteInfoServices from '../../components/SiteInfoServices/SiteInfoServices';
-import { katowice_info_txt, katowice_myService, portfolioTitle, whyMeContent } from '../../consts/landingPage';
+import {
+  about_me_katowice,
+  katowice_info_txt,
+  katowice_myService,
+  katowice_processSteps,
+  katowice_websiteFunctions,
+  portfolioTitle,
+} from '../../consts/landingPage';
 import LP_MyServices from '../../components/LandingPages/LP_MyServices/LP_MyServices';
-import WhyMe from '../../components/LandingPages/WhyMe/WhyMe';
 import LP_Portfolio from '../../components/LandingPages/LP_Portfolio/LP_Portfolio';
 import LP_Action from '../../components/LandingPages/LP_Action/LP_Action';
+import LP_SiteInfo from '../../components/LandingPages/LP_SiteInfo/LP_SiteInfo';
+import LP_AboutMe from '../../components/LandingPages/LP_AboutMe/LP_AboutMe';
+import LP_WebsiteFunctions from '../../components/LandingPages/LP_WebsiteFunctions/LP_WebsiteFunctions';
+import LP_ProcessSteps from '../../components/LandingPages/LP_ProcessSteps/LP_ProcessSteps';
 
 const Katowice = () => {
   const title_top = 'Profesjonalne tworzenie';
@@ -34,10 +43,14 @@ const Katowice = () => {
         subtitle={subtitle}
         variant={'landing_page'}
       />
-      <SiteInfoServices
-        title_first_column={katowice_info_txt.title_first_column}
-        descryption_first_column={katowice_info_txt.descryption_first_column}
-        variant="one_column"
+      <LP_SiteInfo
+        title_first={katowice_info_txt.title_first}
+        description_first={katowice_info_txt.description_first}
+        title_second={katowice_info_txt.title_second}
+        description_second={katowice_info_txt.description_second}
+        title_third={katowice_info_txt.title_third}
+        description_third={katowice_info_txt.description_third}
+        banner_description={katowice_info_txt.banner_description}
       />
       <LP_MyServices
         sectionTitle={katowice_myService.sectionTitle}
@@ -55,30 +68,46 @@ const Katowice = () => {
         title_logo={katowice_myService.title_logo}
         description_logo={katowice_myService.description_logo}
       />
-      <WhyMe
-        title_first_row={whyMeContent.katowice[0].title}
-        description_first_row={whyMeContent.katowice[0].description}
-        title_second_row={whyMeContent.katowice[1].title}
-        description_second_row={whyMeContent.katowice[1].description}
-        title_third_row={whyMeContent.katowice[2].title}
-        description_third_row={whyMeContent.katowice[2].description}
-        title_fourth_row={whyMeContent.katowice[3].title}
-        description_fourth_row={whyMeContent.katowice[3].description}
-        title_fifth_row={whyMeContent.katowice[4].title}
-        description_fifth_row={whyMeContent.katowice[4].description}
-        title_sixth_row={whyMeContent.katowice[5].title}
-        description_sixth_row={whyMeContent.katowice[5].description}
-        title_seventh_row={whyMeContent.katowice[6].title}
-        description_seventh_row={whyMeContent.katowice[6].description}
-        title_eighth_row={whyMeContent.katowice[7].title}
-        description_eighth_row={whyMeContent.katowice[7].description}
-        title_ninth_row={whyMeContent.katowice[8].title}
-        description_ninth_row={whyMeContent.katowice[8].description}
-        title_tenth_row={whyMeContent.katowice[9].title}
-        description_tenth_row={whyMeContent.katowice[9].description}
+      <LP_AboutMe description={about_me_katowice.description} />
+      <LP_WebsiteFunctions
+        sectionTitle={katowice_websiteFunctions.sectionTitle}
+        sectionTitleColored={katowice_websiteFunctions.sectionTitleColored}
+        sectionSubtitle={katowice_websiteFunctions.sectionSubtitle}
+        itemTitle1={katowice_websiteFunctions.items[0].title}
+        itemDescription1={katowice_websiteFunctions.items[0].description}
+        itemTitle2={katowice_websiteFunctions.items[1].title}
+        itemDescription2={katowice_websiteFunctions.items[1].description}
+        itemTitle3={katowice_websiteFunctions.items[2].title}
+        itemDescription3={katowice_websiteFunctions.items[2].description}
+        itemTitle4={katowice_websiteFunctions.items[3].title}
+        itemDescription4={katowice_websiteFunctions.items[3].description}
+        itemTitle5={katowice_websiteFunctions.items[4].title}
+        itemDescription5={katowice_websiteFunctions.items[4].description}
+        itemTitle6={katowice_websiteFunctions.items[5].title}
+        itemDescription6={katowice_websiteFunctions.items[5].description}
+        itemTitle7={katowice_websiteFunctions.items[6].title}
+        itemDescription7={katowice_websiteFunctions.items[6].description}
+        itemTitle8={katowice_websiteFunctions.items[7].title}
+        itemDescription8={katowice_websiteFunctions.items[7].description}
       />
-
       <LP_Action />
+
+      <LP_ProcessSteps
+        sectionTitle={katowice_processSteps.sectionTitle}
+        sectionTitleColored={katowice_processSteps.sectionTitleColored}
+        step1Title={katowice_processSteps.steps[0].title}
+        step1Description={katowice_processSteps.steps[0].description}
+        step2Title={katowice_processSteps.steps[1].title}
+        step2Description={katowice_processSteps.steps[1].description}
+        step3Title={katowice_processSteps.steps[2].title}
+        step3Description={katowice_processSteps.steps[2].description}
+        step4Title={katowice_processSteps.steps[3].title}
+        step4Description={katowice_processSteps.steps[3].description}
+        step5Title={katowice_processSteps.steps[4].title}
+        step5Description={katowice_processSteps.steps[4].description}
+        step6Title={katowice_processSteps.steps[5].title}
+        step6Description={katowice_processSteps.steps[5].description}
+      />
 
       <LP_Portfolio
         title={portfolioTitle.katowice.title}

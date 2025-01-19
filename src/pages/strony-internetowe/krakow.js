@@ -7,12 +7,21 @@ import RootLayout from '../../components/RootLayout/RootLayout';
 import Headers from '../../components/Headers/Headers';
 import Footer from '../../components/Footer/Footer';
 import ScroolUpButton from '../../components/ScroolUpButton/ScroolUpButton';
-import SiteInfoServices from '../../components/SiteInfoServices/SiteInfoServices';
-import { krakow_info_txt, krakow_myService, portfolioTitle, whyMeContent } from '../../consts/landingPage';
+import {
+  about_me_krakow,
+  krakow_info_txt,
+  krakow_myService,
+  krakow_processSteps,
+  krakow_websiteFunctions,
+  portfolioTitle,
+} from '../../consts/landingPage';
 import LP_MyServices from '../../components/LandingPages/LP_MyServices/LP_MyServices';
-import WhyMe from '../../components/LandingPages/WhyMe/WhyMe';
 import LP_Portfolio from '../../components/LandingPages/LP_Portfolio/LP_Portfolio';
 import LP_Action from '../../components/LandingPages/LP_Action/LP_Action';
+import LP_SiteInfo from '../../components/LandingPages/LP_SiteInfo/LP_SiteInfo';
+import LP_AboutMe from '../../components/LandingPages/LP_AboutMe/LP_AboutMe';
+import LP_WebsiteFunctions from '../../components/LandingPages/LP_WebsiteFunctions/LP_WebsiteFunctions';
+import LP_ProcessSteps from '../../components/LandingPages/LP_ProcessSteps/LP_ProcessSteps';
 
 const krakow = () => {
   const title_top = 'Nowoczesne i funkcjonalne';
@@ -36,10 +45,14 @@ const krakow = () => {
         subtitle={subtitle}
         variant={'landing_page'}
       />
-      <SiteInfoServices
-        title_first_column={krakow_info_txt.title_first_column}
-        descryption_first_column={krakow_info_txt.descryption_first_column}
-        variant="one_column"
+      <LP_SiteInfo
+        title_first={krakow_info_txt.title_first}
+        description_first={krakow_info_txt.description_first}
+        title_second={krakow_info_txt.title_second}
+        description_second={krakow_info_txt.description_second}
+        title_third={krakow_info_txt.title_third}
+        description_third={krakow_info_txt.description_third}
+        banner_description={krakow_info_txt.banner_description}
       />
       <LP_MyServices
         sectionTitle={krakow_myService.sectionTitle}
@@ -57,30 +70,47 @@ const krakow = () => {
         title_logo={krakow_myService.title_logo}
         description_logo={krakow_myService.description_logo}
       />
-      <WhyMe
-        title_first_row={whyMeContent.krakow[0].title}
-        description_first_row={whyMeContent.krakow[0].description}
-        title_second_row={whyMeContent.krakow[1].title}
-        description_second_row={whyMeContent.krakow[1].description}
-        title_third_row={whyMeContent.krakow[2].title}
-        description_third_row={whyMeContent.krakow[2].description}
-        title_fourth_row={whyMeContent.krakow[3].title}
-        description_fourth_row={whyMeContent.krakow[3].description}
-        title_fifth_row={whyMeContent.krakow[4].title}
-        description_fifth_row={whyMeContent.krakow[4].description}
-        title_sixth_row={whyMeContent.krakow[5].title}
-        description_sixth_row={whyMeContent.krakow[5].description}
-        title_seventh_row={whyMeContent.krakow[6].title}
-        description_seventh_row={whyMeContent.krakow[6].description}
-        title_eighth_row={whyMeContent.krakow[7].title}
-        description_eighth_row={whyMeContent.krakow[7].description}
-        title_ninth_row={whyMeContent.krakow[8].title}
-        description_ninth_row={whyMeContent.krakow[8].description}
-        title_tenth_row={whyMeContent.krakow[9].title}
-        description_tenth_row={whyMeContent.krakow[9].description}
+      <LP_AboutMe description={about_me_krakow.description} />
+      <LP_WebsiteFunctions
+        sectionTitle={krakow_websiteFunctions.sectionTitle}
+        sectionTitleColored={krakow_websiteFunctions.sectionTitleColored}
+        sectionSubtitle={krakow_websiteFunctions.sectionSubtitle}
+        itemTitle1={krakow_websiteFunctions.items[0].title}
+        itemDescription1={krakow_websiteFunctions.items[0].description}
+        itemTitle2={krakow_websiteFunctions.items[1].title}
+        itemDescription2={krakow_websiteFunctions.items[1].description}
+        itemTitle3={krakow_websiteFunctions.items[2].title}
+        itemDescription3={krakow_websiteFunctions.items[2].description}
+        itemTitle4={krakow_websiteFunctions.items[3].title}
+        itemDescription4={krakow_websiteFunctions.items[3].description}
+        itemTitle5={krakow_websiteFunctions.items[4].title}
+        itemDescription5={krakow_websiteFunctions.items[4].description}
+        itemTitle6={krakow_websiteFunctions.items[5].title}
+        itemDescription6={krakow_websiteFunctions.items[5].description}
+        itemTitle7={krakow_websiteFunctions.items[6].title}
+        itemDescription7={krakow_websiteFunctions.items[6].description}
+        itemTitle8={krakow_websiteFunctions.items[7].title}
+        itemDescription8={krakow_websiteFunctions.items[7].description}
       />
 
       <LP_Action />
+
+      <LP_ProcessSteps
+        sectionTitle={krakow_processSteps.sectionTitle}
+        sectionTitleColored={krakow_processSteps.sectionTitleColored}
+        step1Title={krakow_processSteps.steps[0].title}
+        step1Description={krakow_processSteps.steps[0].description}
+        step2Title={krakow_processSteps.steps[1].title}
+        step2Description={krakow_processSteps.steps[1].description}
+        step3Title={krakow_processSteps.steps[2].title}
+        step3Description={krakow_processSteps.steps[2].description}
+        step4Title={krakow_processSteps.steps[3].title}
+        step4Description={krakow_processSteps.steps[3].description}
+        step5Title={krakow_processSteps.steps[4].title}
+        step5Description={krakow_processSteps.steps[4].description}
+        step6Title={krakow_processSteps.steps[5].title}
+        step6Description={krakow_processSteps.steps[5].description}
+      />
 
       <LP_Portfolio
         title={portfolioTitle.krakow.title}
