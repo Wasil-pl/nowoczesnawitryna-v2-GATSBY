@@ -4,45 +4,106 @@
   margin-top: 100px;
   z-index: 1;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 
-  .tab_content {
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column-reverse;
+  .item {
+    width: 100%;
+    margin-bottom: 20px;
 
-    .tab_content_left {
-      flex: 100%;
+    .accordion_button {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background-color: settings.$color-background-light;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
 
-      h3 {
-        font-size: 2rem;
-        font-weight: settings.$font-weight-bold;
-        color: settings.$color-primary;
-        margin-bottom: 50px;
-      }
+      &[aria-expanded='false']:hover {
+        transform: translateY(-3px);
 
-      p {
-        font-size: 1rem;
-        color: settings.$color-text-light;
-        margin-bottom: 20px;
+        h3 {
+          color: settings.$color-primary;
+        }
 
-        &:last-of-type {
-          margin-bottom: 50px;
+        svg {
+          color: settings.$color-primary;
         }
       }
 
-      .button {
-        margin: 0 auto;
+      // Gdy otwarte
+      &[aria-expanded='true'] {
+        background-color: settings.$color-background-primary;
+        color: settings.$color-text-dark;
+
+        &:hover {
+          background-color: settings.$color-background-primary;
+          transform: translateY(-3px);
+        }
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        color: settings.$color-text-dark;
+        font-weight: settings.$font-weight-bold;
+        margin: 0;
+        text-align: start;
+      }
+
+      svg {
+        width: 30px;
+        height: 30px;
       }
     }
 
-    .tab_content_right {
-      flex: 100%;
-      text-align: center;
+    .tab_content {
+      margin-top: 70px;
       margin-bottom: 50px;
+      display: flex;
+      flex-direction: column-reverse;
 
-      img {
-        width: 100%;
-        border-radius: 20px;
+      .tab_content_left {
+        flex: 100%;
+
+        h3 {
+          font-size: 2rem;
+          font-weight: settings.$font-weight-bold;
+          color: settings.$color-primary;
+          margin-bottom: 50px;
+        }
+
+        p {
+          font-size: 1rem;
+          color: settings.$color-text-light;
+          margin-bottom: 20px;
+
+          &:last-of-type {
+            margin-bottom: 50px;
+          }
+        }
+
+        .button {
+          margin: 0 auto;
+        }
+      }
+
+      .tab_content_right {
+        flex: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+
+        img {
+          width: 100%;
+          border-radius: 20px;
+        }
       }
     }
   }

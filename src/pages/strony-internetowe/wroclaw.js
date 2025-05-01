@@ -1,8 +1,4 @@
 import * as React from 'react';
-import '../../styles/global.scss';
-import '../../styles/normalize.scss';
-import '../../styles/typography.scss';
-import '../../styles/settings.scss';
 import {
   wroclaw_info_txt,
   wroclaw_myService,

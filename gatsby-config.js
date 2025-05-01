@@ -11,6 +11,7 @@ module.exports = {
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-sass',
     'gatsby-plugin-image',
+    `gatsby-plugin-postcss`,
     'gatsby-plugin-scroll-reveal',
     {
       resolve: 'gatsby-plugin-manifest',

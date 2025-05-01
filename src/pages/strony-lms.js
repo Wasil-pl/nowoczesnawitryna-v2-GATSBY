@@ -1,8 +1,4 @@
 import * as React from 'react';
-import '../styles/global.scss';
-import '../styles/normalize.scss';
-import '../styles/typography.scss';
-import '../styles/settings.scss';
 import ServiceHighlights from '../components/Sections/Shared/ServiceHighlights/ServiceHighlights';
 import Headers from '../components/Header/Headers/Headers';
 import ScroolUpButton from '../components/Ui/ScroolUpButton/ScroolUpButton';

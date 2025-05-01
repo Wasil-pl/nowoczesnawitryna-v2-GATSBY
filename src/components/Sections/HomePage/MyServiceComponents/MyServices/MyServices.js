@@ -1,20 +1,19 @@
 import React from 'react';
 import * as styles from './MyServices.module.scss';
-import { Container } from 'react-bootstrap';
 import SectionTitle from '../../../../Ui/SectionTitle/SectionTitle';
 import MyServicesThumbs from '../MyServicesThumbs/MyServicesThumbs';
 import MyServicesAccordion from '../MyServicesAccordion/MyServicesAccordion';
 import CustomButton from '../../../../Ui/CustomButton/CustomButton';
-import { QuestionCircle } from 'react-bootstrap-icons';
 import { useMediaQuery } from 'react-responsive';
 import CallToAction from '../../../Shared/CallToAction/CallToAction';
+import { QuestionMarkCircleIcon } from '@heroicons/react/24/solid';
 
 const MyServices = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 992px)' });
 
   return (
     <section className={styles.myServices}>
-      <Container>
+      <div className="container mx-auto px-4">
         <SectionTitle title="Wszystkie usługi, których" coloredText=" potrzebujesz" variant="white" />
 
         {!isMobile && <MyServicesThumbs />}
@@ -22,7 +21,7 @@ const MyServices = () => {
         {isMobile && <MyServicesAccordion />}
 
         <div className={styles.info}>
-          <QuestionCircle className={styles.icon} />
+          <QuestionMarkCircleIcon className={styles.icon} />
           <div className={styles.content}>
             <h3>HTML czy CMS</h3>
             <p>
@@ -35,7 +34,7 @@ const MyServices = () => {
         </div>
 
         <CallToAction />
-      </Container>
+      </div>
     </section>
   );
 };

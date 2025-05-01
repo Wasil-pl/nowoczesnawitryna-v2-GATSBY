@@ -1,8 +1,4 @@
 import * as React from 'react';
-import '../styles/global.scss';
-import '../styles/normalize.scss';
-import '../styles/typography.scss';
-import '../styles/settings.scss';
 import Headers from '../components/Header/Headers/Headers';
 import Footer from '../components/Footer/Footer';
 import PrivacyPolicy from '../components/Sections/PrivacyPolicy/PrivacyPolicy';

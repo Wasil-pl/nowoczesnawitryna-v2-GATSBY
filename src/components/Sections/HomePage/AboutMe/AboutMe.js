@@ -1,15 +1,13 @@
 import React from 'react';
 import * as styles from './AboutMe.module.scss';
-import { Container } from 'react-bootstrap';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const AboutMe = () => {
   return (
     <section id="omnie" className={styles.about_me}>
-      <Container>
+      <div className="container mx-auto px-4">
         <SectionTitle title="Kilka słów" coloredText=" o mnie" />
-
         <div className={styles.wrapper}>
           <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.first_column}>
             <StaticImage
@@ -34,7 +32,7 @@ const AboutMe = () => {
             </p>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

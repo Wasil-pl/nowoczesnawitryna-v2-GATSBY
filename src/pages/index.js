@@ -1,7 +1,4 @@
 import React from 'react';
-import '../styles/bootstrap.scss';
-import '../styles/global.scss';
-import '../styles/normalize.scss';
 import HeaderHome from '../components/Header/Headers/HeaderHome';
 import ScroolUpButton from '../components/Ui/ScroolUpButton/ScroolUpButton';
 import WhyChooseMe from '../components/Sections/HomePage/WhyChooseMe/WhyChooseMe';

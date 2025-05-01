@@ -1,4 +1,8 @@
 import ReactDOM from 'react-dom/client';
+import './src/styles/bootstrap.scss';
+import './src/styles/global.scss';
+import './src/styles/normalize.scss';
+import './src/styles/tailwind.scss';
 
 export const replaceHydrateFunction = () => {
   return (element, container) => {
