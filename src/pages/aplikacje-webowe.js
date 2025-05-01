@@ -3,15 +3,14 @@ import '../styles/global.scss';
 import '../styles/normalize.scss';
 import '../styles/typography.scss';
 import '../styles/settings.scss';
-import Headers from '../components/Headers/Headers';
-import SiteInfoServices from '../components/SiteInfoServices/SiteInfoServices';
 import { aplikacje_webowe_txt } from '../consts/texts';
-import ServicesInfo from '../components/ServicesInfo/ServicesInfo';
-import Prices from '../components/Prices/Prices';
+import Headers from '../components/Header/Headers/Headers';
+import ScroolUpButton from '../components/Ui/ScroolUpButton/ScroolUpButton';
+import ScroolToPriceButton from '../components/Ui/ScroolToPriceButton/ScroolToPriceButton';
 import Footer from '../components/Footer/Footer';
-import RootLayout from '../components/RootLayout/RootLayout';
-import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
-import ScroolToPriceButton from '../components/ScroolToPriceButton/ScroolToPriceButton';
+import Prices from '../components/Sections/Shared/Prices/Prices';
+import ServiceHighlights from '../components/Sections/Shared/ServiceHighlights/ServiceHighlights';
+import ServicesInfo from '../components/Sections/Shared/ServicesInfo/ServicesInfo';
 
 const AplikacjeWebowe = () => {
   const title_top = 'Aplikacje Webowe';
@@ -20,15 +19,8 @@ const AplikacjeWebowe = () => {
   const subtitle =
     'Tworzę aplikacje webowe dostosowane do potrzeb Twojej firmy, zoptymalizowane i działające płynnie na różnych urządzeniach.';
 
-  const siteTitle = 'Aplikacje Webowe – Nowoczesne Rozwiązania dla Biznesu';
-  const siteDescription =
-    'Tworzę aplikacje webowe, które zapewniają zaawansowane funkcje i wsparcie dla rozwoju Twojej firmy. Szybkie, bezpieczne i dopasowane do potrzeb biznesowych aplikacje online.';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/aplikacje-webowe/';
-  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/web-applications/';
-
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers
         title_top={title_top}
         title_middle={title_middle}
@@ -38,7 +30,7 @@ const AplikacjeWebowe = () => {
       />
       <ScroolUpButton />
       <ScroolToPriceButton />
-      <SiteInfoServices
+      <ServiceHighlights
         title_first_column={aplikacje_webowe_txt.title_first_column}
         title_first_card={aplikacje_webowe_txt.title_first_card}
         title_second_card={aplikacje_webowe_txt.title_second_card}
@@ -54,3 +46,28 @@ const AplikacjeWebowe = () => {
 };
 
 export default AplikacjeWebowe;
+
+export const Head = () => (
+  <>
+    <html lang="pl" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <title>Aplikacje Webowe – Nowoczesne Rozwiązania dla Biznesu</title>
+    <meta
+      name="description"
+      content="Tworzę aplikacje webowe, które zapewniają zaawansowane funkcje i wsparcie dla rozwoju Twojej firmy. Szybkie, bezpieczne i dopasowane do potrzeb biznesowych aplikacje online."
+    />
+    <link rel="canonical" href="https://www.nowoczesnawitryna.pl/aplikacje-webowe/" />
+    <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/aplikacje-webowe/" />
+    <link rel="alternate" hrefLang="en" href="https://www.nowoczesnawitryna.com/web-applications/" />
+    <meta property="og:locale" content="pl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Aplikacje Webowe – Nowoczesne Rozwiązania dla Biznesu" />
+    <meta
+      property="og:description"
+      content="Tworzę aplikacje webowe, które zapewniają zaawansowane funkcje i wsparcie dla rozwoju Twojej firmy. Szybkie, bezpieczne i dopasowane do potrzeb biznesowych aplikacje online."
+    />
+    <meta property="og:url" content="https://www.nowoczesnawitryna.pl/aplikacje-webowe/" />
+    <meta property="og:site_name" content="Nowoczesna witryna" />
+    <link rel="shortlink" href="https://www.nowoczesnawitryna.pl/aplikacje-webowe/" />
+  </>
+);

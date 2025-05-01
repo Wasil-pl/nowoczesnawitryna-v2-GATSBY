@@ -1,7 +1,6 @@
-// gatsby-node.js
 exports.onCreateWebpackConfig = ({ stage, actions, plugins, loaders, getConfig }) => {
-  // Maintain the null loader configuration for specific modules in SSR
-  if (stage === 'build-html' || stage === 'develop-html' || stage === 'develop') {
+  // Wyklucz wybrane biblioteki z SSR
+  if (stage === 'build-html' || stage === 'develop-html') {
     actions.setWebpackConfig({
       module: {
         rules: [
@@ -9,21 +8,30 @@ exports.onCreateWebpackConfig = ({ stage, actions, plugins, loaders, getConfig }
             test: /xterm|xterm-addon-fit/,
             use: loaders.null(),
           },
+          {
+            test: /@restart\/ui/,
+            use: loaders.null(),
+          },
+          {
+            test: /tsparticles/,
+            use: loaders.null(),
+          },
+          {
+            test: /popper.js/, // opcjonalnie, jeśli error nadal się pojawia
+            use: loaders.null(),
+          },
         ],
       },
     });
   }
 
-  // Get the existing Webpack configuration
+  // Modyfikacja konfiguracji MiniCssExtractPlugin
   const config = getConfig();
-
-  // Find and modify MiniCssExtractPlugin to suppress CSS order conflicts
   const miniCssExtractPlugin = config.plugins.find((plugin) => plugin.constructor.name === 'MiniCssExtractPlugin');
 
   if (miniCssExtractPlugin) {
-    miniCssExtractPlugin.options.ignoreOrder = true; // Suppress conflicting order warning
+    miniCssExtractPlugin.options.ignoreOrder = true;
   }
 
-  // Replace the modified config
   actions.replaceWebpackConfig(config);
 };

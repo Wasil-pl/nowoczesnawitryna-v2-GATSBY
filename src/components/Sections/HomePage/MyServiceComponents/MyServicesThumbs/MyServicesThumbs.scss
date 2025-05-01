@@ -1,0 +1,35 @@
+@use '../../../../../styles/settings.scss' as settings;
+
+.nav-underline .nav-link.active {
+  background-color: settings.$color-background-primary;
+  border-color: settings.$color-background-primary;
+  color: settings.$color-text-dark !important;
+  position: relative;
+}
+
+.nav-underline .nav-link.active:hover {
+  color: settings.$color-text-dark !important;
+}
+
+.nav-underline .nav-link:hover {
+  color: settings.$color-text-primary !important;
+}
+
+.nav-underline .nav-link.active::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border: 16px solid transparent;
+  left: 99%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left-color: settings.$color-background-primary; /* Kolor dla lewej strony (strzałka skierowana w prawo) */
+  border-left-style: solid;
+  border-right: 0; /* Usunięcie prawej krawędzi */
+}
+
+.tab-content {
+  flex: 3;
+}

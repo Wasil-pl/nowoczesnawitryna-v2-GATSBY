@@ -1,0 +1,32 @@
+@use '../../../../../styles/settings.scss' as settings;
+
+.myservice_accordion .accordion-item {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.myservice_accordion .accordion-item .accordion-header .accordion-button {
+  border-radius: 20px !important;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.myservice_accordion .accordion-item .accordion-header .accordion-button:hover {
+  color: settings.$color-text-primary;
+}
+
+.myservice_accordion .accordion-button:not(.collapsed):hover {
+  color: settings.$color-text-secondary;
+}
+
+.myservice_accordion .accordion-button:not(.collapsed) {
+  color: settings.$color-text-secondary;
+  background-color: settings.$color-background-primary;
+  box-shadow: none;
+}
+
+.myservice_accordion .accordion-button:focus {
+  box-shadow: none;
+}

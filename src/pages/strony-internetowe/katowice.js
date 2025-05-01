@@ -3,10 +3,6 @@ import '../../styles/global.scss';
 import '../../styles/normalize.scss';
 import '../../styles/typography.scss';
 import '../../styles/settings.scss';
-import RootLayout from '../../components/RootLayout/RootLayout';
-import Headers from '../../components/Headers/Headers';
-import Footer from '../../components/Footer/Footer';
-import ScroolUpButton from '../../components/ScroolUpButton/ScroolUpButton';
 import {
   about_me_katowice,
   katowice_info_txt,
@@ -15,27 +11,25 @@ import {
   katowice_websiteFunctions,
   portfolioTitle,
 } from '../../consts/landingPage';
-import LP_MyServices from '../../components/LandingPages/LP_MyServices/LP_MyServices';
-import LP_Portfolio from '../../components/LandingPages/LP_Portfolio/LP_Portfolio';
-import LP_Action from '../../components/LandingPages/LP_Action/LP_Action';
-import LP_SiteInfo from '../../components/LandingPages/LP_SiteInfo/LP_SiteInfo';
-import LP_AboutMe from '../../components/LandingPages/LP_AboutMe/LP_AboutMe';
-import LP_WebsiteFunctions from '../../components/LandingPages/LP_WebsiteFunctions/LP_WebsiteFunctions';
-import LP_ProcessSteps from '../../components/LandingPages/LP_ProcessSteps/LP_ProcessSteps';
+import Headers from '../../components/Header/Headers/Headers';
+import ScroolUpButton from '../../components/Ui/ScroolUpButton/ScroolUpButton';
+import Footer from '../../components/Footer/Footer';
+import LPSiteInfo from '../../components/Sections/LandingPages/LPSiteInfo/LPSiteInfo';
+import LPMyServices from '../../components/Sections/LandingPages/LPMyServices/LPMyServices';
+import LPAboutMe from '../../components/Sections/LandingPages/LPAboutMe/LPAboutMe';
+import LPWebsiteFunctions from '../../components/Sections/LandingPages/LPWebsiteFunctions/LPWebsiteFunctions';
+import LPProcessSteps from '../../components/Sections/LandingPages/LPProcessSteps/LPProcessSteps';
+import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPortfolio';
+import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
 const Katowice = () => {
   const title_top = 'Profesjonalne tworzenie';
   const title_middle = 'Stron internetowych';
   const title_bottom = 'w Katowicach';
   const subtitle = 'Indywidualne projekty dopasowane do potrzeb Twojej firmy w Katowicach.';
-  const siteTitle = 'Strony internetowe Katowice - Nowoczesna Witryna';
-  const siteDescription =
-    'Oferuję profesjonalne usługi tworzenia stron internetowych w Katowicach. Moje projekty łączą nowoczesny design, intuicyjną obsługę i optymalizację pod kątem wyszukiwarek. Skontaktuj się ze mną, aby stworzyć stronę, która wyróżni Twoją firmę na tle konkurencji.';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/strony-internetowe/katowice/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <Headers
         title_top={title_top}
         title_middle={title_middle}
@@ -43,7 +37,7 @@ const Katowice = () => {
         subtitle={subtitle}
         variant={'landing_page'}
       />
-      <LP_SiteInfo
+      <LPSiteInfo
         title_first={katowice_info_txt.title_first}
         description_first={katowice_info_txt.description_first}
         title_second={katowice_info_txt.title_second}
@@ -52,7 +46,7 @@ const Katowice = () => {
         description_third={katowice_info_txt.description_third}
         banner_description={katowice_info_txt.banner_description}
       />
-      <LP_MyServices
+      <LPMyServices
         sectionTitle={katowice_myService.sectionTitle}
         sectionTitleColored={katowice_myService.sectionTitleColored}
         title_HTML={katowice_myService.title_html}
@@ -68,8 +62,8 @@ const Katowice = () => {
         title_logo={katowice_myService.title_logo}
         description_logo={katowice_myService.description_logo}
       />
-      <LP_AboutMe description={about_me_katowice.description} />
-      <LP_WebsiteFunctions
+      <LPAboutMe description={about_me_katowice.description} />
+      <LPWebsiteFunctions
         sectionTitle={katowice_websiteFunctions.sectionTitle}
         sectionTitleColored={katowice_websiteFunctions.sectionTitleColored}
         sectionSubtitle={katowice_websiteFunctions.sectionSubtitle}
@@ -90,9 +84,9 @@ const Katowice = () => {
         itemTitle8={katowice_websiteFunctions.items[7].title}
         itemDescription8={katowice_websiteFunctions.items[7].description}
       />
-      <LP_Action />
+      <LPAction />
 
-      <LP_ProcessSteps
+      <LPProcessSteps
         sectionTitle={katowice_processSteps.sectionTitle}
         sectionTitleColored={katowice_processSteps.sectionTitleColored}
         step1Title={katowice_processSteps.steps[0].title}
@@ -109,7 +103,7 @@ const Katowice = () => {
         step6Description={katowice_processSteps.steps[5].description}
       />
 
-      <LP_Portfolio
+      <LPPortfolio
         title={portfolioTitle.katowice.title}
         coloredText={portfolioTitle.katowice.coloredText}
         subtitle={portfolioTitle.katowice.subtitle}
@@ -122,3 +116,27 @@ const Katowice = () => {
 };
 
 export default Katowice;
+
+export const Head = () => (
+  <>
+    <html lang="pl" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <title>Strony internetowe Katowice - Nowoczesna Witryna</title>
+    <meta
+      name="description"
+      content="Oferuję profesjonalne usługi tworzenia stron internetowych w Katowicach. Moje projekty łączą nowoczesny design, intuicyjną obsługę i optymalizację pod kątem wyszukiwarek. Skontaktuj się ze mną, aby stworzyć stronę, która wyróżni Twoją firmę na tle konkurencji."
+    />
+    <link rel="canonical" href="https://www.nowoczesnawitryna.pl/strony-internetowe/katowice/" />
+    <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/strony-internetowe/katowice/" />
+    <meta property="og:locale" content="pl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Strony internetowe Katowice - Nowoczesna Witryna" />
+    <meta
+      property="og:description"
+      content="Oferuję profesjonalne usługi tworzenia stron internetowych w Katowicach. Moje projekty łączą nowoczesny design, intuicyjną obsługę i optymalizację pod kątem wyszukiwarek. Skontaktuj się ze mną, aby stworzyć stronę, która wyróżni Twoją firmę na tle konkurencji."
+    />
+    <meta property="og:url" content="https://www.nowoczesnawitryna.pl/strony-internetowe/katowice/" />
+    <meta property="og:site_name" content="Nowoczesna witryna" />
+    <link rel="shortlink" href="https://www.nowoczesnawitryna.pl/strony-internetowe/katowice/" />
+  </>
+);

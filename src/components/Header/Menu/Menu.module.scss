@@ -1,0 +1,35 @@
+@use '../../../styles/settings.scss' as settings;
+
+.scrolled {
+  background: rgba(25, 29, 41, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.menu_wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .lang {
+    display: flex;
+    justify-content: flex-end !important;
+
+    & > a {
+      margin-left: 10px;
+      color: settings.$color-text-light;
+      font-weight: settings.$font-weight-bold;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    & > a.active {
+      color: settings.$color-primary;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .menu_wrapper {
+    flex-direction: row;
+  }
+}

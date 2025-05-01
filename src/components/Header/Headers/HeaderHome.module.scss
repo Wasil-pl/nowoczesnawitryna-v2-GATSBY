@@ -1,0 +1,108 @@
+@use '../../../styles/settings.scss' as settings;
+
+.header {
+  background-color: settings.$color-background-dark;
+  position: relative;
+  height: 90vh;
+  background-image: image-set(url('/images/tlo.avif') type('image/avif'), url('/images/tlo.webp') type('image/webp'));
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      font-size: 3rem;
+      font-weight: settings.$font-weight-extrabold;
+      text-transform: uppercase;
+      line-height: 1.2;
+      letter-spacing: 0.3rem;
+      text-wrap: nowrap;
+
+      .title_top {
+        background: linear-gradient(
+          90deg,
+          settings.$color-text-primary,
+          settings.$color-text-dark-light
+        ); /* Gradient od żółtego do czarnego */
+        -webkit-background-clip: text; /* Działa w przeglądarkach WebKit (Chrome, Safari) */
+        background-clip: text; /* Ustawienie tła na tekst */
+        color: transparent; /* Tekst przezroczysty, gradient wypełnia litery */
+      }
+
+      .title_bottom {
+        background: linear-gradient(
+          90deg,
+          settings.$color-text-dark-light,
+          settings.$color-text-primary
+        ); /* Gradient od czarnego do żółtego */
+        -webkit-background-clip: text; /* Działa w przeglądarkach WebKit (Chrome, Safari) */
+        background-clip: text; /* Ustawienie tła na tekst */
+        color: transparent; /* Tekst przezroczysty, gradient wypełnia litery */
+      }
+    }
+
+    .subtitle {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      line-height: 1.2;
+      letter-spacing: 0.2rem;
+      color: settings.$color-text-light-dark;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    .content {
+      .title {
+        font-size: 2.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .header {
+    background-image: image-set(
+      url('/images/tlo-mobile.avif') type('image/avif'),
+      url('/images/tlo-mobile.webp') type('image/webp')
+    );
+
+    height: 600px;
+    .content {
+      .title {
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    .content {
+      width: auto;
+      .title {
+        line-height: 1.1;
+      }
+    }
+  }
+}

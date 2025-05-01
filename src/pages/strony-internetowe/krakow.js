@@ -3,10 +3,6 @@ import '../../styles/global.scss';
 import '../../styles/normalize.scss';
 import '../../styles/typography.scss';
 import '../../styles/settings.scss';
-import RootLayout from '../../components/RootLayout/RootLayout';
-import Headers from '../../components/Headers/Headers';
-import Footer from '../../components/Footer/Footer';
-import ScroolUpButton from '../../components/ScroolUpButton/ScroolUpButton';
 import {
   about_me_krakow,
   krakow_info_txt,
@@ -15,13 +11,16 @@ import {
   krakow_websiteFunctions,
   portfolioTitle,
 } from '../../consts/landingPage';
-import LP_MyServices from '../../components/LandingPages/LP_MyServices/LP_MyServices';
-import LP_Portfolio from '../../components/LandingPages/LP_Portfolio/LP_Portfolio';
-import LP_Action from '../../components/LandingPages/LP_Action/LP_Action';
-import LP_SiteInfo from '../../components/LandingPages/LP_SiteInfo/LP_SiteInfo';
-import LP_AboutMe from '../../components/LandingPages/LP_AboutMe/LP_AboutMe';
-import LP_WebsiteFunctions from '../../components/LandingPages/LP_WebsiteFunctions/LP_WebsiteFunctions';
-import LP_ProcessSteps from '../../components/LandingPages/LP_ProcessSteps/LP_ProcessSteps';
+import Headers from '../../components/Header/Headers/Headers';
+import ScroolUpButton from '../../components/Ui/ScroolUpButton/ScroolUpButton';
+import Footer from '../../components/Footer/Footer';
+import LPSiteInfo from '../../components/Sections/LandingPages/LPSiteInfo/LPSiteInfo';
+import LPMyServices from '../../components/Sections/LandingPages/LPMyServices/LPMyServices';
+import LPAboutMe from '../../components/Sections/LandingPages/LPAboutMe/LPAboutMe';
+import LPWebsiteFunctions from '../../components/Sections/LandingPages/LPWebsiteFunctions/LPWebsiteFunctions';
+import LPProcessSteps from '../../components/Sections/LandingPages/LPProcessSteps/LPProcessSteps';
+import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPortfolio';
+import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
 const krakow = () => {
   const title_top = 'Nowoczesne i funkcjonalne';
@@ -30,14 +29,8 @@ const krakow = () => {
   const subtitle =
     'Tworzę strony, które łączą unikalny design z doskonałą funkcjonalnością, pomagając firmom z Krakowa skutecznie zaistnieć w internecie.';
 
-  const siteTitle = 'Strony internetowe Kraków - Nowoczesna Witryna';
-  const siteDescription =
-    'Oferuję profesjonalne usługi tworzenia stron internetowych w Krakowie. Moje projekty łączą nowoczesny design, intuicyjną obsługę i optymalizację pod kątem wyszukiwarek. Skontaktuj się ze mną, aby stworzyć stronę, która wyróżni Twoją firmę na tle konkurencji.';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/strony-internetowe/krakow/';
-
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <Headers
         title_top={title_top}
         title_middle={title_middle}
@@ -45,7 +38,7 @@ const krakow = () => {
         subtitle={subtitle}
         variant={'landing_page'}
       />
-      <LP_SiteInfo
+      <LPSiteInfo
         title_first={krakow_info_txt.title_first}
         description_first={krakow_info_txt.description_first}
         title_second={krakow_info_txt.title_second}
@@ -54,7 +47,7 @@ const krakow = () => {
         description_third={krakow_info_txt.description_third}
         banner_description={krakow_info_txt.banner_description}
       />
-      <LP_MyServices
+      <LPMyServices
         sectionTitle={krakow_myService.sectionTitle}
         sectionTitleColored={krakow_myService.sectionTitleColored}
         title_HTML={krakow_myService.title_html}
@@ -70,8 +63,8 @@ const krakow = () => {
         title_logo={krakow_myService.title_logo}
         description_logo={krakow_myService.description_logo}
       />
-      <LP_AboutMe description={about_me_krakow.description} />
-      <LP_WebsiteFunctions
+      <LPAboutMe description={about_me_krakow.description} />
+      <LPWebsiteFunctions
         sectionTitle={krakow_websiteFunctions.sectionTitle}
         sectionTitleColored={krakow_websiteFunctions.sectionTitleColored}
         sectionSubtitle={krakow_websiteFunctions.sectionSubtitle}
@@ -93,9 +86,9 @@ const krakow = () => {
         itemDescription8={krakow_websiteFunctions.items[7].description}
       />
 
-      <LP_Action />
+      <LPAction />
 
-      <LP_ProcessSteps
+      <LPProcessSteps
         sectionTitle={krakow_processSteps.sectionTitle}
         sectionTitleColored={krakow_processSteps.sectionTitleColored}
         step1Title={krakow_processSteps.steps[0].title}
@@ -112,7 +105,7 @@ const krakow = () => {
         step6Description={krakow_processSteps.steps[5].description}
       />
 
-      <LP_Portfolio
+      <LPPortfolio
         title={portfolioTitle.krakow.title}
         coloredText={portfolioTitle.krakow.coloredText}
         subtitle={portfolioTitle.krakow.subtitle}
@@ -125,3 +118,27 @@ const krakow = () => {
 };
 
 export default krakow;
+
+export const Head = () => (
+  <>
+    <html lang="pl" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <title>Strony internetowe Kraków - Nowoczesna Witryna</title>
+    <meta
+      name="description"
+      content="Oferuję profesjonalne usługi tworzenia stron internetowych w Krakowie. Moje projekty łączą nowoczesny design, intuicyjną obsługę i optymalizację pod kątem wyszukiwarek. Skontaktuj się ze mną, aby stworzyć stronę, która wyróżni Twoją firmę na tle konkurencji."
+    />
+    <link rel="canonical" href="https://www.nowoczesnawitryna.pl/strony-internetowe/krakow/" />
+    <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/strony-internetowe/krakow/" />
+    <meta property="og:locale" content="pl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Strony internetowe Kraków - Nowoczesna Witryna" />
+    <meta
+      property="og:description"
+      content="Oferuję profesjonalne usługi tworzenia stron internetowych w Krakowie. Moje projekty łączą nowoczesny design, intuicyjną obsługę i optymalizację pod kątem wyszukiwarek. Skontaktuj się ze mną, aby stworzyć stronę, która wyróżni Twoją firmę na tle konkurencji."
+    />
+    <meta property="og:url" content="https://www.nowoczesnawitryna.pl/strony-internetowe/krakow/" />
+    <meta property="og:site_name" content="Nowoczesna witryna" />
+    <link rel="shortlink" href="https://www.nowoczesnawitryna.pl/strony-internetowe/krakow/" />
+  </>
+);

@@ -1,0 +1,7 @@
+@use '../../../../styles/settings.scss' as settings;
+
+.list-group-item.active {
+  border-color: settings.$color-background-primary;
+  background-color: settings.$color-background-primary;
+  color: settings.$color-text-dark;
+}

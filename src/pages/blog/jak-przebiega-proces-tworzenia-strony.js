@@ -3,24 +3,17 @@ import '../../styles/global.scss';
 import '../../styles/normalize.scss';
 import '../../styles/typography.scss';
 import '../../styles/settings.scss';
-import RootLayout from '../../components/RootLayout/RootLayout';
-import Headers from '../../components/Headers/Headers';
+import Headers from '../../components/Header/Headers/Headers';
+import ScroolUpButton from '../../components/Ui/ScroolUpButton/ScroolUpButton';
 import Footer from '../../components/Footer/Footer';
-import ScroolUpButton from '../../components/ScroolUpButton/ScroolUpButton';
-import BlogArticleWebDesignProcess from '../../components/BlogArticles/BlogArticleWebDesignProcess';
+import BlogArticleWebDesignProcess from '../../components/Sections/Blog/BlogArticles/BlogArticleWebDesignProcess';
 
 const BlogProcessSiteMaking = () => {
   const title_top = 'Jak Przebiega Proces';
   const title_middle = 'Tworzenia Strony Internetowej?';
-  const siteTitle = 'Jak Przebiega Proces Tworzenia Strony Internetowej? Krok po Kroku - Nowoczesna witryna';
-  const siteDescription =
-    'Tworzenie strony internetowej to złożony proces, który wymaga planowania, projektowania, kodowania i testowania. Każdy etap ma kluczowe znaczenie dla osiągnięcia ostatecznego sukcesu strony, która będzie zarówno funkcjonalna, jak i estetyczna. Przedstawiamy kroki, które prowadzą do stworzenia nowoczesnej strony internetowej.';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/blog/jak-przebiega-proces-tworzenia-strony/';
-  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/blog/how-the-website-creation-process-works/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers title_top={title_top} title_middle={title_middle} active="blog" />
       <ScroolUpButton />
       <BlogArticleWebDesignProcess />
@@ -30,3 +23,39 @@ const BlogProcessSiteMaking = () => {
 };
 
 export default BlogProcessSiteMaking;
+
+export const Head = () => (
+  <>
+    <html lang="pl" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <title>Jak Przebiega Proces Tworzenia Strony Internetowej? Krok po Kroku - Nowoczesna witryna</title>
+    <meta
+      name="description"
+      content="Tworzenie strony internetowej to złożony proces, który wymaga planowania, projektowania, kodowania i testowania. Każdy etap ma kluczowe znaczenie dla osiągnięcia ostatecznego sukcesu strony, która będzie zarówno funkcjonalna, jak i estetyczna. Przedstawiamy kroki, które prowadzą do stworzenia nowoczesnej strony internetowej."
+    />
+    <link rel="canonical" href="https://www.nowoczesnawitryna.pl/blog/jak-przebiega-proces-tworzenia-strony/" />
+    <link
+      rel="alternate"
+      hrefLang="pl"
+      href="https://www.nowoczesnawitryna.pl/blog/jak-przebiega-proces-tworzenia-strony/"
+    />
+    <link
+      rel="alternate"
+      hrefLang="en"
+      href="https://www.nowoczesnawitryna.com/blog/how-the-website-creation-process-works/"
+    />
+    <meta property="og:locale" content="pl" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Jak Przebiega Proces Tworzenia Strony Internetowej? Krok po Kroku - Nowoczesna witryna"
+    />
+    <meta
+      property="og:description"
+      content="Tworzenie strony internetowej to złożony proces, który wymaga planowania, projektowania, kodowania i testowania. Każdy etap ma kluczowe znaczenie dla osiągnięcia ostatecznego sukcesu strony, która będzie zarówno funkcjonalna, jak i estetyczna."
+    />
+    <meta property="og:url" content="https://www.nowoczesnawitryna.pl/blog/jak-przebiega-proces-tworzenia-strony/" />
+    <meta property="og:site_name" content="Nowoczesna witryna" />
+    <link rel="shortlink" href="https://www.nowoczesnawitryna.pl/blog/jak-przebiega-proces-tworzenia-strony/" />
+  </>
+);

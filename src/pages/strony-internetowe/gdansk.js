@@ -3,10 +3,6 @@ import '../../styles/global.scss';
 import '../../styles/normalize.scss';
 import '../../styles/typography.scss';
 import '../../styles/settings.scss';
-import RootLayout from '../../components/RootLayout/RootLayout';
-import Headers from '../../components/Headers/Headers';
-import Footer from '../../components/Footer/Footer';
-import ScroolUpButton from '../../components/ScroolUpButton/ScroolUpButton';
 import {
   about_me_gdansk,
   gdansk_info_txt,
@@ -15,13 +11,16 @@ import {
   gdansk_websiteFunctions,
   portfolioTitle,
 } from '../../consts/landingPage';
-import LP_MyServices from '../../components/LandingPages/LP_MyServices/LP_MyServices';
-import LP_Portfolio from '../../components/LandingPages/LP_Portfolio/LP_Portfolio';
-import LP_Action from '../../components/LandingPages/LP_Action/LP_Action';
-import LP_SiteInfo from '../../components/LandingPages/LP_SiteInfo/LP_SiteInfo';
-import LP_AboutMe from '../../components/LandingPages/LP_AboutMe/LP_AboutMe';
-import LP_WebsiteFunctions from '../../components/LandingPages/LP_WebsiteFunctions/LP_WebsiteFunctions';
-import LP_ProcessSteps from '../../components/LandingPages/LP_ProcessSteps/LP_ProcessSteps';
+import Headers from '../../components/Header/Headers/Headers';
+import ScroolUpButton from '../../components/Ui/ScroolUpButton/ScroolUpButton';
+import Footer from '../../components/Footer/Footer';
+import LPSiteInfo from '../../components/Sections/LandingPages/LPSiteInfo/LPSiteInfo';
+import LPMyServices from '../../components/Sections/LandingPages/LPMyServices/LPMyServices';
+import LPAboutMe from '../../components/Sections/LandingPages/LPAboutMe/LPAboutMe';
+import LPWebsiteFunctions from '../../components/Sections/LandingPages/LPWebsiteFunctions/LPWebsiteFunctions';
+import LPProcessSteps from '../../components/Sections/LandingPages/LPProcessSteps/LPProcessSteps';
+import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPortfolio';
+import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
 const gdansk = () => {
   const title_top = 'Kreatywne i funkcjonalne';
@@ -30,14 +29,8 @@ const gdansk = () => {
   const subtitle =
     'Tworzę strony internetowe, które pomagają firmom z Gdańska budować rozpoznawalność i przyciągać klientów w dynamicznie zmieniającym się środowisku online.';
 
-  const siteTitle = 'Tworzenie stron internetowych Gdańsk - Nowoczesna Witryna';
-  const siteDescription =
-    'Realizuję nowoczesne strony internetowe dla firm z Gdańska, łącząc estetykę z funkcjonalnością. Moje projekty wspierają rozwój lokalnych biznesów, zwiększając widoczność w sieci dzięki optymalizacji SEO. Skontaktuj się, aby stworzyć stronę, która wyróżni Twoją firmę i przyciągnie nowych klientów.';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/strony-internetowe/gdansk/';
-
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <Headers
         title_top={title_top}
         title_middle={title_middle}
@@ -45,7 +38,7 @@ const gdansk = () => {
         subtitle={subtitle}
         variant={'landing_page'}
       />
-      <LP_SiteInfo
+      <LPSiteInfo
         title_first={gdansk_info_txt.title_first}
         description_first={gdansk_info_txt.description_first}
         title_second={gdansk_info_txt.title_second}
@@ -54,7 +47,7 @@ const gdansk = () => {
         description_third={gdansk_info_txt.description_third}
         banner_description={gdansk_info_txt.banner_description}
       />
-      <LP_MyServices
+      <LPMyServices
         sectionTitle={gdansk_myService.sectionTitle}
         sectionTitleColored={gdansk_myService.sectionTitleColored}
         title_HTML={gdansk_myService.title_html}
@@ -70,8 +63,8 @@ const gdansk = () => {
         title_logo={gdansk_myService.title_logo}
         description_logo={gdansk_myService.description_logo}
       />
-      <LP_AboutMe description={about_me_gdansk.description} />
-      <LP_WebsiteFunctions
+      <LPAboutMe description={about_me_gdansk.description} />
+      <LPWebsiteFunctions
         sectionTitle={gdansk_websiteFunctions.sectionTitle}
         sectionTitleColored={gdansk_websiteFunctions.sectionTitleColored}
         sectionSubtitle={gdansk_websiteFunctions.sectionSubtitle}
@@ -93,9 +86,9 @@ const gdansk = () => {
         itemDescription8={gdansk_websiteFunctions.items[7].description}
       />
 
-      <LP_Action />
+      <LPAction />
 
-      <LP_ProcessSteps
+      <LPProcessSteps
         sectionTitle={gdansk_processSteps.sectionTitle}
         sectionTitleColored={gdansk_processSteps.sectionTitleColored}
         step1Title={gdansk_processSteps.steps[0].title}
@@ -112,7 +105,7 @@ const gdansk = () => {
         step6Description={gdansk_processSteps.steps[5].description}
       />
 
-      <LP_Portfolio
+      <LPPortfolio
         title={portfolioTitle.gdansk.title}
         coloredText={portfolioTitle.gdansk.coloredText}
         subtitle={portfolioTitle.gdansk.subtitle}
@@ -125,3 +118,27 @@ const gdansk = () => {
 };
 
 export default gdansk;
+
+export const Head = () => (
+  <>
+    <html lang="pl" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <title>Tworzenie stron internetowych Gdańsk - Nowoczesna Witryna</title>
+    <meta
+      name="description"
+      content="Realizuję nowoczesne strony internetowe dla firm z Gdańska, łącząc estetykę z funkcjonalnością. Moje projekty wspierają rozwój lokalnych biznesów, zwiększając widoczność w sieci dzięki optymalizacji SEO. Skontaktuj się, aby stworzyć stronę, która wyróżni Twoją firmę i przyciągnie nowych klientów."
+    />
+    <link rel="canonical" href="https://www.nowoczesnawitryna.pl/strony-internetowe/gdansk/" />
+    <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/strony-internetowe/gdansk/" />
+    <meta property="og:locale" content="pl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tworzenie stron internetowych Gdańsk - Nowoczesna Witryna" />
+    <meta
+      property="og:description"
+      content="Realizuję nowoczesne strony internetowe dla firm z Gdańska, łącząc estetykę z funkcjonalnością. Moje projekty wspierają rozwój lokalnych biznesów, zwiększając widoczność w sieci dzięki optymalizacji SEO. Skontaktuj się, aby stworzyć stronę, która wyróżni Twoją firmę i przyciągnie nowych klientów."
+    />
+    <meta property="og:url" content="https://www.nowoczesnawitryna.pl/strony-internetowe/gdansk/" />
+    <meta property="og:site_name" content="Nowoczesna witryna" />
+    <link rel="shortlink" href="https://www.nowoczesnawitryna.pl/strony-internetowe/gdansk/" />
+  </>
+);

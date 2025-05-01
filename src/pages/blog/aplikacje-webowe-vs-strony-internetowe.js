@@ -3,24 +3,17 @@ import '../../styles/global.scss';
 import '../../styles/normalize.scss';
 import '../../styles/typography.scss';
 import '../../styles/settings.scss';
-import RootLayout from '../../components/RootLayout/RootLayout';
-import Headers from '../../components/Headers/Headers';
+import Headers from '../../components/Header/Headers/Headers';
+import ScroolUpButton from '../../components/Ui/ScroolUpButton/ScroolUpButton';
 import Footer from '../../components/Footer/Footer';
-import ScroolUpButton from '../../components/ScroolUpButton/ScroolUpButton';
-import BlogArticleWebAppsVsWebsites from '../../components/BlogArticles/BlogArticleWebAppsVsWebsites ';
+import BlogArticleWebAppsVsWebsites from '../../components/Sections/Blog/BlogArticles/BlogArticleWebAppsVsWebsites';
 
 const BlogWebAppVsWebSite = () => {
   const title_top = 'Aplikacje Webowe vs.';
   const title_middle = 'Strony Internetowe';
-  const siteTitle = 'Aplikacje Webowe vs. Strony Internetowe – Kiedy Wybrać Aplikację? - Nowoczesna witryna';
-  const siteDescription =
-    'Wybór między aplikacją webową a stroną internetową zależy od potrzeb firmy i oczekiwań użytkowników. Chociaż obie opcje działają w przeglądarce, różnią się funkcjonalnością, skalowalnością i zakresem zastosowań. W tym artykule przyjrzymy się kluczowym różnicom między aplikacjami webowymi a stronami internetowymi oraz sytuacjom, w których warto wybrać aplikację webową.';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/blog/aplikacje-webowe-vs-strony-internetowe/';
-  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/blog/web-applications-vs-websites/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <Headers title_top={title_top} title_middle={title_middle} active="blog" />
       <ScroolUpButton />
       <BlogArticleWebAppsVsWebsites />
@@ -30,3 +23,32 @@ const BlogWebAppVsWebSite = () => {
 };
 
 export default BlogWebAppVsWebSite;
+
+export const Head = () => (
+  <>
+    <html lang="pl" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <title>Aplikacje Webowe vs. Strony Internetowe – Kiedy Wybrać Aplikację? - Nowoczesna witryna</title>
+    <meta
+      name="description"
+      content="Wybór między aplikacją webową a stroną internetową zależy od potrzeb firmy i oczekiwań użytkowników. Chociaż obie opcje działają w przeglądarce, różnią się funkcjonalnością, skalowalnością i zakresem zastosowań. W tym artykule przyjrzymy się kluczowym różnicom między aplikacjami webowymi a stronami internetowymi oraz sytuacjom, w których warto wybrać aplikację webową."
+    />
+    <link rel="canonical" href="https://www.nowoczesnawitryna.pl/blog/aplikacje-webowe-vs-strony-internetowe/" />
+    <link
+      rel="alternate"
+      hrefLang="pl"
+      href="https://www.nowoczesnawitryna.pl/blog/aplikacje-webowe-vs-strony-internetowe/"
+    />
+    <link rel="alternate" hrefLang="en" href="https://www.nowoczesnawitryna.com/blog/web-applications-vs-websites/" />
+    <meta property="og:locale" content="pl" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Aplikacje Webowe vs. Strony Internetowe – Kiedy Wybrać Aplikację?" />
+    <meta
+      property="og:description"
+      content="W tym artykule przyjrzymy się kluczowym różnicom między aplikacjami webowymi a stronami internetowymi oraz sytuacjom, w których warto wybrać aplikację webową."
+    />
+    <meta property="og:url" content="https://www.nowoczesnawitryna.pl/blog/aplikacje-webowe-vs-strony-internetowe/" />
+    <meta property="og:site_name" content="Nowoczesna witryna" />
+    <link rel="shortlink" href="https://www.nowoczesnawitryna.pl/blog/aplikacje-webowe-vs-strony-internetowe/" />
+  </>
+);

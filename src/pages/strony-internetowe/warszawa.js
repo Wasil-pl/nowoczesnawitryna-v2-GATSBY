@@ -3,10 +3,6 @@ import '../../styles/global.scss';
 import '../../styles/normalize.scss';
 import '../../styles/typography.scss';
 import '../../styles/settings.scss';
-import RootLayout from '../../components/RootLayout/RootLayout';
-import Headers from '../../components/Headers/Headers';
-import Footer from '../../components/Footer/Footer';
-import ScroolUpButton from '../../components/ScroolUpButton/ScroolUpButton';
 import {
   warszawa_info_txt,
   warszawa_myService,
@@ -15,13 +11,16 @@ import {
   warszawa_websiteFunctions,
   warszawa_processSteps,
 } from '../../consts/landingPage';
-import LP_MyServices from '../../components/LandingPages/LP_MyServices/LP_MyServices';
-import LP_Portfolio from '../../components/LandingPages/LP_Portfolio/LP_Portfolio';
-import LP_Action from '../../components/LandingPages/LP_Action/LP_Action';
-import LP_SiteInfo from '../../components/LandingPages/LP_SiteInfo/LP_SiteInfo';
-import LP_AboutMe from '../../components/LandingPages/LP_AboutMe/LP_AboutMe';
-import LP_WebsiteFunctions from '../../components/LandingPages/LP_WebsiteFunctions/LP_WebsiteFunctions';
-import LP_ProcessSteps from '../../components/LandingPages/LP_ProcessSteps/LP_ProcessSteps';
+import Headers from '../../components/Header/Headers/Headers';
+import ScroolUpButton from '../../components/Ui/ScroolUpButton/ScroolUpButton';
+import Footer from '../../components/Footer/Footer';
+import LPSiteInfo from '../../components/Sections/LandingPages/LPSiteInfo/LPSiteInfo';
+import LPMyServices from '../../components/Sections/LandingPages/LPMyServices/LPMyServices';
+import LPAboutMe from '../../components/Sections/LandingPages/LPAboutMe/LPAboutMe';
+import LPWebsiteFunctions from '../../components/Sections/LandingPages/LPWebsiteFunctions/LPWebsiteFunctions';
+import LPProcessSteps from '../../components/Sections/LandingPages/LPProcessSteps/LPProcessSteps';
+import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPortfolio';
+import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
 const warszawa = () => {
   const title_top = 'Profesjonalne i nowoczesne';
@@ -30,14 +29,8 @@ const warszawa = () => {
   const subtitle =
     'Tworzę strony internetowe, które łączą innowacyjny design z zaawansowaną funkcjonalnością, pomagając firmom z Warszawy skutecznie budować swoją obecność w internecie.';
 
-  const siteTitle = 'Strony internetowe Warszawa - Nowoczesna Witryna';
-  const siteDescription =
-    'Oferuję kompleksowe usługi tworzenia stron internetowych w Warszawie. Moje projekty wyróżniają się nowoczesnym wyglądem, łatwością obsługi i optymalizacją SEO, wspierając rozwój Twojej firmy online. Skontaktuj się ze mną, aby stworzyć stronę, która przyciągnie uwagę i zwiększy widoczność w internecie.';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/strony-internetowe/warszawa/';
-
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <Headers
         title_top={title_top}
         title_middle={title_middle}
@@ -45,7 +38,7 @@ const warszawa = () => {
         subtitle={subtitle}
         variant={'landing_page'}
       />
-      <LP_SiteInfo
+      <LPSiteInfo
         title_first={warszawa_info_txt.title_first}
         description_first={warszawa_info_txt.description_first}
         title_second={warszawa_info_txt.title_second}
@@ -54,7 +47,7 @@ const warszawa = () => {
         description_third={warszawa_info_txt.description_third}
         banner_description={warszawa_info_txt.banner_description}
       />
-      <LP_MyServices
+      <LPMyServices
         sectionTitle={warszawa_myService.sectionTitle}
         sectionTitleColored={warszawa_myService.sectionTitleColored}
         title_HTML={warszawa_myService.title_html}
@@ -70,8 +63,8 @@ const warszawa = () => {
         title_logo={warszawa_myService.title_logo}
         description_logo={warszawa_myService.description_logo}
       />
-      <LP_AboutMe description={about_me_warszawa.description} />
-      <LP_WebsiteFunctions
+      <LPAboutMe description={about_me_warszawa.description} />
+      <LPWebsiteFunctions
         sectionTitle={warszawa_websiteFunctions.sectionTitle}
         sectionTitleColored={warszawa_websiteFunctions.sectionTitleColored}
         sectionSubtitle={warszawa_websiteFunctions.sectionSubtitle}
@@ -93,9 +86,9 @@ const warszawa = () => {
         itemDescription8={warszawa_websiteFunctions.items[7].description}
       />
 
-      <LP_Action />
+      <LPAction />
 
-      <LP_ProcessSteps
+      <LPProcessSteps
         sectionTitle={warszawa_processSteps.sectionTitle}
         sectionTitleColored={warszawa_processSteps.sectionTitleColored}
         step1Title={warszawa_processSteps.steps[0].title}
@@ -112,7 +105,7 @@ const warszawa = () => {
         step6Description={warszawa_processSteps.steps[5].description}
       />
 
-      <LP_Portfolio
+      <LPPortfolio
         title={portfolioTitle.warszawa.title}
         coloredText={portfolioTitle.warszawa.coloredText}
         subtitle={portfolioTitle.warszawa.subtitle}
@@ -125,3 +118,27 @@ const warszawa = () => {
 };
 
 export default warszawa;
+
+export const Head = () => (
+  <>
+    <html lang="pl" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <title>Strony internetowe Warszawa - Nowoczesna Witryna</title>
+    <meta
+      name="description"
+      content="Oferuję kompleksowe usługi tworzenia stron internetowych w Warszawie. Moje projekty wyróżniają się nowoczesnym wyglądem, łatwością obsługi i optymalizacją SEO, wspierając rozwój Twojej firmy online. Skontaktuj się ze mną, aby stworzyć stronę, która przyciągnie uwagę i zwiększy widoczność w internecie."
+    />
+    <link rel="canonical" href="https://www.nowoczesnawitryna.pl/strony-internetowe/warszawa/" />
+    <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/strony-internetowe/warszawa/" />
+    <meta property="og:locale" content="pl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Strony internetowe Warszawa - Nowoczesna Witryna" />
+    <meta
+      property="og:description"
+      content="Oferuję kompleksowe usługi tworzenia stron internetowych w Warszawie. Moje projekty wyróżniają się nowoczesnym wyglądem, łatwością obsługi i optymalizacją SEO, wspierając rozwój Twojej firmy online. Skontaktuj się ze mną, aby stworzyć stronę, która przyciągnie uwagę i zwiększy widoczność w internecie."
+    />
+    <meta property="og:url" content="https://www.nowoczesnawitryna.pl/strony-internetowe/warszawa/" />
+    <meta property="og:site_name" content="Nowoczesna witryna" />
+    <link rel="shortlink" href="https://www.nowoczesnawitryna.pl/strony-internetowe/warszawa/" />
+  </>
+);

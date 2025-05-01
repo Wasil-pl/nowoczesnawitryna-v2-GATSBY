@@ -1,0 +1,115 @@
+@use '../../../styles/settings.scss' as settings;
+
+.scroll_to_price_button {
+  position: fixed;
+  bottom: 85px;
+  right: 15px;
+  border: 0;
+  background-color: unset;
+  z-index: 1000;
+
+  svg {
+    width: 50px;
+    height: 50px;
+    fill: settings.$color-primary;
+    border: 1px solid settings.$color-background-dark;
+    border-radius: 50%;
+    background-color: settings.$color-background-dark;
+    transition: settings.$transition_0_3;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.scroll_to_price_button_active {
+  &::after {
+    content: 'Przejdź do ceny';
+    position: absolute;
+    word-wrap: break-word;
+    top: 65px;
+    right: -5px;
+    background-color: settings.$color-background-dark;
+    color: settings.$color-text-light;
+    padding: 7px 13px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    left: -5px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 57px;
+    right: 19px;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top-color: settings.$color-background-dark;
+    transform: rotate(45deg);
+  }
+}
+
+.scroll_to_price_button_left:hover {
+  &::after {
+    content: 'Przejdź do ceny';
+    position: absolute;
+    top: 0px;
+    background-color: settings.$color-background-dark;
+    color: settings.$color-text-light;
+    padding: 7px 13px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    left: -120px;
+    white-space: nowrap;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 63px;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-top-color: settings.$color-background-dark;
+    transform: rotate(45deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll_to_price_button {
+    bottom: 60px;
+    right: 10px;
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .scroll_to_price_button_active {
+    &::after {
+      top: 53px;
+      right: 5px;
+      left: -35px;
+    }
+
+    &::before {
+      top: 46px;
+      border: 7px solid transparent;
+      border-top-color: settings.$color-background-dark;
+    }
+  }
+
+  .scroll_to_price_button_left:hover {
+    &::after {
+      content: none;
+    }
+
+    &::before {
+      content: none;
+    }
+  }
+}

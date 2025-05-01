@@ -3,39 +3,56 @@ import '../styles/global.scss';
 import '../styles/normalize.scss';
 import '../styles/typography.scss';
 import '../styles/settings.scss';
-import Headers from '../components/Headers/Headers';
-import SiteInfoServices from '../components/SiteInfoServices/SiteInfoServices';
+import Headers from '../components/Header/Headers/Headers';
 import Footer from '../components/Footer/Footer';
-import RootLayout from '../components/RootLayout/RootLayout';
-import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
+import ScroolUpButton from '../components/Ui/ScroolUpButton/ScroolUpButton';
 import { wycena_txt } from '../consts/texts';
-import { OrderSiteForm } from '../components/MultiStepForm/OrderSiteForm';
+import { MultiStepForm } from '../components/Sections/Form/MultiStepForm/MultiStepForm';
+import ServiceHighlights from '../components/Sections/Shared/ServiceHighlights/ServiceHighlights';
 
 const FormularzWyceny = () => {
   const title_top = 'Szybka Wycena';
   const title_middle = 'Online';
   const subtitle = 'Kilka pytań i już jestem gotowy na przygotowanie szybkiej wyceny Twojego projektu!';
-  const siteTitle = 'Formularz Szybkiej Wyceny – Nowoczesna Witryna';
-  const siteDescription =
-    'Zamów szybką wycenę swojego projektu online. Wypełnij formularz, a ja przygotuję dla Ciebie ofertę dostosowaną do Twoich potrzeb.';
-
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/';
 
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} active="formularz-wyceny" />
       <ScroolUpButton />
-      <SiteInfoServices
+      <ServiceHighlights
         title_first_column={wycena_txt.title_first_column}
         descryption_first_column={wycena_txt.descryption_first_column}
         variant="one_column"
         isHtml
       />
-      <OrderSiteForm />
+      <MultiStepForm />
       <Footer />
     </>
   );
 };
 
 export default FormularzWyceny;
+
+export const Head = () => (
+  <>
+    <html lang="pl" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <title>Formularz Szybkiej Wyceny – Nowoczesna Witryna</title>
+    <meta
+      name="description"
+      content="Zamów szybką wycenę swojego projektu online. Wypełnij formularz, a ja przygotuję dla Ciebie ofertę dostosowaną do Twoich potrzeb."
+    />
+    <link rel="canonical" href="https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/" />
+    <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/" />
+    <meta property="og:locale" content="pl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Formularz Szybkiej Wyceny – Nowoczesna Witryna" />
+    <meta
+      property="og:description"
+      content="Zamów szybką wycenę swojego projektu online. Wypełnij formularz, a ja przygotuję dla Ciebie ofertę dostosowaną do Twoich potrzeb."
+    />
+    <meta property="og:url" content="https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/" />
+    <meta property="og:site_name" content="Nowoczesna witryna" />
+    <link rel="shortlink" href="https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/" />
+  </>
+);

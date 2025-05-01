@@ -1,0 +1,10 @@
+@use '../../../styles/settings.scss' as settings;
+
+.offcanvas-body .navbar-nav a {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.offcanvas-body .navbar-nav a:hover {
+  color: settings.$color-text-primary;
+}

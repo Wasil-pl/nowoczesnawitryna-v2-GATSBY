@@ -3,10 +3,6 @@ import '../../styles/global.scss';
 import '../../styles/normalize.scss';
 import '../../styles/typography.scss';
 import '../../styles/settings.scss';
-import RootLayout from '../../components/RootLayout/RootLayout';
-import Headers from '../../components/Headers/Headers';
-import Footer from '../../components/Footer/Footer';
-import ScroolUpButton from '../../components/ScroolUpButton/ScroolUpButton';
 import {
   poznan_info_txt,
   poznan_myService,
@@ -15,13 +11,16 @@ import {
   poznan_websiteFunctions,
   poznan_processSteps,
 } from '../../consts/landingPage';
-import LP_MyServices from '../../components/LandingPages/LP_MyServices/LP_MyServices';
-import LP_Portfolio from '../../components/LandingPages/LP_Portfolio/LP_Portfolio';
-import LP_Action from '../../components/LandingPages/LP_Action/LP_Action';
-import LP_SiteInfo from '../../components/LandingPages/LP_SiteInfo/LP_SiteInfo';
-import LP_AboutMe from '../../components/LandingPages/LP_AboutMe/LP_AboutMe';
-import LP_WebsiteFunctions from '../../components/LandingPages/LP_WebsiteFunctions/LP_WebsiteFunctions';
-import LP_ProcessSteps from '../../components/LandingPages/LP_ProcessSteps/LP_ProcessSteps';
+import Headers from '../../components/Header/Headers/Headers';
+import ScroolUpButton from '../../components/Ui/ScroolUpButton/ScroolUpButton';
+import Footer from '../../components/Footer/Footer';
+import LPSiteInfo from '../../components/Sections/LandingPages/LPSiteInfo/LPSiteInfo';
+import LPMyServices from '../../components/Sections/LandingPages/LPMyServices/LPMyServices';
+import LPAboutMe from '../../components/Sections/LandingPages/LPAboutMe/LPAboutMe';
+import LPWebsiteFunctions from '../../components/Sections/LandingPages/LPWebsiteFunctions/LPWebsiteFunctions';
+import LPProcessSteps from '../../components/Sections/LandingPages/LPProcessSteps/LPProcessSteps';
+import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPortfolio';
+import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
 const poznan = () => {
   const title_top = 'Nowoczesne i efektywne';
@@ -30,14 +29,8 @@ const poznan = () => {
   const subtitle =
     'Specjalizuję się w tworzeniu stron internetowych, które wspierają firmy z Poznania w budowaniu profesjonalnego wizerunku i pozyskiwaniu klientów online.';
 
-  const siteTitle = 'Tworzenie stron internetowych Poznań - Nowoczesna Witryna';
-  const siteDescription =
-    'Oferuję profesjonalne usługi tworzenia stron internetowych w Poznaniu. Moje projekty wyróżniają się estetyką, funkcjonalnością i optymalizacją SEO, co pozwala Twojej firmie skutecznie zaistnieć w internecie. Skontaktuj się, aby stworzyć stronę, która wzmocni Twoją obecność online i przyciągnie nowych klientów.';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/strony-internetowe/poznan/';
-
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <Headers
         title_top={title_top}
         title_middle={title_middle}
@@ -45,7 +38,7 @@ const poznan = () => {
         subtitle={subtitle}
         variant={'landing_page'}
       />
-      <LP_SiteInfo
+      <LPSiteInfo
         title_first={poznan_info_txt.title_first}
         description_first={poznan_info_txt.description_first}
         title_second={poznan_info_txt.title_second}
@@ -54,7 +47,7 @@ const poznan = () => {
         description_third={poznan_info_txt.description_third}
         banner_description={poznan_info_txt.banner_description}
       />
-      <LP_MyServices
+      <LPMyServices
         sectionTitle={poznan_myService.sectionTitle}
         sectionTitleColored={poznan_myService.sectionTitleColored}
         title_HTML={poznan_myService.title_html}
@@ -70,8 +63,8 @@ const poznan = () => {
         title_logo={poznan_myService.title_logo}
         description_logo={poznan_myService.description_logo}
       />
-      <LP_AboutMe description={about_me_poznan.description} />
-      <LP_WebsiteFunctions
+      <LPAboutMe description={about_me_poznan.description} />
+      <LPWebsiteFunctions
         sectionTitle={poznan_websiteFunctions.sectionTitle}
         sectionTitleColored={poznan_websiteFunctions.sectionTitleColored}
         sectionSubtitle={poznan_websiteFunctions.sectionSubtitle}
@@ -92,9 +85,9 @@ const poznan = () => {
         itemTitle8={poznan_websiteFunctions.items[7].title}
         itemDescription8={poznan_websiteFunctions.items[7].description}
       />
-      <LP_Action />
+      <LPAction />
 
-      <LP_ProcessSteps
+      <LPProcessSteps
         sectionTitle={poznan_processSteps.sectionTitle}
         sectionTitleColored={poznan_processSteps.sectionTitleColored}
         step1Title={poznan_processSteps.steps[0].title}
@@ -111,7 +104,7 @@ const poznan = () => {
         step6Description={poznan_processSteps.steps[5].description}
       />
 
-      <LP_Portfolio
+      <LPPortfolio
         title={portfolioTitle.poznan.title}
         coloredText={portfolioTitle.poznan.coloredText}
         subtitle={portfolioTitle.poznan.subtitle}
@@ -124,3 +117,27 @@ const poznan = () => {
 };
 
 export default poznan;
+
+export const Head = () => (
+  <>
+    <html lang="pl" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <title>Tworzenie stron internetowych Poznań - Nowoczesna Witryna</title>
+    <meta
+      name="description"
+      content="Oferuję profesjonalne usługi tworzenia stron internetowych w Poznaniu. Moje projekty wyróżniają się estetyką, funkcjonalnością i optymalizacją SEO, co pozwala Twojej firmie skutecznie zaistnieć w internecie. Skontaktuj się, aby stworzyć stronę, która wzmocni Twoją obecność online i przyciągnie nowych klientów."
+    />
+    <link rel="canonical" href="https://www.nowoczesnawitryna.pl/strony-internetowe/poznan/" />
+    <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/strony-internetowe/poznan/" />
+    <meta property="og:locale" content="pl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tworzenie stron internetowych Poznań - Nowoczesna Witryna" />
+    <meta
+      property="og:description"
+      content="Oferuję profesjonalne usługi tworzenia stron internetowych w Poznaniu. Moje projekty wyróżniają się estetyką, funkcjonalnością i optymalizacją SEO, co pozwala Twojej firmie skutecznie zaistnieć w internecie. Skontaktuj się, aby stworzyć stronę, która wzmocni Twoją obecność online i przyciągnie nowych klientów."
+    />
+    <meta property="og:url" content="https://www.nowoczesnawitryna.pl/strony-internetowe/poznan/" />
+    <meta property="og:site_name" content="Nowoczesna witryna" />
+    <link rel="shortlink" href="https://www.nowoczesnawitryna.pl/strony-internetowe/poznan/" />
+  </>
+);

@@ -2,41 +2,33 @@ import React from 'react';
 import '../styles/bootstrap.scss';
 import '../styles/global.scss';
 import '../styles/normalize.scss';
-import HeaderHome from '../components/Headers/HeaderHome';
-import RootLayout from '../components/RootLayout/RootLayout';
-import SiteInfo from '../components/SiteInfo/SiteInfo';
-import MyServices from '../components/MyServices/MyServices';
-import AboutMe from '../components/AboutMe/AboutMe';
-import MyStack from '../components/MyStack/MyStack';
-import Portfolio from '../components/Portfolio/Portfolio';
-import Testiniomals from '../components/Testiniomals/Testiniomals';
+import HeaderHome from '../components/Header/Headers/HeaderHome';
+import ScroolUpButton from '../components/Ui/ScroolUpButton/ScroolUpButton';
+import WhyChooseMe from '../components/Sections/HomePage/WhyChooseMe/WhyChooseMe';
+import MyServices from '../components/Sections/HomePage/MyServiceComponents/MyServices/MyServices';
+import AboutMe from '../components/Sections/HomePage/AboutMe/AboutMe';
+import MyStack from '../components/Sections/HomePage/MyStack/MyStack';
+import WebsiteFeatures from '../components/Sections/LandingPages/WebsiteFeatures/WebsiteFeatures';
+import CallToActionSecond from '../components/Sections/Shared/CallToAction/CallToActionSecond';
+import WebSiteProcessSteps from '../components/Sections/HomePage/WebSiteProcessSteps/WebSiteProcessSteps';
+import Portfolio from '../components/Sections/Shared/Portfolio/Portfolio';
+import Testiniomals from '../components/Sections/HomePage/Testiniomals/Testiniomals';
+import RescentArticles from '../components/Sections/HomePage/RescentArticles/RescentArticles';
+import Faq from '../components/Sections/Shared/Faq/Faq';
 import Footer from '../components/Footer/Footer';
-import ScroolUpButton from '../components/ScroolUpButton/ScroolUpButton';
-import ProcessSteps from '../components/ProcessSteps/ProcessSteps';
-import RescentArticles from '../components/RescentArticles/RescentArticles';
-import Faq from '../components/Faq/Faq';
-import WebsiteFunctions from '../components/WebsiteFunctions/WebsiteFunctions';
-import Action2 from '../components/Action/Action2';
 
 const IndexPage = () => {
-  const siteTitle = 'Nowoczesne Strony Internetowe – Tworzenie Sklepów Online – Jastrzębie-Zdrój – Śląsk – Polska';
-  const siteDescription =
-    'Oferuję kompleksowe usługi tworzenia stron internetowych, sklepów online oraz aplikacji webowych, dla klientów z Jastrzębia-Zdroju, województwa śląskiego oraz całej Polski. Sprawdź moją ofertę!';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/';
-  const siteUrlOtherLang = 'https://www.nowoczesnawitryna.com/';
-
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} urlOtherLang={siteUrlOtherLang} description={siteDescription} />
       <HeaderHome active="home" />
       <ScroolUpButton />
-      <SiteInfo />
+      <WhyChooseMe />
       <MyServices />
       <AboutMe />
       <MyStack />
-      <WebsiteFunctions />
-      <Action2 />
-      <ProcessSteps />
+      <WebsiteFeatures />
+      <CallToActionSecond />
+      <WebSiteProcessSteps />
       <Portfolio />
       <Testiniomals />
       <RescentArticles />
@@ -47,3 +39,31 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export const Head = () => (
+  <>
+    <html lang="pl" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <title>Nowoczesne Strony Internetowe – Tworzenie Sklepów Online – Jastrzębie-Zdrój – Śląsk – Polska</title>
+    <meta
+      name="description"
+      content="Oferuję kompleksowe usługi tworzenia stron internetowych, sklepów online oraz aplikacji webowych, dla klientów z Jastrzębia-Zdroju, województwa śląskiego oraz całej Polski. Sprawdź moją ofertę!"
+    />
+    <link rel="canonical" href="https://www.nowoczesnawitryna.pl/" />
+    <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/" />
+    <link rel="alternate" hrefLang="en" href="https://www.nowoczesnawitryna.com/" />
+    <meta property="og:locale" content="pl" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Nowoczesne Strony Internetowe – Tworzenie Sklepów Online – Jastrzębie-Zdrój – Śląsk – Polska"
+    />
+    <meta
+      property="og:description"
+      content="Oferuję kompleksowe usługi tworzenia stron internetowych, sklepów online oraz aplikacji webowych, dla klientów z Jastrzębia-Zdroju, województwa śląskiego oraz całej Polski. Sprawdź moją ofertę!"
+    />
+    <meta property="og:url" content="https://www.nowoczesnawitryna.pl/" />
+    <meta property="og:site_name" content="Nowoczesna witryna" />
+    <link rel="shortlink" href="https://www.nowoczesnawitryna.pl/" />
+  </>
+);

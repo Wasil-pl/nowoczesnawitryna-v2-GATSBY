@@ -3,10 +3,6 @@ import '../../styles/global.scss';
 import '../../styles/normalize.scss';
 import '../../styles/typography.scss';
 import '../../styles/settings.scss';
-import RootLayout from '../../components/RootLayout/RootLayout';
-import Headers from '../../components/Headers/Headers';
-import Footer from '../../components/Footer/Footer';
-import ScroolUpButton from '../../components/ScroolUpButton/ScroolUpButton';
 import {
   wroclaw_info_txt,
   wroclaw_myService,
@@ -15,13 +11,16 @@ import {
   wroclaw_websiteFunctions,
   wroclaw_processSteps,
 } from '../../consts/landingPage';
-import LP_MyServices from '../../components/LandingPages/LP_MyServices/LP_MyServices';
-import LP_Portfolio from '../../components/LandingPages/LP_Portfolio/LP_Portfolio';
-import LP_Action from '../../components/LandingPages/LP_Action/LP_Action';
-import LP_SiteInfo from '../../components/LandingPages/LP_SiteInfo/LP_SiteInfo';
-import LP_AboutMe from '../../components/LandingPages/LP_AboutMe/LP_AboutMe';
-import LP_WebsiteFunctions from '../../components/LandingPages/LP_WebsiteFunctions/LP_WebsiteFunctions';
-import LP_ProcessSteps from '../../components/LandingPages/LP_ProcessSteps/LP_ProcessSteps';
+import Headers from '../../components/Header/Headers/Headers';
+import ScroolUpButton from '../../components/Ui/ScroolUpButton/ScroolUpButton';
+import Footer from '../../components/Footer/Footer';
+import LPSiteInfo from '../../components/Sections/LandingPages/LPSiteInfo/LPSiteInfo';
+import LPMyServices from '../../components/Sections/LandingPages/LPMyServices/LPMyServices';
+import LPAboutMe from '../../components/Sections/LandingPages/LPAboutMe/LPAboutMe';
+import LPWebsiteFunctions from '../../components/Sections/LandingPages/LPWebsiteFunctions/LPWebsiteFunctions';
+import LPProcessSteps from '../../components/Sections/LandingPages/LPProcessSteps/LPProcessSteps';
+import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPortfolio';
+import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
 const wroclaw = () => {
   const title_top = 'Innowacyjne i funkcjonalne';
@@ -30,14 +29,8 @@ const wroclaw = () => {
   const subtitle =
     'Realizuję strony internetowe, które wyróżniają się nowoczesnym designem i intuicyjną obsługą, wspierając lokalne firmy we Wrocławiu w budowaniu silnej obecności w internecie.';
 
-  const siteTitle = 'Tworzenie stron internetowych Wrocław - Nowoczesna Witryna';
-  const siteDescription =
-    'Specjalizuję się w tworzeniu stron internetowych dla firm z Wrocławia. Moje realizacje łączą nowoczesną estetykę z optymalizacją SEO i wysoką funkcjonalnością, zapewniając skuteczne wsparcie Twojej działalności online. Skontaktuj się, aby stworzyć stronę, która przyciągnie klientów i podkreśli profesjonalizm Twojej firmy.';
-  const siteUrl = 'https://www.nowoczesnawitryna.pl/strony-internetowe/wroclaw/';
-
   return (
     <>
-      <RootLayout title={siteTitle} url={siteUrl} description={siteDescription} />
       <Headers
         title_top={title_top}
         title_middle={title_middle}
@@ -45,7 +38,7 @@ const wroclaw = () => {
         subtitle={subtitle}
         variant={'landing_page'}
       />
-      <LP_SiteInfo
+      <LPSiteInfo
         title_first={wroclaw_info_txt.title_first}
         description_first={wroclaw_info_txt.description_first}
         title_second={wroclaw_info_txt.title_second}
@@ -54,7 +47,7 @@ const wroclaw = () => {
         description_third={wroclaw_info_txt.description_third}
         banner_description={wroclaw_info_txt.banner_description}
       />
-      <LP_MyServices
+      <LPMyServices
         sectionTitle={wroclaw_myService.sectionTitle}
         sectionTitleColored={wroclaw_myService.sectionTitleColored}
         title_HTML={wroclaw_myService.title_html}
@@ -70,9 +63,9 @@ const wroclaw = () => {
         title_logo={wroclaw_myService.title_logo}
         description_logo={wroclaw_myService.description_logo}
       />
-      <LP_AboutMe description={about_me_wroclaw.description} />
+      <LPAboutMe description={about_me_wroclaw.description} />
 
-      <LP_WebsiteFunctions
+      <LPWebsiteFunctions
         sectionTitle={wroclaw_websiteFunctions.sectionTitle}
         sectionTitleColored={wroclaw_websiteFunctions.sectionTitleColored}
         sectionSubtitle={wroclaw_websiteFunctions.sectionSubtitle}
@@ -93,9 +86,9 @@ const wroclaw = () => {
         itemTitle8={wroclaw_websiteFunctions.items[7].title}
         itemDescription8={wroclaw_websiteFunctions.items[7].description}
       />
-      <LP_Action />
+      <LPAction />
 
-      <LP_ProcessSteps
+      <LPProcessSteps
         sectionTitle={wroclaw_processSteps.sectionTitle}
         sectionTitleColored={wroclaw_processSteps.sectionTitleColored}
         step1Title={wroclaw_processSteps.steps[0].title}
@@ -112,7 +105,7 @@ const wroclaw = () => {
         step6Description={wroclaw_processSteps.steps[5].description}
       />
 
-      <LP_Portfolio
+      <LPPortfolio
         title={portfolioTitle.wroclaw.title}
         coloredText={portfolioTitle.wroclaw.coloredText}
         subtitle={portfolioTitle.wroclaw.subtitle}
@@ -125,3 +118,27 @@ const wroclaw = () => {
 };
 
 export default wroclaw;
+
+export const Head = () => (
+  <>
+    <html lang="pl" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <title>Tworzenie stron internetowych Wrocław - Nowoczesna Witryna</title>
+    <meta
+      name="description"
+      content="Specjalizuję się w tworzeniu stron internetowych dla firm z Wrocławia. Moje realizacje łączą nowoczesną estetykę z optymalizacją SEO i wysoką funkcjonalnością, zapewniając skuteczne wsparcie Twojej działalności online. Skontaktuj się, aby stworzyć stronę, która przyciągnie klientów i podkreśli profesjonalizm Twojej firmy."
+    />
+    <link rel="canonical" href="https://www.nowoczesnawitryna.pl/strony-internetowe/wroclaw/" />
+    <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/strony-internetowe/wroclaw/" />
+    <meta property="og:locale" content="pl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tworzenie stron internetowych Wrocław - Nowoczesna Witryna" />
+    <meta
+      property="og:description"
+      content="Specjalizuję się w tworzeniu stron internetowych dla firm z Wrocławia. Moje realizacje łączą nowoczesną estetykę z optymalizacją SEO i wysoką funkcjonalnością, zapewniając skuteczne wsparcie Twojej działalności online. Skontaktuj się, aby stworzyć stronę, która przyciągnie klientów i podkreśli profesjonalizm Twojej firmy."
+    />
+    <meta property="og:url" content="https://www.nowoczesnawitryna.pl/strony-internetowe/wroclaw/" />
+    <meta property="og:site_name" content="Nowoczesna witryna" />
+    <link rel="shortlink" href="https://www.nowoczesnawitryna.pl/strony-internetowe/wroclaw/" />
+  </>
+);

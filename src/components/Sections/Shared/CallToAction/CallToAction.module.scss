@@ -1,0 +1,137 @@
+@use '../../../../styles/settings.scss' as settings;
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: -135px;
+  background-color: settings.$color-background-primary;
+  padding: 50px;
+  position: relative;
+
+  &::before {
+    content: '';
+    background-image: url('/images/bg-overlay.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: 100% 100%;
+    top: -0px;
+    left: -0px;
+    right: -0px;
+    bottom: -0px;
+    opacity: 0.1;
+  }
+
+  .left_side {
+    flex: 50%;
+    padding-right: 20px;
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: settings.$font-weight-bold;
+      color: settings.$color-text-dark;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    h4 {
+      font-size: 1.7rem;
+      font-weight: settings.$font-weight-bold;
+      color: settings.$color-text-dark;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .right_side {
+    flex: 50%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+    position: relative;
+    transition: settings.$transition_0_3;
+    padding-left: 20px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    a {
+      text-decoration: none;
+
+      svg {
+        font-size: 7rem;
+        color: settings.$color-text-light;
+        margin-right: 1rem;
+      }
+
+      .text {
+        font-size: 1.2rem;
+        font-weight: settings.$font-weight-bold;
+        color: settings.$color-text-dark;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.bottom {
+  margin-bottom: -300px;
+}
+
+.action2 {
+  background-color: settings.$color-background-dark;
+  padding: 80px 0;
+  position: relative;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 1.7rem;
+      font-weight: settings.$font-weight-bold;
+      color: settings.$color-text-light;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: settings.$color-text-light;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .action {
+    flex-direction: column;
+    padding: 20px;
+    .left_side {
+      h3 {
+        font-size: 1rem;
+      }
+
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .right_side {
+      a {
+        svg {
+          font-size: 5rem;
+        }
+
+        .text {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

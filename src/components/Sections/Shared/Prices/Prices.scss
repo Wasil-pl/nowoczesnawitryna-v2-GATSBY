@@ -1,0 +1,9 @@
+@use '../../../../styles/settings.scss' as settings;
+
+.bi-dash {
+  color: settings.$color-text-danger;
+}
+
+.bi-check {
+  color: settings.$color-text-success;
+}
