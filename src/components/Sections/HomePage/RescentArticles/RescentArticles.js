@@ -1,6 +1,5 @@
 import React from 'react';
 import * as styles from './RescentArticles.module.scss';
-import { Container } from 'react-bootstrap';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { blog_cards_data } from '../../../../consts/blog_cards_data';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
@@ -11,7 +10,7 @@ const RescentArticles = () => {
 
   return (
     <section className={styles.rescent_articles}>
-      <Container>
+      <div className="container mx-auto px-4">
         <SectionTitle
           title="Najnowsze wpisy na "
           coloredText="blogu"
@@ -29,7 +28,7 @@ const RescentArticles = () => {
           ))}
         </div>
         <CustomButton text="Zobacz wszystkie" link="/blog/" variant="white" />
-      </Container>
+      </div>
     </section>
   );
 };

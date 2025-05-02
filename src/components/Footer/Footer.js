@@ -1,13 +1,12 @@
 import React from 'react';
 import * as styles from './Footer.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Facebook, Linkedin } from 'react-bootstrap-icons';
-import { Container } from 'react-bootstrap';
+import { FaFacebook, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <Container className={styles.container}>
+      <div className={`container mx-auto px-4 ${styles.container}`}>
         <div className={styles.wrapper}>
           <div className={styles.first_column}>
             <StaticImage
@@ -25,11 +24,11 @@ const Footer = () => {
             <p>ul. Bogoczowiec 4c</p>
             <div>
               <a href="https://www.facebook.com/profile.php?id=61556511114215" aria-label="Profil na Facebooku">
-                <Facebook />
+                <FaFacebook />
                 <span>facebook</span>
               </a>
               <a href="https://www.linkedin.com/in/dariusz-wasilewski-4041072b9/" aria-label="Profil na Linkedin">
-                <Linkedin />
+                <FaLinkedin />
                 <span>linkedin</span>
               </a>
             </div>
@@ -52,7 +51,7 @@ const Footer = () => {
         <div className={styles.copy_right}>
           <p>Copyright © 2024 Nowoczesna witryna | Powered by Dariusz Wasilewski</p>
         </div>
-      </Container>
+      </div>
     </footer>
   );
 };

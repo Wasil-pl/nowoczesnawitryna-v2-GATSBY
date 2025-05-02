@@ -7,14 +7,26 @@ import CustomButton from '../../../../Ui/CustomButton/CustomButton';
 import { useMediaQuery } from 'react-responsive';
 import CallToAction from '../../../Shared/CallToAction/CallToAction';
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/solid';
+import ParticlesBackground from '../../../../Ui/ParticlesBackground/ParticlesBackground';
+import ShapeDividersTop from '../../../../Ui/ShapeDividers/ShapeDividersTop';
+import ShapeDividersBottom from '../../../../Ui/ShapeDividers/ShapeDividersBottom';
 
 const MyServices = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 992px)' });
 
   return (
     <section className={styles.myServices}>
+      <ShapeDividersTop />
+      <ParticlesBackground id={'tsparticles_my_service'} />
+
       <div className="container mx-auto px-4">
-        <SectionTitle title="Wszystkie usługi, których" coloredText=" potrzebujesz" variant="white" />
+        <SectionTitle
+          title="Wszystkie usługi, których"
+          coloredText=" potrzebujesz"
+          backgroundText="Usługi"
+          ariaLabel="wszystkie usługi, których potrzebujesz"
+          variant="white"
+        />
 
         {!isMobile && <MyServicesThumbs />}
 
@@ -35,6 +47,8 @@ const MyServices = () => {
 
         <CallToAction />
       </div>
+
+      <ShapeDividersBottom variant="f7f7f7" />
     </section>
   );
 };

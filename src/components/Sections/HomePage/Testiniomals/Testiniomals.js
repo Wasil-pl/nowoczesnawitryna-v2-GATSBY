@@ -1,14 +1,13 @@
 import React from 'react';
 import * as styles from './Testiniomals.module.scss';
-import { Container } from 'react-bootstrap';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
-import { StarFill } from 'react-bootstrap-icons';
 import CallToAction from '../../Shared/CallToAction/CallToAction';
+import { StarIcon } from '@heroicons/react/24/solid';
 
 const Testiniomals = () => {
   return (
     <section className={styles.testiniomals}>
-      <Container>
+      <div className="container mx-auto px-4">
         <div className={styles.title}>
           <SectionTitle coloredText="Niezdecydowany?" subtitle="Zobacz co sądzą o mnie moi klienci" variant="white" />
         </div>
@@ -22,11 +21,11 @@ const Testiniomals = () => {
               itemtype="https://schema.org/Rating"
             >
               <meta itemprop="ratingValue" content="5" />
-              <StarFill />
-              <StarFill />
-              <StarFill />
-              <StarFill />
-              <StarFill />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
             </div>
             <div className={styles.testimonial_text}>
               <p itemprop="reviewBody">
@@ -45,11 +44,11 @@ const Testiniomals = () => {
               itemtype="https://schema.org/Rating"
             >
               <meta itemprop="ratingValue" content="5" />
-              <StarFill />
-              <StarFill />
-              <StarFill />
-              <StarFill />
-              <StarFill />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
             </div>
             <div className={styles.testimonial_text}>
               <p itemprop="reviewBody">
@@ -67,11 +66,11 @@ const Testiniomals = () => {
               itemtype="https://schema.org/Rating"
             >
               <meta itemprop="ratingValue" content="5" />
-              <StarFill />
-              <StarFill />
-              <StarFill />
-              <StarFill />
-              <StarFill />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
             </div>
             <div className={styles.testimonial_text}>
               <p itemprop="reviewBody">
@@ -94,7 +93,7 @@ const Testiniomals = () => {
           </div>
         </div>
         <CallToAction kontakt_2 variant={'bottom'} />
-      </Container>
+      </div>
     </section>
   );
 };

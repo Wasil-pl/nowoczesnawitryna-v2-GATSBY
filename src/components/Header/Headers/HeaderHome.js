@@ -3,6 +3,7 @@ import * as styles from './HeaderHome.module.scss';
 import Menu from '../Menu/Menu';
 import { useMediaQuery } from 'react-responsive';
 import ParticlesBackground from '../../Ui/ParticlesBackground/ParticlesBackground';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const HeaderHome = ({ active }) => {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
@@ -12,6 +13,12 @@ const HeaderHome = ({ active }) => {
       <Menu active={active} />
 
       <ParticlesBackground id={'tsparticles'} />
+
+      <div className={styles.logo}>
+        <a href="/">
+          <StaticImage src="../../../images/logo_ciemne.png" alt="logo" width={170} quality={100} />
+        </a>
+      </div>
 
       <div data-sal="fade" data-sal-delay="100" data-sal-duration="2000" className={styles.content}>
         {!isMobile && (

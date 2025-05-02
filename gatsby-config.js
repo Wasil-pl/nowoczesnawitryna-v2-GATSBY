@@ -13,6 +13,7 @@ module.exports = {
     'gatsby-plugin-image',
     `gatsby-plugin-postcss`,
     'gatsby-plugin-scroll-reveal',
+    'gatsby-plugin-react-svg',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

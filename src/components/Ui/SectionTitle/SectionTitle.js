@@ -1,7 +1,7 @@
 import React from 'react';
 import * as styles from './SectionTitle.module.scss';
 
-const SectionTitle = ({ title, coloredText, subtitle, variant = '' }) => {
+const SectionTitle = ({ title, coloredText, subtitle, backgroundText, variant = '' }) => {
   return (
     <div
       data-sal="slide-up"
@@ -15,6 +15,15 @@ const SectionTitle = ({ title, coloredText, subtitle, variant = '' }) => {
         {coloredText && <span className={`color_primary`}>{coloredText}</span>}
       </h2>
       {subtitle && <p className={styles[variant]}>{subtitle}</p>}
+      <div
+        data-sal="slide-right"
+        data-sal-delay="1000"
+        data-sal-easing="ease"
+        data-sal-duration="1000"
+        className={`${styles.background_text} ${styles[variant]}`}
+      >
+        <span>{backgroundText}</span>
+      </div>
     </div>
   );
 };

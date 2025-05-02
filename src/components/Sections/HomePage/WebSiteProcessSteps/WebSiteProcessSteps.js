@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import * as styles from './WebSiteProcessSteps.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Container } from 'react-bootstrap';
 
 const WebSiteProcessSteps = () => {
   const [activeStep, setActiveStep] = useState(-1);
@@ -28,7 +27,7 @@ const WebSiteProcessSteps = () => {
 
   return (
     <section className={styles.process_steps_container}>
-      <Container>
+      <div className="container mx-auto px-4">
         <SectionTitle title="Mój proces projektowania" coloredText=" stron internetowych" />
         <div className={styles.process_steps}>
           <div className={`${styles.step} ${styles.left} ${activeStep === 0 ? styles.active : ''}`}>
@@ -42,7 +41,7 @@ const WebSiteProcessSteps = () => {
             </div>
             <div className={styles.step_number}>
               <StaticImage
-                src="../../images/brief.png"
+                src="../../../../images/brief.png"
                 alt="ikona przedstawiająca pierwszy kontakt z klientem w celu zebrania informacji o potrzebnej stronie internetowej"
                 width={150}
               />
@@ -60,7 +59,7 @@ const WebSiteProcessSteps = () => {
             </div>
             <div className={styles.step_number_left}>
               <StaticImage
-                src="../../images/kontent.png"
+                src="../../../../images/kontent.png"
                 alt="ikona przedstawiająca zbieranie i przygotowywanie kontentu do strony internetowej"
                 width={150}
               />
@@ -77,7 +76,7 @@ const WebSiteProcessSteps = () => {
             </div>
             <div className={styles.step_number}>
               <StaticImage
-                src="../../images/projektowanie.png"
+                src="../../../../images/projektowanie.png"
                 alt="ikona przedstawiająca projektowanie strony internetowej"
                 width={150}
               />
@@ -94,7 +93,7 @@ const WebSiteProcessSteps = () => {
             </div>
             <div className={styles.step_number_left}>
               <StaticImage
-                src="../../images/tworzenie-strony.png"
+                src="../../../../images/tworzenie-strony.png"
                 alt="ikona przedstawiająca tworzenie strony internetowej"
                 width={150}
               />
@@ -111,7 +110,7 @@ const WebSiteProcessSteps = () => {
             </div>
             <div className={styles.step_number}>
               <StaticImage
-                src="../../images/testowanie.png"
+                src="../../../../images/testowanie.png"
                 alt="ikona przedstawiająca testowanie strony internetowej"
                 width={150}
               />
@@ -128,14 +127,14 @@ const WebSiteProcessSteps = () => {
             </div>
             <div className={styles.step_number_last}>
               <StaticImage
-                src="../../images/koniec.png"
+                src="../../../../images/koniec.png"
                 alt="ikona przedstawiająca wdrożenie strony internetowej"
                 width={150}
               />
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

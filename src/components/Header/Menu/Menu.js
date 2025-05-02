@@ -36,7 +36,7 @@ const Menu = ({ active }) => {
     >
       <Container>
         <Navbar.Brand href="/">
-          <StaticImage src="../../images/logo_menu.png" alt="logo" width={80} quality={100} />
+          {scrollY > 50 && <StaticImage src="../../../images/logo.png" alt="logo" width={100} quality={100} />}
         </Navbar.Brand>
 
         <div className={styles.menu_wrapper}>

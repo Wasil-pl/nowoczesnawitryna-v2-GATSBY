@@ -8,6 +8,7 @@
   background-color: settings.$color-background-primary;
   padding: 50px;
   position: relative;
+  z-index: 2;
 
   &::before {
     content: '';

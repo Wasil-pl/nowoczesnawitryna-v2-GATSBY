@@ -7,11 +7,11 @@ const AboutMe = () => {
   return (
     <section id="omnie" className={styles.about_me}>
       <div className="container mx-auto px-4">
-        <SectionTitle title="Kilka słów" coloredText=" o mnie" />
+        <SectionTitle title="Kilka słów" coloredText=" o mnie" backgroundText="O mnie" ariaLabel="Kilka słów o mnie" />
         <div className={styles.wrapper}>
           <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.first_column}>
             <StaticImage
-              src="../../images/aboutMe.webp"
+              src="../../../../images/aboutMe.webp"
               alt="Dariusz Wasilewski full-stack web developer"
               placeholder="blurred"
               width={400}
@@ -19,7 +19,7 @@ const AboutMe = () => {
             />
           </div>
           <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.second_column}>
-            <h3>Cześć</h3>
+            <h3 aria-label="Cześć!">Cześć</h3>
             <p>
               Cześć! Nazywam się Dariusz Wasilewski i jestem pasjonatem{' '}
               <em>tworzenia stron internetowych z Jastrzębia-Zdroju.</em> Moja fascynacja technologiami internetowymi

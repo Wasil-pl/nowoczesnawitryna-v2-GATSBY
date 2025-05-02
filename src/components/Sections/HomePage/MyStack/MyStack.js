@@ -1,6 +1,5 @@
 import React from 'react';
 import * as styles from './MyStack.module.scss';
-import { Card, Container } from 'react-bootstrap';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 
 const MyStack = () => {
@@ -26,7 +25,7 @@ const MyStack = () => {
 
   return (
     <section className={styles.my_stack}>
-      <Container>
+      <div className="container mx-auto px-4">
         <div className={styles.wrapper}>
           <div className={styles.wrapper_title}>
             <SectionTitle
@@ -38,13 +37,13 @@ const MyStack = () => {
           </div>
           <div className={styles.stack}>
             {myStack.map((item, index) => (
-              <Card key={index} className={styles.card}>
-                <Card.Title className={styles.card_title}>{item}</Card.Title>
-              </Card>
+              <div key={index} className={styles.card}>
+                <h3>{item}</h3>
+              </div>
             ))}
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

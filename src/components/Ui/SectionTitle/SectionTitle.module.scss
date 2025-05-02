@@ -2,7 +2,37 @@
 
 .section_title {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
+  position: relative;
+  z-index: 1;
+
+  .background_text {
+    position: absolute;
+    top: -200px;
+    left: -100px;
+    width: 100%;
+    height: 100%;
+    font-size: 13rem;
+    font-family: settings.$font-header;
+    color: settings.$color-text-primary;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    z-index: -1;
+    font-weight: settings.$font-weight-black;
+
+    span {
+      opacity: 0.1;
+    }
+
+    &.white {
+      color: settings.$color-text-light;
+
+      span {
+        opacity: 0.03;
+      }
+    }
+  }
 
   h2 {
     font-size: 2.5rem;
@@ -10,6 +40,8 @@
     color: settings.$color-text-dark;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
   }
 
   .color_primary {

@@ -29,7 +29,7 @@ const MyServicesAccordion = () => {
           aria-expanded={openIndex === '0'}
         >
           <h3>Strony internetowe HTML</h3>
-          {openIndex === '0' ? <ChevronUpIcon className={styles.icon} /> : <ChevronDownIcon className={styles.icon} />}
+          {openIndex === '0' ? <ChevronUpIcon /> : <ChevronDownIcon />}
         </button>
         {openIndex === '0' && (
           <div id="panel-0">
@@ -66,7 +66,7 @@ const MyServicesAccordion = () => {
           aria-expanded={openIndex === '1'}
         >
           <h3>Aplikacje webowe</h3>
-          {openIndex === '1' ? <ChevronUpIcon className={styles.icon} /> : <ChevronDownIcon className={styles.icon} />}
+          {openIndex === '1' ? <ChevronUpIcon /> : <ChevronDownIcon />}
         </button>
         {openIndex === '1' && (
           <div id="panel-1">
@@ -97,7 +97,7 @@ const MyServicesAccordion = () => {
           aria-expanded={openIndex === '2'}
         >
           <h3>Strony Internetowe oparte na WordPress</h3>
-          {openIndex === '2' ? <ChevronUpIcon className={styles.icon} /> : <ChevronDownIcon className={styles.icon} />}
+          {openIndex === '2' ? <ChevronUpIcon /> : <ChevronDownIcon />}
         </button>
         {openIndex === '2' && (
           <div id="panel-2">
@@ -137,7 +137,7 @@ const MyServicesAccordion = () => {
           aria-expanded={openIndex === '3'}
         >
           <h3>Sklepy internetowe</h3>
-          {openIndex === '3' ? <ChevronUpIcon className={styles.icon} /> : <ChevronDownIcon className={styles.icon} />}
+          {openIndex === '3' ? <ChevronUpIcon /> : <ChevronDownIcon />}
         </button>
         {openIndex === '3' && (
           <div id="panel-3">
@@ -185,7 +185,7 @@ const MyServicesAccordion = () => {
           aria-expanded={openIndex === '4'}
         >
           <h3>Strony Internetowe LMS – Nowoczesne Platformy Edukacyjne</h3>
-          {openIndex === '4' ? <ChevronUpIcon className={styles.icon} /> : <ChevronDownIcon className={styles.icon} />}
+          {openIndex === '4' ? <ChevronUpIcon /> : <ChevronDownIcon />}
         </button>
         {openIndex === '4' && (
           <div id="panel-4">
@@ -226,7 +226,7 @@ const MyServicesAccordion = () => {
           aria-expanded={openIndex === '5'}
         >
           <h3>Projektowanie Logo</h3>
-          {openIndex === '5' ? <ChevronUpIcon className={styles.icon} /> : <ChevronDownIcon className={styles.icon} />}
+          {openIndex === '5' ? <ChevronUpIcon /> : <ChevronDownIcon />}
         </button>
         {openIndex === '5' && (
           <div id="panel-5">

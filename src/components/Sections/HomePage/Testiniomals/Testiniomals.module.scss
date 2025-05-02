@@ -29,6 +29,11 @@
       .testimonial_stars {
         color: settings.$color-primary;
         padding-top: 20px;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
       }
 
       .testimonial_text {

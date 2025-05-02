@@ -1,12 +1,11 @@
 import React from 'react';
 import * as styles from './WhyChooseMe.module.scss';
-import { Card, Container } from 'react-bootstrap';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
 
 const WhyChooseMe = () => {
   return (
     <section className={styles.site_info}>
-      <Container>
+      <div className="container mx-auto px-4">
         <div className={styles.wrapper}>
           <div className={styles.first_column}>
             <h3>Dlaczego Warto Wybrać Moje Usługi Tworzenia Nowoczesnych Stron Internetowych?</h3>
@@ -21,22 +20,22 @@ const WhyChooseMe = () => {
             <CustomButton variant="dark" text="Skontaktuj się" link="/kontakt/" />
           </div>
           <div className={styles.second_column}>
-            <Card className={`mb-2 ${styles.first_card}`}>
-              <Card.Body>
-                <Card.Title as={'h3'}>
+            <div className={`mb-2 ${styles.first_card}`}>
+              <div className={styles.card}>
+                <h3>
                   <em>Freelancer</em>, nie agencja
-                </Card.Title>
-                <Card.Text>
+                </h3>
+                <div className={styles.card_text}>
                   Jako freelancer oferuję bardziej indywidualne podejście niż typowe agencje. Tworzę nowoczesne strony
                   internetowe, skrojone na miarę potrzeb Twojej firmy. Zapewniając przy tym pełną elastyczność, szybkie
                   wdrożenie oraz konkurencyjne ceny. Każde zlecenie to dla mnie pełne zaangażowanie i najwyższa jakość.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <Card className={styles.second_card}>
-              <Card.Body>
-                <Card.Title as={'h3'}>Nie tylko WordPress!!</Card.Title>
-                <Card.Text>
+                </div>
+              </div>
+            </div>
+            <div className={styles.second_card}>
+              <div className={styles.card}>
+                <h3>Nie tylko WordPress!!</h3>
+                <div className={styles.card_text}>
                   W odróżnieniu od wielu freelancerów, nie ograniczam się jedynie do WordPressa. Dzięki moim
                   umiejętnościom programistycznym mogę tworzyć strony, sklepy interentowe, na różnych platformach i
                   dostosowywać je do Twoich specyficznych potrzeb klientów oraz branży.
@@ -45,9 +44,9 @@ const WhyChooseMe = () => {
                       <a href="#omnie"> Zobacz moje umiejętności i doświadczenie.</a>
                     </strong>
                   </span>
-                </Card.Text>
-              </Card.Body>
-            </Card>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -58,7 +57,7 @@ const WhyChooseMe = () => {
             oczekiwania i będą idealnym rozwiązaniem dla Twojego biznesu.
           </h3>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };
