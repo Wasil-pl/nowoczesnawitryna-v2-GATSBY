@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Navbar } from 'react-bootstrap';
-import './menu.scss';
+import { Disclosure } from '@headlessui/react';
 import * as styles from './Menu.module.scss';
 import MenuDeskopt from './MenuDeskopt';
 import MenuMobile from './MenuMobile';
@@ -27,17 +26,11 @@ const Menu = ({ active }) => {
   }, []);
 
   return (
-    <Navbar
-      bg={scrollY > 50 ? '' : 'transparent'}
-      data-bs-theme="dark"
-      expand="lg"
-      fixed="top"
-      className={scrollY > 50 ? styles.scrolled : ''}
-    >
-      <Container>
-        <Navbar.Brand href="/">
+    <Disclosure as="nav" className={`${styles.navbar} ${scrollY > 50 ? styles.scrolled : ''}`}>
+      <div className={`container mx-auto px-4 ${styles.container}`}>
+        <a href="/">
           {scrollY > 50 && <StaticImage src="../../../images/logo.png" alt="logo" width={100} quality={100} />}
-        </Navbar.Brand>
+        </a>
 
         <div className={styles.menu_wrapper}>
           {isDesktop && (
@@ -52,8 +45,8 @@ const Menu = ({ active }) => {
           {isDesktop && <MenuDeskopt active={active} />}
           {isMobile && <MenuMobile active={active} />}
         </div>
-      </Container>
-    </Navbar>
+      </div>
+    </Disclosure>
   );
 };
 

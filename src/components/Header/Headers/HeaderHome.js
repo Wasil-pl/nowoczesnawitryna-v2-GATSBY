@@ -4,6 +4,7 @@ import Menu from '../Menu/Menu';
 import { useMediaQuery } from 'react-responsive';
 import ParticlesBackground from '../../Ui/ParticlesBackground/ParticlesBackground';
 import { StaticImage } from 'gatsby-plugin-image';
+import ShapeDividersBottom from '../../Ui/ShapeDividers/ShapeDividersBottom';
 
 const HeaderHome = ({ active }) => {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
@@ -47,6 +48,8 @@ const HeaderHome = ({ active }) => {
           <br />w Jastrzębiu-Zdroju, województwie śląskim oraz w całej Polsce.
         </h2>
       </div>
+
+      <ShapeDividersBottom />
     </header>
   );
 };

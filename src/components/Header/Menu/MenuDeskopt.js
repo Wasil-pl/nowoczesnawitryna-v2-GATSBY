@@ -1,44 +1,69 @@
-import React from 'react';
-import { Nav, NavDropdown } from 'react-bootstrap';
-import './menu.scss';
-import { HouseFill } from 'react-bootstrap-icons';
+import React, { useState, useRef, useEffect } from 'react';
+import { BsHouseFill } from 'react-icons/bs';
+import * as styles from './MenuDeskopt.module.scss';
 
 const MenuDeskopt = ({ active }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef();
+
+  // zamykanie przy kliknięciu poza dropdownem
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   return (
-    <Nav>
-      <Nav.Link aria-label="strona główna" className={active === 'home' ? 'activeMenuItem' : ''} href="/">
-        <HouseFill />
-      </Nav.Link>
-      <NavDropdown title="Oferta" id="basic-nav-dropdown">
-        <NavDropdown.Item className={active === 'aplikacje' ? 'activeMenuItem' : ''} href="/aplikacje-webowe/">
-          Aplikacje Webowe
-        </NavDropdown.Item>
-        <NavDropdown.Item className={active === 'wordpress' ? 'activeMenuItem' : ''} href="/strony-wordpress/">
-          Strony WordPress
-        </NavDropdown.Item>
-        <NavDropdown.Item className={active === 'html' ? 'activeMenuItem' : ''} href="/strony-niestandardowe/">
-          Strony HTML/CSS/JS
-        </NavDropdown.Item>
-        <NavDropdown.Item className={active === 'sklep' ? 'activeMenuItem' : ''} href="/sklepy-internetowe/">
-          Sklepy www
-        </NavDropdown.Item>
-        <NavDropdown.Item className={active === 'lms' ? 'activeMenuItem' : ''} href="/strony-lms/">
-          Strony LMS
-        </NavDropdown.Item>
-        <NavDropdown.Item className={active === 'logo' ? 'activeMenuItem' : ''} href="/projektowanie-logo/">
-          Projektowanie logo
-        </NavDropdown.Item>
-      </NavDropdown>
-      <Nav.Link className={active === 'formularz-wyceny' ? 'activeMenuItem' : ''} href="/formularz-szybkiej-wyceny/">
+    <div className={styles.menu_wrapper}>
+      <a href="/" className={active === 'home' ? styles.activeMenuItem : ''} aria-label="strona główna">
+        <BsHouseFill />
+      </a>
+
+      <div className={styles.dropdown} ref={dropdownRef}>
+        <button
+          className={`${styles.dropdown_toggle} ${active === 'oferta' ? styles.activeMenuItem : ''}`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          Oferta
+        </button>
+        {isOpen && (
+          <div className={styles.dropdown_menu}>
+            <a href="/aplikacje-webowe/" className={active === 'aplikacje' ? styles.activeMenuItem : ''}>
+              Aplikacje Webowe
+            </a>
+            <a href="/strony-wordpress/" className={active === 'wordpress' ? styles.activeMenuItem : ''}>
+              Strony WordPress
+            </a>
+            <a href="/strony-niestandardowe/" className={active === 'html' ? styles.activeMenuItem : ''}>
+              Strony HTML/CSS/JS
+            </a>
+            <a href="/sklepy-internetowe/" className={active === 'sklep' ? styles.activeMenuItem : ''}>
+              Sklepy www
+            </a>
+            <a href="/strony-lms/" className={active === 'lms' ? styles.activeMenuItem : ''}>
+              Strony LMS
+            </a>
+            <a href="/projektowanie-logo/" className={active === 'logo' ? styles.activeMenuItem : ''}>
+              Projektowanie logo
+            </a>
+          </div>
+        )}
+      </div>
+
+      <a href="/formularz-szybkiej-wyceny/" className={active === 'formularz-wyceny' ? styles.activeMenuItem : ''}>
         Szybka Wycena
-      </Nav.Link>
-      <Nav.Link className={active === 'kontakt' ? 'activeMenuItem' : ''} href="/kontakt/">
+      </a>
+      <a href="/kontakt/" className={active === 'kontakt' ? styles.activeMenuItem : ''}>
         Kontakt
-      </Nav.Link>
-      <Nav.Link className={active === 'blog' ? 'activeMenuItem' : ''} href="/blog/">
+      </a>
+      <a href="/blog/" className={active === 'blog' ? styles.activeMenuItem : ''}>
         Blog
-      </Nav.Link>
-    </Nav>
+      </a>
+    </div>
   );
 };
 

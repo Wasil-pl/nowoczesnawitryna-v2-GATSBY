@@ -1,29 +1,47 @@
 @use '../../../styles/settings.scss' as settings;
 
-.scrolled {
-  background: rgba(25, 29, 41, 0.65);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-.menu_wrapper {
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 
-  .lang {
+  &.scrolled {
+    background: rgba(25, 29, 41, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .container {
     display: flex;
-    justify-content: flex-end !important;
+    justify-content: space-between;
+    align-items: center;
 
-    & > a {
-      margin-left: 10px;
-      color: settings.$color-text-light;
-      font-weight: settings.$font-weight-bold;
-      font-size: 0.9rem;
-      text-decoration: none;
-    }
+    .menu_wrapper {
+      display: flex;
+      flex-direction: column;
 
-    & > a.active {
-      color: settings.$color-primary;
+      .lang {
+        display: flex;
+        justify-content: flex-end !important;
+
+        & > a {
+          margin-left: 10px;
+          color: settings.$color-text-light;
+          font-weight: settings.$font-weight-bold;
+          font-size: 0.9rem;
+          text-decoration: none;
+        }
+
+        & > a.active {
+          color: settings.$color-primary;
+        }
+      }
     }
   }
 }

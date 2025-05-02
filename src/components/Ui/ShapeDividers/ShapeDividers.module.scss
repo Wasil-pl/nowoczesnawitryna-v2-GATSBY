@@ -33,3 +33,25 @@
     background-image: url('/images/shape2_bottom_f7f7f7.webp');
   }
 }
+
+@media (min-width: 2600px) {
+  .shape_divider_top {
+    background-image: url('/images/shape1_top_3000px.webp');
+    height: 200px;
+    top: -20px;
+
+    &.f7f7f7 {
+      background-image: url('/images/shape1_top_f7f7f7_3000px.webp');
+    }
+  }
+
+  .shape_divider_bottom {
+    background-image: url('/images/shape2_bottom_3000px.webp');
+    height: 200px;
+    bottom: -20px;
+
+    &.f7f7f7 {
+      background-image: url('/images/shape2_bottom_f7f7f7_3000px.webp');
+    }
+  }
+}
