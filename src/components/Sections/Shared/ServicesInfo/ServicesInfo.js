@@ -24,7 +24,7 @@ const ServicesInfo = ({ html, wordpress }) => {
               className={`${styles.card} ${styles.up}`}
             >
               <StaticImage
-                src="../../images/kod.webp"
+                src="../../../../images/kod.webp"
                 alt="zdjęcie przedstawiające ręczne pisanie kodu strony internetowej"
                 width={330}
                 height={440}
@@ -47,7 +47,7 @@ const ServicesInfo = ({ html, wordpress }) => {
               className={`${styles.card} ${styles.up}`}
             >
               <StaticImage
-                src="../../images/wordpress.webp"
+                src="../../../../images/wordpress.webp"
                 alt="wordpress - strony internetowe oparte na wordpress"
                 width={330}
                 height={440}
@@ -70,7 +70,7 @@ const ServicesInfo = ({ html, wordpress }) => {
             className={`${styles.card} ${styles.down}`}
           >
             <StaticImage
-              src="../../images/web_design.webp"
+              src="../../../../images/web_design.webp"
               alt="web design - projektowanie stron internetowych"
               width={330}
               height={440}
@@ -91,7 +91,7 @@ const ServicesInfo = ({ html, wordpress }) => {
             className={`${styles.card} ${styles.up}`}
           >
             <StaticImage
-              src="../../images/wspolpraca.webp"
+              src="../../../../images/wspolpraca.webp"
               alt="współpraca - wsparcie i współpraca przy tworzeniu strony internetowej"
               width={330}
               height={440}
@@ -112,7 +112,7 @@ const ServicesInfo = ({ html, wordpress }) => {
             className={`${styles.card} ${styles.down}`}
           >
             <StaticImage
-              src="../../images/galeria.webp"
+              src="../../../../images/galeria.webp"
               alt="grafiki i zdjęcia - profesjonalne zdjęcia i grafiki na stronę internetową"
               width={330}
               height={440}
@@ -133,7 +133,7 @@ const ServicesInfo = ({ html, wordpress }) => {
             className={`${styles.card} ${styles.up}`}
           >
             <StaticImage
-              src="../../images/rwd.webp"
+              src="../../../../images/rwd.webp"
               alt="responsywność - responsywne strony internetowe"
               width={330}
               height={440}

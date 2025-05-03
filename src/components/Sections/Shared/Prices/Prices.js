@@ -1,17 +1,24 @@
 import React from 'react';
-import './Prices.scss';
 import * as styles from './Prices.module.scss';
-
-import { Check, Dash } from 'react-bootstrap-icons';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
 import CallToAction from '../CallToAction/CallToAction';
+import { BsCheck, BsDash } from 'react-icons/bs';
+import ShapeDividersTop from '../../../Ui/ShapeDividers/ShapeDividersTop';
+import ShapeDividersBottom from '../../../Ui/ShapeDividers/ShapeDividersBottom';
 
 const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
   return (
     <section id="price" className={styles.prices}>
+      <ShapeDividersTop variant="f7f7f7" />
+
       <div className="container mx-auto px-4">
-        <SectionTitle coloredText="Cennik" subtitle="Zobacz i wybierz najlepszą ofertę dla siebie" variant="white" />
+        <SectionTitle
+          coloredText="Cennik"
+          subtitle="Zobacz i wybierz najlepszą ofertę dla siebie"
+          variant="white"
+          backgroundText="cennik"
+        />
 
         <div className={styles.wrapper}>
           {html && (
@@ -41,28 +48,32 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                 <div className={styles.list}>
                   <ul>
                     <li>
-                      <Dash /> Wiele podstron ( tylko strona główna)
+                      <BsDash className={styles.bi_dash} /> <p>Wiele podstron ( tylko strona główna)</p>
                     </li>
                     <li>
-                      <Check /> Responsywność (dostosowanie do urządzeń mobilnych)
+                      <BsCheck className={styles.bi_check} /> <p>Responsywność (dostosowanie do urządzeń mobilnych)</p>
                     </li>
                     <li>
-                      <Check /> Proste animacje
+                      <BsCheck className={styles.bi_check} /> <p>Proste animacje</p>
                     </li>
                     <li>
-                      <Check /> Zdjęcia i grafiki
+                      <BsCheck className={styles.bi_check} /> <p>Zdjęcia i grafiki</p>
                     </li>
                     <li>
-                      <Check /> Wsparcie i aktualizacja na okres 3 miesięcy
+                      <BsCheck className={styles.bi_check} />
+                      <p>Wsparcie i aktualizacja na okres 3 miesięcy</p>
                     </li>
                     <li>
-                      <Check /> Formularz kontaktowy
+                      <BsCheck className={styles.bi_check} />
+                      <p>Formularz kontaktowy</p>
                     </li>
                     <li>
-                      <Dash /> System CMS
+                      <BsDash className={styles.bi_dash} />
+                      <p>System CMS</p>
                     </li>
                     <li>
-                      <Dash /> Panel administracyjny
+                      <BsDash className={styles.bi_dash} />
+                      <p>Panel administracyjny</p>
                     </li>
                   </ul>
 
@@ -103,28 +114,28 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                 <div className={styles.list}>
                   <ul>
                     <li>
-                      <Check /> Wiele podstron
+                      <BsCheck className={styles.bi_check} /> <p>Wiele podstron</p>
                     </li>
                     <li>
-                      <Check /> Responsywność (dostosowanie do urządzeń mobilnych)
+                      <BsCheck className={styles.bi_check} /> <p>Responsywność (dostosowanie do urządzeń mobilnych)</p>
                     </li>
                     <li>
-                      <Check /> Proste animacje
+                      <BsCheck className={styles.bi_check} /> <p>Proste animacje</p>
                     </li>
                     <li>
-                      <Check /> Zdjęcia i grafiki
+                      <BsCheck className={styles.bi_check} /> <p>Zdjęcia i grafiki</p>
                     </li>
                     <li>
-                      <Check /> Wsparcie i aktualizacja na okres 3 miesięcy
+                      <BsCheck className={styles.bi_check} /> <p>Wsparcie i aktualizacja na okres 3 miesięcy</p>
                     </li>
                     <li>
-                      <Check /> Formularz kontaktowy
+                      <BsCheck className={styles.bi_check} /> <p>Formularz kontaktowy</p>
                     </li>
                     <li>
-                      <Dash /> System CMS
+                      <BsDash className={styles.bi_dash} /> <p>System CMS</p>
                     </li>
                     <li>
-                      <Dash /> Panel administracyjny
+                      <BsDash className={styles.bi_dash} /> <p>Panel administracyjny</p>
                     </li>
                   </ul>
 
@@ -166,28 +177,29 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                 <div className={styles.list}>
                   <ul>
                     <li>
-                      <Check /> Wiele podstron
+                      <BsCheck className={styles.bi_check} /> <p>Wiele podstron</p>
                     </li>
                     <li>
-                      <Check /> Responsywność (dostosowanie do urządzeń mobilnych)
+                      <BsCheck className={styles.bi_check} /> <p>Responsywność (dostosowanie do urządzeń mobilnych)</p>
                     </li>
                     <li>
-                      <Check /> Proste animacje
+                      <BsCheck className={styles.bi_check} /> <p>Proste animacje</p>
                     </li>
                     <li>
-                      <Check /> Zdjęcia i grafiki
+                      <BsCheck className={styles.bi_check} /> <p>Zdjęcia i grafiki</p>
                     </li>
                     <li>
-                      <Check /> Wsparcie i aktualizacja na okres 3 miesięcy
+                      <BsCheck className={styles.bi_check} /> <p>Wsparcie i aktualizacja na okres 3 miesięcy</p>
                     </li>
                     <li>
-                      <Check /> Formularz kontaktowy
+                      <BsCheck className={styles.bi_check} />
+                      <p>Formularz kontaktowy</p>
                     </li>
                     <li>
-                      <Check /> System CMS
+                      <BsCheck className={styles.bi_check} /> <p>System CMS</p>
                     </li>
                     <li>
-                      <Check /> Panel administracyjny
+                      <BsCheck className={styles.bi_check} /> <p>Panel administracyjny</p>
                     </li>
                   </ul>
 
@@ -236,40 +248,41 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                 <div className={styles.list}>
                   <ul>
                     <li>
-                      <Check /> Wiele podstron
+                      <BsCheck className={styles.bi_check} /> <p>Wiele podstron</p>
                     </li>
                     <li>
-                      <Check /> Responsywność (dostosowanie do urządzeń mobilnych)
+                      <BsCheck className={styles.bi_check} /> <p>Responsywność (dostosowanie do urządzeń mobilnych)</p>
                     </li>
                     <li>
-                      <Check /> Proste animacje
+                      <BsCheck className={styles.bi_check} /> <p>Proste animacje</p>
                     </li>
                     <li>
-                      <Check /> Zdjęcia i grafiki
+                      <BsCheck className={styles.bi_check} /> <p>Zdjęcia i grafiki</p>
                     </li>
                     <li>
-                      <Check /> Instalacja i konfiguracja WooCommerce
+                      <BsCheck className={styles.bi_check} /> <p>Instalacja i konfiguracja WooCommerce</p>
                     </li>
                     <li>
-                      <Check /> Dodanie produktów (w cenie do 30 produktów, kolejne płatne dodatkowo)
+                      <BsCheck className={styles.bi_check} />{' '}
+                      <p>Dodanie produktów (w cenie do 30 produktów, kolejne płatne dodatkowo)</p>
                     </li>
                     <li>
-                      <Check /> Szkolenie z obsługi sklepu (video - chat)
+                      <BsCheck className={styles.bi_check} /> <p>Szkolenie z obsługi sklepu (video - chat)</p>
                     </li>
                     <li>
-                      <Check /> Regulamin sklepu internetowego
+                      <BsCheck className={styles.bi_check} /> <p>Regulamin sklepu internetowego</p>
                     </li>
                     <li>
-                      <Check /> Wsparcie i aktualizacja na okres 3 miesięcy
+                      <BsCheck className={styles.bi_check} /> <p>Wsparcie i aktualizacja na okres 3 miesięcy</p>
                     </li>
                     <li>
-                      <Check /> Formularz kontaktowy
+                      <BsCheck className={styles.bi_check} /> <p>Formularz kontaktowy</p>
                     </li>
                     <li>
-                      <Check /> System CMS
+                      <BsCheck className={styles.bi_check} /> <p>System CMS</p>
                     </li>
                     <li>
-                      <Check /> Panel administracyjny
+                      <BsCheck className={styles.bi_check} /> <p>Panel administracyjny</p>
                     </li>
                   </ul>
 
@@ -311,43 +324,44 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                 <div className={styles.list}>
                   <ul>
                     <li>
-                      <Check /> Wiele podstron
+                      <BsCheck className={styles.bi_check} /> <p>Wiele podstron</p>
                     </li>
                     <li>
-                      <Check /> Responsywność (dostosowanie do urządzeń mobilnych)
+                      <BsCheck className={styles.bi_check} /> <p>Responsywność (dostosowanie do urządzeń mobilnych)</p>
                     </li>
                     <li>
-                      <Check /> Proste animacje
+                      <BsCheck className={styles.bi_check} /> <p>Proste animacje</p>
                     </li>
                     <li>
-                      <Check /> Zdjęcia i grafiki
+                      <BsCheck className={styles.bi_check} /> <p>Zdjęcia i grafiki</p>
                     </li>
                     <li>
-                      <Check /> Wsparcie i aktualizacja na okres 3 miesięcy
+                      <BsCheck className={styles.bi_check} /> <p>Wsparcie i aktualizacja na okres 3 miesięcy</p>
                     </li>
                     <li>
-                      <Check /> Formularz kontaktowy
+                      <BsCheck className={styles.bi_check} /> <p>Formularz kontaktowy</p>
                     </li>
                     <li>
-                      <Check /> System CMS
+                      <BsCheck className={styles.bi_check} /> <p>System CMS</p>
                     </li>
                     <li>
-                      <Check /> Panel administracyjny
+                      <BsCheck className={styles.bi_check} /> <p>Panel administracyjny</p>
                     </li>
                     <li>
-                      <Check /> Integracja z systemami płatności i ich subskrypcjami
+                      <BsCheck className={styles.bi_check} />{' '}
+                      <p>Integracja z systemami płatności i ich subskrypcjami</p>
                     </li>
                     <li>
-                      <Check /> System zarządzania kursami
+                      <BsCheck className={styles.bi_check} /> <p>System zarządzania kursami</p>
                     </li>
                     <li>
-                      <Check /> System zarządzania użytkownikami
+                      <BsCheck className={styles.bi_check} /> <p>System zarządzania użytkownikami</p>
                     </li>
                     <li>
-                      <Check /> System logowania i rejestracji użytkowiniów
+                      <BsCheck className={styles.bi_check} /> <p>System logowania i rejestracji użytkowiniów</p>
                     </li>
                     <li>
-                      <Check /> System oceniania i certyfikacji
+                      <BsCheck className={styles.bi_check} /> <p>System oceniania i certyfikacji</p>
                     </li>
                   </ul>
 
@@ -389,13 +403,13 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                 <div className={styles.list}>
                   <ul>
                     <li>
-                      <Check /> 3 propozycje logo
+                      <BsCheck className={styles.bi_check} /> <p>3 propozycje logo</p>
                     </li>
                     <li>
-                      <Check /> Pliki w formatach PNG, SVG, PDF
+                      <BsCheck className={styles.bi_check} /> <p>Pliki w formatach PNG, SVG, PDF</p>
                     </li>
                     <li>
-                      <Check /> Wsparcie techniczne
+                      <BsCheck className={styles.bi_check} /> <p>Wsparcie techniczne</p>
                     </li>
                   </ul>
                   <CustomButton
@@ -416,16 +430,16 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                 <div className={styles.list}>
                   <ul>
                     <li>
-                      <Check /> 5 propozycji logo
+                      <BsCheck className={styles.bi_check} /> <p>5 propozycji logo</p>
                     </li>
                     <li>
-                      <Check /> Pliki w formatach PNG, SVG, PDF
+                      <BsCheck className={styles.bi_check} /> <p>Pliki w formatach PNG, SVG, PDF</p>
                     </li>
                     <li>
-                      <Check /> Wersje kolorowe i monochromatyczne
+                      <BsCheck className={styles.bi_check} /> <p>Wersje kolorowe i monochromatyczne</p>
                     </li>
                     <li>
-                      <Check /> Dokumentacja użytkowania (brandbook)
+                      <BsCheck className={styles.bi_check} /> <p>Dokumentacja użytkowania (brandbook)</p>
                     </li>
                   </ul>
                   <CustomButton
@@ -465,28 +479,28 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                 <div className={styles.list}>
                   <ul>
                     <li>
-                      <Dash /> Wiele podstron ( tylko strona główna)
+                      <BsDash className={styles.bi_dash} /> <p>Wiele podstron ( tylko strona główna)</p>
                     </li>
                     <li>
-                      <Check /> Responsywność (dostosowanie do urządzeń mobilnych)
+                      <BsCheck className={styles.bi_check} /> <p>Responsywność (dostosowanie do urządzeń mobilnych)</p>
                     </li>
                     <li>
-                      <Check /> Proste animacje
+                      <BsCheck className={styles.bi_check} /> <p>Proste animacje</p>
                     </li>
                     <li>
-                      <Check /> Zdjęcia i grafiki
+                      <BsCheck className={styles.bi_check} /> <p>Zdjęcia i grafiki</p>
                     </li>
                     <li>
-                      <Check /> Wsparcie i aktualizacja na okres 3 miesięcy
+                      <BsCheck className={styles.bi_check} /> <p>Wsparcie i aktualizacja na okres 3 miesięcy</p>
                     </li>
                     <li>
-                      <Check /> Formularz kontaktowy
+                      <BsCheck className={styles.bi_check} /> <p>Formularz kontaktowy</p>
                     </li>
                     <li>
-                      <Check /> System CMS
+                      <BsCheck className={styles.bi_check} /> <p>System CMS</p>
                     </li>
                     <li>
-                      <Check /> Panel administracyjny
+                      <BsCheck className={styles.bi_check} /> <p>Panel administracyjny</p>
                     </li>
                   </ul>
 
@@ -527,28 +541,28 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                 <div className={styles.list}>
                   <ul>
                     <li>
-                      <Check /> Wiele podstron
+                      <BsCheck className={styles.bi_check} /> <p>Wiele podstron</p>
                     </li>
                     <li>
-                      <Check /> Responsywność (dostosowanie do urządzeń mobilnych)
+                      <BsCheck className={styles.bi_check} /> <p>Responsywność (dostosowanie do urządzeń mobilnych)</p>
                     </li>
                     <li>
-                      <Check /> Proste animacje
+                      <BsCheck className={styles.bi_check} /> <p>Proste animacje</p>
                     </li>
                     <li>
-                      <Check /> Zdjęcia i grafiki
+                      <BsCheck className={styles.bi_check} /> <p>Zdjęcia i grafiki</p>
                     </li>
                     <li>
-                      <Check /> Wsparcie i aktualizacja na okres 3 miesięcy
+                      <BsCheck className={styles.bi_check} /> <p>Wsparcie i aktualizacja na okres 3 miesięcy</p>
                     </li>
                     <li>
-                      <Check /> Formularz kontaktowy
+                      <BsCheck className={styles.bi_check} /> <p>Formularz kontaktowy</p>
                     </li>
                     <li>
-                      <Check /> System CMS
+                      <BsCheck className={styles.bi_check} /> <p>System CMS</p>
                     </li>
                     <li>
-                      <Check /> Panel administracyjny
+                      <BsCheck className={styles.bi_check} /> <p>Panel administracyjny</p>
                     </li>
                   </ul>
 
@@ -565,6 +579,8 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
 
         <CallToAction kontakt_2 variant={'bottom'} />
       </div>
+
+      <ShapeDividersBottom />
     </section>
   );
 };

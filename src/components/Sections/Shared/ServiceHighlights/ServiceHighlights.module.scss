@@ -7,6 +7,8 @@
     margin-bottom: 0;
     z-index: 1;
     position: relative;
+    border-radius: 20px;
+    box-shadow: settings.$box-shadow;
 
     .first_column {
       flex: 1;
@@ -20,6 +22,10 @@
 
       h3 {
         font-weight: settings.$font-weight-bold;
+      }
+
+      & > a {
+        margin: 0 auto;
       }
     }
 

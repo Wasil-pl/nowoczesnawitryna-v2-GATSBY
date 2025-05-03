@@ -1,13 +1,15 @@
 import React from 'react';
 import * as styles from './LPMyServices.module.scss';
-
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
-import { QuestionCircle } from 'react-bootstrap-icons';
+import { QuestionMarkCircleIcon } from '@heroicons/react/24/solid';
 import { useMediaQuery } from 'react-responsive';
 import LPMyServicesThumbs from '../LPMyServicesThumbs/LPMyServicesThumbs';
 import LPMyServicesAccordion from '../LPMyServicesAccordion/LPMyServicesAccordion';
 import CallToAction from '../../Shared/CallToAction/CallToAction';
+import ShapeDividersBottom from '../../../Ui/ShapeDividers/ShapeDividersBottom';
+import ShapeDividersTop from '../../../Ui/ShapeDividers/ShapeDividersTop';
+import ParticlesBackground from '../../../Ui/ParticlesBackground/ParticlesBackground';
 
 const LPMyServices = ({
   title_HTML,
@@ -29,8 +31,11 @@ const LPMyServices = ({
 
   return (
     <section className={styles.myServices}>
+      <ShapeDividersTop />
+      <ParticlesBackground id={'tsparticles_lp_my_service'} />
+
       <div className="container mx-auto px-4">
-        <SectionTitle title={sectionTitle} coloredText={sectionTitleColored} variant="white" />
+        <SectionTitle title={sectionTitle} coloredText={sectionTitleColored} backgroundText="Usługi" variant="white" />
 
         {!isMobile && (
           <LPMyServicesThumbs
@@ -67,7 +72,7 @@ const LPMyServices = ({
         )}
 
         <div className={styles.info}>
-          <QuestionCircle className={styles.icon} />
+          <QuestionMarkCircleIcon className={styles.icon} />
           <div className={styles.content}>
             <h3>HTML czy CMS</h3>
             <p>
@@ -75,12 +80,14 @@ const LPMyServices = ({
               między tymi dwoma rozwiązaniami? Zajrzyj do mojego bloga, gdzie znajdziesz odpowiedzi na te pytania. Albo
               skontaktuj się ze mną, a ja pomogę Ci wybrać najlepsze rozwiązanie dla Twojej firmy.
             </p>
-            <CustomButton text="przejdź na mój blog" link={'/blog/'} />
+            <CustomButton text="przejdź na mój blog" link="/blog/" />
           </div>
         </div>
 
         <CallToAction />
       </div>
+
+      <ShapeDividersBottom variant="f7f7f7" />
     </section>
   );
 };

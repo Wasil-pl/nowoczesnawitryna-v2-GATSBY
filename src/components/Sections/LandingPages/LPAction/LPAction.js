@@ -1,6 +1,5 @@
 import React from 'react';
 import * as styles from './LPAction.module.scss';
-
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
 
 const LPAction = () => {

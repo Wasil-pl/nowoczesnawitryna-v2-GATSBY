@@ -3,8 +3,17 @@
 .prices {
   background-color: settings.$color-background-dark;
   color: settings.$color-text-light;
-  padding: 150px 0;
+  padding: 200px 0;
   margin-bottom: 250px;
+  position: relative;
+
+  .bi_dash {
+    color: settings.$color-text-danger;
+  }
+
+  .bi_check {
+    color: settings.$color-text-success;
+  }
 
   .wrapper {
     display: flex;
@@ -65,6 +74,8 @@
 
         .list {
           margin-bottom: 20px;
+          display: flex;
+          flex-direction: column;
 
           ul {
             list-style: none;
@@ -72,16 +83,25 @@
 
             li {
               margin-bottom: 10px;
+              display: flex;
 
               svg {
-                margin-right: 10px;
                 font-size: 1.5rem;
+                flex: 10%;
+              }
+
+              & > p {
+                flex: 90%;
               }
 
               &:last-child {
                 margin-bottom: 40px;
               }
             }
+          }
+
+          & > a {
+            margin: 0 auto;
           }
         }
       }

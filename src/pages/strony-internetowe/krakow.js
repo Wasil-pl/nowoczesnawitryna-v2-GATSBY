@@ -19,7 +19,7 @@ import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPo
 import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
 const krakow = () => {
-  const title_top = 'Nowoczesne i funkcjonalne';
+  const title_top = 'Nowoczesne ';
   const title_middle = 'Strony internetowe';
   const title_bottom = 'dla firm w Krakowie';
   const subtitle =

@@ -65,6 +65,7 @@
         font-size: 7rem;
         color: settings.$color-text-light;
         margin-right: 1rem;
+        margin-left: auto;
       }
 
       .text {
@@ -96,6 +97,10 @@
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
+
+    & > a {
+      margin: 0 auto;
+    }
 
     h2 {
       font-size: 1.7rem;

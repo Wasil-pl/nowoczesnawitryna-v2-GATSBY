@@ -19,7 +19,7 @@ import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPo
 import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
 const wroclaw = () => {
-  const title_top = 'Innowacyjne i funkcjonalne';
+  const title_top = 'Innowacyjne ';
   const title_middle = 'Strony internetowe';
   const title_bottom = 'dla firm z Wrocławia';
   const subtitle =

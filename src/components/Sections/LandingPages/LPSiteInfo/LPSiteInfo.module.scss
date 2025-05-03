@@ -7,6 +7,8 @@
     margin-bottom: 0;
     z-index: 1;
     position: relative;
+    border-radius: 20px;
+    box-shadow: settings.$box-shadow;
 
     .first_column {
       flex: 1;
@@ -15,17 +17,21 @@
       border-radius: 20px 0 0 20px;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: flex-start;
 
       h3 {
         font-weight: settings.$font-weight-bold;
       }
+
+      & > a {
+        margin: 0 auto;
+      }
     }
 
     .second_column {
       flex: 1;
-      padding: 2rem;
+      padding: 1.5rem;
       background-color: settings.$color-background-lighter;
       border-radius: 0 20px 20px 0;
       display: flex;
@@ -53,6 +59,12 @@
         }
       }
     }
+
+    .card {
+      background-color: settings.$color-background-light;
+      border-radius: 20px;
+      padding: 1rem;
+    }
   }
 
   .banner {
@@ -61,14 +73,7 @@
     padding: 2rem;
     border-radius: 20px;
     display: flex;
-  }
-}
-
-@media (max-width: 1920px) {
-  .site_info {
-    .wrapper {
-      margin-top: -50px;
-    }
+    box-shadow: settings.$box-shadow;
   }
 }
 

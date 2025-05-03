@@ -23,6 +23,10 @@
       h3 {
         font-weight: settings.$font-weight-bold;
       }
+
+      & > a {
+        margin: 0 auto;
+      }
     }
 
     .second_column {

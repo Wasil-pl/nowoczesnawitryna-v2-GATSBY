@@ -19,7 +19,7 @@ import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPo
 import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
 const gdansk = () => {
-  const title_top = 'Kreatywne i funkcjonalne';
+  const title_top = 'Kreatywne ';
   const title_middle = 'Strony internetowe';
   const title_bottom = 'dla firm z Gdańska';
   const subtitle =

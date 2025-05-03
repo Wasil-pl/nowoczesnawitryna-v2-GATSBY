@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as styles from './ScroolToPriceButton.module.scss';
-
-import { CurrencyDollar } from 'react-bootstrap-icons';
+import { BsCurrencyDollar } from 'react-icons/bs';
 
 const ScroolToPriceButton = () => {
   const [isActive, setIsActive] = useState(true);
@@ -40,7 +39,7 @@ const ScroolToPriceButton = () => {
         onClick={handleScrollToPrice}
         aria-label="scrollUp"
       >
-        <CurrencyDollar />
+        <BsCurrencyDollar />
       </button>
     </div>
   );

@@ -43,7 +43,7 @@ const LPProcessSteps = ({
   return (
     <section className={styles.process_steps_container}>
       <div className="container mx-auto px-4">
-        <SectionTitle title={sectionTitle} coloredText={sectionTitleColored} />
+        <SectionTitle title={sectionTitle} coloredText={sectionTitleColored} backgroundText="Proces" />
         <div className={styles.process_steps}>
           <div className={`${styles.step} ${styles.left} ${activeStep === 0 ? styles.active : ''}`}>
             <div className={styles.step_empty}></div>
@@ -53,7 +53,7 @@ const LPProcessSteps = ({
             </div>
             <div className={styles.step_number}>
               <StaticImage
-                src="../../../images/brief.png"
+                src="../../../../images/brief.png"
                 alt="ikona przedstawiająca pierwszy kontakt z klientem w celu zebrania informacji o potrzebnej stronie internetowej"
                 width={150}
               />
@@ -67,7 +67,7 @@ const LPProcessSteps = ({
             </div>
             <div className={styles.step_number_left}>
               <StaticImage
-                src="../../../images/kontent.png"
+                src="../../../../images/kontent.png"
                 alt="ikona przedstawiająca zbieranie i przygotowywanie kontentu do strony internetowej"
                 width={150}
               />
@@ -81,7 +81,7 @@ const LPProcessSteps = ({
             </div>
             <div className={styles.step_number}>
               <StaticImage
-                src="../../../images/projektowanie.png"
+                src="../../../../images/projektowanie.png"
                 alt="ikona przedstawiająca projektowanie strony internetowej"
                 width={150}
               />
@@ -95,7 +95,7 @@ const LPProcessSteps = ({
             </div>
             <div className={styles.step_number_left}>
               <StaticImage
-                src="../../../images/tworzenie-strony.png"
+                src="../../../../images/tworzenie-strony.png"
                 alt="ikona przedstawiająca tworzenie strony internetowej"
                 width={150}
               />
@@ -109,7 +109,7 @@ const LPProcessSteps = ({
             </div>
             <div className={styles.step_number}>
               <StaticImage
-                src="../../../images/testowanie.png"
+                src="../../../../images/testowanie.png"
                 alt="ikona przedstawiająca testowanie strony internetowej"
                 width={150}
               />
@@ -123,7 +123,7 @@ const LPProcessSteps = ({
             </div>
             <div className={styles.step_number_last}>
               <StaticImage
-                src="../../../images/koniec.png"
+                src="../../../../images/koniec.png"
                 alt="ikona przedstawiająca wdrożenie strony internetowej"
                 width={150}
               />

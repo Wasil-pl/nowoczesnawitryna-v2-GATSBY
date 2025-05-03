@@ -19,7 +19,7 @@ import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPo
 import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
 const poznan = () => {
-  const title_top = 'Nowoczesne i efektywne';
+  const title_top = 'Nowoczesne ';
   const title_middle = 'Strony internetowe';
   const title_bottom = 'dla firm z Poznania';
   const subtitle =

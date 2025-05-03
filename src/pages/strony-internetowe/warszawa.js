@@ -19,7 +19,7 @@ import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPo
 import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
 const warszawa = () => {
-  const title_top = 'Profesjonalne i nowoczesne';
+  const title_top = 'Profesjonalne ';
   const title_middle = 'Strony internetowe';
   const title_bottom = 'dla firm w Warszawie';
   const subtitle =

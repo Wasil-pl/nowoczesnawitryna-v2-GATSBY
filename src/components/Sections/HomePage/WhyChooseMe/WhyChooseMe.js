@@ -50,8 +50,14 @@ const WhyChooseMe = () => {
           </div>
         </div>
 
-        <div className={styles.banner}>
-          <h3 data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease" data-sal-duration="1000">
+        <div
+          className={styles.banner}
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
+          <h3>
             Tworzę strony internetowe dla firm każdej wielkości – od małych start-upów po duże korporacje. Bez względu
             na to, jaką firmę prowadzisz, jestem pewien, że mogę zaproponować stronę lub sklep, które spełnią Twoje
             oczekiwania i będą idealnym rozwiązaniem dla Twojego biznesu.

@@ -1,6 +1,5 @@
 import React from 'react';
 import * as styles from './LPSiteInfo.module.scss';
-import { Card } from 'react-bootstrap';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
 
 const LPSiteInfo = ({
@@ -22,32 +21,36 @@ const LPSiteInfo = ({
             <CustomButton variant="dark" text="Skontaktuj się" link="/kontakt/" />
           </div>
           <div className={styles.second_column}>
-            <Card className={`mb-2 ${styles.first_card}`}>
-              <Card.Body>
-                <Card.Title as={'h3'}>{title_second}</Card.Title>
-                <Card.Text>{description_second}</Card.Text>
-              </Card.Body>
-            </Card>
-            <Card className={styles.second_card}>
-              <Card.Body>
-                <Card.Title as={'h3'}>{title_third}</Card.Title>
-                <Card.Text>
+            <div className={`mb-2 ${styles.first_card}`}>
+              <div className={styles.card}>
+                <h3>{title_second}</h3>
+                <p>{description_second}</p>
+              </div>
+            </div>
+            <div className={styles.second_card}>
+              <div className={styles.card}>
+                <h3>{title_third}</h3>
+                <p>
                   {description_third}
                   <span>
                     <strong>
                       <a href="#omnie"> Zobacz moje umiejętności i doświadczenie.</a>
                     </strong>
                   </span>
-                </Card.Text>
-              </Card.Body>
-            </Card>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className={styles.banner}>
-          <h3 data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease" data-sal-duration="1000">
-            {banner_description}
-          </h3>
+        <div
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+          className={styles.banner}
+        >
+          <h3>{banner_description}</h3>
         </div>
       </div>
     </section>

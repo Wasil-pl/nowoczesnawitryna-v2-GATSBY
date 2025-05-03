@@ -19,7 +19,7 @@ import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPo
 import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
 const Katowice = () => {
-  const title_top = 'Profesjonalne tworzenie';
+  const title_top = 'Tworzenie';
   const title_middle = 'Stron internetowych';
   const title_bottom = 'w Katowicach';
   const subtitle = 'Indywidualne projekty dopasowane do potrzeb Twojej firmy w Katowicach.';

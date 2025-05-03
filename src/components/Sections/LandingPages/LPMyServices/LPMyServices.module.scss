@@ -3,7 +3,8 @@
 .myServices {
   background-color: settings.$color-background-dark;
   margin: 150px 0 0;
-  padding: 100px 0 10px;
+  padding: 200px 0 10px;
+  position: relative;
 
   .info {
     display: flex;
@@ -22,13 +23,15 @@
     }
 
     .icon {
-      font-size: 2.5rem;
+      width: 70px;
+      height: 70px;
       color: settings.$color-primary;
       margin-right: 2rem;
     }
 
     .content {
       flex: 70%;
+
       h3 {
         font-size: 1.2rem;
         font-weight: settings.$font-weight-extrabold;

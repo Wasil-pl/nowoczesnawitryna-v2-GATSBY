@@ -1,12 +1,12 @@
 import React from 'react';
 import * as styles from './CustomButton.module.scss';
-import { Button } from 'react-bootstrap';
+import { Link } from 'gatsby';
 
-const CustomButton = ({ text, link, variant = '', onClick }) => {
+const CustomButton = ({ text, link, variant = '' }) => {
   return (
-    <Button onClick={onClick} href={link} variant="outline" className={`${styles.button} ${styles[variant]}`}>
+    <Link to={link} className={`${styles.button} ${styles[variant]}`}>
       {text}
-    </Button>
+    </Link>
   );
 };
 

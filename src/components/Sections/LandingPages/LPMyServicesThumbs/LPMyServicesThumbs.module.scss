@@ -1,83 +1,141 @@
 @use '../../../../styles/settings.scss' as settings;
 
-.thums_container {
+.thumbs_container {
   display: flex;
-}
 
-.tabs_wrapper {
-  margin: 50px 50px 0 0;
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-  flex: 1;
-  z-index: 1;
-  position: relative;
+  .tabs_wrapper {
+    display: flex;
+    flex-direction: row;
 
-  & > li {
-    margin-bottom: 20px;
-  }
+    .tab_list {
+      margin: 50px 50px 0 0;
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      flex: 1;
+      z-index: 1;
 
-  button {
-    background-color: settings.$color-background-light;
-    border: none;
-    border-radius: 15px;
-    color: settings.$color-text-dark;
-    height: 100%;
-    font-size: 1.1rem;
-    font-weight: settings.$font-weight-bold;
-    text-transform: uppercase;
-    padding: 15px 20px;
-  }
-}
+      .tab_button {
+        width: 100%;
+        text-align: center;
+        padding: 15px 20px;
+        background-color: settings.$color-background-light;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 20px;
+        position: relative;
 
-.tab_content {
-  margin-top: 50px;
-  display: flex;
-  padding-left: 20px;
+        &:hover {
+          transform: translateY(-3px);
 
-  .tab_content_left {
-    flex: 60%;
+          h3 {
+            color: settings.$color-primary;
+          }
+        }
 
-    h3 {
-      font-size: 2rem;
-      font-weight: settings.$font-weight-bold;
-      color: settings.$color-primary;
-      margin-bottom: 50px;
-    }
+        &[data-selected] {
+          background-color: settings.$color-background-primary;
 
-    p {
-      font-size: 1rem;
-      color: settings.$color-text-light;
-      margin-bottom: 20px;
+          h3 {
+            color: settings.$color-text-dark;
+          }
 
-      &:last-of-type {
-        margin-bottom: 50px;
+          &::after {
+            border: 16px solid transparent;
+            border-left-color: #ffbf00;
+            border-right: 0;
+            content: '';
+            height: 0;
+            left: 99%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            z-index: 1;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+
+        &[data-selected]:hover {
+          h3 {
+            color: settings.$color-text-dark;
+          }
+        }
+
+        h3 {
+          font-size: 1.1rem;
+          color: settings.$color-text-dark;
+          font-weight: settings.$font-weight-bold;
+          margin: 0;
+          text-transform: uppercase;
+        }
       }
     }
 
-    .button {
-      margin: 0 auto;
-    }
-  }
+    .tab_panels {
+      flex: 3;
+      z-index: 1;
 
-  .tab_content_right {
-    flex: 40%;
-    padding-left: 50px;
+      .tab_content {
+        margin-top: 50px;
+        display: flex;
+        padding-left: 20px;
 
-    img {
-      width: 100%;
-      border-radius: 20px;
+        .tab_content_left {
+          flex: 60%;
+
+          h3 {
+            font-size: 2rem;
+            font-weight: settings.$font-weight-bold;
+            color: settings.$color-primary;
+            margin-bottom: 50px;
+          }
+
+          p {
+            font-size: 1rem;
+            color: settings.$color-text-light;
+            margin-bottom: 20px;
+
+            &:last-of-type {
+              margin-bottom: 50px;
+            }
+          }
+
+          .button {
+            margin: 0 auto;
+          }
+        }
+
+        .tab_content_right {
+          flex: 40%;
+          padding-left: 50px;
+
+          img {
+            width: 100%;
+            border-radius: 20px;
+          }
+        }
+      }
     }
   }
 }
 
 @media (max-width: 1400px) {
-  .tab_content {
-    flex-direction: column-reverse;
+  .thumbs_container {
+    .tabs_wrapper {
+      .tab_panels {
+        .tab_content {
+          flex-direction: column-reverse;
 
-    .tab_content_right {
-      text-align: center;
-      margin-bottom: 20px;
+          .tab_content_right {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-left: 0;
+          }
+        }
+      }
     }
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import * as styles from './ArticleCard.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Link } from 'gatsby';
 
 const ArticleCard = ({ image, card_title, card_text, href }) => {
   return (
@@ -45,9 +46,9 @@ const ArticleCard = ({ image, card_title, card_text, href }) => {
       <div className={styles.card_body}>
         <h3>{card_title}</h3>
         <p>{card_text}</p>
-        <button href={href} text="Czytaj więcej">
+        <Link to={href} text="Czytaj więcej">
           Czytaj Więcej
-        </button>
+        </Link>
       </div>
     </div>
   );

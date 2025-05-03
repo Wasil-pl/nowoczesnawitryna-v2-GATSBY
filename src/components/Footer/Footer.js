@@ -22,7 +22,7 @@ const Footer = () => {
             <a href="mailto:nowoczesnawitryna@gmail.com">nowoczesnawitryna@gmail.com</a>
             <p>Jastrzębie-Zdrój</p>
             <p>ul. Bogoczowiec 4c</p>
-            <div>
+            <div className={styles.social_media}>
               <a href="https://www.facebook.com/profile.php?id=61556511114215" aria-label="Profil na Facebooku">
                 <FaFacebook />
                 <span>facebook</span>

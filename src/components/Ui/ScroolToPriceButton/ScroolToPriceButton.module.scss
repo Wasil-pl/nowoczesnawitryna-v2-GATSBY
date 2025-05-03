@@ -27,7 +27,6 @@
   &::after {
     content: 'Przejdź do ceny';
     position: absolute;
-    word-wrap: break-word;
     top: 65px;
     right: -5px;
     background-color: settings.$color-background-dark;
@@ -35,7 +34,7 @@
     padding: 7px 13px;
     border-radius: 5px;
     font-size: 0.7rem;
-    left: -5px;
+    left: -15px;
   }
 
   &::before {
@@ -61,7 +60,7 @@
     padding: 7px 13px;
     border-radius: 5px;
     font-size: 0.7rem;
-    left: -120px;
+    left: -140px;
     white-space: nowrap;
   }
 

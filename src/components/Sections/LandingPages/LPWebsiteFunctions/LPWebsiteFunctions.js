@@ -1,6 +1,5 @@
 import React from 'react';
 import * as styles from './LPWebsiteFunctions.module.scss';
-
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 
@@ -33,7 +32,7 @@ const LPWebsiteFunctions = ({
         <div className={styles.wrapper}>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../../images/price.png" alt="Cennik" height={180} />
+              <StaticImage src="../../../../images/price.png" alt="Cennik" height={180} />
             </div>
             <div className={styles.text}>
               <h3>{itemTitle1}</h3>
@@ -42,7 +41,7 @@ const LPWebsiteFunctions = ({
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../../images/seo.png" alt="SEO" height={180} />
+              <StaticImage src="../../../../images/seo.png" alt="SEO" height={180} />
             </div>
             <div className={styles.text}>
               <h3>{itemTitle2}</h3>
@@ -51,7 +50,7 @@ const LPWebsiteFunctions = ({
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../../images/rodo.png" alt="RODO" height={180} />
+              <StaticImage src="../../../../images/rodo.png" alt="RODO" height={180} />
             </div>
             <div className={styles.text}>
               <h3>{itemTitle3}</h3>
@@ -60,7 +59,7 @@ const LPWebsiteFunctions = ({
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../../images/support.png" alt="Wsparcie" height={180} />
+              <StaticImage src="../../../../images/support.png" alt="Wsparcie" height={180} />
             </div>
             <div className={styles.text}>
               <h3>{itemTitle4}</h3>
@@ -69,7 +68,7 @@ const LPWebsiteFunctions = ({
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../../images/page-speed.png" alt="Szybkość" height={180} />
+              <StaticImage src="../../../../images/page-speed.png" alt="Szybkość" height={180} />
             </div>
             <div className={styles.text}>
               <h3>{itemTitle5}</h3>
@@ -78,7 +77,7 @@ const LPWebsiteFunctions = ({
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../../images/responsive.png" alt="Responsywność" height={180} />
+              <StaticImage src="../../../../images/responsive.png" alt="Responsywność" height={180} />
             </div>
             <div className={styles.text}>
               <h3>{itemTitle6}</h3>
@@ -87,7 +86,7 @@ const LPWebsiteFunctions = ({
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../../images/cms_function.png" alt="CMS" width={200} />
+              <StaticImage src="../../../../images/cms_function.png" alt="CMS" width={200} />
             </div>
             <div className={styles.text}>
               <h3>{itemTitle7}</h3>
@@ -96,7 +95,7 @@ const LPWebsiteFunctions = ({
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../../images/woocommerce.png" alt="WooCommerce" height={180} />
+              <StaticImage src="../../../../images/woocommerce.png" alt="WooCommerce" height={180} />
             </div>
             <div className={styles.text}>
               <h3>{itemTitle8}</h3>

@@ -28,7 +28,9 @@ const RescentArticles = () => {
             />
           ))}
         </div>
-        <CustomButton text="Zobacz wszystkie" link="/blog/" variant="white" />
+        <div className={styles.button_box}>
+          <CustomButton text="Zobacz wszystkie" link="/blog/" variant="white" />
+        </div>
       </div>
     </section>
   );
