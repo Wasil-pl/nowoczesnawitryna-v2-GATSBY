@@ -1,77 +1,100 @@
 import React, { useState } from 'react';
-import { Button, Nav, Navbar, NavDropdown, Offcanvas } from 'react-bootstrap';
 import * as styles from './MenuMobile.module.scss';
-import './MenuMobile.scss';
-import { HouseFill, List } from 'react-bootstrap-icons';
+import { BsHouseFill, BsList } from 'react-icons/bs';
 import { StaticImage } from 'gatsby-plugin-image';
 import CustomButton from '../../Ui/CustomButton/CustomButton';
+import { ChevronDownIcon } from '@heroicons/react/24/solid';
 
 const MenuMobile = ({ active }) => {
-  const [show, setShow] = useState(false);
-
-  const handleShow = () => setShow(true);
-  const handleClose = () => setShow(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <>
+    <span className={styles.menu_mobile}>
       <CustomButton link={'/formularz-szybkiej-wyceny/'} text={'Szybka Wycena'} variant="small" />
-      <Button className={styles.canvas_button} variant="primary" onClick={handleShow} aria-label="Menu">
-        <List />
-      </Button>
-      <Offcanvas show={show} onHide={handleClose} placement="end">
-        <Offcanvas.Header closeButton></Offcanvas.Header>
-        <Offcanvas.Body>
+      <button className={styles.canvas_button} onClick={() => setIsOpen(true)} aria-label="Menu">
+        <BsList />
+      </button>
+
+      {isOpen && (
+        <div className={styles.offcanvas}>
+          <button className={styles.close} onClick={() => setIsOpen(false)}>
+            &times;
+          </button>
           <div className={styles.menu_wrapper}>
-            <Navbar.Brand href="/" className={styles.menu_image}>
-              <StaticImage src="../../images/logo_kolo.png" alt="logo" width={150} />
-            </Navbar.Brand>
+            <a href="/" className={styles.menu_image}>
+              <StaticImage src="../../../images/logo_kolo.png" alt="logo" width={150} />
+            </a>
+
             <div className={styles.lang}>
               <a href="https://www.nowoczesnawitryna.com">EN</a>
               <a className={styles.active} href="https://www.nowoczesnawitryna.pl/">
                 PL
               </a>
             </div>
-            <Nav>
-              <Nav.Link aria-label="strona główna" className={active === 'home' ? 'activeMenuItem' : ''} href="/">
-                <HouseFill />
-              </Nav.Link>
-              <NavDropdown title="Oferta" id="basic-nav-dropdown">
-                <NavDropdown.Item className={active === 'aplikacje' ? 'activeMenuItem' : ''} href="/aplikacje-webowe/">
-                  Aplikacje Webowe
-                </NavDropdown.Item>
-                <NavDropdown.Item className={active === 'wordpress' ? 'activeMenuItem' : ''} href="/strony-wordpress/">
-                  Strony WordPress
-                </NavDropdown.Item>
-                <NavDropdown.Item className={active === 'html' ? 'activeMenuItem' : ''} href="/strony-niestandardowe/">
-                  Strony HTML/CSS/JS
-                </NavDropdown.Item>
-                <NavDropdown.Item className={active === 'sklep' ? 'activeMenuItem' : ''} href="/sklepy-internetowe/">
-                  Sklepy www
-                </NavDropdown.Item>
-                <NavDropdown.Item className={active === 'lms' ? 'activeMenuItem' : ''} href="/strony-lms/">
-                  Strony LMS
-                </NavDropdown.Item>
-                <NavDropdown.Item className={active === 'logo' ? 'activeMenuItem' : ''} href="/projektowanie-logo/">
-                  Projektowanie logo
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link
-                className={active === 'formularz-wyceny' ? 'activeMenuItem' : ''}
-                href="/formularz-szybkiej-wyceny/"
-              >
-                Szybka Wycena
-              </Nav.Link>
-              <Nav.Link className={active === 'kontakt' ? 'activeMenuItem' : ''} href="/kontakt/">
-                Kontakt
-              </Nav.Link>
-              <Nav.Link className={active === 'blog' ? 'activeMenuItem' : ''} href="/blog/">
-                Blog
-              </Nav.Link>
-            </Nav>
+
+            <ul className={styles.nav_list}>
+              <li>
+                <a className={active === 'home' ? styles.activeMenuItem : ''} href="/">
+                  <BsHouseFill />
+                </a>
+              </li>
+
+              <li className={styles.dropdown}>
+                <button
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  className={`${styles.dropdown_toggle} ${active === 'oferta' ? styles.activeMenuItem : ''}`}
+                >
+                  Oferta
+                  <ChevronDownIcon />
+                </button>
+                {dropdownOpen && (
+                  <div className={styles.dropdown_menu}>
+                    <a className={active === 'aplikacje' ? styles.activeMenuItem : ''} href="/aplikacje-webowe/">
+                      Aplikacje Webowe
+                    </a>
+                    <a className={active === 'wordpress' ? styles.activeMenuItem : ''} href="/strony-wordpress/">
+                      Strony WordPress
+                    </a>
+                    <a className={active === 'html' ? styles.activeMenuItem : ''} href="/strony-niestandardowe/">
+                      Strony HTML/CSS/JS
+                    </a>
+                    <a className={active === 'sklep' ? styles.activeMenuItem : ''} href="/sklepy-internetowe/">
+                      Sklepy www
+                    </a>
+                    <a className={active === 'lms' ? styles.activeMenuItem : ''} href="/strony-lms/">
+                      Strony LMS
+                    </a>
+                    <a className={active === 'logo' ? styles.activeMenuItem : ''} href="/projektowanie-logo/">
+                      Projektowanie logo
+                    </a>
+                  </div>
+                )}
+              </li>
+
+              <li>
+                <a
+                  className={active === 'formularz-wyceny' ? styles.activeMenuItem : ''}
+                  href="/formularz-szybkiej-wyceny/"
+                >
+                  Szybka Wycena
+                </a>
+              </li>
+              <li>
+                <a className={active === 'kontakt' ? styles.activeMenuItem : ''} href="/kontakt/">
+                  Kontakt
+                </a>
+              </li>
+              <li>
+                <a className={active === 'blog' ? styles.activeMenuItem : ''} href="/blog/">
+                  Blog
+                </a>
+              </li>
+            </ul>
           </div>
-        </Offcanvas.Body>
-      </Offcanvas>
-    </>
+        </div>
+      )}
+    </span>
   );
 };
 

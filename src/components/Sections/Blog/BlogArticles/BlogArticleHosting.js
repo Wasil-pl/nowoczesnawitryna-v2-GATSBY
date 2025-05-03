@@ -1,11 +1,10 @@
 import React from 'react';
 import * as styles from './BlogArticles.module.scss';
-import { Container } from 'react-bootstrap';
 
 const BlogArticleHosting = () => {
   return (
     <div className={styles.blog_articles}>
-      <Container>
+      <div className="container mx-auto px-4">
         <div>
           <h2>Jak wybrać najlepszy hosting i domenę dla swojej strony internetowej?</h2>
           <p>
@@ -96,7 +95,7 @@ const BlogArticleHosting = () => {
             </li>
           </ul>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

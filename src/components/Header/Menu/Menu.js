@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Disclosure } from '@headlessui/react';
 import * as styles from './Menu.module.scss';
 import MenuDeskopt from './MenuDeskopt';
 import MenuMobile from './MenuMobile';
@@ -26,7 +25,7 @@ const Menu = ({ active }) => {
   }, []);
 
   return (
-    <Disclosure as="nav" className={`${styles.navbar} ${scrollY > 50 ? styles.scrolled : ''}`}>
+    <nav className={`${styles.navbar} ${scrollY > 50 ? styles.scrolled : ''}`}>
       <div className={`container mx-auto px-4 ${styles.container}`}>
         <a href="/">
           {scrollY > 50 && <StaticImage src="../../../images/logo.png" alt="logo" width={100} quality={100} />}
@@ -46,7 +45,7 @@ const Menu = ({ active }) => {
           {isMobile && <MenuMobile active={active} />}
         </div>
       </div>
-    </Disclosure>
+    </nav>
   );
 };
 

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import * as styles from './LPProcessSteps.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Container } from 'react-bootstrap';
 
 const LPProcessSteps = ({
   sectionTitle,
@@ -43,7 +42,7 @@ const LPProcessSteps = ({
 
   return (
     <section className={styles.process_steps_container}>
-      <Container>
+      <div className="container mx-auto px-4">
         <SectionTitle title={sectionTitle} coloredText={sectionTitleColored} />
         <div className={styles.process_steps}>
           <div className={`${styles.step} ${styles.left} ${activeStep === 0 ? styles.active : ''}`}>
@@ -131,7 +130,7 @@ const LPProcessSteps = ({
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

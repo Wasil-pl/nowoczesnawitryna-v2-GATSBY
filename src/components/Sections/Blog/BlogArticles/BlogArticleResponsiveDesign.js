@@ -1,11 +1,10 @@
 import React from 'react';
 import * as styles from './BlogArticles.module.scss';
-import { Container } from 'react-bootstrap';
 
 const BlogArticleResponsiveDesign = () => {
   return (
     <div className={styles.blog_articles}>
-      <Container>
+      <div className="container mx-auto px-4">
         <h2>Czym Jest Responsywność Strony i Dlaczego Jest Tak Ważna?</h2>
         <p>
           Responsywność strony internetowej to jej zdolność do dostosowywania się do różnych wielkości ekranów – od
@@ -47,7 +46,7 @@ const BlogArticleResponsiveDesign = () => {
           Responsywność strony internetowej jest kluczowa dla sukcesu w świecie mobilnym. Zapewnienie dobrego
           doświadczenia na wszystkich urządzeniach może znacząco wpłynąć na osiągnięcie celów biznesowych.
         </p>
-      </Container>
+      </div>
     </div>
   );
 };

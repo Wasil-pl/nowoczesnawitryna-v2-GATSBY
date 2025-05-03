@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import * as styles from './LogoProcessSteps.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Container } from 'react-bootstrap';
 
 const LogoProcessSteps = () => {
   const [activeStep, setActiveStep] = useState(-1);
@@ -28,7 +27,7 @@ const LogoProcessSteps = () => {
 
   return (
     <section className={styles.process_steps_container}>
-      <Container>
+      <div className="container mx-auto px-4">
         <SectionTitle title="Mój proces projektowania" coloredText=" Logo" />
         <div className={styles.process_steps}>
           <div className={`${styles.step} ${styles.left} ${activeStep === 0 ? styles.active : ''}`}>
@@ -119,7 +118,7 @@ const LogoProcessSteps = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

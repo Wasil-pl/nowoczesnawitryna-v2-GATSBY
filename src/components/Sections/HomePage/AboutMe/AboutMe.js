@@ -11,11 +11,10 @@ const AboutMe = () => {
         <div className={styles.wrapper}>
           <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.first_column}>
             <StaticImage
-              src="../../../../images/aboutMe.webp"
+              src="../../../../images/aboutMe.png"
               alt="Dariusz Wasilewski full-stack web developer"
               placeholder="blurred"
-              width={400}
-              className={styles.image}
+              width={700}
             />
           </div>
           <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.second_column}>

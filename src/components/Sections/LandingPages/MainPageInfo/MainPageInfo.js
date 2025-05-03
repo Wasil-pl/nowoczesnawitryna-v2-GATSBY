@@ -1,13 +1,13 @@
 import React from 'react';
 import './MainPageInfo.scss';
 import * as styles from './MainPageInfo.module.scss';
-import { Container, ListGroup } from 'react-bootstrap';
+import { ListGroup } from 'react-bootstrap';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 
 const MainPageInfo = () => {
   return (
     <section className={styles.main_page_info}>
-      <Container>
+      <div className="container mx-auto px-4">
         <div className={styles.wrapper}>
           <div className={styles.info}>
             <SectionTitle title="Moja Oferta – Tworzenie Profesjonalnych Stron Internetowych" />
@@ -35,7 +35,7 @@ const MainPageInfo = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

@@ -29,6 +29,7 @@
       .testimonial_stars {
         color: settings.$color-primary;
         padding-top: 20px;
+        display: flex;
 
         svg {
           width: 20px;

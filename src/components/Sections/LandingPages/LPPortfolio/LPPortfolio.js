@@ -1,6 +1,6 @@
 import React from 'react';
 import * as styles from './LPPortfolio.module.scss';
-import { Container } from 'react-bootstrap';
+
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
@@ -9,7 +9,7 @@ import CallToAction from '../../Shared/CallToAction/CallToAction';
 const LPPortfolio = ({ title, coloredText, subtitle }) => {
   return (
     <section className={styles.portfolio}>
-      <Container>
+      <div className="container mx-auto px-4">
         <div className={styles.wrapper}>
           <div className={`${styles.portfolio_item} ${styles.title_box}`}>
             <SectionTitle title={title} coloredText={coloredText} subtitle={subtitle} />
@@ -65,7 +65,7 @@ const LPPortfolio = ({ title, coloredText, subtitle }) => {
         </div>
 
         <CallToAction kontakt_3 />
-      </Container>
+      </div>
     </section>
   );
 };

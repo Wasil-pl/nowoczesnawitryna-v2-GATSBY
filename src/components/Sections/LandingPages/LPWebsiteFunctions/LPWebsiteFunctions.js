@@ -1,6 +1,6 @@
 import React from 'react';
 import * as styles from './LPWebsiteFunctions.module.scss';
-import { Container } from 'react-bootstrap';
+
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 
@@ -27,7 +27,7 @@ const LPWebsiteFunctions = ({
 }) => {
   return (
     <section className={styles.website_functions}>
-      <Container>
+      <div className="container mx-auto px-4">
         <SectionTitle title={sectionTitle} coloredText={sectionTitleColored} subtitle={sectionSubtitle} />
 
         <div className={styles.wrapper}>
@@ -104,7 +104,7 @@ const LPWebsiteFunctions = ({
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

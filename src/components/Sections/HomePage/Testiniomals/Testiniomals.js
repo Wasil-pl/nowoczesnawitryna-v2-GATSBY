@@ -9,7 +9,12 @@ const Testiniomals = () => {
     <section className={styles.testiniomals}>
       <div className="container mx-auto px-4">
         <div className={styles.title}>
-          <SectionTitle coloredText="Niezdecydowany?" subtitle="Zobacz co sądzą o mnie moi klienci" variant="white" />
+          <SectionTitle
+            coloredText="Niezdecydowany?"
+            subtitle="Zobacz co sądzą o mnie moi klienci"
+            backgroundText="Opinie"
+            variant="white"
+          />
         </div>
 
         <div className={styles.wrapper}>

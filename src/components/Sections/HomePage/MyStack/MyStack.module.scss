@@ -6,6 +6,7 @@
     padding: 100px 40px;
     margin-top: -150px;
     position: relative;
+    box-shadow: settings.$box-shadow;
 
     &::after {
       content: '';
@@ -36,6 +37,7 @@
 
         &:hover {
           transform: scale(1.07);
+          cursor: pointer;
 
           h3 {
             color: settings.$color-text-primary;

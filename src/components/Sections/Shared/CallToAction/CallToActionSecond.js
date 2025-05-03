@@ -1,12 +1,12 @@
 import React from 'react';
 import * as styles from './CallToAction.module.scss';
-import { Container } from 'react-bootstrap';
+
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
 
 const CallToActionSecond = () => {
   return (
     <div className={styles.action2}>
-      <Container>
+      <div className="container mx-auto px-4">
         <div className={styles.wrapper}>
           <h2>Kalkulator kosztów strony internetowej</h2>
           <p>
@@ -15,7 +15,7 @@ const CallToActionSecond = () => {
           </p>
           <CustomButton link="/formularz-szybkiej-wyceny/" text="Oblicz koszt swojej strony" />
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

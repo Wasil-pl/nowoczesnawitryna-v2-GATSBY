@@ -1,6 +1,6 @@
 import React from 'react';
 import * as styles from './LPMyServices.module.scss';
-import { Container } from 'react-bootstrap';
+
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
 import { QuestionCircle } from 'react-bootstrap-icons';
@@ -29,7 +29,7 @@ const LPMyServices = ({
 
   return (
     <section className={styles.myServices}>
-      <Container>
+      <div className="container mx-auto px-4">
         <SectionTitle title={sectionTitle} coloredText={sectionTitleColored} variant="white" />
 
         {!isMobile && (
@@ -80,7 +80,7 @@ const LPMyServices = ({
         </div>
 
         <CallToAction />
-      </Container>
+      </div>
     </section>
   );
 };

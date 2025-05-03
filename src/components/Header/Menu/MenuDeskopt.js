@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { BsHouseFill } from 'react-icons/bs';
 import * as styles from './MenuDeskopt.module.scss';
+import { ChevronDownIcon } from '@heroicons/react/24/solid';
 
 const MenuDeskopt = ({ active }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +30,7 @@ const MenuDeskopt = ({ active }) => {
           onClick={() => setIsOpen(!isOpen)}
         >
           Oferta
+          <ChevronDownIcon />
         </button>
         {isOpen && (
           <div className={styles.dropdown_menu}>

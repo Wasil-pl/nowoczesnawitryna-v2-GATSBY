@@ -1,9 +1,8 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 
 const PrivacyPolicy = () => {
   return (
-    <Container>
+    <div className="container mx-auto px-4">
       <div class="section">
         <h2>1. Informacje ogólne</h2>
         <p>
@@ -124,7 +123,7 @@ const PrivacyPolicy = () => {
           <li>Windows Phone</li>
         </ul>
       </div>
-    </Container>
+    </div>
   );
 };
 

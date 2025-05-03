@@ -1,6 +1,6 @@
 import React from 'react';
 import * as styles from './Portfolio.module.scss';
-import { Container } from 'react-bootstrap';
+
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
@@ -8,7 +8,7 @@ import CustomButton from '../../../Ui/CustomButton/CustomButton';
 const Portfolio = () => {
   return (
     <section className={styles.portfolio}>
-      <Container>
+      <div className="container mx-auto px-4">
         <div className={styles.wrapper}>
           <div className={`${styles.portfolio_item} ${styles.title_box}`}>
             <SectionTitle
@@ -66,7 +66,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

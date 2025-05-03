@@ -11,7 +11,6 @@ module.exports = {
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-sass',
     'gatsby-plugin-image',
-    `gatsby-plugin-postcss`,
     'gatsby-plugin-scroll-reveal',
     'gatsby-plugin-react-svg',
     {
@@ -53,6 +52,12 @@ module.exports = {
       options: {
         id: 'GTM-K29L5GHK',
         includeInDevelopment: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require('tailwindcss'), require('autoprefixer')],
       },
     },
   ],

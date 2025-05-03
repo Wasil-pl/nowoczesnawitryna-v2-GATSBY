@@ -1,6 +1,6 @@
 import React from 'react';
 import * as styles from './ContactInfo.module.scss';
-import { Container } from 'react-bootstrap';
+
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import GoogleMaps from '../GoogleMaps/GoogleMaps';
 import { HouseFill } from 'react-bootstrap-icons';
@@ -8,7 +8,7 @@ import { HouseFill } from 'react-bootstrap-icons';
 const ContactInfo = () => {
   return (
     <div className={styles.contact_info}>
-      <Container>
+      <div className="container mx-auto px-4">
         <div className={styles.wrapper}>
           <div className={styles.info}>
             <SectionTitle title="Adres" subtitle="Zobacz na mapie, gdzie się znajduję" />
@@ -23,7 +23,7 @@ const ContactInfo = () => {
             <GoogleMaps />
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

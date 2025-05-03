@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as styles from './ScroolUpButton.module.scss';
-import { Container } from 'react-bootstrap';
+
 import { ArrowUpCircleFill } from 'react-bootstrap-icons';
 
 const ScroolUpButton = () => {
@@ -24,13 +24,13 @@ const ScroolUpButton = () => {
   };
 
   return (
-    <Container>
+    <div className="container mx-auto px-4">
       {showButton && (
         <button className={styles.scroll_up_button} onClick={handleScrollToTop} aria-label="scroolUp">
           <ArrowUpCircleFill />
         </button>
       )}
-    </Container>
+    </div>
   );
 };
 

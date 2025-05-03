@@ -1,13 +1,13 @@
 import React from 'react';
 import * as styles from './ServicesInfo.module.scss';
-import { Container } from 'react-bootstrap';
+
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const ServicesInfo = ({ html, wordpress }) => {
   return (
     <section className={styles.services_info}>
-      <Container>
+      <div className="container mx-auto px-4">
         <div className={styles.wrapper}>
           <div
             data-sal="slide-right"
@@ -149,7 +149,7 @@ const ServicesInfo = ({ html, wordpress }) => {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

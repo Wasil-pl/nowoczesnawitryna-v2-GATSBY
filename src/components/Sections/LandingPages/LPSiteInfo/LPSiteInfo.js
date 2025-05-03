@@ -1,6 +1,6 @@
 import React from 'react';
 import * as styles from './LPSiteInfo.module.scss';
-import { Card, Container } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
 
 const LPSiteInfo = ({
@@ -14,7 +14,7 @@ const LPSiteInfo = ({
 }) => {
   return (
     <section className={styles.site_info}>
-      <Container>
+      <div className="container mx-auto px-4">
         <div className={styles.wrapper}>
           <div className={styles.first_column}>
             <h3>{title_first}</h3>
@@ -49,7 +49,7 @@ const LPSiteInfo = ({
             {banner_description}
           </h3>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

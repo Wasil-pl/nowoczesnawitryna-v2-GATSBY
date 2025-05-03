@@ -1,13 +1,13 @@
 import React from 'react';
 import * as styles from './ArticleList.module.scss';
-import { Container } from 'react-bootstrap';
+
 import ArticleCard from '../../Shared/ArticleCard/ArticleCard';
 import { blog_cards_data } from '../../../../consts/blog_cards_data';
 
 const ArticleList = () => {
   return (
     <section className={styles.article_list}>
-      <Container>
+      <div className="container mx-auto px-4">
         <div className={styles.wrapper}>
           {blog_cards_data.map((card, index) => (
             <ArticleCard
@@ -19,7 +19,7 @@ const ArticleList = () => {
             />
           ))}
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

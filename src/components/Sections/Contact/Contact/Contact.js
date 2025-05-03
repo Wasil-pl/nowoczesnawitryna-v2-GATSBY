@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import * as styles from './Contact.module.scss';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
-import { Alert, Button, Container, Form } from 'react-bootstrap';
+import { Alert, Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { Error, errorMessages } from '../../../../consts/errorMesages';
 import { patterns } from '../../../../consts/patterns';
@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <section id="kontakt" className={styles.contact}>
-      <Container>
+      <div className="container mx-auto px-4">
         <div className={styles.wrapper}>
           <div className={styles.form_wrapper}>
             <h3>Gotowy aby zacząć?</h3>
@@ -166,7 +166,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

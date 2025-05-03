@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as styles from './ScroolToPriceButton.module.scss';
-import { Container } from 'react-bootstrap';
+
 import { CurrencyDollar } from 'react-bootstrap-icons';
 
 const ScroolToPriceButton = () => {
@@ -32,7 +32,7 @@ const ScroolToPriceButton = () => {
   };
 
   return (
-    <Container>
+    <div className="container mx-auto px-4">
       <button
         className={`${styles.scroll_to_price_button} ${
           isActive ? styles.scroll_to_price_button_active : styles.scroll_to_price_button_left
@@ -42,7 +42,7 @@ const ScroolToPriceButton = () => {
       >
         <CurrencyDollar />
       </button>
-    </Container>
+    </div>
   );
 };
 

@@ -5,7 +5,7 @@ import WhyChooseMe from '../components/Sections/HomePage/WhyChooseMe/WhyChooseMe
 import MyServices from '../components/Sections/HomePage/MyServiceComponents/MyServices/MyServices';
 import AboutMe from '../components/Sections/HomePage/AboutMe/AboutMe';
 import MyStack from '../components/Sections/HomePage/MyStack/MyStack';
-import WebsiteFeatures from '../components/Sections/LandingPages/WebsiteFeatures/WebsiteFeatures';
+import WebsiteFeatures from '../components/Sections/HomePage/WebsiteFeatures/WebsiteFeatures';
 import CallToActionSecond from '../components/Sections/Shared/CallToAction/CallToActionSecond';
 import WebSiteProcessSteps from '../components/Sections/HomePage/WebSiteProcessSteps/WebSiteProcessSteps';
 import Portfolio from '../components/Sections/Shared/Portfolio/Portfolio';

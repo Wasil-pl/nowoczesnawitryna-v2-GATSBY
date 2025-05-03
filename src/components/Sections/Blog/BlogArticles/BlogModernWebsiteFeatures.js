@@ -1,11 +1,10 @@
 import React from 'react';
 import * as styles from './BlogArticles.module.scss';
-import { Container } from 'react-bootstrap';
 
 const BlogArticleModernWebsiteFeatures = () => {
   return (
     <div className={styles.blog_articles}>
-      <Container>
+      <div className="container mx-auto px-4">
         <h2>Jakie Funkcje Powinna Mieć Nowoczesna Strona Internetowa?</h2>
         <p>
           Nowoczesna strona internetowa to nie tylko estetyczny wygląd, ale przede wszystkim funkcjonalność, która
@@ -88,7 +87,7 @@ const BlogArticleModernWebsiteFeatures = () => {
           konwersje. Jeśli planujesz stworzyć stronę lub zmodernizować istniejącą, pamiętaj o tych funkcjach, aby
           zwiększyć efektywność swojej witryny.
         </p>
-      </Container>
+      </div>
     </div>
   );
 };

@@ -1,12 +1,12 @@
 import React from 'react';
 import * as styles from './BlogArticles.module.scss';
-import { Container } from 'react-bootstrap';
+
 import { StaticImage } from 'gatsby-plugin-image';
 
 const BlogArticleCms = () => {
   return (
     <div className={styles.blog_articles}>
-      <Container>
+      <div className="container mx-auto px-4">
         <h2>CMS vs strona pisana od podstaw – co wybrać do tworzenia stron internetowych?</h2>
         <p>
           Jeśli chcesz stworzyć własną stronę internetową, musisz podjąć ważną decyzję: czy użyć gotowego systemu
@@ -167,7 +167,7 @@ const BlogArticleCms = () => {
           podstaw może być lepszym wyborem. Warto również skonsultować się z doświadczonym programistą, który pomoże Ci
           podjąć najlepszą decyzję.
         </p>
-      </Container>
+      </div>
     </div>
   );
 };

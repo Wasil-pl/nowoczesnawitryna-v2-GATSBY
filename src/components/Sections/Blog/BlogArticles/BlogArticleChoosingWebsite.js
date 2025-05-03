@@ -1,11 +1,10 @@
 import React from 'react';
 import * as styles from './BlogArticles.module.scss';
-import { Container } from 'react-bootstrap';
 
 const BlogArticleChoosingWebsite = () => {
   return (
     <div className={styles.blog_articles}>
-      <Container>
+      <div className="container mx-auto px-4">
         <h2>Jak Wybrać Idealną Stronę Internetową dla Twojej Firmy: One-Page, Multi-Page czy Strona z CMS?</h2>
         <p>
           Wybór odpowiedniego rodzaju strony internetowej jest kluczowy dla sukcesu każdej firmy w internecie. Różne
@@ -116,7 +115,7 @@ const BlogArticleChoosingWebsite = () => {
           Wybór odpowiedniego typu strony może wpłynąć na sukces firmy w internecie. Zrozumienie specyfiki każdej z
           opcji pomoże podjąć decyzję, która najlepiej odpowiada Twoim potrzebom i celom biznesowym.
         </p>
-      </Container>
+      </div>
     </div>
   );
 };

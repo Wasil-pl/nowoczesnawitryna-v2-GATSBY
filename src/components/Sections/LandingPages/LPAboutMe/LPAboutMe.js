@@ -1,13 +1,13 @@
 import React from 'react';
 import * as styles from './LPAboutMe.module.scss';
-import { Container } from 'react-bootstrap';
+
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const LPAboutMe = ({ description }) => {
   return (
     <section id="omnie" className={styles.about_me}>
-      <Container>
+      <div className="container mx-auto px-4">
         <SectionTitle title="Kilka słów" coloredText=" o mnie" />
 
         <div className={styles.wrapper}>
@@ -25,7 +25,7 @@ const LPAboutMe = ({ description }) => {
             <p>{description}</p>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

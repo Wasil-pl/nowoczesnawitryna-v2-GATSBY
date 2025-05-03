@@ -1,7 +1,7 @@
 import React from 'react';
 import './Prices.scss';
 import * as styles from './Prices.module.scss';
-import { Container } from 'react-bootstrap';
+
 import { Check, Dash } from 'react-bootstrap-icons';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
@@ -10,7 +10,7 @@ import CallToAction from '../CallToAction/CallToAction';
 const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
   return (
     <section id="price" className={styles.prices}>
-      <Container>
+      <div className="container mx-auto px-4">
         <SectionTitle coloredText="Cennik" subtitle="Zobacz i wybierz najlepszą ofertę dla siebie" variant="white" />
 
         <div className={styles.wrapper}>
@@ -564,7 +564,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
         </div>
 
         <CallToAction kontakt_2 variant={'bottom'} />
-      </Container>
+      </div>
     </section>
   );
 };

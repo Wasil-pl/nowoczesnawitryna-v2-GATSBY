@@ -1,11 +1,10 @@
 import React from 'react';
 import * as styles from './BlogArticles.module.scss';
-import { Container } from 'react-bootstrap';
 
 const BlogArticleWebDesignProcess = () => {
   return (
     <div className={styles.blog_articles}>
-      <Container>
+      <div className="container mx-auto px-4">
         <h2>Jak Przebiega Proces Tworzenia Strony Internetowej? Krok po Kroku</h2>
         <p>
           Tworzenie strony internetowej to złożony proces, który wymaga planowania, projektowania, kodowania i
@@ -49,7 +48,7 @@ const BlogArticleWebDesignProcess = () => {
           Każdy z etapów tworzenia strony internetowej ma znaczenie dla jej ostatecznej jakości. Przemyślany proces
           projektowania zapewnia skuteczność strony, która będzie wspierać rozwój Twojej firmy.
         </p>
-      </Container>
+      </div>
     </div>
   );
 };

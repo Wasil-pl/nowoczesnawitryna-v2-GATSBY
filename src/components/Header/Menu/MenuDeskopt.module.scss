@@ -7,9 +7,15 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 0 2rem;
+  padding: 1rem 2rem 0;
   gap: 2rem;
   position: relative;
+
+  & > a > svg {
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-bottom: 10px;
+  }
 
   .dropdown {
     position: relative;
@@ -21,18 +27,26 @@
       border: none;
       color: settings.$color-text-light;
       font-size: 1.2rem;
-      font-weight: 400;
+      font-weight: settings.$font-weight-bold;
       margin: 0.1rem;
       text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      display: flex;
 
       &:hover {
         color: settings.$color-text-primary;
       }
+
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 10px;
+      }
     }
 
     .dropdown_menu {
-      background-color: rgba(25, 29, 41, 0.65);
-      border-top: 2px solid settings.$color-primary;
+      background-color: rgba(25, 29, 41, 0.75);
+      border-top: 3px solid settings.$color-primary;
       padding: 1rem 1.5rem;
       margin: 0;
       width: max-content;
@@ -42,17 +56,19 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-      text-wrap: none;
+      border-radius: 10px;
     }
   }
 
   a {
     color: settings.$color-text-light;
     font-size: 1.2rem;
-    font-weight: 400;
+    letter-spacing: 0.1rem;
+    font-weight: settings.$font-weight-bold;
     margin: 0.1rem;
     text-transform: uppercase;
     text-decoration: none;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
     &:hover {
       color: settings.$color-text-primary;

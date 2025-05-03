@@ -1,11 +1,10 @@
 import React from 'react';
 import * as styles from './BlogArticles.module.scss';
-import { Container } from 'react-bootstrap';
 
 const BlogArticleWebAppsVsWebsites = () => {
   return (
     <div className={styles.blog_articles}>
-      <Container>
+      <div className="container mx-auto px-4">
         <h2>Aplikacje Webowe vs. Strony Internetowe – Kiedy Wybrać Aplikację?</h2>
         <p>
           Wybór między aplikacją webową a stroną internetową zależy od potrzeb firmy i oczekiwań użytkowników. Chociaż
@@ -48,7 +47,7 @@ const BlogArticleWebAppsVsWebsites = () => {
           prostych prezentacji firmy, natomiast aplikacja webowa zapewnia elastyczność i możliwości dla bardziej
           zaawansowanych rozwiązań biznesowych.
         </p>
-      </Container>
+      </div>
     </div>
   );
 };

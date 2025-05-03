@@ -1,23 +1,23 @@
 import React from 'react';
 import * as styles from './WebsiteFeatures.module.scss';
-import { Container } from 'react-bootstrap';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const WebsiteFeatures = () => {
   return (
     <section className={styles.website_functions}>
-      <Container>
+      <div className="container mx-auto px-4">
         <SectionTitle
           title="Strona internetowa dopasowana do "
           coloredText="Twoich potrzeb"
           subtitle="Kompleksowe funkcje i Nowoczesne rozwiązania"
+          backgroundText="Funkcje"
         />
 
         <div className={styles.wrapper}>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../images/price.png" alt="Cennik" height={180} />
+              <StaticImage src="../../../../images/price.png" alt="Cennik" height={180} />
             </div>
             <div className={styles.text}>
               <h3>Przystępne ceny</h3>
@@ -29,7 +29,7 @@ const WebsiteFeatures = () => {
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../images/seo.png" alt="SEO" height={180} />
+              <StaticImage src="../../../../images/seo.png" alt="SEO" height={180} />
             </div>
             <div className={styles.text}>
               <h3>Optymalizacja SEO</h3>
@@ -42,7 +42,7 @@ const WebsiteFeatures = () => {
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../images/rodo.png" alt="RODO" height={180} />
+              <StaticImage src="../../../../images/rodo.png" alt="RODO" height={180} />
             </div>
             <div className={styles.text}>
               <h3>Zapewnienie Zgodności z RODO na Mojej Stronie Internetowej</h3>
@@ -56,7 +56,7 @@ const WebsiteFeatures = () => {
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../images/support.png" alt="Wsparcie" height={180} />
+              <StaticImage src="../../../../images/support.png" alt="Wsparcie" height={180} />
             </div>
             <div className={styles.text}>
               <h3>Wsparcie i opieka techniczna</h3>
@@ -68,7 +68,7 @@ const WebsiteFeatures = () => {
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../images/page-speed.png" alt="Szybkość" height={180} />
+              <StaticImage src="../../../../images/page-speed.png" alt="Szybkość" height={180} />
             </div>
             <div className={styles.text}>
               <h3>Optymalizacja wydajności</h3>
@@ -81,7 +81,7 @@ const WebsiteFeatures = () => {
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../images/responsive.png" alt="Responsywność" height={180} />
+              <StaticImage src="../../../../images/responsive.png" alt="Responsywność" height={180} />
             </div>
             <div className={styles.text}>
               <h3>Responsywność mobilna</h3>
@@ -93,7 +93,7 @@ const WebsiteFeatures = () => {
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../images/cms_function.png" alt="CMS" width={200} />
+              <StaticImage src="../../../../images/cms_function.png" alt="CMS" width={200} />
             </div>
             <div className={styles.text}>
               <h3>CMS - WordPress</h3>
@@ -106,7 +106,7 @@ const WebsiteFeatures = () => {
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <StaticImage src="../../images/woocommerce.png" alt="WooCommerce" height={180} />
+              <StaticImage src="../../../../images/woocommerce.png" alt="WooCommerce" height={180} />
             </div>
             <div className={styles.text}>
               <h3>Sklepy online</h3>
@@ -120,7 +120,7 @@ const WebsiteFeatures = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };
