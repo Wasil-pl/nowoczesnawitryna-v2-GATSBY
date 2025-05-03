@@ -1,9 +1,8 @@
 import React from 'react';
 import * as styles from './ContactInfo.module.scss';
-
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import GoogleMaps from '../GoogleMaps/GoogleMaps';
-import { HouseFill } from 'react-bootstrap-icons';
+import { BsHouseFill } from 'react-icons/bs';
 
 const ContactInfo = () => {
   return (
@@ -13,7 +12,7 @@ const ContactInfo = () => {
           <div className={styles.info}>
             <SectionTitle title="Adres" subtitle="Zobacz na mapie, gdzie się znajduję" />
             <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.address}>
-              <HouseFill />
+              <BsHouseFill />
               <p>Nowoczesna Witryna</p>
               <p>ul. Bogoczowiec 4c/9</p>
               <p>44-335 Jastrzębie-Zdrój</p>

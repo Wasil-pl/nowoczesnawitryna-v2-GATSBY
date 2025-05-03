@@ -1,6 +1,5 @@
 import React from 'react';
 import * as styles from './ServiceHighlights.module.scss';
-import { Card } from 'react-bootstrap';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
 
 const ServiceHighlights = ({
@@ -31,18 +30,18 @@ const ServiceHighlights = ({
             )}
           </div>
           <div className={styles.second_column}>
-            <Card className={`mb-2 ${styles.first_card}`}>
-              <Card.Body>
-                <Card.Title>{title_first_card}</Card.Title>
-                <Card.Text>{card_descryption}</Card.Text>
-              </Card.Body>
-            </Card>
-            <Card className={styles.second_card}>
-              <Card.Body>
-                <Card.Title>{title_second_card}</Card.Title>
-                <Card.Text>{second_card_descryption}</Card.Text>
-              </Card.Body>
-            </Card>
+            <div className={`mb-2 ${styles.first_card}`}>
+              <div className={styles.card}>
+                <h3>{title_first_card}</h3>
+                <p>{card_descryption}</p>
+              </div>
+            </div>
+            <div className={styles.second_card}>
+              <div className={styles.card}>
+                <h3>{title_second_card}</h3>
+                <p>{second_card_descryption}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

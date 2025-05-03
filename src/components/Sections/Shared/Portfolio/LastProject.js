@@ -1,9 +1,7 @@
 import React from 'react';
 import * as styles from './Portfolio.module.scss';
-
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
-import CustomButton from '../../../Ui/CustomButton/CustomButton';
 
 const LastProject = () => {
   return (
@@ -17,19 +15,23 @@ const LastProject = () => {
               subtitle="Zobacz moją ostatnią realizację sklpu internetowego."
             />
           </div>
-          <div className={`${styles.portfolio_item} ${styles.image_box}`}>
+          <div className={styles.portfolio_item}>
             <StaticImage
-              src="../../images/suzie_full.jpeg"
+              src="../../../../images/suzie.png"
+              layout="constrained"
               alt="www.suzie.pl - sklep internetowy"
               width={600}
-              height={1200}
-              objectPosition="top"
+              placeholder="blurred"
             />
             <div className={styles.overlay}>
               <div>
                 <h3>Suzie</h3>
                 <p>Sklep internetowy</p>
-                <CustomButton text="Zobacz" link="https://www.suzie.pl" />
+                <button className={`no_button ${styles.button}`}>
+                  <a href="https://www.suzie.pl/" target="_blank" rel="noopener noreferrer">
+                    Zobacz
+                  </a>
+                </button>
               </div>
             </div>
           </div>

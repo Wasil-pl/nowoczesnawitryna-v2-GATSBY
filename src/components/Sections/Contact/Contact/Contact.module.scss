@@ -23,11 +23,9 @@
       .form {
         .form_group {
           margin-bottom: 20px;
-
-          label {
-            font-size: 0.8rem;
-            margin-bottom: 1px;
-          }
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
         }
 
         .button {
@@ -86,6 +84,9 @@
           a {
             text-decoration: none;
             color: settings.$color-text-dark;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
 
             &:hover {
               color: settings.$color-text-primary;

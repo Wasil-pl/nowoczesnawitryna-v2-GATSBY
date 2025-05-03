@@ -1,9 +1,7 @@
 import React from 'react';
 import * as styles from './Portfolio.module.scss';
-
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
-import CustomButton from '../../../Ui/CustomButton/CustomButton';
 
 const Portfolio = () => {
   return (
@@ -17,51 +15,103 @@ const Portfolio = () => {
               subtitle="Zobacz moje ostatnie realizacje stron internetowych i sklepów online."
             />
           </div>
-          <div className={`${styles.portfolio_item} ${styles.image_box}`}>
+          <div className={styles.portfolio_item}>
             <StaticImage
-              src="../../images/suzie.jpg"
+              src="../../../../images/suzie.png"
               alt="www.suzie.pl - sklep internetowy"
               width={600}
-              height={600}
-              objectPosition="top"
+              placeholder="blurred"
+              layout="constrained"
             />
             <div className={styles.overlay}>
               <div>
                 <h3>Suzie</h3>
                 <p>Sklep internetowy</p>
-                <CustomButton text="Zobacz" link="https://www.suzie.pl" />
+                <button className={`no_button ${styles.button}`}>
+                  <a href="https://www.suzie.pl/" target="_blank" rel="noopener noreferrer">
+                    Zobacz
+                  </a>
+                </button>
               </div>
             </div>
           </div>
-          <div className={`${styles.portfolio_item} ${styles.image_box}`}>
+          <div className={styles.portfolio_item}>
             <StaticImage
-              src="../../images/aurytka.jpg"
-              alt="aurytka.pl - sklep internetowy"
+              src="../../../../images/j_system.png"
+              alt="j-system.pl - sklep internetowy"
               width={600}
-              height={600}
-              objectPosition="top"
+              placeholder="blurred"
+              layout="constrained"
             />
             <div className={styles.overlay}>
               <div>
-                <h3>Aurytka</h3>
+                <h3>j-system</h3>
                 <p>Sklep internetowy</p>
-                <CustomButton text="Zobacz" link="https://aurytka.pl" />
+                <button className={`no_button ${styles.button}`}>
+                  <a href="https://j-system.pl/" target="_blank" rel="noopener noreferrer">
+                    Zobacz
+                  </a>
+                </button>
               </div>
             </div>
           </div>
-          <div className={`${styles.portfolio_item} ${styles.image_box}`}>
+          <div className={styles.portfolio_item}>
             <StaticImage
-              src="../../images/qualaaab.jpg"
-              alt="qualaaab.pl - strona internetowa - wizytówka"
+              src="../../../../images/przewodnik.png"
+              alt="przewodnik-skalnemiasto.pl/ - strona internetowa"
               width={600}
-              height={600}
-              objectPosition="top"
+              placeholder="blurred"
+              layout="constrained"
             />
             <div className={styles.overlay}>
               <div>
-                <h3>Qualaaab</h3>
+                <h3>Przewodnik</h3>
                 <p>Wizytówka</p>
-                <CustomButton text="Zobacz" link="https://qualaaab.pl" />
+                <button className={`no_button ${styles.button}`}>
+                  <a href="https://przewodnik-skalnemiasto.pl/" target="_blank" rel="noopener noreferrer">
+                    Zobacz
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.portfolio_item}>
+            <StaticImage
+              src="../../../../images/logomove.png"
+              alt="logomove.pl/ - strona internetowa"
+              width={600}
+              placeholder="blurred"
+              layout="constrained"
+            />
+            <div className={styles.overlay}>
+              <div>
+                <h3>LogoMove</h3>
+                <p>Strona firmowa</p>
+                <button className={`no_button ${styles.button}`}>
+                  <a href="https://logomove.pl/" target="_blank" rel="noopener noreferrer">
+                    Zobacz
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.portfolio_item}>
+            <StaticImage
+              src="../../../../images/proluxe.png"
+              alt="proluxeclean.pl/ - strona internetowa"
+              width={600}
+              placeholder="blurred"
+              layout="constrained"
+            />
+            <div className={styles.overlay}>
+              <div>
+                <h3>Proluxe Clean</h3>
+                <p>Strona firmowa</p>
+                <button className={`no_button ${styles.button}`}>
+                  <a href="https://www.proluxeclean.pl/" target="_blank" rel="noopener noreferrer">
+                    Zobacz
+                  </a>
+                </button>
               </div>
             </div>
           </div>

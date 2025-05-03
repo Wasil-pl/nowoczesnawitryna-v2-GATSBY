@@ -25,7 +25,7 @@
 
     .second_column {
       flex: 1;
-      padding: 2rem;
+      padding: 1.5rem;
       background-color: settings.$color-background-lighter;
       border-radius: 0 20px 20px 0;
       display: flex;
@@ -38,6 +38,12 @@
       .second_card {
         text-align: right;
       }
+    }
+
+    .card {
+      background-color: settings.$color-background-light;
+      border-radius: 20px;
+      padding: 1rem;
     }
   }
 }

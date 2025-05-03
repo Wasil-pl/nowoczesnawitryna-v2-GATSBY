@@ -25,7 +25,7 @@ const WhyChooseMe = () => {
                 <h3>
                   <em>Freelancer</em>, nie agencja
                 </h3>
-                <div className={styles.card_text}>
+                <div>
                   Jako freelancer oferuję bardziej indywidualne podejście niż typowe agencje. Tworzę nowoczesne strony
                   internetowe, skrojone na miarę potrzeb Twojej firmy. Zapewniając przy tym pełną elastyczność, szybkie
                   wdrożenie oraz konkurencyjne ceny. Każde zlecenie to dla mnie pełne zaangażowanie i najwyższa jakość.
@@ -35,7 +35,7 @@ const WhyChooseMe = () => {
             <div className={styles.second_card}>
               <div className={styles.card}>
                 <h3>Nie tylko WordPress!!</h3>
-                <div className={styles.card_text}>
+                <div>
                   W odróżnieniu od wielu freelancerów, nie ograniczam się jedynie do WordPressa. Dzięki moim
                   umiejętnościom programistycznym mogę tworzyć strony, sklepy interentowe, na różnych platformach i
                   dostosowywać je do Twoich specyficznych potrzeb klientów oraz branży.

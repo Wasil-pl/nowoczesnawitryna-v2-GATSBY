@@ -9,7 +9,7 @@ const MainPageInfo = () => {
     <section className={styles.main_page_info}>
       <div className="container mx-auto px-4">
         <div className={styles.wrapper}>
-          <div className={styles.info}>
+          <div>
             <SectionTitle title="Moja Oferta – Tworzenie Profesjonalnych Stron Internetowych" />
             <div className={styles.list}>
               <ListGroup variant="flush" defaultActiveKey={'/strony-internetowe/katowice'}>

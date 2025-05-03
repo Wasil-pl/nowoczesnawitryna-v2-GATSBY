@@ -1,6 +1,5 @@
 import React from 'react';
 import * as styles from './ServicesInfo.module.scss';
-
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 

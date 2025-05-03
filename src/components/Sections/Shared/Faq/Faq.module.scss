@@ -8,6 +8,40 @@
     .accordion_wrapper {
       max-width: 900px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .accordion_item {
+        .accordion_button {
+          background-color: settings.$color-background-light;
+          border-radius: 20px;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          padding: 10px 20px;
+          align-items: center;
+
+          h3 {
+            font-size: 1.1rem;
+            font-weight: settings.$font-weight-bold;
+            text-transform: uppercase;
+            font-family: settings.$font-body;
+          }
+
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        .accordion_panel {
+          padding: 20px;
+          border-radius: 20px;
+          font-size: 1rem;
+          color: settings.$color-text-dark-light;
+        }
+      }
     }
   }
 }

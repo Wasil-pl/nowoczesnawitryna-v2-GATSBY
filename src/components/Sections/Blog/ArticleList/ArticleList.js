@@ -1,6 +1,5 @@
 import React from 'react';
 import * as styles from './ArticleList.module.scss';
-
 import ArticleCard from '../../Shared/ArticleCard/ArticleCard';
 import { blog_cards_data } from '../../../../consts/blog_cards_data';
 
