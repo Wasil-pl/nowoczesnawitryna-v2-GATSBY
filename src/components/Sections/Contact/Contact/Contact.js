@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { Error, errorMessages } from '../../../../consts/errorMesages';
 import { patterns } from '../../../../consts/patterns';
 import { API_URL } from '../../../../utils/config';
-import { BsEnvelopeFill, BsTelephoneFill } from 'react-icons/bs';
+import { EnvelopeFillIcon, TelephoneFillIcon } from '../../../Icons/Icons';
 
 const Contact = () => {
   const [success, setSuccess] = useState(false);
@@ -112,14 +112,11 @@ const Contact = () => {
                 {errors.message && <Error>{errors.message.message}</Error>}
               </div>
 
-              {loading && <div className={styles.info_alert}>Wysyłanie wiadomości...</div>}
-              {success && (
-                <div className={styles.success_alert}>
-                  Wiadomość została wysłana pomyślnie. Odpowiem tak szybko, jak to możliwe.
-                </div>
-              )}
+              {loading && <div>Wysyłanie wiadomości...</div>}
+              {success && <div>Wiadomość została wysłana pomyślnie. Odpowiem tak szybko, jak to możliwe.</div>}
+
               {error && (
-                <div className={styles.error_alert}>
+                <div className={styles.error}>
                   Wystąpił błąd podczas wysyłania. Spróbuj ponownie. Jeśli problem się powtarza, napisz bezpośrednio na
                   e-mail lub zadzwoń. Dzięki!
                 </div>
@@ -138,14 +135,14 @@ const Contact = () => {
             <div className={styles.info}>
               <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.info_item}>
                 <a href="tel:+48733542926">
-                  <BsTelephoneFill />
+                  <TelephoneFillIcon />
                   <p>Telefon</p>
                   +48 733 542 926
                 </a>
               </div>
               <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.info_item}>
                 <a href="mailto:nowoczesnawitryna@gmail.com">
-                  <BsEnvelopeFill />
+                  <EnvelopeFillIcon />
                   <p>E-mail</p>
                   nowoczesnawitryna@gmail.com
                 </a>

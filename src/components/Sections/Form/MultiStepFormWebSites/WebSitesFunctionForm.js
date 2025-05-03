@@ -1,13 +1,11 @@
 import React from 'react';
 import * as styles from '../MultiStepForm/MultiStepForm.module.scss';
-import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 
 const WebSitesFunctionForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefaultValues }) => {
   const { register, handleSubmit: validate } = useForm({ defaultValues });
 
   const handleSubmit = (data) => {
-    // Klucze istotne dla tego kroku
     const relevantKeys = [
       'system rezerwacji',
       'video lub multimedia',
@@ -20,11 +18,10 @@ const WebSitesFunctionForm = ({ nextStep, prevStep, updateData, defaultValues, u
       'inne funkcje',
     ];
 
-    // Filtrujemy dane, aby zawierały tylko wartości dla tego kroku
     const filteredData = Object.fromEntries(Object.entries(data).filter(([key]) => relevantKeys.includes(key)));
 
     const sitesFunctions = Object.entries(filteredData)
-      .filter(([key, value]) => value === true)
+      .filter(([_, value]) => value === true)
       .map(([key]) => key);
 
     if (filteredData['inne funkcje'] && filteredData['inne funkcje'].trim() !== '') {
@@ -35,49 +32,63 @@ const WebSitesFunctionForm = ({ nextStep, prevStep, updateData, defaultValues, u
       'Funkcje strony': sitesFunctions.length > 0 ? sitesFunctions.join(', ') : 'Nie wybrano żadnych funkcji',
     };
 
-    updateData(formattedData); // Aktualizujemy tylko bieżące dane dla tego kroku
-    updateDefaultValues(data); // Ustawiamy domyślne wartości tylko dla tego kroku
+    updateData(formattedData);
+    updateDefaultValues(data);
     nextStep();
   };
 
   return (
-    <div>
-      <Form onSubmit={validate(handleSubmit)}>
-        <Form.Group className={styles.form_group}>
-          <Form.Label>Jakie funkcje ma mieć Twoja strona?</Form.Label>
+    <form onSubmit={validate(handleSubmit)}>
+      <div className={styles.form_group}>
+        <p>Jakie funkcje ma mieć Twoja strona?</p>
 
-          <Form.Check {...register('system rezerwacji')} type="switch" label="System rezerwacji" />
+        <label>
+          <input type="checkbox" {...register('system rezerwacji')} /> System rezerwacji
+        </label>
 
-          <Form.Check {...register('video lub multimedia')} type="switch" label="Video lub multimedia" />
+        <label>
+          <input type="checkbox" {...register('video lub multimedia')} /> Video lub multimedia
+        </label>
 
-          <Form.Check {...register('opinie klientów')} type="switch" label="Opinie klientów" />
+        <label>
+          <input type="checkbox" {...register('opinie klientów')} /> Opinie klientów
+        </label>
 
-          <Form.Check {...register('formularz kontaktowy')} type="switch" label="Formularz kontaktowy" />
+        <label>
+          <input type="checkbox" {...register('formularz kontaktowy')} /> Formularz kontaktowy
+        </label>
 
-          <Form.Check {...register('pobieranie plików')} type="switch" label="Pobieranie plików" />
+        <label>
+          <input type="checkbox" {...register('pobieranie plików')} /> Pobieranie plików
+        </label>
 
-          <Form.Check {...register('mapa lokalizacji')} type="switch" label="Mapa lokalizacji" />
+        <label>
+          <input type="checkbox" {...register('mapa lokalizacji')} /> Mapa lokalizacji
+        </label>
 
-          <Form.Check {...register('FAQ')} type="switch" label="FAQ" />
+        <label>
+          <input type="checkbox" {...register('FAQ')} /> FAQ
+        </label>
 
-          <Form.Check {...register('newsletter')} type="switch" label="Newsletter" />
-        </Form.Group>
+        <label>
+          <input type="checkbox" {...register('newsletter')} /> Newsletter
+        </label>
+      </div>
 
-        <Form.Group className={styles.form_group}>
-          <Form.Label>Inne funkcje</Form.Label>
-          <Form.Control {...register('inne funkcje')} as="textarea" placeholder="Inne funkcje" />
-        </Form.Group>
+      <div className={styles.form_group}>
+        <label htmlFor="inne_funkcje">Inne funkcje</label>
+        <textarea id="inne_funkcje" {...register('inne funkcje')} placeholder="Inne funkcje" />
+      </div>
 
-        <span className={styles.button_wrapper}>
-          <Button type="button" onClick={prevStep} className={styles.button}>
-            Wstecz
-          </Button>
-          <Button type="submit" className={styles.button}>
-            Dalej
-          </Button>
-        </span>
-      </Form>
-    </div>
+      <div className={styles.button_wrapper}>
+        <button type="button" onClick={prevStep} className={styles.button}>
+          Wstecz
+        </button>
+        <button type="submit" className={styles.button}>
+          Dalej
+        </button>
+      </div>
+    </form>
   );
 };
 

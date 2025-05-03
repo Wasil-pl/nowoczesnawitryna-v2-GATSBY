@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as styles from './ScroolUpButton.module.scss';
-import { BsArrowUpCircleFill } from 'react-icons/bs';
+import { BsArrowUpCircleFill } from '../../Icons/Icons';
 
 const ScroolUpButton = () => {
   const [showButton, setShowButton] = useState(false);

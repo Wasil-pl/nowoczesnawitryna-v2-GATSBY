@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/solid';
+import { ChevronUpIcon, ChevronDownIcon } from '../../../Icons/Icons';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import * as styles from './Faq.module.scss';
 import { faqItems } from '../../../../consts/faqItems';

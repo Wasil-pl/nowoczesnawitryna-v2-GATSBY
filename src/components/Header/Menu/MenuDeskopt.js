@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { BsHouseFill } from 'react-icons/bs';
 import * as styles from './MenuDeskopt.module.scss';
-import { ChevronDownIcon } from '@heroicons/react/24/solid';
+import { ChevronDownIcon, HomeIcon } from '../../Icons/Icons';
 
 const MenuDeskopt = ({ active }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +20,7 @@ const MenuDeskopt = ({ active }) => {
   return (
     <div className={styles.menu_wrapper}>
       <a href="/" className={active === 'home' ? styles.activeMenuItem : ''} aria-label="strona główna">
-        <BsHouseFill />
+        <HomeIcon width="20px" height="20px" />
       </a>
 
       <div className={styles.dropdown} ref={dropdownRef}>
@@ -30,7 +29,7 @@ const MenuDeskopt = ({ active }) => {
           onClick={() => setIsOpen(!isOpen)}
         >
           Oferta
-          <ChevronDownIcon />
+          <ChevronDownIcon width="10px" height="10px" />
         </button>
         {isOpen && (
           <div className={styles.dropdown_menu}>

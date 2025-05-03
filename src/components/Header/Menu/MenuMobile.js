@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import * as styles from './MenuMobile.module.scss';
-import { BsHouseFill, BsList } from 'react-icons/bs';
 import { StaticImage } from 'gatsby-plugin-image';
 import CustomButton from '../../Ui/CustomButton/CustomButton';
-import { ChevronDownIcon } from '@heroicons/react/24/solid';
+import { MenuBarsIcon } from '../../Icons/Icons';
 
 const MenuMobile = ({ active }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +12,7 @@ const MenuMobile = ({ active }) => {
     <span className={styles.menu_mobile}>
       <CustomButton link={'/formularz-szybkiej-wyceny/'} text={'Szybka Wycena'} variant="small" />
       <button className={styles.canvas_button} onClick={() => setIsOpen(true)} aria-label="Menu">
-        <BsList />
+        <MenuBarsIcon width="20px" height="20px" />
       </button>
 
       {isOpen && (
@@ -36,7 +35,7 @@ const MenuMobile = ({ active }) => {
             <ul className={styles.nav_list}>
               <li>
                 <a className={active === 'home' ? styles.activeMenuItem : ''} href="/">
-                  <BsHouseFill />
+                  Strona Główna
                 </a>
               </li>
 
@@ -46,7 +45,6 @@ const MenuMobile = ({ active }) => {
                   className={`${styles.dropdown_toggle} ${active === 'oferta' ? styles.activeMenuItem : ''}`}
                 >
                   Oferta
-                  <ChevronDownIcon />
                 </button>
                 {dropdownOpen && (
                   <div className={styles.dropdown_menu}>

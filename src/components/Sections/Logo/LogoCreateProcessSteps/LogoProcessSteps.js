@@ -42,7 +42,7 @@ const LogoProcessSteps = () => {
             </div>
             <div className={styles.step_number}>
               <StaticImage
-                src="../../images/brief.png"
+                src="../../../../images/brief.png"
                 alt="ikona przedstawiająca pierwszy kontakt z klientem w celu zebrania informacji o potrzenym logo"
                 width={150}
               />
@@ -59,7 +59,7 @@ const LogoProcessSteps = () => {
             </div>
             <div className={styles.step_number_left}>
               <StaticImage
-                src="../../images/kontent.png"
+                src="../../../../images/kontent.png"
                 alt="ikona przedstawiająca pierwsze prace stworzenia logo"
                 width={150}
               />
@@ -76,7 +76,7 @@ const LogoProcessSteps = () => {
             </div>
             <div className={styles.step_number}>
               <StaticImage
-                src="../../images/projektowanie.png"
+                src="../../../../images/projektowanie.png"
                 alt="ikona przedstawiająca projektowanie właściwego logo"
                 width={150}
               />
@@ -94,7 +94,7 @@ const LogoProcessSteps = () => {
             </div>
             <div className={styles.step_number_left}>
               <StaticImage
-                src="../../images/tworzenie-strony.png"
+                src="../../../../images/tworzenie-strony.png"
                 alt="ikona przedstawiająca finalną wersję logo "
                 width={150}
               />
@@ -111,7 +111,7 @@ const LogoProcessSteps = () => {
             </div>
             <div className={styles.step_number_last}>
               <StaticImage
-                src="../../images/koniec.png"
+                src="../../../../images/koniec.png"
                 alt="ikona przedstawiająca wsparcie po zakończeniu projektu"
                 width={150}
               />

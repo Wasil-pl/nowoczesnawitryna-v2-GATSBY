@@ -9,4 +9,4 @@ export const errorMessages = {
   siteType: 'Wybierz rodzaj strony',
 };
 
-export const Error = ({ children }) => <small className="d-block form-text text-danger mt-2">{children}</small>;
+export const Error = ({ children }) => <small className="block text-sm text-red-600 mt-2">{children}</small>;

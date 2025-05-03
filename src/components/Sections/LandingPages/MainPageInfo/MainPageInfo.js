@@ -1,7 +1,5 @@
 import React from 'react';
-import './MainPageInfo.scss';
 import * as styles from './MainPageInfo.module.scss';
-import { ListGroup } from 'react-bootstrap';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 
 const MainPageInfo = () => {
@@ -12,26 +10,38 @@ const MainPageInfo = () => {
           <div>
             <SectionTitle title="Moja Oferta – Tworzenie Profesjonalnych Stron Internetowych" />
             <div className={styles.list}>
-              <ListGroup variant="flush" defaultActiveKey={'/strony-internetowe/katowice'}>
-                <ListGroup.Item action href="/strony-internetowe/katowice">
-                  <h3>Katowice</h3>
-                </ListGroup.Item>
-                <ListGroup.Item action href="/strony-internetowe/krakow">
-                  <h3>Kraków</h3>
-                </ListGroup.Item>
-                <ListGroup.Item action href="/strony-internetowe/warszawa">
-                  <h3>Warszawa</h3>
-                </ListGroup.Item>
-                <ListGroup.Item action href="/strony-internetowe/wroclaw">
-                  <h3>Wrocław</h3>
-                </ListGroup.Item>
-                <ListGroup.Item action href="/strony-internetowe/poznan">
-                  <h3>Poznań</h3>
-                </ListGroup.Item>
-                <ListGroup.Item action href="/strony-internetowe/gdansk">
-                  <h3>Gdańsk</h3>
-                </ListGroup.Item>
-              </ListGroup>
+              <ul>
+                <li href="/strony-internetowe/katowice">
+                  <a href="/strony-internetowe/katowice">
+                    <h3>Strony internetowe Katowice</h3>
+                  </a>
+                </li>
+                <li>
+                  <a href="/strony-internetowe/krakow">
+                    <h3>Strony internetowe Kraków</h3>
+                  </a>
+                </li>
+                <li>
+                  <a href="/strony-internetowe/warszawa">
+                    <h3>Strony internetowe Warszawa</h3>
+                  </a>
+                </li>
+                <li>
+                  <a href="/strony-internetowe/wroclaw">
+                    <h3>Strony internetowe Wrocław</h3>
+                  </a>
+                </li>
+                <li>
+                  <a href="/strony-internetowe/poznan">
+                    <h3>Strony internetowe Poznań</h3>
+                  </a>
+                </li>
+                <li>
+                  <a href="/strony-internetowe/gdansk">
+                    <h3>Strony internetowe Gdańsk</h3>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

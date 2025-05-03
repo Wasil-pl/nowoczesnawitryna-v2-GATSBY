@@ -1,19 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react'; // ← TO BYŁO POTRZEBNE
 import * as styles from './HeaderHome.module.scss';
 import Menu from '../Menu/Menu';
 import { useMediaQuery } from 'react-responsive';
-import ParticlesBackground from '../../Ui/ParticlesBackground/ParticlesBackground';
 import { StaticImage } from 'gatsby-plugin-image';
 import ShapeDividersBottom from '../../Ui/ShapeDividers/ShapeDividersBottom';
 
 const HeaderHome = ({ active }) => {
+  const [ParticlesBg, setParticlesBg] = useState(null); // ← PRZENIESIONE WYŻEJ
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      import('../../Ui/ParticlesBackground/ParticlesBackground').then((mod) => {
+        setParticlesBg(() => mod.default);
+      });
+    }
+  }, []);
 
   return (
     <header className={styles.header}>
       <Menu active={active} />
 
-      <ParticlesBackground id={'tsparticles'} />
+      {ParticlesBg && <ParticlesBg id="tsparticles" />}
 
       <div className={styles.logo}>
         <a href="/">

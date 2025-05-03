@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import * as styles from './LPMyServices.module.scss';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
-import { QuestionMarkCircleIcon } from '@heroicons/react/24/solid';
+import { QuestionMarkCircleIcon } from '../../../Icons/Icons';
 import { useMediaQuery } from 'react-responsive';
 import LPMyServicesThumbs from '../LPMyServicesThumbs/LPMyServicesThumbs';
 import LPMyServicesAccordion from '../LPMyServicesAccordion/LPMyServicesAccordion';
 import CallToAction from '../../Shared/CallToAction/CallToAction';
 import ShapeDividersBottom from '../../../Ui/ShapeDividers/ShapeDividersBottom';
 import ShapeDividersTop from '../../../Ui/ShapeDividers/ShapeDividersTop';
-import ParticlesBackground from '../../../Ui/ParticlesBackground/ParticlesBackground';
 
 const LPMyServices = ({
   title_HTML,
@@ -28,11 +27,21 @@ const LPMyServices = ({
   sectionTitleColored,
 }) => {
   const isMobile = useMediaQuery({ query: '(max-width: 992px)' });
+  const [ParticlesBg, setParticlesBg] = useState(null); // ← PRZENIESIONE WYŻEJ
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      import('../../../Ui/ParticlesBackground/ParticlesBackground').then((mod) => {
+        setParticlesBg(() => mod.default);
+      });
+    }
+  }, []);
 
   return (
     <section className={styles.myServices}>
       <ShapeDividersTop />
-      <ParticlesBackground id={'tsparticles_lp_my_service'} />
+
+      {ParticlesBg && <ParticlesBg id={'tsparticles_lp_my_service'} />}
 
       <div className="container mx-auto px-4">
         <SectionTitle title={sectionTitle} coloredText={sectionTitleColored} backgroundText="Usługi" variant="white" />

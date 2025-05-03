@@ -19,9 +19,11 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: flex-start;
+      gap: 20px;
 
       h3 {
         font-weight: settings.$font-weight-bold;
+        font-size: 1.8rem;
       }
 
       & > a {
@@ -41,6 +43,11 @@
         background-color: settings.$color-background-light;
         border-radius: 20px;
         padding: 1rem;
+
+        h3 {
+          font-weight: settings.$font-weight-bold;
+          font-size: 1.3rem;
+        }
       }
 
       .first_card {
@@ -56,7 +63,6 @@
           text-decoration: none;
           transition: color 0.3s;
           text-transform: uppercase;
-          // text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.659);
           letter-spacing: 2px;
 
           &:hover {
@@ -74,6 +80,12 @@
     border-radius: 20px;
     display: flex;
     box-shadow: settings.$box-shadow;
+
+    p {
+      font-size: 1.5rem;
+      font-weight: settings.$font-weight-bold;
+      text-align: center;
+    }
   }
 }
 
@@ -92,6 +104,10 @@
 
       .first_column {
         border-radius: 20px 20px 0 0;
+
+        h3 {
+          font-size: 1.5rem;
+        }
       }
 
       .second_column {
@@ -106,11 +122,11 @@
     .wrapper {
       .first_column {
         h3 {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
         }
 
         h4 {
-          font-size: 1.2rem;
+          font-size: 1.1rem;
         }
 
         p {
@@ -120,8 +136,11 @@
     }
 
     .banner {
-      font-size: 0.5rem;
       text-align: center;
+
+      p {
+        font-size: 1.1rem;
+      }
     }
   }
 }

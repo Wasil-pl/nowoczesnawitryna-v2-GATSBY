@@ -1,14 +1,14 @@
 import React from 'react';
 import * as styles from './MyServicesThumbs.module.scss';
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
+import { Tab } from '@headlessui/react';
 import { StaticImage } from 'gatsby-plugin-image';
 import CustomButton from '../../../../Ui/CustomButton/CustomButton';
 
 const MyServicesThumbs = () => {
   return (
     <div className={styles.thumbs_container}>
-      <TabGroup defaultIndex={0} className={styles.tabs_wrapper}>
-        <TabList className={`mb-3 ${styles.tab_list}`}>
+      <Tab.Group defaultIndex={0} className={styles.tabs_wrapper}>
+        <Tab.List className={`mb-3 ${styles.tab_list}`}>
           <Tab className={styles.tab_button}>
             <h3>Strony internetowe HTML</h3>
           </Tab>
@@ -27,9 +27,9 @@ const MyServicesThumbs = () => {
           <Tab className={styles.tab_button}>
             <h3>Projektowanie Logo</h3>
           </Tab>
-        </TabList>
-        <TabPanels className={styles.tab_panels}>
-          <TabPanel>
+        </Tab.List>
+        <Tab.Panels className={styles.tab_panels}>
+          <Tab.Panel>
             <div className={styles.tab_content}>
               <div className={styles.tab_content_left}>
                 <h3>Strony internetowe HTML</h3>
@@ -55,8 +55,8 @@ const MyServicesThumbs = () => {
                 />
               </div>
             </div>
-          </TabPanel>
-          <TabPanel>
+          </Tab.Panel>
+          <Tab.Panel>
             <div className={styles.tab_content}>
               <div className={styles.tab_content_left}>
                 <h3>Aplikacje webowe</h3>
@@ -76,8 +76,8 @@ const MyServicesThumbs = () => {
                 />
               </div>
             </div>
-          </TabPanel>
-          <TabPanel>
+          </Tab.Panel>
+          <Tab.Panel>
             <div className={styles.tab_content}>
               <div className={styles.tab_content_left}>
                 <h3>Strony Internetowe oparte na WordPress</h3>
@@ -102,8 +102,8 @@ const MyServicesThumbs = () => {
                 />
               </div>
             </div>
-          </TabPanel>
-          <TabPanel>
+          </Tab.Panel>
+          <Tab.Panel>
             <div className={styles.tab_content}>
               <div className={styles.tab_content_left}>
                 <h3>Sklepy internetowe</h3>
@@ -136,8 +136,8 @@ const MyServicesThumbs = () => {
                 />
               </div>
             </div>
-          </TabPanel>
-          <TabPanel>
+          </Tab.Panel>
+          <Tab.Panel>
             <div className={styles.tab_content}>
               <div className={styles.tab_content_left}>
                 <h3>Strony Internetowe LMS – Nowoczesne Platformy Edukacyjne</h3>
@@ -163,8 +163,8 @@ const MyServicesThumbs = () => {
                 />
               </div>
             </div>
-          </TabPanel>
-          <TabPanel>
+          </Tab.Panel>
+          <Tab.Panel>
             <div className={styles.tab_content}>
               <div className={styles.tab_content_left}>
                 <h3>Projektowanie Logo</h3>
@@ -185,9 +185,9 @@ const MyServicesThumbs = () => {
                 <StaticImage src="../../../../../images/logo-min-white.png" alt="projektowanie logo" width={300} />
               </div>
             </div>
-          </TabPanel>
-        </TabPanels>
-      </TabGroup>
+          </Tab.Panel>
+        </Tab.Panels>
+      </Tab.Group>
     </div>
   );
 };

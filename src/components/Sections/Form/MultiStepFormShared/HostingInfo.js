@@ -1,6 +1,5 @@
 import React from 'react';
 import * as styles from '../MultiStepForm/MultiStepForm.module.scss';
-import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { Error, errorMessages } from '../../../../consts/errorMesages';
 
@@ -12,10 +11,7 @@ const HostingInfo = ({ nextStep, prevStep, updateData, defaultValues, updateDefa
   } = useForm({ defaultValues });
 
   const handleSubmit = (data) => {
-    // Klucze istotne dla tego komponentu
     const relevantKeys = ['hosting', 'domena'];
-
-    // Filtrujemy dane, aby zawierały tylko wartości z tego kroku
     const filteredData = Object.fromEntries(Object.entries(data).filter(([key]) => relevantKeys.includes(key)));
 
     const formattedData = {
@@ -29,56 +25,36 @@ const HostingInfo = ({ nextStep, prevStep, updateData, defaultValues, updateDefa
   };
 
   return (
-    <div>
-      <Form onSubmit={validate(handleSubmit)}>
-        <Form.Group className={styles.form_group}>
-          <Form.Label>Czy posiadasz hosting?</Form.Label>
-          <Form.Control
-            {...register('hosting', {
-              required: errorMessages.required,
-            })}
-            as="select"
-            placeholder="Czy posiadasz hosting?"
-            label="Czy posiadasz hosting?"
-            autoComplete="hosting"
-            required
-          >
-            <option value="">Wybierz</option>
-            <option value="tak">Tak</option>
-            <option value="nie">Nie</option>
-          </Form.Control>
-          {errors.hosting && <Error>{errors.hosting?.message}</Error>}
-        </Form.Group>
+    <form onSubmit={validate(handleSubmit)}>
+      <div className={styles.form_group}>
+        <label htmlFor="hosting">Czy posiadasz hosting?</label>
+        <select id="hosting" {...register('hosting', { required: errorMessages.required })} required>
+          <option value="">Wybierz</option>
+          <option value="tak">Tak</option>
+          <option value="nie">Nie</option>
+        </select>
+        {errors.hosting && <Error>{errors.hosting.message}</Error>}
+      </div>
 
-        <Form.Group className={styles.form_group}>
-          <Form.Label>Czy posiadasz domenę?</Form.Label>
-          <Form.Control
-            {...register('domena', {
-              required: errorMessages.required,
-            })}
-            as="select"
-            placeholder="Czy posiadasz domenę?"
-            label="Czy posiadasz domenę?"
-            autoComplete="domena"
-            required
-          >
-            <option value="">Wybierz</option>
-            <option value="tak">Tak</option>
-            <option value="nie">Nie</option>
-          </Form.Control>
-          {errors.domena && <Error>{errors.domena?.message}</Error>}
-        </Form.Group>
+      <div className={styles.form_group}>
+        <label htmlFor="domena">Czy posiadasz domenę?</label>
+        <select id="domena" {...register('domena', { required: errorMessages.required })} required>
+          <option value="">Wybierz</option>
+          <option value="tak">Tak</option>
+          <option value="nie">Nie</option>
+        </select>
+        {errors.domena && <Error>{errors.domena.message}</Error>}
+      </div>
 
-        <span className={styles.button_wrapper}>
-          <Button type="button" onClick={prevStep} className={styles.button}>
-            Wstecz
-          </Button>
-          <Button type="submit" className={styles.button}>
-            Dalej
-          </Button>
-        </span>
-      </Form>
-    </div>
+      <div className={styles.button_wrapper}>
+        <button type="button" onClick={prevStep} className={styles.button}>
+          Wstecz
+        </button>
+        <button type="submit" className={styles.button}>
+          Dalej
+        </button>
+      </div>
+    </form>
   );
 };
 

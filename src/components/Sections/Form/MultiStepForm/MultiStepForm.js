@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import * as styles from './MultiStepForm.module.scss';
-import './MultiStepForm.scss';
-
 import ChooseSiteForm from '../MultiStepFormShared/ChooseSiteForm';
 import ShopInfoForm from '../MultiStepFormShop/ShopInfoForm';
 import ShopFunctionsForm from '../MultiStepFormShop/ShopFunctionsForm';
@@ -19,6 +17,8 @@ import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import StepsCountDIsplay from '../MultiStepFormShared/StepsCountDIsplay';
 import SelectionDisplay from '../MultiStepFormShared/SelectionDisplay';
 import Action from '../../Shared/CallToAction/CallToAction';
+import ShapeDividersTop from '../../../Ui/ShapeDividers/ShapeDividersTop';
+import ShapeDividersBottom from '../../../Ui/ShapeDividers/ShapeDividersBottom';
 
 export const MultiStepForm = () => {
   const [step, setStep] = useState(1);
@@ -316,13 +316,21 @@ export const MultiStepForm = () => {
 
   return (
     <section id="form" className={`${styles.order_site_form} site_form`}>
+      <ShapeDividersTop />
       <div className="container mx-auto px-4">
-        <SectionTitle title="Szybka wycena" coloredText=" strony internetowej" variant="white" />
+        <SectionTitle
+          title="Szybka wycena"
+          coloredText=" strony internetowej"
+          variant="white"
+          backgroundText="Wycena"
+        />
         <SelectionDisplay data={formData} />
         <StepsCountDIsplay data={step} variant={selectedSiteType?.['Rodzaj strony']} />
         <div className={styles.form}>{renderStep()}</div>
         <Action kontakt_3 variant="bottom" />
       </div>
+
+      <ShapeDividersBottom />
     </section>
   );
 };

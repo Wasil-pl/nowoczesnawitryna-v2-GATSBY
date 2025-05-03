@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as styles from './ScroolToPriceButton.module.scss';
-import { BsCurrencyDollar } from 'react-icons/bs';
+import { BsCurrencyDollar } from '../../Icons/Icons';
 
 const ScroolToPriceButton = () => {
   const [isActive, setIsActive] = useState(true);

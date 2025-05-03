@@ -7,14 +7,6 @@
   margin-bottom: 250px;
   position: relative;
 
-  .bi_dash {
-    color: settings.$color-text-danger;
-  }
-
-  .bi_check {
-    color: settings.$color-text-success;
-  }
-
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -88,6 +80,14 @@
               svg {
                 font-size: 1.5rem;
                 flex: 10%;
+              }
+
+              .bi_dash {
+                fill: settings.$color-text-danger;
+              }
+
+              .bi_check {
+                fill: settings.$color-text-success;
               }
 
               & > p {

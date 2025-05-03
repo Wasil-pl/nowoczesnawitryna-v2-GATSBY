@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import * as styles from '../MultiStepForm/MultiStepForm.module.scss';
-import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { Error, errorMessages } from '../../../../consts/errorMesages';
 import { patterns } from '../../../../consts/patterns';
@@ -15,7 +14,6 @@ const AdditionalInformation = ({ nextStep, prevStep, updateData, defaultValues, 
   const [blogVariant, setBlogVariant] = useState('nie');
 
   const handleSubmit = (data) => {
-    // Klucze istotne dla tego komponentu
     const relevantKeys = [
       'ilość zakładek',
       'logo',
@@ -25,7 +23,6 @@ const AdditionalInformation = ({ nextStep, prevStep, updateData, defaultValues, 
       'Ile artykułów ma mieć blog',
     ];
 
-    // Filtrujemy dane, aby zawierały tylko wartości z tego kroku
     const filteredData = Object.fromEntries(Object.entries(data).filter(([key]) => relevantKeys.includes(key)));
 
     const formattedData = {};
@@ -64,128 +61,104 @@ const AdditionalInformation = ({ nextStep, prevStep, updateData, defaultValues, 
   };
 
   return (
-    <div>
-      <Form onSubmit={validate(handleSubmit)}>
-        <Form.Group className={styles.form_group}>
-          <Form.Label>Ile zakładek ma mieć strona?</Form.Label>
-          <Form.Control
-            {...register('ilość zakładek', {
+    <form onSubmit={validate(handleSubmit)}>
+      <div className={styles.form_group}>
+        <p>Ile zakładek ma mieć strona?</p>
+        <input
+          type="number"
+          placeholder="Ile zakładek ma mieć strona?"
+          {...register('ilość zakładek', {
+            required: errorMessages.required,
+            min: {
+              value: patterns.shopProductTypeMinLength,
+              message: errorMessages.minNumber(patterns.shopProductTypeMinLength),
+            },
+          })}
+        />
+        {errors['ilość zakładek'] && <Error>{errors['ilość zakładek']?.message}</Error>}
+      </div>
+
+      {defaultValues['typ strony'] !== 'blog' && (
+        <div className={styles.form_group}>
+          <p>Czy będzie blog?</p>
+          <select
+            {...register('blog', {
+              required: errorMessages.required,
+            })}
+            onChange={(e) => setBlogVariant(e.target.value)}
+          >
+            <option value="">Wybierz</option>
+            <option value="nie">Nie</option>
+            <option value="tak">Tak</option>
+          </select>
+        </div>
+      )}
+
+      {(defaultValues['typ strony'] === 'blog' || blogVariant === 'tak') && (
+        <div className={styles.form_group}>
+          <p>Ile artykułów ma mieć blog?</p>
+          <input
+            type="number"
+            placeholder="Ile artykułów ma mieć blog?"
+            {...register('Ile artykułów ma mieć blog', {
               required: errorMessages.required,
               min: {
                 value: patterns.shopProductTypeMinLength,
                 message: errorMessages.minNumber(patterns.shopProductTypeMinLength),
               },
             })}
-            type="number"
-            placeholder="Ile zakładek ma mieć strona?"
-            label="Ile zakładek ma mieć strona?"
-            autoComplete="ilość zakładek"
-            required
           />
+        </div>
+      )}
 
-          {errors['ilość zakładek'] && <Error>{errors['ilość zakładek']?.message}</Error>}
-        </Form.Group>
+      <div className={styles.form_group}>
+        <p>Czy posiadasz logo?</p>
+        <select
+          {...register('logo', {
+            required: errorMessages.required,
+          })}
+        >
+          <option value="">Wybierz</option>
+          <option value="tak">Tak</option>
+          <option value="nie i nie potrzebuję">Nie i nie potrzebuję</option>
+          <option value="nie, ale potrzebuję">Nie, ale potrzebuję</option>
+        </select>
+        {errors.logo && <Error>{errors.logo?.message}</Error>}
+      </div>
 
-        {defaultValues['typ strony'] !== 'blog' && (
-          <Form.Group className={styles.form_group}>
-            <Form.Label>Czy będzie blog?</Form.Label>
-            <Form.Control
-              {...register('blog', {
-                required: errorMessages.required,
-              })}
-              as="select"
-              placeholder="Czy będzie blog?"
-              label="Czy będzie blog?"
-              autoComplete="blog"
-              onChange={(e) => setBlogVariant(e.target.value)}
-              required
-            >
-              <option value="">Wybierz</option>
-              <option value="nie">Nie</option>
-              <option value="tak">Tak</option>
-            </Form.Control>
-          </Form.Group>
-        )}
+      <div className={styles.form_group}>
+        <p>Czy posiadasz projekt?</p>
+        <select
+          {...register('projekt', {
+            required: errorMessages.required,
+          })}
+        >
+          <option value="">Wybierz</option>
+          <option value="tak">Tak</option>
+          <option value="nie">Nie</option>
+        </select>
+        {errors.projekt && <Error>{errors.projekt?.message}</Error>}
+      </div>
 
-        {(defaultValues['typ strony'] === 'blog' || blogVariant === 'tak') && (
-          <Form.Group className={styles.form_group}>
-            <Form.Label>Ile artykułów ma mieć blog?</Form.Label>
-            <Form.Control
-              {...register('Ile artykułów ma mieć blog', {
-                required: errorMessages.required,
-                min: {
-                  value: patterns.shopProductTypeMinLength,
-                  message: errorMessages.minNumber(patterns.shopProductTypeMinLength),
-                },
-              })}
-              type="number"
-              placeholder="Ile artykułów ma mieć blog?"
-              label="Ile artykułów ma mieć blog?"
-              autoComplete="blog"
-            />
-          </Form.Group>
-        )}
+      <div className={styles.form_group}>
+        <p>Adresy stron które Ci się podobają</p>
+        <textarea
+          rows={3}
+          placeholder="Adresy stron które Ci się podobają"
+          autoComplete="strony"
+          {...register('Adresy stron które Ci się podobają')}
+        />
+      </div>
 
-        <Form.Group className={styles.form_group}>
-          <Form.Label>Czy posiadasz logo?</Form.Label>
-          <Form.Control
-            {...register('logo', {
-              required: errorMessages.required,
-            })}
-            as="select"
-            placeholder="Czy posiadasz logo?"
-            label="Czy posiadasz logo?"
-            autoComplete="logo"
-            required
-          >
-            <option value="">Wybierz</option>
-            <option value="tak">Tak</option>
-            <option value="nie i nie potrzebuję">Nie i nie potrzebuję</option>
-            <option value="nie, ale potrzebuję">Nie, ale potrzebuję</option>
-          </Form.Control>
-          {errors.logo && <Error>{errors.logo?.message}</Error>}
-        </Form.Group>
-
-        <Form.Group className={styles.form_group}>
-          <Form.Label>Czy posiadasz projekt?</Form.Label>
-          <Form.Control
-            {...register('projekt', {
-              required: errorMessages.required,
-            })}
-            as="select"
-            placeholder="Czy posiadasz projekt?"
-            label="Czy posiadasz projekt?"
-            autoComplete="projekt"
-            required
-          >
-            <option value="">Wybierz</option>
-            <option value="tak">Tak</option>
-            <option value="nie">Nie</option>
-          </Form.Control>
-          {errors.projekt && <Error>{errors.projekt?.message}</Error>}
-        </Form.Group>
-
-        <Form.Group className={styles.form_group}>
-          <Form.Label>Adresy stron które Ci się podobają</Form.Label>
-          <Form.Control
-            {...register('Adresy stron które Ci się podobają')}
-            as="textarea"
-            rows={3}
-            placeholder="Adresy stron które Ci się podobają"
-            autoComplete="strony"
-          />
-        </Form.Group>
-
-        <span className={styles.button_wrapper}>
-          <Button type="button" onClick={prevStep} className={styles.button}>
-            Wstecz
-          </Button>
-          <Button type="submit" className={styles.button}>
-            Dalej
-          </Button>
-        </span>
-      </Form>
-    </div>
+      <div className={styles.button_wrapper}>
+        <button type="button" onClick={prevStep} className={styles.button}>
+          Wstecz
+        </button>
+        <button type="submit" className={styles.button}>
+          Dalej
+        </button>
+      </div>
+    </form>
   );
 };
 

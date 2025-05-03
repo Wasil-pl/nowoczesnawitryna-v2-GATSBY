@@ -1,13 +1,11 @@
 import React from 'react';
 import * as styles from '../MultiStepForm/MultiStepForm.module.scss';
-import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 
 const ShopPaymentsForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefaultValues }) => {
   const { register, handleSubmit: validate } = useForm({ defaultValues });
 
   const handleSubmit = (data) => {
-    // Lista kluczy tylko dla tego komponentu
     const relevantKeys = [
       'Przelew',
       'Płatność przy odbiorze',
@@ -20,7 +18,6 @@ const ShopPaymentsForm = ({ nextStep, prevStep, updateData, defaultValues, updat
       'inne formy płatności',
     ];
 
-    // Filtrujemy dane, aby zawierały tylko wartości z tego kroku
     const filteredData = Object.fromEntries(Object.entries(data).filter(([key]) => relevantKeys.includes(key)));
 
     const shopPaymentsMethods = Object.entries(filteredData)
@@ -37,45 +34,54 @@ const ShopPaymentsForm = ({ nextStep, prevStep, updateData, defaultValues, updat
     };
 
     updateData(formattedData);
-    updateDefaultValues(data); // Używamy przefiltrowanych danych do zapisu domyślnych wartości
+    updateDefaultValues(data);
     nextStep();
   };
 
   return (
-    <div>
-      <Form onSubmit={validate(handleSubmit)}>
-        <Form.Group className={styles.form_group}>
-          <Form.Label>Jakie płatności ma mieć Twój sklep?</Form.Label>
-          <Form.Check {...register('Przelew')} type="switch" label="Przelew bankowy" />
-          <Form.Check {...register('Płatność przy odbiorze')} type="switch" label="Płatność przy odbiorze" />
-          <Form.Check {...register('Przelewy24')} type="switch" label="Płatności online (Przelewy24)" />
-          <Form.Check {...register('PayU')} type="switch" label="Płatności online (PayU)" />
-          <Form.Check {...register('PayPal')} type="switch" label="Płatności online (PayPal)" />
-          <Form.Check {...register('DotPay')} type="switch" label="Płatności online (Dotpay)" />
-          <Form.Check {...register('Tpay')} type="switch" label="Płatności online (Tpay)" />
-          <Form.Check {...register('AutoPay')} type="switch" label="Płatności online (AutoPay)" />
-        </Form.Group>
+    <form onSubmit={validate(handleSubmit)}>
+      <div className={styles.form_group}>
+        <p>Jakie płatności ma mieć Twój sklep?</p>
+        <label>
+          <input type="checkbox" {...register('Przelew')} /> Przelew bankowy
+        </label>
+        <label>
+          <input type="checkbox" {...register('Płatność przy odbiorze')} /> Płatność przy odbiorze
+        </label>
+        <label>
+          <input type="checkbox" {...register('Przelewy24')} /> Płatności online (Przelewy24)
+        </label>
+        <label>
+          <input type="checkbox" {...register('PayU')} /> Płatności online (PayU)
+        </label>
+        <label>
+          <input type="checkbox" {...register('PayPal')} /> Płatności online (PayPal)
+        </label>
+        <label>
+          <input type="checkbox" {...register('DotPay')} /> Płatności online (Dotpay)
+        </label>
+        <label>
+          <input type="checkbox" {...register('Tpay')} /> Płatności online (Tpay)
+        </label>
+        <label>
+          <input type="checkbox" {...register('AutoPay')} /> Płatności online (AutoPay)
+        </label>
+      </div>
 
-        <Form.Group className={styles.form_group}>
-          <Form.Label>Inne formy płatności</Form.Label>
-          <Form.Control
-            {...register('inne formy płatności')}
-            type="textarea"
-            label="Inna forma płatności"
-            placeholder="Inna forma płatności"
-          />
-        </Form.Group>
+      <div className={styles.form_group}>
+        <label htmlFor="inneFormyPlatnosci">Inne formy płatności</label>
+        <textarea id="inneFormyPlatnosci" {...register('inne formy płatności')} placeholder="Inna forma płatności" />
+      </div>
 
-        <span className={styles.button_wrapper}>
-          <Button type="button" onClick={prevStep} className={styles.button}>
-            Wstecz
-          </Button>
-          <Button type="submit" className={styles.button}>
-            Dalej
-          </Button>
-        </span>
-      </Form>
-    </div>
+      <div className={styles.button_wrapper}>
+        <button type="button" onClick={prevStep} className={styles.button}>
+          Wstecz
+        </button>
+        <button type="submit" className={styles.button}>
+          Dalej
+        </button>
+      </div>
+    </form>
   );
 };
 

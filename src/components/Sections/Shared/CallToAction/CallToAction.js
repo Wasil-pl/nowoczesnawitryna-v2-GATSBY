@@ -1,6 +1,6 @@
 import React from 'react';
 import * as styles from './CallToAction.module.scss';
-import { ArrowRight } from 'react-bootstrap-icons';
+import { BsArrowRight } from '../../../Icons/Icons';
 
 const CallToAction = ({ kontakt_2, kontakt_3, variant = '' }) => {
   return (
@@ -30,7 +30,7 @@ const CallToAction = ({ kontakt_2, kontakt_3, variant = '' }) => {
 
       <div className={styles.right_side}>
         <a href={!kontakt_2 && !kontakt_3 ? '/formularz-szybkiej-wyceny/#form' : '/kontakt/#kontakt'}>
-          <ArrowRight />
+          <BsArrowRight />
           <br />
           {!kontakt_2 && !kontakt_3 && <span className={styles.text}>Wypełnij formularz wyceny już teraz!</span>}
           {kontakt_2 && !kontakt_3 && (

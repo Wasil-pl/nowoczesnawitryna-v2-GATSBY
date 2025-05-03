@@ -57,11 +57,11 @@ const WhyChooseMe = () => {
           data-sal-easing="ease"
           data-sal-duration="1000"
         >
-          <h3>
+          <p>
             Tworzę strony internetowe dla firm każdej wielkości – od małych start-upów po duże korporacje. Bez względu
             na to, jaką firmę prowadzisz, jestem pewien, że mogę zaproponować stronę lub sklep, które spełnią Twoje
             oczekiwania i będą idealnym rozwiązaniem dla Twojego biznesu.
-          </h3>
+          </p>
         </div>
       </div>
     </section>

@@ -62,10 +62,11 @@
       text-decoration: none;
 
       svg {
-        font-size: 7rem;
         color: settings.$color-text-light;
         margin-right: 1rem;
         margin-left: auto;
+        width: 100px;
+        height: auto;
       }
 
       .text {
@@ -115,6 +116,35 @@
       font-size: 1rem;
       color: settings.$color-text-light;
       margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .action {
+    flex-direction: column;
+    padding: 20px;
+
+    .left_side {
+      h3 {
+        font-size: 1rem;
+      }
+
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .right_side {
+      a {
+        svg {
+          font-size: 5rem;
+        }
+
+        .text {
+          font-size: 1rem;
+        }
+      }
     }
   }
 }

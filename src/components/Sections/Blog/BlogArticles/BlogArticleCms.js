@@ -1,6 +1,5 @@
 import React from 'react';
 import * as styles from './BlogArticles.module.scss';
-
 import { StaticImage } from 'gatsby-plugin-image';
 
 const BlogArticleCms = () => {
@@ -31,7 +30,7 @@ const BlogArticleCms = () => {
           </div>
           <div className={styles.image}>
             <StaticImage
-              src="../../images/cms.webp"
+              src="../../../../images/cms.webp"
               width={600}
               height={400}
               alt="CMS - wordpress, strony internetowe oparte na wordpress"
@@ -94,7 +93,7 @@ const BlogArticleCms = () => {
           </div>
           <div className={styles.image}>
             <StaticImage
-              src="../../images/kod.webp"
+              src="../../../../images/kod.webp"
               width={600}
               height={400}
               alt="kodowanie - ręcznę kodowanie strony internetowej"

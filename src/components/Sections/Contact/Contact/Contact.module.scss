@@ -56,6 +56,12 @@
             color: settings.$color-text-primary;
           }
         }
+
+        .error {
+          color: settings.$color-text-danger;
+          font-size: 0.8rem;
+          margin: 5px 0 20px;
+        }
       }
     }
 
@@ -72,7 +78,8 @@
           margin-bottom: 50px;
 
           svg {
-            font-size: 45px;
+            width: 45px;
+            height: 45px;
           }
 
           p {

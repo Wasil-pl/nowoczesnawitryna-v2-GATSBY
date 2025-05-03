@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import * as styles from './MyServices.module.scss';
 import SectionTitle from '../../../../Ui/SectionTitle/SectionTitle';
 import MyServicesThumbs from '../MyServicesThumbs/MyServicesThumbs';
@@ -6,18 +6,26 @@ import MyServicesAccordion from '../MyServicesAccordion/MyServicesAccordion';
 import CustomButton from '../../../../Ui/CustomButton/CustomButton';
 import { useMediaQuery } from 'react-responsive';
 import CallToAction from '../../../Shared/CallToAction/CallToAction';
-import { QuestionMarkCircleIcon } from '@heroicons/react/24/solid';
-import ParticlesBackground from '../../../../Ui/ParticlesBackground/ParticlesBackground';
 import ShapeDividersTop from '../../../../Ui/ShapeDividers/ShapeDividersTop';
 import ShapeDividersBottom from '../../../../Ui/ShapeDividers/ShapeDividersBottom';
+import { QuestionMarkCircleIcon } from '../../../../Icons/Icons';
 
 const MyServices = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 992px)' });
+  const [ParticlesBg, setParticlesBg] = useState(null); // ← PRZENIESIONE WYŻEJ
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      import('../../../../Ui/ParticlesBackground/ParticlesBackground').then((mod) => {
+        setParticlesBg(() => mod.default);
+      });
+    }
+  }, []);
 
   return (
     <section className={styles.myServices}>
       <ShapeDividersTop />
-      <ParticlesBackground id={'tsparticles_my_service'} />
+      {ParticlesBg && <ParticlesBg id={'tsparticles_my_service'} />}
 
       <div className="container mx-auto px-4">
         <SectionTitle

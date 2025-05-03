@@ -1,6 +1,6 @@
 import React from 'react';
 import * as styles from './LPMyServicesThumbs.module.scss';
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
+import { Tab } from '@headlessui/react';
 import { StaticImage } from 'gatsby-plugin-image';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
 
@@ -20,8 +20,8 @@ const LPMyServicesThumbs = ({
 }) => {
   return (
     <div className={styles.thumbs_container}>
-      <TabGroup defaultIndex={0} className={styles.tabs_wrapper}>
-        <TabList className={`mb-3 ${styles.tab_list}`}>
+      <Tab.Group defaultIndex={0} className={styles.tabs_wrapper}>
+        <Tab.List className={`mb-3 ${styles.tab_list}`}>
           <Tab className={styles.tab_button}>
             <h3>Strony internetowe HTML</h3>
           </Tab>
@@ -40,10 +40,10 @@ const LPMyServicesThumbs = ({
           <Tab className={styles.tab_button}>
             <h3>Projektowanie Logo</h3>
           </Tab>
-        </TabList>
+        </Tab.List>
 
-        <TabPanels className={styles.tab_panels}>
-          <TabPanel>
+        <Tab.Panels className={styles.tab_panels}>
+          <Tab.Panel>
             <div className={styles.tab_content}>
               <div className={styles.tab_content_left}>
                 <h3>{title_HTML}</h3>
@@ -60,9 +60,9 @@ const LPMyServicesThumbs = ({
                 />
               </div>
             </div>
-          </TabPanel>
+          </Tab.Panel>
 
-          <TabPanel>
+          <Tab.Panel>
             <div className={styles.tab_content}>
               <div className={styles.tab_content_left}>
                 <h3>{title_web_apps}</h3>
@@ -79,9 +79,9 @@ const LPMyServicesThumbs = ({
                 />
               </div>
             </div>
-          </TabPanel>
+          </Tab.Panel>
 
-          <TabPanel>
+          <Tab.Panel>
             <div className={styles.tab_content}>
               <div className={styles.tab_content_left}>
                 <h3>{title_wordpress}</h3>
@@ -98,9 +98,9 @@ const LPMyServicesThumbs = ({
                 />
               </div>
             </div>
-          </TabPanel>
+          </Tab.Panel>
 
-          <TabPanel>
+          <Tab.Panel>
             <div className={styles.tab_content}>
               <div className={styles.tab_content_left}>
                 <h3>{title_ecommerce}</h3>
@@ -117,9 +117,9 @@ const LPMyServicesThumbs = ({
                 />
               </div>
             </div>
-          </TabPanel>
+          </Tab.Panel>
 
-          <TabPanel>
+          <Tab.Panel>
             <div className={styles.tab_content}>
               <div className={styles.tab_content_left}>
                 <h3>{title_lms}</h3>
@@ -136,9 +136,9 @@ const LPMyServicesThumbs = ({
                 />
               </div>
             </div>
-          </TabPanel>
+          </Tab.Panel>
 
-          <TabPanel>
+          <Tab.Panel>
             <div className={styles.tab_content}>
               <div className={styles.tab_content_left}>
                 <h3>{title_logo}</h3>
@@ -151,9 +151,9 @@ const LPMyServicesThumbs = ({
                 <StaticImage src="../../../../images/logo-min-white.png" alt="projektowanie logo" width={300} />
               </div>
             </div>
-          </TabPanel>
-        </TabPanels>
-      </TabGroup>
+          </Tab.Panel>
+        </Tab.Panels>
+      </Tab.Group>
     </div>
   );
 };

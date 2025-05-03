@@ -1,7 +1,7 @@
 import React from 'react';
 import * as styles from './Footer.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
-import { FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { FacebookIcon, LinkedInIcon } from '../Icons/Icons';
 
 const Footer = () => {
   return (
@@ -24,11 +24,11 @@ const Footer = () => {
             <p>ul. Bogoczowiec 4c</p>
             <div className={styles.social_media}>
               <a href="https://www.facebook.com/profile.php?id=61556511114215" aria-label="Profil na Facebooku">
-                <FaFacebook />
+                <FacebookIcon />
                 <span>facebook</span>
               </a>
               <a href="https://www.linkedin.com/in/dariusz-wasilewski-4041072b9/" aria-label="Profil na Linkedin">
-                <FaLinkedin />
+                <LinkedInIcon />
                 <span>linkedin</span>
               </a>
             </div>

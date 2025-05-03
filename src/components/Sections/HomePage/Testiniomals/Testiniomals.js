@@ -2,7 +2,7 @@ import React from 'react';
 import * as styles from './Testiniomals.module.scss';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import CallToAction from '../../Shared/CallToAction/CallToAction';
-import { StarIcon } from '@heroicons/react/24/solid';
+import { StarIcon } from '../../../Icons/Icons';
 
 const Testiniomals = () => {
   return (

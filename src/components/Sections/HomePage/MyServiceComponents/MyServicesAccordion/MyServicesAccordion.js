@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/solid';
 import { StaticImage } from 'gatsby-plugin-image';
 import CustomButton from '../../../../Ui/CustomButton/CustomButton';
 import * as styles from './MyServicesAccordion.module.scss';
+import { ChevronDownIcon, ChevronUpIcon } from '../../../../Icons/Icons';
 
 const MyServicesAccordion = () => {
   const [openIndex, setOpenIndex] = useState(null);

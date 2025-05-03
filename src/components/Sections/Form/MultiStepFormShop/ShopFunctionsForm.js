@@ -1,13 +1,11 @@
 import React from 'react';
 import * as styles from '../MultiStepForm/MultiStepForm.module.scss';
-import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 
 const ShopFunctionsForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefaultValues }) => {
   const { register, handleSubmit: validate } = useForm({ defaultValues });
 
   const handleSubmit = (data) => {
-    // Klucze istotne dla tego kroku
     const relevantKeys = [
       'logowanie/rejestracja użytkowników',
       'newsletter',
@@ -28,14 +26,17 @@ const ShopFunctionsForm = ({ nextStep, prevStep, updateData, defaultValues, upda
       'mapa lokalizacji',
     ];
 
-    // Filtrujemy dane, aby zawierały tylko wartości dla tego kroku
     const filteredData = Object.fromEntries(Object.entries(data).filter(([key]) => relevantKeys.includes(key)));
 
     const shopFunctions = Object.entries(filteredData)
       .filter(([key, value]) => value === true)
       .map(([key]) => key);
 
-    if (filteredData['inne funkcje'] && filteredData['inne funkcje'].trim() !== '') {
+    if (
+      filteredData['inne funkcje'] &&
+      typeof filteredData['inne funkcje'] === 'string' &&
+      filteredData['inne funkcje'].trim() !== ''
+    ) {
       shopFunctions.push(filteredData['inne funkcje']);
     }
 
@@ -43,72 +44,111 @@ const ShopFunctionsForm = ({ nextStep, prevStep, updateData, defaultValues, upda
       'Funkcje strony': shopFunctions.length > 0 ? shopFunctions.join(', ') : 'Nie wybrano żadnych funkcji',
     };
 
-    updateData(formattedData); // Aktualizujemy tylko bieżące dane dla tego kroku
-    updateDefaultValues(data); // Ustawiamy domyślne wartości tylko dla tego kroku
+    updateData(formattedData);
+    updateDefaultValues(data);
     nextStep();
   };
 
   return (
-    <div>
-      <Form onSubmit={validate(handleSubmit)}>
-        <Form.Group className={styles.form_group}>
-          <Form.Label>Jakie funkcje ma mieć Twój sklep?</Form.Label>
-          <Form.Check
-            {...register('logowanie/rejestracja użytkowników')}
-            type="switch"
-            label="Logowanie i rejestracja użytkowników"
-          />
+    <form onSubmit={validate(handleSubmit)}>
+      <div className={styles.form_group}>
+        <p>Jakie funkcje ma mieć Twój sklep?</p>
 
-          <Form.Check {...register('newsletter')} type="switch" label="Newsletter" />
+        <label>
+          <input type="checkbox" {...register('logowanie/rejestracja użytkowników')} />
+          <span>Logowanie i rejestracja użytkowników</span>
+        </label>
 
-          <Form.Check
-            {...register('powiadomienia o dostępności produktów')}
-            type="switch"
-            label="Powiadomienia o dostępności produktów"
-          />
+        <label>
+          <input type="checkbox" {...register('newsletter')} />
+          <span>Newsletter</span>
+        </label>
 
-          <Form.Check {...register('filtrowanie produktów')} type="switch" label="Filtrowanie produktów" />
+        <label>
+          <input type="checkbox" {...register('powiadomienia o dostępności produktów')} />
+          <span>Powiadomienia o dostępności produktów</span>
+        </label>
 
-          <Form.Check {...register('porównywarka produktów')} type="switch" label="Porównywarka produktów" />
+        <label>
+          <input type="checkbox" {...register('filtrowanie produktów')} />
+          <span>Filtrowanie produktów</span>
+        </label>
 
-          <Form.Check {...register('opinie i oceny produktów')} type="switch" label="Opinie i oceny produktów" />
+        <label>
+          <input type="checkbox" {...register('porównywarka produktów')} />
+          <span>Porównywarka produktów</span>
+        </label>
 
-          <Form.Check {...register('zestawy produktów')} type="switch" label="Zestawy produktów" />
+        <label>
+          <input type="checkbox" {...register('opinie i oceny produktów')} />
+          <span>Opinie i oceny produktów</span>
+        </label>
 
-          <Form.Check {...register('formularz kontaktowy')} type="switch" label="Formularz kontaktowy" />
+        <label>
+          <input type="checkbox" {...register('zestawy produktów')} />
+          <span>Zestawy produktów</span>
+        </label>
 
-          <Form.Check {...register('program lojalnościowy')} type="switch" label="Program lojalnościowy" />
+        <label>
+          <input type="checkbox" {...register('formularz kontaktowy')} />
+          <span>Formularz kontaktowy</span>
+        </label>
 
-          <Form.Check {...register('dostawa z wyborem terminu')} type="switch" label="Dostawa z wyborem terminu" />
+        <label>
+          <input type="checkbox" {...register('program lojalnościowy')} />
+          <span>Program lojalnościowy</span>
+        </label>
 
-          <Form.Check {...register('rekomendacje produktów')} type="switch" label="Rekomendacje produktów" />
+        <label>
+          <input type="checkbox" {...register('dostawa z wyborem terminu')} />
+          <span>Dostawa z wyborem terminu</span>
+        </label>
 
-          <Form.Check {...register('kalkulator cen')} type="switch" label="Kalkulator cen" />
+        <label>
+          <input type="checkbox" {...register('rekomendacje produktów')} />
+          <span>Rekomendacje produktów</span>
+        </label>
 
-          <Form.Check {...register('system rezerwacji')} type="switch" label="System rezerwacji" />
+        <label>
+          <input type="checkbox" {...register('kalkulator cen')} />
+          <span>Kalkulator cen</span>
+        </label>
 
-          <Form.Check {...register('video lub multimedia')} type="switch" label="Video lub multimedia" />
+        <label>
+          <input type="checkbox" {...register('system rezerwacji')} />
+          <span>System rezerwacji</span>
+        </label>
 
-          <Form.Check {...register('FAQ')} type="switch" label="FAQ" />
+        <label>
+          <input type="checkbox" {...register('video lub multimedia')} />
+          <span>Video lub multimedia</span>
+        </label>
 
-          <Form.Check {...register('mapa lokalizacji')} type="switch" label="Mapa lokalizacji" />
-        </Form.Group>
+        <label>
+          <input type="checkbox" {...register('FAQ')} />
+          <span>FAQ</span>
+        </label>
 
-        <Form.Group className={styles.form_group}>
-          <Form.Label>Inne funkcje</Form.Label>
-          <Form.Control {...register('inne funkcje')} as="textarea" placeholder="Inne funkcje" />
-        </Form.Group>
+        <label>
+          <input type="checkbox" {...register('mapa lokalizacji')} />
+          <span>Mapa lokalizacji</span>
+        </label>
+      </div>
 
-        <span className={styles.button_wrapper}>
-          <Button type="button" onClick={prevStep} className={styles.button}>
-            Wstecz
-          </Button>
-          <Button type="submit" className={styles.button}>
-            Dalej
-          </Button>
-        </span>
-      </Form>
-    </div>
+      <div className={styles.form_group}>
+        <label htmlFor="inne_funkcje">Inne funkcje</label>
+        <textarea id="inne_funkcje" {...register('inne funkcje')} placeholder="Inne funkcje" />
+      </div>
+
+      <div className={styles.button_wrapper}>
+        <button type="button" onClick={prevStep} className={styles.button}>
+          Wstecz
+        </button>
+        <button type="submit" className={styles.button}>
+          Dalej
+        </button>
+      </div>
+    </form>
   );
 };
 
