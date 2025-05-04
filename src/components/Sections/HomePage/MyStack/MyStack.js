@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import * as styles from './MyStack.module.scss';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
+import sal from 'sal.js'; // ← dodane do importów
 
 const MyStack = () => {
+  useEffect(() => {
+    sal(); // ← ponowna inicjalizacja animacji po zamontowaniu
+  }, []);
+
   const myStack = [
     'HTML5',
     'Sass',
@@ -33,6 +38,7 @@ const MyStack = () => {
               coloredText=" w pracy"
               subtitle={subtitle}
               variant="white"
+              ariaLabel="Technologie, których używam w pracy"
             />
           </div>
           <div className={styles.stack}>

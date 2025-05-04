@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import * as styles from './Headers.module.scss';
 import Menu from '../Menu/Menu';
 import ShapeDividersBottom from '../../Ui/ShapeDividers/ShapeDividersBottom';
+import { StaggeredFade } from '../../Ui/StaggeredFade/StaggeredFade';
 
 const Headers = ({ title_top, title_middle, title_bottom, subtitle, active, variant }) => {
   const [ParticlesBg, setParticlesBg] = useState(null); // ← PRZENIESIONE WYŻEJ
@@ -22,11 +23,11 @@ const Headers = ({ title_top, title_middle, title_bottom, subtitle, active, vari
 
       <div className={`${styles.content} separator`}>
         <h1 className={styles.title}>
-          <span className={styles.title_top}>{title_top}</span>
+          <StaggeredFade text={title_top} className={styles.title_top} />
           <br />
-          <span className={styles.title_middle}>{title_middle}</span>
+          <StaggeredFade text={title_middle} className={styles.title_middle} />
           <br />
-          <span className={styles.title_bottom}>{title_bottom}</span>
+          <StaggeredFade text={title_bottom} className={styles.title_bottom} />
         </h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
       </div>

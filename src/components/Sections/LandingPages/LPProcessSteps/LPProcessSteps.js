@@ -43,7 +43,12 @@ const LPProcessSteps = ({
   return (
     <section className={styles.process_steps_container}>
       <div className="container mx-auto px-4">
-        <SectionTitle title={sectionTitle} coloredText={sectionTitleColored} backgroundText="Proces" />
+        <SectionTitle
+          ariaLabel={sectionTitle + sectionTitleColored}
+          title={sectionTitle}
+          coloredText={sectionTitleColored}
+          backgroundText="Proces"
+        />
         <div className={styles.process_steps}>
           <div className={`${styles.step} ${styles.left} ${activeStep === 0 ? styles.active : ''}`}>
             <div className={styles.step_empty}></div>

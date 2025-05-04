@@ -7,7 +7,7 @@ const LPAboutMe = ({ description }) => {
   return (
     <section id="omnie" className={styles.about_me}>
       <div className="container mx-auto px-4">
-        <SectionTitle title="Kilka słów" coloredText=" o mnie" backgroundText="o mnie" />
+        <SectionTitle ariaLabel="Kilka słów o mnie" title="Kilka słów" coloredText=" o mnie" backgroundText="o mnie" />
 
         <div className={styles.wrapper}>
           <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.first_column}>
@@ -20,7 +20,7 @@ const LPAboutMe = ({ description }) => {
             />
           </div>
           <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.second_column}>
-            <h3>Cześć</h3>
+            <h3 aria-label="Cześć">Cześć</h3>
             <p>{description}</p>
           </div>
         </div>

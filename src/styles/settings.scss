@@ -45,21 +45,6 @@
   src: url('/fonts/Montserrat-Bold.woff2') format('woff2');
 }
 
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 800;
-  src: url('/fonts/Montserrat-ExtraBold.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 900;
-  src: url('/fonts/Montserrat-Black.woff2') format('woff2');
-}
 $color-primary: #ffbf00;
 // $color-secondary: #191d28;
 $color-secondary: #191919;

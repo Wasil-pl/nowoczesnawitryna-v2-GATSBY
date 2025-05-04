@@ -10,7 +10,7 @@ const LPPortfolio = ({ title, coloredText, subtitle }) => {
       <div className="container mx-auto px-4">
         <div className={styles.wrapper}>
           <div className={`${styles.portfolio_item} ${styles.title_box}`}>
-            <SectionTitle title={title} coloredText={coloredText} subtitle={subtitle} />
+            <SectionTitle ariaLabel={title + coloredText} title={title} coloredText={coloredText} subtitle={subtitle} />
           </div>
           <div className={styles.portfolio_item}>
             <StaticImage

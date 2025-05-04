@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import * as styles from './WebSiteProcessSteps.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
+import sal from 'sal.js';
 
 const WebSiteProcessSteps = () => {
   const [activeStep, setActiveStep] = useState(-1);
@@ -25,10 +26,19 @@ const WebSiteProcessSteps = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    sal(); // ← ponowna inicjalizacja animacji po zamontowaniu
+  }, []);
+
   return (
     <section className={styles.process_steps_container}>
       <div className="container mx-auto px-4">
-        <SectionTitle title="Mój proces projektowania" coloredText=" stron internetowych" backgroundText="Proces" />
+        <SectionTitle
+          title="Mój proces projektowania"
+          coloredText=" stron internetowych"
+          backgroundText="Proces"
+          ariaLabel="Mój proces projektowania stron internetowych"
+        />
         <div className={styles.process_steps}>
           <div className={`${styles.step} ${styles.left} ${activeStep === 0 ? styles.active : ''}`}>
             <div className={styles.step_empty}></div>

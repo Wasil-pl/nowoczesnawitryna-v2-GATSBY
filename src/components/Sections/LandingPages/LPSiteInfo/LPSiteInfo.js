@@ -50,7 +50,7 @@ const LPSiteInfo = ({
           data-sal-duration="1000"
           className={styles.banner}
         >
-          <h3>{banner_description}</h3>
+          <p>{banner_description}</p>
         </div>
       </div>
     </section>

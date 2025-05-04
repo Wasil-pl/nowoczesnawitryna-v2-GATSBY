@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import * as styles from './WebsiteFeatures.module.scss';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
+import sal from 'sal.js';
 
 const WebsiteFeatures = () => {
+  useEffect(() => {
+    sal(); // ← ponowna inicjalizacja animacji po zamontowaniu
+  }, []);
+
   return (
     <section className={styles.website_functions}>
       <div className="container mx-auto px-4">
@@ -12,6 +17,7 @@ const WebsiteFeatures = () => {
           coloredText="Twoich potrzeb"
           subtitle="Kompleksowe funkcje i Nowoczesne rozwiązania"
           backgroundText="Funkcje"
+          ariaLabel="Strona internetowa dopasowana do Twoich potrzeb"
         />
 
         <div className={styles.wrapper}>

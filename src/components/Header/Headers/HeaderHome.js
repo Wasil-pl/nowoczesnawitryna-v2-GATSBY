@@ -4,6 +4,7 @@ import Menu from '../Menu/Menu';
 import { useMediaQuery } from 'react-responsive';
 import { StaticImage } from 'gatsby-plugin-image';
 import ShapeDividersBottom from '../../Ui/ShapeDividers/ShapeDividersBottom';
+import { StaggeredFade } from '../../Ui/StaggeredFade/StaggeredFade';
 
 const HeaderHome = ({ active }) => {
   const [ParticlesBg, setParticlesBg] = useState(null); // ← PRZENIESIONE WYŻEJ
@@ -24,7 +25,7 @@ const HeaderHome = ({ active }) => {
       {ParticlesBg && <ParticlesBg id="tsparticles" />}
 
       <div className={styles.logo}>
-        <a href="/">
+        <a href="/" aria-label="Strona główna">
           <StaticImage src="../../../images/logo_ciemne.png" alt="logo" width={170} quality={100} />
         </a>
       </div>
@@ -32,20 +33,20 @@ const HeaderHome = ({ active }) => {
       <div data-sal="fade" data-sal-delay="100" data-sal-duration="2000" className={styles.content}>
         {!isMobile && (
           <h1 className={styles.title}>
-            <span className={styles.title_top}>Tworzenie Nowoczesnych</span>
+            <StaggeredFade text="Tworzenie Nowoczesnych" className={styles.title_top} />
             <br />
-            <span className={styles.title_bottom}> Stron Internetowych</span>
+            <StaggeredFade text="Stron Internetowych" className={styles.title_bottom} />
           </h1>
         )}
         {isMobile && (
           <h1 className={styles.title}>
-            <span className={styles.title_top}>Tworzenie</span>
+            <StaggeredFade text="Tworzenie" className={styles.title_top} />
             <br />
-            <span className={styles.title_bottom}> Nowoczesnych</span>
+            <StaggeredFade text=" Nowoczesnych" className={styles.title_top} />
             <br />
-            <span className={styles.title_top}> Stron</span>
+            <StaggeredFade text="Stron" className={styles.title_top} />
             <br />
-            <span className={styles.title_bottom}> Internetowych</span>
+            <StaggeredFade text=" Internetowych" className={styles.title_top} />
           </h1>
         )}
 

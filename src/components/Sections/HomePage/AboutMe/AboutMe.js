@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import * as styles from './AboutMe.module.scss';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
+import sal from 'sal.js';
 
 const AboutMe = () => {
+  useEffect(() => {
+    sal(); // ← ponowna inicjalizacja animacji po zamontowaniu
+  }, []);
+
   return (
     <section id="omnie" className={styles.about_me}>
       <div className="container mx-auto px-4">

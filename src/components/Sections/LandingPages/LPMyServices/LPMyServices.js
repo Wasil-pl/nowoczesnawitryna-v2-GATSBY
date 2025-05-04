@@ -44,7 +44,13 @@ const LPMyServices = ({
       {ParticlesBg && <ParticlesBg id={'tsparticles_lp_my_service'} />}
 
       <div className="container mx-auto px-4">
-        <SectionTitle title={sectionTitle} coloredText={sectionTitleColored} backgroundText="Usługi" variant="white" />
+        <SectionTitle
+          ariaLabel={sectionTitle + sectionTitleColored}
+          title={sectionTitle}
+          coloredText={sectionTitleColored}
+          backgroundText="Usługi"
+          variant="white"
+        />
 
         {!isMobile && (
           <LPMyServicesThumbs
@@ -81,7 +87,7 @@ const LPMyServices = ({
         )}
 
         <div className={styles.info}>
-          <QuestionMarkCircleIcon className={styles.icon} />
+          <QuestionMarkCircleIcon />
           <div className={styles.content}>
             <h3>HTML czy CMS</h3>
             <p>

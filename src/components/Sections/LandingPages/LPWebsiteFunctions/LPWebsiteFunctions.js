@@ -27,7 +27,13 @@ const LPWebsiteFunctions = ({
   return (
     <section className={styles.website_functions}>
       <div className="container mx-auto px-4">
-        <SectionTitle title={sectionTitle} coloredText={sectionTitleColored} subtitle={sectionSubtitle} />
+        <SectionTitle
+          ariaLabel={sectionTitle + sectionTitleColored}
+          title={sectionTitle}
+          coloredText={sectionTitleColored}
+          subtitle={sectionSubtitle}
+          backgroundText="Funkcje"
+        />
 
         <div className={styles.wrapper}>
           <div className={styles.item}>

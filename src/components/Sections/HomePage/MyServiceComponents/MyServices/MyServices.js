@@ -9,6 +9,7 @@ import CallToAction from '../../../Shared/CallToAction/CallToAction';
 import ShapeDividersTop from '../../../../Ui/ShapeDividers/ShapeDividersTop';
 import ShapeDividersBottom from '../../../../Ui/ShapeDividers/ShapeDividersBottom';
 import { QuestionMarkCircleIcon } from '../../../../Icons/Icons';
+import sal from 'sal.js'; // ← dodane do importów
 
 const MyServices = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 992px)' });
@@ -20,6 +21,10 @@ const MyServices = () => {
         setParticlesBg(() => mod.default);
       });
     }
+  }, []);
+
+  useEffect(() => {
+    sal(); // ← ponowna inicjalizacja animacji po zamontowaniu
   }, []);
 
   return (
@@ -41,7 +46,7 @@ const MyServices = () => {
         {isMobile && <MyServicesAccordion />}
 
         <div className={styles.info}>
-          <QuestionMarkCircleIcon className={styles.icon} />
+          <QuestionMarkCircleIcon />
           <div className={styles.content}>
             <h3>HTML czy CMS</h3>
             <p>

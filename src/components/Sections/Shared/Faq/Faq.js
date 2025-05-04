@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ChevronUpIcon, ChevronDownIcon } from '../../../Icons/Icons';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import * as styles from './Faq.module.scss';
 import { faqItems } from '../../../../consts/faqItems';
+import sal from 'sal.js';
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
+
+  useEffect(() => {
+    sal(); // ← ponowna inicjalizacja animacji po zamontowaniu
+  }, []);
 
   return (
     <section className={styles.faq}>

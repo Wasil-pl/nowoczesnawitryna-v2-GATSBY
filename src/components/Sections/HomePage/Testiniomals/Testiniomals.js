@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import * as styles from './Testiniomals.module.scss';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import CallToAction from '../../Shared/CallToAction/CallToAction';
 import { StarIcon } from '../../../Icons/Icons';
+import sal from 'sal.js';
 
 const Testiniomals = () => {
+  useEffect(() => {
+    sal(); // ← ponowna inicjalizacja animacji po zamontowaniu
+  }, []);
+
   return (
     <section className={styles.testiniomals}>
       <div className="container mx-auto px-4">
@@ -14,6 +19,7 @@ const Testiniomals = () => {
             subtitle="Zobacz co sądzą o mnie moi klienci"
             backgroundText="Opinie"
             variant="white"
+            ariaLabel="Niezdecydowany? Zobacz co sądzą o mnie moi klienci"
           />
         </div>
 

@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import * as styles from './WhyChooseMe.module.scss';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
+import sal from 'sal.js'; // ← dodane do importów
 
 const WhyChooseMe = () => {
+  useEffect(() => {
+    sal(); // ← ponowna inicjalizacja animacji po zamontowaniu
+  }, []);
+
   return (
     <section className={styles.site_info}>
       <div className="container mx-auto px-4">
@@ -41,7 +46,9 @@ const WhyChooseMe = () => {
                   dostosowywać je do Twoich specyficznych potrzeb klientów oraz branży.
                   <span>
                     <strong>
-                      <a href="#omnie"> Zobacz moje umiejętności i doświadczenie.</a>
+                      <a aria-label="Zobacz moje umiejętności i doświadczenie." href="#omnie">
+                        Zobacz moje umiejętności i doświadczenie.
+                      </a>
                     </strong>
                   </span>
                 </div>

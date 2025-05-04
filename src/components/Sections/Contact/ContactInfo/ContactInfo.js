@@ -1,7 +1,7 @@
 import React from 'react';
 import * as styles from './ContactInfo.module.scss';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
-// import GoogleMaps from '../GoogleMaps/GoogleMaps';
+import GoogleMaps from '../GoogleMaps/GoogleMaps';
 import { HomeIcon } from '../../../Icons/Icons';
 
 const ContactInfo = () => {
@@ -19,7 +19,7 @@ const ContactInfo = () => {
             </div>
           </div>
           <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.map}>
-            {/* <GoogleMaps /> */}
+            <GoogleMaps />
           </div>
         </div>
       </div>
