@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import * as styles from './ScroolToPriceButton.module.scss';
+import './ScroolToPriceButton.scss';
 import { BsCurrencyDollar } from '../../Icons/Icons';
 
 const ScroolToPriceButton = () => {
@@ -33,8 +33,8 @@ const ScroolToPriceButton = () => {
   return (
     <div className="container mx-auto px-4">
       <button
-        className={`${styles.scroll_to_price_button} ${
-          isActive ? styles.scroll_to_price_button_active : styles.scroll_to_price_button_left
+        className={`scroll_to_price_button ${
+          isActive ? 'scroll_to_price_button_active' : 'scroll_to_price_button_left'
         }`}
         onClick={handleScrollToPrice}
         aria-label="scrollUp"

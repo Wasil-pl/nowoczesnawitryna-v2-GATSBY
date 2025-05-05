@@ -1,11 +1,10 @@
 import React from 'react';
-import * as styles from './ArticleCard.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 
 const ArticleCard = ({ image, card_title, card_text, href }) => {
   return (
-    <div className={styles.card}>
+    <div className="article-card min-w-[400px] max-w-[400px] border border-[#ccc] flex flex-col mx-auto">
       {image === 'webhosting' && (
         <StaticImage
           src="../../../../images/webhosting.webp"
@@ -43,10 +42,11 @@ const ArticleCard = ({ image, card_title, card_text, href }) => {
           alt="modernwebsite - nowoczesna strona internetowa"
         />
       )}
-      <div className={styles.card_body}>
-        <h3>{card_title}</h3>
-        <p>{card_text}</p>
-        <Link to={href} text="Czytaj więcej">
+
+      <div className="card_body p-[16px] flex flex-col bg-background-light">
+        <h3 className="text-[1.5rem] mb-2">{card_title}</h3>
+        <p className="text-[1rem] mb-5">{card_text}</p>
+        <Link to={href} className="mt-auto no-underline uppercase text-text-secondary hover:text-primary">
           Czytaj Więcej
         </Link>
       </div>

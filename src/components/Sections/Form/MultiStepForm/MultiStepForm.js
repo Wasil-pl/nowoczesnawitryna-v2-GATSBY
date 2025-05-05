@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import * as styles from './MultiStepForm.module.scss';
+import './MultiStepForm.scss';
 import ChooseSiteForm from '../MultiStepFormShared/ChooseSiteForm';
 import ShopInfoForm from '../MultiStepFormShop/ShopInfoForm';
 import ShopFunctionsForm from '../MultiStepFormShop/ShopFunctionsForm';
@@ -315,18 +315,33 @@ export const MultiStepForm = () => {
   };
 
   return (
-    <section id="form" className={`${styles.order_site_form} site_form`}>
+    <section
+      id="form"
+      className="
+        order_site_form
+        relative mt-[150px] mb-[300px]
+        py-[200px] px-[100px]
+        bg-background-dark
+      "
+    >
       <ShapeDividersTop />
+
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Szybka wycena"
           coloredText=" strony internetowej"
-          variant="white"
+          variant="sections_title_white"
           backgroundText="Wycena"
         />
+
         <SelectionDisplay data={formData} />
+
         <StepsCountDIsplay data={step} variant={selectedSiteType?.['Rodzaj strony']} />
-        <div className={styles.form}>{renderStep()}</div>
+
+        <div id="input_form" className="max-w-[728px] mx-auto px-[20px] flex flex-col">
+          {renderStep()}
+        </div>
+
         <Action kontakt_3 variant="bottom" />
       </div>
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import * as styles from '../MultiStepForm/MultiStepForm.module.scss';
 import { useForm } from 'react-hook-form';
 
 const ShopDeliveryForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefaultValues }) => {
@@ -41,45 +40,50 @@ const ShopDeliveryForm = ({ nextStep, prevStep, updateData, defaultValues, updat
 
   return (
     <form onSubmit={validate(handleSubmit)}>
-      <div className={styles.form_group}>
-        <p>Jakie formy dostawy ma mieć Twój sklep?</p>
-
-        <label>
-          <input type="checkbox" {...register('Kurier')} />
-          <span>Kurier</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('Paczkomaty inPost')} />
-          <span>Paczkomat InPost</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('Paczkomaty Orlen')} />
-          <span>Paczkomat Orlen</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('Paczkomaty DPD')} />
-          <span>Paczkomat DPD</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('Odbiór osobisty')} />
-          <span>Odbiór osobisty</span>
-        </label>
+      {/* Formy dostawy */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <p className="mb-[10px] text-[0.9rem] text-text-light">Jakie formy dostawy ma mieć Twój sklep?</p>
+        {[
+          { name: 'Kurier', label: 'Kurier' },
+          { name: 'Paczkomaty inPost', label: 'Paczkomat InPost' },
+          { name: 'Paczkomaty Orlen', label: 'Paczkomat Orlen' },
+          { name: 'Paczkomaty DPD', label: 'Paczkomat DPD' },
+          { name: 'Odbiór osobisty', label: 'Odbiór osobisty' },
+        ].map((opt) => (
+          <label key={opt.name} className="flex items-center mb-[8px]">
+            <input
+              type="checkbox"
+              {...register(opt.name)}
+              className="mr-[10px] w-[20px] h-[20px] rounded-[5px] accent-background-primary"
+            />
+            <span className="text-[1rem]">{opt.label}</span>
+          </label>
+        ))}
       </div>
 
-      <div className={styles.form_group}>
-        <label htmlFor="inne_formy_dostawy">Inne formy dostawy</label>
-        <textarea id="inne_formy_dostawy" {...register('inne formy dostawy')} placeholder="Inna forma dostawy" />
+      {/* Inne formy dostawy */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <label htmlFor="inne_formy_dostawy" className="mb-[2px] text-[0.9rem] text-text-light">
+          Inne formy dostawy
+        </label>
+        <textarea
+          id="inne_formy_dostawy"
+          {...register('inne formy dostawy')}
+          placeholder="Inna forma dostawy"
+          className="p-[10px] rounded-[5px] bg-background-light"
+        />
       </div>
 
-      <div className={styles.button_wrapper}>
-        <button type="button" onClick={prevStep} className={styles.button}>
+      {/* Nawigacja */}
+      <div className="flex gap-[20px] justify-between md:justify-start">
+        <button
+          type="button"
+          onClick={prevStep}
+          className="button rounded-[5px] text-[0.9rem] uppercase px-[16px] py-[8px]"
+        >
           Wstecz
         </button>
-        <button type="submit" className={styles.button}>
+        <button type="submit" className="button rounded-[5px] text-[0.9rem] uppercase px-[16px] py-[8px]">
           Dalej
         </button>
       </div>

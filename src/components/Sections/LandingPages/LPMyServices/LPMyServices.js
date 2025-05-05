@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import * as styles from './LPMyServices.module.scss';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
 import { QuestionMarkCircleIcon } from '../../../Icons/Icons';
@@ -38,7 +37,7 @@ const LPMyServices = ({
   }, []);
 
   return (
-    <section className={styles.myServices}>
+    <section className="myServices bg-background-dark mt-[150px] pt-[200px] pb-[10px] relative">
       <ShapeDividersTop />
 
       {ParticlesBg && <ParticlesBg id={'tsparticles_lp_my_service'} />}
@@ -49,7 +48,7 @@ const LPMyServices = ({
           title={sectionTitle}
           coloredText={sectionTitleColored}
           backgroundText="Usługi"
-          variant="white"
+          variant="sections_title_white"
         />
 
         {!isMobile && (
@@ -86,11 +85,11 @@ const LPMyServices = ({
           />
         )}
 
-        <div className={styles.info}>
-          <QuestionMarkCircleIcon />
-          <div className={styles.content}>
-            <h3>HTML czy CMS</h3>
-            <p>
+        <div className="info flex mt-[140px] mb-[100px] relative">
+          <QuestionMarkCircleIcon width={50} height={50} />
+          <div className="content basis-[70%] ml-[30px]">
+            <h3 className="text-[1.2rem] text-text-light font-extrabold uppercase mb-[1rem]">HTML czy CMS</h3>
+            <p className="text-text-light mb-[2rem]">
               Zastanawiasz się, czy wybrać stronę internetową w HTML czy CMS? Chcesz dowiedzieć się, jakie są różnice
               między tymi dwoma rozwiązaniami? Zajrzyj do mojego bloga, gdzie znajdziesz odpowiedzi na te pytania. Albo
               skontaktuj się ze mną, a ja pomogę Ci wybrać najlepsze rozwiązanie dla Twojej firmy.

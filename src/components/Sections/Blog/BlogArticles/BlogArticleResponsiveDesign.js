@@ -1,26 +1,26 @@
+// BlogArticleResponsiveDesign.jsx
 import React from 'react';
-import * as styles from './BlogArticles.module.scss';
 
 const BlogArticleResponsiveDesign = () => {
   return (
-    <div className={styles.blog_articles}>
+    <div className="blog_articles py-[100px] max-w-[920px] mx-auto">
       <div className="container mx-auto px-4">
-        <h2>Czym Jest Responsywność Strony i Dlaczego Jest Tak Ważna?</h2>
-        <p>
+        <h2 className="text-[1.8rem] mt-[50px] mb-[30px]">Czym Jest Responsywność Strony i Dlaczego Jest Tak Ważna?</h2>
+        <p className="mb-[30px]">
           Responsywność strony internetowej to jej zdolność do dostosowywania się do różnych wielkości ekranów – od
           komputerów stacjonarnych po smartfony i tablety. W dzisiejszym świecie, gdzie większość użytkowników korzysta
           z urządzeń mobilnych, responsywność stała się kluczowym elementem nowoczesnych stron internetowych.
         </p>
 
-        <h2>Dlaczego Responsywność Jest Ważna?</h2>
-        <p>
+        <h2 className="text-[1.8rem] mt-[50px] mb-[30px]">Dlaczego Responsywność Jest Ważna?</h2>
+        <p className="mb-[30px]">
           Odpowiednie działanie strony na różnych urządzeniach to nie tylko kwestia estetyki, ale przede wszystkim
           wygody użytkowników. Strony responsywne zwiększają zaangażowanie i zmniejszają współczynnik odrzuceń, co
           pozytywnie wpływa na konwersję i lojalność klientów.
         </p>
 
-        <h2>Jakie są Zalety Responsywności?</h2>
-        <ul>
+        <h2 className="text-[1.8rem] mt-[50px] mb-[30px]">Jakie są Zalety Responsywności?</h2>
+        <ul className="list-disc list-inside mb-[30px]">
           <li>
             <strong>Lepsze doświadczenie użytkownika:</strong> Strony responsywne automatycznie dostosowują układ i
             wielkość treści, co sprawia, że użytkownicy mają wygodny dostęp do informacji.
@@ -35,8 +35,8 @@ const BlogArticleResponsiveDesign = () => {
           </li>
         </ul>
 
-        <h2>Jak Zapewnić Responsywność Strony?</h2>
-        <p>
+        <h2 className="text-[1.8rem] mt-[50px] mb-[30px]">Jak Zapewnić Responsywność Strony?</h2>
+        <p className="mb-[30px]">
           Responsywność można zapewnić, stosując techniki, takie jak elastyczne siatki (grid), zapytania CSS (media
           queries) oraz optymalizację obrazów. Istnieją także narzędzia do testowania responsywności, które pomagają
           sprawdzić, jak strona wyświetla się na różnych urządzeniach.

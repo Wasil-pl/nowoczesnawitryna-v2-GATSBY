@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import * as styles from './RescentArticles.module.scss';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { blog_cards_data } from '../../../../consts/blog_cards_data';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
@@ -14,7 +13,7 @@ const RescentArticles = () => {
   }, []);
 
   return (
-    <section className={styles.rescent_articles}>
+    <section className="min-h-[700px] pt-[300px] pb-[100px] bg-background-light">
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Najnowsze wpisy na "
@@ -23,7 +22,8 @@ const RescentArticles = () => {
           backgroundText="Blog"
           ariaLabel="Najnowsze wpisy na blogu"
         />
-        <div className={styles.wrapper}>
+
+        <div className="flex flex-wrap flex-col gap-[20px] mb-[50px] lg:flex-row lg:justify-evenly items-stretch ">
           {blog_rescent_articles.map((card, index) => (
             <ArticleCard
               key={index}
@@ -34,7 +34,8 @@ const RescentArticles = () => {
             />
           ))}
         </div>
-        <div className={styles.button_box}>
+
+        <div className="flex justify-center">
           <CustomButton text="Zobacz wszystkie" link="/blog/" variant="white" />
         </div>
       </div>

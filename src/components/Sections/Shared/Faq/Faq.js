@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ChevronUpIcon, ChevronDownIcon } from '../../../Icons/Icons';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
-import * as styles from './Faq.module.scss';
 import { faqItems } from '../../../../consts/faqItems';
 import sal from 'sal.js';
 
@@ -13,29 +12,29 @@ const Faq = () => {
   }, []);
 
   return (
-    <section className={styles.faq}>
+    <section className="faq py-[100px] bg-background-lighter">
       <div className="container mx-auto px-4">
-        <div className={styles.wrapper}>
+        <div className="wrapper">
           <SectionTitle
             coloredText="FAQ"
             subtitle="Najczęściej zadawane pytania dotyczące projektowania stron internetowych"
             backgroundText="FAQ"
           />
 
-          <div className={styles.accordion_wrapper}>
+          <div className="accordion_wrapper max-w-[900px] mx-auto flex flex-col gap-[20px]">
             {faqItems.map((item, index) => (
-              <div key={index} className={styles.accordion_item}>
+              <div key={index}>
                 <button
-                  className={styles.accordion_button}
+                  className=" bg-background-light rounded-[20px] flex justify-between items-center text-left w-full px-[20px] py-[10px]"
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
                   aria-expanded={openIndex === index}
                 >
-                  <h3>{item.question}</h3>
+                  <h3 className="text-[1.1rem] md:text_small font-bold uppercase font-body">{item.question}</h3>
                   {openIndex === index ? <ChevronUpIcon /> : <ChevronDownIcon />}
                 </button>
 
                 {openIndex === index && (
-                  <div className={styles.accordion_panel}>
+                  <div className=" p-[20px] rounded-[20px] text-[1rem] text-text-dark">
                     <p>{item.answer}</p>
                   </div>
                 )}

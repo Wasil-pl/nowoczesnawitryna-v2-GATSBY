@@ -1,0 +1,61 @@
+@use '../../../../styles/settings.scss' as settings;
+
+.one_column {
+  .wrapper {
+    .first_column {
+      border-radius: 20px;
+    }
+
+    .second_column {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .site_info {
+    .wrapper {
+      flex-direction: column;
+
+      .first_column {
+        border-radius: 20px 20px 0 0;
+
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+
+      .second_column {
+        border-radius: 0 0 20px 20px;
+      }
+    }
+  }
+
+  .one_column {
+    .wrapper {
+      .first_column {
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .site_info {
+    .wrapper {
+      .first_column {
+        h3 {
+          font-size: 1.3rem;
+        }
+
+        h4 {
+          font-size: 1.1rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

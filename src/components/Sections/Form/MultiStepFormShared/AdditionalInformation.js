@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import * as styles from '../MultiStepForm/MultiStepForm.module.scss';
 import { useForm } from 'react-hook-form';
 import { Error, errorMessages } from '../../../../consts/errorMesages';
 import { patterns } from '../../../../consts/patterns';
@@ -62,8 +61,9 @@ const AdditionalInformation = ({ nextStep, prevStep, updateData, defaultValues, 
 
   return (
     <form onSubmit={validate(handleSubmit)}>
-      <div className={styles.form_group}>
-        <p>Ile zakładek ma mieć strona?</p>
+      {/* Ile zakładek */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <p className="mb-[2px] text-[0.9rem] text-text-light">Ile zakładek ma mieć strona?</p>
         <input
           type="number"
           placeholder="Ile zakładek ma mieć strona?"
@@ -74,18 +74,23 @@ const AdditionalInformation = ({ nextStep, prevStep, updateData, defaultValues, 
               message: errorMessages.minNumber(patterns.shopProductTypeMinLength),
             },
           })}
+          className="p-[10px] rounded-[5px] bg-background-light"
         />
-        {errors['ilość zakładek'] && <Error>{errors['ilość zakładek']?.message}</Error>}
+        {errors['ilość zakładek'] && (
+          <Error className="text-text-danger text-[0.8rem] mt-[5px]">{errors['ilość zakładek']?.message}</Error>
+        )}
       </div>
 
+      {/* Czy będzie blog? */}
       {defaultValues['typ strony'] !== 'blog' && (
-        <div className={styles.form_group}>
-          <p>Czy będzie blog?</p>
+        <div className="mb-[20px] flex flex-col gap-[2px]">
+          <p className="mb-[2px] text-[0.9rem] text-text-light">Czy będzie blog?</p>
           <select
             {...register('blog', {
               required: errorMessages.required,
             })}
             onChange={(e) => setBlogVariant(e.target.value)}
+            className="p-[10px] rounded-[5px] bg-background-light"
           >
             <option value="">Wybierz</option>
             <option value="nie">Nie</option>
@@ -94,9 +99,10 @@ const AdditionalInformation = ({ nextStep, prevStep, updateData, defaultValues, 
         </div>
       )}
 
+      {/* Ile artykułów */}
       {(defaultValues['typ strony'] === 'blog' || blogVariant === 'tak') && (
-        <div className={styles.form_group}>
-          <p>Ile artykułów ma mieć blog?</p>
+        <div className="mb-[20px] flex flex-col gap-[2px]">
+          <p className="mb-[2px] text-[0.9rem] text-text-light">Ile artykułów ma mieć blog?</p>
           <input
             type="number"
             placeholder="Ile artykułów ma mieć blog?"
@@ -107,54 +113,66 @@ const AdditionalInformation = ({ nextStep, prevStep, updateData, defaultValues, 
                 message: errorMessages.minNumber(patterns.shopProductTypeMinLength),
               },
             })}
+            className="p-[10px] rounded-[5px] bg-background-light"
           />
         </div>
       )}
 
-      <div className={styles.form_group}>
-        <p>Czy posiadasz logo?</p>
+      {/* Logo */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <p className="mb-[2px] text-[0.9rem] text-text-light">Czy posiadasz logo?</p>
         <select
           {...register('logo', {
             required: errorMessages.required,
           })}
+          className="p-[10px] rounded-[5px] bg-background-light"
         >
           <option value="">Wybierz</option>
           <option value="tak">Tak</option>
           <option value="nie i nie potrzebuję">Nie i nie potrzebuję</option>
           <option value="nie, ale potrzebuję">Nie, ale potrzebuję</option>
         </select>
-        {errors.logo && <Error>{errors.logo?.message}</Error>}
+        {errors.logo && <Error className="text-text-danger text-[0.8rem] mt-[5px]">{errors.logo?.message}</Error>}
       </div>
 
-      <div className={styles.form_group}>
-        <p>Czy posiadasz projekt?</p>
+      {/* Projekt */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <p className="mb-[2px] text-[0.9rem] text-text-light">Czy posiadasz projekt?</p>
         <select
           {...register('projekt', {
             required: errorMessages.required,
           })}
+          className="p-[10px] rounded-[5px] bg-background-light"
         >
           <option value="">Wybierz</option>
           <option value="tak">Tak</option>
           <option value="nie">Nie</option>
         </select>
-        {errors.projekt && <Error>{errors.projekt?.message}</Error>}
+        {errors.projekt && <Error className="text-text-danger text-[0.8rem] mt-[5px]">{errors.projekt?.message}</Error>}
       </div>
 
-      <div className={styles.form_group}>
-        <p>Adresy stron które Ci się podobają</p>
+      {/* Adresy stron */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <p className="mb-[2px] text-[0.9rem] text-text-light">Adresy stron które Ci się podobają</p>
         <textarea
           rows={3}
           placeholder="Adresy stron które Ci się podobają"
           autoComplete="strony"
           {...register('Adresy stron które Ci się podobają')}
+          className="p-[10px] rounded-[5px] bg-background-light"
         />
       </div>
 
-      <div className={styles.button_wrapper}>
-        <button type="button" onClick={prevStep} className={styles.button}>
+      {/* Nawigacja */}
+      <div className="flex gap-[20px] justify-between md:justify-start">
+        <button
+          type="button"
+          onClick={prevStep}
+          className="button rounded-[5px] text-[0.9rem] uppercase px-[16px] py-[8px]"
+        >
           Wstecz
         </button>
-        <button type="submit" className={styles.button}>
+        <button type="submit" className="button rounded-[5px] text-[0.9rem] uppercase px-[16px] py-[8px]">
           Dalej
         </button>
       </div>

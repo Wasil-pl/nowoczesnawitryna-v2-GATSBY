@@ -1,6 +1,6 @@
 import React from 'react';
-import * as styles from './ServiceHighlights.module.scss';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
+import './ServiceHighlights.scss';
 
 const ServiceHighlights = ({
   title_first_column,
@@ -13,11 +13,11 @@ const ServiceHighlights = ({
   isHtml,
 }) => {
   return (
-    <section className={`${styles.site_info} ${styles[variant]}`}>
+    <section className={`site_info ${variant}`}>
       <div className="container mx-auto px-4">
-        <div className={styles.wrapper}>
-          <div className={styles.first_column}>
-            <h3>{title_first_column}</h3>
+        <div className="wrapper flex flex-col lg:flex-row relative z-[1] mt-[-80px] mb-0 rounded-[20px] shadow-custom">
+          <div className="first_column flex-1 flex flex-col justify-evenly items-start gap-[20px] p-8 bg-background-primary rounded-t-[20px] lg:rounded-[20px_0_0_20px]">
+            <h3 className="text-[1.8rem] font-bold"> {title_first_column} </h3>
             {isHtml ? (
               <p dangerouslySetInnerHTML={{ __html: descryption_first_column }} />
             ) : (
@@ -29,16 +29,18 @@ const ServiceHighlights = ({
               <CustomButton variant="dark" text="Przejdź do formularza..." link="/formularz-szybkiej-wyceny/#form" />
             )}
           </div>
-          <div className={styles.second_column}>
-            <div className={`mb-2 ${styles.first_card}`}>
-              <div className={styles.card}>
-                <h3>{title_first_card}</h3>
+
+          <div className="second_column flex-1 flex flex-col p-6 bg-background-lighter rounded-b-[20px] lg:rounded-[0_20px_20px_0]">
+            <div className="first_card text-left mb-2">
+              <div className="card bg-background-light rounded-[20px] p-4">
+                <h3 className="text-[1.3rem] font-bold">{title_first_card}</h3>
                 <p>{card_descryption}</p>
               </div>
             </div>
-            <div className={styles.second_card}>
-              <div className={styles.card}>
-                <h3>{title_second_card}</h3>
+
+            <div className="second_card text-right">
+              <div className="card bg-background-light rounded-[20px] p-4">
+                <h3 className="text-[1.3rem] font-bold">{title_second_card}</h3>
                 <p>{second_card_descryption}</p>
               </div>
             </div>

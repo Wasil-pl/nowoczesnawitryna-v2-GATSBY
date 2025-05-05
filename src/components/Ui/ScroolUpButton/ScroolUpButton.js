@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import * as styles from './ScroolUpButton.module.scss';
+import './ScroolUpButton.scss';
 import { BsArrowUpCircleFill } from '../../Icons/Icons';
 
 const ScroolUpButton = () => {
@@ -25,7 +25,7 @@ const ScroolUpButton = () => {
   return (
     <div className="container mx-auto px-4">
       {showButton && (
-        <button className={styles.scroll_up_button} onClick={handleScrollToTop} aria-label="scroolUp">
+        <button className="scroll_up_button" onClick={handleScrollToTop} aria-label="scroolUp">
           <BsArrowUpCircleFill />
         </button>
       )}

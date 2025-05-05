@@ -1,0 +1,7 @@
+@use '../../../../styles/settings.scss' as settings;
+
+.contact {
+  @media (max-width: 768px) {
+    margin: 200px 0 100px 0;
+  }
+}

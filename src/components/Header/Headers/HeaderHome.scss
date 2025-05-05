@@ -1,0 +1,59 @@
+@use '../../../styles/settings.scss' as settings;
+
+.header {
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('/images/text-hero.webp') no-repeat center calc(75%);
+    opacity: 0.05;
+    z-index: 0;
+  }
+
+  /* zmiana tła na mobile */
+  @media (max-width: 1000px) {
+    background-image: url('/images/hero_2_mobile.webp');
+    .logo {
+      display: none;
+    }
+  }
+
+  /* gradientowe napisy */
+  .title_top {
+    background: linear-gradient(90deg, settings.$color-text-primary, settings.$color-text-dark-light);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .title_bottom {
+    background: linear-gradient(90deg, settings.$color-text-dark-light, settings.$color-text-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@media (max-width: 880px) {
+  .header {
+    height: 600px;
+
+    &::before {
+      display: none;
+    }
+
+    .title {
+      font-size: 2rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .title {
+    line-height: 1.1;
+  }
+}

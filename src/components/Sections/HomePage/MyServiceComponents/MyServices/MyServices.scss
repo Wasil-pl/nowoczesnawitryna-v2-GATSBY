@@ -1,0 +1,20 @@
+@use '../../../../../styles/settings.scss' as settings;
+
+.myServices {
+  .info {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 90%;
+      top: -1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 1px;
+      background-color: settings.$color-primary;
+    }
+
+    svg {
+      color: settings.$color-primary;
+    }
+  }
+}

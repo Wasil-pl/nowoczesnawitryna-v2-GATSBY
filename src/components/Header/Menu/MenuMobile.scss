@@ -1,10 +1,28 @@
+// MenuMobile.scss
 @use '../../../styles/settings.scss' as settings;
 
-.offcanvas-body .navbar-nav a {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-}
+.menu_mobile {
+  .canvas_button {
+    border-color: settings.$color-text-light;
+    color: settings.$color-text-light;
+  }
 
-.offcanvas-body .navbar-nav a:hover {
-  color: settings.$color-text-primary;
+  .offcanvas {
+    background: settings.$color-background-light;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .lang > a {
+    margin-left: 10px;
+  }
+
+  .dropdown_menu_mobile {
+    gap: 0.3rem;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    padding: 1rem 1.5rem;
+  }
+
+  .activeMenuItem {
+    color: settings.$color-text-primary !important;
+  }
 }

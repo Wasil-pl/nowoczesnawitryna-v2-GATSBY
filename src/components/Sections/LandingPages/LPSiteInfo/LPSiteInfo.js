@@ -1,5 +1,4 @@
 import React from 'react';
-import * as styles from './LPSiteInfo.module.scss';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
 
 const LPSiteInfo = ({
@@ -12,24 +11,26 @@ const LPSiteInfo = ({
   banner_description,
 }) => {
   return (
-    <section className={styles.site_info}>
+    <section className="site_info">
       <div className="container mx-auto px-4">
-        <div className={styles.wrapper}>
-          <div className={styles.first_column}>
-            <h3>{title_first}</h3>
+        <div className="wrapper flex flex-col lg:flex-row relative z-[1] mt-[-80px] mb-0 rounded-[20px] shadow-custom">
+          <div className="first_column flex-1 flex flex-col justify-evenly items-start gap-[20px] p-8 bg-background-primary rounded-t-[20px] lg:rounded-[20px_0_0_20px]">
+            <h3 className="text-[1.8rem] font-bold"> {title_first} </h3>
             <p>{description_first}</p>
             <CustomButton variant="dark" text="Skontaktuj się" link="/kontakt/" />
           </div>
-          <div className={styles.second_column}>
-            <div className={`mb-2 ${styles.first_card}`}>
-              <div className={styles.card}>
-                <h3>{title_second}</h3>
+
+          <div className="second_column flex-1 flex flex-col p-6 bg-background-lighter rounded-b-[20px] lg:rounded-[0_20px_20px_0]">
+            <div className="first_card text-left mb-2">
+              <div className="card bg-background-light rounded-[20px] p-4">
+                <h3 className="text-[1.3rem] font-bold">{title_second}</h3>
                 <p>{description_second}</p>
               </div>
             </div>
-            <div className={styles.second_card}>
-              <div className={styles.card}>
-                <h3>{title_third}</h3>
+
+            <div className="second_card text-right">
+              <div className="card bg-background-light rounded-[20px] p-4">
+                <h3 className="text-[1.3rem] font-bold">{title_third}</h3>
                 <p>
                   {description_third}
                   <span>
@@ -44,13 +45,13 @@ const LPSiteInfo = ({
         </div>
 
         <div
+          className="banner mt-[100px] bg-background-primary p-8 rounded-[20px] shadow-box"
           data-sal="slide-up"
           data-sal-delay="300"
           data-sal-easing="ease"
           data-sal-duration="1000"
-          className={styles.banner}
         >
-          <p>{banner_description}</p>
+          <p className="text-[1.5rem] font-bold text-center">{banner_description}</p>
         </div>
       </div>
     </section>

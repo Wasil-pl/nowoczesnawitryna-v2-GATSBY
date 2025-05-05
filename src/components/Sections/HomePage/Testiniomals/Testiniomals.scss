@@ -1,0 +1,31 @@
+@use '../../../../styles/settings.scss' as settings;
+
+.testiniomals {
+  /* tylko background-image, zmieniamy mediami */
+  background-image: image-set(
+    url('/images/tlo-opinie.avif') type('image/avif'),
+    url('/images/tlo-opinie.webp') type('image/webp')
+  );
+
+  @media (max-width: 992px) {
+    background-attachment: scroll;
+
+    /* centrowanie tytułu i wrappera */
+    .title {
+      justify-content: center;
+    }
+    .wrapper {
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    background-image: image-set(
+      url('/images/tlo-opinie-mobile.avif') type('image/avif'),
+      url('/images/tlo-opinie-mobile.webp') type('image/webp')
+    );
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+  }
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import * as styles from '../MultiStepForm/MultiStepForm.module.scss';
 import { useForm } from 'react-hook-form';
 
 const ShopPaymentsForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefaultValues }) => {
@@ -38,46 +37,57 @@ const ShopPaymentsForm = ({ nextStep, prevStep, updateData, defaultValues, updat
     nextStep();
   };
 
+  const methods = [
+    { name: 'Przelew', label: 'Przelew bankowy' },
+    { name: 'Płatność przy odbiorze', label: 'Płatność przy odbiorze' },
+    { name: 'Przelewy24', label: 'Płatności online (Przelewy24)' },
+    { name: 'PayU', label: 'Płatności online (PayU)' },
+    { name: 'PayPal', label: 'Płatności online (PayPal)' },
+    { name: 'DotPay', label: 'Płatności online (Dotpay)' },
+    { name: 'Tpay', label: 'Płatności online (Tpay)' },
+    { name: 'AutoPay', label: 'Płatności online (AutoPay)' },
+  ];
+
   return (
     <form onSubmit={validate(handleSubmit)}>
-      <div className={styles.form_group}>
-        <p>Jakie płatności ma mieć Twój sklep?</p>
-        <label>
-          <input type="checkbox" {...register('Przelew')} /> Przelew bankowy
-        </label>
-        <label>
-          <input type="checkbox" {...register('Płatność przy odbiorze')} /> Płatność przy odbiorze
-        </label>
-        <label>
-          <input type="checkbox" {...register('Przelewy24')} /> Płatności online (Przelewy24)
-        </label>
-        <label>
-          <input type="checkbox" {...register('PayU')} /> Płatności online (PayU)
-        </label>
-        <label>
-          <input type="checkbox" {...register('PayPal')} /> Płatności online (PayPal)
-        </label>
-        <label>
-          <input type="checkbox" {...register('DotPay')} /> Płatności online (Dotpay)
-        </label>
-        <label>
-          <input type="checkbox" {...register('Tpay')} /> Płatności online (Tpay)
-        </label>
-        <label>
-          <input type="checkbox" {...register('AutoPay')} /> Płatności online (AutoPay)
-        </label>
+      {/* Formy płatności */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <p className="mb-[10px] text-[0.9rem] text-text-light">Jakie płatności ma mieć Twój sklep?</p>
+        {methods.map((opt) => (
+          <label key={opt.name} className="flex items-center mb-[8px]">
+            <input
+              type="checkbox"
+              {...register(opt.name)}
+              className="mr-[10px] w-[20px] h-[20px] rounded-[5px] accent-background-primary"
+            />
+            <span className="text-[1rem]">{opt.label}</span>
+          </label>
+        ))}
       </div>
 
-      <div className={styles.form_group}>
-        <label htmlFor="inneFormyPlatnosci">Inne formy płatności</label>
-        <textarea id="inneFormyPlatnosci" {...register('inne formy płatności')} placeholder="Inna forma płatności" />
+      {/* Inne formy płatności */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <label htmlFor="inneFormyPlatnosci" className="mb-[2px] text-[0.9rem] text-text-light">
+          Inne formy płatności
+        </label>
+        <textarea
+          id="inneFormyPlatnosci"
+          {...register('inne formy płatności')}
+          placeholder="Inna forma płatności"
+          className="p-[10px] rounded-[5px] bg-background-light"
+        />
       </div>
 
-      <div className={styles.button_wrapper}>
-        <button type="button" onClick={prevStep} className={styles.button}>
+      {/* Nawigacja */}
+      <div className="flex gap-[20px] justify-between md:justify-start">
+        <button
+          type="button"
+          onClick={prevStep}
+          className="button rounded-[5px] text-[0.9rem] uppercase px-[16px] py-[8px]"
+        >
           Wstecz
         </button>
-        <button type="submit" className={styles.button}>
+        <button type="submit" className="button rounded-[5px] text-[0.9rem] uppercase px-[16px] py-[8px]">
           Dalej
         </button>
       </div>

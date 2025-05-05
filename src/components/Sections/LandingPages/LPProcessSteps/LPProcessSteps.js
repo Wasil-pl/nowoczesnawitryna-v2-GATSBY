@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
-import * as styles from './LPProcessSteps.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const LPProcessSteps = ({
@@ -23,7 +22,7 @@ const LPProcessSteps = ({
 
   useEffect(() => {
     const handleScroll = () => {
-      const stepElements = document.querySelectorAll(`.${styles.step}`);
+      const stepElements = document.querySelectorAll('.step');
       const windowHeight = window.innerHeight;
 
       stepElements.forEach((step, index) => {
@@ -41,7 +40,7 @@ const LPProcessSteps = ({
   }, []);
 
   return (
-    <section className={styles.process_steps_container}>
+    <section className="process_steps_container">
       <div className="container mx-auto px-4">
         <SectionTitle
           ariaLabel={sectionTitle + sectionTitleColored}
@@ -49,14 +48,14 @@ const LPProcessSteps = ({
           coloredText={sectionTitleColored}
           backgroundText="Proces"
         />
-        <div className={styles.process_steps}>
-          <div className={`${styles.step} ${styles.left} ${activeStep === 0 ? styles.active : ''}`}>
-            <div className={styles.step_empty}></div>
-            <div className={`${styles.step_content} ${styles.step_1} ${styles.step_brief}`}>
+        <div className="process_steps">
+          <div className={`step left ${activeStep === 0 ? 'active' : ''} flex flex-row`}>
+            <div className="step_empty flex-[1_1_0%]" />
+            <div className="step_content step_1 step_brief flex-[3_1_0%]">
               <h3>{step1Title}</h3>
               <p>{step1Description}</p>
             </div>
-            <div className={styles.step_number}>
+            <div className="step_number flex-[1_1_0%] text-center m-auto">
               <StaticImage
                 src="../../../../images/brief.png"
                 alt="ikona przedstawiająca pierwszy kontakt z klientem w celu zebrania informacji o potrzebnej stronie internetowej"
@@ -64,13 +63,13 @@ const LPProcessSteps = ({
               />
             </div>
           </div>
-          <div className={`${styles.step} ${styles.right} ${activeStep === 1 ? styles.active : ''}`}>
-            <div className={styles.step_empty}></div>
-            <div className={`${styles.step_content} ${styles.step_2} ${styles.step_info}`}>
+          <div className={`step right ${activeStep === 1 ? 'active' : ''} flex flex-row md:flex-row-reverse`}>
+            <div className="step_empty flex-[1_1_0%]" />
+            <div className="step_content step_2 step_info flex-[3_1_0%]">
               <h3>{step2Title}</h3>
               <p>{step2Description}</p>
             </div>
-            <div className={styles.step_number_left}>
+            <div className="step_number_left flex-[1_1_0%] text-center m-auto">
               <StaticImage
                 src="../../../../images/kontent.png"
                 alt="ikona przedstawiająca zbieranie i przygotowywanie kontentu do strony internetowej"
@@ -78,13 +77,13 @@ const LPProcessSteps = ({
               />
             </div>
           </div>
-          <div className={`${styles.step} ${styles.left} ${activeStep === 2 ? styles.active : ''}`}>
-            <div className={styles.step_empty}></div>
-            <div className={`${styles.step_content} ${styles.step_3} ${styles.step_projektowanie}`}>
+          <div className={`step left ${activeStep === 2 ? 'active' : ''} flex flex-row`}>
+            <div className="step_empty flex-[1_1_0%]" />
+            <div className="step_content step_3 step_projektowanie flex-[3_1_0%]">
               <h3>{step3Title}</h3>
               <p>{step3Description}</p>
             </div>
-            <div className={styles.step_number}>
+            <div className="step_number flex-[1_1_0%] text-center m-auto">
               <StaticImage
                 src="../../../../images/projektowanie.png"
                 alt="ikona przedstawiająca projektowanie strony internetowej"
@@ -92,13 +91,13 @@ const LPProcessSteps = ({
               />
             </div>
           </div>
-          <div className={`${styles.step} ${styles.right} ${activeStep === 3 ? styles.active : ''}`}>
-            <div className={styles.step_empty}></div>
-            <div className={`${styles.step_content} ${styles.step_4} ${styles.step_kodowanie}`}>
+          <div className={`step right ${activeStep === 3 ? 'active' : ''} flex flex-row md:flex-row-reverse`}>
+            <div className="step_empty flex-[1_1_0%]" />
+            <div className="step_content step_4 step_kodowanie flex-[3_1_0%]">
               <h3>{step4Title}</h3>
               <p>{step4Description}</p>
             </div>
-            <div className={styles.step_number_left}>
+            <div className="step_number_left flex-[1_1_0%] text-center m-auto">
               <StaticImage
                 src="../../../../images/tworzenie-strony.png"
                 alt="ikona przedstawiająca tworzenie strony internetowej"
@@ -106,13 +105,13 @@ const LPProcessSteps = ({
               />
             </div>
           </div>
-          <div className={`${styles.step} ${styles.left} ${activeStep === 4 ? styles.active : ''}`}>
-            <div className={styles.step_empty}></div>
-            <div className={`${styles.step_content} ${styles.step_5} ${styles.step_testowanie}`}>
+          <div className={`step left ${activeStep === 4 ? 'active' : ''} flex flex-row`}>
+            <div className="step_empty flex-[1_1_0%]" />
+            <div className="step_content step_5 step_testowanie flex-[3_1_0%]">
               <h3>{step5Title}</h3>
               <p>{step5Description}</p>
             </div>
-            <div className={styles.step_number}>
+            <div className="step_number flex-[1_1_0%] text-center m-auto">
               <StaticImage
                 src="../../../../images/testowanie.png"
                 alt="ikona przedstawiająca testowanie strony internetowej"
@@ -120,13 +119,13 @@ const LPProcessSteps = ({
               />
             </div>
           </div>
-          <div className={`${styles.step} ${styles.right} ${activeStep === 5 ? styles.active : ''}`}>
-            <div className={styles.step_empty}></div>
-            <div className={`${styles.step_content} ${styles.step_6} ${styles.step_wdrozenie}`}>
+          <div className={`step right ${activeStep === 5 ? 'active' : ''} flex flex-row md:flex-row-reverse`}>
+            <div className="step_empty flex-[1_1_0%]" />
+            <div className="step_content step_6 step_wdrozenie flex-[3_1_0%]">
               <h3>{step6Title}</h3>
               <p>{step6Description}</p>
             </div>
-            <div className={styles.step_number_last}>
+            <div className="step_number_last flex-[1_1_0%] text-center m-auto">
               <StaticImage
                 src="../../../../images/koniec.png"
                 alt="ikona przedstawiająca wdrożenie strony internetowej"

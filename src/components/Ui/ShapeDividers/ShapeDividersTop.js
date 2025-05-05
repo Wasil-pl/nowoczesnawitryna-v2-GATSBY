@@ -1,8 +1,8 @@
 import React from 'react';
-import * as styles from './ShapeDividers.module.scss';
+import './ShapeDividers.scss';
 
 const ShapeDividersTop = ({ variant = '' }) => {
-  return <div className={`${styles.shape_divider_top} ${styles[variant]}`}></div>;
+  return <div className={`shape_divider_top ${variant}`}></div>;
 };
 
 export default ShapeDividersTop;

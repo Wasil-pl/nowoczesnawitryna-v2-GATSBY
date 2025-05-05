@@ -1,13 +1,15 @@
+// BlogArticleCms.jsx
 import React from 'react';
-import * as styles from './BlogArticles.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const BlogArticleCms = () => {
   return (
-    <div className={styles.blog_articles}>
+    <div className="blog_articles py-[100px] max-w-[920px] mx-auto">
       <div className="container mx-auto px-4">
-        <h2>CMS vs strona pisana od podstaw – co wybrać do tworzenia stron internetowych?</h2>
-        <p>
+        <h2 className="text-[1.8rem] mt-[50px] mb-[30px]">
+          CMS vs strona pisana od podstaw – co wybrać do tworzenia stron internetowych?
+        </h2>
+        <p className="mb-[30px]">
           Jeśli chcesz stworzyć własną stronę internetową, musisz podjąć ważną decyzję: czy użyć gotowego systemu
           zarządzania treścią CMS, jak np. WordPress, czy napisać stronę od podstaw, używając HTML, CSS oraz JavaScript.
           Oba rozwiązania mają swoje zalety i wady, które warto poznać, zanim zdecydujesz się na jedno z nich. W tym
@@ -15,10 +17,10 @@ const BlogArticleCms = () => {
           tworzenia stron internetowych.
         </p>
 
-        <h2>CMS – co to jest?</h2>
-        <div className={styles.blog_image}>
-          <div className={styles.text}>
-            <p>
+        <h2 className="text-[1.8rem] mt-[50px] mb-[30px]">CMS – co to jest?</h2>
+        <div className="blog_image flex flex-col items-center md:flex-row">
+          <div className="text flex-[2]">
+            <p className="mb-[30px]">
               CMS to skrót od Content Management System, czyli system zarządzania treścią. Jest to oprogramowanie, które
               umożliwia łatwe tworzenie i edycję stron internetowych bez konieczności pisania kodu. CMS oferuje gotowe
               szablony, moduły i wtyczki, które można dostosować do własnych potrzeb i preferencji. Przykładami
@@ -28,7 +30,7 @@ const BlogArticleCms = () => {
               rozwiązania dostosowane do potrzeb różnych branż.
             </p>
           </div>
-          <div className={styles.image}>
+          <div className="image flex-[1] ml-0 mb-[40px] md:ml-[40px] md:mb-0">
             <StaticImage
               src="../../../../images/cms.webp"
               width={600}
@@ -38,133 +40,93 @@ const BlogArticleCms = () => {
           </div>
         </div>
 
-        <h3>Zalety CMS:</h3>
-        <ul>
+        <h3 className="text-[1.4rem] mb-[20px]">Zalety CMS:</h3>
+        <ul className="mb-[30px] list-disc list-inside">
           <li>
             <strong>Łatwość obsługi:</strong> Nie musisz znać języków programowania ani HTML, CSS czy JavaScript, aby
-            stworzyć atrakcyjną i funkcjonalną stronę internetową. Wystarczy wybrać szablon, dodać treść i elementy
-            graficzne, a CMS zrobi resztę za Ciebie.
+            stworzyć atrakcyjną i funkcjonalną stronę internetową.
           </li>
           <li>
             <strong>Szybkość:</strong> Dzięki gotowym szablonom i wtyczkom, stworzenie strony internetowej w CMS zajmuje
-            znacznie mniej czasu niż pisanie kodu od podstaw.
+            znacznie mniej czasu.
           </li>
           <li>
-            <strong>Niski koszt:</strong> Większość CMS jest darmowa, a za dodatkowe funkcje i usługi płacisz tylko
-            wtedy, gdy ich potrzebujesz.
+            <strong>Niski koszt:</strong> Większość CMS jest darmowa, a za dodatkowe funkcje płacisz tylko wtedy, gdy
+            ich potrzebujesz.
           </li>
           <li>
-            <strong>Łatwa aktualizacja:</strong> Możesz w prosty sposób aktualizować treści na stronie, dodawać nowe
-            funkcje i modyfikować wygląd strony bez konieczności ingerencji w kod.
+            <strong>Łatwa aktualizacja:</strong> Możesz w prosty sposób aktualizować treści i wygląd strony bez
+            ingerencji w kod.
           </li>
           <li>
-            <strong>Wsparcie społeczności:</strong> CMS-y cieszą się dużą popularnością, dlatego łatwo znaleźć pomoc w
-            internecie w postaci poradników, kursów, forów dyskusyjnych i grup wsparcia.
+            <strong>Wsparcie społeczności:</strong> Łatwo znaleźć pomoc online w postaci poradników, forów i kursów.
           </li>
         </ul>
 
-        <h3>Wady CMS:</h3>
-        <ul>
+        <h3 className="text-[1.4rem] mb-[20px]">Wady CMS:</h3>
+        <ul className="mb-[30px] list-disc list-inside">
           <li>
-            <strong>Ograniczona personalizacja:</strong> CMS-y oferują wiele gotowych szablonów i wtyczek, ale trudno
-            jest stworzyć stronę, która w pełni odpowiada Twoim indywidualnym potrzebom i oczekiwaniom. Jeśli chcesz
-            mieć unikalną stronę, CMS może okazać się niewystarczający.
+            <strong>Ograniczona personalizacja:</strong> Ciężko stworzyć w pełni unikalne rozwiązanie.
           </li>
           <li>
-            <strong>Wydajność:</strong> Strony w CMS mogą działać wolniej, zwłaszcza przy dużej liczbie wtyczek i
-            dodatków, co wpływa na doświadczenia użytkowników i pozycjonowanie w wynikach wyszukiwania.
+            <strong>Wydajność:</strong> Strony mogą działać wolniej przy dużej liczbie wtyczek.
           </li>
           <li>
-            <strong>Bezpieczeństwo:</strong> CMS-y są popularnym celem ataków hakerskich, dlatego konieczna jest
-            regularna aktualizacja oprogramowania i dbanie o bezpieczeństwo strony.
+            <strong>Bezpieczeństwo:</strong> Wymagana regularna aktualizacja, by chronić przed atakami.
           </li>
         </ul>
 
-        <h2>Kod pisany od podstaw – co to jest?</h2>
-        <div className={styles.blog_image}>
-          <div className={styles.text}>
-            <p>
+        <h2 className="text-[1.8rem] mt-[50px] mb-[30px]">Kod pisany od podstaw – co to jest?</h2>
+        <div className="blog_image flex flex-col items-center md:flex-row">
+          <div className="text flex-[2]">
+            <p className="mb-[30px]">
               Strona napisana od podstaw to taka, która nie korzysta z gotowych rozwiązań CMS, lecz jest kodowana
-              indywidualnie za pomocą HTML, CSS i JavaScript, co daje pełną kontrolę nad wyglądem i funkcjonalnością.
-              Jeśli interesuje Cię stworzenie strony internetowej na zamówienie, zobacz moją ofertę{' '}
-              <a href="/strony-niestandardowe/">stron internetowych tworzonych od podstaw</a>, aby dowiedzieć się więcej
-              o zaletach tego podejścia.
+              indywidualnie za pomocą HTML, CSS i JavaScript, co daje pełną kontrolę nad wyglądem i funkcjonalnością...
             </p>
           </div>
-          <div className={styles.image}>
+          <div className="image flex-[1] ml-0 mb-[40px] md:ml-[40px] md:mb-0">
             <StaticImage
               src="../../../../images/kod.webp"
               width={600}
               height={400}
-              alt="kodowanie - ręcznę kodowanie strony internetowej"
+              alt="kodowanie - ręczne kodowanie strony internetowej"
             />
           </div>
         </div>
-        <h3>Zalety tego rozwiązania:</h3>
-        <ul>
+
+        <h3 className="text-[1.4rem] mb-[20px]">Zalety tego rozwiązania:</h3>
+        <ul className="mb-[30px] list-disc list-inside">
           <li>
-            <strong>Unikalność:</strong> strona napisana od podstaw jest unikalna, niepowtarzalna i w pełni odpowiada
-            Twoim indywidualnym potrzebom i oczekiwaniom. Możesz stworzyć stronę, która wyróżnia się na tle konkurencji
-            i przyciąga uwagę odwiedzających.
+            <strong>Unikalność:</strong> Pełna kontrola nad wyglądem i funkcjonalnością.
           </li>
           <li>
-            <strong>Wydajność:</strong> rozwiązanie to zazwyczaj jest szybsze i bardziej wydajne, co przekłada się na
-            lepsze doświadczenia użytkowników i wyższe pozycje w wynikach wyszukiwania.
+            <strong>Wydajność:</strong> Strony są szybsze i bardziej wydajne.
           </li>
           <li>
-            <strong>Bezpieczeństwo:</strong> takie strony są mniej podatne na ataki hakerskie, ponieważ nie korzystają z
-            gotowych szablonów i wtyczek, które mogą zawierać luki bezpieczeństwa.
+            <strong>Bezpieczeństwo:</strong> Mniej podatne na ataki.
           </li>
           <li>
-            <strong>Skalowalność:</strong> strony napisane ręcznie od zera są łatwiejsze w rozbudowie i modyfikacji, co
-            pozwala na dostosowanie ich do zmieniających się potrzeb i oczekiwań użytkowników.
+            <strong>Skalowalność:</strong> Łatwiejsza rozbudowa i modyfikacja.
           </li>
         </ul>
-        <h3>Wady tego rozwiązania:</h3>
-        <ul>
+
+        <h3 className="text-[1.4rem] mb-[20px]">Wady tego rozwiązania:</h3>
+        <ul className="mb-[30px] list-disc list-inside">
           <li>
-            <strong>Koszt:</strong> stworzenie strony od podstaw jest zazwyczaj droższe i czasochłonniejsze niż
-            korzystanie z gotowych szablonów i wtyczek. Wymaga to zatrudnienia doświadczonego programisty
+            <strong>Koszt:</strong> Droższe i czasochłonne.
           </li>
           <li>
-            <strong>Trudność:</strong> aby stworzyć taka stronę, trzeba znać języki programowania, co nie jest łatwe ani
-            szybkie do opanowania. Wymaga to czasu, cierpliwości i doświadczenia. Dlatego koszty takich stron są
-            zazwyczaj wyższe.
+            <strong>Trudność:</strong> Wymaga specjalistycznej wiedzy programistycznej.
           </li>
           <li>
-            <strong>Czas:</strong> stworzenie strony od zera zajmuje znacznie więcej czasu niż korzystanie z systemów
-            zarządzania treścią. Wymaga to przemyślanego planu, analizy, projektowania, kodowania, testowania i
-            wdrażania.
+            <strong>Czas:</strong> Dłuższy proces planowania i wdrożenia.
           </li>
         </ul>
-        <h2>CMS vs czysty kod – co wybrać?</h2>
-        <p>
-          Po przeanalizowaniu plusów i minusów obu podejść, może być trudno podjąć decyzję, która będzie najlepsza dla
-          Ciebie i Twojego projektu. Dlatego warto wziąć pod uwagę następujące kwestie:
-        </p>
-        <ul>
-          <li>
-            Czy masz ograniczony budżet i czas? Jeśli tak, to lepiej wybrać CMS, który pozwoli Ci stworzyć stronę
-            internetową szybko, tanio i bez konieczności posiadania specjalistycznej wiedzy.
-          </li>
-          <li>
-            Czy chcesz mieć unikalną stronę, która wyróżnia się na tle konkurencji? Jeśli zależy Ci na oryginalności i
-            pełnej kontroli nad swoją stroną internetową, a także jeśli masz umiejętności programistyczne lub dostęp do
-            odpowiednich zasobów, pisanie kodu od podstaw może być lepszym wyborem. Daje Ci ono możliwość stworzenia
-            unikalnego i zindywidualizowanego rozwiązania, które wyróżni Cię na tle konkurencji.
-          </li>
-          <li>
-            Czy zależy Ci na wydajności i bezpieczeństwie? Strony napisane od zera są zazwyczaj szybsze, bardziej
-            wydajne i bezpieczniejsze niż te stworzone w CMS-ach. Jeśli zależy Ci na szybkości działania, wydajności i
-            bezpieczeństwie, warto zainwestować w stronę napisaną od podstaw.
-          </li>
-        </ul>
-        <p>
-          Ostateczna decyzja zależy od Ciebie, Twoich umiejętności, potrzeb, oczekiwań i możliwości. Jeśli masz
-          ograniczony budżet i czas, a także brak umiejętności programistycznych, lepiej wybrać CMS. Jeśli zależy Ci na
-          unikalności, wydajności i bezpieczeństwie, a także masz odpowiednie zasoby i umiejętności, pisanie kodu od
-          podstaw może być lepszym wyborem. Warto również skonsultować się z doświadczonym programistą, który pomoże Ci
-          podjąć najlepszą decyzję.
+
+        <h2 className="text-[1.8rem] mt-[50px] mb-[30px]">CMS vs czysty kod – co wybrać?</h2>
+        <p className="mb-[30px]">
+          Ostateczna decyzja zależy od Twoich potrzeb, budżetu i zasobów. Jeśli liczy się szybkość i niski koszt –
+          wybierz CMS. Jeśli zaś zależy Ci na maksymalnej wydajności i unikalności – kod od podstaw.
         </p>
       </div>
     </div>

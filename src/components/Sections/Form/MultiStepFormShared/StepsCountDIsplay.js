@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import * as styles from '../MultiStepForm/MultiStepForm.module.scss';
 
 const StepsCountDisplay = ({ data, variant }) => {
   const [steps, setSteps] = useState([1]); // Początkowo tylko krok 1
@@ -22,13 +21,19 @@ const StepsCountDisplay = ({ data, variant }) => {
   };
 
   return (
-    <div className={styles.steps_count_display}>
+    <div className="steps_count_display flex justify-center pt-[70px] pb-[50px] relative  gap-[20px]">
       {steps.map((step) => (
-        <div key={step} className={`${styles.step} ${data === step ? styles.step_active : ''}`}>
+        <div
+          key={step}
+          className={`
+            text-[1.5rem] font-bold  step
+            ${data === step ? 'step_active text-text-primary opacity-100 scale-150' : 'opacity-50'}
+          `}
+        >
           {step}
         </div>
       ))}
-      <div id="input_form" className={styles.element_to_scroll} />
+      <div id="input_form" className="absolute -top-[50px]" />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import * as styles from './SectionTitle.module.scss';
+import './SectionTitle.scss';
 
 const SectionTitle = ({ title, coloredText, subtitle, backgroundText, ariaLabel, variant = '' }) => {
   return (
@@ -8,22 +8,24 @@ const SectionTitle = ({ title, coloredText, subtitle, backgroundText, ariaLabel,
       data-sal-delay="300"
       data-sal-easing="ease"
       data-sal-duration="1000"
-      className={`separator ${styles.section_title}`}
+      className={`separator sections_title`}
     >
-      <h2 aria-label={ariaLabel} className={styles[variant]}>
+      <h2 aria-label={ariaLabel} className={variant}>
         {title}
-        {coloredText && <span className={`color_primary`}>{coloredText}</span>}
+        {coloredText && <span className="color_primary">{coloredText}</span>}
       </h2>
-      {subtitle && <p className={styles[variant]}>{subtitle}</p>}
-      <div
-        data-sal="slide-right"
-        data-sal-delay="1000"
-        data-sal-easing="ease"
-        data-sal-duration="1000"
-        className={`${styles.background_text} ${styles[variant]}`}
-      >
-        <span>{backgroundText}</span>
-      </div>
+      {subtitle && <p className={variant}>{subtitle}</p>}
+      {backgroundText && (
+        <div
+          data-sal="slide-right"
+          data-sal-delay="1000"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+          className={`background_text ${variant}`}
+        >
+          <span>{backgroundText}</span>
+        </div>
+      )}
     </div>
   );
 };

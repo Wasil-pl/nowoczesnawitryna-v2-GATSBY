@@ -1,27 +1,35 @@
 import React from 'react';
-import * as styles from './LPAboutMe.module.scss';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const LPAboutMe = ({ description }) => {
   return (
-    <section id="omnie" className={styles.about_me}>
+    <section id="omnie" className="pt-[250px] pb-[300px] bg-background-lighter ">
       <div className="container mx-auto px-4">
         <SectionTitle ariaLabel="Kilka słów o mnie" title="Kilka słów" coloredText=" o mnie" backgroundText="o mnie" />
 
-        <div className={styles.wrapper}>
-          <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.first_column}>
+        <div className="flex flex-col lg:flex-row justify-between">
+          <div
+            data-sal="slide-right"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className="w-full lg:w-1/2 text-center"
+          >
             <StaticImage
               src="../../../../images/aboutMe.png"
               alt="Dariusz Wasilewski full-stack web developer"
               placeholder="blurred"
-              width={600}
-              className={styles.image}
+              width={700}
             />
           </div>
-          <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.second_column}>
-            <h3 aria-label="Cześć">Cześć</h3>
-            <p>{description}</p>
+          <div
+            data-sal="slide-left"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className="w-full lg:w-1/2 flex flex-col lg:pl-[40px]"
+          >
+            <h3 className="text-[2.5rem] font-bold  mb-[20px] text-primary">Cześć</h3>
+            <p className="text-text-dark mb-[20px]">{description}</p>
           </div>
         </div>
       </div>

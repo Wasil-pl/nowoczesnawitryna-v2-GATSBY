@@ -1,0 +1,22 @@
+@media (max-width: 1022px) {
+  .prices {
+    .wrapper {
+      .price_box {
+        max-width: 500px;
+        margin: 0 auto;
+
+        .text_box {
+          margin-bottom: 30px;
+        }
+      }
+      .row {
+        flex-direction: column;
+        padding: 0 20px;
+
+        .descryption {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

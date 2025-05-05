@@ -1,0 +1,59 @@
+@use '../../../../../styles/settings.scss' as settings;
+
+.tab_button {
+  background-color: settings.$color-background-light;
+
+  &:hover {
+    transform: translateY(-3px);
+
+    h3 {
+      color: settings.$color-primary;
+    }
+  }
+
+  &[data-selected] {
+    background-color: settings.$color-background-primary;
+
+    h3 {
+      color: settings.$color-text-dark;
+    }
+
+    &::after {
+      border: 16px solid transparent;
+      border-left-color: #ffbf00;
+      border-right: 0;
+      content: '';
+      height: 0;
+      left: 99%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      z-index: 1;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &[data-selected]:hover {
+    h3 {
+      color: settings.$color-text-dark;
+    }
+  }
+}
+
+.tab_content_h3 {
+  color: settings.$color-primary;
+  margin-bottom: 50px;
+}
+
+.tab_content {
+  & > p {
+    color: settings.$color-text-light;
+  }
+}
+
+@media (max-width: 1400px) {
+  .tab_content {
+    flex-direction: column-reverse;
+  }
+}

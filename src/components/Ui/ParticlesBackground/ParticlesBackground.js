@@ -1,5 +1,5 @@
 import React from 'react';
-import * as styles from './ParticlesBackground.module.scss';
+import './ParticlesBackground.scss';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 import { useEffect, useMemo } from 'react';
@@ -82,7 +82,7 @@ const ParticlesBackground = ({ id }) => {
 
   return (
     <Particles
-      className={styles.particles} // Przekazanie klasy CSS
+      className="particles" // Przekazanie klasy CSS
       id={id} // ID elementu
       options={options} // Opcje cząsteczek
     />

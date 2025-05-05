@@ -1,0 +1,55 @@
+@use '../../../../styles/settings.scss' as settings;
+
+.site_info {
+  .wrapper {
+    box-shadow: settings.$box-shadow;
+
+    .second_card {
+      a {
+        transition: color 0.3s;
+
+        &:hover {
+          color: settings.$color-primary;
+        }
+      }
+    }
+  }
+
+  .banner {
+    box-shadow: settings.$box-shadow;
+  }
+}
+
+@media (max-width: 992px) {
+  .site_info {
+    .wrapper {
+      margin-top: -100px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .site_info {
+    .wrapper {
+      .first_column {
+        h3 {
+          font-size: 1.3rem;
+        }
+
+        h4 {
+          font-size: 1.1rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .banner {
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

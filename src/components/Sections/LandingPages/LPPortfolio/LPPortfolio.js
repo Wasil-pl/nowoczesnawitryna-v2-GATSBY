@@ -1,18 +1,17 @@
 import React from 'react';
-import * as styles from './LPPortfolio.module.scss';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 import CallToAction from '../../Shared/CallToAction/CallToAction';
 
 const LPPortfolio = ({ title, coloredText, subtitle }) => {
   return (
-    <section className={styles.portfolio}>
+    <section className="portfolio py-[150px]">
       <div className="container mx-auto px-4">
-        <div className={styles.wrapper}>
-          <div className={`${styles.portfolio_item} ${styles.title_box}`}>
+        <div className="wrapper flex flex-row flex-wrap gap-[50px]">
+          <div className="portfolio_item  title_box text-center ">
             <SectionTitle ariaLabel={title + coloredText} title={title} coloredText={coloredText} subtitle={subtitle} />
           </div>
-          <div className={styles.portfolio_item}>
+          <div className="portfolio_item  relative">
             <StaticImage
               src="../../../../images/suzie.png"
               alt="www.suzie.pl - sklep internetowy"
@@ -20,11 +19,11 @@ const LPPortfolio = ({ title, coloredText, subtitle }) => {
               placeholder="blurred"
               layout="constrained"
             />
-            <div className={styles.overlay}>
+            <div className="overlay">
               <div>
-                <h3>Suzie</h3>
-                <p>Sklep internetowy</p>
-                <button className={`no_button ${styles.button}`}>
+                <h3 className="text-[1.6rem] font-extrabold mb-4 text-primary">Suzie</h3>
+                <p className="mb-4 text-text-light">Sklep internetowy</p>
+                <button className="no_button button uppercase text-text-light hover:text-primary">
                   <a href="https://www.suzie.pl/" target="_blank" rel="noopener noreferrer">
                     Zobacz
                   </a>
@@ -32,7 +31,8 @@ const LPPortfolio = ({ title, coloredText, subtitle }) => {
               </div>
             </div>
           </div>
-          <div className={styles.portfolio_item}>
+
+          <div className="portfolio_item relative">
             <StaticImage
               src="../../../../images/j_system.png"
               alt="j-system.pl - sklep internetowy"
@@ -40,11 +40,11 @@ const LPPortfolio = ({ title, coloredText, subtitle }) => {
               placeholder="blurred"
               layout="constrained"
             />
-            <div className={styles.overlay}>
+            <div className="overlay">
               <div>
-                <h3>j-system</h3>
-                <p>Sklep internetowy</p>
-                <button className={`no_button ${styles.button}`}>
+                <h3 className="text-[1.6rem] font-extrabold mb-4 text-primary">j-system</h3>
+                <p className="mb-4 text-text-light">Sklep internetowy</p>
+                <button className="no_button button uppercase text-text-light hover:text-primary">
                   <a href="https://j-system.pl/" target="_blank" rel="noopener noreferrer">
                     Zobacz
                   </a>
@@ -52,7 +52,8 @@ const LPPortfolio = ({ title, coloredText, subtitle }) => {
               </div>
             </div>
           </div>
-          <div className={styles.portfolio_item}>
+
+          <div className="portfolio_item relative">
             <StaticImage
               src="../../../../images/przewodnik.png"
               alt="przewodnik-skalnemiasto.pl/ - strona internetowa"
@@ -60,11 +61,11 @@ const LPPortfolio = ({ title, coloredText, subtitle }) => {
               placeholder="blurred"
               layout="constrained"
             />
-            <div className={styles.overlay}>
+            <div className="overlay">
               <div>
-                <h3>Przewodnik</h3>
-                <p>Wizytówka</p>
-                <button className={`no_button ${styles.button}`}>
+                <h3 className="text-[1.6rem] font-extrabold mb-4 text-primary">Przewodnik</h3>
+                <p className="mb-4 text-text-light">Wizytówka</p>
+                <button className="no_button button uppercase text-text-light hover:text-primary">
                   <a href="https://przewodnik-skalnemiasto.pl/" target="_blank" rel="noopener noreferrer">
                     Zobacz
                   </a>
@@ -72,7 +73,8 @@ const LPPortfolio = ({ title, coloredText, subtitle }) => {
               </div>
             </div>
           </div>
-          <div className={styles.portfolio_item}>
+
+          <div className="portfolio_item relative">
             <StaticImage
               src="../../../../images/logomove.png"
               alt="logomove.pl/ - strona internetowa"
@@ -80,11 +82,11 @@ const LPPortfolio = ({ title, coloredText, subtitle }) => {
               placeholder="blurred"
               layout="constrained"
             />
-            <div className={styles.overlay}>
+            <div className="overlay">
               <div>
-                <h3>LogoMove</h3>
-                <p>Strona firmowa</p>
-                <button className={`no_button ${styles.button}`}>
+                <h3 className="text-[1.6rem] font-extrabold mb-4 text-primary">LogoMove</h3>
+                <p className="mb-4 text-text-light">Strona firmowa</p>
+                <button className="no_button button uppercase text-text-light hover:text-primary">
                   <a href="https://logomove.pl/" target="_blank" rel="noopener noreferrer">
                     Zobacz
                   </a>
@@ -92,7 +94,8 @@ const LPPortfolio = ({ title, coloredText, subtitle }) => {
               </div>
             </div>
           </div>
-          <div className={styles.portfolio_item}>
+
+          <div className="portfolio_item relative">
             <StaticImage
               src="../../../../images/proluxe.png"
               alt="proluxeclean.pl/ - strona internetowa"
@@ -100,11 +103,11 @@ const LPPortfolio = ({ title, coloredText, subtitle }) => {
               placeholder="blurred"
               layout="constrained"
             />
-            <div className={styles.overlay}>
+            <div className="overlay">
               <div>
-                <h3>Proluxe Clean</h3>
-                <p>Strona firmowa</p>
-                <button className={`no_button ${styles.button}`}>
+                <h3 className="text-[1.6rem] font-extrabold mb-4 text-primary">Proluxe Clean</h3>
+                <p className="mb-4 text-text-light">Strona firmowa</p>
+                <button className="no_button button uppercase text-text-light hover:text-primary">
                   <a href="https://www.proluxeclean.pl/" target="_blank" rel="noopener noreferrer">
                     Zobacz
                   </a>

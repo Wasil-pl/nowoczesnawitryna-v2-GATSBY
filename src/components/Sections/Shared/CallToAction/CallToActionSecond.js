@@ -1,15 +1,16 @@
 import React from 'react';
-import * as styles from './CallToAction.module.scss';
-
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
+import './CallToAction.scss';
 
 const CallToActionSecond = () => {
   return (
-    <div className={styles.action2}>
+    <div className="action2 bg-cover bg-center bg-no-repeat py-[80px] relative">
       <div className="container mx-auto px-4">
-        <div className={styles.wrapper}>
-          <h2>Kalkulator kosztów strony internetowej</h2>
-          <p>
+        <div className="wrapper flex flex-col max-w-[700px] text-center mx-auto">
+          <h2 className="text-[1.7rem] font-bold uppercase mb-[20px] text-text-light">
+            Kalkulator kosztów strony internetowej
+          </h2>
+          <p className="text-[1rem] text-text-light mb-[50px]">
             Skorzystaj z mojego interaktywnego kalkulatora kosztów, aby otrzymać bezpłatną wycenę swojej strony
             internetowej.
           </p>

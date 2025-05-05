@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react'; // ← TO BYŁO POTRZEBNE
-import * as styles from './HeaderHome.module.scss';
+import React, { useState, useEffect } from 'react';
 import Menu from '../Menu/Menu';
 import { useMediaQuery } from 'react-responsive';
 import { StaticImage } from 'gatsby-plugin-image';
 import ShapeDividersBottom from '../../Ui/ShapeDividers/ShapeDividersBottom';
 import { StaggeredFade } from '../../Ui/StaggeredFade/StaggeredFade';
+import './HeaderHome.scss';
 
 const HeaderHome = ({ active }) => {
-  const [ParticlesBg, setParticlesBg] = useState(null); // ← PRZENIESIONE WYŻEJ
+  const [ParticlesBg, setParticlesBg] = useState(null);
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
   useEffect(() => {
@@ -19,38 +19,44 @@ const HeaderHome = ({ active }) => {
   }, []);
 
   return (
-    <header className={styles.header}>
+    <header className="header relative bg-background-dark bg-[url('/images/hero_2.webp')] bg-cover bg-center bg-no-repeat h-[95vh]">
       <Menu active={active} />
 
       {ParticlesBg && <ParticlesBg id="tsparticles" />}
 
-      <div className={styles.logo}>
+      <div className="logo absolute top-[5%] left-[5%] z-10">
         <a href="/" aria-label="Strona główna">
           <StaticImage src="../../../images/logo_ciemne.png" alt="logo" width={170} quality={100} />
         </a>
       </div>
 
-      <div data-sal="fade" data-sal-delay="100" data-sal-duration="2000" className={styles.content}>
-        {!isMobile && (
-          <h1 className={styles.title}>
-            <StaggeredFade text="Tworzenie Nowoczesnych" className={styles.title_top} />
-            <br />
-            <StaggeredFade text="Stron Internetowych" className={styles.title_bottom} />
-          </h1>
-        )}
-        {isMobile && (
-          <h1 className={styles.title}>
-            <StaggeredFade text="Tworzenie" className={styles.title_top} />
-            <br />
-            <StaggeredFade text=" Nowoczesnych" className={styles.title_top} />
-            <br />
-            <StaggeredFade text="Stron" className={styles.title_top} />
-            <br />
-            <StaggeredFade text=" Internetowych" className={styles.title_top} />
-          </h1>
-        )}
+      <div
+        data-sal="fade"
+        data-sal-delay="100"
+        data-sal-duration="2000"
+        className="content absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center flex flex-col"
+      >
+        <h1 className="title text-[4rem] lg:text-[3rem] md:text-[2.5rem] font-extrabold uppercase leading-[1.2] tracking-[0.3rem] whitespace-nowrap">
+          {!isMobile ? (
+            <>
+              <StaggeredFade text="Tworzenie Nowoczesnych" className="title_top" />
+              <br />
+              <StaggeredFade text="Stron Internetowych" className="title_bottom" />
+            </>
+          ) : (
+            <>
+              <StaggeredFade text="Tworzenie" className="title_top" />
+              <br />
+              <StaggeredFade text="Nowoczesnych" className="title_top" />
+              <br />
+              <StaggeredFade text="Stron" className="title_top" />
+              <br />
+              <StaggeredFade text="Internetowych" className="title_top" />
+            </>
+          )}
+        </h1>
 
-        <h2 className={styles.subtitle}>
+        <h2 className="subtitle mt-[2rem] text-[1.4rem] lg:text-[1.2rem] md:text-[1rem] leading-[1.2] tracking-[0.2rem] uppercase text-text-light-dark">
           Profesjonalne strony internetowe i sklepy online.
           <br />
           Świadczę usługi dla klientów

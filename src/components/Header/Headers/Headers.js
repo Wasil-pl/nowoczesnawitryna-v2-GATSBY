@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import * as styles from './Headers.module.scss';
 import Menu from '../Menu/Menu';
 import ShapeDividersBottom from '../../Ui/ShapeDividers/ShapeDividersBottom';
 import { StaggeredFade } from '../../Ui/StaggeredFade/StaggeredFade';
+import './Headers.scss';
 
 const Headers = ({ title_top, title_middle, title_bottom, subtitle, active, variant }) => {
-  const [ParticlesBg, setParticlesBg] = useState(null); // ← PRZENIESIONE WYŻEJ
+  const [ParticlesBg, setParticlesBg] = useState(null);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -15,21 +15,39 @@ const Headers = ({ title_top, title_middle, title_bottom, subtitle, active, vari
     }
   }, []);
 
-  return (
-    <header className={`${styles.header} ${styles[variant]}`}>
-      <Menu active={active} />
+  const baseHeight = variant === 'landing_page' ? 'h-[90vh]' : 'h-[700px]';
 
+  return (
+    <header
+      className={`headers relative ${baseHeight}
+        bg-background-dark
+        bg-[url('/images/hero_2.webp')]
+        bg-cover bg-center bg-no-repeat`}
+    >
+      <Menu active={active} />
       {ParticlesBg && <ParticlesBg id="tsparticles_mobile" />}
 
-      <div className={`${styles.content} separator`}>
-        <h1 className={styles.title}>
-          <StaggeredFade text={title_top} className={styles.title_top} />
+      <div
+        className="separator absolute top-1/2 left-1/2 
+                      -translate-x-1/2 -translate-y-[55%] z-10 
+                      flex flex-col items-center text-center px-4"
+      >
+        <h1
+          className="title text-[2rem] md:text-[2.5rem] lg:text-[3rem]
+                     font-extrabold uppercase leading-[1.2] tracking-[0.3rem]"
+        >
+          <StaggeredFade text={title_top} className="title_top" />
           <br />
-          <StaggeredFade text={title_middle} className={styles.title_middle} />
+          <StaggeredFade text={title_middle} className="title_middle" />
           <br />
-          <StaggeredFade text={title_bottom} className={styles.title_bottom} />
+          <StaggeredFade text={title_bottom} className="title_bottom" />
         </h1>
-        <h2 className={styles.subtitle}>{subtitle}</h2>
+        <h2
+          className="subtitle text-[1rem] md:text-[1.2rem] mt-8 
+                     tracking-[0.2rem] uppercase"
+        >
+          {subtitle}
+        </h2>
       </div>
 
       <ShapeDividersBottom />

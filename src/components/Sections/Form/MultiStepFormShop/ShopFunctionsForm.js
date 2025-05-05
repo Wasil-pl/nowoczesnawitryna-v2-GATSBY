@@ -1,5 +1,4 @@
 import React from 'react';
-import * as styles from '../MultiStepForm/MultiStepForm.module.scss';
 import { useForm } from 'react-hook-form';
 
 const ShopFunctionsForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefaultValues }) => {
@@ -49,102 +48,65 @@ const ShopFunctionsForm = ({ nextStep, prevStep, updateData, defaultValues, upda
     nextStep();
   };
 
+  const options = [
+    { name: 'logowanie/rejestracja użytkowników', label: 'Logowanie i rejestracja użytkowników' },
+    { name: 'newsletter', label: 'Newsletter' },
+    { name: 'powiadomienia o dostępności produktów', label: 'Powiadomienia o dostępności produktów' },
+    { name: 'filtrowanie produktów', label: 'Filtrowanie produktów' },
+    { name: 'porównywarka produktów', label: 'Porównywarka produktów' },
+    { name: 'opinie i oceny produktów', label: 'Opinie i oceny produktów' },
+    { name: 'zestawy produktów', label: 'Zestawy produktów' },
+    { name: 'formularz kontaktowy', label: 'Formularz kontaktowy' },
+    { name: 'program lojalnościowy', label: 'Program lojalnościowy' },
+    { name: 'dostawa z wyborem terminu', label: 'Dostawa z wyborem terminu' },
+    { name: 'rekomendacje produktów', label: 'Rekomendacje produktów' },
+    { name: 'kalkulator cen', label: 'Kalkulator cen' },
+    { name: 'system rezerwacji', label: 'System rezerwacji' },
+    { name: 'video lub multimedia', label: 'Video lub multimedia' },
+    { name: 'FAQ', label: 'FAQ' },
+    { name: 'mapa lokalizacji', label: 'Mapa lokalizacji' },
+  ];
+
   return (
     <form onSubmit={validate(handleSubmit)}>
-      <div className={styles.form_group}>
-        <p>Jakie funkcje ma mieć Twój sklep?</p>
-
-        <label>
-          <input type="checkbox" {...register('logowanie/rejestracja użytkowników')} />
-          <span>Logowanie i rejestracja użytkowników</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('newsletter')} />
-          <span>Newsletter</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('powiadomienia o dostępności produktów')} />
-          <span>Powiadomienia o dostępności produktów</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('filtrowanie produktów')} />
-          <span>Filtrowanie produktów</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('porównywarka produktów')} />
-          <span>Porównywarka produktów</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('opinie i oceny produktów')} />
-          <span>Opinie i oceny produktów</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('zestawy produktów')} />
-          <span>Zestawy produktów</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('formularz kontaktowy')} />
-          <span>Formularz kontaktowy</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('program lojalnościowy')} />
-          <span>Program lojalnościowy</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('dostawa z wyborem terminu')} />
-          <span>Dostawa z wyborem terminu</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('rekomendacje produktów')} />
-          <span>Rekomendacje produktów</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('kalkulator cen')} />
-          <span>Kalkulator cen</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('system rezerwacji')} />
-          <span>System rezerwacji</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('video lub multimedia')} />
-          <span>Video lub multimedia</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('FAQ')} />
-          <span>FAQ</span>
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('mapa lokalizacji')} />
-          <span>Mapa lokalizacji</span>
-        </label>
+      {/* Funkcje sklepu */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <p className="mb-[10px] text-[0.9rem] text-text-light">Jakie funkcje ma mieć Twój sklep?</p>
+        {options.map((opt) => (
+          <label key={opt.name} className="flex items-center mb-[8px]">
+            <input
+              type="checkbox"
+              {...register(opt.name)}
+              className="mr-[10px] w-[20px] h-[20px] rounded-[5px] accent-background-primary"
+            />
+            <span className="text-[1rem]">{opt.label}</span>
+          </label>
+        ))}
       </div>
 
-      <div className={styles.form_group}>
-        <label htmlFor="inne_funkcje">Inne funkcje</label>
-        <textarea id="inne_funkcje" {...register('inne funkcje')} placeholder="Inne funkcje" />
+      {/* Inne funkcje */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <label htmlFor="inne_funkcje" className="mb-[2px] text-[0.9rem] text-text-light">
+          Inne funkcje
+        </label>
+        <textarea
+          id="inne_funkcje"
+          {...register('inne funkcje')}
+          placeholder="Inne funkcje"
+          className="p-[10px] rounded-[5px] bg-background-light"
+        />
       </div>
 
-      <div className={styles.button_wrapper}>
-        <button type="button" onClick={prevStep} className={styles.button}>
+      {/* Nawigacja */}
+      <div className="flex gap-[20px] justify-between md:justify-start">
+        <button
+          type="button"
+          onClick={prevStep}
+          className="button rounded-[5px] text-[0.9rem] uppercase px-[16px] py-[8px]"
+        >
           Wstecz
         </button>
-        <button type="submit" className={styles.button}>
+        <button type="submit" className="button rounded-[5px] text-[0.9rem] uppercase px-[16px] py-[8px]">
           Dalej
         </button>
       </div>

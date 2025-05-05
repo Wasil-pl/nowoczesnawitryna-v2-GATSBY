@@ -1,5 +1,4 @@
 import React from 'react';
-import * as styles from '../MultiStepForm/MultiStepForm.module.scss';
 import { useForm } from 'react-hook-form';
 import { Error, errorMessages } from '../../../../consts/errorMesages';
 import { patterns } from '../../../../consts/patterns';
@@ -27,10 +26,15 @@ const ShopInfoForm = ({ nextStep, prevStep, updateData, defaultValues, updateDef
 
   return (
     <form onSubmit={validate(handleSubmit)}>
-      <div className={styles.form_group}>
-        <label htmlFor="productType">Branża / Asortyment</label>
+      {/* Branża / Asortyment */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <label htmlFor="productType" className="mb-[2px] text-[0.9rem] text-text-light">
+          Branża / Asortyment
+        </label>
         <textarea
           id="productType"
+          rows={3}
+          placeholder="Branża / Asortyment"
           {...register('productType', {
             required: errorMessages.required,
             minLength: {
@@ -42,18 +46,23 @@ const ShopInfoForm = ({ nextStep, prevStep, updateData, defaultValues, updateDef
               message: errorMessages.maxLength(patterns.shopProductTypeMaxLength),
             },
           })}
-          rows={3}
-          placeholder="Branża / Asortyment"
           required
+          className="p-[10px] rounded-[5px] bg-background-light"
         />
-        {errors.productType && <Error>{errors.productType?.message}</Error>}
+        {errors.productType && (
+          <Error className="text-text-danger text-[0.8rem] mt-[5px]">{errors.productType.message}</Error>
+        )}
       </div>
 
-      <div className={styles.form_group}>
-        <label htmlFor="productAmount">Ilość produktów</label>
+      {/* Ilość produktów */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <label htmlFor="productAmount" className="mb-[2px] text-[0.9rem] text-text-light">
+          Ilość produktów
+        </label>
         <input
           id="productAmount"
           type="number"
+          placeholder="ilość produktów (w przybliżeniu)"
           {...register('productAmount', {
             required: errorMessages.required,
             min: {
@@ -61,17 +70,24 @@ const ShopInfoForm = ({ nextStep, prevStep, updateData, defaultValues, updateDef
               message: errorMessages.minNumber(patterns.shopProductAmountMin),
             },
           })}
-          placeholder="ilość produktów (w przybliżeniu)"
           required
+          className="p-[10px] rounded-[5px] bg-background-light"
         />
-        {errors.productAmount && <Error>{errors.productAmount?.message}</Error>}
+        {errors.productAmount && (
+          <Error className="text-text-danger text-[0.8rem] mt-[5px]">{errors.productAmount.message}</Error>
+        )}
       </div>
 
-      <div className={styles.button_wrapper}>
-        <button type="button" onClick={prevStep} className={styles.button}>
+      {/* Nawigacja */}
+      <div className="flex gap-[20px] justify-between md:justify-start">
+        <button
+          type="button"
+          onClick={prevStep}
+          className="button rounded-[5px] text-[0.9rem] uppercase px-[16px] py-[8px]"
+        >
           Wstecz
         </button>
-        <button type="submit" className={styles.button}>
+        <button type="submit" className="button rounded-[5px] text-[0.9rem] uppercase px-[16px] py-[8px]">
           Dalej
         </button>
       </div>

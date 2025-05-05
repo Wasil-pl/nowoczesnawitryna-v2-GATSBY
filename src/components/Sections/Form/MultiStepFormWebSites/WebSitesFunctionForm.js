@@ -1,5 +1,4 @@
 import React from 'react';
-import * as styles from '../MultiStepForm/MultiStepForm.module.scss';
 import { useForm } from 'react-hook-form';
 
 const WebSitesFunctionForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefaultValues }) => {
@@ -37,54 +36,57 @@ const WebSitesFunctionForm = ({ nextStep, prevStep, updateData, defaultValues, u
     nextStep();
   };
 
+  const options = [
+    { name: 'system rezerwacji', label: 'System rezerwacji' },
+    { name: 'video lub multimedia', label: 'Video lub multimedia' },
+    { name: 'opinie klientów', label: 'Opinie klientów' },
+    { name: 'formularz kontaktowy', label: 'Formularz kontaktowy' },
+    { name: 'pobieranie plików', label: 'Pobieranie plików' },
+    { name: 'mapa lokalizacji', label: 'Mapa lokalizacji' },
+    { name: 'FAQ', label: 'FAQ' },
+    { name: 'newsletter', label: 'Newsletter' },
+  ];
+
   return (
     <form onSubmit={validate(handleSubmit)}>
-      <div className={styles.form_group}>
-        <p>Jakie funkcje ma mieć Twoja strona?</p>
-
-        <label>
-          <input type="checkbox" {...register('system rezerwacji')} /> System rezerwacji
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('video lub multimedia')} /> Video lub multimedia
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('opinie klientów')} /> Opinie klientów
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('formularz kontaktowy')} /> Formularz kontaktowy
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('pobieranie plików')} /> Pobieranie plików
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('mapa lokalizacji')} /> Mapa lokalizacji
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('FAQ')} /> FAQ
-        </label>
-
-        <label>
-          <input type="checkbox" {...register('newsletter')} /> Newsletter
-        </label>
+      {/* Funkcje strony */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <p className="mb-[10px] text-[0.9rem] text-text-light">Jakie funkcje ma mieć Twoja strona?</p>
+        {options.map((opt) => (
+          <label key={opt.name} className="flex items-center mb-[8px]">
+            <input
+              type="checkbox"
+              {...register(opt.name)}
+              className="mr-[10px] w-[20px] h-[20px] rounded-[5px] accent-background-primary"
+            />
+            <span className="text-[1rem]">{opt.label}</span>
+          </label>
+        ))}
       </div>
 
-      <div className={styles.form_group}>
-        <label htmlFor="inne_funkcje">Inne funkcje</label>
-        <textarea id="inne_funkcje" {...register('inne funkcje')} placeholder="Inne funkcje" />
+      {/* Inne funkcje */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <label htmlFor="inne_funkcje" className="mb-[2px] text-[0.9rem] text-text-light">
+          Inne funkcje
+        </label>
+        <textarea
+          id="inne_funkcje"
+          {...register('inne funkcje')}
+          placeholder="Inne funkcje"
+          className="p-[10px] rounded-[5px] bg-background-light"
+        />
       </div>
 
-      <div className={styles.button_wrapper}>
-        <button type="button" onClick={prevStep} className={styles.button}>
+      {/* Nawigacja */}
+      <div className="flex gap-[20px] justify-between md:justify-start">
+        <button
+          type="button"
+          onClick={prevStep}
+          className="button rounded-[5px] text-[0.9rem] uppercase px-[16px] py-[8px]"
+        >
           Wstecz
         </button>
-        <button type="submit" className={styles.button}>
+        <button type="submit" className="button rounded-[5px] text-[0.9rem] uppercase px-[16px] py-[8px]">
           Dalej
         </button>
       </div>

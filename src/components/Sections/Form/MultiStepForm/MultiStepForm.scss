@@ -1,0 +1,45 @@
+// OrderSiteForm.scss
+@use '../../../../styles/settings.scss' as settings;
+
+.order_site_form {
+  background-color: settings.$color-background-dark;
+
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: settings.$color-text-light;
+  }
+
+  .button {
+    border: 1px solid settings.$color-background-primary;
+    background-color: unset;
+    color: settings.$color-text-light;
+    text-decoration: none;
+    margin: 20px 0 50px 0;
+
+    &:hover {
+      color: settings.$color-text-primary;
+    }
+  }
+
+  .selection_display_item {
+    background-color: settings.$color-background-light;
+
+    & > p {
+      color: settings.$color-text-dark;
+      margin-bottom: 0;
+    }
+  }
+
+  .steps_count_display {
+    color: settings.$color-text-light;
+
+    .step {
+      transition: all 0.3s;
+    }
+
+    .step_active {
+      color: settings.$color-text-primary;
+    }
+  }
+}

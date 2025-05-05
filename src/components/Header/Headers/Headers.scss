@@ -1,0 +1,52 @@
+/* Headers.scss */
+@use '../../../styles/settings.scss' as settings;
+
+.headers {
+  background-color: settings.$color-background-dark;
+  /* desktop hero image */
+  background-image: url('/images/hero_2.webp');
+
+  /* landing_page variant overrides height via Tailwind, so nothing else here */
+
+  /* gradient text */
+  .title_top {
+    background: linear-gradient(90deg, settings.$color-text-primary, settings.$color-text-dark-light);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .title_middle {
+    background: linear-gradient(90deg, settings.$color-text-dark-light, settings.$color-text-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .title_bottom {
+    background: linear-gradient(90deg, settings.$color-text-primary, settings.$color-text-dark-light);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* subtitle max-width + color */
+  .subtitle {
+    color: settings.$color-text-light-dark;
+    max-width: 800px;
+  }
+
+  /* mobile background-image and sizing */
+  @media (max-width: 1000px) {
+    & {
+      background-image: url('/images/hero_2_mobile.webp');
+      background-position: top 25% center;
+    }
+  }
+
+  @media (max-width: 880px) {
+    & {
+      height: 600px; /* if you need to override Tailwind height */
+    }
+  }
+}

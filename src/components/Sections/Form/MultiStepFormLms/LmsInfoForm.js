@@ -1,5 +1,4 @@
 import React from 'react';
-import * as styles from '../MultiStepForm/MultiStepForm.module.scss';
 import { useForm } from 'react-hook-form';
 import { Error, errorMessages } from '../../../../consts/errorMesages';
 import { patterns } from '../../../../consts/patterns';
@@ -28,10 +27,15 @@ const LmsInfoForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefa
 
   return (
     <form onSubmit={validate(handleSubmit)}>
-      <div className={styles.form_group}>
-        <label htmlFor="typ-szkoly">Typ szkoły</label>
+      {/* Typ szkoły */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <label htmlFor="typ-szkoly" className="mb-[2px] text-[0.9rem] text-text-light">
+          Typ szkoły
+        </label>
         <textarea
           id="typ-szkoly"
+          rows={3}
+          placeholder="Typ szkoły (np. szkoła informatyczna, szkoła językowa, kursy fotograficzne itp.)"
           {...register('typ szkoły', {
             required: errorMessages.required,
             minLength: {
@@ -43,17 +47,22 @@ const LmsInfoForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefa
               message: errorMessages.maxLength(patterns.shopProductTypeMaxLength),
             },
           })}
-          rows={3}
-          placeholder="Typ szkoły (np. szkoła informatyczna, szkoła językowa, kursy fotograficzne itp.)"
+          className="p-[10px] rounded-[5px] bg-background-light"
         />
-        {errors['typ szkoły'] && <Error>{errors['typ szkoły']?.message}</Error>}
+        {errors['typ szkoły'] && (
+          <Error className="text-text-danger text-[0.8rem] mt-[5px]">{errors['typ szkoły']?.message}</Error>
+        )}
       </div>
 
-      <div className={styles.form_group}>
-        <label htmlFor="ilosc-kursow">Ilość kursów</label>
+      {/* Ilość kursów */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <label htmlFor="ilosc-kursow" className="mb-[2px] text-[0.9rem] text-text-light">
+          Ilość kursów
+        </label>
         <input
           id="ilosc-kursow"
           type="number"
+          placeholder="ilość kursów (w przybliżeniu)"
           {...register('ilość kursów', {
             required: errorMessages.required,
             min: {
@@ -61,15 +70,22 @@ const LmsInfoForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefa
               message: errorMessages.minNumber(patterns.shopProductAmountMin),
             },
           })}
-          placeholder="ilość kursów (w przybliżeniu)"
+          className="p-[10px] rounded-[5px] bg-background-light"
         />
-        {errors['ilość kursów'] && <Error>{errors['ilość kursów']?.message}</Error>}
+        {errors['ilość kursów'] && (
+          <Error className="text-text-danger text-[0.8rem] mt-[5px]">{errors['ilość kursów']?.message}</Error>
+        )}
       </div>
 
-      <div className={styles.form_group}>
-        <label htmlFor="rodzaje-materialow">Jakie typy materiałów będą wykorzystywane?</label>
+      {/* Rodzaje materiałów */}
+      <div className="mb-[20px] flex flex-col gap-[2px]">
+        <label htmlFor="rodzaje-materialow" className="mb-[2px] text-[0.9rem] text-text-light">
+          Jakie typy materiałów będą wykorzystywane?
+        </label>
         <textarea
           id="rodzaje-materialow"
+          rows={3}
+          placeholder="Jakie typy materiałów będą wykorzystywane? (np. PDF, wideo, prezentacje, pliki audio)"
           {...register('rodzaje materiałów', {
             required: errorMessages.required,
             minLength: {
@@ -81,17 +97,23 @@ const LmsInfoForm = ({ nextStep, prevStep, updateData, defaultValues, updateDefa
               message: errorMessages.maxLength(patterns.descryptionMaxLength),
             },
           })}
-          rows={3}
-          placeholder="Jakie typy materiałów będą wykorzystywane? (np. PDF, wideo, prezentacje, pliki audio)"
+          className="p-[10px] rounded-[5px] bg-background-light"
         />
-        {errors['rodzaje materiałów'] && <Error>{errors['rodzaje materiałów']?.message}</Error>}
+        {errors['rodzaje materiałów'] && (
+          <Error className="text-text-danger text-[0.8rem] mt-[5px]">{errors['rodzaje materiałów']?.message}</Error>
+        )}
       </div>
 
-      <div className={styles.button_wrapper}>
-        <button type="button" onClick={prevStep} className={styles.button}>
+      {/* Nawigacja */}
+      <div className="flex gap-[20px] justify-between md:justify-start">
+        <button
+          type="button"
+          onClick={prevStep}
+          className="button rounded-[5px]  text-[0.9rem] uppercase px-[16px] py-[8px]  "
+        >
           Wstecz
         </button>
-        <button type="submit" className={styles.button}>
+        <button type="submit" className="button rounded-[5px]  text-[0.9rem] uppercase px-[16px] py-[8px]  ">
           Dalej
         </button>
       </div>

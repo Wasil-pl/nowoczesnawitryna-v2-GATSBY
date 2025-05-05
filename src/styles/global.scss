@@ -16,26 +16,39 @@ html {
   font-size: 16px;
   overflow-x: hidden !important;
 
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
   label {
     font-size: 0.8rem;
     margin-bottom: 1px;
   }
 
-  input,
-  textarea {
-    background-color: settings.$color-background-light;
-    border: 1px solid settings.$color-background-light;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 1rem;
-    color: settings.$color-text-dark;
-    transition: all 0.3s ease-in-out;
+  label {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: settings.$color-text-light;
+  }
 
-    &:focus {
-      outline: none;
-      border: 1px solid settings.$color-text-light;
-      background-color: settings.$color-background-light;
-    }
+  input {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: settings.$color-background-light !important;
+  }
+
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: settings.$color-background-light !important;
   }
 }
 
@@ -47,7 +60,7 @@ body {
   letter-spacing: 0.5px;
   overflow-y: scroll;
   min-height: 100vh;
-  overflow: auto;
+  overflow-x: hidden !important;
   font-family: settings.$font-body;
 }
 

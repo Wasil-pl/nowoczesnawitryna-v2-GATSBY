@@ -1,91 +1,14 @@
 @use '../../../../styles/settings.scss' as settings;
 
-.process_steps_container {
-  margin: 0 auto;
+.logo_process_steps {
   background-color: settings.$color-background-lighter;
   margin-top: 100px;
   padding: 100px 0;
 
   .process_steps {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
     max-width: 1200px;
 
     .step {
-      margin: 50px 50px;
-      display: flex;
-      flex-direction: row;
-
-      .step_empty {
-        flex: 1;
-      }
-
-      .step_content {
-        flex: 3;
-        padding: 20px;
-        position: relative;
-
-        h3 {
-          font-size: 1.7rem;
-          font-weight: settings.$font-weight-bold;
-          font-weight: settings.$font-weight-bold;
-          margin-bottom: 20px;
-        }
-      }
-
-      .step_1 {
-        &::after {
-          content: '1';
-          font-family: settings.$font-header;
-          font-weight: settings.$font-weight-bold;
-          font-size: 10rem;
-          color: #002dae66;
-          position: absolute;
-          left: 20px;
-          bottom: -60px;
-        }
-      }
-
-      .step_2 {
-        &::after {
-          content: '2';
-          font-family: settings.$font-header;
-          font-weight: settings.$font-weight-bold;
-          font-size: 10rem;
-          color: #9bc90066;
-          position: absolute;
-          right: 20px;
-          bottom: -60px;
-        }
-      }
-
-      .step_3 {
-        &::after {
-          content: '3';
-          font-family: settings.$font-header;
-          font-weight: settings.$font-weight-bold;
-          font-size: 10rem;
-          color: #ffae0a66;
-          position: absolute;
-          left: 20px;
-          bottom: -40px;
-        }
-      }
-
-      .step_4 {
-        &::after {
-          content: '4';
-          font-family: settings.$font-header;
-          font-weight: settings.$font-weight-bold;
-          font-size: 10rem;
-          color: #00e4b466;
-          position: absolute;
-          right: 20px;
-          bottom: -40px;
-        }
-      }
-
       .step_5 {
         &::after {
           content: '5';
@@ -199,28 +122,8 @@
   }
 }
 
-@media (max-width: 1280px) {
-  .process_steps_container {
-    .process_steps {
-      width: 100%;
-    }
-  }
-}
-
-@media (max-width: 1024px) {
-  .process_steps_container {
-    .process_steps {
-      .step {
-        .step_empty {
-          display: none;
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 768px) {
-  .process_steps_container {
+  .logo_process_steps {
     .process_steps {
       .step {
         margin: 50px 0;

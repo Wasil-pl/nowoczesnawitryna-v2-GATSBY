@@ -1,3 +1,65 @@
+@use './settings.scss' as settings;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  /* tła */
+  .bg-background-lighter {
+    background-color: settings.$color-background-lighter;
+  }
+  .bg-background-light {
+    background-color: settings.$color-background-light;
+  }
+  .bg-background-dark {
+    background-color: settings.$color-background-dark;
+  }
+
+  .bg-background-primary {
+    background-color: settings.$color-background-primary;
+  }
+
+  /* tekst */
+  .text-text-light {
+    color: settings.$color-text-light;
+  }
+  .text-text-light-dark {
+    color: settings.$color-text-light-dark;
+  }
+  .text-text-dark {
+    color: settings.$color-text-dark;
+  }
+  .text-text-danger {
+    color: settings.$color-text-danger;
+  }
+  .text-text-success {
+    color: settings.$color-text-success;
+  }
+  .text-primary {
+    color: settings.$color-text-primary;
+  }
+
+  .text_small {
+    font-size: 1rem;
+  }
+
+  /* obramowania */
+  .border-background-primary {
+    border-color: settings.$color-background-primary;
+  }
+  .border-primary {
+    border-color: settings.$color-text-primary;
+  }
+  .border-t-primary {
+    border-top: 1px solid settings.$color-text-primary;
+  }
+
+  /* stany hover */
+  .hover\:text-primary:hover {
+    color: settings.$color-text-primary;
+  }
+  .hover\:border-primary:hover {
+    border-color: settings.$color-text-primary;
+  }
+}

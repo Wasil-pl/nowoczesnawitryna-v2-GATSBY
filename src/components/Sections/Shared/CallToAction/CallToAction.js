@@ -1,42 +1,63 @@
 import React from 'react';
-import * as styles from './CallToAction.module.scss';
 import { BsArrowRight } from '../../../Icons/Icons';
+import './CallToAction.scss';
 
 const CallToAction = ({ kontakt_2, kontakt_3, variant = '' }) => {
   return (
-    <div className={`${styles.action} ${styles[variant]}`}>
+    <div
+      className={`action flex justify-between bg-background-primary relative z-20  ${
+        variant === 'bottom' ? 'bottom' : ''
+      }`}
+    >
       {!kontakt_2 && !kontakt_3 && (
-        <div className={styles.left_side}>
-          <h3>Nowość! Szybka wycena strony</h3>
-          <h4>Wypełnij formularz, a przygotuję ofertę dostosowaną do Twoich potrzeb!</h4>
+        <div className="left_side flex-[50%] pr-[20px]">
+          <h3 className="text-[1.2rem] font-bold uppercase mb-4 text-text-dark">Nowość! Szybka wycena strony</h3>
+          <h4 className="text-[1.7rem] font-bold mb-4 text-text-dark">
+            Wypełnij formularz, a przygotuję ofertę dostosowaną do Twoich potrzeb!
+          </h4>
         </div>
       )}
 
       {kontakt_2 && !kontakt_3 && (
-        <div className={styles.left_side}>
-          <h3>Interesuje Cię współpraca?</h3>
-          <h4>Odpowiem na Twoje pytania i pomogę wybrać najlepsze rozwiązanie. Skontaktuj się ze mną!</h4>
+        <div className="left_side flex-[50%] pr-[20px]">
+          <h3 className="text-[1.2rem] font-bold uppercase mb-4 text-text-dark">Interesuje Cię współpraca?</h3>
+          <h4 className="text-[1.7rem] font-bold mb-4 text-text-dark">
+            Odpowiem na Twoje pytania i pomogę wybrać najlepsze rozwiązanie. Skontaktuj się ze mną!
+          </h4>
         </div>
       )}
 
       {kontakt_3 && (
-        <div className={styles.left_side}>
-          <h3>Masz pytania?</h3>
-          <h4>
+        <div className="left_side flex-[50%] pr-[20px]">
+          <h3 className="text-[1.2rem] font-bold uppercase mb-4 text-text-dark">Masz pytania?</h3>
+          <h4 className="text-[1.7rem] font-bold mb-4 text-text-dark">
             Nie Chcesz wypełniać formularza? Skontaktuj się ze mną, a odpowiem na Twoje pytania i przygotuję ofertę
           </h4>
         </div>
       )}
 
-      <div className={styles.right_side}>
-        <a href={!kontakt_2 && !kontakt_3 ? '/formularz-szybkiej-wyceny/#form' : '/kontakt/#kontakt'}>
-          <BsArrowRight />
+      <div className="right_side flex-[50%] pl-[20px] relative z-[2] transition-transform duration-300 hover:scale-110 flex justify-end">
+        <a
+          href={!kontakt_2 && !kontakt_3 ? '/formularz-szybkiej-wyceny/#form' : '/kontakt/#kontakt'}
+          className="no-underline flex flex-col items-end"
+        >
+          <BsArrowRight className="text-text-light w-[100px] h-auto mr-4 ml-auto" />
           <br />
-          {!kontakt_2 && !kontakt_3 && <span className={styles.text}>Wypełnij formularz wyceny już teraz!</span>}
-          {kontakt_2 && !kontakt_3 && (
-            <span className={styles.text}>Napisz do mnie, a odpowiem na Twoje pytania i przygotuję ofertę</span>
+          {!kontakt_2 && !kontakt_3 && (
+            <span className="text text-[1.2rem] font-bold uppercase text-text-dark">
+              Wypełnij formularz wyceny już teraz!
+            </span>
           )}
-          {kontakt_3 && <span className={styles.text}>Napisz, a odpowiem tak szybko jak to możliwe...</span>}
+          {kontakt_2 && !kontakt_3 && (
+            <span className="text text-[1.2rem] font-bold uppercase text-text-dark">
+              Napisz do mnie, a odpowiem na Twoje pytania i przygotuję ofertę
+            </span>
+          )}
+          {kontakt_3 && (
+            <span className="text text-[1.2rem] font-bold uppercase text-text-dark">
+              Napisz, a odpowiem tak szybko jak to możliwe...
+            </span>
+          )}
         </a>
       </div>
     </div>

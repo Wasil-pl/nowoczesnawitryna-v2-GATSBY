@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import * as styles from './AboutMe.module.scss';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 import sal from 'sal.js';
@@ -10,11 +9,16 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <section id="omnie" className={styles.about_me}>
+    <section id="omnie" className="pt-[250px] pb-[300px] bg-background-lighter ">
       <div className="container mx-auto px-4">
         <SectionTitle title="Kilka słów" coloredText=" o mnie" backgroundText="O mnie" ariaLabel="Kilka słów o mnie" />
-        <div className={styles.wrapper}>
-          <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="1000" className={styles.first_column}>
+        <div className="flex flex-col lg:flex-row justify-between">
+          <div
+            data-sal="slide-right"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className="w-full lg:w-1/2 text-center"
+          >
             <StaticImage
               src="../../../../images/aboutMe.png"
               alt="Dariusz Wasilewski full-stack web developer"
@@ -22,9 +26,14 @@ const AboutMe = () => {
               width={700}
             />
           </div>
-          <div data-sal="slide-left" data-sal-delay="100" data-sal-duration="1000" className={styles.second_column}>
-            <h3 aria-label="Cześć!">Cześć</h3>
-            <p>
+          <div
+            data-sal="slide-left"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className="w-full lg:w-1/2 flex flex-col lg:pl-[40px]"
+          >
+            <h3 className="text-[2.5rem] font-bold  mb-[20px] text-primary">Cześć</h3>
+            <p className="text-text-dark mb-[20px]">
               Cześć! Nazywam się Dariusz Wasilewski i jestem pasjonatem{' '}
               <em>tworzenia stron internetowych z Jastrzębia-Zdroju.</em> Moja fascynacja technologiami internetowymi
               zaczęła się już dawno temu i szybko przekształciła się w pełnowymiarową karierę jako{' '}

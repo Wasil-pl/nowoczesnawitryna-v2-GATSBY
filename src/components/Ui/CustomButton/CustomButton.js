@@ -1,10 +1,10 @@
 import React from 'react';
-import * as styles from './CustomButton.module.scss';
+import './CustomButton.scss';
 import { Link } from 'gatsby';
 
 const CustomButton = ({ text, link, variant = '' }) => {
   return (
-    <Link to={link} className={`${styles.button} ${styles[variant]}`}>
+    <Link to={link} className={`custom_button ${variant}`}>
       {text}
     </Link>
   );

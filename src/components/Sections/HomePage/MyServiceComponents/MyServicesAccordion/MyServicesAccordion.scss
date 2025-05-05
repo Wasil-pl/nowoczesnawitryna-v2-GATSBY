@@ -1,0 +1,44 @@
+@use '../../../../../styles/settings.scss' as settings;
+
+.accordion_button {
+  background-color: settings.$color-background-light;
+
+  &[aria-expanded='false']:hover {
+    transform: translateY(-3px);
+
+    h3 {
+      color: settings.$color-primary;
+    }
+
+    svg {
+      color: settings.$color-primary;
+    }
+  }
+
+  // Gdy otwarte
+  &[aria-expanded='true'] {
+    background-color: settings.$color-background-primary;
+    color: settings.$color-text-dark;
+
+    &:hover {
+      background-color: settings.$color-background-primary;
+      transform: translateY(-3px);
+    }
+  }
+
+  h3 {
+    color: settings.$color-text-dark;
+  }
+}
+
+.accordion_title {
+  color: settings.$color-primary;
+}
+
+.accordion_paragraph {
+  color: settings.$color-text-light;
+
+  &:last-of-type {
+    margin-bottom: 50px;
+  }
+}
