@@ -1,43 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 import sal from 'sal.js';
 import './WebSiteProcessSteps.scss';
 
 const WebSiteProcessSteps = () => {
-  const [activeStep, setActiveStep] = useState(-1);
-
-  /* ───────────────────────────────────
-     Scroll‑spy – podświetlanie aktywnego kroku
-  ─────────────────────────────────── */
-  useEffect(() => {
-    const handleScroll = () => {
-      const stepEls = document.querySelectorAll('.step');
-      const winH = window.innerHeight;
-
-      stepEls.forEach((el, idx) => {
-        const rect = el.getBoundingClientRect();
-        const elementMid = rect.top + rect.height / 2;
-        const isInViewport = elementMid < winH * 0.6 && elementMid > winH * 0.25;
-
-        if (isInViewport) setActiveStep(idx);
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  /* ───────────────────────────────────
-     SAL.js re‑init
-  ─────────────────────────────────── */
   useEffect(() => {
     sal();
   }, []);
 
-  /* ───────────────────────────────────
-     Render
-  ─────────────────────────────────── */
   return (
     <section className="process_steps_container">
       <div className="container mx-auto px-4">
@@ -50,7 +21,7 @@ const WebSiteProcessSteps = () => {
 
         <div className="process_steps">
           {/* ─────────────── STEP 1 ─────────────── */}
-          <div className={`step left ${activeStep === 0 ? 'active' : ''} flex flex-row`}>
+          <div className={`step left active_proces flex flex-row`}>
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_1 step_brief flex-[3_1_0%]">
               <h3>Brief i Konsultacja</h3>
@@ -65,7 +36,7 @@ const WebSiteProcessSteps = () => {
           </div>
 
           {/* ─────────────── STEP 2 ─────────────── */}
-          <div className={`step right ${activeStep === 1 ? 'active' : ''} flex flex-row md:flex-row-reverse`}>
+          <div className={`step right active_proces  flex flex-row md:flex-row-reverse`}>
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_2 step_info flex-[3_1_0%]">
               <h3>Zbieranie i Przygotowywanie kontentu</h3>
@@ -81,7 +52,7 @@ const WebSiteProcessSteps = () => {
           </div>
 
           {/* ─────────────── STEP 3 ─────────────── */}
-          <div className={`step left ${activeStep === 2 ? 'active' : ''} flex flex-row`}>
+          <div className={`step left active_proces  flex flex-row`}>
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_3 step_projektowanie flex-[3_1_0%]">
               <h3>Projektowanie</h3>
@@ -96,7 +67,7 @@ const WebSiteProcessSteps = () => {
           </div>
 
           {/* ─────────────── STEP 4 ─────────────── */}
-          <div className={`step right ${activeStep === 3 ? 'active' : ''} flex flex-row md:flex-row-reverse`}>
+          <div className={`step right active_proces  flex flex-row md:flex-row-reverse`}>
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_4 step_kodowanie flex-[3_1_0%]">
               <h3>Tworzenie Strony Internetowej</h3>
@@ -111,7 +82,7 @@ const WebSiteProcessSteps = () => {
           </div>
 
           {/* ─────────────── STEP 5 ─────────────── */}
-          <div className={`step left ${activeStep === 4 ? 'active' : ''} flex flex-row`}>
+          <div className={`step left active_proces  flex flex-row`}>
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_5 step_testowanie flex-[3_1_0%]">
               <h3>Testowanie i Optymalizacja</h3>
@@ -126,7 +97,7 @@ const WebSiteProcessSteps = () => {
           </div>
 
           {/* ─────────────── STEP 6 ─────────────── */}
-          <div className={`step right ${activeStep === 5 ? 'active' : ''} flex flex-row md:flex-row-reverse`}>
+          <div className={`step right active_proces  flex flex-row md:flex-row-reverse`}>
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_6 step_wdrozenie flex-[3_1_0%]">
               <h3>Wdrożenie i Wsparcie</h3>

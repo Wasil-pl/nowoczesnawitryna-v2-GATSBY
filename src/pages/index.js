@@ -24,47 +24,113 @@ const IndexPage = () => {
       <ScroolUpButton />
       <WhyChooseMe />
 
-      <Suspense fallback={<div>Ładowanie usług...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center py-8">
+            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
+          </div>
+        }
+      >
         <MyServices />
       </Suspense>
 
-      <Suspense fallback={<div>Ładowanie sekcji o mnie...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center py-8">
+            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
+          </div>
+        }
+      >
         <AboutMe />
       </Suspense>
 
-      <Suspense fallback={<div>Ładowanie technologii...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center py-8">
+            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
+          </div>
+        }
+      >
         <MyStack />
       </Suspense>
 
-      <Suspense fallback={<div>Ładowanie funkcji stron...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center py-8">
+            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
+          </div>
+        }
+      >
         <WebsiteFeatures />
       </Suspense>
 
-      <Suspense fallback={<div>Ładowanie wezwania do działania...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center py-8">
+            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
+          </div>
+        }
+      >
         <CallToActionSecond />
       </Suspense>
 
-      <Suspense fallback={<div>Ładowanie procesu tworzenia...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center py-8">
+            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
+          </div>
+        }
+      >
         <WebSiteProcessSteps />
       </Suspense>
 
-      <Suspense fallback={<div>Ładowanie portfolio...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center py-8">
+            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
+          </div>
+        }
+      >
         <Portfolio />
       </Suspense>
 
-      <Suspense fallback={<div>Ładowanie opinii...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center py-8">
+            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
+          </div>
+        }
+      >
         <Testiniomals />
       </Suspense>
 
-      <Suspense fallback={<div>Ładowanie artykułów...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center py-8">
+            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
+          </div>
+        }
+      >
         <RescentArticles />
       </Suspense>
 
-      <Suspense fallback={<div>Ładowanie FAQ...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center py-8">
+            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
+          </div>
+        }
+      >
         <Faq />
       </Suspense>
 
-      <Suspense fallback={<div>Ładowanie stopki...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center py-8">
+            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
+          </div>
+        }
+      >
         <Footer />
       </Suspense>
     </>

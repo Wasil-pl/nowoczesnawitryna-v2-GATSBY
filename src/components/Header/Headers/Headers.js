@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import Menu from '../Menu/Menu';
 import ShapeDividersBottom from '../../Ui/ShapeDividers/ShapeDividersBottom';
 import { StaggeredFade } from '../../Ui/StaggeredFade/StaggeredFade';
@@ -9,9 +9,14 @@ const Headers = ({ title_top, title_middle, title_bottom, subtitle, active, vari
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      import('../../Ui/ParticlesBackground/ParticlesBackground').then((mod) => {
-        setParticlesBg(() => mod.default);
-      });
+      const loader = () =>
+        import('../../Ui/ParticlesBackground/ParticlesBackground').then((mod) => setParticlesBg(() => mod.default));
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loader);
+      } else {
+        setTimeout(loader, 1000);
+      }
     }
   }, []);
 
@@ -25,8 +30,12 @@ const Headers = ({ title_top, title_middle, title_bottom, subtitle, active, vari
         bg-cover bg-center bg-no-repeat`}
     >
       <Menu active={active} />
-      {ParticlesBg && <ParticlesBg id="tsparticles_mobile" />}
 
+      {ParticlesBg && (
+        <Suspense fallback={null}>
+          <ParticlesBg id="tsparticles_other_heroes" />
+        </Suspense>
+      )}
       <div
         className="separator absolute top-1/2 left-1/2 
                       -translate-x-1/2 -translate-y-[55%] z-10 

@@ -1,30 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 import './LogoProcessSteps.scss';
 
 const LogoProcessSteps = () => {
-  const [activeStep, setActiveStep] = useState(-1);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const stepElements = document.querySelectorAll('.step');
-      const windowHeight = window.innerHeight;
-
-      stepElements.forEach((step, index) => {
-        const rect = step.getBoundingClientRect();
-        const elementMiddle = rect.top + rect.height / 2;
-
-        if (elementMiddle < windowHeight * 0.75 && elementMiddle > windowHeight * 0.25) {
-          setActiveStep(index);
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <section className="process_steps_container logo_process_steps">
       <div className="container mx-auto px-4">
@@ -35,7 +14,7 @@ const LogoProcessSteps = () => {
           ariaLabel="Mój proces projektowania logo"
         />
         <div className="process_steps flex flex-col mx-auto max-w-[1200px]">
-          <div className={`step left flex ${activeStep === 0 ? 'active' : ''} mx-[50px] my-[50px]`}>
+          <div className={`step left flex active_logo_process_steps mx-[50px] my-[50px]`}>
             <div className="step_empty flex-[1_1_0%]"></div>
             <div className="step_content step_1 step_brief flex-[3_1_0%] p-[20px] relative text-right">
               <h3>Brief i Konsultacja</h3>
@@ -54,7 +33,7 @@ const LogoProcessSteps = () => {
             </div>
           </div>
 
-          <div className={`step right flex flex-row-reverse ${activeStep === 1 ? 'active' : ''} mx-[50px] my-[50px]`}>
+          <div className={`step right flex flex-row-reverse active_logo_process_steps mx-[50px] my-[50px]`}>
             <div className="step_empty flex-[1_1_0%]"></div>
             <div className="step_content step_2 step_info flex-[3_1_0%] p-[20px] relative text-left">
               <h3>Tworzenie koncepcji</h3>
@@ -72,7 +51,7 @@ const LogoProcessSteps = () => {
             </div>
           </div>
 
-          <div className={`step left flex ${activeStep === 2 ? 'active' : ''} mx-[50px] my-[50px]`}>
+          <div className={`step left flex active_logo_process_steps mx-[50px] my-[50px]`}>
             <div className="step_empty flex-[1_1_0%]"></div>
             <div className="step_content step_3 step_projektowanie flex-[3_1_0%] p-[20px] relative text-right">
               <h3>Wybór projektu i poprawki</h3>
@@ -90,7 +69,7 @@ const LogoProcessSteps = () => {
             </div>
           </div>
 
-          <div className={`step right flex flex-row-reverse ${activeStep === 3 ? 'active' : ''} mx-[50px] my-[50px]`}>
+          <div className={`step right flex flex-row-reverse active_logo_process_steps mx-[50px] my-[50px]`}>
             <div className="step_empty flex-[1_1_0%]"></div>
             <div className="step_content step_4 step_kodowanie flex-[3_1_0%] p-[20px] relative text-left">
               <h3>Finalizacja i dostarczenie plików</h3>
@@ -109,7 +88,7 @@ const LogoProcessSteps = () => {
             </div>
           </div>
 
-          <div className={`step left flex ${activeStep === 4 ? 'active' : ''} mx-[50px] my-[50px]`}>
+          <div className={`step left flex active_logo_process_steps mx-[50px] my-[50px]`}>
             <div className="step_empty flex-[1_1_0%]"></div>
             <div className="step_content step_5 step_wdrozenie flex-[3_1_0%] p-[20px] relative text-right">
               <h3>Wsparcie</h3>

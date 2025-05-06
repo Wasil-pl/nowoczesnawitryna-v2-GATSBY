@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
 
@@ -18,27 +18,6 @@ const LPProcessSteps = ({
   step6Title,
   step6Description,
 }) => {
-  const [activeStep, setActiveStep] = useState(-1);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const stepElements = document.querySelectorAll('.step');
-      const windowHeight = window.innerHeight;
-
-      stepElements.forEach((step, index) => {
-        const rect = step.getBoundingClientRect();
-        const elementMiddle = rect.top + rect.height / 2;
-
-        if (elementMiddle < windowHeight * 0.6 && elementMiddle > windowHeight * 0.25) {
-          setActiveStep(index);
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <section className="process_steps_container">
       <div className="container mx-auto px-4">
@@ -49,7 +28,7 @@ const LPProcessSteps = ({
           backgroundText="Proces"
         />
         <div className="process_steps">
-          <div className={`step left ${activeStep === 0 ? 'active' : ''} flex flex-row`}>
+          <div className={`step left active_proces flex flex-row`}>
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_1 step_brief flex-[3_1_0%]">
               <h3>{step1Title}</h3>
@@ -63,7 +42,7 @@ const LPProcessSteps = ({
               />
             </div>
           </div>
-          <div className={`step right ${activeStep === 1 ? 'active' : ''} flex flex-row md:flex-row-reverse`}>
+          <div className={`step right active_proces flex flex-row md:flex-row-reverse`}>
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_2 step_info flex-[3_1_0%]">
               <h3>{step2Title}</h3>
@@ -77,7 +56,7 @@ const LPProcessSteps = ({
               />
             </div>
           </div>
-          <div className={`step left ${activeStep === 2 ? 'active' : ''} flex flex-row`}>
+          <div className={`step left active_proces flex flex-row`}>
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_3 step_projektowanie flex-[3_1_0%]">
               <h3>{step3Title}</h3>
@@ -91,7 +70,7 @@ const LPProcessSteps = ({
               />
             </div>
           </div>
-          <div className={`step right ${activeStep === 3 ? 'active' : ''} flex flex-row md:flex-row-reverse`}>
+          <div className={`step right active_proces flex flex-row md:flex-row-reverse`}>
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_4 step_kodowanie flex-[3_1_0%]">
               <h3>{step4Title}</h3>
@@ -105,7 +84,7 @@ const LPProcessSteps = ({
               />
             </div>
           </div>
-          <div className={`step left ${activeStep === 4 ? 'active' : ''} flex flex-row`}>
+          <div className={`step left active_proces flex flex-row`}>
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_5 step_testowanie flex-[3_1_0%]">
               <h3>{step5Title}</h3>
@@ -119,7 +98,7 @@ const LPProcessSteps = ({
               />
             </div>
           </div>
-          <div className={`step right ${activeStep === 5 ? 'active' : ''} flex flex-row md:flex-row-reverse`}>
+          <div className={`step right active_proces flex flex-row md:flex-row-reverse`}>
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_6 step_wdrozenie flex-[3_1_0%]">
               <h3>{step6Title}</h3>

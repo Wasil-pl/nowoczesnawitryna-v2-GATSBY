@@ -142,10 +142,7 @@
       }
     }
 
-    .active {
-      transform: scale(1.1);
-      transition: settings.$transition_0_3;
-
+    .active_proces {
       .step_brief {
         border-bottom: 5px solid #002dae;
         border-radius: 20px;

@@ -4,25 +4,37 @@ import { Link } from 'gatsby';
 
 const ArticleCard = ({ image, card_title, card_text, href }) => {
   return (
-    <div className="article-card min-w-[400px] max-w-[400px] border border-[#ccc] flex flex-col mx-auto">
+    <div className="article-card md:min-w-[400px] max-w-[400px] border border-[#ccc] flex flex-col mx-auto">
       {image === 'webhosting' && (
         <StaticImage
           src="../../../../images/webhosting.webp"
           width={400}
           alt="webhosting hosting stron internetowych"
+          layout="constrained"
         />
       )}
       {image === 'cms' && (
-        <StaticImage src="../../../../images/cms.webp" width={400} alt="cms - strony internetowe na wordpress" />
+        <StaticImage
+          src="../../../../images/cms.webp"
+          width={400}
+          alt="cms - strony internetowe na wordpress"
+          layout="constrained"
+        />
       )}
       {image === 'website' && (
-        <StaticImage src="../../../../images/website.jpg" width={400} alt="website - strona internetowa" />
+        <StaticImage
+          src="../../../../images/website.jpg"
+          width={400}
+          alt="website - strona internetowa"
+          layout="constrained"
+        />
       )}
       {image === 'responsive' && (
         <StaticImage
           src="../../../../images/responsive.jpg"
           width={400}
           alt="responsive - rwd, responsywne strony internetowe"
+          layout="constrained"
         />
       )}
       {image === 'webdesign' && (
@@ -30,16 +42,23 @@ const ArticleCard = ({ image, card_title, card_text, href }) => {
           src="../../../../images/proces.jpg"
           width={400}
           alt="webdesign - projektowanie strony internetowej"
+          layout="constrained"
         />
       )}
       {image === 'webapp' && (
-        <StaticImage src="../../../../images/webapp.jpg" width={400} alt="webapp - aplikacje webowe" />
+        <StaticImage
+          src="../../../../images/webapp.jpg"
+          width={400}
+          alt="webapp - aplikacje webowe"
+          layout="constrained"
+        />
       )}
       {image === 'modernwebsite' && (
         <StaticImage
           src="../../../../images/features.jpg"
           width={400}
           alt="modernwebsite - nowoczesna strona internetowa"
+          layout="constrained"
         />
       )}
 

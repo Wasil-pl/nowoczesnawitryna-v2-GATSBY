@@ -6,7 +6,7 @@ const ScroolUpButton = () => {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    if (window === undefined) return;
+    if (typeof window === 'undefined') return;
     const handleScrollButtonVisibility = () => {
       window.scrollY > 300 ? setShowButton(true) : setShowButton(false);
     };
