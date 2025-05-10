@@ -36,6 +36,7 @@ export const Head = () => (
       href="https://www.nowoczesnawitryna.pl/blog/aplikacje-webowe-vs-strony-internetowe/"
     />
     <link rel="alternate" hrefLang="en" href="https://www.nowoczesnawitryna.com/blog/web-applications-vs-websites/" />
+
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Aplikacje Webowe vs. Strony Internetowe – Kiedy Wybrać Aplikację?" />

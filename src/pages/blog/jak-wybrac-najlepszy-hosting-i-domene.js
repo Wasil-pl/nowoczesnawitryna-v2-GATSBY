@@ -40,6 +40,7 @@ export const Head = () => (
       hrefLang="en"
       href="https://www.nowoczesnawitryna.com/blog/how-to-choose-the-best-hosting-and-domain/"
     />
+
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Jak wybrać najlepszy hosting i domenę - Nowoczesna witryna" />

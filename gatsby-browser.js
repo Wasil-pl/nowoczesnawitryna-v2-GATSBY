@@ -1,3 +1,5 @@
+import React from 'react';
+import ConsentForm from './src/components/Cookies/ConsentForm/ConsentForm';
 import ReactDOM from 'react-dom/client';
 import './src/styles/tailwind.scss';
 import './src/styles/global.scss';
@@ -9,3 +11,10 @@ export const replaceHydrateFunction = () => {
     root.render(element);
   };
 };
+
+export const wrapPageElement = ({ element }) => (
+  <>
+    <ConsentForm />
+    {element}
+  </>
+);

@@ -39,6 +39,7 @@ export const Head = () => (
       hrefLang="en"
       href="https://www.nowoczesnawitryna.com/blog/how-to-choose-the-perfect-website/"
     />
+
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="website" />
     <meta

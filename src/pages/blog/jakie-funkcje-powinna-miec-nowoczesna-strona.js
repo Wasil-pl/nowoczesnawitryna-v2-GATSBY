@@ -36,6 +36,7 @@ export const Head = () => (
       href="https://www.nowoczesnawitryna.pl/blog/jakie-funkcje-powinna-miec-nowoczesna-strona/"
     />
     <link rel="alternate" hrefLang="en" href="https://www.nowoczesnawitryna.com/blog/features-of-a-modern-website/" />
+
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="website" />
     <meta

@@ -40,7 +40,8 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.4",
     "react-responsive": "^10.0.0",
-    "sass": "^1.80.6"
+    "sass": "^1.80.6",
+    "universal-cookie": "^8.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",

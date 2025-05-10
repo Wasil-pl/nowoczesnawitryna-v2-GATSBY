@@ -1,4 +1,3 @@
-import React from 'react';
 import { useInitialDeviceType } from './useInitialDeviceType';
 
 const ResponsiveSwitch = ({ mobile, desktop, fallback = null }) => {

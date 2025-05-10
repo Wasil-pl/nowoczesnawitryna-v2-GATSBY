@@ -33,6 +33,7 @@ export const Head = () => (
     <link rel="canonical" href="https://www.nowoczesnawitryna.pl/blog/czym-jest-responsywnosc-strony/" />
     <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/blog/czym-jest-responsywnosc-strony/" />
     <link rel="alternate" hrefLang="en" href="https://www.nowoczesnawitryna.com/blog/what-is-website-responsiveness/" />
+
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Czym Jest Responsywność Strony i Dlaczego Jest Tak Ważna?" />

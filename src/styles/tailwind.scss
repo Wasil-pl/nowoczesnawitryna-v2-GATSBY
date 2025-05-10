@@ -55,6 +55,10 @@
     border-top: 1px solid settings.$color-text-primary;
   }
 
+  .border-dark {
+    border-color: settings.$color-secondary;
+  }
+
   /* stany hover */
   .hover\:text-primary:hover {
     color: settings.$color-text-primary;

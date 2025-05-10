@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
 import { QuestionMarkCircleIcon } from '../../../Icons/Icons';
-import { useMediaQuery } from 'react-responsive';
 import LPMyServicesThumbs from '../LPMyServicesThumbs/LPMyServicesThumbs';
 import LPMyServicesAccordion from '../LPMyServicesAccordion/LPMyServicesAccordion';
 import CallToAction from '../../Shared/CallToAction/CallToAction';
 import ShapeDividersBottom from '../../../Ui/ShapeDividers/ShapeDividersBottom';
 import ShapeDividersTop from '../../../Ui/ShapeDividers/ShapeDividersTop';
+import ResponsiveSwitch from '../../../Functions/ResponsiveSwitch';
 
 const LPMyServices = ({
   title_HTML,
@@ -25,14 +25,18 @@ const LPMyServices = ({
   sectionTitle,
   sectionTitleColored,
 }) => {
-  const isMobile = useMediaQuery({ query: '(max-width: 992px)' });
   const [ParticlesBg, setParticlesBg] = useState(null); // ← PRZENIESIONE WYŻEJ
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      import('../../../Ui/ParticlesBackground/ParticlesBackground').then((mod) => {
-        setParticlesBg(() => mod.default);
-      });
+      const loader = () =>
+        import('../../../Ui/ParticlesBackground/ParticlesBackground').then((mod) => setParticlesBg(() => mod.default));
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loader);
+      } else {
+        setTimeout(loader, 1000);
+      }
     }
   }, []);
 
@@ -40,7 +44,11 @@ const LPMyServices = ({
     <section className="myServices bg-background-dark mt-[150px] pt-[200px] pb-[10px] relative">
       <ShapeDividersTop />
 
-      {ParticlesBg && <ParticlesBg id={'tsparticles_lp_my_service'} />}
+      {ParticlesBg && (
+        <Suspense fallback={null}>
+          <ParticlesBg id="tsparticles_lp_my_service" />
+        </Suspense>
+      )}
 
       <div className="container mx-auto px-4">
         <SectionTitle
@@ -51,39 +59,41 @@ const LPMyServices = ({
           variant="sections_title_white"
         />
 
-        {!isMobile && (
-          <LPMyServicesThumbs
-            title_HTML={title_HTML}
-            description_HTML={description_HTML}
-            title_web_apps={title_web_apps}
-            description_web_apps={description_web_apps}
-            title_wordpress={title_wordpress}
-            description_wordpress={description_wordpress}
-            title_ecommerce={title_ecommerce}
-            description_ecommerce={description_ecommerce}
-            title_lms={title_lms}
-            description_lms={description_lms}
-            title_logo={title_logo}
-            description_logo={description_logo}
-          />
-        )}
-
-        {isMobile && (
-          <LPMyServicesAccordion
-            title_HTML={title_HTML}
-            description_HTML={description_HTML}
-            title_web_apps={title_web_apps}
-            description_web_apps={description_web_apps}
-            title_wordpress={title_wordpress}
-            description_wordpress={description_wordpress}
-            title_ecommerce={title_ecommerce}
-            description_ecommerce={description_ecommerce}
-            title_lms={title_lms}
-            description_lms={description_lms}
-            title_logo={title_logo}
-            description_logo={description_logo}
-          />
-        )}
+        <ResponsiveSwitch
+          desktop={
+            <LPMyServicesThumbs
+              title_HTML={title_HTML}
+              description_HTML={description_HTML}
+              title_web_apps={title_web_apps}
+              description_web_apps={description_web_apps}
+              title_wordpress={title_wordpress}
+              description_wordpress={description_wordpress}
+              title_ecommerce={title_ecommerce}
+              description_ecommerce={description_ecommerce}
+              title_lms={title_lms}
+              description_lms={description_lms}
+              title_logo={title_logo}
+              description_logo={description_logo}
+            />
+          }
+          mobile={
+            <LPMyServicesAccordion
+              title_HTML={title_HTML}
+              description_HTML={description_HTML}
+              title_web_apps={title_web_apps}
+              description_web_apps={description_web_apps}
+              title_wordpress={title_wordpress}
+              description_wordpress={description_wordpress}
+              title_ecommerce={title_ecommerce}
+              description_ecommerce={description_ecommerce}
+              title_lms={title_lms}
+              description_lms={description_lms}
+              title_logo={title_logo}
+              description_logo={description_logo}
+            />
+          }
+          fallback={null}
+        />
 
         <div className="info flex mt-[140px] mb-[100px] relative">
           <QuestionMarkCircleIcon width={50} height={50} />

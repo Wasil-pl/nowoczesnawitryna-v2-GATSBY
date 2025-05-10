@@ -124,6 +124,7 @@ export const Head = () => (
     />
     <link rel="canonical" href="https://www.nowoczesnawitryna.pl/strony-internetowe/katowice/" />
     <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/strony-internetowe/katowice/" />
+
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Strony internetowe Katowice - Nowoczesna Witryna" />

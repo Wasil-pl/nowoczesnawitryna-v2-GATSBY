@@ -1,25 +1,31 @@
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import './MyServices.scss';
 import SectionTitle from '../../../../Ui/SectionTitle/SectionTitle';
 import MyServicesThumbs from '../MyServicesThumbs/MyServicesThumbs';
 import MyServicesAccordion from '../MyServicesAccordion/MyServicesAccordion';
 import CustomButton from '../../../../Ui/CustomButton/CustomButton';
-import { useMediaQuery } from 'react-responsive';
 import CallToAction from '../../../Shared/CallToAction/CallToAction';
 import ShapeDividersTop from '../../../../Ui/ShapeDividers/ShapeDividersTop';
 import ShapeDividersBottom from '../../../../Ui/ShapeDividers/ShapeDividersBottom';
 import { QuestionMarkCircleIcon } from '../../../../Icons/Icons';
 import sal from 'sal.js'; // ← dodane do importów
+import ResponsiveSwitch from '../../../../Functions/ResponsiveSwitch';
 
 const MyServices = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 1024px)' });
   const [ParticlesBg, setParticlesBg] = useState(null); // ← PRZENIESIONE WYŻEJ
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      import('../../../../Ui/ParticlesBackground/ParticlesBackground').then((mod) => {
-        setParticlesBg(() => mod.default);
-      });
+      const loader = () =>
+        import('../../../../Ui/ParticlesBackground/ParticlesBackground').then((mod) =>
+          setParticlesBg(() => mod.default)
+        );
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loader);
+      } else {
+        setTimeout(loader, 1000);
+      }
     }
   }, []);
 
@@ -30,7 +36,12 @@ const MyServices = () => {
   return (
     <section className="myServices bg-background-dark mt-[150px] pt-[200px] pb-[10px] relative">
       <ShapeDividersTop />
-      {ParticlesBg && <ParticlesBg id="tsparticles_my_service" />}
+
+      {ParticlesBg && (
+        <Suspense fallback={null}>
+          <ParticlesBg id="tsparticles_my_service" />
+        </Suspense>
+      )}
 
       <div className="container mx-auto px-4">
         <SectionTitle
@@ -41,8 +52,7 @@ const MyServices = () => {
           variant="sections_title_white"
         />
 
-        {!isMobile && <MyServicesThumbs />}
-        {isMobile && <MyServicesAccordion />}
+        <ResponsiveSwitch desktop={<MyServicesThumbs />} mobile={<MyServicesAccordion />} fallback={null} />
 
         <div className="info flex mt-[140px] mb-[100px] relative">
           <QuestionMarkCircleIcon width={50} height={50} />

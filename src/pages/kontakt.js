@@ -44,6 +44,7 @@ export const Head = () => (
     <link rel="canonical" href="https://www.nowoczesnawitryna.pl/kontakt/" />
     <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/kontakt/" />
     <link rel="alternate" hrefLang="en" href="https://www.nowoczesnawitryna.com/contact/" />
+
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Kontakt - Nowoczesna Witryna" />

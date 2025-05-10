@@ -30,6 +30,7 @@ export const Head = () => (
     <link rel="canonical" href="https://www.nowoczesnawitryna.pl/polityka-prywatnosci/" />
     <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/polityka-prywatnosci/" />
     <link rel="alternate" hrefLang="en" href="https://www.nowoczesnawitryna.com/privacy-policy/" />
+
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="polityka prywatności - Nowoczesna witryna" />

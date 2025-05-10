@@ -32,6 +32,7 @@ export const Head = () => (
     <link rel="canonical" href="https://www.nowoczesnawitryna.pl/blog/cms-vs-strona-pisana-od-podstaw/" />
     <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/blog/cms-vs-strona-pisana-od-podstaw/" />
     <link rel="alternate" hrefLang="en" href="https://www.nowoczesnawitryna.com/blog/cms-vs-custom-built-website/" />
+
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Cms vs strona pisana od podstaw" />

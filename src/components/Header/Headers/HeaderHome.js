@@ -1,15 +1,12 @@
 import React, { Suspense, useState, useEffect } from 'react';
 import Menu from '../Menu/Menu';
-import { useMediaQuery } from 'react-responsive';
 import { StaticImage } from 'gatsby-plugin-image';
 import ShapeDividersBottom from '../../Ui/ShapeDividers/ShapeDividersBottom';
-import { StaggeredFade } from '../../Ui/StaggeredFade/StaggeredFade';
 import './HeaderHome.scss';
 import ResponsiveSwitch from '../../Functions/ResponsiveSwitch';
 
 const HeaderHome = ({ active }) => {
   const [ParticlesBg, setParticlesBg] = useState(null);
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -54,25 +51,39 @@ const HeaderHome = ({ active }) => {
       />
 
       <div className="content absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center flex flex-col">
-        <h1 className="title text-[4rem] lg:text-[3rem] md:text-[2.5rem] font-extrabold uppercase leading-[1.2] tracking-[0.3rem] whitespace-nowrap">
-          {!isMobile ? (
-            <>
-              <StaggeredFade text="Tworzenie Nowoczesnych" className="title_top" />
+        <ResponsiveSwitch
+          desktop={
+            <h1 className="title text-[4rem] lg:text-[3rem] md:text-[2.5rem] font-extrabold uppercase leading-[1.2] tracking-[0.3rem] whitespace-nowrap">
+              <span className="title_top" data-sal="slide-up" data-sal-delay="100" data-sal-duration="600">
+                Tworzenie Nowoczesnych
+              </span>
               <br />
-              <StaggeredFade text="Stron Internetowych" className="title_bottom" />
-            </>
-          ) : (
-            <>
-              <StaggeredFade text="Tworzenie" className="title_top" />
+              <span className="title_bottom" data-sal="slide-up" data-sal-delay="300" data-sal-duration="600">
+                Stron Internetowych
+              </span>
+            </h1>
+          }
+          mobile={
+            <h1 className="title text-[4rem] lg:text-[3rem] md:text-[2.5rem] font-extrabold uppercase leading-[1.2] tracking-[0.3rem] whitespace-nowrap">
+              <span className="title_top" data-sal="slide-up" data-sal-delay="100" data-sal-duration="500">
+                Tworzenie
+              </span>
               <br />
-              <StaggeredFade text="Nowoczesnych" className="title_top" />
+              <span className="title_bottom" data-sal="slide-up" data-sal-delay="200" data-sal-duration="500">
+                Nowoczesnych
+              </span>
               <br />
-              <StaggeredFade text="Stron" className="title_top" />
+              <span className="title_top" data-sal="slide-up" data-sal-delay="300" data-sal-duration="500">
+                Stron
+              </span>
               <br />
-              <StaggeredFade text="Internetowych" className="title_top" />
-            </>
-          )}
-        </h1>
+              <span className="title_bottom" data-sal="slide-up" data-sal-delay="400" data-sal-duration="500">
+                Internetowych
+              </span>
+            </h1>
+          }
+          fallback={null}
+        />
 
         <h2 className="subtitle mt-[2rem] text-[1.4rem] lg:text-[1.2rem] md:text-[1rem] leading-[1.2] tracking-[0.2rem] uppercase text-text-light-dark">
           Profesjonalne strony internetowe i sklepy online.

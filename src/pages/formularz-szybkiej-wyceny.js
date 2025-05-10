@@ -40,6 +40,7 @@ export const Head = () => (
     />
     <link rel="canonical" href="https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/" />
     <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/" />
+
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Formularz Szybkiej Wyceny – Nowoczesna Witryna" />

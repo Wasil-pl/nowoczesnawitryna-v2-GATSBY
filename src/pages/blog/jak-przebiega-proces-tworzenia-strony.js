@@ -40,6 +40,7 @@ export const Head = () => (
       hrefLang="en"
       href="https://www.nowoczesnawitryna.com/blog/how-the-website-creation-process-works/"
     />
+
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="website" />
     <meta

@@ -55,6 +55,7 @@ export const Head = () => (
     <link rel="canonical" href="https://www.nowoczesnawitryna.pl/aplikacje-webowe/" />
     <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/aplikacje-webowe/" />
     <link rel="alternate" hrefLang="en" href="https://www.nowoczesnawitryna.com/web-applications/" />
+
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Aplikacje Webowe – Nowoczesne Rozwiązania dla Biznesu" />

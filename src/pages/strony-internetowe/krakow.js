@@ -126,6 +126,7 @@ export const Head = () => (
     />
     <link rel="canonical" href="https://www.nowoczesnawitryna.pl/strony-internetowe/krakow/" />
     <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/strony-internetowe/krakow/" />
+
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Strony internetowe Kraków - Nowoczesna Witryna" />

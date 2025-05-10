@@ -55,6 +55,7 @@ export const Head = () => (
     <link rel="canonical" href="https://www.nowoczesnawitryna.pl/strony-wordpress/" />
     <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/strony-wordpress/" />
     <link rel="alternate" hrefLang="en" href="https://www.nowoczesnawitryna.com/wordpress-websites/" />
+
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Strony WordPress – Łatwe w Zarządzaniu i Efektywne Strony" />

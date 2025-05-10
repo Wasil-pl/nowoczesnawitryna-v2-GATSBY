@@ -55,6 +55,7 @@ export const Head = () => (
     <link rel="canonical" href="https://www.nowoczesnawitryna.pl/projektowanie-logo/" />
     <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/projektowanie-logo/" />
     <link rel="alternate" hrefLang="en" href="https://www.nowoczesnawitryna.com/logo-design/" />
+
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Projektowanie Logo – Profesjonalne Logo dla Twojej Firmy" />
