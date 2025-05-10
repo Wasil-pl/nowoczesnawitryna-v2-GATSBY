@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FloatingBanner = ({ message, header, acceptText, denyText, onAccept, onDeny }) => {
+const FloatingBanner = ({ message, header, acceptText, denyText, onAccept, onDeny, customizeText, onCustomize }) => {
   return (
     <div className={`fixed bottom-0 inset-x-0 pb-2 sm:pb-5`} style={{ zIndex: '2000' }}>
       <div className="max-w-screen-xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -37,6 +37,16 @@ const FloatingBanner = ({ message, header, acceptText, denyText, onAccept, onDen
                     onClick={onDeny}
                   >
                     {denyText}
+                  </button>
+                </div>
+              )}
+              {customizeText !== undefined && (
+                <div className="flex-shrink-0 sm:order-3 sm:ml-2">
+                  <button
+                    onClick={onCustomize}
+                    className={`flex items-center justify-center px-4 py-2 text-sm leading-5 font-medium rounded-md text-text-dark-200 bg-background-light border-dark border-2 hover:text-primary focus:outline-none focus:shadow-outline transition ease-in-out duration-150`}
+                  >
+                    {customizeText}
                   </button>
                 </div>
               )}
