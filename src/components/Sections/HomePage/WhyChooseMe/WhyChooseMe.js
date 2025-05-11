@@ -52,10 +52,7 @@ const WhyChooseMe = () => {
                 </p>
                 <span>
                   <strong>
-                    <a
-                      href="#omnie"
-                      className="text-primary font-bold uppercase tracking-[2px] no-underline hover:text-primary"
-                    >
+                    <a href="#omnie" className=" font-bold uppercase tracking-[2px] no-underline hover:text-primary">
                       <p>Zobacz moje umiejętności i doświadczenie.</p>
                     </a>
                   </strong>

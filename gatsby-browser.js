@@ -1,10 +1,14 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
+import loadable from '@loadable/component';
 import ReactDOM from 'react-dom/client';
 import './src/styles/tailwind.scss';
 import './src/styles/global.scss';
 import './src/styles/normalize.scss';
 
-const ConsentForm = lazy(() => import('./src/components/Cookies/ConsentForm/ConsentForm'));
+const ConsentForm = loadable(() => import('./src/components/Cookies/ConsentForm/ConsentForm'), {
+  ssr: false,
+  fallback: null,
+});
 
 export const replaceHydrateFunction = () => {
   return (element, container) => {
@@ -15,9 +19,8 @@ export const replaceHydrateFunction = () => {
 
 export const wrapPageElement = ({ element }) => (
   <>
-    <Suspense fallback={null}>
-      <ConsentForm />
-    </Suspense>
+    <ConsentForm />
+
     {element}
   </>
 );

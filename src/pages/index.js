@@ -1,21 +1,51 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
+import loadable from '@loadable/component';
 import HeaderHome from '../components/Header/Headers/HeaderHome';
 import ScroolUpButton from '../components/Ui/ScroolUpButton/ScroolUpButton';
 import WhyChooseMe from '../components/Sections/HomePage/WhyChooseMe/WhyChooseMe';
 
-const MyServices = lazy(() => import('../components/Sections/HomePage/MyServiceComponents/MyServices/MyServices'));
-const AboutMe = lazy(() => import('../components/Sections/HomePage/AboutMe/AboutMe'));
-const MyStack = lazy(() => import('../components/Sections/HomePage/MyStack/MyStack'));
-const WebsiteFeatures = lazy(() => import('../components/Sections/HomePage/WebsiteFeatures/WebsiteFeatures'));
-const CallToActionSecond = lazy(() => import('../components/Sections/Shared/CallToAction/CallToActionSecond'));
-const WebSiteProcessSteps = lazy(() =>
-  import('../components/Sections/HomePage/WebSiteProcessSteps/WebSiteProcessSteps')
+const LoadingFallback = () => (
+  <div className="flex justify-center items-center py-8">
+    <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
+  </div>
 );
-const Portfolio = lazy(() => import('../components/Sections/Shared/Portfolio/Portfolio'));
-const Testiniomals = lazy(() => import('../components/Sections/HomePage/Testiniomals/Testiniomals'));
-const RescentArticles = lazy(() => import('../components/Sections/HomePage/RescentArticles/RescentArticles'));
-const Faq = lazy(() => import('../components/Sections/Shared/Faq/Faq'));
-const Footer = lazy(() => import('../components/Footer/Footer'));
+
+const MyServices = loadable(() => import('../components/Sections/HomePage/MyServiceComponents/MyServices/MyServices'), {
+  fallback: <LoadingFallback />,
+});
+const AboutMe = loadable(() => import('../components/Sections/HomePage/AboutMe/AboutMe'), {
+  fallback: <LoadingFallback />,
+});
+const MyStack = loadable(() => import('../components/Sections/HomePage/MyStack/MyStack'), {
+  fallback: <LoadingFallback />,
+});
+const WebsiteFeatures = loadable(() => import('../components/Sections/HomePage/WebsiteFeatures/WebsiteFeatures'), {
+  fallback: <LoadingFallback />,
+});
+const CallToActionSecond = loadable(() => import('../components/Sections/Shared/CallToAction/CallToActionSecond'), {
+  fallback: <LoadingFallback />,
+});
+const WebSiteProcessSteps = loadable(
+  () => import('../components/Sections/HomePage/WebSiteProcessSteps/WebSiteProcessSteps'),
+  {
+    fallback: <LoadingFallback />,
+  }
+);
+const Portfolio = loadable(() => import('../components/Sections/Shared/Portfolio/Portfolio'), {
+  fallback: <LoadingFallback />,
+});
+const Testiniomals = loadable(() => import('../components/Sections/HomePage/Testiniomals/Testiniomals'), {
+  fallback: <LoadingFallback />,
+});
+const RescentArticles = loadable(() => import('../components/Sections/HomePage/RescentArticles/RescentArticles'), {
+  fallback: <LoadingFallback />,
+});
+const Faq = loadable(() => import('../components/Sections/Shared/Faq/Faq'), {
+  fallback: <LoadingFallback />,
+});
+const Footer = loadable(() => import('../components/Footer/Footer'), {
+  fallback: <LoadingFallback />,
+});
 
 const IndexPage = () => {
   return (
@@ -23,116 +53,17 @@ const IndexPage = () => {
       <HeaderHome active="home" />
       <ScroolUpButton />
       <WhyChooseMe />
-
-      <Suspense
-        fallback={
-          <div className="flex justify-center items-center py-8">
-            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
-          </div>
-        }
-      >
-        <MyServices />
-      </Suspense>
-
-      <Suspense
-        fallback={
-          <div className="flex justify-center items-center py-8">
-            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
-          </div>
-        }
-      >
-        <AboutMe />
-      </Suspense>
-
-      <Suspense
-        fallback={
-          <div className="flex justify-center items-center py-8">
-            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
-          </div>
-        }
-      >
-        <MyStack />
-      </Suspense>
-
-      <Suspense
-        fallback={
-          <div className="flex justify-center items-center py-8">
-            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
-          </div>
-        }
-      >
-        <WebsiteFeatures />
-      </Suspense>
-
-      <Suspense
-        fallback={
-          <div className="flex justify-center items-center py-8">
-            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
-          </div>
-        }
-      >
-        <CallToActionSecond />
-      </Suspense>
-
-      <Suspense
-        fallback={
-          <div className="flex justify-center items-center py-8">
-            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
-          </div>
-        }
-      >
-        <WebSiteProcessSteps />
-      </Suspense>
-
-      <Suspense
-        fallback={
-          <div className="flex justify-center items-center py-8">
-            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
-          </div>
-        }
-      >
-        <Portfolio />
-      </Suspense>
-
-      <Suspense
-        fallback={
-          <div className="flex justify-center items-center py-8">
-            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
-          </div>
-        }
-      >
-        <Testiniomals />
-      </Suspense>
-
-      <Suspense
-        fallback={
-          <div className="flex justify-center items-center py-8">
-            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
-          </div>
-        }
-      >
-        <RescentArticles />
-      </Suspense>
-
-      <Suspense
-        fallback={
-          <div className="flex justify-center items-center py-8">
-            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
-          </div>
-        }
-      >
-        <Faq />
-      </Suspense>
-
-      <Suspense
-        fallback={
-          <div className="flex justify-center items-center py-8">
-            <img src="/svg/load.svg" alt="Loading..." className="w-20 h-20" />
-          </div>
-        }
-      >
-        <Footer />
-      </Suspense>
+      <MyServices />
+      <AboutMe />
+      <MyStack />
+      <WebsiteFeatures />
+      <CallToActionSecond />
+      <WebSiteProcessSteps />
+      <Portfolio />
+      <Testiniomals />
+      <RescentArticles />
+      <Faq />
+      <Footer />
     </>
   );
 };

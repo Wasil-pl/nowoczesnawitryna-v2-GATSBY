@@ -10,6 +10,10 @@
     z-index: 0;
   }
 
+  @media (max-width: 1920px) {
+    background-image: url('/images/hero_2_1600px.webp');
+  }
+
   /* zmiana tła na mobile */
   @media (max-width: 1000px) {
     background-image: url('/images/hero_2_mobile.webp');

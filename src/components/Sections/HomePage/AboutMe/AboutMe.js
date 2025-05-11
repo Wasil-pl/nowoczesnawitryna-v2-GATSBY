@@ -32,7 +32,7 @@ const AboutMe = () => {
             data-sal-duration="1000"
             className="w-full lg:w-1/2 flex flex-col lg:pl-[40px]"
           >
-            <h3 className="text-[2.5rem] font-bold  mb-[20px] text-primary">Cześć</h3>
+            <h3 className="text-[2.5rem] w-fit font-bold  mb-[20px] text-primary highlighted-text">Cześć</h3>
             <p className="text-text-dark mb-[20px]">
               Cześć! Nazywam się Dariusz Wasilewski i jestem pasjonatem{' '}
               <em>tworzenia stron internetowych z Jastrzębia-Zdroju.</em> Moja fascynacja technologiami internetowymi

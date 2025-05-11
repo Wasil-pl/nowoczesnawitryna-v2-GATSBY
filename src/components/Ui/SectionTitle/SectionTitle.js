@@ -11,8 +11,8 @@ const SectionTitle = ({ title, coloredText, subtitle, backgroundText, ariaLabel,
       className={`separator sections_title`}
     >
       <h2 aria-label={ariaLabel} className={variant}>
-        {title}
-        {coloredText && <span className="color_primary">{coloredText}</span>}
+        {title} <br />
+        {coloredText && <span className="color_primary highlighted-text">{coloredText}</span>}
       </h2>
       {subtitle && <p className={variant}>{subtitle}</p>}
       {backgroundText && (

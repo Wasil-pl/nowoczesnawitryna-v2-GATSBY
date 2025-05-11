@@ -95,6 +95,27 @@ em {
   text-decoration: none;
 }
 
+.highlighted-text {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  z-index: 1;
+}
+
+.highlighted-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -15%;
+  width: 140%;
+  height: 100%;
+  background-image: url('/svg/TextBackground.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  border-radius: 100px;
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 15px;
@@ -105,6 +126,11 @@ em {
 
     input {
       font-size: 16px !important;
+    }
+
+    .highlighted-text::before {
+      left: -10%;
+      width: 130%;
     }
   }
 }

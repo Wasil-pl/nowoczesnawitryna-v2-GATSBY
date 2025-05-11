@@ -1,4 +1,5 @@
-import React, { Suspense, useEffect, useState } from 'react';
+import React from 'react';
+import loadable from '@loadable/component';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import CustomButton from '../../../Ui/CustomButton/CustomButton';
 import { QuestionMarkCircleIcon } from '../../../Icons/Icons';
@@ -8,6 +9,11 @@ import CallToAction from '../../Shared/CallToAction/CallToAction';
 import ShapeDividersBottom from '../../../Ui/ShapeDividers/ShapeDividersBottom';
 import ShapeDividersTop from '../../../Ui/ShapeDividers/ShapeDividersTop';
 import ResponsiveSwitch from '../../../Functions/ResponsiveSwitch';
+
+const ParticlesBg = loadable(() => import('../../../Ui/ParticlesBackground/ParticlesBackground'), {
+  ssr: false,
+  fallback: null,
+});
 
 const LPMyServices = ({
   title_HTML,
@@ -25,30 +31,11 @@ const LPMyServices = ({
   sectionTitle,
   sectionTitleColored,
 }) => {
-  const [ParticlesBg, setParticlesBg] = useState(null); // ← PRZENIESIONE WYŻEJ
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const loader = () =>
-        import('../../../Ui/ParticlesBackground/ParticlesBackground').then((mod) => setParticlesBg(() => mod.default));
-
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(loader);
-      } else {
-        setTimeout(loader, 1000);
-      }
-    }
-  }, []);
-
   return (
     <section className="myServices bg-background-dark mt-[150px] pt-[200px] pb-[10px] relative">
       <ShapeDividersTop />
 
-      {ParticlesBg && (
-        <Suspense fallback={null}>
-          <ParticlesBg id="tsparticles_lp_my_service" />
-        </Suspense>
-      )}
+      <ParticlesBg id="tsparticles_lp_my_service" />
 
       <div className="container mx-auto px-4">
         <SectionTitle

@@ -1,35 +1,22 @@
-import React, { Suspense, useState, useEffect } from 'react';
+import React from 'react';
+import loadable from '@loadable/component';
 import Menu from '../Menu/Menu';
 import { StaticImage } from 'gatsby-plugin-image';
 import ShapeDividersBottom from '../../Ui/ShapeDividers/ShapeDividersBottom';
 import './HeaderHome.scss';
 import ResponsiveSwitch from '../../Functions/ResponsiveSwitch';
 
+const ParticlesBg = loadable(() => import('../../Ui/ParticlesBackground/ParticlesBackground'), {
+  ssr: false,
+  fallback: null,
+});
+
 const HeaderHome = ({ active }) => {
-  const [ParticlesBg, setParticlesBg] = useState(null);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const loader = () =>
-        import('../../Ui/ParticlesBackground/ParticlesBackground').then((mod) => setParticlesBg(() => mod.default));
-
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(loader);
-      } else {
-        setTimeout(loader, 1000);
-      }
-    }
-  }, []);
-
   return (
     <header className="header relative bg-background-dark bg-[url('/images/hero_2.webp')] bg-cover bg-center bg-no-repeat h-[95vh]">
       <Menu active={active} />
 
-      {ParticlesBg && (
-        <Suspense fallback={null}>
-          <ParticlesBg id="tsparticles" />
-        </Suspense>
-      )}
+      <ParticlesBg id="tsparticles" />
 
       <ResponsiveSwitch
         desktop={
@@ -54,32 +41,20 @@ const HeaderHome = ({ active }) => {
         <ResponsiveSwitch
           desktop={
             <h1 className="title text-[4rem] lg:text-[3rem] md:text-[2.5rem] font-extrabold uppercase leading-[1.2] tracking-[0.3rem] whitespace-nowrap">
-              <span className="title_top" data-sal="slide-up" data-sal-delay="100" data-sal-duration="600">
-                Tworzenie Nowoczesnych
-              </span>
+              <span className="title_top">Tworzenie Nowoczesnych</span>
               <br />
-              <span className="title_bottom" data-sal="slide-up" data-sal-delay="300" data-sal-duration="600">
-                Stron Internetowych
-              </span>
+              <span className="title_bottom">Stron Internetowych</span>
             </h1>
           }
           mobile={
             <h1 className="title text-[4rem] lg:text-[3rem] md:text-[2.5rem] font-extrabold uppercase leading-[1.2] tracking-[0.3rem] whitespace-nowrap">
-              <span className="title_top" data-sal="slide-up" data-sal-delay="100" data-sal-duration="500">
-                Tworzenie
-              </span>
+              <span className="title_top">Tworzenie</span>
               <br />
-              <span className="title_bottom" data-sal="slide-up" data-sal-delay="200" data-sal-duration="500">
-                Nowoczesnych
-              </span>
+              <span className="title_bottom">Nowoczesnych</span>
               <br />
-              <span className="title_top" data-sal="slide-up" data-sal-delay="300" data-sal-duration="500">
-                Stron
-              </span>
+              <span className="title_top">Stron</span>
               <br />
-              <span className="title_bottom" data-sal="slide-up" data-sal-delay="400" data-sal-duration="500">
-                Internetowych
-              </span>
+              <span className="title_bottom">Internetowych</span>
             </h1>
           }
           fallback={null}

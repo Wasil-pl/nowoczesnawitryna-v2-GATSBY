@@ -5,10 +5,11 @@
   margin-bottom: 140px;
   position: relative;
   z-index: 1;
+  line-height: 3rem;
 
   .background_text {
     position: absolute;
-    top: -200px;
+    top: -60px;
     left: -100px;
     width: 100%;
     height: 100%;
@@ -60,16 +61,22 @@
     p {
       color: settings.$color-text-light;
     }
+
+    .highlighted-text::before {
+      content: none;
+    }
   }
 }
 
 @media (max-width: 1120px) {
   .sections_title {
+    position: relative;
     .background_text {
       font-size: 10rem;
-      top: -150px;
+      top: -50px;
       left: -75px;
       letter-spacing: normal;
+      position: absolute;
     }
   }
 }
@@ -78,7 +85,7 @@
   .sections_title {
     .background_text {
       font-size: 8rem;
-      top: -100px;
+      top: -40px;
       left: -50px;
     }
 
@@ -92,7 +99,7 @@
   .sections_title {
     .background_text {
       font-size: 6.5rem;
-      top: -100px;
+      top: -40px;
       left: -25px;
     }
   }

@@ -1,24 +1,15 @@
-import React, { Suspense, useEffect, useState } from 'react';
+import React from 'react';
+import loadable from '@loadable/component';
 import Menu from '../Menu/Menu';
 import ShapeDividersBottom from '../../Ui/ShapeDividers/ShapeDividersBottom';
 import './Headers.scss';
 
+const ParticlesBg = loadable(() => import('../../Ui/ParticlesBackground/ParticlesBackground'), {
+  ssr: false,
+  fallback: null,
+});
+
 const Headers = ({ title_top, title_middle, title_bottom, subtitle, active, variant }) => {
-  const [ParticlesBg, setParticlesBg] = useState(null);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const loader = () =>
-        import('../../Ui/ParticlesBackground/ParticlesBackground').then((mod) => setParticlesBg(() => mod.default));
-
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(loader);
-      } else {
-        setTimeout(loader, 1000);
-      }
-    }
-  }, []);
-
   const baseHeight = variant === 'landing_page' ? 'h-[90vh]' : 'h-[700px]';
 
   return (
@@ -30,11 +21,8 @@ const Headers = ({ title_top, title_middle, title_bottom, subtitle, active, vari
     >
       <Menu active={active} />
 
-      {ParticlesBg && (
-        <Suspense fallback={null}>
-          <ParticlesBg id="tsparticles_other_heroes" />
-        </Suspense>
-      )}
+      <ParticlesBg id="tsparticles_other_heroes" />
+
       <div
         className="separator absolute top-1/2 left-1/2 
              -translate-x-1/2 -translate-y-[55%] z-10 
@@ -44,17 +32,11 @@ const Headers = ({ title_top, title_middle, title_bottom, subtitle, active, vari
           className="title text-[2rem] md:text-[2.5rem] lg:text-[3rem]
                font-extrabold uppercase leading-[1.2] tracking-[0.3rem]"
         >
-          <span className="title_top" data-sal="slide-up" data-sal-delay="100" data-sal-duration="600">
-            {title_top}
-          </span>
+          <span className="title_top">{title_top}</span>
           <br />
-          <span className="title_middle" data-sal="slide-up" data-sal-delay="200" data-sal-duration="600">
-            {title_middle}
-          </span>
+          <span className="title_middle">{title_middle}</span>
           <br />
-          <span className="title_bottom" data-sal="slide-up" data-sal-delay="300" data-sal-duration="600">
-            {title_bottom}
-          </span>
+          <span className="title_bottom">{title_bottom}</span>
         </h1>
 
         <h2
