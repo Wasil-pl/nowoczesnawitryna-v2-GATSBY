@@ -1,0 +1,21 @@
+.cookies_banner_buttons {
+  margin-left: 20px !important;
+}
+
+@media (max-width: 1200px) {
+  .cookies_banner_buttons {
+    flex-direction: column;
+
+    .cookies_banner_button {
+      margin: 0 0 10px 0 !important;
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  .cookies_banner_buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

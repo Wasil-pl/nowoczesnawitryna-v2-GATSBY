@@ -58,6 +58,10 @@ const ConsentForm = () => {
         expires: new Date(new Date().setFullYear(new Date().getFullYear() + 1)),
       });
       gtag('consent', 'update', consent);
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'consent_update' });
+
       setShowModal(false);
       setDecisionMade(true);
     },
@@ -69,7 +73,7 @@ const ConsentForm = () => {
     return (
       <FloatingBanner
         header="Cenimy prywatność użytkowników"
-        message="Używamy plików cookie, aby poprawić jakość przeglądania..."
+        message="Używamy plików cookie, aby poprawić jakość przeglądania i dostosować treści do Twoich potrzeb. Możesz dostosować swoje preferencje lub zaakceptować wszystkie ciasteczka."
         acceptText="Akceptuj wszystkie"
         denyText="Odrzuć wszystkie"
         customizeText="Dostosuj preferencje"
