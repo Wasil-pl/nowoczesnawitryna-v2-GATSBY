@@ -15,7 +15,7 @@ export default function HeaderMotion() {
   const TOTAL_DELAY = (LINES.length - 1) * STAGGER + DURATION;
 
   return (
-    <div className="content absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-full max-w-[1200px] grid grid-cols-1 lg:grid-cols-[1fr_300px] items-end gap-8 px-4 text-center lg:text-left">
+    <div className="content ml-4 absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-full max-w-[1200px] grid grid-cols-1 lg:grid-cols-[1fr_300px] items-end gap-8 px-4 text-center lg:text-left">
       {/* H1: każdy wiersz osobno z dołu */}
       <h1 className="title text-[7rem] lg:text-[6rem] md:text-[4rem] font-extrabold leading-[1.2] tracking-[0.3rem] text-left">
         {LINES.map((line, i) => (

@@ -1,0 +1,24 @@
+@use '../../../styles/settings.scss' as settings;
+
+.dropdown {
+  .dropdown_menu {
+    display: none;
+    background-color: rgba(settings.$color-background-dark, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  &:hover .dropdown_menu {
+    display: flex;
+  }
+
+  &:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 200%;
+    height: 50px;
+    background: transparent;
+  }
+}
