@@ -24,9 +24,19 @@ const ServiceHighlights = ({
               <p>{descryption_first_column}</p>
             )}
             {!variant && <CustomButton variant="dark" text="Napisz do mnie..." link="/kontakt/" />}
-            {variant && !isHtml && <CustomButton variant="dark" text="Napisz do mnie..." link="/kontakt/#kontakt" />}
+            {variant && !isHtml && (
+              <a href="/kontakt/#kontakt">
+                <span className="text-[1rem] font-bold uppercase text-text-dark cursor-pointer ">
+                  Napisz do mnie...
+                </span>
+              </a>
+            )}
             {isHtml && variant && (
-              <CustomButton variant="dark" text="Przejdź do formularza..." link="/formularz-szybkiej-wyceny/#form" />
+              <a href="/formularz-szybkiej-wyceny/#form">
+                <span className="text-[1rem] font-bold uppercase text-text-dark cursor-pointer ">
+                  Przejdź do formularza...
+                </span>
+              </a>
             )}
           </div>
 

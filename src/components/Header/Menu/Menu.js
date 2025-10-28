@@ -21,14 +21,14 @@ const Menu = ({ active }) => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <ResponsiveSwitch
           mobile={
-            <a href="/">
+            <span>
               {scrollY > 50 && <StaticImage src="../../../images/logo.png" alt="logo" width={60} quality={100} />}
-            </a>
+            </span>
           }
           desktop={
-            <a href="/">
+            <span>
               {scrollY > 50 && <StaticImage src="../../../images/logo.png" alt="logo" width={100} quality={100} />}
-            </a>
+            </span>
           }
           fallback={null}
         />
@@ -37,16 +37,7 @@ const Menu = ({ active }) => {
           <ResponsiveSwitch
             desktop={
               <div className="flex justify-end">
-                <CustomButton link="/formularz-szybkiej-wyceny/" text="Szybka Wycena" variant="small" />
-                <a
-                  href="https://www.nowoczesnawitryna.com"
-                  className="ml-2 text-text-light font-bold text-sm hover:text-primary"
-                >
-                  EN
-                </a>
-                <a href="https://www.nowoczesnawitryna.pl/" className="ml-2 text-primary font-bold text-sm">
-                  PL
-                </a>
+                <CustomButton link="/formularz-szybkiej-wyceny/#form" text="Szybka Wycena" variant="small" />
               </div>
             }
             mobile={null}

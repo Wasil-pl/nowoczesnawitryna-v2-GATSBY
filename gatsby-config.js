@@ -14,6 +14,12 @@ module.exports = {
     'gatsby-plugin-scroll-reveal',
     'gatsby-plugin-react-svg',
     {
+      resolve: 'gatsby-plugin-transition-link',
+      options: {
+        layout: require.resolve(`./src/components/Layout/Layout.js`),
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: 'src/images/logo-kolo-final.png',

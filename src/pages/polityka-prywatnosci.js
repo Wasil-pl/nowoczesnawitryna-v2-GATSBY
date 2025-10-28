@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Headers from '../components/Header/Headers/Headers';
-import Footer from '../components/Footer/Footer';
 import PrivacyPolicy from '../components/Sections/PrivacyPolicy/PrivacyPolicy';
 
 const PolitykaPrywatnosci = () => {
@@ -11,7 +10,6 @@ const PolitykaPrywatnosci = () => {
     <>
       <Headers title_top={title} subtitle={subtitle} />
       <PrivacyPolicy />
-      <Footer />
     </>
   );
 };

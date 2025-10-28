@@ -1,7 +1,6 @@
 import React from 'react';
 import loadable from '@loadable/component';
 import HeaderHome from '../components/Header/Headers/HeaderHome';
-import ScroolUpButton from '../components/Ui/ScroolUpButton/ScroolUpButton';
 import WhyChooseMe from '../components/Sections/HomePage/WhyChooseMe/WhyChooseMe';
 
 const LoadingFallback = () => (
@@ -43,15 +42,11 @@ const RescentArticles = loadable(() => import('../components/Sections/HomePage/R
 const Faq = loadable(() => import('../components/Sections/Shared/Faq/Faq'), {
   fallback: <LoadingFallback />,
 });
-const Footer = loadable(() => import('../components/Footer/Footer'), {
-  fallback: <LoadingFallback />,
-});
 
 const IndexPage = () => {
   return (
     <>
-      <HeaderHome active="home" />
-      <ScroolUpButton />
+      <HeaderHome />
       <WhyChooseMe />
       <MyServices />
       <AboutMe />
@@ -63,7 +58,6 @@ const IndexPage = () => {
       <Testiniomals />
       <RescentArticles />
       <Faq />
-      <Footer />
     </>
   );
 };

@@ -4,6 +4,7 @@ import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
 import CallToAction from '../CallToAction/CallToAction';
 import ShapeDividersTop from '../../../Ui/ShapeDividers/ShapeDividersTop';
 import ShapeDividersBottom from '../../../Ui/ShapeDividers/ShapeDividersBottom';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
   return (
@@ -90,12 +91,16 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <a
-                    href="/formularz-szybkiej-wyceny/#form"
+                  <AniLink
+                    paintDrip
+                    duration={1.2}
+                    hex="#191919"
+                    direction="left"
+                    to="/formularz-szybkiej-wyceny/#form"
                     className="text-center mt-auto bg-primary text-text-dark py-2 px-4 uppercase font-bold hover:text-primary "
                   >
                     Szybka Wycena Twojej Strony
-                  </a>
+                  </AniLink>
                 </div>
               </div>
             </div>
@@ -172,12 +177,16 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <a
-                    href="/formularz-szybkiej-wyceny/#form"
+                  <AniLink
+                    paintDrip
+                    duration={1.2}
+                    hex="#191919"
+                    direction="left"
+                    to="/formularz-szybkiej-wyceny/#form"
                     className="text-center mt-auto bg-primary text-text-dark py-2 px-4 uppercase font-bold hover:text-primary "
                   >
                     Szybka Wycena Twojej Strony
-                  </a>
+                  </AniLink>
                 </div>
               </div>
             </div>
@@ -255,12 +264,16 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <a
-                    href="/formularz-szybkiej-wyceny/#form"
+                  <AniLink
+                    paintDrip
+                    duration={1.2}
+                    hex="#191919"
+                    direction="left"
+                    to="/formularz-szybkiej-wyceny/#form"
                     className="text-center mt-auto bg-primary text-text-dark py-2 px-4 uppercase font-bold hover:text-primary "
                   >
                     Szybka Wycena Twojej Strony
-                  </a>
+                  </AniLink>
                 </div>
               </div>
             </div>
@@ -360,12 +373,16 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <a
-                    href="/formularz-szybkiej-wyceny/#form"
+                  <AniLink
+                    paintDrip
+                    duration={1.2}
+                    hex="#191919"
+                    direction="left"
+                    to="/formularz-szybkiej-wyceny/#form"
                     className="text-center mt-auto bg-primary text-text-dark py-2 px-4 uppercase font-bold hover:text-primary "
                   >
                     Szybka Wycena Twojej Strony
-                  </a>
+                  </AniLink>
                 </div>
               </div>
             </div>
@@ -463,12 +480,16 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <a
-                    href="/formularz-szybkiej-wyceny/#form"
+                  <AniLink
+                    paintDrip
+                    duration={1.2}
+                    hex="#191919"
+                    direction="left"
+                    to="/formularz-szybkiej-wyceny/#form"
                     className="text-center mt-auto bg-primary text-text-dark py-2 px-4 uppercase font-bold hover:text-primary "
                   >
                     Szybka Wycena Twojej Strony
-                  </a>
+                  </AniLink>
                 </div>
               </div>
             </div>
@@ -629,12 +650,16 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <a
-                    href="/formularz-szybkiej-wyceny/#form"
+                  <AniLink
+                    paintDrip
+                    duration={1.2}
+                    hex="#191919"
+                    direction="left"
+                    to="/formularz-szybkiej-wyceny/#form"
                     className="text-center mt-auto bg-primary text-text-dark py-2 px-4 uppercase font-bold hover:text-primary "
                   >
                     Szybka Wycena Twojej Strony
-                  </a>
+                  </AniLink>
                 </div>
               </div>
             </div>
@@ -710,12 +735,16 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                     </li>
                   </ul>
 
-                  <a
-                    href="/formularz-szybkiej-wyceny/#form"
+                  <AniLink
+                    paintDrip
+                    duration={1.2}
+                    hex="#191919"
+                    direction="left"
+                    to="/formularz-szybkiej-wyceny/#form"
                     className="text-center mt-auto bg-primary text-text-dark py-2 px-4 uppercase font-bold hover:text-primary "
                   >
                     Szybka Wycena Twojej Strony
-                  </a>
+                  </AniLink>
                 </div>
               </div>
             </div>

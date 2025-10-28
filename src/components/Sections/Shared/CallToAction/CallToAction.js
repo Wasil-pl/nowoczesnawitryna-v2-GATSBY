@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsArrowRight } from '../../../Icons/Icons';
 import './CallToAction.scss';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const CallToAction = ({ kontakt_2, kontakt_3, variant = '' }) => {
   return (
@@ -37,8 +38,12 @@ const CallToAction = ({ kontakt_2, kontakt_3, variant = '' }) => {
       )}
 
       <div className="right_side flex-[50%] pl-[20px] relative z-[2] transition-transform duration-300 hover:scale-110 flex justify-end">
-        <a
-          href={!kontakt_2 && !kontakt_3 ? '/formularz-szybkiej-wyceny/#form' : '/kontakt/#kontakt'}
+        <AniLink
+          paintDrip
+          duration={1.2} // czas całego przejścia
+          hex="#191919" // kolor „zalania” (może być też color="blue")
+          direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+          to={!kontakt_2 && !kontakt_3 ? '/formularz-szybkiej-wyceny/' : '/kontakt/'}
           className="no-underline flex flex-col items-end"
         >
           <BsArrowRight className="text-text-light w-[100px] h-auto mr-4 ml-auto" />
@@ -58,7 +63,7 @@ const CallToAction = ({ kontakt_2, kontakt_3, variant = '' }) => {
               Napisz, a odpowiem tak szybko jak to możliwe...
             </span>
           )}
-        </a>
+        </AniLink>
       </div>
     </div>
   );

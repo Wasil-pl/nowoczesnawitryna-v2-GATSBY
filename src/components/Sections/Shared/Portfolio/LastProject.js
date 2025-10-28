@@ -18,18 +18,18 @@ const LastProject = () => {
 
           <div className="portfolio_item relative">
             <StaticImage
-              src="../../../../images/suzie.png"
-              alt="www.suzie.pl - sklep internetowy"
+              src="../../../../images/j_system.png"
+              alt="j-system.pl - sklep internetowy"
               width={600}
               placeholder="blurred"
               layout="constrained"
             />
             <div className="overlay">
               <div>
-                <h3 className="text-[1.6rem] font-extrabold mb-4 text-primary">Suzie</h3>
+                <h3 className="text-[1.6rem] font-extrabold mb-4 text-primary">j-system</h3>
                 <p className="mb-4 text-text-light">Sklep internetowy</p>
                 <button className="no_button button uppercase text-text-light hover:text-primary">
-                  <a href="https://www.suzie.pl/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://j-system.pl/" target="_blank" rel="noopener noreferrer">
                     Zobacz
                   </a>
                 </button>

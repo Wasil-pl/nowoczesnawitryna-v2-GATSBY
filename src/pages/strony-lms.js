@@ -1,9 +1,6 @@
 import * as React from 'react';
 import ServiceHighlights from '../components/Sections/Shared/ServiceHighlights/ServiceHighlights';
 import Headers from '../components/Header/Headers/Headers';
-import ScroolUpButton from '../components/Ui/ScroolUpButton/ScroolUpButton';
-import Footer from '../components/Footer/Footer';
-import ScroolToPriceButton from '../components/Ui/ScroolToPriceButton/ScroolToPriceButton';
 import ServicesInfo from '../components/Sections/Shared/ServicesInfo/ServicesInfo';
 import Prices from '../components/Sections/Shared/Prices/Prices';
 import { strony_lms_txt } from '../consts/texts';
@@ -17,15 +14,7 @@ const StronyLMS = () => {
 
   return (
     <>
-      <Headers
-        title_top={title_top}
-        title_middle={title_middle}
-        title_bottom={title_bottom}
-        subtitle={subtitle}
-        active="lms"
-      />
-      <ScroolToPriceButton />
-      <ScroolUpButton />
+      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
       <ServiceHighlights
         title_first_column={strony_lms_txt.title_first_column}
         title_first_card={strony_lms_txt.title_first_card}
@@ -36,7 +25,6 @@ const StronyLMS = () => {
       />
       <ServicesInfo wordpress />
       <Prices lms />
-      <Footer />
     </>
   );
 };

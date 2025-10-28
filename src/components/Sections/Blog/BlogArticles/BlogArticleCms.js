@@ -1,6 +1,7 @@
 // BlogArticleCms.jsx
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const BlogArticleCms = () => {
   return (
@@ -26,8 +27,16 @@ const BlogArticleCms = () => {
               szablony, moduły i wtyczki, które można dostosować do własnych potrzeb i preferencji. Przykładami
               popularnych CMS są WordPress, Joomla, Drupal, Wix, Squarespace, Shopify czy Magento. Jeśli interesuje Cię
               budowa strony internetowej na WordPressie, sprawdź moją ofertę{' '}
-              <a href="/strony-wordpress/">stron opartych na WordPressie</a> – oferuję elastyczne i funkcjonalne
-              rozwiązania dostosowane do potrzeb różnych branż.
+              <AniLink
+                paintDrip
+                duration={1.2} // czas całego przejścia
+                hex="#191919" // kolor „zalania” (może być też color="blue")
+                direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                to="/strony-wordpress/"
+              >
+                stron opartych na WordPressie
+              </AniLink>{' '}
+              – oferuję elastyczne i funkcjonalne rozwiązania dostosowane do potrzeb różnych branż.
             </p>
           </div>
           <div className="image flex-[1] ml-0 mb-[40px] md:ml-[40px] md:mb-0">

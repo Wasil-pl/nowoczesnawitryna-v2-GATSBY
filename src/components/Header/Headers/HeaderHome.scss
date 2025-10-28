@@ -22,19 +22,40 @@
     }
   }
 
-  /* gradientowe napisy */
-  .title_top {
-    background: linear-gradient(90deg, settings.$color-text-primary, settings.$color-text-dark-light);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  .content h1 .line {
+    margin-top: 10px;
+    height: 8px;
+    border-radius: 25px;
+    background: linear-gradient(104.74deg, settings.$color-text-primary, darken(settings.$color-text-primary, 15%));
+    -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.35);
+    max-width: 750px;
+    /* Delikatny cień „na zewnątrz” kształtu liter */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
   }
 
-  .title_bottom {
-    background: linear-gradient(90deg, settings.$color-text-dark-light, settings.$color-text-primary);
+  /* gradientowe napisy */
+  .title {
+    background: linear-gradient(104.74deg, settings.$color-text-primary, darken(settings.$color-text-primary, 15%));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    /* Cienki obrys, nie ściemnia wypełnienia */
+    -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.35);
+
+    /* Delikatny cień „na zewnątrz” kształtu liter */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .title-light {
+    background: linear-gradient(104.74deg, settings.$color-text-light, darken(settings.$color-text-light, 15%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* Cienki obrys, nie ściemnia wypełnienia */
+    -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.35);
+
+    /* Delikatny cień „na zewnątrz” kształtu liter */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
   }
 }
 

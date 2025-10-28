@@ -8,8 +8,6 @@ import {
   portfolioTitle,
 } from '../../consts/landingPage';
 import Headers from '../../components/Header/Headers/Headers';
-import ScroolUpButton from '../../components/Ui/ScroolUpButton/ScroolUpButton';
-import Footer from '../../components/Footer/Footer';
 import LPSiteInfo from '../../components/Sections/LandingPages/LPSiteInfo/LPSiteInfo';
 import LPMyServices from '../../components/Sections/LandingPages/LPMyServices/LPMyServices';
 import LPAboutMe from '../../components/Sections/LandingPages/LPAboutMe/LPAboutMe';
@@ -106,9 +104,6 @@ const krakow = () => {
         coloredText={portfolioTitle.krakow.coloredText}
         subtitle={portfolioTitle.krakow.subtitle}
       />
-
-      <ScroolUpButton />
-      <Footer />
     </>
   );
 };

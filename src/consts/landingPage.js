@@ -56,34 +56,6 @@ export const wroclaw_info_txt = {
     'Wspieram firmy z Wrocławia – od małych działalności po duże przedsiębiorstwa – w budowaniu ich obecności online. Moje strony internetowe i sklepy są projektowane z myślą o lokalnym rynku, aby pomóc Twojej firmie dotrzeć do klientów i wyróżnić się na tle konkurencji. Skontaktuj się, aby wspólnie stworzyć rozwiązanie, które sprosta wszystkim Twoim oczekiwaniom.',
 };
 
-export const poznan_info_txt = {
-  title_first: 'Dlaczego Warto Wybrać Moje Usługi Tworzenia Stron Internetowych w Poznaniu?',
-  description_first:
-    'Tworzę nowoczesne i funkcjonalne strony internetowe dla firm z Poznania, które pomagają budować profesjonalny wizerunek w sieci. Moje projekty są dopasowane do specyfiki lokalnego rynku, co pozwala skutecznie docierać do klientów i rozwijać biznes online. Dzięki optymalizacji SEO strony, które projektuję, zyskują lepszą widoczność w wyszukiwarkach, zwiększając szanse na pozyskanie nowych klientów.',
-  title_second: 'Spersonalizowane podejście do firm z Poznania',
-  description_second:
-    'Każdy projekt zaczynam od analizy potrzeb Twojej firmy, co pozwala mi stworzyć stronę internetową idealnie dopasowaną do Twoich celów biznesowych. Moje usługi charakteryzują się elastycznością, terminowością i pełnym zaangażowaniem, dzięki czemu mogę dostarczyć rozwiązania, które wyróżnią Twoją firmę w Poznaniu.',
-  title_third: 'Więcej niż tylko strony internetowe',
-  description_third:
-    'Oprócz tworzenia stron internetowych oferuję również sklepy online, aplikacje webowe i inne zaawansowane rozwiązania technologiczne, które wspierają rozwój firm w Poznaniu. Moje doświadczenie w programowaniu pozwala mi realizować projekty, które są nie tylko estetyczne, ale także wydajne i łatwe w zarządzaniu.',
-  banner_description:
-    'Wspieram firmy z Poznania – od małych start-upów po duże przedsiębiorstwa – w budowaniu ich obecności online. Moje strony internetowe i sklepy są projektowane z myślą o specyfice lokalnego rynku, co pozwala lepiej odpowiadać na potrzeby Twoich klientów. Skontaktuj się ze mną, aby wspólnie stworzyć rozwiązanie, które pomoże Twojej firmie rozwijać się w internecie.',
-};
-
-export const gdansk_info_txt = {
-  title_first: 'Dlaczego Warto Wybrać Moje Usługi Tworzenia Stron Internetowych w Gdańsku?',
-  description_first:
-    'Tworzę profesjonalne strony internetowe dla firm z Gdańska, które łączą nowoczesny design z zaawansowaną funkcjonalnością. Moje projekty są dostosowane do potrzeb lokalnego rynku, co pozwala skutecznie budować rozpoznawalność Twojej marki w sieci. Dzięki optymalizacji SEO strony, które tworzę, wspierają rozwój Twojej firmy, zwiększając widoczność i przyciągając nowych klientów.',
-  title_second: 'Indywidualne podejście do firm z Gdańska',
-  description_second:
-    'Każdy projekt jest dla mnie wyjątkowy. Współpracując z firmami z Gdańska, dokładnie analizuję ich potrzeby i oczekiwania, aby stworzyć stronę internetową, która idealnie odzwierciedla ich charakter i wartości. Zapewniam elastyczność, terminowość i pełne zaangażowanie, dzięki czemu moja oferta wyróżnia się na tle konkurencji.',
-  title_third: 'Kompleksowe rozwiązania dopasowane do lokalnego rynku',
-  description_third:
-    'Oprócz projektowania stron internetowych oferuję również sklepy internetowe, aplikacje webowe i inne zaawansowane narzędzia, które wspierają działalność firm w Gdańsku. Moje doświadczenie w tworzeniu rozwiązań technologicznych pozwala mi dostarczać projekty, które są nie tylko estetyczne, ale także funkcjonalne i łatwe w obsłudze.',
-  banner_description:
-    'Pomagam firmom z Gdańska – od małych przedsiębiorstw po duże organizacje – rozwijać ich obecność online. Moje strony internetowe i sklepy są projektowane z myślą o specyfice lokalnego rynku, aby skutecznie odpowiadać na potrzeby klientów. Skontaktuj się ze mną, a wspólnie stworzymy rozwiązanie, które wzmocni wizerunek Twojej firmy w sieci.',
-};
-
 // ------------------------------ Section: My services ------------------------------
 
 export const katowice_myService = {
@@ -251,90 +223,6 @@ export const wroclaw_myService = {
   ],
 };
 
-export const poznan_myService = {
-  sectionTitle: 'Usługi,',
-  sectionTitleColored: ' które oferuję w Poznaniu',
-
-  title_html: 'Strony internetowe HTML w Poznaniu',
-  description_html: [
-    'Projektuję strony internetowe HTML, które są w pełni dopasowane do potrzeb lokalnych firm z Poznania. Moje projekty wyróżniają się wysoką jakością wykonania, estetycznym designem oraz zaawansowaną funkcjonalnością.',
-    'Strony HTML zapewniają szybkie działanie, bezpieczeństwo oraz pełną kontrolę nad każdym elementem. Dzięki nowoczesnym technologiom Twoja firma w Poznaniu zyska profesjonalny wizerunek online, który przyciągnie nowych klientów.',
-  ],
-
-  title_web_apps: 'Aplikacje webowe w Poznaniu',
-  description_web_apps: [
-    'Tworzę aplikacje webowe, które wspierają rozwój firm z Poznania, oferując zaawansowane funkcje i łatwość obsługi. Moje aplikacje pomagają zautomatyzować procesy biznesowe i zwiększyć efektywność działania.',
-    'Każdy projekt jest dostosowany do specyfiki Twojej branży, co pozwala stworzyć narzędzie, które odpowiada na Twoje potrzeby i oczekiwania. Aplikacje webowe, które projektuję, są również zoptymalizowane pod kątem SEO, co zwiększa ich widoczność w internecie.',
-  ],
-
-  title_wordpress: 'Strony WordPress w Poznaniu',
-  description_wordpress: [
-    'Oferuję profesjonalne strony internetowe oparte na WordPress, które umożliwiają łatwe zarządzanie treścią i są idealnym rozwiązaniem dla firm z Poznania. Moje projekty pozwalają na pełną elastyczność i możliwość rozbudowy strony w przyszłości.',
-    'Strony WordPress, które tworzę, są zoptymalizowane pod kątem SEO, co pomaga Twojej firmie osiągać lepsze wyniki w wyszukiwarkach. Dzięki responsywnemu designowi strona działa perfekcyjnie na każdym urządzeniu, zapewniając użytkownikom wygodę korzystania.',
-  ],
-
-  title_ecommerce: 'Sklepy internetowe w Poznaniu',
-  description_ecommerce: [
-    'Projektuję nowoczesne sklepy internetowe dla firm z Poznania, które pozwalają na łatwą sprzedaż online i zwiększanie zasięgu biznesu. Sklepy opierają się na WooCommerce, oferując intuicyjny interfejs oraz szerokie możliwości integracji.',
-    'Każdy sklep internetowy jest w pełni dostosowany do specyfiki Twojej firmy, zawiera niezbędne elementy, takie jak regulamin, politykę prywatności oraz narzędzia analityczne. Dbam o atrakcyjny wygląd i funkcjonalność, które przyciągają klientów.',
-    'Moje sklepy internetowe pomagają zwiększać sprzedaż i budować zaufanie klientów. Dzięki zoptymalizowanej strukturze i wsparciu technicznemu Twój biznes w Poznaniu zyska solidne fundamenty w świecie e-commerce.',
-  ],
-
-  title_lms: 'Platformy LMS w Poznaniu',
-  description_lms: [
-    'Tworzę zaawansowane platformy LMS (Learning Management System) dla firm i instytucji edukacyjnych z Poznania. Moje rozwiązania ułatwiają zarządzanie kursami, materiałami szkoleniowymi i użytkownikami.',
-    'Platformy LMS, które projektuję, oferują szerokie możliwości, takie jak quizy, certyfikaty, śledzenie postępów uczestników oraz integrację z narzędziami płatności. Dzięki temu Twoja firma w Poznaniu może skutecznie prowadzić szkolenia online i rozwijać swoje możliwości edukacyjne.',
-  ],
-
-  title_logo: 'Projektowanie logo w Poznaniu',
-  description_logo: [
-    'Tworzę unikalne i profesjonalne logo dla firm z Poznania, które stanowi fundament ich identyfikacji wizualnej. Moje projekty są dopasowane do charakteru Twojej marki, pomagając budować jej rozpoznawalność i profesjonalny wizerunek.',
-    'Każde logo dostarczam w różnych formatach (PNG, SVG, PDF), co pozwala na wszechstronne wykorzystanie – zarówno w materiałach drukowanych, jak i cyfrowych. Dbam o kreatywność i funkcjonalność, aby Twoje logo przyciągało uwagę i wyróżniało Twoją firmę na tle konkurencji.',
-  ],
-};
-
-export const gdansk_myService = {
-  sectionTitle: 'Usługi,',
-  sectionTitleColored: ' które oferuję w Gdańsku',
-
-  title_html: 'Strony internetowe HTML w Gdańsku',
-  description_html: [
-    'Tworzę nowoczesne i funkcjonalne strony internetowe HTML dla firm z Gdańska, które pomagają budować profesjonalny wizerunek online. Każdy projekt jest unikalny i dostosowany do specyficznych potrzeb Twojej firmy.',
-    'Dzięki nowoczesnym technologiom strony HTML zapewniają wysoką wydajność, bezpieczeństwo oraz szybkie działanie. To idealne rozwiązanie dla firm w Gdańsku, które chcą wyróżnić się na tle konkurencji i przyciągnąć nowych klientów.',
-  ],
-
-  title_web_apps: 'Aplikacje webowe w Gdańsku',
-  description_web_apps: [
-    'Projektuję aplikacje webowe, które wspierają rozwój firm z Gdańska, oferując zaawansowane funkcjonalności oraz prostą obsługę. Moje aplikacje są idealne dla firm, które szukają nowoczesnych narzędzi do zarządzania i automatyzacji procesów.',
-    'Każda aplikacja webowa jest dostosowana do indywidualnych potrzeb klienta, zapewniając pełną zgodność z oczekiwaniami. Dzięki optymalizacji SEO aplikacje webowe pomagają również zwiększyć widoczność Twojej firmy w internecie.',
-  ],
-
-  title_wordpress: 'Strony WordPress w Gdańsku',
-  description_wordpress: [
-    'Oferuję tworzenie stron WordPress dla firm z Gdańska, które są łatwe w zarządzaniu i elastyczne w rozbudowie. Moje projekty pozwalają na pełną kontrolę nad treścią strony, bez potrzeby znajomości kodowania.',
-    'Strony WordPress, które tworzę, są zoptymalizowane pod kątem wyszukiwarek internetowych, co zwiększa widoczność Twojej firmy w Gdańsku. Dzięki responsywnemu designowi strony działają perfekcyjnie na każdym urządzeniu, co poprawia doświadczenia użytkowników.',
-  ],
-
-  title_ecommerce: 'Sklepy internetowe w Gdańsku',
-  description_ecommerce: [
-    'Tworzę funkcjonalne sklepy internetowe dla firm z Gdańska, które wspierają rozwój sprzedaży online. Moje sklepy oparte są na WooCommerce, co pozwala na pełną personalizację i intuicyjną obsługę.',
-    'Każdy sklep internetowy jest w pełni dostosowany do potrzeb Twojego biznesu, oferując atrakcyjny design i zaawansowane funkcje, takie jak integracje z systemami płatności czy narzędziami analitycznymi.',
-    'Dostarczam gotowe rozwiązania, które obejmują regulaminy, polityki prywatności oraz inne elementy zgodne z obowiązującym prawem. Dzięki temu Twoja firma w Gdańsku może prowadzić sprzedaż online w sposób profesjonalny i zgodny z przepisami.',
-  ],
-
-  title_lms: 'Platformy LMS w Gdańsku',
-  description_lms: [
-    'Projektuję platformy LMS (Learning Management System) dla firm i instytucji edukacyjnych z Gdańska, które umożliwiają efektywne zarządzanie kursami i materiałami edukacyjnymi. Moje rozwiązania są proste w obsłudze i w pełni dostosowane do potrzeb klientów.',
-    'Platformy LMS, które tworzę, oferują funkcje takie jak quizy, certyfikaty, śledzenie postępów uczestników oraz integrację z narzędziami płatności. To rozwiązanie idealne dla firm z Gdańska, które chcą rozwijać swoje możliwości edukacyjne online.',
-  ],
-
-  title_logo: 'Projektowanie logo w Gdańsku',
-  description_logo: [
-    'Tworzę unikalne logo dla firm z Gdańska, które podkreśla charakter marki i buduje jej rozpoznawalność. Każdy projekt jest tworzony z dbałością o detale, aby oddać unikalny charakter Twojej firmy.',
-    'Każde logo dostarczam w różnych formatach (PNG, SVG, PDF), co pozwala na jego szerokie zastosowanie – zarówno w materiałach drukowanych, jak i w mediach cyfrowych. Projektuję logo, które przyciąga uwagę i buduje profesjonalny wizerunek Twojej firmy w Gdańsku.',
-  ],
-};
-
 // ------------------------------ Section: About me ------------------------------
 
 export const about_me_katowice = {
@@ -378,25 +266,6 @@ export const about_me_wroclaw = {
     wyróżnić się na tle konkurencji. Dbam o to, aby moje realizacje były responsywne, intuicyjne w obsłudze i w pełni 
     zoptymalizowane pod kątem SEO. Dzięki indywidualnemu podejściu do każdego projektu wspieram firmy w rozwijaniu ich 
     obecności online i budowaniu profesjonalnego wizerunku w internecie.`,
-};
-
-export const about_me_poznan = {
-  description: `
-    Cześć! Nazywam się Dariusz Wasilewski i jestem specjalistą w tworzeniu stron internetowych dla firm z Poznania. 
-    Moja pasja do technologii internetowych i wieloletnie doświadczenie pozwalają mi realizować projekty, które są 
-    zarówno estetyczne, jak i funkcjonalne. Każda strona internetowa, którą tworzę, jest w pełni dopasowana do 
-    specyficznych potrzeb lokalnych firm w Poznaniu, wspierając ich w budowaniu profesjonalnego wizerunku online. 
-    Dbam o to, aby moje realizacje były responsywne, intuicyjne w obsłudze i zoptymalizowane pod kątem SEO, co pozwala 
-    zwiększyć widoczność w internecie i przyciągnąć nowych klientów.`,
-};
-
-export const about_me_gdansk = {
-  description: `
-    Cześć! Nazywam się Dariusz Wasilewski i z pasją tworzę strony internetowe dla firm z Gdańska. Dzięki mojemu 
-    doświadczeniu w projektowaniu nowoczesnych stron internetowych pomagam lokalnym firmom budować profesjonalną 
-    obecność online. Każda strona, którą realizuję, jest dostosowana do specyfiki gdańskiego rynku, co pozwala skutecznie 
-    wyróżnić Twoją firmę na tle konkurencji. Dbam o to, aby moje projekty były responsywne, przyjazne użytkownikom i 
-    zoptymalizowane pod kątem SEO, wspierając rozwój Twojej działalności w internecie.`,
 };
 
 // ------------------------------ Section: website function ------------------------------
@@ -597,104 +466,6 @@ export const wroclaw_websiteFunctions = {
   ],
 };
 
-export const poznan_websiteFunctions = {
-  sectionTitle: 'Dedykowane strony internetowe dla ',
-  sectionTitleColored: 'Twojej firmy w Poznaniu',
-  sectionSubtitle: 'Innowacje i funkcjonalność dla poznańskich przedsiębiorców',
-
-  items: [
-    {
-      title: 'Konkurencyjne ceny dla firm z Poznania',
-      description:
-        'Oferuję strony internetowe w atrakcyjnych cenach, które spełniają potrzeby lokalnych firm w Poznaniu. Moje projekty łączą wysoką jakość z przystępną ceną, wspierając rozwój Twojego biznesu.',
-    },
-    {
-      title: 'SEO dopasowane do poznańskiego rynku',
-      description:
-        'Projektuję strony zoptymalizowane pod kątem SEO, które pomagają firmom z Poznania osiągać lepsze pozycje w wyszukiwarkach. Stawiam na lokalne frazy kluczowe, by skutecznie przyciągnąć nowych klientów.',
-    },
-    {
-      title: 'Bezpieczeństwo danych i zgodność z RODO',
-      description:
-        'Zadbam o zgodność Twojej strony z wymogami RODO oraz najwyższe standardy bezpieczeństwa, zapewniając ochronę danych użytkowników i budując zaufanie klientów.',
-    },
-    {
-      title: 'Profesjonalne wsparcie techniczne',
-      description:
-        'Zapewniam wsparcie techniczne na każdym etapie realizacji projektu. Niezależnie od tego, czy potrzebujesz aktualizacji, czy rozbudowy strony, możesz na mnie liczyć.',
-    },
-    {
-      title: 'Szybkość i wydajność stron',
-      description:
-        'Moje strony są zoptymalizowane pod kątem wydajności, co gwarantuje błyskawiczne ładowanie i pozytywne doświadczenia użytkowników. Dzięki temu Twoja firma w Poznaniu zyska lepsze wyniki SEO.',
-    },
-    {
-      title: 'Responsywność na wszystkich urządzeniach',
-      description:
-        'Tworzę responsywne strony, które doskonale działają na każdym urządzeniu – od komputerów po smartfony. Dzięki temu Twoja witryna będzie zawsze wyglądać profesjonalnie.',
-    },
-    {
-      title: 'WordPress dla poznańskich przedsiębiorstw',
-      description:
-        'Specjalizuję się w tworzeniu stron na WordPressie, które są łatwe w obsłudze i w pełni dostosowane do potrzeb firm w Poznaniu. To elastyczne rozwiązanie dla każdego biznesu.',
-    },
-    {
-      title: 'Sklepy internetowe wspierające sprzedaż w Poznaniu',
-      description:
-        'Projektuję nowoczesne sklepy internetowe na WooCommerce, które wspierają sprzedaż lokalnych firm w Poznaniu. Każdy projekt łączy funkcjonalność z estetyką, zapewniając sukces w e-commerce.',
-    },
-  ],
-};
-
-export const gdansk_websiteFunctions = {
-  sectionTitle: 'Strony internetowe idealnie dopasowane do ',
-  sectionTitleColored: 'Twojego biznesu w Gdańsku',
-  sectionSubtitle: 'Rozwiązania wspierające rozwój firm na Pomorzu',
-
-  items: [
-    {
-      title: 'Atrakcyjne ceny dla gdańskich firm',
-      description:
-        'Tworzę strony internetowe w przystępnych cenach, dostosowanych do potrzeb lokalnych firm z Gdańska. Moje projekty łączą wysoką jakość wykonania z konkurencyjnymi kosztami.',
-    },
-    {
-      title: 'SEO zoptymalizowane dla firm w Gdańsku',
-      description:
-        'Projektuję strony zoptymalizowane pod kątem SEO, aby Twoja firma w Gdańsku mogła zyskać wyższą widoczność w wyszukiwarkach. Dzięki lokalnym frazom kluczowym pomagam skutecznie przyciągnąć nowych klientów.',
-    },
-    {
-      title: 'Zgodność z RODO i bezpieczeństwo',
-      description:
-        'Każda strona, którą projektuję, jest w pełni zgodna z wymogami RODO. Dbam o bezpieczeństwo danych użytkowników i buduję zaufanie klientów do Twojej witryny.',
-    },
-    {
-      title: 'Wsparcie techniczne na każdym etapie',
-      description:
-        'Zapewniam pełne wsparcie techniczne – od projektu i wdrożenia po bieżące aktualizacje. Twoja strona zawsze będzie działała sprawnie i niezawodnie.',
-    },
-    {
-      title: 'Optymalizacja wydajności stron',
-      description:
-        'Moje strony osiągają wysokie wyniki w narzędziach takich jak PageSpeed Insights. Dzięki temu Twoja witryna działa szybko i oferuje użytkownikom doskonałe doświadczenia.',
-    },
-    {
-      title: 'Responsywne strony internetowe',
-      description:
-        'Projektuję strony, które doskonale prezentują się na każdym urządzeniu – od komputerów po smartfony. W Gdańsku Twoja firma zyska profesjonalny wizerunek online.',
-    },
-    {
-      title: 'WordPress dla gdańskich firm',
-      description:
-        'Tworzę strony internetowe na WordPressie, które są elastyczne, łatwe w zarządzaniu i w pełni dostosowane do potrzeb firm w Gdańsku. To niezawodne narzędzie dla każdej branży.',
-    },
-    {
-      title: 'Sklepy internetowe wspierające sprzedaż w Gdańsku',
-      description:
-        'Specjalizuję się w tworzeniu sklepów internetowych na WooCommerce, które pozwalają lokalnym firmom w Gdańsku skutecznie prowadzić sprzedaż online. Każdy sklep jest dostosowany do specyficznych potrzeb Twojej branży.',
-    },
-  ],
-};
-
 // ------------------------------ Section: Process ------------------------------
 
 export const katowice_processSteps = {
@@ -845,80 +616,6 @@ export const wroclaw_processSteps = {
   ],
 };
 
-export const poznan_processSteps = {
-  sectionTitle: 'Proces tworzenia',
-  sectionTitleColored: ' stron internetowych dla firm w Poznaniu',
-  steps: [
-    {
-      title: 'Konsultacja i analiza potrzeb',
-      description:
-        'Rozpoczynamy od rozmowy na temat Twoich oczekiwań oraz specyfiki Twojego biznesu w Poznaniu. Tworzę projekt strony, który najlepiej oddaje charakter Twojej firmy.',
-    },
-    {
-      title: 'Zbieranie materiałów i treści',
-      description:
-        'Pomagam zebrać treści i materiały wizualne, które będą reprezentować Twoją firmę w Poznaniu. Wspólnie dopracowujemy każdy szczegół, by strona była atrakcyjna dla lokalnych klientów.',
-    },
-    {
-      title: 'Kreatywne projektowanie',
-      description:
-        'Projektuję unikalny wygląd strony, który łączy nowoczesny design z funkcjonalnością. Strona jest dostosowana do rynku poznańskiego, by skutecznie wspierać Twój biznes.',
-    },
-    {
-      title: 'Kodowanie i wdrażanie',
-      description:
-        'Tworzę w pełni responsywną stronę, która działa na każdym urządzeniu. Optymalizuję stronę pod kątem SEO, by zwiększyć widoczność Twojej firmy w Poznaniu.',
-    },
-    {
-      title: 'Testowanie i optymalizacja',
-      description:
-        'Sprawdzam działanie strony na różnych urządzeniach, aby upewnić się, że działa bez zarzutu. Strona jest szybka, bezpieczna i intuicyjna w obsłudze.',
-    },
-    {
-      title: 'Publikacja i dalsze wsparcie',
-      description:
-        'Publikuję stronę i zapewniam pełne wsparcie techniczne. Twoja firma w Poznaniu może liczyć na pomoc w aktualizacjach oraz wprowadzaniu nowych funkcji.',
-    },
-  ],
-};
-
-export const gdansk_processSteps = {
-  sectionTitle: 'Proces budowy',
-  sectionTitleColored: ' stron internetowych w Gdańsku',
-  steps: [
-    {
-      title: 'Analiza potrzeb i konsultacja',
-      description:
-        'Rozmawiamy o Twoich oczekiwaniach oraz specyfice Twojego biznesu w Gdańsku. Na tej podstawie przygotowuję projekt, który najlepiej odpowiada Twoim wymaganiom.',
-    },
-    {
-      title: 'Zbieranie materiałów wizualnych',
-      description:
-        'Pomagam zebrać i dopracować treści, które wyróżnią Twoją stronę na tle konkurencji w Gdańsku. Mogą to być zdjęcia, grafiki czy teksty.',
-    },
-    {
-      title: 'Projektowanie graficzne',
-      description:
-        'Projektuję stronę, która odzwierciedla charakter Twojej firmy oraz spełnia oczekiwania klientów w Gdańsku. Stawiam na estetykę i intuicyjność.',
-    },
-    {
-      title: 'Kodowanie i wdrożenie',
-      description:
-        'Tworzę funkcjonalną stronę internetową, która działa płynnie na każdym urządzeniu. Zadbam o optymalizację SEO, by zwiększyć widoczność Twojej firmy na Pomorzu.',
-    },
-    {
-      title: 'Testowanie i poprawki',
-      description:
-        'Przeprowadzam dokładne testy, aby upewnić się, że strona działa bez zarzutu. Dostosowuję stronę do lokalnych oczekiwań i wymagań użytkowników w Gdańsku.',
-    },
-    {
-      title: 'Publikacja i opieka techniczna',
-      description:
-        'Po wdrożeniu strony oferuję wsparcie techniczne i pomoc w aktualizacjach. Dbam o to, by Twoja witryna była zawsze aktualna i spełniała potrzeby Twojej firmy w Gdańsku.',
-    },
-  ],
-};
-
 // ------------------------------ Section: Portfolio ------------------------------
 
 export const portfolioTitle = {
@@ -945,18 +642,5 @@ export const portfolioTitle = {
     coloredText: ' we Wrocławiu',
     subtitle:
       'Poznaj moje realizacje stron internetowych dla firm z Wrocławia, które wyróżniają się funkcjonalnością i designem.',
-  },
-
-  poznan: {
-    title: 'Nasze',
-    coloredText: ' portfolio w Poznaniu',
-    subtitle: 'Zobacz, jak wspieram firmy z Poznania w budowaniu silnej obecności online.',
-  },
-
-  gdansk: {
-    title: 'Projekty stworzone',
-    coloredText: ' w Gdańsku',
-    subtitle:
-      'Sprawdź, jakie strony internetowe zaprojektowałem dla lokalnych firm z Gdańska, dostosowując je do ich potrzeb.',
   },
 };

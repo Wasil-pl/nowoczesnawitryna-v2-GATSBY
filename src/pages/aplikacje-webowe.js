@@ -1,9 +1,6 @@
 import * as React from 'react';
 import { aplikacje_webowe_txt } from '../consts/texts';
 import Headers from '../components/Header/Headers/Headers';
-import ScroolUpButton from '../components/Ui/ScroolUpButton/ScroolUpButton';
-import ScroolToPriceButton from '../components/Ui/ScroolToPriceButton/ScroolToPriceButton';
-import Footer from '../components/Footer/Footer';
 import Prices from '../components/Sections/Shared/Prices/Prices';
 import ServiceHighlights from '../components/Sections/Shared/ServiceHighlights/ServiceHighlights';
 import ServicesInfo from '../components/Sections/Shared/ServicesInfo/ServicesInfo';
@@ -17,15 +14,7 @@ const AplikacjeWebowe = () => {
 
   return (
     <>
-      <Headers
-        title_top={title_top}
-        title_middle={title_middle}
-        title_bottom={title_bottom}
-        subtitle={subtitle}
-        active="aplikacje"
-      />
-      <ScroolUpButton />
-      <ScroolToPriceButton />
+      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
       <ServiceHighlights
         title_first_column={aplikacje_webowe_txt.title_first_column}
         title_first_card={aplikacje_webowe_txt.title_first_card}
@@ -36,7 +25,6 @@ const AplikacjeWebowe = () => {
       />
       <ServicesInfo html />
       <Prices aplikacja />
-      <Footer />
     </>
   );
 };

@@ -1,11 +1,8 @@
 import * as React from 'react';
 import Headers from '../components/Header/Headers/Headers';
-import ScroolUpButton from '../components/Ui/ScroolUpButton/ScroolUpButton';
-import Footer from '../components/Footer/Footer';
 import ServiceHighlights from '../components/Sections/Shared/ServiceHighlights/ServiceHighlights';
 import { sklepy_internetowe_txt } from '../consts/texts';
 import Prices from '../components/Sections/Shared/Prices/Prices';
-import ScroolToPriceButton from '../components/Ui/ScroolToPriceButton/ScroolToPriceButton';
 import LastProject from '../components/Sections/Shared/Portfolio/LastProject';
 import ServicesInfo from '../components/Sections/Shared/ServicesInfo/ServicesInfo';
 
@@ -17,9 +14,7 @@ const SklepyInternetowe = () => {
 
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} active="sklep" />
-      <ScroolToPriceButton />
-      <ScroolUpButton />
+      <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} />
       <ServiceHighlights
         title_first_column={sklepy_internetowe_txt.title_first_column}
         title_first_card={sklepy_internetowe_txt.title_first_card}
@@ -31,7 +26,6 @@ const SklepyInternetowe = () => {
       <ServicesInfo wordpress />
       <Prices sklep />
       <LastProject />
-      <Footer />
     </>
   );
 };

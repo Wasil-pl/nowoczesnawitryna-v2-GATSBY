@@ -14,7 +14,7 @@ const CallToActionSecond = () => {
             Skorzystaj z mojego interaktywnego kalkulatora kosztów, aby otrzymać bezpłatną wycenę swojej strony
             internetowej.
           </p>
-          <CustomButton link="/formularz-szybkiej-wyceny/" text="Oblicz koszt swojej strony" />
+          <CustomButton link="/formularz-szybkiej-wyceny/#form" text="Oblicz koszt swojej strony" />
         </div>
       </div>
     </div>

@@ -1,7 +1,5 @@
 import * as React from 'react';
 import Headers from '../components/Header/Headers/Headers';
-import Footer from '../components/Footer/Footer';
-import ScroolUpButton from '../components/Ui/ScroolUpButton/ScroolUpButton';
 import { wycena_txt } from '../consts/texts';
 import { MultiStepForm } from '../components/Sections/Form/MultiStepForm/MultiStepForm';
 import ServiceHighlights from '../components/Sections/Shared/ServiceHighlights/ServiceHighlights';
@@ -13,8 +11,7 @@ const FormularzWyceny = () => {
 
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} active="formularz-wyceny" />
-      <ScroolUpButton />
+      <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} />
       <ServiceHighlights
         title_first_column={wycena_txt.title_first_column}
         descryption_first_column={wycena_txt.descryption_first_column}
@@ -22,7 +19,6 @@ const FormularzWyceny = () => {
         isHtml
       />
       <MultiStepForm />
-      <Footer />
     </>
   );
 };
@@ -38,8 +34,8 @@ export const Head = () => (
       name="description"
       content="Zamów szybką wycenę swojego projektu online. Wypełnij formularz, a ja przygotuję dla Ciebie ofertę dostosowaną do Twoich potrzeb."
     />
-    <link rel="canonical" href="https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/" />
-    <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/" />
+    <link rel="canonical" href="https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/#form" />
+    <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/#form" />
 
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="website" />
@@ -48,8 +44,8 @@ export const Head = () => (
       property="og:description"
       content="Zamów szybką wycenę swojego projektu online. Wypełnij formularz, a ja przygotuję dla Ciebie ofertę dostosowaną do Twoich potrzeb."
     />
-    <meta property="og:url" content="https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/" />
+    <meta property="og:url" content="https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/#form" />
     <meta property="og:site_name" content="Nowoczesna witryna" />
-    <link rel="shortlink" href="https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/" />
+    <link rel="shortlink" href="https://www.nowoczesnawitryna.pl/formularz-szybkiej-wyceny/#form" />
   </>
 );

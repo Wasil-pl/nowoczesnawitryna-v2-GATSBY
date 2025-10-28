@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import CustomButton from '../../Ui/CustomButton/CustomButton';
 import { ChevronDownIcon, MenuBarsIcon } from '../../Icons/Icons';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import './MenuMobile.scss';
 
 const MenuMobile = ({ active }) => {
@@ -10,7 +11,7 @@ const MenuMobile = ({ active }) => {
 
   return (
     <span className="menu_mobile flex flex-row gap-4">
-      <CustomButton link="/formularz-szybkiej-wyceny/" text="Szybka Wycena" variant="small" />
+      <CustomButton link="/formularz-szybkiej-wyceny/#form" text="Szybka Wycena" variant="small" />
 
       <button
         className="canvas_button bg-transparent border rounded-[20%] text-[1.1rem] cursor-pointer px-[10px] py-[7px]"
@@ -30,29 +31,24 @@ const MenuMobile = ({ active }) => {
           </button>
 
           <div className="flex flex-col">
-            <a href="/" className="menu_image text-center mb-[30px]">
+            <div className="menu_image text-center mb-[30px]">
               <StaticImage src="../../../images/logo_kolo.png" alt="logo" width={150} />
-            </a>
-
-            <div className="lang flex justify-end">
-              <a href="https://www.nowoczesnawitryna.com" className="lang-link hover:text-primary">
-                EN
-              </a>
-              <a href="https://www.nowoczesnawitryna.pl/" className="lang-link activeMenuItem">
-                PL
-              </a>
             </div>
 
             <ul className="nav_list flex flex-col gap-4 mt-8">
               <li>
-                <a
-                  href="/"
+                <AniLink
+                  paintDrip
+                  duration={1.2} // czas całego przejścia
+                  hex="#191919" // kolor „zalania” (może być też color="blue")
+                  direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                  to="/"
                   className={`hover:text-primary text-[1.3rem] uppercase bg-transparent border-none p-0 cursor-pointer nav_link ${
                     active === 'home' ? 'activeMenuItem' : ''
                   }`}
                 >
                   Strona Główna
-                </a>
+                </AniLink>
               </li>
 
               <li className="dropdown flex flex-col gap-2">
@@ -76,47 +72,63 @@ const MenuMobile = ({ active }) => {
                       ['lms', '/strony-lms/', 'Strony LMS'],
                       ['logo', '/projektowanie-logo/', 'Projektowanie logo'],
                     ].map(([key, href, label]) => (
-                      <a
+                      <AniLink
+                        paintDrip
+                        duration={1.2} // czas całego przejścia
+                        hex="#191919" // kolor „zalania” (może być też color="blue")
+                        direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                        to={href}
                         key={key}
-                        href={href}
                         className={`hover:text-primary nav_link ${active === key ? 'activeMenuItem' : ''}`}
                       >
                         {label}
-                      </a>
+                      </AniLink>
                     ))}
                   </div>
                 )}
               </li>
 
               <li>
-                <a
-                  href="/formularz-szybkiej-wyceny/"
+                <AniLink
+                  paintDrip
+                  duration={1.2} // czas całego przejścia
+                  hex="#191919" // kolor „zalania” (może być też color="blue")
+                  direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                  to="/formularz-szybkiej-wyceny/#form"
                   className={`hover:text-primary nav_link text-[1.3rem] uppercase bg-transparent border-none p-0 cursor-pointer ${
                     active === 'formularz-wyceny' ? 'activeMenuItem' : ''
                   }`}
                 >
                   Szybka Wycena
-                </a>
+                </AniLink>
               </li>
               <li>
-                <a
-                  href="/kontakt/"
+                <AniLink
+                  paintDrip
+                  duration={1.2} // czas całego przejścia
+                  hex="#191919" // kolor „zalania” (może być też color="blue")
+                  direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                  to="/kontakt/"
                   className={`hover:text-primary nav_link text-[1.3rem] uppercase bg-transparent border-none p-0 cursor-pointer ${
                     active === 'kontakt' ? 'activeMenuItem' : ''
                   }`}
                 >
                   Kontakt
-                </a>
+                </AniLink>
               </li>
               <li>
-                <a
-                  href="/blog/"
+                <AniLink
+                  paintDrip
+                  duration={1.2} // czas całego przejścia
+                  hex="#191919" // kolor „zalania” (może być też color="blue")
+                  direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                  to="/blog/"
                   className={`hover:text-primary nav_link text-[1.3rem] uppercase bg-transparent border-none p-0 cursor-pointer ${
                     active === 'blog' ? 'activeMenuItem' : ''
                   }`}
                 >
                   Blog
-                </a>
+                </AniLink>
               </li>
             </ul>
           </div>

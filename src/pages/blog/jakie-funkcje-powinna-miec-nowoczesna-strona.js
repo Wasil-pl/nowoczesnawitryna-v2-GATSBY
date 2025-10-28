@@ -1,7 +1,5 @@
 import * as React from 'react';
 import Headers from '../../components/Header/Headers/Headers';
-import ScroolUpButton from '../../components/Ui/ScroolUpButton/ScroolUpButton';
-import Footer from '../../components/Footer/Footer';
 import BlogArticleModernWebsiteFeatures from '../../components/Sections/Blog/BlogArticles/BlogModernWebsiteFeatures';
 
 const BlogModernWebsite = () => {
@@ -11,9 +9,7 @@ const BlogModernWebsite = () => {
   return (
     <>
       <Headers title_top={title_top} title_middle={title_middle} active="blog" />
-      <ScroolUpButton />
       <BlogArticleModernWebsiteFeatures />
-      <Footer />
     </>
   );
 };

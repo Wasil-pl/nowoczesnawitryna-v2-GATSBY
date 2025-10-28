@@ -1,7 +1,5 @@
 import * as React from 'react';
 import Headers from '../../components/Header/Headers/Headers';
-import ScroolUpButton from '../../components/Ui/ScroolUpButton/ScroolUpButton';
-import Footer from '../../components/Footer/Footer';
 import MainPageInfo from '../../components/Sections/LandingPages/MainPageInfo/MainPageInfo';
 
 const StronyInternetowe = () => {
@@ -15,8 +13,6 @@ const StronyInternetowe = () => {
     <>
       <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
       <MainPageInfo />
-      <ScroolUpButton />
-      <Footer />
     </>
   );
 };
@@ -33,8 +29,6 @@ export const Head = () => (
       content="Tworzę nowoczesne strony internetowe w całej Polsce. Zaawansowane strony internetowe dla firm, sklepów, blogów, landing page. Optymalizacja pod kątem SEO, szybkość ładowania, responsywność."
     />
     <link rel="canonical" href="https://www.nowoczesnawitryna.pl/strony-internetowe/" />
-    <link rel="alternate" hrefLang="pl" href="https://www.nowoczesnawitryna.pl/strony-internetowe/" />
-    <link rel="alternate" hrefLang="en" href="https://www.nowoczesnawitryna.com/strony-internetowe/" />
 
     <meta property="og:locale" content="pl" />
     <meta property="og:type" content="website" />

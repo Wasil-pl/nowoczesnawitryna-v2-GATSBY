@@ -1,9 +1,6 @@
 import * as React from 'react';
 import ServiceHighlights from '../components/Sections/Shared/ServiceHighlights/ServiceHighlights';
 import Headers from '../components/Header/Headers/Headers';
-import ScroolUpButton from '../components/Ui/ScroolUpButton/ScroolUpButton';
-import ScroolToPriceButton from '../components/Ui/ScroolToPriceButton/ScroolToPriceButton';
-import Footer from '../components/Footer/Footer';
 import ServicesInfo from '../components/Sections/Shared/ServicesInfo/ServicesInfo';
 import Prices from '../components/Sections/Shared/Prices/Prices';
 import { strony_wordpress_txt } from '../consts/texts';
@@ -17,15 +14,7 @@ const StronyWordpress = () => {
 
   return (
     <>
-      <Headers
-        title_top={title_top}
-        title_middle={title_middle}
-        title_bottom={title_bottom}
-        subtitle={subtitle}
-        active="wordpress"
-      />
-      <ScroolUpButton />
-      <ScroolToPriceButton />
+      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
       <ServiceHighlights
         title_first_column={strony_wordpress_txt.title_first_column}
         title_first_card={strony_wordpress_txt.title_first_card}
@@ -36,7 +25,6 @@ const StronyWordpress = () => {
       />
       <ServicesInfo wordpress />
       <Prices wordpress />
-      <Footer />
     </>
   );
 };

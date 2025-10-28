@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Link } from 'gatsby';
+import Link from 'gatsby-plugin-transition-link';
 
 const ArticleCard = ({ image, card_title, card_text, href }) => {
   return (

@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FacebookIcon, LinkedInIcon } from '../Icons/Icons';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const Footer = () => {
   return (
@@ -35,39 +36,116 @@ const Footer = () => {
           <div className="third_column flex flex-col items-center w-full sm:w-[48%] lg:w-1/3">
             <h3 className="text-xl text-primary mb-2">Menu</h3>
             <nav className="flex flex-col items-center space-y-1">
-              <a href="/" className="hover:text-primary">
+              <AniLink
+                paintDrip
+                duration={1.2} // czas całego przejścia
+                hex="#191919" // kolor „zalania” (może być też color="blue")
+                direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                to="/"
+                className="hover:text-primary"
+              >
                 Strona główna
-              </a>
-              <a href="/formularz-szybkiej-wyceny/" className="hover:text-primary">
+              </AniLink>
+              <AniLink
+                paintDrip
+                duration={1.2} // czas całego przejścia
+                hex="#191919" // kolor „zalania” (może być też color="blue")
+                direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                to="/formularz-szybkiej-wyceny/"
+                className="hover:text-primary"
+              >
                 Formularz wyceny
-              </a>
-              <a href="/strony-niestandardowe/" className="hover:text-primary">
+              </AniLink>
+              <AniLink
+                paintDrip
+                duration={1.2} // czas całego przejścia
+                hex="#191919" // kolor „zalania” (może być też color="blue")
+                direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                to="/strony-niestandardowe/"
+                className="hover:text-primary"
+              >
                 Strony HTML/CSS/JS
-              </a>
-              <a href="/strony-wordpress/" className="hover:text-primary">
+              </AniLink>
+              <AniLink
+                paintDrip
+                duration={1.2} // czas całego przejścia
+                hex="#191919" // kolor „zalania” (może być też color="blue")
+                direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                to="/strony-wordpress/"
+                className="hover:text-primary"
+              >
                 Strony WordPress
-              </a>
-              <a href="/sklepy-internetowe/" className="hover:text-primary">
+              </AniLink>
+              <AniLink
+                paintDrip
+                duration={1.2} // czas całego przejścia
+                hex="#191919" // kolor „zalania” (może być też color="blue")
+                direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                to="/sklepy-internetowe/"
+                className="hover:text-primary"
+              >
                 Sklepy internetowe
-              </a>
-              <a href="/strony-lms/" className="hover:text-primary">
+              </AniLink>
+              <AniLink
+                paintDrip
+                duration={1.2} // czas całego przejścia
+                hex="#191919" // kolor „zalania” (może być też color="blue")
+                direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                to="/strony-lms/"
+                className="hover:text-primary"
+              >
                 Strony LMS
-              </a>
-              <a href="/aplikacje-webowe/" className="hover:text-primary">
+              </AniLink>
+              <AniLink
+                paintDrip
+                duration={1.2} // czas całego przejścia
+                hex="#191919" // kolor „zalania” (może być też color="blue")
+                direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                to="/aplikacje-webowe/"
+                className="hover:text-primary"
+              >
                 Aplikacje webowe
-              </a>
-              <a href="/projektowanie-logo/" className="hover:text-primary">
+              </AniLink>
+              <AniLink
+                paintDrip
+                duration={1.2} // czas całego przejścia
+                hex="#191919" // kolor „zalania” (może być też color="blue")
+                direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                to="/projektowanie-logo/"
+                className="hover:text-primary"
+              >
                 Projektowanie logo
-              </a>
-              <a href="/kontakt/" className="hover:text-primary">
+              </AniLink>
+              <AniLink
+                paintDrip
+                duration={1.2} // czas całego przejścia
+                hex="#191919" // kolor „zalania” (może być też color="blue")
+                direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                to="/kontakt/"
+                className="hover:text-primary"
+              >
                 Kontakt
-              </a>
-              <a href="/blog/" className="hover:text-primary">
+              </AniLink>
+              <AniLink
+                paintDrip
+                duration={1.2} // czas całego przejścia
+                hex="#191919" // kolor „zalania” (może być też color="blue")
+                direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                to="/blog/"
+                className="hover:text-primary"
+              >
                 Blog
-              </a>
-              <a href="/polityka-prywatnosci/" className="hover:text-primary">
+              </AniLink>
+              <AniLink
+                paintDrip
+                duration={1.2} // czas całego przejścia
+                hex="#191919" // kolor „zalania” (może być też color="blue")
+                direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                to="/polityka-prywatnosci/"
+                className="hover:text-primary"
+              >
                 Polityka prywatności
-              </a>
+              </AniLink>
             </nav>
           </div>
         </div>

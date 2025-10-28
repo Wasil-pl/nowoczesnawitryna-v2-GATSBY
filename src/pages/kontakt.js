@@ -1,7 +1,5 @@
 import * as React from 'react';
 import Headers from '../components/Header/Headers/Headers';
-import ScroolUpButton from '../components/Ui/ScroolUpButton/ScroolUpButton';
-import Footer from '../components/Footer/Footer';
 import ServiceHighlights from '../components/Sections/Shared/ServiceHighlights/ServiceHighlights';
 import { kontakt_txt } from '../consts/texts';
 import ContactInfo from '../components/Sections/Contact/ContactInfo/ContactInfo';
@@ -15,8 +13,7 @@ const Kontakt = () => {
 
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} active="kontakt" />
-      <ScroolUpButton />
+      <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} />
       <ServiceHighlights
         title_first_column={kontakt_txt.title_first_column}
         descryption_first_column={kontakt_txt.descryption_first_column}
@@ -25,7 +22,6 @@ const Kontakt = () => {
       <ContactInfo />
       <Contact />
       <Faq />
-      <Footer />
     </>
   );
 };

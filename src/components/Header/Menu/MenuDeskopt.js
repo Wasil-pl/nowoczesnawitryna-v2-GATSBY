@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { ChevronDownIcon, HomeIcon } from '../../Icons/Icons';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const MenuDeskopt = ({ active }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,13 +20,17 @@ const MenuDeskopt = ({ active }) => {
 
   return (
     <div className="menu_wrapper flex items-center justify-between gap-8 px-8 pt-4 w-full h-full">
-      <a
-        href="/"
+      <AniLink
+        paintDrip
+        duration={1.2} // czas całego przejścia
+        hex="#191919" // kolor „zalania” (może być też color="blue")
+        direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+        to="/"
         aria-label="strona główna"
         className={`${linkBase} ${active === 'home' ? 'text-primary' : ''} drop-shadow-md`}
       >
         <HomeIcon width="20px" height="20px" />
-      </a>
+      </AniLink>
 
       <div className="dropdown relative" ref={dropdownRef}>
         <button
@@ -49,9 +54,18 @@ const MenuDeskopt = ({ active }) => {
               ['lms', '/strony-lms/', 'Strony LMS'],
               ['logo', '/projektowanie-logo/', 'Projektowanie logo'],
             ].map(([key, href, label]) => (
-              <a key={key} href={href} className={`${linkBase} ${active === key ? 'text-primary' : ''}`}>
+              <AniLink
+                paintDrip
+                duration={1.2} // czas całego przejścia
+                hex="#191919" // kolor „zalania” (może być też color="blue")
+                direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+                to={href}
+                aria-label="strona główna"
+                key={key}
+                className={`${linkBase} ${active === key ? 'text-primary' : ''}`}
+              >
                 {label}
-              </a>
+              </AniLink>
             ))}
           </div>
         )}
@@ -62,9 +76,18 @@ const MenuDeskopt = ({ active }) => {
         ['kontakt', '/kontakt/', 'Kontakt'],
         ['blog', '/blog/', 'Blog'],
       ].map(([key, href, label]) => (
-        <a key={key} href={href} className={`${linkBase} ${active === key ? 'text-primary' : ''}`}>
+        <AniLink
+          paintDrip
+          duration={1.2} // czas całego przejścia
+          hex="#191919" // kolor „zalania” (może być też color="blue")
+          direction="left" // kierunek slideIn contentu po wejściu (opcjonalnie)
+          to={href}
+          aria-label="strona główna"
+          key={key}
+          className={`${linkBase} ${active === key ? 'text-primary' : ''}`}
+        >
           {label}
-        </a>
+        </AniLink>
       ))}
     </div>
   );

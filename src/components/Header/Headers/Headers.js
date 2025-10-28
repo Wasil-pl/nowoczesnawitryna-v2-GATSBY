@@ -1,6 +1,5 @@
 import React from 'react';
 import loadable from '@loadable/component';
-import Menu from '../Menu/Menu';
 import ShapeDividersBottom from '../../Ui/ShapeDividers/ShapeDividersBottom';
 import './Headers.scss';
 
@@ -9,7 +8,7 @@ const ParticlesBg = loadable(() => import('../../Ui/ParticlesBackground/Particle
   fallback: null,
 });
 
-const Headers = ({ title_top, title_middle, title_bottom, subtitle, active, variant }) => {
+const Headers = ({ title_top, title_middle, title_bottom, subtitle, variant }) => {
   const baseHeight = variant === 'landing_page' ? 'h-[90vh]' : 'h-[700px]';
 
   return (
@@ -19,8 +18,6 @@ const Headers = ({ title_top, title_middle, title_bottom, subtitle, active, vari
         bg-[url('/images/hero_2.webp')]
         bg-cover bg-center bg-no-repeat`}
     >
-      <Menu active={active} />
-
       <ParticlesBg id="tsparticles_other_heroes" />
 
       <div

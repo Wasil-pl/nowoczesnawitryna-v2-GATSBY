@@ -1,7 +1,5 @@
 import * as React from 'react';
 import Headers from '../../components/Header/Headers/Headers';
-import ScroolUpButton from '../../components/Ui/ScroolUpButton/ScroolUpButton';
-import Footer from '../../components/Footer/Footer';
 import BlogArticleResponsiveDesign from '../../components/Sections/Blog/BlogArticles/BlogArticleResponsiveDesign';
 
 const BlogResponsiveSite = () => {
@@ -12,9 +10,7 @@ const BlogResponsiveSite = () => {
   return (
     <>
       <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} active="blog" />
-      <ScroolUpButton />
       <BlogArticleResponsiveDesign />
-      <Footer />
     </>
   );
 };
