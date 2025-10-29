@@ -2,6 +2,7 @@ import React from 'react';
 import loadable from '@loadable/component';
 import HeaderHome from '../components/Header/Headers/HeaderHome';
 import WhyChooseMe from '../components/Sections/HomePage/WhyChooseMe/WhyChooseMe';
+import { faqItemsHome } from '../consts/faqItems';
 
 const LoadingFallback = () => (
   <div className="flex justify-center items-center py-8">
@@ -57,7 +58,7 @@ const IndexPage = () => {
       <Portfolio />
       <Testiniomals />
       <RescentArticles />
-      <Faq />
+      <Faq faqItems={faqItemsHome} />
     </>
   );
 };

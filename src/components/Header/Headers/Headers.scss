@@ -9,31 +9,45 @@
   /* landing_page variant overrides height via Tailwind, so nothing else here */
 
   /* gradient text */
-  .title_top {
-    background: linear-gradient(90deg, settings.$color-text-primary, settings.$color-text-dark-light);
+  .title {
+    background: linear-gradient(104.74deg, settings.$color-text-primary, darken(settings.$color-text-primary, 15%));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    /* Cienki obrys, nie ściemnia wypełnienia */
+    -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.35);
+
+    /* Delikatny cień „na zewnątrz” kształtu liter */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
   }
 
-  .title_middle {
-    background: linear-gradient(90deg, settings.$color-text-dark-light, settings.$color-text-primary);
+  .title-light {
+    background: linear-gradient(104.74deg, settings.$color-text-light, darken(settings.$color-text-light, 15%));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-  }
+    /* Cienki obrys, nie ściemnia wypełnienia */
+    -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.35);
 
-  .title_bottom {
-    background: linear-gradient(90deg, settings.$color-text-primary, settings.$color-text-dark-light);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    /* Delikatny cień „na zewnątrz” kształtu liter */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
   }
 
   /* subtitle max-width + color */
   .subtitle {
     color: settings.$color-text-light-dark;
     max-width: 800px;
+  }
+
+  .content h1 .line {
+    margin-top: 10px;
+    height: 8px;
+    border-radius: 25px;
+    background: linear-gradient(104.74deg, settings.$color-text-primary, darken(settings.$color-text-primary, 15%));
+    -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.35);
+    max-width: 750px;
+    /* Delikatny cień „na zewnątrz” kształtu liter */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
   }
 
   /* mobile background-image and sizing */
@@ -44,9 +58,37 @@
     }
   }
 
+  @media (max-width: 1200px) {
+    & {
+      .title {
+        font-size: 3.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
   @media (max-width: 880px) {
     & {
-      height: 600px; /* if you need to override Tailwind height */
+      height: 600px;
+
+      &::before {
+        display: none;
+      }
+
+      .title {
+        font-size: 2.2rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+
+      .content h1 .line {
+        height: 5px;
+      }
     }
   }
 }

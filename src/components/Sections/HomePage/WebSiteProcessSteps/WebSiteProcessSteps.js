@@ -21,7 +21,12 @@ const WebSiteProcessSteps = () => {
 
         <div className="process_steps">
           {/* ─────────────── STEP 1 ─────────────── */}
-          <div className={`step left active_proces flex flex-row`}>
+          <div
+            data-sal="slide-right"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className={`step left active_proces flex flex-row`}
+          >
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_1 step_brief flex-[3_1_0%]">
               <h3>Brief i Konsultacja</h3>
@@ -36,7 +41,12 @@ const WebSiteProcessSteps = () => {
           </div>
 
           {/* ─────────────── STEP 2 ─────────────── */}
-          <div className={`step right active_proces  flex flex-row md:flex-row-reverse`}>
+          <div
+            data-sal="slide-left"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className={`step right active_proces  flex flex-row md:flex-row-reverse`}
+          >
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_2 step_info flex-[3_1_0%]">
               <h3>Zbieranie i Przygotowywanie kontentu</h3>
@@ -52,7 +62,12 @@ const WebSiteProcessSteps = () => {
           </div>
 
           {/* ─────────────── STEP 3 ─────────────── */}
-          <div className={`step left active_proces  flex flex-row`}>
+          <div
+            data-sal="slide-right"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className={`step left active_proces  flex flex-row`}
+          >
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_3 step_projektowanie flex-[3_1_0%]">
               <h3>Projektowanie</h3>
@@ -67,7 +82,12 @@ const WebSiteProcessSteps = () => {
           </div>
 
           {/* ─────────────── STEP 4 ─────────────── */}
-          <div className={`step right active_proces  flex flex-row md:flex-row-reverse`}>
+          <div
+            data-sal="slide-left"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className={`step right active_proces  flex flex-row md:flex-row-reverse`}
+          >
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_4 step_kodowanie flex-[3_1_0%]">
               <h3>Tworzenie Strony Internetowej</h3>
@@ -82,7 +102,12 @@ const WebSiteProcessSteps = () => {
           </div>
 
           {/* ─────────────── STEP 5 ─────────────── */}
-          <div className={`step left active_proces  flex flex-row`}>
+          <div
+            data-sal="slide-right"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className={`step left active_proces  flex flex-row`}
+          >
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_5 step_testowanie flex-[3_1_0%]">
               <h3>Testowanie i Optymalizacja</h3>
@@ -97,7 +122,12 @@ const WebSiteProcessSteps = () => {
           </div>
 
           {/* ─────────────── STEP 6 ─────────────── */}
-          <div className={`step right active_proces  flex flex-row md:flex-row-reverse`}>
+          <div
+            data-sal="slide-left"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className={`step right active_proces  flex flex-row md:flex-row-reverse`}
+          >
             <div className="step_empty flex-[1_1_0%]" />
             <div className="step_content step_6 step_wdrozenie flex-[3_1_0%]">
               <h3>Wdrożenie i Wsparcie</h3>

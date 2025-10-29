@@ -2,6 +2,7 @@ import React from 'react';
 import loadable from '@loadable/component';
 import ShapeDividersBottom from '../../Ui/ShapeDividers/ShapeDividersBottom';
 import './Headers.scss';
+import AnimatedHeadLine from './AnimatedHeadLine';
 
 const ParticlesBg = loadable(() => import('../../Ui/ParticlesBackground/ParticlesBackground'), {
   ssr: false,
@@ -10,6 +11,14 @@ const ParticlesBg = loadable(() => import('../../Ui/ParticlesBackground/Particle
 
 const Headers = ({ title_top, title_middle, title_bottom, subtitle, variant }) => {
   const baseHeight = variant === 'landing_page' ? 'h-[90vh]' : 'h-[700px]';
+
+  const LINES = [
+    { text: title_top, light: false },
+    { text: title_middle, light: false },
+    { text: title_bottom, light: true },
+  ];
+
+  const SUBTITLE = subtitle;
 
   return (
     <header
@@ -20,7 +29,7 @@ const Headers = ({ title_top, title_middle, title_bottom, subtitle, variant }) =
     >
       <ParticlesBg id="tsparticles_other_heroes" />
 
-      <div
+      {/* <div
         className="separator absolute top-1/2 left-1/2 
              -translate-x-1/2 -translate-y-[55%] z-10 
              flex flex-col items-center text-center px-4"
@@ -42,7 +51,14 @@ const Headers = ({ title_top, title_middle, title_bottom, subtitle, variant }) =
         >
           {subtitle}
         </h2>
-      </div>
+      </div> */}
+
+      <AnimatedHeadLine
+        lines={LINES}
+        subtitle={SUBTITLE}
+        h1ClassName="title text-[4rem] font-extrabold leading-[1.2] tracking-[0.3rem] text-left"
+        showUnderline={true}
+      />
 
       <ShapeDividersBottom />
     </header>

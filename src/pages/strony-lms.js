@@ -4,6 +4,13 @@ import Headers from '../components/Header/Headers/Headers';
 import ServicesInfo from '../components/Sections/Shared/ServicesInfo/ServicesInfo';
 import Prices from '../components/Sections/Shared/Prices/Prices';
 import { strony_lms_txt } from '../consts/texts';
+import TechnologyIntro from '../components/Sections/Shared/TechnologyIntro/TechnologyIntro';
+import WhyMeSection from '../components/Sections/Shared/WhyChooseMe/WhyChooseMe';
+import { itemsLms } from '../consts/whyMeSection';
+import Faq from '../components/Sections/Shared/Faq/Faq';
+import { faqItemsLms } from '../consts/faqItems';
+import ProcessTimeline from '../components/Sections/Shared/ProcessTimeline/ProcessTimeline';
+import { LmsProcessSteps } from '../consts/processStepsText';
 
 const StronyLMS = () => {
   const title_top = 'Strony LMS';
@@ -24,7 +31,11 @@ const StronyLMS = () => {
         second_card_descryption={strony_lms_txt.second_card_descryption}
       />
       <ServicesInfo wordpress />
+      <TechnologyIntro type={'lms'} />
+      <ProcessTimeline steps={LmsProcessSteps} compact={false} />
       <Prices lms />
+      <WhyMeSection items={itemsLms} />
+      <Faq faqItems={faqItemsLms} />
     </>
   );
 };

@@ -22,7 +22,12 @@ const WebsiteFeatures = () => {
 
         <div className="mt-[150px] flex flex-wrap justify-between gap-y-12">
           {/* 1 */}
-          <div className="w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center">
+          <div
+            data-sal="slide-right"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className=" w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center"
+          >
             <div className="min-h-[200px] flex justify-center items-center">
               <StaticImage src="../../../../images/price.png" alt="Cennik" height={180} />
             </div>
@@ -34,7 +39,12 @@ const WebsiteFeatures = () => {
           </div>
 
           {/* 2 */}
-          <div className="w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center">
+          <div
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className="w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center"
+          >
             <div className="min-h-[200px] flex justify-center items-center">
               <StaticImage src="../../../../images/seo.png" alt="SEO" height={180} />
             </div>
@@ -47,7 +57,12 @@ const WebsiteFeatures = () => {
           </div>
 
           {/* 3 */}
-          <div className="w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center">
+          <div
+            data-sal="slide-left"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className="w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center"
+          >
             <div className="min-h-[200px] flex justify-center items-center">
               <StaticImage src="../../../../images/rodo.png" alt="RODO" height={180} />
             </div>
@@ -61,7 +76,12 @@ const WebsiteFeatures = () => {
           </div>
 
           {/* 4 */}
-          <div className="w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center">
+          <div
+            data-sal="slide-right"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className="w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center"
+          >
             <div className="min-h-[200px] flex justify-center items-center">
               <StaticImage src="../../../../images/support.png" alt="Wsparcie" height={180} />
             </div>
@@ -73,7 +93,12 @@ const WebsiteFeatures = () => {
           </div>
 
           {/* 5 */}
-          <div className="w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center">
+          <div
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className="w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center"
+          >
             <div className="min-h-[200px] flex justify-center items-center">
               <StaticImage src="../../../../images/page-speed.png" alt="Szybkość" height={180} />
             </div>
@@ -86,7 +111,12 @@ const WebsiteFeatures = () => {
           </div>
 
           {/* 6 */}
-          <div className="w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center">
+          <div
+            data-sal="slide-left"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className="w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center"
+          >
             <div className="min-h-[200px] flex justify-center items-center">
               <StaticImage src="../../../../images/responsive.png" alt="Responsywność" height={180} />
             </div>
@@ -98,7 +128,12 @@ const WebsiteFeatures = () => {
           </div>
 
           {/* 7 */}
-          <div className="w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center">
+          <div
+            data-sal="slide-right"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className="w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center"
+          >
             <div className="min-h-[200px] flex justify-center items-center">
               <StaticImage src="../../../../images/cms_function.png" alt="CMS" width={200} />
             </div>
@@ -111,7 +146,12 @@ const WebsiteFeatures = () => {
           </div>
 
           {/* 8 */}
-          <div className="w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center">
+          <div
+            data-sal="slide-right"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className="w-full lg:w-1/2 xl:w-1/3 px-5 mb-8 transform transition duration-300 hover:scale-110 text-center"
+          >
             <div className="min-h-[200px] flex justify-center items-center">
               <StaticImage src="../../../../images/woocommerce.png" alt="WooCommerce" height={180} />
             </div>

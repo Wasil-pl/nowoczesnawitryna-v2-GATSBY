@@ -5,16 +5,24 @@ import { sklepy_internetowe_txt } from '../consts/texts';
 import Prices from '../components/Sections/Shared/Prices/Prices';
 import LastProject from '../components/Sections/Shared/Portfolio/LastProject';
 import ServicesInfo from '../components/Sections/Shared/ServicesInfo/ServicesInfo';
+import TechnologyIntro from '../components/Sections/Shared/TechnologyIntro/TechnologyIntro';
+import ProcessTimeline from '../components/Sections/Shared/ProcessTimeline/ProcessTimeline';
+import { ShopProcessSteps } from '../consts/processStepsText';
+import WhyMeSection from '../components/Sections/Shared/WhyChooseMe/WhyChooseMe';
+import { itemsShop } from '../consts/whyMeSection';
+import { faqItemsShop } from '../consts/faqItems';
+import Faq from '../components/Sections/Shared/Faq/Faq';
 
 const SklepyInternetowe = () => {
   const title_top = 'Profesjonalne';
   const title_middle = 'Sklepy Internetowe';
+  const title_bottom = 'Rozwijaj Swój Biznes Online';
   const subtitle =
     'Tworzę bezpieczne sklepy WooCommerce z łatwym zarządzaniem produktami i skuteczną sprzedażą online, zgodnie z najnowszymi standardami.';
 
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} />
+      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
       <ServiceHighlights
         title_first_column={sklepy_internetowe_txt.title_first_column}
         title_first_card={sklepy_internetowe_txt.title_first_card}
@@ -24,8 +32,12 @@ const SklepyInternetowe = () => {
         second_card_descryption={sklepy_internetowe_txt.second_card_descryption}
       />
       <ServicesInfo wordpress />
+      <TechnologyIntro type={'shop'} />
+      <ProcessTimeline steps={ShopProcessSteps} compact={false} />
       <Prices sklep />
       <LastProject />
+      <WhyMeSection items={itemsShop} />
+      <Faq faqItems={faqItemsShop} />
     </>
   );
 };

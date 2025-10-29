@@ -4,12 +4,22 @@ import { StaticImage } from 'gatsby-plugin-image';
 import ShapeDividersBottom from '../../Ui/ShapeDividers/ShapeDividersBottom';
 import './HeaderHome.scss';
 import ResponsiveSwitch from '../../Functions/ResponsiveSwitch';
-import HeaderMotion from './HeaderMotion';
+import AnimatedHeadLine from './AnimatedHeadLine';
 
 const ParticlesBg = loadable(() => import('../../Ui/ParticlesBackground/ParticlesBackground'), {
   ssr: false,
   fallback: null,
 });
+
+const LINES = [
+  { text: 'Tworzenie', light: false },
+  { text: 'Nowoczesnych', light: false },
+  { text: 'Stron', light: true },
+  { text: 'Internetowych', light: true },
+];
+
+const SUBTITLE =
+  'Profesjonalne strony internetowe i sklepy online. Świadczę usługi dla klientóww Jastrzębiu-Zdroju, województwie śląskim oraz w całej Polsce.';
 
 const HeaderHome = () => {
   return (
@@ -33,7 +43,7 @@ const HeaderHome = () => {
         fallback={null}
       />
 
-      <HeaderMotion />
+      <AnimatedHeadLine lines={LINES} subtitle={SUBTITLE} />
 
       <ShapeDividersBottom />
     </header>

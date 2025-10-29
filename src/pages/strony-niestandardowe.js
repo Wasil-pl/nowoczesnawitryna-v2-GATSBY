@@ -4,6 +4,13 @@ import Headers from '../components/Header/Headers/Headers';
 import ServicesInfo from '../components/Sections/Shared/ServicesInfo/ServicesInfo';
 import Prices from '../components/Sections/Shared/Prices/Prices';
 import { strony_niestandardowe_txt } from '../consts/texts';
+import TechnologyIntro from '../components/Sections/Shared/TechnologyIntro/TechnologyIntro';
+import ProcessTimeline from '../components/Sections/Shared/ProcessTimeline/ProcessTimeline';
+import { HtmlProcessSteps } from '../consts/processStepsText';
+import WhyMeSection from '../components/Sections/Shared/WhyChooseMe/WhyChooseMe';
+import { itemsHtml } from '../consts/whyMeSection';
+import Faq from '../components/Sections/Shared/Faq/Faq';
+import { faqItemsHtml } from '../consts/faqItems';
 
 const StronyNiestandardowe = () => {
   const title_top = 'Strony internetowe';
@@ -24,7 +31,11 @@ const StronyNiestandardowe = () => {
         second_card_descryption={strony_niestandardowe_txt.second_card_descryption}
       />
       <ServicesInfo html />
+      <TechnologyIntro type={'html'} />
+      <ProcessTimeline steps={HtmlProcessSteps} compact={false} />
       <Prices html />
+      <WhyMeSection items={itemsHtml} />
+      <Faq faqItems={faqItemsHtml} />
     </>
   );
 };

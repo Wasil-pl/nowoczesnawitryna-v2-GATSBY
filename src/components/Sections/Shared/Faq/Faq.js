@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { ChevronUpIcon, ChevronDownIcon } from '../../../Icons/Icons';
 import SectionTitle from '../../../Ui/SectionTitle/SectionTitle';
-import { faqItems } from '../../../../consts/faqItems';
 import sal from 'sal.js';
 
-const Faq = () => {
+const Faq = ({ faqItems }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   useEffect(() => {

@@ -46,6 +46,7 @@ const MenuMobile = ({ active }) => {
                   className={`hover:text-primary text-[1.3rem] uppercase bg-transparent border-none p-0 cursor-pointer nav_link ${
                     active === 'home' ? 'activeMenuItem' : ''
                   }`}
+                  onClick={() => setIsOpen(false)}
                 >
                   Strona Główna
                 </AniLink>
@@ -80,6 +81,7 @@ const MenuMobile = ({ active }) => {
                         to={href}
                         key={key}
                         className={`hover:text-primary nav_link ${active === key ? 'activeMenuItem' : ''}`}
+                        onClick={() => setIsOpen(false)}
                       >
                         {label}
                       </AniLink>
@@ -98,6 +100,7 @@ const MenuMobile = ({ active }) => {
                   className={`hover:text-primary nav_link text-[1.3rem] uppercase bg-transparent border-none p-0 cursor-pointer ${
                     active === 'formularz-wyceny' ? 'activeMenuItem' : ''
                   }`}
+                  onClick={() => setIsOpen(false)}
                 >
                   Szybka Wycena
                 </AniLink>
@@ -112,6 +115,7 @@ const MenuMobile = ({ active }) => {
                   className={`hover:text-primary nav_link text-[1.3rem] uppercase bg-transparent border-none p-0 cursor-pointer ${
                     active === 'kontakt' ? 'activeMenuItem' : ''
                   }`}
+                  onClick={() => setIsOpen(false)}
                 >
                   Kontakt
                 </AniLink>
@@ -126,6 +130,7 @@ const MenuMobile = ({ active }) => {
                   className={`hover:text-primary nav_link text-[1.3rem] uppercase bg-transparent border-none p-0 cursor-pointer ${
                     active === 'blog' ? 'activeMenuItem' : ''
                   }`}
+                  onClick={() => setIsOpen(false)}
                 >
                   Blog
                 </AniLink>

@@ -4,6 +4,13 @@ import Headers from '../components/Header/Headers/Headers';
 import Prices from '../components/Sections/Shared/Prices/Prices';
 import ServiceHighlights from '../components/Sections/Shared/ServiceHighlights/ServiceHighlights';
 import ServicesInfo from '../components/Sections/Shared/ServicesInfo/ServicesInfo';
+import TechnologyIntro from '../components/Sections/Shared/TechnologyIntro/TechnologyIntro';
+import ProcessTimeline from '../components/Sections/Shared/ProcessTimeline/ProcessTimeline';
+import { WebAppProcessSteps } from '../consts/processStepsText';
+import WhyMeSection from '../components/Sections/Shared/WhyChooseMe/WhyChooseMe';
+import { itemsWebApp } from '../consts/whyMeSection';
+import Faq from '../components/Sections/Shared/Faq/Faq';
+import { faqItemsWebApp } from '../consts/faqItems';
 
 const AplikacjeWebowe = () => {
   const title_top = 'Aplikacje Webowe';
@@ -24,7 +31,11 @@ const AplikacjeWebowe = () => {
         second_card_descryption={aplikacje_webowe_txt.second_card_descryption}
       />
       <ServicesInfo html />
+      <TechnologyIntro type={'webapp'} />
+      <ProcessTimeline steps={WebAppProcessSteps} compact={false} />
       <Prices aplikacja />
+      <WhyMeSection items={itemsWebApp} />
+      <Faq faqItems={faqItemsWebApp} />
     </>
   );
 };

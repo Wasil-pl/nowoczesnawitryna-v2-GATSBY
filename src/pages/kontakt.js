@@ -5,15 +5,17 @@ import { kontakt_txt } from '../consts/texts';
 import ContactInfo from '../components/Sections/Contact/ContactInfo/ContactInfo';
 import Contact from '../components/Sections/Contact/Contact/Contact';
 import Faq from '../components/Sections/Shared/Faq/Faq';
+import { faqItemsHome } from '../consts/faqItems';
 
 const Kontakt = () => {
   const title_top = 'Skontaktuj';
   const title_middle = 'się ze mną';
+  const title_bottom = 'zadzwoń lub napisz';
   const subtitle = 'Jak mogę Ci pomóc?';
 
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} />
+      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
       <ServiceHighlights
         title_first_column={kontakt_txt.title_first_column}
         descryption_first_column={kontakt_txt.descryption_first_column}
@@ -21,7 +23,7 @@ const Kontakt = () => {
       />
       <ContactInfo />
       <Contact />
-      <Faq />
+      <Faq faqItems={faqItemsHome} />
     </>
   );
 };

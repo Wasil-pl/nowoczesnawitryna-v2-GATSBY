@@ -39,12 +39,14 @@
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
     "gsap": "^3.13.0",
+    "lucide-react": "^0.548.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-headless-timeline": "^0.3.4",
     "react-hook-form": "^7.51.4",
     "react-responsive": "^10.0.0",
-    "sass": "^1.80.6",
-    "universal-cookie": "^8.0.1"
+    "react-vertical-timeline-component": "^3.5.3",
+    "sass": "^1.80.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",

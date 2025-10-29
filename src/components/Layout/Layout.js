@@ -1,7 +1,6 @@
 // src/components/Layout.jsx
 import React from 'react';
 import ScroolUpButton from '../Ui/ScroolUpButton/ScroolUpButton';
-import ScroolToPriceButton from '../Ui/ScroolToPriceButton/ScroolToPriceButton';
 import loadable from '@loadable/component';
 import Menu from '../Header/Menu/Menu';
 import { useLocation } from '@reach/router';

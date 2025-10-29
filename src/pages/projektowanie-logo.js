@@ -4,6 +4,11 @@ import ServiceHighlights from '../components/Sections/Shared/ServiceHighlights/S
 import Prices from '../components/Sections/Shared/Prices/Prices';
 import LogoProcessSteps from '../components/Sections/Logo/LogoCreateProcessSteps/LogoProcessSteps';
 import { projektowanie_logo_txt } from '../consts/texts';
+import TechnologyIntro from '../components/Sections/Shared/TechnologyIntro/TechnologyIntro';
+import WhyMeSection from '../components/Sections/Shared/WhyChooseMe/WhyChooseMe';
+import { itemsLogo } from '../consts/whyMeSection';
+import Faq from '../components/Sections/Shared/Faq/Faq';
+import { faqItemsLogo } from '../consts/faqItems';
 
 const ProjektowanieLogo = () => {
   const title_top = 'Profesjonalne';
@@ -24,7 +29,11 @@ const ProjektowanieLogo = () => {
         second_card_descryption={projektowanie_logo_txt.second_card_descryption}
       />
       <LogoProcessSteps />
+      <TechnologyIntro type={'logo'} />
+      <div className="bg-background-lighter pt-28 pb-28"> </div>
       <Prices logo />
+      <WhyMeSection items={itemsLogo} />
+      <Faq faqItems={faqItemsLogo} />
     </>
   );
 };

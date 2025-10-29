@@ -320,7 +320,7 @@ export const MultiStepForm = () => {
       className="
         order_site_form
         relative mt-[150px] mb-[300px]
-        py-[200px] px-[100px]
+        py-[200px] 
         bg-background-dark
       "
     >

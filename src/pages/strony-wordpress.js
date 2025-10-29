@@ -4,6 +4,13 @@ import Headers from '../components/Header/Headers/Headers';
 import ServicesInfo from '../components/Sections/Shared/ServicesInfo/ServicesInfo';
 import Prices from '../components/Sections/Shared/Prices/Prices';
 import { strony_wordpress_txt } from '../consts/texts';
+import ProcessTimeline from '../components/Sections/Shared/ProcessTimeline/ProcessTimeline';
+import { WordPressProcessSteps } from '../consts/processStepsText';
+import Faq from '../components/Sections/Shared/Faq/Faq';
+import { faqItemsWordPress } from '../consts/faqItems';
+import WhyMeSection from '../components/Sections/Shared/WhyChooseMe/WhyChooseMe';
+import TechnologyIntro from '../components/Sections/Shared/TechnologyIntro/TechnologyIntro';
+import { itemsWordpress } from '../consts/whyMeSection';
 
 const StronyWordpress = () => {
   const title_top = 'Profesjonalne';
@@ -24,7 +31,11 @@ const StronyWordpress = () => {
         second_card_descryption={strony_wordpress_txt.second_card_descryption}
       />
       <ServicesInfo wordpress />
+      <TechnologyIntro type={'wordpress'} />
+      <ProcessTimeline steps={WordPressProcessSteps} compact={false} />
       <Prices wordpress />
+      <WhyMeSection items={itemsWordpress} />
+      <Faq faqItems={faqItemsWordPress} />
     </>
   );
 };

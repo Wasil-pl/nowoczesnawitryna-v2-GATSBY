@@ -7,11 +7,12 @@ import ServiceHighlights from '../components/Sections/Shared/ServiceHighlights/S
 const FormularzWyceny = () => {
   const title_top = 'Szybka Wycena';
   const title_middle = 'Online';
+  const title_bottom = 'Dla Twojej Wygody';
   const subtitle = 'Kilka pytań i już jestem gotowy na przygotowanie szybkiej wyceny Twojego projektu!';
 
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} subtitle={subtitle} />
+      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
       <ServiceHighlights
         title_first_column={wycena_txt.title_first_column}
         descryption_first_column={wycena_txt.descryption_first_column}
