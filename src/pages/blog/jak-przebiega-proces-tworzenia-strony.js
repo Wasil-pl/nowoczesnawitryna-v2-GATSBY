@@ -2,13 +2,22 @@ import * as React from 'react';
 import Headers from '../../components/Header/Headers/Headers';
 import BlogArticleWebDesignProcess from '../../components/Sections/Blog/BlogArticles/BlogArticleWebDesignProcess';
 
-const BlogProcessSiteMaking = () => {
+const BlogProcessSiteMaking = ({ pageContext }) => {
   const title_top = 'Jak Przebiega Proces';
   const title_middle = 'Tworzenia Strony Internetowej?';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} active="blog" />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        active="blog"
+        crumbs={crumbs}
+        crumbLabel="Jak Przebiega Proces Tworzenia Strony Internetowej?"
+      />
       <BlogArticleWebDesignProcess />
     </>
   );

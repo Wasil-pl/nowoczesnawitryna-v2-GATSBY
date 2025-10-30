@@ -12,16 +12,27 @@ import { itemsWebApp } from '../consts/whyMeSection';
 import Faq from '../components/Sections/Shared/Faq/Faq';
 import { faqItemsWebApp } from '../consts/faqItems';
 
-const AplikacjeWebowe = () => {
+const AplikacjeWebowe = ({ pageContext }) => {
   const title_top = 'Aplikacje Webowe';
   const title_middle = 'Nowoczesne Strony';
   const title_bottom = 'dla Twojego Biznesu';
   const subtitle =
     'Tworzę aplikacje webowe dostosowane do potrzeb Twojej firmy, zoptymalizowane i działające płynnie na różnych urządzeniach.';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        title_bottom={title_bottom}
+        subtitle={subtitle}
+        crumbs={crumbs}
+        crumbLabel="Aplikacje Webowe"
+      />
       <ServiceHighlights
         title_first_column={aplikacje_webowe_txt.title_first_column}
         title_first_card={aplikacje_webowe_txt.title_first_card}

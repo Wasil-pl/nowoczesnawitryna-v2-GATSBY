@@ -25,6 +25,7 @@
     "@tsparticles/slim": "^3.7.1",
     "framer-motion": "^12.23.24",
     "gatsby": "^5.14.3",
+    "gatsby-plugin-breadcrumb": "^12.3.2",
     "gatsby-plugin-google-tagmanager": "^5.13.1",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-manifest": "^5.13.1",

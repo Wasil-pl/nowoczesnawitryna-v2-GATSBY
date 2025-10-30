@@ -16,12 +16,16 @@ import LPProcessSteps from '../../components/Sections/LandingPages/LPProcessStep
 import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPortfolio';
 import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
-const krakow = () => {
+const krakow = ({ pageContext }) => {
   const title_top = 'Nowoczesne ';
   const title_middle = 'Strony internetowe';
   const title_bottom = 'dla firm w Krakowie';
   const subtitle =
     'Tworzę strony, które łączą unikalny design z doskonałą funkcjonalnością, pomagając firmom z Krakowa skutecznie zaistnieć w internecie.';
+
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
 
   return (
     <>
@@ -31,6 +35,8 @@ const krakow = () => {
         title_bottom={title_bottom}
         subtitle={subtitle}
         variant={'landing_page'}
+        crumbs={crumbs}
+        crumbLabel="Strony Internetowe Kraków"
       />
       <LPSiteInfo
         title_first={krakow_info_txt.title_first}

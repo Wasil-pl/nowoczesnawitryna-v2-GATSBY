@@ -21,9 +21,9 @@ const LINES = [
 const SUBTITLE =
   'Profesjonalne strony internetowe i sklepy online. Świadczę usługi dla klientóww Jastrzębiu-Zdroju, województwie śląskim oraz w całej Polsce.';
 
-const HeaderHome = () => {
+const HeaderHome = ({ crumbs, location }) => {
   return (
-    <header className="header relative bg-background-dark bg-[url('/images/hero_2.webp')] bg-cover bg-center bg-no-repeat h-[95vh]">
+    <header className="header relative bg-background-dark bg-[url('/images/hero_2.webp')] bg-cover bg-center bg-no-repeat ">
       <ParticlesBg id="tsparticles" />
 
       <ResponsiveSwitch
@@ -43,7 +43,7 @@ const HeaderHome = () => {
         fallback={null}
       />
 
-      <AnimatedHeadLine lines={LINES} subtitle={SUBTITLE} />
+      <AnimatedHeadLine lines={LINES} subtitle={SUBTITLE} crumbs={crumbs} location={location} />
 
       <ShapeDividersBottom />
     </header>

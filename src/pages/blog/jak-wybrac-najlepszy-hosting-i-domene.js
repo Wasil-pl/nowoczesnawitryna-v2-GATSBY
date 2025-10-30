@@ -2,13 +2,23 @@ import * as React from 'react';
 import Headers from '../../components/Header/Headers/Headers';
 import BlogArticleHosting from '../../components/Sections/Blog/BlogArticles/BlogArticleHosting';
 
-const BlogHosting = () => {
+const BlogHosting = ({ pageContext }) => {
   const title_top = 'Jak wybrać najlepszy';
   const title_middle = 'hosting i domenę';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} active="blog" />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        active="blog"
+        crumbs={crumbs}
+        crumbLabel="Jak wybrać najlepszy hosting i domenę?"
+      />
       <BlogArticleHosting />
     </>
   );

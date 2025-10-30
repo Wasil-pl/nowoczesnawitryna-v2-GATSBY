@@ -16,11 +16,15 @@ import LPProcessSteps from '../../components/Sections/LandingPages/LPProcessStep
 import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPortfolio';
 import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
-const Katowice = () => {
+const Katowice = ({ pageContext }) => {
   const title_top = 'Tworzenie';
   const title_middle = 'Stron internetowych';
   const title_bottom = 'w Katowicach';
   const subtitle = 'Indywidualne projekty dopasowane do potrzeb Twojej firmy w Katowicach.';
+
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
 
   return (
     <>
@@ -30,6 +34,8 @@ const Katowice = () => {
         title_bottom={title_bottom}
         subtitle={subtitle}
         variant={'landing_page'}
+        crumbs={crumbs}
+        crumbLabel="Strony Internetowe Katowice"
       />
       <LPSiteInfo
         title_first={katowice_info_txt.title_first}

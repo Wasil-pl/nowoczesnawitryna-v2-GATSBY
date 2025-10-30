@@ -2,16 +2,27 @@ import * as React from 'react';
 import Headers from '../../components/Header/Headers/Headers';
 import MainPageInfo from '../../components/Sections/LandingPages/MainPageInfo/MainPageInfo';
 
-const StronyInternetowe = () => {
+const StronyInternetowe = ({ pageContext }) => {
   const title_top = 'Tworzę nowoczesne';
   const title_middle = 'strony internetowe';
   const title_bottom = 'W całej Polsce';
   const subtitle =
     'Zaawansowane strony internetowe dla firm, sklepów, blogów, landing page. Optymalizacja pod kątem SEO, szybkość ładowania, responsywność.';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        title_bottom={title_bottom}
+        subtitle={subtitle}
+        crumbs={crumbs}
+        crumbLabel="Strony Internetowe"
+      />
       <MainPageInfo />
     </>
   );

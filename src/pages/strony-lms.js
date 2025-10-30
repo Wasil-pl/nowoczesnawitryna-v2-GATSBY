@@ -12,16 +12,27 @@ import { faqItemsLms } from '../consts/faqItems';
 import ProcessTimeline from '../components/Sections/Shared/ProcessTimeline/ProcessTimeline';
 import { LmsProcessSteps } from '../consts/processStepsText';
 
-const StronyLMS = () => {
+const StronyLMS = ({ pageContext }) => {
   const title_top = 'Strony LMS';
   const title_middle = 'Nowoczesne Platformy';
   const title_bottom = 'Edukacyjne';
   const subtitle =
     'Tworzę dostosowane platformy LMS do zarządzania kursami, uczniami i materiałami edukacyjnymi – idealne dla szkół, firm szkoleniowych i nauczycieli.';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        title_bottom={title_bottom}
+        subtitle={subtitle}
+        crumbs={crumbs}
+        crumbLabel="Strony LMS"
+      />
       <ServiceHighlights
         title_first_column={strony_lms_txt.title_first_column}
         title_first_card={strony_lms_txt.title_first_card}

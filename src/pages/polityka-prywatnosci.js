@@ -2,13 +2,17 @@ import * as React from 'react';
 import Headers from '../components/Header/Headers/Headers';
 import PrivacyPolicy from '../components/Sections/PrivacyPolicy/PrivacyPolicy';
 
-const PolitykaPrywatnosci = () => {
+const PolitykaPrywatnosci = ({ pageContext }) => {
   const title = 'polityka prywatności';
   const subtitle = 'poczuj się bezpiecznie w sieci';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <>
-      <Headers title_top={title} subtitle={subtitle} />
+      <Headers title_top={title} subtitle={subtitle} crumbs={crumbs} crumbLabel="Polityka Prywatności" />
       <PrivacyPolicy />
     </>
   );

@@ -1,48 +1,48 @@
 @font-face {
-  font-family: 'PlayfairDisplay';
+  font-family: 'Poppins';
   font-style: normal;
   font-display: swap;
-  src: url('/fonts/PlayfairDisplay-Regular.woff2') format('woff2');
+  src: url('/fonts/Poppins-Regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'PlayfairDisplay';
+  font-family: 'Poppins';
   font-style: normal;
   font-display: swap;
   font-weight: 700;
-  src: url('/fonts/PlayfairDisplay-Bold.woff2') format('woff2');
+  src: url('/fonts/Poppins-Bold.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'PlayfairDisplay';
+  font-family: 'Poppins';
   font-style: normal;
   font-display: swap;
   font-weight: 800;
-  src: url('/fonts/PlayfairDisplay-ExtraBold.woff2') format('woff2');
+  src: url('/fonts/Poppins-ExtraBold.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'PlayfairDisplay';
+  font-family: 'Poppins';
   font-style: normal;
   font-display: swap;
   font-weight: 900;
-  src: url('/fonts/PlayfairDisplay-Black.woff2') format('woff2');
+  src: url('/fonts/Poppins-Black.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Inter';
   font-style: normal;
   font-display: swap;
   font-weight: 400;
-  src: url('/fonts/Montserrat-Regular.woff2') format('woff2');
+  src: url('/fonts/Inter-Regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Inter';
   font-style: normal;
   font-display: swap;
   font-weight: 700;
-  src: url('/fonts/Montserrat-Bold.woff2') format('woff2');
+  src: url('/fonts/Inter-Bold.woff2') format('woff2');
 }
 
 $color-primary: #ffbf00;
@@ -66,8 +66,8 @@ $color-background-lighter: #f7f7f7;
 $color-background-dark: $color-secondary;
 $color-background-primary: $color-primary;
 
-$font-header: 'PlayfairDisplay', sans-serif;
-$font-body: 'Montserrat', serif;
+$font-header: 'Poppins', sans-serif;
+$font-body: 'Inter', serif;
 
 $font-weight-normal: 400;
 $font-weight-bold: 700;

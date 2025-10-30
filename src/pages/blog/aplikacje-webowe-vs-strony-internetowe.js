@@ -2,13 +2,22 @@ import * as React from 'react';
 import Headers from '../../components/Header/Headers/Headers';
 import BlogArticleWebAppsVsWebsites from '../../components/Sections/Blog/BlogArticles/BlogArticleWebAppsVsWebsites';
 
-const BlogWebAppVsWebSite = () => {
+const BlogWebAppVsWebSite = ({ pageContext }) => {
   const title_top = 'Aplikacje Webowe vs.';
   const title_middle = 'Strony Internetowe';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} active="blog" />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        active="blog"
+        crumbs={crumbs}
+        crumbLabel="Aplikacje Webowe vs. Strony Internetowe"
+      />
       <BlogArticleWebAppsVsWebsites />
     </>
   );

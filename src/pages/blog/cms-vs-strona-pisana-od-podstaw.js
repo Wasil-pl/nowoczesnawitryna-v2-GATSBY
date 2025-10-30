@@ -2,13 +2,22 @@ import * as React from 'react';
 import Headers from '../../components/Header/Headers/Headers';
 import BlogArticleCms from '../../components/Sections/Blog/BlogArticles/BlogArticleCms';
 
-const BlogCMS = () => {
+const BlogCMS = ({ pageContext }) => {
   const title_top = 'Cms vs strona';
   const title_middle = 'pisana od podstaw';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} active="blog" />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        active="blog"
+        crumbs={crumbs}
+        crumbLabel="Cms vs strona pisana od podstaw"
+      />
       <BlogArticleCms />
     </>
   );

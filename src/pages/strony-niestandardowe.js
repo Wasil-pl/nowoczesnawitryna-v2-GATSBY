@@ -12,16 +12,27 @@ import { itemsHtml } from '../consts/whyMeSection';
 import Faq from '../components/Sections/Shared/Faq/Faq';
 import { faqItemsHtml } from '../consts/faqItems';
 
-const StronyNiestandardowe = () => {
+const StronyNiestandardowe = ({ pageContext }) => {
   const title_top = 'Strony internetowe';
   const title_middle = '100% programowane';
   const title_bottom = 'w HTML/CSS/JS';
   const subtitle =
     'Tworzę unikatowe strony w czystym HTML, zapewniające pełną kontrolę nad kodem, wysoką wydajność i nieograniczone możliwości dostosowania.';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        title_bottom={title_bottom}
+        subtitle={subtitle}
+        crumbs={crumbs}
+        crumbLabel="Strony HTML/CSS/JS"
+      />
       <ServiceHighlights
         title_first_column={strony_niestandardowe_txt.title_first_column}
         title_first_card={strony_niestandardowe_txt.title_first_card}

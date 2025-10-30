@@ -1,4 +1,4 @@
-import { SchoolIcon, StarIcon, WorkflowIcon } from 'lucide-react';
+import { StarIcon, WorkflowIcon } from 'lucide-react';
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';

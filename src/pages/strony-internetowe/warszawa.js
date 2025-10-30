@@ -16,12 +16,16 @@ import LPProcessSteps from '../../components/Sections/LandingPages/LPProcessStep
 import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPortfolio';
 import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
-const warszawa = () => {
+const warszawa = ({ pageContext }) => {
   const title_top = 'Profesjonalne ';
   const title_middle = 'Strony internetowe';
   const title_bottom = 'dla firm w Warszawie';
   const subtitle =
     'Tworzę strony internetowe, które łączą innowacyjny design z zaawansowaną funkcjonalnością, pomagając firmom z Warszawy skutecznie budować swoją obecność w internecie.';
+
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
 
   return (
     <>
@@ -31,6 +35,8 @@ const warszawa = () => {
         title_bottom={title_bottom}
         subtitle={subtitle}
         variant={'landing_page'}
+        crumbs={crumbs}
+        crumbLabel="Strony Internetowe Warszawa"
       />
       <LPSiteInfo
         title_first={warszawa_info_txt.title_first}

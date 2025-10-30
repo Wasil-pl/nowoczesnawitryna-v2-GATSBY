@@ -7,15 +7,26 @@ import Contact from '../components/Sections/Contact/Contact/Contact';
 import Faq from '../components/Sections/Shared/Faq/Faq';
 import { faqItemsHome } from '../consts/faqItems';
 
-const Kontakt = () => {
+const Kontakt = ({ pageContext }) => {
   const title_top = 'Skontaktuj';
   const title_middle = 'się ze mną';
   const title_bottom = 'zadzwoń lub napisz';
   const subtitle = 'Jak mogę Ci pomóc?';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        title_bottom={title_bottom}
+        subtitle={subtitle}
+        crumbs={crumbs}
+        crumbLabel="Kontakt"
+      />
       <ServiceHighlights
         title_first_column={kontakt_txt.title_first_column}
         descryption_first_column={kontakt_txt.descryption_first_column}

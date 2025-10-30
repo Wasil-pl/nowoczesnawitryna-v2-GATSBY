@@ -10,16 +10,27 @@ import { itemsLogo } from '../consts/whyMeSection';
 import Faq from '../components/Sections/Shared/Faq/Faq';
 import { faqItemsLogo } from '../consts/faqItems';
 
-const ProjektowanieLogo = () => {
+const ProjektowanieLogo = ({ pageContext }) => {
   const title_top = 'Profesjonalne';
   const title_middle = 'Projektowanie';
   const title_bottom = 'Logo';
   const subtitle =
     'Twoje logo to pierwszy krok w budowaniu rozpoznawalnej marki. Oferuję unikalne i spersonalizowane projekty logo, które wyróżnią Twoją firmę na tle konkurencji.';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        title_bottom={title_bottom}
+        subtitle={subtitle}
+        crumbs={crumbs}
+        crumbLabel="Projektowanie Logo"
+      />
       <ServiceHighlights
         title_first_column={projektowanie_logo_txt.title_first_column}
         title_first_card={projektowanie_logo_txt.title_first_card}

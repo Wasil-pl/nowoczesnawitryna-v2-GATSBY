@@ -16,12 +16,16 @@ import LPProcessSteps from '../../components/Sections/LandingPages/LPProcessStep
 import LPPortfolio from '../../components/Sections/LandingPages/LPPortfolio/LPPortfolio';
 import LPAction from '../../components/Sections/LandingPages/LPAction/LPAction';
 
-const wroclaw = () => {
+const wroclaw = ({ pageContext }) => {
   const title_top = 'Innowacyjne ';
   const title_middle = 'Strony internetowe';
   const title_bottom = 'dla firm z Wrocławia';
   const subtitle =
     'Realizuję strony internetowe, które wyróżniają się nowoczesnym designem i intuicyjną obsługą, wspierając lokalne firmy we Wrocławiu w budowaniu silnej obecności w internecie.';
+
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
 
   return (
     <>
@@ -31,6 +35,8 @@ const wroclaw = () => {
         title_bottom={title_bottom}
         subtitle={subtitle}
         variant={'landing_page'}
+        crumbs={crumbs}
+        crumbLabel="Strony Internetowe Wrocław"
       />
       <LPSiteInfo
         title_first={wroclaw_info_txt.title_first}

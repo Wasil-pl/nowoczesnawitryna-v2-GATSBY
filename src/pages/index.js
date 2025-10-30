@@ -44,10 +44,14 @@ const Faq = loadable(() => import('../components/Sections/Shared/Faq/Faq'), {
   fallback: <LoadingFallback />,
 });
 
-const IndexPage = () => {
+const IndexPage = ({ pageContext, location }) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <>
-      <HeaderHome />
+      <HeaderHome crumbs={crumbs} location={location} />
       <WhyChooseMe />
       <MyServices />
       <AboutMe />

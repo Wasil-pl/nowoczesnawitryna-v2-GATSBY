@@ -4,15 +4,26 @@ import { wycena_txt } from '../consts/texts';
 import { MultiStepForm } from '../components/Sections/Form/MultiStepForm/MultiStepForm';
 import ServiceHighlights from '../components/Sections/Shared/ServiceHighlights/ServiceHighlights';
 
-const FormularzWyceny = () => {
+const FormularzWyceny = ({ pageContext }) => {
   const title_top = 'Szybka Wycena';
   const title_middle = 'Online';
   const title_bottom = 'Dla Twojej Wygody';
   const subtitle = 'Kilka pytań i już jestem gotowy na przygotowanie szybkiej wyceny Twojego projektu!';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        title_bottom={title_bottom}
+        subtitle={subtitle}
+        crumbs={crumbs}
+        crumbLabel="Formularz Szybkiej Wyceny"
+      />
       <ServiceHighlights
         title_first_column={wycena_txt.title_first_column}
         descryption_first_column={wycena_txt.descryption_first_column}

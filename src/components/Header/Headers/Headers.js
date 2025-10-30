@@ -9,9 +9,7 @@ const ParticlesBg = loadable(() => import('../../Ui/ParticlesBackground/Particle
   fallback: null,
 });
 
-const Headers = ({ title_top, title_middle, title_bottom, subtitle, variant }) => {
-  const baseHeight = variant === 'landing_page' ? 'h-[90vh]' : 'h-[700px]';
-
+const Headers = ({ title_top, title_middle, title_bottom, subtitle, variant, crumbs, crumbLabel }) => {
   const LINES = [
     { text: title_top, light: false },
     { text: title_middle, light: false },
@@ -22,42 +20,20 @@ const Headers = ({ title_top, title_middle, title_bottom, subtitle, variant }) =
 
   return (
     <header
-      className={`headers relative ${baseHeight}
+      className={`headers relative 
         bg-background-dark
         bg-[url('/images/hero_2.webp')]
         bg-cover bg-center bg-no-repeat`}
     >
       <ParticlesBg id="tsparticles_other_heroes" />
 
-      {/* <div
-        className="separator absolute top-1/2 left-1/2 
-             -translate-x-1/2 -translate-y-[55%] z-10 
-             flex flex-col items-center text-center px-4"
-      >
-        <h1
-          className="title text-[2rem] md:text-[2.5rem] lg:text-[3rem]
-               font-extrabold uppercase leading-[1.2] tracking-[0.3rem]"
-        >
-          <span className="title_top">{title_top}</span>
-          <br />
-          <span className="title_middle">{title_middle}</span>
-          <br />
-          <span className="title_bottom">{title_bottom}</span>
-        </h1>
-
-        <h2
-          className="subtitle text-[1rem] md:text-[1.2rem] mt-8 
-               tracking-[0.2rem] uppercase"
-        >
-          {subtitle}
-        </h2>
-      </div> */}
-
       <AnimatedHeadLine
         lines={LINES}
         subtitle={SUBTITLE}
-        h1ClassName="title text-[4rem] font-extrabold leading-[1.2] tracking-[0.3rem] text-left"
+        h1ClassName="title text-[3.5rem] font-extrabold leading-[1.2] tracking-[0.3rem] text-left"
         showUnderline={true}
+        crumbs={crumbs}
+        crumbLabel={crumbLabel}
       />
 
       <ShapeDividersBottom />

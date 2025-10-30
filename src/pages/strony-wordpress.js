@@ -12,16 +12,27 @@ import WhyMeSection from '../components/Sections/Shared/WhyChooseMe/WhyChooseMe'
 import TechnologyIntro from '../components/Sections/Shared/TechnologyIntro/TechnologyIntro';
 import { itemsWordpress } from '../consts/whyMeSection';
 
-const StronyWordpress = () => {
+const StronyWordpress = ({ pageContext }) => {
   const title_top = 'Profesjonalne';
   const title_middle = 'Strony Internetowe';
   const title_bottom = 'oparte na WordPress';
   const subtitle =
     'Tworzę nowoczesne, funkcjonalne strony WordPress – łatwe w zarządzaniu, szybkie we wdrożeniu i dostosowane do Twojego biznesu.';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        title_bottom={title_bottom}
+        subtitle={subtitle}
+        crumbs={crumbs}
+        crumbLabel="Strony WordPress"
+      />
       <ServiceHighlights
         title_first_column={strony_wordpress_txt.title_first_column}
         title_first_card={strony_wordpress_txt.title_first_card}

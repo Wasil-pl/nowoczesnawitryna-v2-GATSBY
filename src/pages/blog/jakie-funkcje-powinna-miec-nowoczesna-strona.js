@@ -2,13 +2,23 @@ import * as React from 'react';
 import Headers from '../../components/Header/Headers/Headers';
 import BlogArticleModernWebsiteFeatures from '../../components/Sections/Blog/BlogArticles/BlogModernWebsiteFeatures';
 
-const BlogModernWebsite = () => {
+const BlogModernWebsite = ({ pageContext }) => {
   const title_top = 'Jakie Funkcje Powinna Mieć';
   const title_middle = 'Nowoczesna Strona Internetowa?';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} active="blog" />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        active="blog"
+        crumbs={crumbs}
+        crumbLabel="Jakie Funkcje Powinna Mieć Nowoczesna Strona Internetowa?"
+      />
       <BlogArticleModernWebsiteFeatures />
     </>
   );

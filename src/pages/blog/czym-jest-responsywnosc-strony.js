@@ -2,14 +2,24 @@ import * as React from 'react';
 import Headers from '../../components/Header/Headers/Headers';
 import BlogArticleResponsiveDesign from '../../components/Sections/Blog/BlogArticles/BlogArticleResponsiveDesign';
 
-const BlogResponsiveSite = () => {
+const BlogResponsiveSite = ({ pageContext }) => {
   const title_top = 'Czym Jest';
   const title_middle = 'Responsywność';
   const title_bottom = 'Strony?';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} active="blog" />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        title_bottom={title_bottom}
+        active="blog"
+        crumbs={crumbs}
+        crumbLabel="Czym Jest Responsywność Strony i Dlaczego Jest Tak Ważna?"
+      />
       <BlogArticleResponsiveDesign />
     </>
   );

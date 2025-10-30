@@ -2,16 +2,27 @@ import * as React from 'react';
 import Headers from '../../components/Header/Headers/Headers';
 import ArticleList from '../../components/Sections/Blog/ArticleList/ArticleList';
 
-const Blog = () => {
+const Blog = ({ pageContext }) => {
   const title_top = 'Blog';
   const title_middle = 'Porady';
   const title_bottom = 'i Inspiracje';
   const subtitle =
     'Odkryj najnowsze trendy, praktyczne wskazówki i eksperckie porady dotyczące projektowania stron internetowych, SEO, e-commerce i aplikacji webowych. Zainspiruj się i rozwijaj swoją obecność online!';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        title_bottom={title_bottom}
+        subtitle={subtitle}
+        crumbs={crumbs}
+        crumbLabel="Blog"
+        active="Blog"
+      />
       <ArticleList />
     </>
   );

@@ -13,16 +13,27 @@ import { itemsShop } from '../consts/whyMeSection';
 import { faqItemsShop } from '../consts/faqItems';
 import Faq from '../components/Sections/Shared/Faq/Faq';
 
-const SklepyInternetowe = () => {
+const SklepyInternetowe = ({ pageContext }) => {
   const title_top = 'Profesjonalne';
   const title_middle = 'Sklepy Internetowe';
   const title_bottom = 'Rozwijaj Swój Biznes Online';
   const subtitle =
     'Tworzę bezpieczne sklepy WooCommerce z łatwym zarządzaniem produktami i skuteczną sprzedażą online, zgodnie z najnowszymi standardami.';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} title_bottom={title_bottom} subtitle={subtitle} />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        title_bottom={title_bottom}
+        subtitle={subtitle}
+        crumbs={crumbs}
+        crumbLabel="Sklepy Internetowe"
+      />
       <ServiceHighlights
         title_first_column={sklepy_internetowe_txt.title_first_column}
         title_first_card={sklepy_internetowe_txt.title_first_card}

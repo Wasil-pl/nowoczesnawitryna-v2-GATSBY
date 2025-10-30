@@ -2,13 +2,23 @@ import * as React from 'react';
 import Headers from '../../components/Header/Headers/Headers';
 import BlogArticleChoosingWebsite from '../../components/Sections/Blog/BlogArticles/BlogArticleChoosingWebsite';
 
-const BlogJakaStrona = () => {
+const BlogJakaStrona = ({ pageContext }) => {
   const title_top = 'Jak wybrać idealną';
   const title_middle = 'strone internetową';
 
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <>
-      <Headers title_top={title_top} title_middle={title_middle} active="blog" />
+      <Headers
+        title_top={title_top}
+        title_middle={title_middle}
+        active="blog"
+        crumbs={crumbs}
+        crumbLabel="Jak wybrać idealną stronę internetową?"
+      />
       <BlogArticleChoosingWebsite />
     </>
   );
