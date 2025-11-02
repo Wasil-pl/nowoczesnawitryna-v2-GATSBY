@@ -2,8 +2,6 @@
 
 .site_info {
   .wrapper {
-    box-shadow: settings.$box-shadow;
-
     .second_card {
       a {
         transition: color 0.3s;
@@ -13,10 +11,6 @@
         }
       }
     }
-  }
-
-  .banner {
-    box-shadow: settings.$box-shadow;
   }
 }
 

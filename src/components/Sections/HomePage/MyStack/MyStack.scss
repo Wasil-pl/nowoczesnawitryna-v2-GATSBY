@@ -2,7 +2,6 @@
 @use '../../../../styles/settings.scss' as settings;
 
 .my-stack__wrapper {
-  box-shadow: settings.$box-shadow;
   background-color: settings.$color-background-dark;
 
   &::after {
