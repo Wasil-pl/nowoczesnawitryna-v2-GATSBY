@@ -1,7 +1,6 @@
 import React from 'react';
 import loadable from '@loadable/component';
 import HeaderHome from '../components/Header/Headers/HeaderHome';
-import WhyChooseMe from '../components/Sections/HomePage/WhyChooseMe/WhyChooseMe';
 import { faqItemsHome } from '../consts/faqItems';
 
 const LoadingFallback = () => (
@@ -13,6 +12,9 @@ const LoadingFallback = () => (
 const MyServices = loadable(() => import('../components/Sections/HomePage/MyServiceComponents/MyServices/MyServices'), {
   fallback: <LoadingFallback />,
 });
+const WhyChooseMe = loadable(() => import('../components/Sections/HomePage/WhyChooseMe/WhyChooseMe'), {
+  fallback: <LoadingFallback />,
+});
 const AboutMe = loadable(() => import('../components/Sections/HomePage/AboutMe/AboutMe'), {
   fallback: <LoadingFallback />,
 });
@@ -22,6 +24,10 @@ const MyStack = loadable(() => import('../components/Sections/HomePage/MyStack/M
 const WebsiteFeatures = loadable(() => import('../components/Sections/HomePage/WebsiteFeatures/WebsiteFeatures'), {
   fallback: <LoadingFallback />,
 });
+const ValueProposition = loadable(() => import('../components/Sections/HomePage/ValueProposition/ValueProposition'), {
+  fallback: <LoadingFallback />,
+});
+
 const CallToActionSecond = loadable(() => import('../components/Sections/Shared/CallToAction/CallToActionSecond'), {
   fallback: <LoadingFallback />,
 });
@@ -57,6 +63,7 @@ const IndexPage = ({ pageContext, location }) => {
       <AboutMe />
       <MyStack />
       <WebsiteFeatures />
+      <ValueProposition />
       <CallToActionSecond />
       <WebSiteProcessSteps />
       <Portfolio />

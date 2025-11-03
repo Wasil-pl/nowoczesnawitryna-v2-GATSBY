@@ -11,6 +11,7 @@ import ShapeDividersBottom from '../../../../Ui/ShapeDividers/ShapeDividersBotto
 import { QuestionMarkCircleIcon } from '../../../../Icons/Icons';
 import sal from 'sal.js'; // ← dodane do importów
 import ResponsiveSwitch from '../../../../Functions/ResponsiveSwitch';
+import CompareCmsVsStatic from '../../CompareCmsVsStatic/CompareCmsVsStatic';
 
 const ParticlesBg = loadable(() => import('../../../../Ui/ParticlesBackground/ParticlesBackground'), {
   ssr: false,
@@ -44,13 +45,14 @@ const MyServices = () => {
           <div className="content basis-[70%] ml-[30px]">
             <h3 className="text-[1.2rem] text-text-light font-extrabold uppercase mb-[1rem]">HTML czy CMS</h3>
             <p className="text-text-light mb-[2rem]">
-              Zastanawiasz się, czy wybrać stronę internetową w HTML czy CMS? Chcesz dowiedzieć się, jakie są różnice
-              między tymi dwoma rozwiązaniami? Zajrzyj do mojego bloga, gdzie znajdziesz odpowiedzi na te pytania. Albo
-              skontaktuj się ze mną, a ja pomogę Ci wybrać najlepsze rozwiązanie dla Twojej firmy.
+              Zastanawiasz się, jaka strona internetowa będzie najlepsza dla Twojej firmy? Poniżej znajdziesz porównanie
+              dwóch najczęściej wybieranych rozwiązań przy <strong>tworzeniu stron internetowych</strong> – systemu
+              WordPress i strony HTML (Gatsby).
             </p>
-            <CustomButton text="przejdź na mój blog" link="/blog/" />
           </div>
         </div>
+
+        <CompareCmsVsStatic />
 
         <CallToAction />
       </div>

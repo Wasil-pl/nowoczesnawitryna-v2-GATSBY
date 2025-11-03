@@ -8,7 +8,7 @@ const CallToActionSecond = () => {
       <div className="container mx-auto px-4">
         <div className="wrapper flex flex-col max-w-[700px] text-center mx-auto">
           <h2 className="text-[1.7rem] font-bold uppercase mb-[20px] text-text-light">
-            Kalkulator kosztów strony internetowej
+            Kalkulator kosztów utworzenia strony internetowej
           </h2>
           <p className="text-[1rem] text-text-light mb-[50px]">
             Skorzystaj z mojego interaktywnego kalkulatora kosztów, aby otrzymać bezpłatną wycenę swojej strony

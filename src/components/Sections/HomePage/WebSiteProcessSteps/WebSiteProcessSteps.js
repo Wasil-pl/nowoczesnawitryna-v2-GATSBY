@@ -10,13 +10,13 @@ const WebSiteProcessSteps = () => {
   }, []);
 
   return (
-    <section className="process_steps_container">
+    <section id="proces" className="process_steps_container">
       <div className="container mx-auto px-4">
         <SectionTitle
-          title="Mój proces projektowania"
+          title="Mój proces tworzenia"
           coloredText=" stron internetowych"
           backgroundText="Proces"
-          ariaLabel="Mój proces projektowania stron internetowych"
+          ariaLabel="Mój proces tworzenia stron internetowych"
         />
 
         <div className="process_steps">
