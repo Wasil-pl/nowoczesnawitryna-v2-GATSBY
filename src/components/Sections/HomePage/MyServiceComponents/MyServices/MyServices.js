@@ -4,7 +4,6 @@ import './MyServices.scss';
 import SectionTitle from '../../../../Ui/SectionTitle/SectionTitle';
 import MyServicesThumbs from '../MyServicesThumbs/MyServicesThumbs';
 import MyServicesAccordion from '../MyServicesAccordion/MyServicesAccordion';
-import CustomButton from '../../../../Ui/CustomButton/CustomButton';
 import CallToAction from '../../../Shared/CallToAction/CallToAction';
 import ShapeDividersTop from '../../../../Ui/ShapeDividers/ShapeDividersTop';
 import ShapeDividersBottom from '../../../../Ui/ShapeDividers/ShapeDividersBottom';

@@ -17,12 +17,11 @@ const WhyChooseMe = () => {
               Dlaczego Warto Wybrać Moje Usługi Tworzenia Nowoczesnych Stron Internetowych?
             </h3>
             <p>
-              Oferuję kompleksowe usługi w zakresie{' '}
-              <em>tworzenia stron internetowych dla klientów Jastrzębia-Zdroju</em>, województwa śląskiego oraz całej
-              Polski. Strony, które są nie tylko <strong>responsywne</strong> i <strong>funkcjonalne</strong>, ale także{' '}
-              <strong>łatwe w zarządzaniu</strong> oraz w pełni <strong>zoptymalizowane pod kątem SEO</strong>. Każda
-              strona internetowa lub sklep online, jest zaprojektowana z myślą o użytkowniku oraz zgodna z najnowszymi
-              trendami i technologiami. A wszystko to, aby zapewnić najwyższą jakość i efektywność w sieci.
+              Projektuję i wdrażam <strong>nowoczesne strony internetowe</strong> dla firm z całej Polski — od
+              Jastrzębia-Zdroju po Warszawę, Kraków i Gdańsk. Każda realizacja powstaje z myślą o wynikach:{' '}
+              <strong>responsywność</strong>, szybkość działania, <strong>intuicyjna obsługa</strong> oraz{' '}
+              <strong>optymalizacja SEO</strong> już na etapie projektu. Dzięki temu Twoja strona internetowa
+              skuteczniej pozyskuje klientów i wspiera sprzedaż online.
             </p>
             <div className="mx-auto">
               <CustomButton variant="dark" text="Skontaktuj się" link="/kontakt/" />
@@ -36,9 +35,10 @@ const WhyChooseMe = () => {
                   <em>Freelancer</em>, nie agencja
                 </h4>
                 <p>
-                  Jako freelancer oferuję bardziej indywidualne podejście niż typowe agencje. Tworzę nowoczesne strony
-                  internetowe, skrojone na miarę potrzeb Twojej firmy. Zapewniając przy tym pełną elastyczność, szybkie
-                  wdrożenie oraz konkurencyjne ceny. Każde zlecenie to dla mnie pełne zaangażowanie i najwyższa jakość.
+                  Jako freelancer oferuję bezpośredni kontakt i pełną odpowiedzialność za wynik. Tworzę
+                  <strong> strony internetowe skrojone na miarę</strong> Twojej branży i celów: od prostych wizytówek po
+                  rozbudowane serwisy. Masz elastyczność, krótszy czas wdrożenia i <strong>konkurencyjną wycenę</strong>{' '}
+                  — bez wielostopniowej biurokracji.
                 </p>
               </div>
             </div>
@@ -46,9 +46,10 @@ const WhyChooseMe = () => {
               <div className="card bg-background-light p-4 rounded-[20px]">
                 <h4 className="font-bold">Nie tylko WordPress!!</h4>
                 <p>
-                  W odróżnieniu od wielu freelancerów, nie ograniczam się jedynie do WordPressa. Dzięki moim
-                  umiejętnościom programistycznym mogę tworzyć strony, sklepy interentowe, na różnych platformach i
-                  dostosowywać je do Twoich specyficznych potrzeb klientów oraz branży.
+                  WordPress to świetne narzędzie, ale nie jedyne. W zależności od potrzeb biznesowych tworzę
+                  <strong> strony internetowe</strong> i sklepy na różnych technologiach (m.in. czysty HTML/JS,
+                  React/Next), aby zapewnić <strong>wydajność</strong>, <strong>bezpieczeństwo</strong> i łatwe
+                  rozwijanie projektu w przyszłości.
                 </p>
                 <span>
                   <strong>
@@ -70,9 +71,9 @@ const WhyChooseMe = () => {
           data-sal-duration="1000"
         >
           <p className="text-[1.5rem] font-bold text-center">
-            Tworzę strony internetowe dla firm każdej wielkości – od małych start-upów po duże korporacje. Bez względu
-            na to, jaką firmę prowadzisz, jestem pewien, że mogę zaproponować stronę lub sklep, które spełnią Twoje
-            oczekiwania i będą idealnym rozwiązaniem dla Twojego biznesu.
+            Realizuję <strong>strony internetowe</strong> dla firm każdej wielkości — od start-upów po duże spółki.
+            Potrzebujesz prostej strony czy rozbudowanego serwisu? Zaproponuję rozwiązanie, które podkreśli wizerunek
+            marki i pomoże w pozyskiwaniu klientów w całej Polsce.
           </p>
         </div>
       </div>

@@ -34,14 +34,14 @@ const AboutMe = () => {
           >
             <h3 className="text-[2.5rem] w-fit font-bold  mb-[20px] text-primary highlighted-text">Cześć</h3>
             <p className="text-text-dark mb-[20px]">
-              Cześć! Nazywam się Dariusz Wasilewski i jestem pasjonatem{' '}
-              <em>tworzenia stron internetowych z Jastrzębia-Zdroju.</em> Moja fascynacja technologiami internetowymi
-              zaczęła się już dawno temu i szybko przekształciła się w pełnowymiarową karierę jako{' '}
-              <em>web developer</em>. Od pierwszych kroków w HTML i CSS, przez zaawansowane technologie, nauczyłem się
-              tworzyć nowoczesne, responsywne i interaktywne strony internetowe. Strony te spełniają najwyższe standardy
-              zarówno pod względem designu, jak i funkcjonalności. Moim celem jest tworzenie stron, które nie tylko
-              dobrze wyglądają, ale również są intuicyjne w obsłudze, szybkie i zoptymalizowane pod kątem SEO. Każdy
-              projekt traktuję indywidualnie, dostosowując rozwiązania do potrzeb i oczekiwań moich klientów.
+              Cześć! Nazywam się Dariusz Wasilewski i jestem pasjonatem tworzenia nowoczesnych stron internetowych.
+              Pochodzę z Jastrzębia-Zdroju, ale realizuję projekty dla klientów z całej Polski. Moja przygoda z
+              technologiami internetowymi zaczęła się wiele lat temu – od prostych stron w HTML i CSS, po zaawansowane
+              projekty oparte na React i WordPress. Dziś tworzę <strong>strony internetowe</strong>, które łączą
+              estetykę, funkcjonalność i szybkość działania. Każda realizacja jest dla mnie czymś więcej niż kodem – to
+              indywidualne podejście do potrzeb Twojej marki. Projektuję serwisy, które nie tylko świetnie wyglądają,
+              ale są też <strong>intuicyjne w obsłudze</strong>i w pełni <strong>zoptymalizowane pod SEO</strong>, aby
+              przyciągały nowych klientów i budowały Twój profesjonalny wizerunek w sieci.
             </p>
           </div>
         </div>

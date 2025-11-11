@@ -40,16 +40,17 @@ const MyServicesAccordion = () => {
             <div className="flex-1 flex flex-col">
               <h3 className="text-[2rem] font-bold accordion_title mb-[50px]">Strony internetowe HTML</h3>
               <p className="accordion_paragraph mb-[20px]">
-                Oferuję strony interentowe programowane od podstaw, które są unikatowe, w pełni dostosowane do Twoich
-                indywidualnych potrzeb i pozwalają Ci wyróżnić się na tle konkurencji. Moje niestandardowe strony
-                internetowe to coś więcej niż standardowe szablony – każda strona jest tworzona z myślą o wyjątkowym
-                designie i funkcjonalności.
+                Tworzę <strong>nowoczesne strony internetowe</strong> programowane od podstaw (HTML/SCSS/JS), w pełni
+                dostosowane do celów biznesowych i identyfikacji wizualnej marki. To rozwiązanie dla firm z całej
+                Polski, które chcą wyróżnić się unikatowym projektem i znakomitą wydajnością – bez kompromisów
+                narzuconych przez gotowe szablony.
               </p>
               <p className="accordion_paragraph mb-[50px]">
-                Jeśli szukasz nowoczesnej strony internetowej z perfekcyjnym dopasowaniem graficznym (pixel perfect),
-                zaawansowanej aplikacji typu single page app (SPA) lub innego niestandardowego rozwiązania, trafiłeś we
-                właściwe miejsce. Moje strony, spełniają najwyższe standardy zarówno pod względem estetyki, jak i
-                użyteczności.
+                Potrzebujesz <strong>pixel-perfect</strong> layoutu, niestandardowych animacji lub aplikacji typu SPA?
+                Przygotowuję <strong>strony internetowe</strong>, które łączą dopracowany design, wysoką szybkość
+                działania oraz
+                <strong> SEO-friendly</strong> strukturę już na etapie projektu – tak, by łatwiej zdobywać pozycje i
+                klientów.
               </p>
               <div className="flex justify-center">
                 <CustomButton text="Zobacz więcej" link="/strony-niestandardowe/" />
@@ -58,7 +59,7 @@ const MyServicesAccordion = () => {
             <div className="flex-1 text-center mb-[50px]">
               <StaticImage
                 src="../../../../../images/html.png"
-                alt="strony kodowane od zera"
+                alt="strony internetowe HTML — projekt od podstaw"
                 width={300}
                 quality={100}
                 layout="constrained"
@@ -87,10 +88,9 @@ const MyServicesAccordion = () => {
             <div className="flex-1 flex flex-col">
               <h3 className="text-[2rem] font-bold accordion_title mb-[50px]">Aplikacje webowe</h3>
               <p className="accordion_paragraph mb-[50px]">
-                Aplikacje webowe to idealne rozwiązanie dla tych, którzy oczekują więcej niż oferują tradycyjne strony
-                internetowe. Dzięki zaawansowanym technologiom takim jak React, Redux, MySQL czy MongoDB, tworzę
-                szybkie, bezpieczne i niezawodne aplikacje webowe, które usprawnią działanie Twojej firmy oraz
-                pozytywnie wpłyną na doświadczenie Twoich klientów.
+                Gdy zwykła strona to za mało, projektuję i wdrażam <strong>aplikacje webowe</strong> (React/Next, bazy
+                danych MySQL lub MongoDB). Stawiam na wydajność, bezpieczeństwo oraz skalowalność – tak, aby narzędzie
+                realnie poprawiało procesy w firmie i doświadczenie użytkowników.
               </p>
               <div className="flex justify-center">
                 <CustomButton text="Zobacz więcej" link="/aplikacje-webowe/" />
@@ -132,15 +132,14 @@ const MyServicesAccordion = () => {
                 Strony Internetowe oparte na WordPress
               </h3>
               <p className="accordion_paragraph mb-[20px]">
-                Oferuję tworzenie stron internetowych opartych na WordPress, jednym z najpopularniejszych systemów
-                zarządzania treścią (CMS). Jeśli potrzebujesz łatwej w edycji strony internetowej, którą możesz
-                zarządzać bez umiejętności kodowania, strony internetowe na WordPress będą dla Ciebie idealnym
-                rozwiązaniem.
+                Realizuję <strong>strony internetowe</strong> oparte na WordPress – najpopularniejszym CMS na świecie.
+                To świetna opcja, jeśli zależy Ci na łatwej edycji treści, blogu firmowym i szybkim starcie bez
+                rezygnowania z profesjonalnego wyglądu oraz dobrych praktyk <strong>SEO</strong>.
               </p>
               <p className="accordion_paragraph mb-[50px]">
-                WordPress to doskonały wybór dla tych, którym zależy na szybkim uruchomieniu strony, przy jednoczesnym
-                zachowaniu pełnej elastyczności i możliwości rozbudowy. Dzięki stronom internetowym na WordPress,
-                zyskasz funkcjonalność, którą łatwo dostosujesz do potrzeb Twojego biznesu.
+                Każdy projekt zawiera przejrzystą strukturę, zoptymalizowane nagłówki, lekkie grafiki i przygotowanie
+                pod pozycjonowanie – tak, aby <strong>strony internetowe WordPress</strong> budowały widoczność marki w
+                całej Polsce i wspierały cele sprzedażowe.
               </p>
               <div className="flex justify-center">
                 <CustomButton text="Zobacz więcej" link="/strony-wordpress/" />
@@ -178,23 +177,18 @@ const MyServicesAccordion = () => {
             <div className="flex-1 flex flex-col">
               <h3 className="text-[2rem] font-bold accordion_title mb-[50px]">Sklepy internetowe</h3>
               <p className="accordion_paragraph mb-[20px]">
-                Oferuję funkcjonalne i bezpieczne sklepy internetowe oparte na WooCommerce, jednym z najpopularniejszych
-                rozwiązań dla e-commerce. Moje sklepy internetowe umożliwiają łatwą sprzedaż produktów online oraz
-                intuicyjne zarządzanie asortymentem.
+                Projektuję <strong>sklepy internetowe</strong> oparte na WooCommerce: szybkie, bezpieczne i proste w
+                zarządzaniu. Dostajesz kompletny e-commerce z intuicyjną nawigacją, optymalnym procesem zakupu oraz
+                integracjami płatności i dostaw.
               </p>
               <p className="accordion_paragraph mb-[20px]">
-                Tworzę nowoczesne a zarazem profesjonalne sklepy internetowe, które są w pełni zgodne z najnowszymi
-                standardami e-commerce, zapewniając płynne działanie i bezpieczeństwo transakcji. Dzięki moim
-                rozwiązaniom możesz z łatwością rozwijać swoją sprzedaż online i dostosowywać sklep do potrzeb Twojej
-                firmy.
+                Dbam o wydajność, UX i <strong>SEO</strong>, dzięki czemu Twój sklep lepiej konwertuje i rośnie wraz z
+                ofertą. Każdy projekt przygotowuję pod realne potrzeby – od małych butików po rozbudowane katalogi
+                produktów.
               </p>
               <p className="accordion_paragraph mb-[50px]">
-                Wszystkie sklepy internetowe, które tworzę, są w pełni przygotowane do działania i sprzedaży online.
-                Oferuję kompletne rozwiązania, które zawierają wszystkie kluczowe elementy niezbędne do prowadzenia
-                sklepu internetowego. Każdy projekt obejmuje m.in. regulamin sklepu, politykę prywatności oraz inne
-                obowiązkowe informacje wymagane przez prawo polskie i unijne. Dzięki temu Twój sklep internetowy będzie
-                nie tylko funkcjonalny, ale także zgodny z obowiązującymi przepisami, co pozwoli Ci prowadzić biznes w
-                sposób bezpieczny i profesjonalny.
+                W pakiecie otrzymujesz również niezbędne strony informacyjne (regulamin, polityka prywatności itp.), aby
+                prowadzić sprzedaż online w sposób zgodny z przepisami i standardami rynkowymi.
               </p>
               <div className="flex justify-center">
                 <CustomButton text="Zobacz więcej" link="/sklepy-internetowe/" />
@@ -236,16 +230,14 @@ const MyServicesAccordion = () => {
                 Strony Internetowe LMS – Nowoczesne Platformy Edukacyjne
               </h3>
               <p className="accordion_paragraph mb-[20px]">
-                Oferuję strony internetowe LMS (Learning Management System), które umożliwiają łatwe zarządzanie kursami
-                online, uczniami oraz materiałami edukacyjnymi. Moje platformy LMS są idealne dla szkół, firm
-                szkoleniowych oraz osób oferujących kursy online.
+                Buduję <strong>platformy LMS</strong> do sprzedaży i prowadzenia kursów online: rejestracja
+                użytkowników, zarządzanie lekcjami i modułami, quizy, certyfikaty, raporty postępów oraz integracje z
+                płatnościami i webinarami.
               </p>
               <p className="accordion_paragraph mb-[50px]">
-                Moje strony LMS oferują szeroką gamę funkcji, takich jak rejestracja użytkowników, zarządzanie kursami,
-                quizami oraz certyfikatami. Dzięki prostemu w obsłudze panelowi możesz samodzielnie dodawać nowe kursy,
-                monitorować postępy uczniów i łatwo zarządzać całą platformą. Tworzone przeze mnie strony są w pełni
-                zoptymalizowane pod kątem SEO, co pozwala dotrzeć do większej liczby odbiorców, a dodatkowo umożliwiają
-                integrację z narzędziami płatności, webinarami i mediami społecznościowymi.
+                Projektuję strukturę pod <strong>SEO</strong>, aby kursy łatwiej docierały do odbiorców w całej Polsce.
+                Panel administracyjny jest prosty w obsłudze, więc możesz samodzielnie dodawać treści i rozwijać ofertę
+                bez wsparcia technicznego.
               </p>
               <div className="flex justify-center">
                 <CustomButton text="Zobacz więcej" link="/strony-lms/" />

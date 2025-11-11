@@ -33,8 +33,9 @@ const WebsiteFeatures = () => {
             </div>
             <h3 className="text-xl font-bold mb-5">Przystępne ceny</h3>
             <p>
-              Oferuję strony internetowe w przystępnych cenach, bez kompromisów w jakości. Dzięki indywidualnemu
-              podejściu zapewniam najwyższy standard usług dostosowany do budżetu Twojej firmy.
+              Oferuję <strong>strony internetowe</strong> w przejrzystych pakietach — bez ukrytych kosztów i bez
+              kompromisów w jakości. Dzięki indywidualnej wycenie dopasowuję zakres prac do budżetu i celów Twojej
+              firmy.
             </p>
           </div>
 
@@ -50,9 +51,9 @@ const WebsiteFeatures = () => {
             </div>
             <h3 className="text-xl font-bold mb-5">Optymalizacja SEO</h3>
             <p>
-              Tworzę strony internetowe zgodne z najnowszymi standardami SEO, które pomagają uzyskać lepsze pozycje w
-              wyszukiwarkach. Moje strony są zoptymalizowane od podstaw, aby wspierać widoczność Twojej firmy w
-              internecie.
+              Projektuję <strong>strony internetowe</strong> zgodne z dobrymi praktykami SEO: przejrzysta semantyka,
+              lekkie grafiki, czysta nawigacja i szybkie ładowanie. To realna podstawa lepszych pozycji w
+              wyszukiwarkach.
             </p>
           </div>
 
@@ -66,12 +67,10 @@ const WebsiteFeatures = () => {
             <div className="min-h-[200px] flex justify-center items-center">
               <StaticImage src="../../../../images/rodo.png" alt="RODO" height={180} />
             </div>
-            <h3 className="text-xl font-bold mb-5">Zapewnienie Zgodności z RODO na Mojej Stronie Internetowej</h3>
+            <h3 className="text-xl font-bold mb-5">Zgodność z RODO</h3>
             <p>
-              Dostosowanie się do wymogów RODO może być wyzwaniem, ale rozumiem, jak istotna jest ochrona danych. Każda
-              tworzona przeze mnie strona internetowa przechodzi szczegółowy przegląd zgodności z RODO. Zapewniam
-              wprowadzenie wszystkich wymaganych zabezpieczeń, aby Twoja witryna spełniała standardy RODO i gwarantowała
-              bezpieczne przetwarzanie danych użytkowników.
+              Każda strona przechodzi przegląd pod kątem RODO: polityka prywatności, cookies, zgody i niezbędne
+              mechanizmy. Dbam o to, by Twoja witryna bezpiecznie przetwarzała dane użytkowników.
             </p>
           </div>
 
@@ -87,8 +86,8 @@ const WebsiteFeatures = () => {
             </div>
             <h3 className="text-xl font-bold mb-5">Wsparcie i opieka techniczna</h3>
             <p>
-              Po dostarczeniu strony zapewniam pełne wsparcie techniczne i pomoc w bieżących aktualizacjach. Możesz
-              liczyć na moje zaangażowanie zarówno na etapie wdrożenia, jak i po uruchomieniu strony.
+              Po wdrożeniu zapewniam aktualizacje, kopie zapasowe i szybkie wsparcie. Pomagam rozwijać stronę wraz z
+              potrzebami firmy, tak by była zawsze sprawna i aktualna.
             </p>
           </div>
 
@@ -104,9 +103,8 @@ const WebsiteFeatures = () => {
             </div>
             <h3 className="text-xl font-bold mb-5">Optymalizacja wydajności</h3>
             <p>
-              Dbam o to, by moje strony osiągały jak najwyższe wyniki w narzędziach takich jak PageSpeed Insights.
-              Dzięki temu Twoja witryna będzie szybka, co pozytywnie wpływa na doświadczenia użytkowników oraz wyniki
-              SEO.
+              Skupiam się na szybkości: Core Web Vitals, minimalizacja skryptów i dobre praktyki front-end. Szybka
+              strona to lepsze UX, wyższe konwersje i wsparcie dla SEO.
             </p>
           </div>
 
@@ -122,8 +120,9 @@ const WebsiteFeatures = () => {
             </div>
             <h3 className="text-xl font-bold mb-5">Responsywność mobilna</h3>
             <p>
-              Każda strona, którą projektuję, jest w pełni responsywna. Oznacza to, że wygląda doskonale i działa
-              płynnie na każdym urządzeniu – zarówno na komputerze, jak i na smartfonie czy tablecie.
+              Każda <strong>strona internetowa</strong>, którą projektuję, jest w pełni responsywna. Oznacza to, że
+              wygląda doskonale i działa płynnie na każdym urządzeniu – zarówno na komputerze, jak i na smartfonie czy
+              tablecie.
             </p>
           </div>
 

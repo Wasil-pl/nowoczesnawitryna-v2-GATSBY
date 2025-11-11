@@ -12,14 +12,15 @@ const ParticlesBg = loadable(() => import('../../Ui/ParticlesBackground/Particle
 });
 
 const LINES = [
-  { text: 'Tworzenie', light: false },
-  { text: 'Nowoczesnych', light: false },
-  { text: 'Stron', light: true },
-  { text: 'Internetowych', light: true },
+  { text: 'Nowoczesne', light: false },
+  { text: 'Strony', light: false },
+  { text: 'internetowe', light: false },
+  { text: 'Dla firm', light: true },
+  { text: 'z całej Polski', light: true },
 ];
 
 const SUBTITLE =
-  'Profesjonalne strony internetowe i sklepy online. Świadczę usługi dla klientóww Jastrzębiu-Zdroju, województwie śląskim oraz w całej Polsce.';
+  'Tworzę strony internetowe, które skutecznie przyciągają klientów i budują wizerunek Twojej marki online. Realizuję nowoczesne projekty stron i sklepów internetowych dla firm z całej Polski — od Jastrzębia-Zdroju po Warszawę.';
 
 const HeaderHome = ({ crumbs, location }) => {
   return (

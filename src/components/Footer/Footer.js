@@ -23,11 +23,19 @@ const Footer = () => {
             <p>Jastrzębie-Zdrój</p>
             <p>ul. Bogoczowiec 4c</p>
             <div className="flex gap-5 mt-5">
-              <a href="https://www.facebook.com/..." aria-label="facebook" className="hover:text-primary">
+              <a
+                href="https://www.facebook.com/p/Nowoczesna-Witryna-61556511114215/"
+                aria-label="facebook"
+                className="hover:text-primary"
+              >
                 <FacebookIcon width={30} height={30} />
                 <span className="sr-only">facebook</span>
               </a>
-              <a href="https://www.linkedin.com/..." aria-label="linkedin" className="hover:text-primary">
+              <a
+                href="https://www.linkedin.com/in/dariusz-wasilewski-4041072b9/"
+                aria-label="linkedin"
+                className="hover:text-primary"
+              >
                 <LinkedInIcon width={30} height={30} />
                 <span className="sr-only">linkedin</span>
               </a>
