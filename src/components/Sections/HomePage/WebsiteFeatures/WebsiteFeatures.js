@@ -33,7 +33,7 @@ const WebsiteFeatures = () => {
             </div>
             <h3 className="text-xl font-bold mb-5">Przystępne ceny</h3>
             <p>
-              Oferuję <strong>strony internetowe</strong> w przejrzystych pakietach — bez ukrytych kosztów i bez
+              Oferuję <strong>strony internetowe</strong> w przejrzystych pakietach - bez ukrytych kosztów i bez
               kompromisów w jakości. Dzięki indywidualnej wycenie dopasowuję zakres prac do budżetu i celów Twojej
               firmy.
             </p>

@@ -31,7 +31,7 @@ const ValueProposition = () => {
             </div>
             <h3 className="text-[1.35rem] font-bold text-text-dark text-center">Bez pośredników</h3>
             <p className="mt-3 text-text-dark text-center">
-              Współpraca odbywa się bezpośrednio ze mną — od koncepcji po publikację. Szybkie decyzje, pełna
+              Współpraca odbywa się bezpośrednio ze mną - od koncepcji po publikację. Szybkie decyzje, pełna
               odpowiedzialność.
             </p>
           </div>
@@ -64,7 +64,7 @@ const ValueProposition = () => {
             </div>
             <h3 className="text-[1.35rem] font-bold text-text-dark text-center">Hosting i domena w cenie</h3>
             <p className="mt-3 text-text-dark text-center">
-              Kompletny pakiet startowy: wykonanie, uruchomienie i utrzymanie strony przez pierwszy rok — bez
+              Kompletny pakiet startowy: wykonanie, uruchomienie i utrzymanie strony przez pierwszy rok - bez
               dodatkowych formalności.
             </p>
           </div>
@@ -81,7 +81,7 @@ const ValueProposition = () => {
             </div>
             <h3 className="text-[1.35rem] font-bold text-text-dark text-center">Technologia dobrana do projektu</h3>
             <p className="mt-3 text-text-dark text-center">
-              Gatsby/React, WordPress, Tailwind — dobieram narzędzia do celów, nie odwrotnie. Skupiam się na wydajności
+              Gatsby/React, WordPress, Tailwind - dobieram narzędzia do celów, nie odwrotnie. Skupiam się na wydajności
               i skalowalności.
             </p>
           </div>
@@ -98,7 +98,7 @@ const ValueProposition = () => {
             </div>
             <h3 className="text-[1.35rem] font-bold text-text-dark text-center">Dopasowanie do branży</h3>
             <p className="mt-3 text-text-dark text-center">
-              Od małych firm po e-commerce i LMS — projektuję pod realne potrzeby biznesu, nie pod szablon.
+              Od małych firm po e-commerce i LMS - projektuję pod realne potrzeby biznesu, nie pod szablon.
             </p>
           </div>
 
@@ -114,7 +114,7 @@ const ValueProposition = () => {
             </div>
             <h3 className="text-[1.35rem] font-bold text-text-dark text-center">Stałe wsparcie po wdrożeniu</h3>
             <p className="mt-3 text-text-dark text-center">
-              Aktualizacje, rozwój, doradztwo. Nie zostawiam Cię samego po starcie — pomagam rosnąć.
+              Aktualizacje, rozwój, doradztwo. Nie zostawiam Cię samego po starcie - pomagam rosnąć.
             </p>
           </div>
         </div>

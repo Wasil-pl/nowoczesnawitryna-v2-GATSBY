@@ -21,11 +21,11 @@ export const itemsWordpress = [
   {
     icon: <Code2 className="h-8 w-8 text-primary" />,
     title: 'Doskonała znajomość technologii',
-    desc: 'WordPress, WooCommerce, HTML, JS, SCSS, React, Nest — pełna kontrola nad kodem i funkcjonalnością.',
+    desc: 'WordPress, WooCommerce, HTML, JS, SCSS, React, Nest - pełna kontrola nad kodem i funkcjonalnością.',
   },
   {
     icon: <Zap className="h-8 w-8 text-primary" />,
-    title: 'Własne rozwiązania — zero gotowych motywów',
+    title: 'Własne rozwiązania - zero gotowych motywów',
     desc: 'Każda witryna powstaje od podstaw. Unikalny design, czysty kod i szybkość działania.',
   },
   {
@@ -45,12 +45,12 @@ export const itemsWebApp = [
   {
     icon: <Cpu className="h-8 w-8 text-primary" />,
     title: 'Zaawansowane technologie',
-    desc: 'React, Next.js, Nest.js, MongoDB — tworzę nowoczesne aplikacje webowe, które są szybkie, stabilne i skalowalne.',
+    desc: 'React, Next.js, Nest.js, MongoDB - tworzę nowoczesne aplikacje webowe, które są szybkie, stabilne i skalowalne.',
   },
   {
     icon: <Layers className="h-8 w-8 text-primary" />,
     title: 'Architektura dopasowana do biznesu',
-    desc: 'Projektuję systemy z myślą o przyszłości — logicznie zorganizowane API, wydajność i bezpieczeństwo danych.',
+    desc: 'Projektuję systemy z myślą o przyszłości - logicznie zorganizowane API, wydajność i bezpieczeństwo danych.',
   },
   {
     icon: <ShieldCheck className="h-8 w-8 text-primary" />,
@@ -69,7 +69,7 @@ export const itemsHtml = [
   {
     icon: <Code2 className="h-8 w-8 text-primary" />,
     title: 'Czysty kod bez CMS',
-    desc: 'Strony tworzone w czystym HTML, CSS i JS — maksymalna szybkość i zero zbędnych skryptów.',
+    desc: 'Strony tworzone w czystym HTML, CSS i JS - maksymalna szybkość i zero zbędnych skryptów.',
   },
   {
     icon: <Zap className="h-8 w-8 text-primary" />,
@@ -151,7 +151,7 @@ export const itemsLogo = [
   {
     icon: <Star className="h-8 w-8 text-primary" />,
     title: 'Czytelność i ponadczasowość',
-    desc: 'Projekty, które pozostają czytelne w każdym formacie — od wizytówki po billboard.',
+    desc: 'Projekty, które pozostają czytelne w każdym formacie - od wizytówki po billboard.',
   },
   {
     icon: <Rocket className="h-8 w-8 text-primary" />,

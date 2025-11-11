@@ -6,7 +6,7 @@ export const content = {
     icon: <Globe2 className="h-10 w-10 text-primary mb-4" />,
     title: 'Czym jest WordPress i dla kogo jest najlepszy?',
     desc: `WordPress to najpopularniejszy na świecie system CMS, dzięki któremu możesz mieć stronę, którą samodzielnie edytujesz bez znajomości kodu. 
-Nadaje się idealnie dla firm, które chcą często aktualizować treści — np. dodawać nowe wpisy, zdjęcia, oferty czy produkty.
+Nadaje się idealnie dla firm, które chcą często aktualizować treści - np. dodawać nowe wpisy, zdjęcia, oferty czy produkty.
 
 To elastyczne rozwiązanie – można na nim stworzyć zarówno prostą stronę firmową, jak i rozbudowany serwis z blogiem lub sklepem internetowym. 
 Dodatkowo WordPress jest przyjazny dla SEO, a jego ogromny ekosystem wtyczek pozwala rozszerzać funkcje w miarę rozwoju firmy.`,
@@ -34,11 +34,11 @@ Sklepy WooCommerce są elastyczne, bezpieczne i dostosowane do wymagań SEO oraz
   logo: {
     icon: <PenTool className="h-10 w-10 text-primary mb-4" />,
     title: 'Dlaczego profesjonalne logo ma znaczenie?',
-    desc: `Logo to coś więcej niż ładna grafika — to pierwszy kontakt klienta z Twoją marką. Dobrze zaprojektowane logo buduje zaufanie, wyróżnia firmę i sprawia, że jest zapamiętywana. 
+    desc: `Logo to coś więcej niż ładna grafika - to pierwszy kontakt klienta z Twoją marką. Dobrze zaprojektowane logo buduje zaufanie, wyróżnia firmę i sprawia, że jest zapamiętywana. 
 Podczas projektowania logotypu analizuję branżę, konkurencję i grupę docelową, by stworzyć symbol, który oddaje charakter marki.
 
 Wykonuję projekty logo od podstaw, dostosowując je do strony internetowej, materiałów firmowych i kolorystyki marki. 
-Efekt końcowy to znak graficzny, który jest spójny, czytelny i gotowy do użycia wszędzie — od wizytówki po stronę główną.`,
+Efekt końcowy to znak graficzny, który jest spójny, czytelny i gotowy do użycia wszędzie - od wizytówki po stronę główną.`,
   },
 
   webapp: {

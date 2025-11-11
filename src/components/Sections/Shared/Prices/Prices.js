@@ -511,7 +511,7 @@ const Prices = ({ html, wordpress, sklep, aplikacja, lms, logo }) => {
                 <p className="mb-[20px]">Dla kogo?</p>
                 <p className="mb-[20px]">
                   Dla firm, które chcą wyróżnić się na rynku i posiadać rozpoznawalny znak firmowy. Bez względu na
-                  rozmiar biznesu — tworzę logo, które reprezentuje markę profesjonalnie i estetycznie.
+                  rozmiar biznesu - tworzę logo, które reprezentuje markę profesjonalnie i estetycznie.
                 </p>
               </div>
 

@@ -15,7 +15,7 @@ export default function ProcessTimeline({ steps, compact = true }) {
           <VerticalTimelineElement
             key={step.id ?? idx}
             className="vertical-timeline-element--work"
-            /* pierwszy element — zachowujemy specjalne style z oryginału */
+            /* pierwszy element - zachowujemy specjalne style z oryginału */
             contentStyle={idx === 0 ? { background: '#ffbf00', color: '#000' } : undefined}
             contentArrowStyle={idx === 0 ? { borderRight: '7px solid  #ffbf00' } : undefined}
             date={step.date /* opcjonalnie, jeśli dodasz date w danych */}
@@ -39,7 +39,7 @@ export default function ProcessTimeline({ steps, compact = true }) {
             )}
           </VerticalTimelineElement>
         ))}
-        {/* Element końcowy ze „StarIcon” — zostawiam jak w oryginale */}
+        {/* Element końcowy ze „StarIcon” - zostawiam jak w oryginale */}
         <VerticalTimelineElement iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }} icon={<StarIcon />} />
       </VerticalTimeline>
     </section>

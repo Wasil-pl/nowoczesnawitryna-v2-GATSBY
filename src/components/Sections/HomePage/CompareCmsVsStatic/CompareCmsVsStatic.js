@@ -23,7 +23,7 @@ const items = [
     },
     static: {
       ok: true,
-      text: 'Ekstremalnie szybka — statyczne strony i nowoczesne bundlowanie. Świetne wyniki w Core Web Vitals i wysokie oceny w Lighthouse.',
+      text: 'Ekstremalnie szybka - statyczne strony i nowoczesne bundlowanie. Świetne wyniki w Core Web Vitals i wysokie oceny w Lighthouse.',
     },
   },
   {
@@ -45,14 +45,14 @@ const items = [
     },
     static: {
       ok: true,
-      text: 'Bardzo wysoki poziom — brak panelu logowania i bazy ogranicza wektor ataku. Mniej elementów do aktualizacji i mniejsze ryzyko luk.',
+      text: 'Bardzo wysoki poziom - brak panelu logowania i bazy ogranicza wektor ataku. Mniej elementów do aktualizacji i mniejsze ryzyko luk.',
     },
   },
   {
     name: 'Możliwości rozbudowy',
     wp: {
       ok: true,
-      text: 'Ogromny ekosystem — sklep (WooCommerce), blog, płatności, newsletter, integracje. Szybkie wdrożenia kosztem dodatkowych zależności.',
+      text: 'Ogromny ekosystem - sklep (WooCommerce), blog, płatności, newsletter, integracje. Szybkie wdrożenia kosztem dodatkowych zależności.',
     },
     static: {
       ok: false,

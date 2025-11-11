@@ -17,7 +17,7 @@ const WhyChooseMe = () => {
               Dlaczego Warto Wybrać Moje Usługi Tworzenia Nowoczesnych Stron Internetowych?
             </h3>
             <p>
-              Projektuję i wdrażam <strong>nowoczesne strony internetowe</strong> dla firm z całej Polski — od
+              Projektuję i wdrażam <strong>nowoczesne strony internetowe</strong> dla firm z całej Polski - od
               Jastrzębia-Zdroju po Warszawę, Kraków i Gdańsk. Każda realizacja powstaje z myślą o wynikach:{' '}
               <strong>responsywność</strong>, szybkość działania, <strong>intuicyjna obsługa</strong> oraz{' '}
               <strong>optymalizacja SEO</strong> już na etapie projektu. Dzięki temu Twoja strona internetowa
@@ -38,7 +38,7 @@ const WhyChooseMe = () => {
                   Jako freelancer oferuję bezpośredni kontakt i pełną odpowiedzialność za wynik. Tworzę
                   <strong> strony internetowe skrojone na miarę</strong> Twojej branży i celów: od prostych wizytówek po
                   rozbudowane serwisy. Masz elastyczność, krótszy czas wdrożenia i <strong>konkurencyjną wycenę</strong>{' '}
-                  — bez wielostopniowej biurokracji.
+                  - bez wielostopniowej biurokracji.
                 </p>
               </div>
             </div>
@@ -71,7 +71,7 @@ const WhyChooseMe = () => {
           data-sal-duration="1000"
         >
           <p className="text-[1.5rem] font-bold text-center">
-            Realizuję <strong>strony internetowe</strong> dla firm każdej wielkości — od start-upów po duże spółki.
+            Realizuję <strong>strony internetowe</strong> dla firm każdej wielkości - od start-upów po duże spółki.
             Potrzebujesz prostej strony czy rozbudowanego serwisu? Zaproponuję rozwiązanie, które podkreśli wizerunek
             marki i pomoże w pozyskiwaniu klientów w całej Polsce.
           </p>

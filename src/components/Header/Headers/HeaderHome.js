@@ -20,7 +20,7 @@ const LINES = [
 ];
 
 const SUBTITLE =
-  'Tworzę strony internetowe, które skutecznie przyciągają klientów i budują wizerunek Twojej marki online. Realizuję nowoczesne projekty stron i sklepów internetowych dla firm z całej Polski — od Jastrzębia-Zdroju po Warszawę.';
+  'Tworzę strony internetowe, które skutecznie przyciągają klientów i budują wizerunek Twojej marki online. Realizuję nowoczesne projekty stron i sklepów internetowych dla firm z całej Polski - od Jastrzębia-Zdroju po Warszawę.';
 
 const HeaderHome = ({ crumbs, location }) => {
   return (

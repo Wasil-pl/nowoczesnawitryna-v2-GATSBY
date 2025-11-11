@@ -64,7 +64,7 @@ export const WebAppProcessSteps = [
   {
     id: '4',
     title: 'Testy i optymalizacja',
-    desc: 'Przeprowadzam dokładne testy działania aplikacji — sprawdzam szybkość, poprawność i bezpieczeństwo. Dopiero po pełnej weryfikacji aplikacja trafia na produkcję.',
+    desc: 'Przeprowadzam dokładne testy działania aplikacji - sprawdzam szybkość, poprawność i bezpieczeństwo. Dopiero po pełnej weryfikacji aplikacja trafia na produkcję.',
     icon: <Settings className="h-5 w-5" />,
     points: ['Testy na różnych urządzeniach', 'Optymalizacja wydajności', 'Monitoring błędów i bezpieczeństwa'],
   },
@@ -82,7 +82,7 @@ export const HtmlProcessSteps = [
   {
     id: '1',
     title: 'Analiza celu i treści',
-    desc: 'Ustalamy strukturę One-Page / multi-page, sekcje i call-to-action. Dla projektów statycznych proponuję Gatsby (SSG) — świetny pod SEO, ekstremalnie szybki i wygodny w dalszym rozwoju.',
+    desc: 'Ustalamy strukturę One-Page / multi-page, sekcje i call-to-action. Dla projektów statycznych proponuję Gatsby (SSG) - świetny pod SEO, ekstremalnie szybki i wygodny w dalszym rozwoju.',
     icon: <UserRound className="h-5 w-5" />,
   },
   {
@@ -96,7 +96,7 @@ export const HtmlProcessSteps = [
   {
     id: '3',
     title: 'Implementacja w HTML/CSS/JS (lub Gatsby)',
-    desc: 'Czysty kod bez bazy danych — maksymalna wydajność i stabilność. W wariancie Gatsby: routing, optymalizacja obrazów i meta dla SEO.',
+    desc: 'Czysty kod bez bazy danych - maksymalna wydajność i stabilność. W wariancie Gatsby: routing, optymalizacja obrazów i meta dla SEO.',
     icon: <Code2 className="h-5 w-5" />,
     points: ['Core Web Vitals 90+', 'Gatsby Image', 'Meta/SEO'],
   },

@@ -59,7 +59,7 @@ const MyServicesAccordion = () => {
             <div className="flex-1 text-center mb-[50px]">
               <StaticImage
                 src="../../../../../images/html.png"
-                alt="strony internetowe HTML — projekt od podstaw"
+                alt="strony internetowe HTML - projekt od podstaw"
                 width={300}
                 quality={100}
                 layout="constrained"
